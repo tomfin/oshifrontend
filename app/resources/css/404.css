@@ -1,0 +1,39 @@
+.content-404 {
+    background: #000 url('/resources/images/404_bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    color: white;
+    font-family: sans-serif;
+}
+
+.content-404 a {
+    color: #FFCC00;
+    text-decoration: none; }
+.content-404 a:hover {
+    text-decoration: underline; }
+
+.content-404 div {
+    text-align: center;
+    margin: 36px auto 0 auto;
+    min-width: 460px; }
+.content-404 .oops {
+    margin-top: 36px;
+    max-width: 522px;
+    font-size: 120pt; }
+.content-404 .oops, .content-404 .cannot-be-found, .content-404 .link-to-root {
+    font-weight: bold; }
+.content-404 .cannot-be-found {
+    line-height: 1.4em;
+    font-size: 20pt; }
+.content-404 .description {
+    font-size: 10pt;
+    line-height: 2em;
+    max-width: 740px;
+    color: #aaa; }
+.content-404 .link-to-root {
+    font-size: 11pt; }
