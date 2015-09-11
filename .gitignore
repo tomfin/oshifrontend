@@ -1,0 +1,15 @@
+/bower_components
+/node_modules
+/build
+/logs
+/.tmp
+/.idea
+/_project
+/npm-debug.log
+/devise-i18n
+/casino-translations
+/client
+/core
+npmstart.js
+.project
+.settings

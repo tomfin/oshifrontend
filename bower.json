@@ -1,0 +1,100 @@
+{
+  "name": "casino-ui",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.2",
+    "angular-resource": "1.4.2",
+    "angular-sanitize": "1.4.2",
+    "angular-bootstrap": "0.12.0",
+    "angular-translate": "2.4.2",
+    "angular-translate-loader-static-files": "2.4.2",
+    "angular-loading-bar": "0.6.0",
+    "bootstrap": "3.3.1",
+    "angular-jquery-lazy": "0.0.0",
+    "async": "~0.9.2",
+    "faye": "1.0.1",
+    "angular-ui-router": "0.2.15",
+    "mobile-detect": "1.0.0",
+    "font-awesome": "4.3.0",
+    "flashdetect": "1.0.4",
+    "underscore": "1.8.3",
+    "angular-notify": "2.5.0",
+    "angular-local-storage": "~0.2.2",
+    "ngInfiniteScroll": "1.2.1",
+    "bxSlider": "4.2.5"
+  },
+  "overrides": {
+    "angular": {
+      "main": [
+        "angular.min.js"
+      ]
+    },
+    "angular-ui-router": {
+      "main": [
+        "release/angular-ui-router.min.js"
+      ]
+    },
+    "angular-resource": {
+      "main": [
+        "angular-resource.min.js"
+      ]
+    },
+    "angular-sanitize": {
+      "main": [
+        "angular-sanitize.min.js"
+      ]
+    },
+    "angular-translate": {
+      "main": [
+        "angular-translate.min.js"
+      ]
+    },
+    "angular-translate-loader-static-files": {
+      "main": [
+        "angular-translate-loader-static-files.min.js"
+      ]
+    },
+    "angular-bootstrap": {
+      "main": [
+        "ui-bootstrap-tpls.min.js"
+      ]
+    },
+    "angular-loading-bar": {
+      "main": [
+        "build/loading-bar.min.js",
+        "build/loading-bar.min.css"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    },
+    "jquery-lazy": {
+      "main": [
+        "jquery.lazy.min.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap-theme.min.css",
+        "dist/js/bootstrap.min.js",
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.svg",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.woff"
+      ]
+    },
+    "faye": {
+      "main": [
+        "include.min.js"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": ">= 1.4.0"
+  }
+}
