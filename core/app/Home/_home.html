@@ -1,0 +1,80 @@
+<div>
+    <div class="main_promo_area">
+        <div class="promo_box_main clearfix">
+            <casino-slider category="slider-index-top"></casino-slider>
+            <casino-auth-top></casino-auth-top>
+        </div>
+
+        <div class="winners_area clearfix">
+
+            <div class="winners half" data-example-id="togglable-tabs" role="tabpanel">
+                <tabset>
+                    <tab>
+                        <tab-heading translate="winners.latest_winners"></tab-heading>
+                        <casino-latest-winners></casino-latest-winners>
+                    </tab>
+                    <tab>
+                        <tab-heading translate="winners.top_winners"></tab-heading>
+                        <casino-top-winners></casino-top-winners>
+                    </tab>
+                </tabset>
+
+            </div><!-- winners EOF -->
+
+            <div class="jackpots_area half">
+
+                <div class="jckpts_crsl">
+                    <div class="title">Jackpots</div>
+
+                    <casino-games-jackpots></casino-games-jackpots>
+
+                    <!--<div class="carousel slide" data-ride="carousel" id="carousel-example-generic">-->
+
+                        <!--<div class="carousel-inner" role="listbox">-->
+
+                            <!--<div class="item active">-->
+                                <!--<div class="img_box">-->
+                                    <!--<img src="upload/game_007.jpg" alt="King Cashalot">-->
+                                <!--</div>-->
+                                <!--<div class="descr">-->
+                                    <!--<span class="iconbefore icon_crown jckpt_val">250000$</span>-->
+                                    <!--<span class="game_name">King Cashalot</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <!--<div class="item">-->
+                                <!--<div class="img_box">-->
+                                    <!--<img src="upload/game_003.jpg" alt="Alaxe in Zombieland">-->
+                                <!--</div>-->
+                                <!--<div class="descr">-->
+                                    <!--<span class="iconbefore icon_crown jckpt_val">25000$</span>-->
+                                    <!--<span class="game_name">Alaxe in Zombieland</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+
+                        <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+                            <!--<span class="fonticon fa fa-chevron-left"></span>-->
+                        <!--</a>-->
+                        <!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+                            <!--<span class="fonticon fa fa-chevron-right"></span>-->
+                        <!--</a>-->
+                    <!--</div>-->
+
+                </div><!-- jckpts_crsl EOF -->
+
+                <div class="jckpts_clltoactn">
+                    <div class="title">Win wild jackpots with featured games!</div>
+                    <div class="text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</div>
+                    <button class="btn btn-lg btn-danger">Play now!</button>
+                </div><!-- jckpts_clltoactn EOF -->
+
+            </div><!-- carousel_area EOF -->
+
+        </div>
+
+    </div>
+
+    <casino-games-list limit="16"></casino-games-list>
+</div>

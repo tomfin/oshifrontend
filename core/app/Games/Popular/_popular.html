@@ -1,0 +1,19 @@
+<div class="panel panel-info" ng-hide="(games | gameCurrency : data.user.currency | gameOrder: 'popularity').length == 0">
+    <div class="panel-heading">
+        <h3 class="panel-title">Casino popular games</h3>
+    </div>
+    <ul class="panel-body games-list row">
+        <li class="games-panel-item col-xs-3"
+            ng-repeat="game in games | gameCurrency : data.user.currency | gameOrder: 'popularity' | limitTo: 8"
+            ng-class="game.collections.join(' ') + ' ' + game.provider + ' ' + game.device.join(' ')">
+            <a ng-href="{{game.play_url}}" target="_self" class="image-link">
+                <div class="image-wrapper table-client-flash"><img casino-lazy-src="{{game.icon_cdn_path}}" class="game-image img-rounded" alt="{{game.identifier}}"></div>
+                <div class="image-hv">
+                    <div class="play-now btn btn-success" translate="frontend.links.play_now"></div>
+                </div>
+            </a>
+            <a ng-href="{{game.play_url}}" target="_self" ng-bind="game.title" class="game-title"></a>
+        </li>
+    </ul>
+
+</div>

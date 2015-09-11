@@ -1,0 +1,1942 @@
+{
+	"errors": {
+		"messages": {
+			"taken_in_past": "過去に実行されています！",
+			"equal_to_current_password": "現在のパスワードと違うパスワードを設定して下さい！",
+			"already_confirmed": "は既に登録済みです。ログインしてください。",
+			"confirmation_period_expired": "の期限が切れました。%{period} までに確認する必要があります。 新しくリクエストしてください。",
+			"expired": "の有効期限が切れました。新しくリクエストしてください。",
+			"not_found": "は見つかりませんでした。",
+			"not_locked": "は凍結されていません。",
+			"not_saved": {
+				"one": "エラーが発生したため %{resource} は保存されませんでした:",
+				"other": "%{count} 件のエラーが発生したため %{resource} は保存されませんでした:"
+			}
+		}
+	},
+	"devise": {
+		"invalid_captcha": "そのキャプチャ画像はインポートできません",
+		"password_expired": {
+			"submit": "パスワード変更",
+			"updated": "新しいパスワードが保存されました",
+			"change_required": "パスワードが期限切れです。新しいパスワードを登録して下さい！",
+			"forgot_password_message": "パスワードを忘れた場合は 'ログアウト'をクリックしてパスワードをリセットして下さい"
+		},
+		"failure": {
+			"session_limited": "ログイン情報が他のブラウザで使用されています。このブラウザであらためてサインインをして下さい。",
+			"expired": "あなたのアカウントは使用期限が切れています。お手数ですがサイト管理者までご連絡下さい。",
+			"disabled": "このアカウントは使用不能です。",
+			"not_allowed_ip": "あなたのIPは使用が許されておりません",
+			"already_authenticated": "すでにログインしています。",
+			"inactive": "アカウントが有効化されていません。メールに記載された手順にしたがって、アカウントを有効化してください。",
+			"invalid": "メールアドレスまたはパスワードが違います。",
+			"last_attempt": "あなたのアカウントが凍結される前に、複数回の操作がおこなわれています。",
+			"locked": "あなたのアカウントは凍結されています。",
+			"not_found_in_database": "メールアドレスまたはパスワードが違います。",
+			"timeout": "セッションがタイムアウトしました。もう一度ログインしてください。",
+			"unauthenticated": "アカウント登録もしくはログインしてください。",
+			"unconfirmed": "メールアドレスの本人確認が必要です。"
+		},
+		"confirmations": {
+			"confirmed": "アカウントを登録しました。",
+			"send_instructions": "アカウントの有効化について数分以内にメールでご連絡します。",
+			"send_paranoid_instructions": "あなたのメールアドレスが登録済みの場合、本人確認用のメールが数分以内に送信されます。"
+		},
+		"mailer": {
+			"confirmation_instructions": {
+				"subject": "アカウントの有効化について"
+			},
+			"reset_password_instructions": {
+				"subject": "パスワードの再設定について"
+			},
+			"unlock_instructions": {
+				"subject": "アカウントの凍結解除について"
+			}
+		},
+		"omniauth_callbacks": {
+			"failure": "%{kind} アカウントによる認証に失敗しました。理由：（%{reason}）",
+			"success": "%{kind} アカウントによる認証に成功しました。"
+		},
+		"passwords": {
+			"no_token": "このページにはアクセスできません。パスワード再設定メールのリンクからアクセスされた場合には、URL をご確認ください。",
+			"send_instructions": "パスワードの再設定について数分以内にメールでご連絡いたします。",
+			"send_paranoid_instructions": "あなたのメールアドレスが登録済みの場合、パスワード再設定用のメールが数分以内に送信されます。",
+			"updated": "パスワードが正しく変更されました。",
+			"updated_not_active": "パスワードが正しく変更されました。"
+		},
+		"registrations": {
+			"destroyed": "アカウントを削除しました。またのご利用をお待ちしております。",
+			"signed_up": "アカウント登録が完了しました。",
+			"signed_up_but_inactive": "ログインするためには、アカウントを有効化してください。",
+			"signed_up_but_locked": "アカウントが凍結されているためログインできません。",
+			"signed_up_but_unconfirmed": "本人確認用のメールを送信しました。メール内のリンクからアカウントを有効化させてください。",
+			"update_needs_confirmation": "アカウント情報を変更しました。変更されたメールアドレスの本人確認のため、本人確認用メールより確認処理をおこなってください。",
+			"updated": "アカウント情報を変更しました。"
+		},
+		"sessions": {
+			"already_signed_out": "既にログアウト済みです。",
+			"signed_in": "ログインしました。",
+			"signed_out": "ログアウトしました。"
+		},
+		"unlocks": {
+			"send_instructions": "アカウントの凍結解除方法を数分以内にメールでご連絡します。",
+			"send_paranoid_instructions": "アカウントが見つかった場合、アカウントの凍結解除方法を数分以内にメールでご連絡します。",
+			"unlocked": "アカウントを凍結解除しました。"
+		}
+	},
+	"activerecord": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "断片を含むことは出来ません",
+							"has_query_parameter": "クエリパラメーターを含むことはできません",
+							"invalid_uri": "有効なURIが必要です",
+							"relative_uri": "固定のURIが必要です"
+						}
+					}
+				},
+				"user": {
+					"attributes": {
+						"password": {
+							"wrong_password": "invalid email address or password"
+						}
+					}
+				},
+				"profile": {
+					"attributes": {
+						"age": {
+							"greater_than_or_equal_to": "verification {{count}}+"
+						}
+					}
+				},
+				"payment": {
+					"not_enough_money": "お金が足りません",
+					"not_enough_unlocked_money": "一部または全部の資金が、ボーナスを受取られているためにロックされています。払戻し条件を満たすまでゲームを行って下さい。",
+					"unresolved_cashout_request_presents": "払戻しリクエストがまだて手続きが済んでおりません。急ぎ手続きを行います。尚、最初に受付をしたリクエストから順番に手続きをしますのでその旨、ご了承下さい。",
+					"pending_deposit_presents": "最後の入金について確認中です。",
+					"commission_is_greater_that_amount": "コミッションが合計を上回っています。",
+					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
+					"not_used_account": "Account you are going to cashout was not used before.",
+					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
+					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
+					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+				},
+				"commission_connection": {
+					"not_overlap": "Must not overlap with other connections with same commission level",
+					"future_from_time": "将来であるべき",
+					"greater_than_from_time": "以前より大きくなければなりません",
+					"strategies_equivalence": "アフィリエイトのプロフィールと同支払いスキームであるべき",
+					"greater_than_now": "現在より大きくなければならない"
+				},
+				"commission": {
+					"wrong_strategy_settings": "支払スキームの設定にエラーがあります"
+				},
+				"bonus_issue": {
+					"not_enough_to_lock": "ユーザーの収支を上回っています。"
+				},
+				"external_bet": {
+					"rollback_expired": "結果が登録されてから24時間経過すると、更新を受け付けることができません"
+				},
+				"notification/subscription": {
+					"invalid_types": "You can subscribe only to a notification"
+				}
+			}
+		},
+		"models": {
+			"account": "アカウント",
+			"admin_user": "ユーザー管理",
+			"affiliate_profile": "アフィリエイトプロフィール",
+			"bet": "ベット",
+			"bonus": "ボーナス",
+			"bonus_issue": "ボーナス発行",
+			"document": "書類",
+			"event": "イベント",
+			"external_bet": "外部ベット外部ベット",
+			"game": "ゲーム",
+			"game_category": "Game Category",
+			"game_step": "ステップ",
+			"game_table": "ゲームテーブル",
+			"payment": "支払",
+			"payment_system": "決済システム",
+			"profile": "プロフィール",
+			"reports/base_collection/result_record": "Result",
+			"suspicion": "疑問",
+			"user": "ユーザー",
+			"player": "プレイヤー",
+			"retention_email": "新着メール"
+		},
+		"attributes": {
+			"balance_correction": {
+				"action": "Action",
+				"amount": "Amount",
+				"account": "Account",
+				"comment": "Comment"
+			},
+			"game_category": {
+				"name": "Name",
+				"disabled": "Disabled",
+				"created_at": "Created at",
+				"games": "Games",
+				"position": "Position"
+			},
+			"notification": {
+				"type": "Type",
+				"user": "User",
+				"admin_user": "Admin",
+				"target": "Target",
+				"target_type": "Target type"
+			},
+			"affiliate_link": {
+				"name": "Name",
+				"code": "Code"
+			},
+			"affiliate_profile": {
+				"name": "タイトル",
+				"strategy": "支払スキーム",
+				"no_debt": "No Neg. キャリーオーバー",
+				"links": "Links",
+				"active": "Active"
+			},
+			"account": {
+				"currency": "通貨",
+				"amount": "総計",
+				"created_at": "作成",
+				"updated_at": "更新"
+			},
+			"active_admin/comment": {
+				"author": "作者",
+				"body": "ボディ",
+				"resource": "リソース"
+			},
+			"admin_user": {
+				"email": "Eメール",
+				"encrypted_password": "暗号化されたパスワード",
+				"password": "パスワード",
+				"password_confirmation": "Confirm password",
+				"current_password": "現在のパスワード",
+				"remember_me": "記憶する",
+				"reset_password_token": "パスワードリセットトークン",
+				"reset_password_sent_at": "リセットしたパスワードを送信",
+				"remember_created_at": "作成を記録",
+				"sign_in_count": "サインイン回数",
+				"current_sign_in_at": "現在のサインイン",
+				"last_sign_in_at": "最終サインイン",
+				"current_sign_in_ip": "現在のサンインインIP",
+				"last_sign_in_ip": "最終サインインIP",
+				"failed_attempts": "試行失敗",
+				"unlock_token": "ロック解除証",
+				"locked_at": "ロック済",
+				"password_changed_at": "パスワード変更",
+				"created_at": "作成",
+				"updated_at": "更新",
+				"disabled": "無効",
+				"allowed_ips_string": "IPを許可",
+				"roles_names": "ルール"
+			},
+			"balance_transaction": {
+				"reference": "参照",
+				"amount": "総計",
+				"created_at": "作成",
+				"updated_at": "更新"
+			},
+			"bet": {
+				"bet_type": "ベットタイプ",
+				"bet_amount": "ベット総計",
+				"win_amount": "ウィン総計",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"bonus": {
+				"strategy": "タイプ",
+				"title": "タイトル",
+				"description": "説明",
+				"percentage": "パーセンテージ",
+				"currency": "通貨",
+				"amount": "総計",
+				"percent": "パーセント",
+				"max_amount": "最大量",
+				"code": "コード",
+				"extra_info": "追加情報",
+				"wager_multiplier": "倍率",
+				"wagering_epsilon": "イプシロンを賭ける",
+				"cashable": "現金化可能",
+				"sticky": "難しい",
+				"enabled": "有効",
+				"created_at": "作成",
+				"updated_at": "更新"
+			},
+			"bonus_issue": {
+				"strategy": "戦略",
+				"stage": "ステージ",
+				"amount": "総計",
+				"amount_wager_requirement": "必要な賭けの総計",
+				"amount_wager": "賭け総額",
+				"wagered_percent": "賭けの割合",
+				"amount_locked": "ロック済み総額",
+				"valid_until": "満期日",
+				"extra_info": "追加情報",
+				"cashable": "現金化可能",
+				"sticky": "難しい",
+				"wager": "賭け",
+				"created_at": "受取日",
+				"issued_at": "発行",
+				"updated_at": "更新日"
+			},
+			"freespin_issue": {
+				"stage": "Stage",
+				"amount": "Amount",
+				"freespins_total": "Freespins Awarded",
+				"activatable_until": "Expiry date",
+				"win_amount_cents": "Alredy won",
+				"valid_until": "Expiry date",
+				"extra": "Extra info",
+				"external_id": "External ID",
+				"created_at": "Date received",
+				"issued_at": "Issued at",
+				"updated_at": "Updated at"
+			},
+			"bonus_strategy/feature/payment_system": {
+				"ids_list": "決済システム"
+			},
+			"contact": {
+				"email": "Eメール",
+				"content": "コンテンツ"
+			},
+			"document": {
+				"approved": "承認",
+				"description": "説明",
+				"removed": "削除",
+				"created_at": "作成",
+				"updated_at": "更新",
+				"attachment": "添付",
+				"attachment_file_name": "添付ファイル名",
+				"attachment_content_type": "添付コンテンツ種別",
+				"attachment_file_size": "添付ファイルサイズ",
+				"attachment_updated_at": "Added at"
+			},
+			"event": {
+				"subject": "項目",
+				"event_type": "イベント種別",
+				"ip": "IP",
+				"country": "国",
+				"coordinates": "コーディネート",
+				"latitude": "緯度",
+				"longitude": "経度",
+				"address": "住所",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"external_bet": {
+				"id": "ローカルID",
+				"account_id": "アカウントID",
+				"account": "アカウント",
+				"external_id": "外部 ID",
+				"bet_amount": "ベット",
+				"win_amount": "ウィン",
+				"oauth_application": "OAuthアプリケーション",
+				"oauth_application_id": "OAuthアプリケーションID"
+			},
+			"game": {
+				"data": "日付",
+				"finished_at": "完了",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"game_step": {
+				"state": "ステータス",
+				"action": "アクション",
+				"data": "日付",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"game_table": {
+				"base_type": "ベースタイプ",
+				"variation": "バリエーション",
+				"identifier": "識別法",
+				"title": "タイトル",
+				"client": "クライアント",
+				"provider": "Game provider",
+				"description": "説明",
+				"active": "アクティブ",
+				"currency": "通貨",
+				"secondary_currency": "第2通貨",
+				"amount_win": "ベット合計",
+				"amount_loss": "勝利合計",
+				"chips": "チップ",
+				"default_chip": "規定のチップ",
+				"min_bet": "ミニマムベット",
+				"max_bet": "マックスベット",
+				"paytable": "倍率表",
+				"options": "オプション",
+				"bet_playthrough_percent": "ボーナス換金条件ベット",
+				"line_bets": "ラインベット",
+				"archived_at": "保存",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"modification": {
+				"subject": "項目",
+				"entity": "実在",
+				"data": "日付",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"paritcipation": {
+				"active": "アクティブ",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"payment": {
+				"amount": "総計",
+				"commission_amount": "コミッション",
+				"amount_after_commission": "合計（差し引かれるコミッション）",
+				"currency": "通貨",
+				"action": "アクション",
+				"source": "ソース",
+				"extra": "臨時",
+				"success": "成功しました",
+				"finished_at": "完了",
+				"created_at": "作成日",
+				"updated_at": "更新日",
+				"recipient_address": "アドレス",
+				"manual_confirmation_code": "認証コード",
+				"source_id": "Payment Code"
+			},
+			"payment_system": {
+				"system_name": "システム名",
+				"disabled": "無効",
+				"currency_options": "通貨オプション",
+				"test_mode": "テストモード",
+				"data": "日付",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"payment_system_debt": {
+				"system_name": "System name",
+				"system_account": "Account in system",
+				"amount_cents": "Debt",
+				"created_at": "Created at",
+				"updated_at": "Updated at"
+			},
+			"profile_setting": {
+				"name": "名前",
+				"enabled": "有効",
+				"required": "必須",
+				"show_at_registration": "登録証を表示",
+				"show_at_edition": "編集モードを見る",
+				"created_at": "作成日",
+				"updated_at": "更新日"
+			},
+			"suspicion": {
+				"suspect": "疑義",
+				"discarded": "削除",
+				"created_at": "作成日",
+				"updated_at": "更新日",
+				"related_suspect": "疑義との関連",
+				"data": "日付",
+				"failed_check": "チェック失敗"
+			},
+			"user": {
+				"email": "Eメール",
+				"encrypted_password": "暗号化されたパスワード",
+				"password": "パスワード",
+				"password_confirmation": "パスワード確認",
+				"current_password": "現在のパスワード",
+				"remember_me": "記憶する",
+				"reset_password_token": "パスワードリセット証",
+				"reset_password_sent_at": "リセットパスワード送信",
+				"remember_created_at": "作成を記録",
+				"sign_in_count": "サインイン回数",
+				"current_sign_in_at": "現在のサインイン",
+				"last_sign_in_at": "最終サインイン",
+				"current_sign_in_ip": "最新のサインインIP",
+				"last_sign_in_ip": "最終のサインインIP",
+				"confirmation_token": "確認証",
+				"confirmed_at": "確認",
+				"confirmation_sent_at": "確認送信",
+				"unconfirmed_email": "未確認メール",
+				"failed_attempts": "試行失敗",
+				"unlock_token": "ロック解除証",
+				"locked_at": "ロック済",
+				"authentication_token": "認証",
+				"created_at": "作成日",
+				"updated_at": "更新日",
+				"disabled": "無効",
+				"allowed_ips_string": "IPを許可",
+				"guest": "ゲスト",
+				"main_bitcoin_address": "メインビットコインアドレス",
+				"bonus_code": "Bonus Code"
+			},
+			"profile": {
+				"full_name": "フルネーム",
+				"first_name": "ファーストネーム（名）",
+				"last_name": "ラストネーム（姓）",
+				"title": "タイトル",
+				"nickname": "ニックネーム",
+				"date_of_birth": "誕生日",
+				"personal_id_number": "パーソナル IDナンバー",
+				"gender": "性別",
+				"country": "国",
+				"city": "都道府県名",
+				"place_of_birth": "出生地",
+				"address": "住所",
+				"address2": "追加アドレス",
+				"postal_code": "郵便番号",
+				"time_zone": "タイムゾーン",
+				"mobile_phone": "携帯電話",
+				"phone": "電話番号",
+				"skype": "スカイプ",
+				"send_payment_confirmation": "入金確認を送る",
+				"receive_newsletters": "ニュースレター購読",
+				"receive_promos": "プロモーション受取",
+				"never_call": "電話しないで下さい",
+				"currency": "通貨",
+				"language": "言語",
+				"security_question": "セキュリティの質問",
+				"security_answer": "セキュリティの回答",
+				"age_acceptance": "年齢確認",
+				"terms_acceptance": "利用規約に同意",
+				"bonus_issuance_policy": "ボーナス発行ポリシー",
+				"allowed_ips_string": "IPを許可"
+			},
+			"profile/admin": {
+				"full_name": "フルネーム",
+				"first_name": "ファーストネーム（名）",
+				"last_name": "ラストネーム（姓）",
+				"title": "タイトル",
+				"nickname": "ニックネーム",
+				"date_of_birth": "誕生日",
+				"personal_id_number": "パーソナル IDナンバー",
+				"gender": "性別",
+				"country": "国",
+				"city": "都道府県名",
+				"place_of_birth": "出生地",
+				"address": "住所",
+				"address2": "追加アドレス",
+				"postal_code": "郵便番号",
+				"time_zone": "タイムゾーン",
+				"mobile_phone": "携帯電話",
+				"phone": "電話番号",
+				"skype": "スカイプ",
+				"send_payment_confirmation": "入金確認を送る",
+				"receive_newsletters": "ニュースレター購読",
+				"receive_promos": "プロモーション受取",
+				"never_call": "電話しないで下さい",
+				"currency": "通貨",
+				"language": "言語",
+				"security_question": "セキュリティの質問",
+				"security_answer": "セキュリティの回答",
+				"age_acceptance": "年齢確認",
+				"terms_acceptance": "利用規約に同意",
+				"bonus_issuance_policy": "ボーナス発行ポリシー",
+				"allowed_ips_string": "IPを許可"
+			},
+			"profile/user": {
+				"full_name": "フルネーム",
+				"first_name": "ファーストネーム（名）",
+				"last_name": "ラストネーム（姓）",
+				"title": "タイトル",
+				"nickname": "ニックネーム",
+				"date_of_birth": "誕生日",
+				"personal_id_number": "パーソナル IDナンバー",
+				"gender": "性別",
+				"country": "国",
+				"city": "都道府県名",
+				"place_of_birth": "出生地",
+				"address": "住所",
+				"address2": "追加アドレス",
+				"postal_code": "郵便番号",
+				"time_zone": "タイムゾーン",
+				"mobile_phone": "携帯電話",
+				"phone": "電話番号",
+				"skype": "スカイプ",
+				"send_payment_confirmation": "入金確認を送る",
+				"receive_newsletters": "ニュースレター購読",
+				"receive_promos": "プロモーション受取",
+				"never_call": "電話しないで下さい",
+				"currency": "通貨",
+				"language": "言語",
+				"security_question": "セキュリティの質問",
+				"security_answer": "セキュリティの回答",
+				"age_acceptance": "私は{{age}} 歳以上であることを確認します",
+				"terms_acceptance": "私は {{text}}に同意します",
+				"bonus_issuance_policy": "ボーナス発行ポリシー",
+				"allowed_ips_string": "IPを許可"
+			},
+			"provable_fair_data": {
+				"secret": "秘密",
+				"client_seed": "クライアントシード",
+				"result": "結果",
+				"hash": "ハッシュ"
+			},
+			"retention_email": {
+				"strategy": "タイプ",
+				"template_name": "テンプレート名",
+				"days_interval": "日毎",
+				"enabled": "有効",
+				"created_at": "作成",
+				"updated_at": "更新"
+			}
+		}
+	},
+	"mongoid": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "断片を含むことはできません",
+							"has_query_parameter": "クエリパラメーターを含むことはできません",
+							"invalid_uri": "有効なURIが必要です",
+							"relative_uri": "固定のURLが必要です"
+						}
+					}
+				}
+			}
+		}
+	},
+	"mongo_mapper": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "断片を含めることはできません",
+							"has_query_parameter": "クエリパラメーターを含めることは出来ません",
+							"invalid_uri": "有効なURIが必要です",
+							"relative_uri": "固定のURIが必要です"
+						}
+					}
+				}
+			}
+		}
+	},
+	"doorkeeper": {
+		"errors": {
+			"messages": {
+				"invalid_request": "サポートされない値または変更があるため、パラメーターリクエストが処理されません",
+				"invalid_redirect_uri": "リダイレクトURIが含まれており無効です",
+				"unauthorized_client": "クライアントはこの手法での要求を許可されていません",
+				"access_denied": "リソースオーナーまたはサーバーに要求を拒否されました",
+				"invalid_scope": "リクエストの範囲は不許可、不認識または不正な変更です",
+				"server_error": "認証サーバーは予想外の要求を受けました",
+				"temporarily_unavailable": "認証サーバーは、現在一時的なオーバーローディングまたはサーバーのメンテナンスのために要求を処理することができません",
+				"credential_flow_not_configured": "リソースオーナーのパスワード証明フローは失敗しました。",
+				"resource_owner_authenticator_not_configured": "リソースオーナー検索がブロックされたため失敗しました",
+				"unsupported_response_type": "認証サーバーはこの種のレスポンスをサポートしていません",
+				"invalid_client": "認証方法がサポートされていない、またはクライアント認証が含まれていない等の理由でクライアント認証が失敗しました。",
+				"invalid_grant": "リダイレクトURIが適合しないため、認証がなされませんでした",
+				"unsupported_grant_type": "その認証許可タイプは認証サーバーでサポートされていません",
+				"invalid_resource_owner": "リソースオーナーの証明書が有効ではないか、リソースオーナーが見つかりません",
+				"invalid_token": {
+					"revoked": "アクセストークンは取消されました",
+					"expired": "アクセストークンは期限切れになりました",
+					"unknown": "アクセストークンは無効です"
+				}
+			}
+		},
+		"flash": {
+			"applications": {
+				"create": {
+					"notice": "アプリケーション作成"
+				},
+				"destroy": {
+					"notice": "アプリケーション削除"
+				},
+				"update": {
+					"notice": "アプリケーション更新"
+				}
+			},
+			"authorized_applications": {
+				"destroy": {
+					"notice": "アプリケーション無効"
+				}
+			}
+		},
+		"authorize_title": "認証要求",
+		"authorize_required": "認証要求",
+		"authorize": "認証",
+		"authorization_code": "認証コード",
+		"deny": "拒否",
+		"rights_title": "このアプリケーションは可能になります",
+		"allow_authorization": " {{app}} あなたのアカウントで使用していますか？",
+		"authorize_as_regular_user": "ゲストアカウントをサインアウトし、通常アカウントでサインインして下さい",
+		"scopes": {
+			"profile": "プロフィールへアクセス",
+			"bets": "あなたの収支データへアクセスし、ベットを代行します"
+		}
+	},
+	"amatic": {
+		"verification": {
+			"error_popup": {
+				"title": "Error",
+				"description": "Amatic server does not respond"
+			},
+			"popup": {
+				"copy": "Copy",
+				"title": "Successfull verification",
+				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
+				"message": "Your Text",
+				"signature": "Amatic Signature",
+				"address": "Bitcoin Address"
+			},
+			"title": "Amatic verification",
+			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
+			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"form": {
+				"your_text": "Your Text",
+				"verify": "Verify"
+			}
+		},
+		"amatic": "Amatic"
+	},
+	"http": {
+		"not_found": {
+			"title": "Page Not Found",
+			"oops": "Oops,",
+			"cannot_be_found": "The page you are looking for cannot be found.",
+			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
+			"link_to_root": "Here is a link to our start page:"
+		}
+	},
+	"common": {
+		"in_out": "IN/OUT",
+		"players": "Players",
+		"email": "Eメール",
+		"content": "Content",
+		"loading": "ローディング...",
+		"yes": "イエス",
+		"no": "ノー",
+		"all": "全て",
+		"default": "規定",
+		"date": "日付",
+		"result": "結果",
+		"total_bet": "トータルベット",
+		"total_win": "トータルウィン",
+		"gross_win": "粗利",
+		"cashouts_sum": "キャッシュアウト合計",
+		"deposits_sum": "デポジット合計",
+		"net_revenue": "純収益",
+		"client": "クライアント",
+		"amount": "総計",
+		"help": "ヘルプ",
+		"currency": "通貨",
+		"total": "合計",
+		"limit": "リミット",
+		"live_casino": "ライブカジノ",
+		"address": "Address",
+		"good_news": "Good news, {{nickname}}.",
+		"save": "セーブ",
+		"edit": "編集",
+		"remove": "削除",
+		"destroy": "破棄",
+		"cancel": "キャンセル",
+		"close": "Close",
+		"create": "作成",
+		"add": "追加",
+		"update": "更新",
+		"reset": "リセット",
+		"refresh": "再読込",
+		"proceed": "続行",
+		"filter": "フィルター",
+		"are_you_sure": "よろしいですか?",
+		"set": "Set",
+		"enabled": "有効",
+		"disabled": "無効",
+		"active": "アクティブ",
+		"preview": "プレビュー",
+		"select": "選択",
+		"summary": "サマリー",
+		"status": "ステータス",
+		"options": "オプション",
+		"genders": {
+			"m": "男性",
+			"f": "女性"
+		},
+		"player": "プレイヤー",
+		"guest": "ゲスト",
+		"subject": "項目",
+		"actions": "アクション",
+		"balance": "バランス",
+		"profit": "利益",
+		"payout": "払戻",
+		"bets_sum": "ベット合計",
+		"wins_sum": "勝合計",
+		"bets": "ベット",
+		"total_payouts": "払戻総額",
+		"terms_and_conditions": "利用規約",
+		"net_total": "純合計",
+		"blog": "ブログ",
+		"comments": "コメント",
+		"comment": "コメント",
+		"empty_search_results": "There are no items according to the filtering parameters",
+		"add_more_coins": "Add more Coins",
+		"show_more_games": "Show more games",
+		"warning": "Warning",
+		"new_as_novelty": "New",
+		"already_member": "Already a member?",
+		"have_account": "Have an account?"
+	},
+	"locales": {
+		"af": "アフリカ語",
+		"bg": "ブルガリア語",
+		"de": "ドイツ語",
+		"el": "ギリシア語",
+		"en": "英語",
+		"es": "スペイン語",
+		"fi": "フィンランド語",
+		"fr": "French",
+		"it": "イタリア語",
+		"ja": "日本語",
+		"ko": "Korean",
+		"nl": "オランダ語",
+		"pl": "ポーランド語",
+		"pt": "ポルトガル語",
+		"ru": "ロシア語",
+		"sv": "スウェーデン語",
+		"tr": "トルコ語",
+		"vi": "べトナム語",
+		"zh": "中国語"
+	},
+	"date": {
+		"day": "日",
+		"week": "週",
+		"month": "月",
+		"year": "年"
+	},
+	"casino": {
+		"casino": "カジノ",
+		"not_enough_money": "お金が足りません",
+		"events": {
+			"modified": {
+				"user": "ユーザープロフィール変更",
+				"admin_user": "管理者が変更されました",
+				"game_table": "変更されたゲーム",
+				"bonus_issue": "ボーナス発行",
+				"bonus": "変更されたボーナス",
+				"payment_system": "決済システム",
+				"retention_email": "修正後のEメールを保持",
+				"casino_cash_balance": "Casino Cash Balance Modified",
+				"commission_connection": "Commission Connection Modified",
+				"payment": "Payment Modified",
+				"affiliate_profile": "Affiliate Profile Modified"
+			},
+			"game": {
+				"step": "ゲーム手順作成"
+			},
+			"user": {
+				"sign_out": "ユーザーサインアウト",
+				"sign_in": "ユーザーサインイン",
+				"failed_sign_in": "ユーザーがサインインに失敗"
+			},
+			"admin_user": {
+				"sign_out": "管理者サインアウト",
+				"sign_in": "管理者サインイン",
+				"failed_sign_in": "管理者がサインインに失敗"
+			},
+			"notifications": {
+				"balance_correction_created": "Balance correction created",
+				"cashout_requested": "Cashout requested",
+				"deposit_made": "Deposit made",
+				"cashout_made": "Cashout made",
+				"auto_cashout_made": "Auto-cashout made",
+				"cashout_rejected": "Cashout request rejected",
+				"deposit_rejected": "Deposit rejected",
+				"user_upload_document": "User Uploaded Document",
+				"payment_created_by_admin": "Admin Created Payment",
+				"user_disabled": "User Disabled",
+				"contact": "User Requested Support",
+				"admin_comment_created": "Admin Left Comment"
+			},
+			"affiliate": {
+				"redirect": "新しいアフィリエイトユーザーが訪問"
+			},
+			"bitcoin_addresses_uploaded": "ビットコインアドレスをアップロード"
+		},
+		"bonuses": {
+			"names": {
+				"no_deposit": "入金無",
+				"first_deposit": "初回入金",
+				"nth_deposit": "N回目の入金",
+				"deposit_system": "決済システムボーナス",
+				"coupon": "クーポン"
+			},
+			"issuance_policy": {
+				"can-issue": "自動発行ボーナス",
+				"can-refuse": "プレイヤーはプレーの前にボーナスをキャンセルできます",
+				"can-cancel": "プレイヤーはボーナスをキャンセルできます"
+			}
+		},
+		"retention_emails": {
+			"names": {
+				"welcome": "ようこそ",
+				"welcome_promo": "ウェルカムプロモーション",
+				"no_deposit": "入金無",
+				"nth_deposit": "N回目の入金無"
+			}
+		},
+		"payment_systems": {
+			"names": {
+				"qiwi": "Qiwi",
+				"skrill": "Skrill",
+				"interkassa": "Interkassa",
+				"paysafecard": "paysafecard",
+				"ukash": "Ukash",
+				"neteller": "ネッテラー",
+				"card_pay": "CardPay",
+				"b_cash": "B-Cash",
+				"wirecard": "Wirecard",
+				"coupon": "クーポン",
+				"cashbox": "キャッシュボックス",
+				"cep_bank": "Cep Bank",
+				"bank_transfer": "Bank Transfer",
+				"cubits": "Cubits",
+				"lavapay": "Lavapay",
+				"bitcoin_payment": "ビットコイン",
+				"ripple_payment": "Ripple"
+			},
+			"payer": {
+				"cashout_email_subject": "カジノキャシュアウト",
+				"cashout_email_note": "実行されたキャッシュアウト"
+			},
+			"system_name": "%{子} via %{親}",
+			"all_locked": "安全のために、入金時に利用した決済方法を使う場合のみ、払戻しが可能となります。質問があればサポートへご連絡下さい。",
+			"child_systems": {
+				"visa": "VISA",
+				"mastercard": "MasterCard",
+				"online_bank_transfer": "オンライン銀行送金",
+				"ideal": "iDEAL",
+				"nordea_solo": "Nordea Solo",
+				"bancontact_mister_cash": "Bancontact/Mister Cash",
+				"cards": "Credit Cards",
+				"ccard": "クレジットカード",
+				"click_to_pay": "CLICK2PAY",
+				"ekonto": "eKonto",
+				"eps": "EPS e-payment",
+				"giropay": "giropay",
+				"installment": "Installment by payolution",
+				"invoice": "Invoice by payolution",
+				"moneta": "moneta.ru",
+				"mpass": "mpass",
+				"przelewy": "Przelewy24",
+				"paypal": "PayPal",
+				"paybox": "Paybox",
+				"poli": "POLi payments",
+				"paysafecard": "paysafecard",
+				"quick": "Quick",
+				"sepa": "SEPA Direct Debit",
+				"skrill_direct": "Skrill Direct",
+				"skrill_wallet": "Skrill Digital Wallet",
+				"sofort": "SOFORT Banking",
+				"tatrapay": "TatraPay",
+				"trustly": "Trustly",
+				"bank_transfer": "Bank Transfer",
+				"lavapay_balance": "LavaPay Balance",
+				"cheque": "Cheque",
+				"perfect": "Perfect Money",
+				"liqpay": "LiqPay",
+				"webmoney": "WebMoney",
+				"yandex": "Yandex Money",
+				"okpay": "OKPAY",
+				"qiwi": "Qiwi",
+				"mailru": "money@mail.ru",
+				"lavapay_bitcoin": "Bitcoin",
+				"egopay": "EgoPay",
+				"lavapay_litecoin": "LiteCoin",
+				"paxum": "Paxum",
+				"ecoin": "eCoin",
+				"btce": "BTC-E",
+				"privatbank": "PrivatBank.ua",
+				"nsmep": "NSMEP",
+				"telemoney": "TeleMoney",
+				"ukrterminal": "UkrTerminal",
+				"rusterminal": "RusTerminal",
+				"rusbank": "Rusbank",
+				"mobileretails": "MobileRetails",
+				"unistream": "Unistream",
+				"ruspost": "RusPost",
+				"contact": "Contact",
+				"anelik": "Anelik",
+				"leader": "Leader",
+				"mts": "MTS",
+				"megafon": "Megafon",
+				"beeline": "Beeline",
+				"alfaclick": "AlfaClick",
+				"fortumo": "Fortumo",
+				"cashu": "CashU",
+				"privat_terminal": "Privat Terminal",
+				"kazakhstan_terminal": "Kazakhstan Terminal",
+				"tjs_terminal": "Tjs Terminal",
+				"moldova_terminal": "Moldova Terminal",
+				"georgia_terminal": "Georgia Terminal",
+				"euroset": "Euroset",
+				"kievstar": "KievStar",
+				"promsvyazbank": "PromSvyazBank",
+				"easypay": "EasyPay",
+				"bpay": "BPay",
+				"pravex": "Pravex Bank",
+				"ukrsib": "UkrSib Bank",
+				"liberty": "Liberty Bank",
+				"faktura": "Faktura.ru",
+				"privatbank_cashin": "Privatbank Cash-in",
+				"sberbank_cashin": "Sberbank Cash-in",
+				"qiwi_visa": "Visa Qiwi",
+				"qiwi_mastercard": "Mastercard Qiwi",
+				"qiwi_maestro": "Maestro Qiwi",
+				"cis_cards": "Bank Cards",
+				"yandex_personal": "Yandex Personal",
+				"local_bank_transfer": "Local Bank Transfer",
+				"w1": "W1",
+				"wallet_one": "Wallet One",
+				"russian_standard": "Russian Standard Bank"
+			}
+		},
+		"commissions": {
+			"strategies": {
+				"registration": "CPA",
+				"percent": "レベニューシェア"
+			}
+		},
+		"games": {
+			"unknown_action": "不明なアクションです",
+			"unavailable_action": "利用できないアクションです",
+			"roulette": {
+				"notice": {
+					"bet_is_not_valid": "ベットが有効ではありません",
+					"bet_type_not_found": "ベットタイプが見つかりません",
+					"unknown_bet": "不明なベットです",
+					"unknown_value": "不明な選択です",
+					"unknown_column": "不明なコラムが選択されました",
+					"unknown_dozen": "不明なダースが選択されました"
+				}
+			}
+		},
+		"provable_fair": {
+			"provable_fair": "公平を証明",
+			"provability": "証明可能性",
+			"not_available": "Provability widget available at game page",
+			"verify": "検証",
+			"loading": "Randomizing ...",
+			"is_unavailable": "Provable fair is not available for this game.",
+			"next_game": "次のゲーム",
+			"last_game": "Last game",
+			"reel_number": "Reel {{index}}",
+			"fields": {
+				"hash": "Hash (Result + Secret)",
+				"client_seed": "Client seed",
+				"secret": "Result + Secret",
+				"result": "Final result"
+			},
+			"hint": {
+				"common": "Enter client Seed (0-{{max_seed}})",
+				"roulette": "Push the ball further:",
+				"card": "Cut the deck:",
+				"poker": "Cut the deck:",
+				"slots": "Spin the reels a bit more:"
+			},
+			"verification": {
+				"success": {
+					"title": "Successful verification",
+					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
+				},
+				"failure": {
+					"title": "Verification failed",
+					"body": "Please contact our support."
+				}
+			}
+		},
+		"bitcoin": {
+			"update_balance": "バランスデータを最新にする",
+			"current_balance": "通貨バランス {{balance}}.",
+			"send_text": "いくらでも{{currency}} （手数料を加えて）ビットコインを送る",
+			"cant_attach_address": "申し訳ございません。ビットコインで問題が発生しています。管理者は問題を確認しています。暫くしてから再びお試し下さい。",
+			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
+			"xrp": {
+				"send_text": "Send any amount of {{currency}} to",
+				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
+			}
+		}
+	},
+	"frontend": {
+		"placeholders": {
+			"email": "あなたのメールアドレスを入力して下さい",
+			"password": "パスワードを入力して下さい",
+			"password_confirmation": "パスワードを確認して下さい",
+			"current_password": "現在のパスワードを入力してください"
+		},
+		"age_acceptance": "Please confirm that you are over {{age}} years old",
+		"choose_game": "どのゲームを選択してください",
+		"games_played": "ゲームが演奏された",
+		"or": "または",
+		"please_or": "Please {{first}} or {{second}}",
+		"mbtc_total_winnings": "mBTCトータルウィン",
+		"hi_guest": "こんにちは、ゲスト！",
+		"hi_user": "こんにちは、{{nickname}}",
+		"password_difficulty": "パスワード強度",
+		"password_difficulties": {
+			"very_weak": "脆弱",
+			"weak": "弱い",
+			"so_so": "無難",
+			"strong": "安全",
+			"great": "非常に安全"
+		},
+		"playing": {
+			"playing_fun": "Playing for {{currency}}",
+			"playing_real": "Playing with {{currency}}",
+			"play_fun": "Play for {{currency}}",
+			"play_real": "Play with {{currency}}"
+		},
+		"links": {
+			"support": "援助",
+			"help": "ヘルプ",
+			"how_to_start": "始め方",
+			"casino_promotions": "カジノプロモーション",
+			"bonuses": "ボーナス",
+			"affiliate_program": "アフィリエイトプログラム",
+			"terms_and_conditions": "利用規約",
+			"back": "戻る",
+			"create_ticket": "チケットを作成",
+			"send_form": "フォームを送信",
+			"online_chat": "オンラインチャット",
+			"home": "ホーム",
+			"frontpage": "Frontpage",
+			"casino_games": "カジノゲーム",
+			"about_casino": "カジノについて",
+			"all_games": "全てのゲーム",
+			"load_more_games": "Load More Games",
+			"rules": "ゲームルール",
+			"autoregister": "自動登録",
+			"quick_register": "Quick Register",
+			"play_for_fun": "無料プレイ",
+			"demo": "Demo",
+			"play_for_real": "課金プレイ",
+			"play_for_bitcoin": "ビットコインでプレイ",
+			"free_play": "無料プレイ",
+			"real_play": "リアルプレイ",
+			"play_now": "今すぐプレイ",
+			"join_now": "すぐに参加",
+			"profile": "プロフィール",
+			"dice": "サイコロ",
+			"deposit": "入金",
+			"withdraw": "Withdraw",
+			"cashout": "出金",
+			"cashbox": "キャッシュボックス",
+			"sign_out": "サインアウト",
+			"sign_in": "サインイン",
+			"sign_up": "登録",
+			"register": "登録",
+			"login": "ログイン",
+			"logout": "Logout",
+			"start_playing": "Start Playing",
+			"forgot_password": "パスワードをお忘れですか？",
+			"didnt_receive_confirmation": "認証の指示が受取れませんでしたか？",
+			"didnt_receive_unlock": "ロック解除の指示を受取れませんでしたか？",
+			"affiliate_profiles": "アフィリエイトプロフィール",
+			"settings": "設定"
+		},
+		"captions": {
+			"affiliates": "Affiliates",
+			"help": "ヘルプ",
+			"games": "Games",
+			"quick_links": "クイックリンク",
+			"languages": "言語",
+			"info": "Info",
+			"information": "情報",
+			"promotion": "プロモーション",
+			"follow_us": "フォロー"
+		},
+		"actions": {
+			"go_bang": "ゴー！",
+			"deposit_now": "Deposit Now",
+			"sign_up_now": "Sign Up Now"
+		},
+		"games_bet_playthrough_percent": "ボーナス換金条件があるゲーム",
+		"contact": {
+			"title": "問合せフォーム",
+			"hint": "以下の情報を入力して下さい。すべての項目への入力が必要です。",
+			"labels": {
+				"email": "Eメール",
+				"content": "メッセージ",
+				"send": "送る"
+			}
+		},
+		"no_flash": {
+			"flash_isnt_available": "アドビ Flash Playerが利用できません",
+			"flash_usage": "ユーザーの皆様へ、当カジノは高解像度のゲームをお楽しみいただくため、アドビ社のFlashを使用しています。",
+			"desktop_section": "PCをご利用の方",
+			"desktop_section_link": "Adobe Flash Playerを下記のリンクからダウンロードして下さい",
+			"mobile_section": "携帯端末サポート",
+			"mobile_section_text": "アドビ社のFlashは携帯端末の既存ブラウザと完全な互換性を持っていません。当サイトではサードパーティーが提供するアプリでアクセスして頂くことを推奨しています。 特に%s と %sをお薦めします。"
+		},
+		"devise": {
+			"resend_confirmation": "再度認証をして下さい",
+			"send_reset_instructions": "パスワードをリセット",
+			"send_unlock_instructions": "ロック解除の指示を再送して下さい",
+			"change_your_password": "パスワードを変更します",
+			"change_my_password": "パスワードを変更します",
+			"new_password": "新しいパスワード",
+			"confirm_new_password": "新しいパスワードを確認して下さい",
+			"password_hint": " (変更したくない場合は空白のままにしておいて下さい)",
+			"current_password_hint": "（パスワードの変更を確認するために現在のパスワードが必要です）",
+			"unlock_hint": "アカウントがロックされている場合は、メールアドレスをお知らせ下さい。ロック解除方法をメールでお知らせします。",
+			"resend_hint": "メールアドレスを教えてもらえれば、パスワードリセット方法をメールでお知らせします",
+			"contact_us_hint_html": "引き続きサポートが必要でしたら、こちらへご連絡下さい。{{page}} ",
+			"custom": {
+				"not_valid_email": "Not a valid email",
+				"too_short": "Too short",
+				"not_match": "Not match",
+				"min_characters": "Minimum 1 character"
+			}
+		},
+		"payment_system_redirect": {
+			"notification": "You will be redirected to {{system}} side shortly to finish your transaction",
+			"text": "支払いを続ける場合は下記のボタンをクリックして下さい。",
+			"button": "支払続行"
+		},
+		"social": {
+			"follow_us": "フォロー"
+		},
+		"filters": {
+			"find_your_game": "ゲームを探す"
+		},
+		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
+	},
+	"winners": {
+		"winners": "ウィナー",
+		"latest_winners": "最新の勝者",
+		"top_winners": "Top Winners",
+		"amount_in_game": "%{amount} in %{game}",
+		"parts": {
+			"just_won": "just won",
+			"in": "in"
+		}
+	},
+	"restriction": {
+		"default": "あなたの国で制限されているとこのページが現れます",
+		"game_restricted_in_country": "あなたの国で制限されていると、このゲームは現れます",
+		"registration_restricted_in_country": "登録があなたの国で制限されているとこのページが現れます"
+	},
+	"documents": {
+		"removed_successfully": "Document was successfully removed",
+		"document": {
+			"edit_description": "説明を編集",
+			"approved": "承認",
+			"not_approved": "未承認"
+		},
+		"index": {
+			"upload_document": "ドキュメントアップロード"
+		}
+	},
+	"sportsbook": {
+		"sports": "スポーツ",
+		"live_betting": "ライブベッティング",
+		"sports_bets": "Sports Bets"
+	},
+	"formtastic": {
+		"labels": {
+			"card_holder": "カードホルダー",
+			"credit_card_number": "クレジットカード番号",
+			"cvc": "クレジットカード・セキュリティコード",
+			"expiration_date": "有効期限",
+			"amount": "Amount",
+			"recipient": "Recipient",
+			"document": {
+				"attachment": "Attachment",
+				"description": "Description"
+			},
+			"btc_amount": "Amount in BTC",
+			"wallet_address": "Wallet Address"
+		},
+		"actions": {
+			"game": {
+				"create": "ゲーム作成",
+				"update": "ゲーム更新"
+			},
+			"player": {
+				"create": "プレイヤーを作成",
+				"update": "プレイヤーを更新"
+			},
+			"bonus": {
+				"create": "ボーナス作成",
+				"update": "ボーナス更新"
+			},
+			"bonus_issue": {
+				"create": "ボーナス発行作成",
+				"update": "ボーナス発行更新"
+			},
+			"admin_user": {
+				"create": "管理ユーザーを作成",
+				"update": "管理ユーザー更新"
+			},
+			"payment_system": {
+				"create": "ペイメントシステム作成",
+				"update": "ペイメントシステム更新"
+			},
+			"document": {
+				"submit": "Submit document"
+			},
+			"create": "作成"
+		},
+		"hints": {
+			"payment_system": {
+				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+			},
+			"profile": {
+				"currency": "登録完了後、いつでも利用通貨を変更することが出来ます"
+			},
+			"btc_amount": "Amount may differ due to exchange rate changes"
+		}
+	},
+	"bonus_issues": {
+		"title": "%{bonus} Issue",
+		"stages": {
+			"wait": "待機",
+			"handle_bets": "アクティブ",
+			"canceled": "キャンセル",
+			"expired": "Expired",
+			"wager_done": "賭けを実行",
+			"lost": "負け",
+			"pending": "Pending"
+		}
+	},
+	"freespin_issues": {
+		"title": "%{bonus} Issue",
+		"games": "Games",
+		"activate": "Activate",
+		"stages": {
+			"issued": "Issued",
+			"activated": "Activated",
+			"canceled": "Canceled",
+			"expired": "Expired",
+			"finished": "Played",
+			"pending": "Pending"
+		},
+		"mailer": {
+			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
+			"activation_prompt_html": "To activate freespins go to {{link}}."
+		}
+	},
+	"games": {
+		"title": "カジノゲーム",
+		"categories": {
+			"all": "All Games",
+			"card": "カードゲーム",
+			"poker": "ポーカー",
+			"table": "Table Games",
+			"roulette": "ルーレット",
+			"slots": "スロット",
+			"video_poker": "ビデオポーカー",
+			"blackjack": "Blackjack",
+			"bingo": "Bingo",
+			"live": "Live",
+			"fruit": "Fruit Slots",
+			"theme": "Theme Slots",
+			"casual": "Casual",
+			"lottery": "Lottery",
+			"keno": "Keno",
+			"progressive": "Progressive",
+			"stat": {
+				"most_popular": "最も人気のある",
+				"new": "新",
+				"manual": "フィーチャー",
+				"last_played": "前回のプレイ"
+			},
+			"device": {
+				"desktop": "デスクトップ",
+				"mobile": "モバイル"
+			}
+		},
+		"providers": {
+			"all": "All Providers",
+			"softswiss": "SoftSwiss",
+			"amatic": "Amatic",
+			"betsoftgaming": "BetSoft Gaming",
+			"casinotechnology": "Casino Technology",
+			"quickfire": "Quickfire",
+			"ezugi": "Ezugi"
+		},
+		"roulette": {
+			"bets": {
+				"calc_by_max_bet": "マックスベットで計算",
+				"inside_bets": "インサイドベット",
+				"outside_bets": "アウトサイドベット",
+				"straight_up": "ストレートアップ",
+				"split": "スプリット",
+				"street": "ストリート",
+				"trio": "トリオ",
+				"basket": "バスケット",
+				"corner": "コーナー",
+				"first_four": "ファーストフォー",
+				"first_five": "ファーストファイブ",
+				"line": "ライン",
+				"column": "カラム",
+				"dozen": "ダース",
+				"red": "赤",
+				"black": "黒",
+				"odd": "奇数",
+				"even": "偶数",
+				"low": "ロー",
+				"high": "ハイ"
+			}
+		},
+		"titles": {
+			"baccarat": {
+				"classic": "Baccarat"
+			},
+			"blackjack": {
+				"double_exposure": "ダブルエクスポージャー",
+				"european": "ヨーロピアンブラックジャック",
+				"multihand": "ブラックジャック",
+				"multihand_pro": "ブラックジャック・プロフェッショナル",
+				"pontoon": "パントーン",
+				"surrender": "ブラックジャックサレンダー"
+			},
+			"hi_lo": {
+				"switch": "ハイロースイッチ"
+			},
+			"casual": {
+				"horse_racing": "Horse Racing",
+				"minesweeper": "Minesweeper",
+				"heads_tails": "Heads and Tails",
+				"scratch_dice": "Scratch Dice"
+			},
+			"poker": {
+				"caribbean": "カリビアンポーカー",
+				"casino_holdem": "カジノホールデム",
+				"let_it_ride": "レットイットライド",
+				"oasis": "オアシスポーカー",
+				"texas_holdem": "テキサスホールデム",
+				"trey_poker": "トレイポーカー"
+			},
+			"roulette": {
+				"american": "アメリカンルーレット",
+				"european": "ヨーロピアンルーレット",
+				"french": "フレンチルーレット"
+			},
+			"slots": {
+				"aztec_magic": "アステカマジック",
+				"book_of_pyramids": "ブックオブピラミッド",
+				"scroll_of_adventure": "スコールオブアドベンチャー",
+				"brave_viking": "ブレーブバイキング",
+				"cherry_fiesta": "チェリーフェスタ",
+				"crazy_starter": "クレージースターター",
+				"desert_treasure": "デザートトレジャー",
+				"hawaii_cocktails": "ハワイアンカクテル",
+				"horse_slot": "ホーススロット",
+				"lucky_blue": "ラッキーブルー",
+				"lucky_lady_clover": "ラッキーレディクローバー",
+				"lucky_sweets": "ラッキースイーツ",
+				"platinum_lightning": "プラチナムライトニング",
+				"princess_of_sky": "プリンセスオブスカイ",
+				"princess_royal": "プリンセス・ロイヤル",
+				"sport_slot": "スポーツスロット",
+				"three_lines_slot": "ガールスロット",
+				"west_town": "ウエストタウン"
+			},
+			"video_poker": {
+				"jacks_or_better": "ジャックオアベター",
+				"wild_texas": "ワイルドテキサス",
+				"video_poker": "ジャパンポーカー"
+			}
+		}
+	},
+	"users": {
+		"statuses": {
+			"enabled": "有効",
+			"disabled": "無効",
+			"not_confirmed": "未確認",
+			"locked": "ロック済",
+			"normal": "アクティブ",
+			"manually_suspected": "Manually marked as suspicious"
+		}
+	},
+	"affiliate_bills": {
+		"billed_from": "からの請求",
+		"billed_to": "への請求",
+		"paid": "支払済",
+		"submit": "許可"
+	},
+	"affiliate_links": {
+		"add": "Add Link",
+		"name": {
+			"hint": "Identification for your private use only"
+		},
+		"code": {
+			"hint": "Unique code for affiliate link"
+		}
+	},
+	"affiliate_profiles": {
+		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"commission": "コミッション",
+		"registration_settings": {
+			"reward": "CPA報酬",
+			"conditions": "状態",
+			"rule": "招待ユーザーの賭金 > {{総額}} {{通貨}}"
+		},
+		"percent_settings": {
+			"one": "%{percent}%",
+			"default": "%{percent}% if generated greater than %{limit} %{currency}",
+			"rule": "%{percent}% if generated less than %{limit} %{currency}",
+			"intermediate_rule": "%{percent}% if generated between %{limits} %{currency}"
+		},
+		"no_default_commissions": "コミッションは付与されていません。サポートへ連絡して下さい。",
+		"active": "アクティブ",
+		"not_active": "非アクティブ",
+		"affiliate_profiles": "アフィリエイトプロフィール",
+		"statistics": {
+			"statistics": "統計",
+			"year": "年",
+			"month": "月",
+			"week": "週",
+			"day": "日",
+			"since": "次の日時から",
+			"to": "To",
+			"submit": "許可",
+			"grouped_by": "グループ",
+			"deposits_count": "入金",
+			"redirects_count": "訪れる",
+			"registered_users_count": "入金と同時にユーザー登録",
+			"date": "日付",
+			"invited_users_income": "NGR（純ゲーミング利益）",
+			"ggr": "GGR (gross gaming revenue)",
+			"total": "Period Total",
+			"link_name": "Link Name"
+		},
+		"affiliate_profile": {
+			"code": "コード",
+			"url": "Url",
+			"strategy": "支払スキーム"
+		},
+		"banners": {
+			"banners": "バナー",
+			"sizes": "Sizes",
+			"types_title": "Types",
+			"types": {
+				"image": "Image",
+				"html": "HTML",
+				"swf": "Flash"
+			}
+		},
+		"form": {
+			"name_hint": "個人使用に限ることの証明"
+		},
+		"add": "Create affiliate profile",
+		"add_link": "Create affiliate profile link",
+		"strategy": "支払スキーム",
+		"bills": {
+			"bills": "請求",
+			"billed_at": "請求",
+			"amount": "総計",
+			"paid": "支払済",
+			"not_billed_for_date": "支払いのない日付"
+		}
+	},
+	"games_history": {
+		"title": "ゲーム",
+		"from": "から",
+		"result": "結果",
+		"win": "ウィン",
+		"lose": "負け",
+		"game_name": "ゲーム",
+		"bet": "ベット"
+	},
+	"bonuses": {
+		"history": {
+			"title": "ボーナス",
+			"wager": "賭け",
+			"valid_until": "まで有効",
+			"status": "ステータス",
+			"from": "から"
+		},
+		"promo_form": {
+			"title": "プロモーションコード追加",
+			"sub_title": "ボーナスを受取る"
+		},
+		"bonus_settings": "ボーナス設定",
+		"refuse": "どの様なボーナスも欲しくないです"
+	},
+	"freespin_bonuses": {
+		"history": {
+			"title": "Freespins"
+		},
+		"gift": "Gift"
+	},
+	"profiles": {
+		"menu": {
+			"balance": "バランス",
+			"history": "履歴",
+			"bonuses": "ボーナス",
+			"affiliate": "アフィリエイト",
+			"profile": "プロフィール情報",
+			"documents": "Documents"
+		},
+		"info": {
+			"personal": "個人"
+		},
+		"index": {
+			"my_account": "My Account",
+			"my_bets": "My Bets",
+			"transaction": "Transaction",
+			"welcome": "ようこそ",
+			"balance": "あなたのバランス",
+			"account_balance": "アカウントバランス"
+		},
+		"show": {
+			"edit_profile": "プロフィールの編集",
+			"edit_settings": "設定の変更",
+			"attach_documents": "添付文書",
+			"change_credentials": "Change password",
+			"set_email_and_password": "Eメールとパスワードの設定",
+			"create_cashout_request": "出金",
+			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
+			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
+			"cashout_request_created": "払戻し依頼を受付し承認されました。最短で手続きを行いますのでしばらくお待ち下さい。",
+			"cashout_successfully": "出金依頼が作成されました",
+			"cashout_technically_impossible": "We're sorry, but some errors occurred. We're working to fix them in an emergency mode. Please contact support if you have any questions.",
+			"profile_info": {
+				"title": "プロフィール情報"
+			},
+			"autoregister_info": {
+				"title": "現在、あなたはパーソナルログインURLからログインすることが可能です"
+			},
+			"accounts": {
+				"title": "アカウント",
+				"available_to_cashout": "払戻可能額",
+				"add_currency": "通貨追加"
+			},
+			"bonuses": {
+				"title": "ボーナス",
+				"no_bonuses": "現在、ボーナスを保有していません",
+				"cancel_bonus": "喪失ボーナス",
+				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
+				"bonus_canceled": "ボーナスキャンセル",
+				"bonus_not_canceled": "このボーナスはキャンセルできません"
+			},
+			"coupons": {
+				"activated": "クーポン \"{{code}}\" が利用可能になりました",
+				"not_activated": "このクーポン \"{{code}}\"は無効です。再度試すかサポートへ連絡して下さい",
+				"already_activated": "クーポン \"{{code}}\"は有効になっています"
+			},
+			"payments": {
+				"title": "払戻し"
+			},
+			"not_finished_games": {
+				"title": "終了していないゲーム",
+				"hint": "これらのゲームは続行もキャンセルも可能です。キャンセルの場合負けとして結果に反映されます",
+				"game_canceled": "ゲームがキャンセルされました"
+			},
+			"bets": {
+				"title": "ベット",
+				"all_bets": "すべてのベット"
+			},
+			"cashbox": "キャッシュボックス",
+			"payments_history": "トランザクション履歴",
+			"bets_history": "ベット履歴",
+			"bonuses_history": "ボーナス履歴",
+			"freespin_bonuses_history": "Freespins History",
+			"deposit_to_address_hint": "あなたのアカウントに資金を供給するためにこのアドレスに入金",
+			"freespin_bonuses": {
+				"bonus_canceled": "Bonus canceled",
+				"bonus_not_canceled": "Failed to cancel bonus",
+				"bonus_activated": "Bonus was activated",
+				"bonus_not_activated": "Bonus was not activated"
+			}
+		},
+		"edit": {
+			"title": "プロフィール編集",
+			"info_updated": "アップデートされた情報",
+			"not_saved": "変更が保存されていません",
+			"settings_section_updated": "正しくアップデートされた項目",
+			"valid_data_warning": "Please enter valid contact details in the form below. Make sure it is accurate before saving."
+		}
+	},
+	"payments": {
+		"actions": {
+			"deposit": "入金",
+			"cashout": "出金",
+			"gift": "ギフト",
+			"chargeback": "チャージバック",
+			"affiliate_payment": "アフィリエイト報酬"
+		},
+		"statuses": {
+			"success": "受領済",
+			"failure": "削除",
+			"pending": "保留中"
+		},
+		"canceled_by_user": "キャンセルされたトランザクション",
+		"wait_for_confirmation": "払戻しはまもなく確認されます",
+		"not_performed": "Payment was not performed",
+		"confirmed": "確認済の払戻し",
+		"canceled": "未確認の払戻し",
+		"make_deposit": "デポジットする",
+		"make_cashout": "キャッシュアウトをリクエスト",
+		"confirm_address": "Confirm address",
+		"bonus_code_show": "I have a Bonus Code",
+		"bonus_code_hide": "Hide Bonus Code",
+		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
+		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
+		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+		"invalid_profile_message": "プロフィール欄の必要箇所を全て埋めると、払戻しが可能となります",
+		"try_again": "接続の問題が発生し処理ができません。問題が解決されない場合はサポートまでご連絡下さい",
+		"select_currency": "収支を見る通貨を選択",
+		"select_currency_hint": {
+			"deposit": "自分の収支をトップに置きたい",
+			"cashout": "払戻しをしたい"
+		},
+		"select_payment_method": "払戻し方法選択",
+		"current_balance": {
+			"deposit": "最新の収支: {{money}}.",
+			"cashout": "払戻可能金額は: {{money}}です. こちらのページ {{balance_link}}を参照して詳細を確認して下さい。"
+		},
+		"payment_methods": {
+			"empty": "この通貨は利用可能は決済方法がありません",
+			"pay_with_cubits": "Pay with Cubits"
+		},
+		"limits": {
+			"currency": "払戻し {{currency}}",
+			"min": "ミニマム{{min}}",
+			"max": "マックス{{max}}",
+			"fee": "fee {{fee}}"
+		},
+		"processing_time": {
+			"instantly": "Instantly",
+			"range": "%{min}-%{max} banking days"
+		}
+	},
+	"security_check": {
+		"user_is_suspicious": "ユーザーが疑問を持っている",
+		"user_not_suspicious": "ユーザーが疑問を持っている",
+		"user_has_suspicious_games": "ユーザーがゲームに疑問を持っている",
+		"cashout_amount": "総額が上限を超えています",
+		"cashout_wins": "総額がユーザーリミットを超えています",
+		"casino_cashout": "総額がカジノのデイリーリミットを超えています",
+		"crypto_address_confirmed": "Address was not used before",
+		"manual": {
+			"title": "User was manually marked as suspicious"
+		},
+		"chargeback": {
+			"title": "User made chargeback"
+		},
+		"duplicate": {
+			"title": "User has duplicates",
+			"reason_html": "User duplicates {{user}}"
+		},
+		"balance_sum": {
+			"title": "ゲーム統計とトランザクションの収支が一致していません",
+			"text": "プレイヤーのバランスが期待されたバランスと合致しません"
+		},
+		"balance_transaction": {
+			"title": "最新24時間の勝ちが大きすぎます",
+			"reason_html": "Suspicious wins in {{table}} during {{period}} by {{player}}"
+		},
+		"wager_done": {
+			"title": "User done wager bonus requirement"
+		},
+		"cubits_payment_difference": {
+			"title": "Cumulative cubits exchange rate losses are too big"
+		}
+	},
+	"notification": {
+		"contact_form": {
+			"sender_notice": "メッセージが正常に送られました",
+			"mail_subject": "コンタクトフォームからメッセージを受け取りました"
+		},
+		"payment_confirmation": {
+			"mail_subject": "払戻し確認コード"
+		},
+		"daily_stats": {
+			"mail_subject": "日別 {{currency}} 集計{{date}}"
+		},
+		"report": {
+			"day_mail_subject": "日別統計情報",
+			"week_mail_subject": "週間統計情報",
+			"day_mail_title": "日別 {{currency}} 統計 for {{period}}",
+			"week_mail_title": "週間統計 {{currency}}  {{period}}から",
+			"fields": {
+				"net_revenue": "ゲーム純利益 (NGR)",
+				"gross_win": "総勝利",
+				"bets": "ベット合計",
+				"wins": "勝ち合計",
+				"payout": "払戻し (in %)",
+				"game_rounds": "ゲームラウンド",
+				"new_registrations": "入金及び新規登録",
+				"players_made_deposits": "プレイヤーがデポジットしました。",
+				"total_users": "ユーザー合計",
+				"deposits_sum": "デポジット合計",
+				"deposits_avg": "入金平均",
+				"cashouts_sum": "キャッシュアウト合計",
+				"cashouts_avg": "出金平均"
+			},
+			"previous": "プレビュー"
+		}
+	},
+	"user_mailer": {
+		"auth": {
+			"welcome": "ようこそ {{name}}!",
+			"hello": "こんにちは {{name}}!",
+			"confirmation": {
+				"you_can_confirm_email_by_pressing_next_link": "下記のリンクからあなたのアカウントE-mailを確認することができます:",
+				"confirm_my_account": "アカウント情報を確認"
+			},
+			"reset_password": {
+				"change_my_password": "パスワードを変更します",
+				"link_to_change_password_are_requested": "パスワード変更のリクエストがありました、下記のリンクから実行できます。",
+				"you_can_ignore_this_mail": "リクエストしていない場合はこのメールを無視して下さい。",
+				"your_password_didnt_changed_yet": "上記のリンクから新しいパスワードが作成されるまで、パスワードは変更されません。"
+			},
+			"unlock": {
+				"unlock_my_account": "アカウントのロックを解除",
+				"your_account_has_been_locked": "複数回サインインに失敗したため、あなたのアカウントはロックされています。",
+				"click_to_unlock": "アカウントを有効にするには下記のリンクをクリックして下さい:"
+			}
+		},
+		"deposit": {
+			"deposit_made": "入金を受付けました"
+		},
+		"cashout": {
+			"cashout_approved": "キャッシュアウトのリクエストが承認されました"
+		},
+		"not_enough_money_for_cashout": {
+			"subject": "出金のためのバランスが不十分な口座",
+			"body": "出金の条件が満たされていないため出金できません。資金状況を確認し適切な出金手続きを行って下さい。"
+		},
+		"address_confirmation_required": {
+			"subject": "Cashout address confirmation required"
+		}
+	},
+	"activemodel": {
+		"errors": {
+			"models": {
+				"affiliate_forms/assign_commission": {
+					"attributes": {
+						"from_date": {
+							"must_be_in_future": "must be in future"
+						},
+						"to_date": {
+							"must_be_in_future": "must be in future",
+							"must_be_less_then_from": "must be less then From"
+						}
+					}
+				},
+				"payment_system/cashout_form/wirecard": {
+					"attributes": {
+						"credit_card_number": {
+							"invalid": "is not a valid credit card number"
+						}
+					}
+				},
+				"casino_cash_balance/balance_options": {
+					"attributes": {
+						"base": {
+							"rules_error": "You have errors in rules"
+						}
+					}
+				},
+				"commissions/registration_settings": {
+					"attributes": {
+						"base": {
+							"rules_error": "You have errors in rules"
+						}
+					}
+				},
+				"commissions/registration_settings_rule": {
+					"attributes": {
+						"base": {
+							"uniq": "should be unique"
+						}
+					}
+				}
+			}
+		},
+		"attributes": {
+			"payment_system/bank_transfer/access_data": {
+				"deposit_snippet_name": "Deposit Snippet Name",
+				"cashout_snippet_name": "Cashout Snippet Name"
+			},
+			"affiliate_forms/assign_commission": {
+				"from_date": "From",
+				"to_date": "To"
+			},
+			"newsletters_filter": {
+				"tag": "User tag",
+				"locale": "Locale",
+				"type": "タイプ",
+				"deposits_number_equals": "入金",
+				"last_deposit_at": "最後の入金",
+				"registered_at": "登録済み",
+				"payments_currency": "払戻し通貨"
+			}
+		}
+	},
+	"retention_mailer": {
+		"welcome": "ようこそ",
+		"no_deposit": "入金がありません",
+		"nth_deposit": "入金をお待ちしております",
+		"welcome_promo": "またのお越しをお待ちしております"
+	},
+	"jackpot": {
+		"jackpots": "Jackpots"
+	},
+	"game_categories": {
+		"favorite": "My favorites",
+		"add_to_favorites": "Add To Favorites",
+		"remove_from_favorites": "Remove From Favorites",
+		"favorites": {
+			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+		}
+	},
+	"betsoftgaming_api": {
+		"betsoftgaming": "Betsoftgaming"
+	},
+	"backend": {
+		"menu": {
+			"bitcoin_addresses": "ビットコインアドレス"
+		},
+		"bitcoin_wallets": {
+			"filters": {
+				"all": "全て",
+				"available": "利用可",
+				"occupied": "使用中"
+			}
+		},
+		"bitcoin": {
+			"add_new_addresses": "ファイルをアップロードするか、新しいアドレスをペースト",
+			"upload_new_addresses": "アドレス追加",
+			"cashout": "出金",
+			"deposit_to_wallet": "ウォレットへ入金",
+			"deposit_currency_to_wallet": "%{currency} 口座へ入金されました",
+			"enough_available_addresses_left": "利用可能な口座アドレスは残り{{count}}",
+			"not_enough_available_addresses_left": "利用可能なビットコインアドレスは残り１つです。アドレスを追加することができます{{link}}.利用可能なビットコインアドレスは残り{{count}} です。アドレスを追加することができます{{link}}.",
+			"here": "ここ",
+			"current_wallet_balance": "最新口座収支",
+			"total_balance": "Total: {{amount}}",
+			"available_balance": "Spendable: {{amount}}",
+			"transfer_to": "増加",
+			"increase_system_balance": "バランスが増加したので、ビットコインを次のアドレスヘ送って下さい:"
+		}
+	},
+	"bitcoin_wallets": {
+		"address_sources": {
+			"imported": "From pool",
+			"generated": "Generated",
+			"cubits_invoice": "Cubits Invoice",
+			"cubits_channel": "Cubits Channel"
+		}
+	},
+	"sidebar": {
+		"available_addresses": "利用可能なアドレス",
+		"wallet_balance": "ウォレットバランス"
+	},
+	"casinotechnology_api": {
+		"casinotechnology": "CasinoTechnology",
+		"timeout_message": "Game provider's server has not responded. Please retry later."
+	},
+	"ezugi_api": {
+		"ezugi": "Ezugi"
+	},
+	"quickfire_api": {
+		"quickfire": "QuickFire"
+	}
+}

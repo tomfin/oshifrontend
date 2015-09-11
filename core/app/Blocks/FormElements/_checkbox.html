@@ -1,0 +1,10 @@
+<label class="control-label" ng-init="value = data.localData.default">
+    <input  type="{{data.localData.type}}"
+            placeholder="{{placeholder | translate}}"
+            ng-model="value"
+            auto-fill-sync />
+
+    {{label | translate}}
+    <abbr  ng-show="data.required" title="required">*</abbr>
+</label>
+

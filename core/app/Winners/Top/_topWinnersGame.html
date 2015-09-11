@@ -1,0 +1,22 @@
+<div>
+    <ul class="winners no-main">
+        <span ng-controller="Game">
+            <li ng-repeat="game in games_winners | limitTo: 8">
+                <div class="winners__image">
+                    <a ng-href="{{openGame.modal(game, data.user.currency === false)}}" class="winner_item_img img_box">
+                        <img ng-src="{{game.game_table_image_path}}" alt="{{game.game_identifier}}" class="img">
+                    </a>
+                </div>
+                <div class="winners__content">
+                    <div class="winners__name"><span ng-bind="game.nickname"></span> just won </div>
+                    <div class="winners__money">
+                        <strong ng-bind="game.humanized_win"></strong> <span>in</span>
+                    </div>
+                    <div class="winners__game">
+                        <a ng-href="{{openGame.modal(game, data.user.currency === false)}}" ng-bind="game.game_title"></a>
+                    </div>
+                </div>
+            </li>
+        </span>
+    </ul>
+</div>

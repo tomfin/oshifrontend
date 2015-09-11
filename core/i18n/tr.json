@@ -1,0 +1,1939 @@
+{
+	"errors": {
+		"messages": {
+			"taken_in_past": "daha önce alındı!",
+			"equal_to_current_password": "geçerli paroladan farklı olmalıdır!",
+			"already_confirmed": "zaten onaylanmış, lütfen giriş yapmayı deneyin",
+			"confirmation_period_expired": "%{period} içinde onaylanması gerekmektedir, lütfen yeni bir tane isteyiniz.",
+			"expired": "süresi doldu, lütfen yeni bir tane isteyin",
+			"not_found": "bulunamadı",
+			"not_locked": "kilitlenmemiş",
+			"not_saved": "%{count} tane hata %{resource}'ın kaydını engelledi."
+		}
+	},
+	"devise": {
+		"invalid_captcha": "Girilen güvenlik kodu doğru değil!",
+		"password_expired": {
+			"submit": "Parolayı değiştir",
+			"updated": "Yeni parolanız kaydedildi.",
+			"change_required": "Parolanızın süresi doldu. Lütfen parolanızı yenileyin!",
+			"forgot_password_message": "Eğer parolanızı unutursanız 'Çıkış' ı tıklayınız ve parolanızı sıfırlayın."
+		},
+		"failure": {
+			"session_limited": "Giriş bilgileriniz başka bir tarayıcıda kullanıldı. Lütfen bu tarayıcıda devam etmek için tekrar giriş yapın.",
+			"expired": "Hesabınız uzun süre kullanılmadığından donduruldu. Lütfen site yöneticisiyle temasa geçin.",
+			"disabled": "Hesabınız devre dışı bırakıldı.",
+			"not_allowed_ip": "Bu kullanıcı için IP'nize izin verilmiyor.",
+			"already_authenticated": "Zaten giriş yaptınız.",
+			"inactive": "Hesabınız daha aktifleştirilmemiş.",
+			"invalid": "Yanlış e-posta adresi veya şifre girdiniz.",
+			"last_attempt": "Hesabınız askıya alınmadan önce son bir deneme hakkınız kaldı.",
+			"locked": "Hesabınız kilitlendi.",
+			"not_found_in_database": "Geçersiz eposta adresi veya şifre.",
+			"timeout": "Oturumunuz sonlandı. Devam etmek için, lütfen yeniden giriş yapınız.",
+			"unauthenticated": "Devam etmeden önce giriş yapmanız veya kayıt olmanız gereklidir.",
+			"unconfirmed": "Devam etmeden önce hesabınızı onaylamalısınız."
+		},
+		"confirmations": {
+			"confirmed": "Hesabınız başarıyla onaylandı. Şu an giriş yapmış bulunuyorsunuz.",
+			"send_instructions": "Birkaç dakika içinde hesabınızı nasıl onaylayacağınızı anlatan bir e-posta alacaksınız.",
+			"send_paranoid_instructions": "Eğer e-posta adresiniz sistemimizde kayıtlı ise, birkaç dakika içinde hesabınızı nasıl onaylayacağınızı anlatan bir e-posta alacaksınız."
+		},
+		"mailer": {
+			"confirmation_instructions": {
+				"subject": "Onaylama talimatları."
+			},
+			"reset_password_instructions": {
+				"subject": "Şifre sıfırlama talimatları."
+			},
+			"unlock_instructions": {
+				"subject": "Kilit açma talimatları."
+			}
+		},
+		"omniauth_callbacks": {
+			"failure": "Sizi %{kind} aracılığıyla tanıyamadık çünkü \"%{reason}\".",
+			"success": "%{kind} aracılığıyla onaylandınız."
+		},
+		"passwords": {
+			"no_token": "Bu sayfaya şifre sıfırlama e-postasındaki linke tıklayarak gelmeniz gerekmektedir. Linke tıklamak yerine kopyaladıysanız, hata yapmış olabilirsiniz. Lütfen şifre sıfırlama e-postasındaki linke tıklayın.",
+			"send_instructions": "Birkaç dakika içinde şifrenizi nasıl sıfırlayacağınız ile ilgili bir e-posta alacaksınız.",
+			"send_paranoid_instructions": "Eğer e-posta adresiniz sistemimizde kayıtlı ise, birkaç dakika içinde şifrenizi nasıl sıfırlayacağınız ile ilgili bir e-posta alacaksınız. ",
+			"updated": "Şifreniz başarıyla güncellendi. Şu an giriş yapmış bulunuyorsunuz.",
+			"updated_not_active": "Şifreniz başarıyla güncellendi."
+		},
+		"registrations": {
+			"destroyed": "Hesabınız başarıyla kapatıldı. En kısa sürede görüşmek üzere!",
+			"signed_up": "Başarıyla giriş yaptınız. Hoşgeldiniz!",
+			"signed_up_but_inactive": "Kaydınız başarıyla gerçekleşti. Fakat, hesabınız aktifleştirilmediği için siteye giriş yapamadınız.",
+			"signed_up_but_locked": "Kaydınız başarıyla gerçekleşti. Fakat, hesabınız kilitlendiği için siteye giriş yapamadınız.",
+			"signed_up_but_unconfirmed": "E-posta adresinize hesap aktifleştirme linkini içeren bir e-posta gönderdik. Hesabınızı aktifleştirmek için lütfen e-posta ile gönderdiğimiz linki açın.",
+			"update_needs_confirmation": "Hesabınızı başarıyla güncellediniz, fakat yeni e-posta adresinizin onaylanması gerek. Yeni e-posta hesabınızın onaylanması için lütfen size gönderdiğimiz e-postada bulunan onay linkini açın.",
+			"updated": "Hesabınız başarıyla güncellendi."
+		},
+		"sessions": {
+			"already_signed_out": null,
+			"signed_in": "Başarıyla giriş yapıldı.",
+			"signed_out": "Başarıyla çıkış yapıldı."
+		},
+		"unlocks": {
+			"send_instructions": "Birkaç dakika içerisinde hesap kilidi açma talimatlarını içeren bir e-posta alacaksınız.",
+			"send_paranoid_instructions": "Eğer hesabınız varsa, birkaç dakika içerisinde hesap kilidi açma talimatlarını içeren bir e-posta alacaksınız.",
+			"unlocked": "Hesabınızın kilidi başarıyla açıldı. Devam etmek için lütfen giriş yapın."
+		}
+	},
+	"activerecord": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "bu parçayı içeremez.",
+							"has_query_parameter": "Bir sorgu parametresi içeremez.",
+							"invalid_uri": "Geçerli bir URI olmalıdır.",
+							"relative_uri": "mutlak bir URI olmalıdır."
+						}
+					}
+				},
+				"user": {
+					"attributes": {
+						"password": {
+							"wrong_password": "invalid email address or password"
+						}
+					}
+				},
+				"profile": {
+					"attributes": {
+						"age": {
+							"greater_than_or_equal_to": "verification {{count}}+"
+						}
+					}
+				},
+				"payment": {
+					"not_enough_money": "Bakiyeniz yetersiz",
+					"not_enough_unlocked_money": "Some or all of your funds are locked due to an active bonus. Please meet your bonus wagering requirement to be able to cash out.",
+					"unresolved_cashout_request_presents": "Önceki Para Çıkışı talebiniz henüz işleme konulmadı. Yeni bir Para Çıkışı talebi için lütfen bir önceki talebinizin onaylanmasını bekleyiniz.",
+					"pending_deposit_presents": "Son yaptığınız para yatırma işlemi için onay beklemekteyiz",
+					"commission_is_greater_that_amount": "Komisyon , toplam değerden daha fazla",
+					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
+					"not_used_account": "Account you are going to cashout was not used before.",
+					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
+					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
+					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+				},
+				"commission_connection": {
+					"not_overlap": "Must not overlap with other connections with same commission level",
+					"future_from_time": "gelecekte mutlaka olmalı",
+					"greater_than_from_time": "bu tarihten büyük olmalı",
+					"strategies_equivalence": "Üye olunan profil ile aynı ödeme şekline sahip olmalı",
+					"greater_than_now": "şimdiden büyük olmalı"
+				},
+				"commission": {
+					"wrong_strategy_settings": "Ödeme şekli ayarlarınızda hatalar var"
+				},
+				"bonus_issue": {
+					"not_enough_to_lock": "kullanıcı bakiyesinden daha büyüktür"
+				},
+				"external_bet": {
+					"rollback_expired": "Rollback can not be accepted if 24 hours passed after result enrollment"
+				},
+				"notification/subscription": {
+					"invalid_types": "You can subscribe only to a notification"
+				}
+			}
+		},
+		"models": {
+			"account": "Hesaplar",
+			"admin_user": "Yöneticiler",
+			"affiliate_profile": "Partner Profil",
+			"bet": "Bahis",
+			"bonus": "Bonus",
+			"bonus_issue": "Bonus Yayınla",
+			"document": "Belgeler",
+			"event": "Etkinlikler",
+			"external_bet": "Dış BahisDış Bahisler",
+			"game": "Oyunlar",
+			"game_category": "Game Category",
+			"game_step": "Adım",
+			"game_table": "Oyun TablosuOyun Tabloları",
+			"payment": "Ödemeler",
+			"payment_system": "Ödeme Sistemleri",
+			"profile": "Profil",
+			"reports/base_collection/result_record": "Result",
+			"suspicion": "ŞüpheliŞüpheliler",
+			"user": "Kullanıcı",
+			"player": "Oyuncu",
+			"retention_email": "Retention email"
+		},
+		"attributes": {
+			"balance_correction": {
+				"action": "Action",
+				"amount": "Amount",
+				"account": "Account",
+				"comment": "Comment"
+			},
+			"game_category": {
+				"name": "Name",
+				"disabled": "Disabled",
+				"created_at": "Created at",
+				"games": "Games",
+				"position": "Position"
+			},
+			"notification": {
+				"type": "Type",
+				"user": "User",
+				"admin_user": "Admin",
+				"target": "Target",
+				"target_type": "Target type"
+			},
+			"affiliate_link": {
+				"name": "Name",
+				"code": "Code"
+			},
+			"affiliate_profile": {
+				"name": "Başlık",
+				"strategy": "Ödeme Şeması",
+				"no_debt": "No Neg. Carryover",
+				"links": "Links",
+				"active": "Active"
+			},
+			"account": {
+				"currency": "Para Birimi",
+				"amount": "Miktar",
+				"created_at": "Oluşturulma saati",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"active_admin/comment": {
+				"author": "Yazar",
+				"body": "Gövde",
+				"resource": "Kaynak"
+			},
+			"admin_user": {
+				"email": "E-posta",
+				"encrypted_password": "Şifrelenmiş parola",
+				"password": "Parola",
+				"password_confirmation": "Confirm password",
+				"current_password": "Şimdiki parola",
+				"remember_me": "Beni hatırla",
+				"reset_password_token": "Parola sıfırlama tokenı",
+				"reset_password_sent_at": "Parola sıfırlama gönderildi",
+				"remember_created_at": "Oluşturulma saati hatırlatma",
+				"sign_in_count": "Giriş sayısı",
+				"current_sign_in_at": "En son giriş tarihi",
+				"last_sign_in_at": "En son giriş",
+				"current_sign_in_ip": "En son girilen ip",
+				"last_sign_in_ip": "En son girilen ip",
+				"failed_attempts": "Başarısız girişler",
+				"unlock_token": "Token şifresini kaldır",
+				"locked_at": "Kilitlenme tarihi",
+				"password_changed_at": "Parola değişti",
+				"created_at": "Oluşturulma saati",
+				"updated_at": "Yenilenme tarihi",
+				"disabled": "Devre Dışı ",
+				"allowed_ips_string": "İzin Verilen IP'ler",
+				"roles_names": "Roller"
+			},
+			"balance_transaction": {
+				"reference": "Referans",
+				"amount": "Miktar",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"bet": {
+				"bet_type": "Bahis tipi",
+				"bet_amount": "Bahis miktarı",
+				"win_amount": "Kazanç miktarı",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"bonus": {
+				"strategy": "Tür",
+				"title": "Başlık",
+				"description": "Açıklama",
+				"percentage": "Yüzde oranı",
+				"currency": "Para Birimi",
+				"amount": "Miktar",
+				"percent": "Yüzde",
+				"max_amount": "Maksimum miktar",
+				"code": "Kod",
+				"extra_info": "Ekstra bilgi",
+				"wager_multiplier": "Çoklu bahis",
+				"wagering_epsilon": "Toplam bahis miktarı",
+				"cashable": "Paraya çevrilebilir",
+				"sticky": "Yapışkan",
+				"enabled": "Etkinleştir",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"bonus_issue": {
+				"strategy": "Strateji",
+				"stage": "Bölüm",
+				"amount": "Miktar",
+				"amount_wager_requirement": "Bahis miktarı gereksinimi",
+				"amount_wager": "Bahis miktarı",
+				"wagered_percent": "Bahis yüzdeleri",
+				"amount_locked": "Miktar kilitlendi",
+				"valid_until": "Son geçerlilik tarihi",
+				"extra_info": "Ekstra bilgi",
+				"cashable": "Paraya çevrilebilir",
+				"sticky": "Yapışkan",
+				"wager": "Bahis",
+				"created_at": "Alındığı tarih",
+				"issued_at": "Yayınlanma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"freespin_issue": {
+				"stage": "Stage",
+				"amount": "Amount",
+				"freespins_total": "Freespins Awarded",
+				"activatable_until": "Expiry date",
+				"win_amount_cents": "Alredy won",
+				"valid_until": "Expiry date",
+				"extra": "Extra info",
+				"external_id": "External ID",
+				"created_at": "Date received",
+				"issued_at": "Issued at",
+				"updated_at": "Updated at"
+			},
+			"bonus_strategy/feature/payment_system": {
+				"ids_list": "Ödeme Sistemleri"
+			},
+			"contact": {
+				"email": "E-posta",
+				"content": "İçerik"
+			},
+			"document": {
+				"approved": "Onaylandı",
+				"description": "Açıklama",
+				"removed": "Kaldırıldı",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi",
+				"attachment": "Ek",
+				"attachment_file_name": "Ek dosya ismi",
+				"attachment_content_type": "Ek içerik tipi",
+				"attachment_file_size": "Ek dosya boyutu",
+				"attachment_updated_at": "Added at"
+			},
+			"event": {
+				"subject": "Konu",
+				"event_type": "Olay tipi",
+				"ip": "IP",
+				"country": "Ülke",
+				"coordinates": "Koordinatlar",
+				"latitude": "Enlem",
+				"longitude": "Boylam",
+				"address": "Adres",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"external_bet": {
+				"id": "Yerel ID",
+				"account_id": "Hesap Kimliği",
+				"account": "Hesap",
+				"external_id": "Harici Id",
+				"bet_amount": "Bahis",
+				"win_amount": "Kazan",
+				"oauth_application": "OAuth Uygulama Id",
+				"oauth_application_id": "OAuth Uygulama Id"
+			},
+			"game": {
+				"data": "Veri",
+				"finished_at": "Bitiş tarihi",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"game_step": {
+				"state": "Durum",
+				"action": "Faaliyet",
+				"data": "Veri",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"game_table": {
+				"base_type": "Durum tipi",
+				"variation": "Dağılım",
+				"identifier": "Tanımlayacı",
+				"title": "Başlık",
+				"client": "Müşteri",
+				"provider": "Game provider",
+				"description": "Açıklama",
+				"active": "Aktif",
+				"currency": "Para birimi",
+				"secondary_currency": "İkincil para birimi",
+				"amount_win": "Toplam bahis",
+				"amount_loss": "Toplam kazanç",
+				"chips": "Fişler",
+				"default_chip": "Karşılıksız fiş",
+				"min_bet": "Minimum bahis",
+				"max_bet": "Maksimum bahis",
+				"paytable": "Ödeme tablosu",
+				"options": "Seçenekler",
+				"bet_playthrough_percent": "Bahse girilen yüzde",
+				"line_bets": "Handikaplı bahisler",
+				"archived_at": "Arşivlenme tarihi",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "YEnilenme tarihi"
+			},
+			"modification": {
+				"subject": "Konu",
+				"entity": "Kişi",
+				"data": "Veri",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"paritcipation": {
+				"active": "Aktif",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"payment": {
+				"amount": "Miktar",
+				"commission_amount": "Komisyon",
+				"amount_after_commission": "Amount (commission subtracted)",
+				"currency": "Para birimi",
+				"action": "Faaliyet",
+				"source": "Kaynak",
+				"extra": "Ekstra",
+				"success": "Başarılı",
+				"finished_at": "Bitiş tarihi",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi",
+				"recipient_address": "Adres",
+				"manual_confirmation_code": "Onay Kodu",
+				"source_id": "Payment Code"
+			},
+			"payment_system": {
+				"system_name": "Sistem adı",
+				"disabled": "Devre dışı bırak",
+				"currency_options": "Para birimi seçenekleri",
+				"test_mode": "Test mod",
+				"data": "Veri",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"payment_system_debt": {
+				"system_name": "System name",
+				"system_account": "Account in system",
+				"amount_cents": "Debt",
+				"created_at": "Created at",
+				"updated_at": "Updated at"
+			},
+			"profile_setting": {
+				"name": "Adınız",
+				"enabled": "Etkinleştir",
+				"required": "Gerekli",
+				"show_at_registration": "Kayıtlandırmada göster",
+				"show_at_edition": "Düzenleme Modunda Göster",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi"
+			},
+			"suspicion": {
+				"suspect": "Şüpheli",
+				"discarded": "Çıkarılan",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi",
+				"related_suspect": "Söz konusu şüpheli",
+				"data": "Veri",
+				"failed_check": "Başarısız denetleme"
+			},
+			"user": {
+				"email": "E-posta",
+				"encrypted_password": "Şifrelenmiş parola",
+				"password": "Parola",
+				"password_confirmation": "Parola doğrulama",
+				"current_password": "Şimdiki parola",
+				"remember_me": "Beni hatırla",
+				"reset_password_token": "Parola sıfırlama tokenı",
+				"reset_password_sent_at": "Parola sıfırlama tarihi",
+				"remember_created_at": "Oluşturulma tarihini hatırla",
+				"sign_in_count": "Giriş sayısı",
+				"current_sign_in_at": "Şuanki giriş tarihi",
+				"last_sign_in_at": "En son giriş tarihi",
+				"current_sign_in_ip": "Şuanki giriş yapan ip",
+				"last_sign_in_ip": "En son girilen ip",
+				"confirmation_token": "Doğrulama tokenı",
+				"confirmed_at": "Doğrulandığı tarih",
+				"confirmation_sent_at": "Doğrulama gönderildiği tarih",
+				"unconfirmed_email": "Doğrulanmayan e-posta",
+				"failed_attempts": "Hatalı girişler",
+				"unlock_token": "Token kilidi kaldır",
+				"locked_at": "Kilitlenme tarihi",
+				"authentication_token": "Doğrulama tokenı",
+				"created_at": "Oluşturulma tarihi",
+				"updated_at": "Yenilenme tarihi",
+				"disabled": "Devre dışı bırak",
+				"allowed_ips_string": "İzin Verilen IP'ler",
+				"guest": "Misafir",
+				"main_bitcoin_address": "Ana sanal para adresi",
+				"bonus_code": "Bonus Code"
+			},
+			"profile": {
+				"full_name": "Adınız ve soyadınız",
+				"first_name": "Adınız",
+				"last_name": "Soyad",
+				"title": "Başlık",
+				"nickname": "Takma ad",
+				"date_of_birth": "Doğum tarihi",
+				"personal_id_number": "Kişisel ID numarası",
+				"gender": "Cinsiyet",
+				"country": "Ülke",
+				"city": "Şehir",
+				"place_of_birth": "Doğum Yeri",
+				"address": "Adres",
+				"address2": "Ek adres",
+				"postal_code": "Posta kodu",
+				"time_zone": "Zaman Dilimi",
+				"mobile_phone": "Cep Telefonu",
+				"phone": "Telefon",
+				"skype": "Skype",
+				"send_payment_confirmation": "Ödeme doğrulama gönder",
+				"receive_newsletters": "Bilgilendirme e-postası al",
+				"receive_promos": "Kampanyalardan haberdar ol",
+				"never_call": "Aranmak istemiyorum",
+				"currency": "Para birimi",
+				"language": "Dil",
+				"security_question": "Güvenlik Sorusu",
+				"security_answer": "Güvenlik Sorusu Cevabı",
+				"age_acceptance": "Belirtilen yaş",
+				"terms_acceptance": "Şartlar ve Koşulları Kabul Ediyorum",
+				"bonus_issuance_policy": "Bonus Yayınlama Politikası",
+				"allowed_ips_string": "İzin verilen IP'ler"
+			},
+			"profile/admin": {
+				"full_name": "Adınız ve soyadınız",
+				"first_name": "Adınız",
+				"last_name": "Soyad",
+				"title": "Başlık",
+				"nickname": "Takma adınız",
+				"date_of_birth": "Doğum tarihi",
+				"personal_id_number": "Kişisel ID numarası",
+				"gender": "Cinsiyet",
+				"country": "Ülke",
+				"city": "Şehir",
+				"place_of_birth": "Doğum yeri",
+				"address": "Adres",
+				"address2": "Ek adres",
+				"postal_code": "Posta kodu",
+				"time_zone": "Zaman Dilimi",
+				"mobile_phone": "Cep Telefonu",
+				"phone": "Telefon",
+				"skype": "Skype",
+				"send_payment_confirmation": "Ödeme doğrulama gönder",
+				"receive_newsletters": "Bilgilendirme e-postası al",
+				"receive_promos": "Kampanyalardan haberdar ol",
+				"never_call": "Aranmak istemiyorum",
+				"currency": "Para birimi",
+				"language": "Dil",
+				"security_question": "Güvenlik Sorusu",
+				"security_answer": "Güvenlik Sorusu Cevabı",
+				"age_acceptance": "En az {{age}} yaşındayım",
+				"terms_acceptance": "Şartlar ve Koşulları Kabul Ediyorum",
+				"bonus_issuance_policy": "Bonus Yayınlama Politikası",
+				"allowed_ips_string": "İzin verilen IP'ler"
+			},
+			"profile/user": {
+				"full_name": "Adınız ve soyadınız",
+				"first_name": "Adınız",
+				"last_name": "Soyad",
+				"title": "Başlık",
+				"nickname": "Takma adınız",
+				"date_of_birth": "Doğum Tarihi",
+				"personal_id_number": "Kişisel ID numarası",
+				"gender": "Cinsiyet",
+				"country": "Ülke",
+				"city": "Şehir",
+				"place_of_birth": "Doğum yeri",
+				"address": "Adres",
+				"address2": "Ek Adres",
+				"postal_code": "Posta kodu",
+				"time_zone": "Zaman Dilimi",
+				"mobile_phone": "Cep Telefonu Numaranız",
+				"phone": "Telefon",
+				"skype": "Skype",
+				"send_payment_confirmation": "Ödeme doğrulama gönder",
+				"receive_newsletters": "Bilgilendirme e-postası al",
+				"receive_promos": "Kampanyalardan haberdar ol",
+				"never_call": "Aranmak istemiyorum",
+				"currency": "Para Birimi",
+				"language": "Dil",
+				"security_question": "Güvenlik Sorusu",
+				"security_answer": "Güvenlik Sorusu Cevabı",
+				"age_acceptance": "%{age} yaşından büyük olduğumu doğrularım",
+				"terms_acceptance": "%{text} Kabul ediyorum ",
+				"bonus_issuance_policy": "Bonus Yayınlama Politikası",
+				"allowed_ips_string": "İzin verilen IP'ler"
+			},
+			"provable_fair_data": {
+				"secret": "Gizli",
+				"client_seed": "Client seed",
+				"result": "Sonuç",
+				"hash": "Hash"
+			},
+			"retention_email": {
+				"strategy": "Tür",
+				"template_name": "Şablon adı",
+				"days_interval": "Gün Aralığı",
+				"enabled": "Etkinleştir",
+				"created_at": "Oluşturulma saati",
+				"updated_at": "Yenilenme tarihi"
+			}
+		}
+	},
+	"mongoid": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "bu parçayı içeremez.",
+							"has_query_parameter": "Bir sorgu parametresi içeremez.",
+							"invalid_uri": "geçerli bir URI olmalı",
+							"relative_uri": "mutlak bir URI olmalıdır."
+						}
+					}
+				}
+			}
+		}
+	},
+	"mongo_mapper": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "bu parçayı içeremez.",
+							"has_query_parameter": "bir sorgu parametresi içeremez.",
+							"invalid_uri": "Geçerli bir URI olmalıdır.",
+							"relative_uri": "mutlak bir URI olmalıdır."
+						}
+					}
+				}
+			}
+		}
+	},
+	"doorkeeper": {
+		"errors": {
+			"messages": {
+				"invalid_request": "istek için gerekli bir parametre eksik  yada desteklenmeyen veya bozuk bir parametre içeriyor ",
+				"invalid_redirect_uri": "The redirect uri included is not valid.",
+				"unauthorized_client": "Kullanıcı isteği gerçekleştirmek için yetkili değil.",
+				"access_denied": "İsteğiniz kaynak sahibi yada yetkili sunucu tarafından reddedildi.",
+				"invalid_scope": "İstek kapsamı geçersiz , bilinmiyor yada kusurlu.",
+				"server_error": "Yetkilendirme sunucusunun isteği yerine getirmesi engellendi , beklenmedik bir durum ile karşılaşıldı.",
+				"temporarily_unavailable": "Sunucu şuanda geçici fazla yüklenme veya sunucu çalışmaları sebebiyle isteğinize cevap veremiyor.",
+				"credential_flow_not_configured": "Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.",
+				"resource_owner_authenticator_not_configured": "Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.",
+				"unsupported_response_type": "Sunucu bu tür cevapları desteklemiyor.",
+				"invalid_client": "İstemci kimlik doğrulaması desteklenmeyen kimlik doğrulaması methodu sebebiyle başarısız oldu.",
+				"invalid_grant": "The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.",
+				"unsupported_grant_type": "The authorization grant type is not supported by the authorization server.",
+				"invalid_resource_owner": "The provided resource owner credentials are not valid, or resource owner cannot be found",
+				"invalid_token": {
+					"revoked": "Erişim kodu iptal edildi",
+					"expired": "Erişim kodu süresi doldu",
+					"unknown": "Erişim kodu geçerli değil"
+				}
+			}
+		},
+		"flash": {
+			"applications": {
+				"create": {
+					"notice": "Uygulama oluşturuldu."
+				},
+				"destroy": {
+					"notice": "Uygulama silindi."
+				},
+				"update": {
+					"notice": "Uygulama güncellendi."
+				}
+			},
+			"authorized_applications": {
+				"destroy": {
+					"notice": "Uygulama kaldırıldı."
+				}
+			}
+		},
+		"authorize_title": "OAuth kimlik doğrulaması gerekli",
+		"authorize_required": "Kimlik doğrulaması gerekli",
+		"authorize": "Yetkilendir",
+		"authorization_code": "Yetkilendirme kodu",
+		"deny": "Reddet",
+		"rights_title": "This application will be able to:",
+		"allow_authorization": "Hesabınızı kullanmak için {{app}} izin verilsinmi?",
+		"authorize_as_regular_user": "Lütfen ziyaretçi hesabından çıkıp gerçek hesabınızla giriş yapınız.",
+		"scopes": {
+			"profile": "Profil verilerinize ulaşın",
+			"bets": "Access your balance data and make bets on your behalf"
+		}
+	},
+	"amatic": {
+		"verification": {
+			"error_popup": {
+				"title": "Error",
+				"description": "Amatic server does not respond"
+			},
+			"popup": {
+				"copy": "Copy",
+				"title": "Successfull verification",
+				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
+				"message": "Your Text",
+				"signature": "Amatic Signature",
+				"address": "Bitcoin Address"
+			},
+			"title": "Amatic verification",
+			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
+			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"form": {
+				"your_text": "Your Text",
+				"verify": "Verify"
+			}
+		},
+		"amatic": "Amatic"
+	},
+	"http": {
+		"not_found": {
+			"title": "Page Not Found",
+			"oops": "Oops,",
+			"cannot_be_found": "The page you are looking for cannot be found.",
+			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
+			"link_to_root": "Here is a link to our start page:"
+		}
+	},
+	"common": {
+		"in_out": "IN/OUT",
+		"players": "Players",
+		"email": "E-posta",
+		"content": "Content",
+		"loading": "Yükleniyor...",
+		"yes": "Evet",
+		"no": "Hayır",
+		"all": "Hepsi",
+		"default": "Olağan",
+		"date": "Tarih",
+		"result": "Sonuç",
+		"total_bet": "Toplam Bahis",
+		"total_win": "Toplam Kazanç",
+		"gross_win": "Brüt Gelir",
+		"cashouts_sum": "Ödemeler toplamı",
+		"deposits_sum": "Depozitolar toplamı",
+		"net_revenue": "Net gelir",
+		"client": "Müşteri",
+		"amount": "Miktar",
+		"help": "Yardım",
+		"currency": "Para Birimi",
+		"total": "Toplam",
+		"limit": "Limit",
+		"live_casino": "Canlı Casino",
+		"address": "Address",
+		"good_news": "Good news, {{nickname}}.",
+		"save": "Kaydet",
+		"edit": "Ayarla",
+		"remove": "Kaldır",
+		"destroy": "Yok et",
+		"cancel": "İptal",
+		"close": "Close",
+		"create": "Oluştur",
+		"add": "Ekle",
+		"update": "Yenile",
+		"reset": "Sıfırla",
+		"refresh": "Yenile",
+		"proceed": "Devam et",
+		"filter": "Filtre",
+		"are_you_sure": "Emin misin?",
+		"set": "Set",
+		"enabled": "Etkinleştir",
+		"disabled": "Devre Dışı Bırak",
+		"active": "Aktif",
+		"preview": "Önizleme",
+		"select": "Seç",
+		"summary": "Özet",
+		"status": "Durum",
+		"options": "Seçenekler",
+		"genders": {
+			"m": "Erkek",
+			"f": "Bayan"
+		},
+		"player": "Oyuncu",
+		"guest": "Misafir",
+		"subject": "Konu",
+		"actions": "Faaliyetler",
+		"balance": "Bakiye",
+		"profit": "Kar",
+		"payout": "Ödeme",
+		"bets_sum": "Bahis özeti",
+		"wins_sum": "Kazanç özeti",
+		"bets": "Bahisler:",
+		"total_payouts": "Toplam ödeme:",
+		"terms_and_conditions": "Şartlar ve Koşullar",
+		"net_total": "Net toplam",
+		"blog": "Blog",
+		"comments": "Yorumlar",
+		"comment": "Yorum",
+		"empty_search_results": "There are no items according to the filtering parameters",
+		"add_more_coins": "Add more Coins",
+		"show_more_games": "Show more games",
+		"warning": "Warning",
+		"new_as_novelty": "New",
+		"already_member": "Already a member?",
+		"have_account": "Have an account?"
+	},
+	"locales": {
+		"af": "Afrika Dili",
+		"bg": "Bulgarca",
+		"de": "Almanca",
+		"el": "Yunanca",
+		"en": "İngilizce",
+		"es": "İspanyolca",
+		"fi": "Fince",
+		"fr": "French",
+		"it": "İtalyanca",
+		"ja": "Japonca",
+		"ko": "Korean",
+		"nl": "Hollandaca",
+		"pl": "Polonyaca",
+		"pt": "Portekizce",
+		"ru": "Rusça",
+		"sv": "İsveççe",
+		"tr": "Türkçe",
+		"vi": "Vietnamca",
+		"zh": "Çince"
+	},
+	"date": {
+		"day": "Gün",
+		"week": "Hafta",
+		"month": "Ay",
+		"year": "Yıl"
+	},
+	"casino": {
+		"casino": "Casino",
+		"not_enough_money": "Bakiyeniz yetersiz",
+		"events": {
+			"modified": {
+				"user": "Kullanıcı Profili Modifiye Edildi",
+				"admin_user": "Yönetici Modifiye Edildi",
+				"game_table": "Oyun Modifiye Edildi",
+				"bonus_issue": "Bonus Yayınla",
+				"bonus": "Bonus Modifiye Edildi",
+				"payment_system": "Ödeme Sistemleri",
+				"retention_email": "Muhafaza E-postası düzenlendi",
+				"casino_cash_balance": "Casino Cash Balance Modified",
+				"commission_connection": "Commission Connection Modified",
+				"payment": "Payment Modified",
+				"affiliate_profile": "Affiliate Profile Modified"
+			},
+			"game": {
+				"step": "Oyun Modları"
+			},
+			"user": {
+				"sign_out": "Kullanıcı çıkış yaptı",
+				"sign_in": "Kullanıcı giriş yaptı",
+				"failed_sign_in": "Kullanıcı giriş hatası"
+			},
+			"admin_user": {
+				"sign_out": "Yönetici çıkış yaptı",
+				"sign_in": "Yönetici giriş yaptı",
+				"failed_sign_in": "Yönetici girişinde hata oluştu"
+			},
+			"notifications": {
+				"balance_correction_created": "Balance correction created",
+				"cashout_requested": "Cashout requested",
+				"deposit_made": "Deposit made",
+				"cashout_made": "Cashout made",
+				"auto_cashout_made": "Auto-cashout made",
+				"cashout_rejected": "Cashout request rejected",
+				"deposit_rejected": "Deposit rejected",
+				"user_upload_document": "User Uploaded Document",
+				"payment_created_by_admin": "Admin Created Payment",
+				"user_disabled": "User Disabled",
+				"contact": "User Requested Support",
+				"admin_comment_created": "Admin Left Comment"
+			},
+			"affiliate": {
+				"redirect": "Yeni kazanç ortağı kullanıcısı ziyareti"
+			},
+			"bitcoin_addresses_uploaded": "Bitcoin adresleri yüklendi"
+		},
+		"bonuses": {
+			"names": {
+				"no_deposit": "Depozito Yok",
+				"first_deposit": "İlk Depozito",
+				"nth_deposit": "Nth Depozit",
+				"deposit_system": "Ödeme Sistemi Bonusu",
+				"coupon": "Kupon"
+			},
+			"issuance_policy": {
+				"can-issue": "Otomatik bonus yayınlama",
+				"can-refuse": "Oyuncu oynamadan önce bonusu iptal edebilir",
+				"can-cancel": "Oyuncu bonusu iptal edebilir"
+			}
+		},
+		"retention_emails": {
+			"names": {
+				"welcome": "Hoşgeldiniz",
+				"welcome_promo": "Hoşgeldin promosyonları",
+				"no_deposit": "Depozito yok",
+				"nth_deposit": "Nth bakiyesi bulunmuyor"
+			}
+		},
+		"payment_systems": {
+			"names": {
+				"qiwi": "Qiwi",
+				"skrill": "Skrill",
+				"interkassa": "Interkassa",
+				"paysafecard": "paysafecard",
+				"ukash": "Ukash",
+				"neteller": "Neteller",
+				"card_pay": "Kart Ödemesi",
+				"b_cash": "B-Para",
+				"wirecard": "Wirecard",
+				"coupon": "Kupon",
+				"cashbox": "Kasa",
+				"cep_bank": "Cep Bank",
+				"bank_transfer": "Bank Transfer",
+				"cubits": "Cubits",
+				"lavapay": "Lavapay",
+				"bitcoin_payment": "Sanal Para",
+				"ripple_payment": "Ripple"
+			},
+			"payer": {
+				"cashout_email_subject": "Casino Para Çıkışı",
+				"cashout_email_note": "Para Çıkışı yapıldı"
+			},
+			"system_name": "%{parent} tarafından %{child}",
+			"all_locked": "Güvenliğiniz için daha önce kullandığınız ödeme sistemlerinden birini kullanınız. Sorularınız için yardım bölümüyle iletişime geçebilirsiniz.",
+			"child_systems": {
+				"visa": "Visa",
+				"mastercard": "MasterCard",
+				"online_bank_transfer": "Online Para Transferi",
+				"ideal": "iDEAL",
+				"nordea_solo": "Nordea Solo",
+				"bancontact_mister_cash": "Bancontact/Mister Cash",
+				"cards": "Credit Cards",
+				"ccard": "Kredi Kartı",
+				"click_to_pay": "CLICK2PAY",
+				"ekonto": "eKonto",
+				"eps": "EPS e-payment",
+				"giropay": "giropay",
+				"installment": "payolution taksitleri",
+				"invoice": "Payolution faturası",
+				"moneta": "moneta.ru",
+				"mpass": "mpass",
+				"przelewy": "Przelewy24",
+				"paypal": "PayPal",
+				"paybox": "Paybox",
+				"poli": "POLi ödemeleri",
+				"paysafecard": "Paysafecard",
+				"quick": "Quick",
+				"sepa": "SEPA Direct Debit",
+				"skrill_direct": "Skrill Direct",
+				"skrill_wallet": "Skrill Digital Wallet",
+				"sofort": "SOFORT Banking",
+				"tatrapay": "TatraPay",
+				"trustly": "Trustly",
+				"bank_transfer": "Bank Transfer",
+				"lavapay_balance": "LavaPay Balance",
+				"cheque": "Cheque",
+				"perfect": "Perfect Money",
+				"liqpay": "LiqPay",
+				"webmoney": "WebMoney",
+				"yandex": "Yandex Money",
+				"okpay": "OKPAY",
+				"qiwi": "Qiwi",
+				"mailru": "money@mail.ru",
+				"lavapay_bitcoin": "Bitcoin",
+				"egopay": "EgoPay",
+				"lavapay_litecoin": "LiteCoin",
+				"paxum": "Paxum",
+				"ecoin": "eCoin",
+				"btce": "BTC-E",
+				"privatbank": "PrivatBank.ua",
+				"nsmep": "NSMEP",
+				"telemoney": "TeleMoney",
+				"ukrterminal": "UkrTerminal",
+				"rusterminal": "RusTerminal",
+				"rusbank": "Rusbank",
+				"mobileretails": "MobileRetails",
+				"unistream": "Unistream",
+				"ruspost": "RusPost",
+				"contact": "Contact",
+				"anelik": "Anelik",
+				"leader": "Leader",
+				"mts": "MTS",
+				"megafon": "Megafon",
+				"beeline": "Beeline",
+				"alfaclick": "AlfaClick",
+				"fortumo": "Fortumo",
+				"cashu": "CashU",
+				"privat_terminal": "Privat Terminal",
+				"kazakhstan_terminal": "Kazakhstan Terminal",
+				"tjs_terminal": "Tjs Terminal",
+				"moldova_terminal": "Moldova Terminal",
+				"georgia_terminal": "Georgia Terminal",
+				"euroset": "Euroset",
+				"kievstar": "KievStar",
+				"promsvyazbank": "PromSvyazBank",
+				"easypay": "EasyPay",
+				"bpay": "BPay",
+				"pravex": "Pravex Bank",
+				"ukrsib": "UkrSib Bank",
+				"liberty": "Liberty Bank",
+				"faktura": "Faktura.ru",
+				"privatbank_cashin": "Privatbank Cash-in",
+				"sberbank_cashin": "Sberbank Cash-in",
+				"qiwi_visa": "Visa Qiwi",
+				"qiwi_mastercard": "Mastercard Qiwi",
+				"qiwi_maestro": "Maestro Qiwi",
+				"cis_cards": "Bank Cards",
+				"yandex_personal": "Yandex Personal",
+				"local_bank_transfer": "Local Bank Transfer",
+				"w1": "W1",
+				"wallet_one": "Wallet One",
+				"russian_standard": "Russian Standard Bank"
+			}
+		},
+		"commissions": {
+			"strategies": {
+				"registration": "CPA",
+				"percent": "Rev paylaş"
+			}
+		},
+		"games": {
+			"unknown_action": "Bilinmeyen faaliyet",
+			"unavailable_action": "Uygun olmayan faaliyet",
+			"roulette": {
+				"notice": {
+					"bet_is_not_valid": "Bahis geçerli değil",
+					"bet_type_not_found": "Bahis tipi bulunamadı",
+					"unknown_bet": "Bilinmeyen bahis",
+					"unknown_value": "Bilinmeyen değer seçildi",
+					"unknown_column": "Bilinmeyen sütun seçildi",
+					"unknown_dozen": "Bilinmeyen düzine seçildi"
+				}
+			}
+		},
+		"provable_fair": {
+			"provable_fair": "İspatlanabilir adalet",
+			"provability": "Kanıtlanabilirlik",
+			"not_available": "Provability widget available at game page",
+			"verify": "Doğrula",
+			"loading": "Randomizing ...",
+			"is_unavailable": "Provable fair is not available for this game.",
+			"next_game": "Sonraki oyun",
+			"last_game": "Last game",
+			"reel_number": "Reel {{index}}",
+			"fields": {
+				"hash": "Hash (Result + Secret)",
+				"client_seed": "Client seed",
+				"secret": "Result + Secret",
+				"result": "Final result"
+			},
+			"hint": {
+				"common": "Enter client Seed (0-{{max_seed}})",
+				"roulette": "Push the ball further:",
+				"card": "Cut the deck:",
+				"poker": "Cut the deck:",
+				"slots": "Spin the reels a bit more:"
+			},
+			"verification": {
+				"success": {
+					"title": "Successful verification",
+					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
+				},
+				"failure": {
+					"title": "Verification failed",
+					"body": "Please contact our support."
+				}
+			}
+		},
+		"bitcoin": {
+			"update_balance": "Bakiye bilgisini yenile",
+			"current_balance": "Bakiyeniz {{balance}}.",
+			"send_text": "Herhangi bir paraı {{currency}} (artı madenci ücreti) gönder",
+			"cant_attach_address": "Özür dileriz, sanal parayla ilgili bazı problemler var. Yöneticinin konu hakkında bilgisi var. Daha sonra tekrar deneyiniz.",
+			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
+			"xrp": {
+				"send_text": "Send any amount of {{currency}} to",
+				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
+			}
+		}
+	},
+	"frontend": {
+		"placeholders": {
+			"email": "E-posta adresinizi giriniz",
+			"password": "Parolanızı girin",
+			"password_confirmation": "Yeni parolanızı doğrulayın",
+			"current_password": "Lütfen mevcut parolanızı girin"
+		},
+		"age_acceptance": "Please confirm that you are over {{age}} years old",
+		"choose_game": "Bir oyun seçiniz",
+		"games_played": "Oyun oynandı",
+		"or": "veya",
+		"please_or": "Please {{first}} or {{second}}",
+		"mbtc_total_winnings": "mBTC Toplam kazanç",
+		"hi_guest": "Merhaba, Ziyaretçi.",
+		"hi_user": "Merhaba, {{nickname}}",
+		"password_difficulty": "Parola karmaşıklığı",
+		"password_difficulties": {
+			"very_weak": "Çok Zayıf",
+			"weak": "Zayıf",
+			"so_so": "şöyle böyle",
+			"strong": "Güçlü",
+			"great": "Harika"
+		},
+		"playing": {
+			"playing_fun": "Playing for {{currency}}",
+			"playing_real": "Playing with {{currency}}",
+			"play_fun": "Play for {{currency}}",
+			"play_real": "Play with {{currency}}"
+		},
+		"links": {
+			"support": "Destek",
+			"help": "Yardım",
+			"how_to_start": "Başlangıç",
+			"casino_promotions": "Casino Promosyonları",
+			"bonuses": "Bonuslar",
+			"affiliate_program": "Satış Ortaklığı",
+			"terms_and_conditions": "Şartlar ve Koşullar",
+			"back": "Geri",
+			"create_ticket": "Bilet oluşturmak",
+			"send_form": "Formu göndermek",
+			"online_chat": "Çevrimiçi sohbet",
+			"home": "Ana Sayfa",
+			"frontpage": "Frontpage",
+			"casino_games": "Casino Oyunları",
+			"about_casino": "Casino Hakkında",
+			"all_games": "Tüm oyunlar",
+			"load_more_games": "Load More Games",
+			"rules": "Oyun Kuralları",
+			"autoregister": "Otomatik Kayıt",
+			"quick_register": "Quick Register",
+			"play_for_fun": "Eğlence için Oyna",
+			"demo": "Demo",
+			"play_for_real": "Gerçek Oyna",
+			"play_for_bitcoin": "Sanal Para İçin Oyna",
+			"free_play": "Ücretsiz Oyun",
+			"real_play": "Gerçek Oyun",
+			"play_now": "Şimdi Oyna",
+			"join_now": "Şimdi katil",
+			"profile": "Profil",
+			"dice": "Zarlar",
+			"deposit": "Depozit",
+			"withdraw": "Withdraw",
+			"cashout": "Para Çıkışı",
+			"cashbox": "Kasa",
+			"sign_out": "Çıkış",
+			"sign_in": "Giriş",
+			"sign_up": "Kayıt",
+			"register": "Kayıt",
+			"login": "Giriş",
+			"logout": "Logout",
+			"start_playing": "Start Playing",
+			"forgot_password": "Parolamı unuttum?",
+			"didnt_receive_confirmation": "Onaylama talimatlarını almadınız mı?",
+			"didnt_receive_unlock": "Aktifleştirme talimatları ulaşmadı mı?",
+			"affiliate_profiles": "Partner Profiller",
+			"settings": "Ayarlar"
+		},
+		"captions": {
+			"affiliates": "Affiliates",
+			"help": "Yardım",
+			"games": "Games",
+			"quick_links": "Hızlı Linkler",
+			"languages": "Diller",
+			"info": "Info",
+			"information": "Bilgi",
+			"promotion": "Promosyonlar",
+			"follow_us": "Bizi Takip Edin"
+		},
+		"actions": {
+			"go_bang": "Giriş",
+			"deposit_now": "Deposit Now",
+			"sign_up_now": "Sign Up Now"
+		},
+		"games_bet_playthrough_percent": "Oyun bahis oranları",
+		"contact": {
+			"title": "İletişim Formu",
+			"hint": "Lütfen, aşağıdaki bilgileri doldurun. Bütün alanlar zorunludur.",
+			"labels": {
+				"email": "E-posta",
+				"content": "Mesaj",
+				"send": "Gönder"
+			}
+		},
+		"no_flash": {
+			"flash_isnt_available": "Adobe Flash Player mevcut değil",
+			"flash_usage": "Değerli kullanıcılar, en yüksek çözünürlükte oyun deneyimi sunabilmemiz için casinomuz Adobe Flash kullanmaktadır.",
+			"desktop_section": "Masaüstü desteği",
+			"desktop_section_link": "Lütfen Masaüstü için Adobe Flash player yükleyin",
+			"mobile_section": "Mobil cihaz desteği",
+			"mobile_section_text": "Adobe Flash, mobil cihazlarla beraber gelen tarayıcılarla tamamen uyumlu değildir. Ancak; harika bir kullanıcı deneyimi sunan 3. taraf uygulamalarını indirebilirsiniz. %s ve %s uygulamalarını öneriyoruz."
+		},
+		"devise": {
+			"resend_confirmation": "Doğrulama Talimatlarını Tekrar Gönder",
+			"send_reset_instructions": "Parolayı Sıfırla",
+			"send_unlock_instructions": "Kilidi Kaldırma Talimatlarını Gönder",
+			"change_your_password": "Parolanı değiştir",
+			"change_my_password": "Parolamı değiştir",
+			"new_password": "Yeni parola",
+			"confirm_new_password": "Yeni parolayı onayla",
+			"password_hint": "(değiştirmek istemiyorsanız boş bırakın)",
+			"current_password_hint": "(değişiklikleri kaydetmek için şuanki parolanızı girmelisiniz)",
+			"unlock_hint": "Hesabınızı aktive etmek için lütfen e-posta bölümü doldurunuz.Hesap onaylama talimatları e-posta adresinize gönderilecektir.",
+			"resend_hint": "Parola sıfırlama servisi için lütfen e-posta bölümünü doldurunuz.Parola sıfırlama talimatları e-posta adresinize gönderilecektir.",
+			"contact_us_hint_html": "İletişime geçmek için {{page}} bölümünü kullanabilirsiniz.",
+			"custom": {
+				"not_valid_email": "Not a valid email",
+				"too_short": "Too short",
+				"not_match": "Not match",
+				"min_characters": "Minimum 1 character"
+			}
+		},
+		"payment_system_redirect": {
+			"notification": "You will be redirected to {{system}} side shortly to finish your transaction",
+			"text": "Ödemeye devam etmek için aşağıdaki butona tıklayın.",
+			"button": "Ödemeye devam et"
+		},
+		"social": {
+			"follow_us": "Bizi takip edin"
+		},
+		"filters": {
+			"find_your_game": "Oyun Ara"
+		},
+		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
+	},
+	"winners": {
+		"winners": "Kazananlar",
+		"latest_winners": "Son Kazananlar",
+		"top_winners": "Top Winners",
+		"amount_in_game": "%{amount} in %{game}",
+		"parts": {
+			"just_won": "just won",
+			"in": "in"
+		}
+	},
+	"restriction": {
+		"default": "Kayıtlandırma bulunduğunuz ülkede kısıtlandırılmış olarak gözükmektedir",
+		"game_restricted_in_country": "Kayıtlandırma bulunduğunuz ülkede kısıtlandırılmış olarak gözükmektedir",
+		"registration_restricted_in_country": "Kayıtlandırma bulunduğunuz ülkede kısıtlandırılmış olarak gözükmektedir"
+	},
+	"documents": {
+		"removed_successfully": "Document was successfully removed",
+		"document": {
+			"edit_description": "Açıklamayı düzelt",
+			"approved": "Onaylandı",
+			"not_approved": "Onaylanmadı"
+		},
+		"index": {
+			"upload_document": "Doküman yükle"
+		}
+	},
+	"sportsbook": {
+		"sports": "Spor Bahis",
+		"live_betting": "Canlı bahis",
+		"sports_bets": "Sports Bets"
+	},
+	"formtastic": {
+		"labels": {
+			"card_holder": "Kart Sahibi",
+			"credit_card_number": "Kredi kartı numarası",
+			"cvc": "Kredi kartı güvenlik kodu",
+			"expiration_date": "Son kullanım tarihi",
+			"amount": "Amount",
+			"recipient": "Recipient",
+			"document": {
+				"attachment": "Attachment",
+				"description": "Description"
+			},
+			"btc_amount": "Amount in BTC",
+			"wallet_address": "Wallet Address"
+		},
+		"actions": {
+			"game": {
+				"create": "Oyun oluştur",
+				"update": "Oyun yenile"
+			},
+			"player": {
+				"create": "Oyuncu yarat",
+				"update": "Oyuncu yenile"
+			},
+			"bonus": {
+				"create": "Bonus oluştur",
+				"update": "Bonus yenile"
+			},
+			"bonus_issue": {
+				"create": "Bonus yayını oluştur",
+				"update": "Bonus yayını yenile"
+			},
+			"admin_user": {
+				"create": "Yönetici hesabı oluştur",
+				"update": "Yönetici hesabı yenile"
+			},
+			"payment_system": {
+				"create": "Ödeme sistemi oluşttur",
+				"update": "Ödeme sistemi yenile"
+			},
+			"document": {
+				"submit": "Submit document"
+			},
+			"create": "Oluştur"
+		},
+		"hints": {
+			"payment_system": {
+				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+			},
+			"profile": {
+				"currency": "Para birimini kayıtlandırma işlemi bittikten sonra değiştirebilirsiniz."
+			},
+			"btc_amount": "Amount may differ due to exchange rate changes"
+		}
+	},
+	"bonus_issues": {
+		"title": "%{bonus} Issue",
+		"stages": {
+			"wait": "Bekle",
+			"handle_bets": "Aktif",
+			"canceled": "İptal Edildi",
+			"expired": "Expired",
+			"wager_done": "Bahis Yapıldı",
+			"lost": "Kaybet",
+			"pending": "Pending"
+		}
+	},
+	"freespin_issues": {
+		"title": "%{bonus} Issue",
+		"games": "Games",
+		"activate": "Activate",
+		"stages": {
+			"issued": "Issued",
+			"activated": "Activated",
+			"canceled": "Canceled",
+			"expired": "Expired",
+			"finished": "Played",
+			"pending": "Pending"
+		},
+		"mailer": {
+			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
+			"activation_prompt_html": "To activate freespins go to {{link}}."
+		}
+	},
+	"games": {
+		"title": "Casino Oyunları",
+		"categories": {
+			"all": "All Games",
+			"card": "Kart Oyunları",
+			"poker": "Poker Oyunları",
+			"table": "Table Games",
+			"roulette": "Rulet",
+			"slots": "Slot",
+			"video_poker": "Video Poker",
+			"blackjack": "Blackjack",
+			"bingo": "Bingo",
+			"live": "Live",
+			"fruit": "Fruit Slots",
+			"theme": "Theme Slots",
+			"casual": "Casual",
+			"lottery": "Loto",
+			"keno": "Keno",
+			"progressive": "Progressive",
+			"stat": {
+				"most_popular": "En Popüler",
+				"new": "Yeni",
+				"manual": "Öne Çıkanlar",
+				"last_played": "Son Oynanan"
+			},
+			"device": {
+				"desktop": "Masaüstü",
+				"mobile": "Mobil"
+			}
+		},
+		"providers": {
+			"all": "All Providers",
+			"softswiss": "SoftSwiss",
+			"amatic": "Amatic",
+			"betsoftgaming": "BetSoft Gaming",
+			"casinotechnology": "Casino Technology",
+			"quickfire": "Quickfire",
+			"ezugi": "Ezugi"
+		},
+		"roulette": {
+			"bets": {
+				"calc_by_max_bet": "Maksimum Bahsi Hesapla",
+				"inside_bets": "Bahislerin İçinde",
+				"outside_bets": "Bahsin Dışında",
+				"straight_up": "Yukarı",
+				"split": "Bölmek",
+				"street": "Sokak",
+				"trio": "Üçleme",
+				"basket": "Basket",
+				"corner": "Köşe",
+				"first_four": "İlk Dört",
+				"first_five": "İlk Beş",
+				"line": "Handikap",
+				"column": "Sütun",
+				"dozen": "Düzine",
+				"red": "Kırmızı",
+				"black": "Black",
+				"odd": "Tek",
+				"even": "Çift",
+				"low": "Düşük",
+				"high": "Yüksek"
+			}
+		},
+		"titles": {
+			"baccarat": {
+				"classic": "Baccarat"
+			},
+			"blackjack": {
+				"double_exposure": "İkizleme",
+				"european": "Avrupa Blackjack",
+				"multihand": "Multihand Blackjack",
+				"multihand_pro": "Multihand Blackjack Pro",
+				"pontoon": "Pontoon",
+				"surrender": "Blackjack Surrender"
+			},
+			"hi_lo": {
+				"switch": "Hi-Lo Switch"
+			},
+			"casual": {
+				"horse_racing": "Horse Racing",
+				"minesweeper": "Minesweeper",
+				"heads_tails": "Heads and Tails",
+				"scratch_dice": "Scratch Dice"
+			},
+			"poker": {
+				"caribbean": "Caribbean Poker",
+				"casino_holdem": "Casino Hold`em",
+				"let_it_ride": "Let it Ride",
+				"oasis": "Oasis Poker",
+				"texas_holdem": "Texas Hold`em",
+				"trey_poker": "Trey Poker"
+			},
+			"roulette": {
+				"american": "American Roulette",
+				"european": "European Roulette",
+				"french": "French Roulette"
+			},
+			"slots": {
+				"aztec_magic": "Aztec Magic",
+				"book_of_pyramids": "Book of Pyramids",
+				"scroll_of_adventure": "Scroll of Adventure",
+				"brave_viking": "Brave Viking",
+				"cherry_fiesta": "Cherry Fiesta",
+				"crazy_starter": "Crazy Starter",
+				"desert_treasure": "Desert Treasure",
+				"hawaii_cocktails": "Hawaii Cocktails",
+				"horse_slot": "Horse Slot",
+				"lucky_blue": "Lucky Blue",
+				"lucky_lady_clover": "Lucky Lady's Clover",
+				"lucky_sweets": "Lucky Sweets",
+				"platinum_lightning": "Platinum Lightning",
+				"princess_of_sky": "Princess of Sky",
+				"princess_royal": "Princess Royal",
+				"sport_slot": "Sport Slot",
+				"three_lines_slot": "Girl slot",
+				"west_town": "West Town"
+			},
+			"video_poker": {
+				"jacks_or_better": "Jacks or Better",
+				"wild_texas": "Wild Texas",
+				"video_poker": "Video Poker"
+			}
+		}
+	},
+	"users": {
+		"statuses": {
+			"enabled": "Etkinleştir",
+			"disabled": "Devre Dışı",
+			"not_confirmed": "Onaylanmadı",
+			"locked": "Dondurma",
+			"normal": "Aktif",
+			"manually_suspected": "Manually marked as suspicious"
+		}
+	},
+	"affiliate_bills": {
+		"billed_from": "Tarafından faturalandırılmış",
+		"billed_to": "Fatura edilen kişi",
+		"paid": "Ödendi",
+		"submit": "Gönder"
+	},
+	"affiliate_links": {
+		"add": "Add Link",
+		"name": {
+			"hint": "Identification for your private use only"
+		},
+		"code": {
+			"hint": "Unique code for affiliate link"
+		}
+	},
+	"affiliate_profiles": {
+		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"commission": "Komisyon",
+		"registration_settings": {
+			"reward": "CPA Ödülü",
+			"conditions": "Durumlar",
+			"rule": "davetli kullanıcının bahis tutarı > {{amount}} {{currency}}"
+		},
+		"percent_settings": {
+			"one": "%{percent}%",
+			"default": "%{percent}% if generated greater than %{limit} %{currency}",
+			"rule": "%{percent}% if generated less than %{limit} %{currency}",
+			"intermediate_rule": "%{percent}% if generated between %{limits} %{currency}"
+		},
+		"no_default_commissions": "Herhangi bir komisyon izniniz yok. Lütfen destek ile irtibata geçiniz.",
+		"active": "Aktif",
+		"not_active": "Aktif Değil",
+		"affiliate_profiles": "Partner Profilleri",
+		"statistics": {
+			"statistics": "İstatistikler",
+			"year": "Yıl",
+			"month": "Ay",
+			"week": "Hafta",
+			"day": "Gün",
+			"since": "Den beri",
+			"to": "E doğru",
+			"submit": "Gönder",
+			"grouped_by": "Guruplandırıldı",
+			"deposits_count": "Depozito",
+			"redirects_count": "Ziyaretler",
+			"registered_users_count": "Kayıtlı Kullanıcılar(Depozitleriyle birlikte)",
+			"date": "Tarih",
+			"invited_users_income": "NGR (net gaming revenue)",
+			"ggr": "GGR (gross gaming revenue)",
+			"total": "Period Total",
+			"link_name": "Link Name"
+		},
+		"affiliate_profile": {
+			"code": "Kod",
+			"url": "Url",
+			"strategy": "Ödeme Şeması"
+		},
+		"banners": {
+			"banners": "Afişler",
+			"sizes": "Sizes",
+			"types_title": "Types",
+			"types": {
+				"image": "Image",
+				"html": "HTML",
+				"swf": "Flash"
+			}
+		},
+		"form": {
+			"name_hint": "Yalnızca kişisel kullanımınız için tanımlama aracı"
+		},
+		"add": "Create affiliate profile",
+		"add_link": "Create affiliate profile link",
+		"strategy": "Ödeme Şeması",
+		"bills": {
+			"bills": "Faturalar",
+			"billed_at": "Fatura tarihi",
+			"amount": "Miktar",
+			"paid": "Ödendi",
+			"not_billed_for_date": "Tarihi için faturalandırılmadı"
+		}
+	},
+	"games_history": {
+		"title": "Oyunlar",
+		"from": "Kimden",
+		"result": "Sonuç",
+		"win": "Kazan",
+		"lose": "Kaybedilen",
+		"game_name": "Oyun",
+		"bet": "Bahis"
+	},
+	"bonuses": {
+		"history": {
+			"title": "Bonuslar",
+			"wager": "Bahis",
+			"valid_until": "Geçerlilik tarihi",
+			"status": "Durum",
+			"from": "Kimden"
+		},
+		"promo_form": {
+			"title": "Promosyon Kodu Ekle",
+			"sub_title": "ve bonus alın"
+		},
+		"bonus_settings": "Bonus Ayarları",
+		"refuse": "Bonus almak istemiyorum"
+	},
+	"freespin_bonuses": {
+		"history": {
+			"title": "Freespins"
+		},
+		"gift": "Gift"
+	},
+	"profiles": {
+		"menu": {
+			"balance": "Bakiye",
+			"history": "Geçmiş",
+			"bonuses": "Bonuslar",
+			"affiliate": "Partnerler",
+			"profile": "Profil Bilgileri",
+			"documents": "Documents"
+		},
+		"info": {
+			"personal": "Kişisel"
+		},
+		"index": {
+			"my_account": "My Account",
+			"my_bets": "My Bets",
+			"transaction": "Transaction",
+			"welcome": "Hoşgeldiniz",
+			"balance": "Bakiyeniz",
+			"account_balance": "Hesap Bakiyesi"
+		},
+		"show": {
+			"edit_profile": "Profil Düzenle",
+			"edit_settings": "Ayarları Düzenle",
+			"attach_documents": "Ek dökümanlar",
+			"change_credentials": "Change password",
+			"set_email_and_password": "Kullanıcı adı ve şifre ayarlayın",
+			"create_cashout_request": "Para Çıkışı",
+			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
+			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
+			"cashout_request_created": "Para Çıkışı talebi , onaylanmak için işleme alınmıştır.",
+			"cashout_successfully": "Para Çıkışı başarıyla gerçekleştirildi",
+			"cashout_technically_impossible": "We're sorry, but some errors occurred. We're working to fix them in an emergency mode. Please contact support if you have any questions.",
+			"profile_info": {
+				"title": "Profil Bilgileri"
+			},
+			"autoregister_info": {
+				"title": "Kişisel giriş linkinizi kullanarak hesabınıza ulaşabilirsiniz"
+			},
+			"accounts": {
+				"title": "Hesaplar",
+				"available_to_cashout": "Ödemeye müsait",
+				"add_currency": "Para birimi ekle"
+			},
+			"bonuses": {
+				"title": "Bonuslar",
+				"no_bonuses": "Şuanda bonusunuz bulunmamaktadır.",
+				"cancel_bonus": "Kaybedilen Bonus",
+				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
+				"bonus_canceled": "Bonus iptal edildi",
+				"bonus_not_canceled": "Bu bonus iptal edilemez"
+			},
+			"coupons": {
+				"activated": "Kupon \"{{code}}\" başarıyla aktif edildi.",
+				"not_activated": "Kupon aktif edilemedi \"{{code}}\".Lütfen tekrar deneyiniz , yada destek ekibiyle irtibata geçiniz.",
+				"already_activated": "Kupon \"{{code}}\" zaten aktif edilmiş."
+			},
+			"payments": {
+				"title": "Ödemeler"
+			},
+			"not_finished_games": {
+				"title": "Tamamlanmamış Oyunlar",
+				"hint": "Oynamaya devam edebilir yada iptal edebilirsiniz. İptal etmek bahis kaybına sebep olabilir.",
+				"game_canceled": "Oyun iptal edildi"
+			},
+			"bets": {
+				"title": "Bahisler",
+				"all_bets": "Tüm Bahisler"
+			},
+			"cashbox": "Kasa",
+			"payments_history": "İşlem Geçmişi",
+			"bets_history": "Bahis Geçmişi",
+			"bonuses_history": "Bonus Geçmişi",
+			"freespin_bonuses_history": "Freespins History",
+			"deposit_to_address_hint": "Hesabınızı finanse etmek için bu adrese atınız.",
+			"freespin_bonuses": {
+				"bonus_canceled": "Bonus canceled",
+				"bonus_not_canceled": "Failed to cancel bonus",
+				"bonus_activated": "Bonus was activated",
+				"bonus_not_activated": "Bonus was not activated"
+			}
+		},
+		"edit": {
+			"title": "Profil Düzenle",
+			"info_updated": "Bilgi yenilendi",
+			"not_saved": "Değişiklikler kaydedilemedi",
+			"settings_section_updated": "Kısım başarıyla yenilendi",
+			"valid_data_warning": "Please enter valid contact details in the form below. Make sure it is accurate before saving."
+		}
+	},
+	"payments": {
+		"actions": {
+			"deposit": "Depozit",
+			"cashout": "Para Çıkışı",
+			"gift": "Hediye",
+			"chargeback": "Geri Ödeme",
+			"affiliate_payment": "Partner Ödülü"
+		},
+		"statuses": {
+			"success": "Kabul edildi",
+			"failure": "Çıkarıldı",
+			"pending": "Bekliyor"
+		},
+		"canceled_by_user": "İşlemi iptal ettiniz",
+		"wait_for_confirmation": "Ödemeniz yakında onaylanacaktır",
+		"not_performed": "Payment was not performed",
+		"confirmed": "Payment confirmed",
+		"canceled": "Payment not confirmed",
+		"make_deposit": "Depozito Yatır",
+		"make_cashout": "Para Çıkışı Talebi",
+		"confirm_address": "Confirm address",
+		"bonus_code_show": "I have a Bonus Code",
+		"bonus_code_hide": "Hide Bonus Code",
+		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
+		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
+		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+		"invalid_profile_message": "Para Çıkışı yapabilmeniz için Profilinizdeki gerekli alanları doldurunuz.",
+		"try_again": "Transaction could not be initiated due to connection problems. If the problem persists, please contact our support.",
+		"select_currency": "Select Balance Currency",
+		"select_currency_hint": {
+			"deposit": "I would like to top up my balance in",
+			"cashout": "Ödeme almak istiyorum"
+		},
+		"select_payment_method": "Ödeme Yöntemi Seçiniz",
+		"current_balance": {
+			"deposit": "Bakiyeniz: {{money}}.",
+			"cashout": "Available to cash out: {{money}}. Please refer to {{balance_link}} page for detailed break down."
+		},
+		"payment_methods": {
+			"empty": "Bu para birimi için geçerli ödeme metodu bulunmuyor.",
+			"pay_with_cubits": "Pay with Cubits"
+		},
+		"limits": {
+			"currency": "Ödeme {{currency}}",
+			"min": "min {{min}}",
+			"max": "maks {{max}}",
+			"fee": "fee {{fee}}"
+		},
+		"processing_time": {
+			"instantly": "Instantly",
+			"range": "%{min}-%{max} banking days"
+		}
+	},
+	"security_check": {
+		"user_is_suspicious": "Kullanıcı şüpheli",
+		"user_not_suspicious": "Kullanıcı şüpheli",
+		"user_has_suspicious_games": "Kullanıcının şüpheli oyunları var",
+		"cashout_amount": "Tutar belirlenen maksimum değeri aştı",
+		"cashout_wins": "Kullanıcı limiti aşıldı",
+		"casino_cashout": "Casino günlük limiti aşıldı",
+		"crypto_address_confirmed": "Address was not used before",
+		"manual": {
+			"title": "User was manually marked as suspicious"
+		},
+		"chargeback": {
+			"title": "User made chargeback"
+		},
+		"duplicate": {
+			"title": "User has duplicates",
+			"reason_html": "User duplicates {{user}}"
+		},
+		"balance_sum": {
+			"title": "Bakiye miktarı , oyun istatistiklerine göre hesaplanan bakiye miktarıyla uyuşmuyor",
+			"text": "Oyuncuların bakiyesi beklenen bakiye ile eşleşmiyor"
+		},
+		"balance_transaction": {
+			"title": "Kazanılan miktar son 24 saat için çok yüksek",
+			"reason_html": "Suspicious wins in {{table}} during {{period}} by {{player}}"
+		},
+		"wager_done": {
+			"title": "User done wager bonus requirement"
+		},
+		"cubits_payment_difference": {
+			"title": "Cumulative cubits exchange rate losses are too big"
+		}
+	},
+	"notification": {
+		"contact_form": {
+			"sender_notice": "Mesajınız başarıyla gönderildi.",
+			"mail_subject": "Casino sitesinde bulunan iletişim formundan mesaj aldınız"
+		},
+		"payment_confirmation": {
+			"mail_subject": "Ödeme onay kodu"
+		},
+		"daily_stats": {
+			"mail_subject": "%{date} tarihli %{currency} istatistikleri"
+		},
+		"report": {
+			"day_mail_subject": "Günlük İstatistikler",
+			"week_mail_subject": "Haftalık İstatistikler",
+			"day_mail_title": "Haftalık {{currency}} istatistikleri {{period}}",
+			"week_mail_title": "Haftalık {{currency}} istatistikleri {{period}}",
+			"fields": {
+				"net_revenue": "Net Gaming Revenue (NGR)",
+				"gross_win": "Brüt Kazanç",
+				"bets": "Toplam Bahis",
+				"wins": "Toplam Kazanç",
+				"payout": "Payout (in %)",
+				"game_rounds": "Oyun Turları",
+				"new_registrations": "Depozitolu yeni kayıtlar",
+				"players_made_deposits": "Depozit Yapan Kullanıcılar",
+				"total_users": "Toplam Kullanıcı",
+				"deposits_sum": "Depozit Özeti",
+				"deposits_avg": "Ortalama Depozit",
+				"cashouts_sum": "Para Çıkış Dökümü",
+				"cashouts_avg": "Para Çıkışı Ortalaması"
+			},
+			"previous": "Önceki {{type}}"
+		}
+	},
+	"user_mailer": {
+		"auth": {
+			"welcome": "Hoşgeldin {{name}}!",
+			"hello": "Merhaba {{name}}!",
+			"confirmation": {
+				"you_can_confirm_email_by_pressing_next_link": "Hesabınızdaki e-postanızı aşağıdaki link yardımıyla onaylayabilirsiniz:",
+				"confirm_my_account": "Hesabımı onayla"
+			},
+			"reset_password": {
+				"change_my_password": "Parolamı değiştir",
+				"link_to_change_password_are_requested": "Birisi parolanızı değiştirmek için link talep etti, bu işlemi aşağıdaki link ile yapabilirsiniz.",
+				"you_can_ignore_this_mail": "Eğer bunu talep etmediyseniz, lütfen bu e-postayı dikkate almayın.",
+				"your_password_didnt_changed_yet": "Parolanız aşağıdaki link üzerinden yeni bir tane oluşturana kadar değişmeyecektir."
+			},
+			"unlock": {
+				"unlock_my_account": "Hesabımı aktifleştir",
+				"your_account_has_been_locked": "Hesabınız birçok başarısız giriş denemesi sonucunda donduruldu.",
+				"click_to_unlock": "Hesabınızı aktif hale getirmek için aşağıdaki linke tıklayınız:"
+			}
+		},
+		"deposit": {
+			"deposit_made": "Depozitonuz alındı"
+		},
+		"cashout": {
+			"cashout_approved": "Para Çıkışı isteğiniz onaylandı"
+		},
+		"not_enough_money_for_cashout": {
+			"subject": "Para Çıkışı için yetersiz bakiye",
+			"body": "Para Çıkışı isteğiniz bakiyenizdeki işlemlerden dolayı devre dışı bırakıldı. Lütfen yenilenmiş bakiyenize göre para çıkışı isteğini yeniden gönderiniz."
+		},
+		"address_confirmation_required": {
+			"subject": "Cashout address confirmation required"
+		}
+	},
+	"activemodel": {
+		"errors": {
+			"models": {
+				"affiliate_forms/assign_commission": {
+					"attributes": {
+						"from_date": {
+							"must_be_in_future": "must be in future"
+						},
+						"to_date": {
+							"must_be_in_future": "must be in future",
+							"must_be_less_then_from": "must be less then From"
+						}
+					}
+				},
+				"payment_system/cashout_form/wirecard": {
+					"attributes": {
+						"credit_card_number": {
+							"invalid": "is not a valid credit card number"
+						}
+					}
+				},
+				"casino_cash_balance/balance_options": {
+					"attributes": {
+						"base": {
+							"rules_error": "You have errors in rules"
+						}
+					}
+				},
+				"commissions/registration_settings": {
+					"attributes": {
+						"base": {
+							"rules_error": "You have errors in rules"
+						}
+					}
+				},
+				"commissions/registration_settings_rule": {
+					"attributes": {
+						"base": {
+							"uniq": "should be unique"
+						}
+					}
+				}
+			}
+		},
+		"attributes": {
+			"payment_system/bank_transfer/access_data": {
+				"deposit_snippet_name": "Deposit Snippet Name",
+				"cashout_snippet_name": "Cashout Snippet Name"
+			},
+			"affiliate_forms/assign_commission": {
+				"from_date": "From",
+				"to_date": "To"
+			},
+			"newsletters_filter": {
+				"tag": "User tag",
+				"locale": "Locale",
+				"type": "Tür",
+				"deposits_number_equals": "Depozito",
+				"last_deposit_at": "Son Depozito",
+				"registered_at": "Kayıtlı",
+				"payments_currency": "Ödeme para birimi"
+			}
+		}
+	},
+	"retention_mailer": {
+		"welcome": "Hoşgeldiniz",
+		"no_deposit": "Henüz depozito yatırmadınız",
+		"nth_deposit": "Depozito yatırmanız için bekliyoruz",
+		"welcome_promo": "Bizi tekrar ziyaret ediniz"
+	},
+	"jackpot": {
+		"jackpots": "Jackpots"
+	},
+	"game_categories": {
+		"favorite": "My favorites",
+		"add_to_favorites": "Add To Favorites",
+		"remove_from_favorites": "Remove From Favorites",
+		"favorites": {
+			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+		}
+	},
+	"betsoftgaming_api": {
+		"betsoftgaming": "Betsoftgaming"
+	},
+	"backend": {
+		"menu": {
+			"bitcoin_addresses": "Sanal Para Adresleri"
+		},
+		"bitcoin_wallets": {
+			"filters": {
+				"all": "Hepsi",
+				"available": "Uygun",
+				"occupied": "Meşgul"
+			}
+		},
+		"bitcoin": {
+			"add_new_addresses": "Dosya yükle veya yeni adres kopyala",
+			"upload_new_addresses": "Adres ekle",
+			"cashout": "Para çıkışı",
+			"deposit_to_wallet": "Bakiyene depozito yatır",
+			"deposit_currency_to_wallet": "Deposit {{currency}} to Wallet",
+			"enough_available_addresses_left": "%{count} adres erişilebilir",
+			"not_enough_available_addresses_left": "Sadece {{count}} bitcoin adresi kaldı. Daha fazla adres eklemek için {{link}}.",
+			"here": "burası",
+			"current_wallet_balance": "Mevcut bakiye:",
+			"total_balance": "Total: {{amount}}",
+			"available_balance": "Spendable: {{amount}}",
+			"transfer_to": "Arttır",
+			"increase_system_balance": "Bakiyenizi arttırmak için adrese sanal para gönder:"
+		}
+	},
+	"bitcoin_wallets": {
+		"address_sources": {
+			"imported": "From pool",
+			"generated": "Generated",
+			"cubits_invoice": "Cubits Invoice",
+			"cubits_channel": "Cubits Channel"
+		}
+	},
+	"sidebar": {
+		"available_addresses": "Uygun adresler",
+		"wallet_balance": "Bakiye"
+	},
+	"casinotechnology_api": {
+		"casinotechnology": "CasinoTechnology",
+		"timeout_message": "Game provider's server has not responded. Please retry later."
+	},
+	"ezugi_api": {
+		"ezugi": "Ezugi"
+	},
+	"quickfire_api": {
+		"quickfire": "QuickFire"
+	}
+}

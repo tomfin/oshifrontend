@@ -1,0 +1,98 @@
+<div class="game-modal" role="main" ng-if="game_url" style="position: fixed;width: 100%;height: 100%;z-index: 1000" >
+
+    <casino-header class="game_header"></casino-header>
+
+    <div class="sga-container" ng-class="{'hd-game' : $parent.isHd}" ng-init="$parent.isHd = true">
+        <div class="game_box" ng-class="{'tab_hidden': $parent.isToggled}">
+            <div class="game__content">
+                <iframe id="game-block" style="width: 100%; height: 100%;"  ng-src="{{$parent.game_url}}"></iframe>
+
+                <div class="game__option bottom_panel">
+                    <button class="game__favotite"
+                            ng-class="{'isActive' : $parent.favorites.isFavorite($parent.game.id)}"
+                            ng-click="$parent.favorites.favorite($parent.game.id)"
+                            access-level="accessLevels.user">
+                        <i></i>
+                        <span ng-show="!$parent.favorites.isFavorite($parent.game.id)">Add to Favorites</span>
+                        <span ng-hide="!$parent.favorites.isFavorite($parent.game.id)">Favorite Game</span>
+                    </button>
+                </div>
+            </div>
+            <div  class="game__tabs right_panel" ng-hide="$parent.isToggled">
+                <div class="tabs">.
+                    <casino-deposit-button type="game_signup"></casino-deposit-button>
+                    <tabset vertical="true" type="pills">
+                        <tab>
+                            <tab-heading>
+                                <i class="tabs__icon _lWinners"></i>
+                                {{'winners.latest_winners' | translate}}
+                            </tab-heading>
+                            <div>
+                                <casino-latest-winners type="latestWinnersGame"></casino-latest-winners>
+                            </div>
+
+                        </tab>
+                        <tab>
+                            <tab-heading>
+                                <i class="tabs__icon _tWinners"></i>
+                                {{'winners.top_winners' | translate}}
+                            </tab-heading>
+                            <div>
+                                <casino-top-winners type="topWinnersGame"></casino-top-winners>
+                            </div>
+                        </tab>
+                    </tabset>
+                </div>
+
+            </div>
+            <div class="game__right">
+                <ul class="right-nav">
+                    <li class="right-nav__item _menu"><a ng-click="$parent.isToggled = !$parent.isToggled" href=""></a></li>
+                    <li class="right-nav__item _full"><a ng-click="$parent.GameActions.fullscreen.enable('#game-block')" href=""></a></li>
+                    <li class="right-nav__item _close"><a ng-click="$parent.close();" href=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer game_footer" >
+        <div class="footer__nav" ng-init="$parent.show_blocks = false">
+            <ul>
+                <li class="footer__nav-item" ng-class="{'_active': $parent.show_blocks == 'TopWiners'}">
+                    <div  class="footer__subnav-wrap" ng-if="$parent.show_blocks == 'TopWiners'">
+                        <casino-games-slider type="top_games"></casino-games-slider>
+                    </div>
+                    <a class="footer__link"  href=""
+                       ng-click="$parent.show_blocks = $parent.show_blocks == 'TopWiners' ? false : 'TopWiners'"><i class="_top-games"></i>Top Games</a>
+                </li>
+                <li class="footer__nav-item" ng-class="{'_active': $parent.show_blocks == 'NewGames'}">
+                    <div  class="footer__subnav-wrap" ng-if="$parent.show_blocks == 'NewGames'">
+                        <casino-games-slider type="new_games"></casino-games-slider>
+                    </div>
+                    <a class="footer__link" href=""
+                       ng-click="$parent.show_blocks = $parent.show_blocks == 'NewGames' ? false : 'NewGames'"><i class="_new-games"></i>New Games</a>
+                </li>
+                <li class="footer__nav-item" ng-class="{'_active': $parent.show_blocks == 'Favorites'}" access-level="accessLevels.user">
+                    <div  class="footer__subnav-wrap" ng-if="$parent.show_blocks == 'Favorites'">
+                        <casino-games-slider type="favorites_games"></casino-games-slider>
+                    </div>
+                    <a  class="footer__link" href=""
+                        ng-click="$parent.show_blocks = $parent.show_blocks == 'Favorites' ? false : 'Favorites'"><i class="_favorites"></i>Favorites</a>
+                </li>
+                <li class="footer__nav-item" ng-class="{'_active': $parent.show_blocks == 'LastPlayed'}">
+                    <div  class="footer__subnav-wrap" ng-if="$parent.show_blocks == 'LastPlayed'">
+                        <casino-games-slider type="last_played"></casino-games-slider>
+                    </div>
+                    <a  class="footer__link" href=""
+                        ng-click="$parent.show_blocks = $parent.show_blocks == 'LastPlayed' ? false : 'LastPlayed'"><i class="_last"></i>Last Played</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__info">
+            <!--<casino-bitcoin-converter></casino-bitcoin-converter>-->
+
+        </div>
+    </div>
+
+</div>

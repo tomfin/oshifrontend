@@ -1,0 +1,28 @@
+<div class="wysiwyg">
+    <h2 translate="frontend.devise.resend_confirmation"></h2>
+    <form novalidate="novalidate" method="post" id="new_user" class="form-horizontal" ng-submit="confirmation.submit()" accept-charset="UTF-8">
+        <div id="user_email_input" class="form-group" ng-class="{'has-error':confirmation.data.errors.email}">
+            <div class="col-sm-3 form-label">
+                <label for="email" class="control-label">
+                    {{'activerecord.attributes.user.email' | translate}}
+                    <abbr title="required">*</abbr>
+                </label>
+            </div>
+            <div class="col-sm-6">
+                <input class="form-control" type="email" name="email" id="email" placeholder="{{'frontend.placeholders.email' | translate}}"
+                       ng-model="confirmation.data.user.email" auto-fill-sync/>
+                <p class="inline-errors" ng-repeat="(error_key, error_value) in confirmation.data.errors.email" translate="{{error_value}}"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="user_submit_action" class="col-sm-3 col-sm-offset-3">
+                <input class="btn btn-lg btn-success" type="submit" value="{{'frontend.devise.resend_confirmation' | translate}}" name="commit">
+            </div>
+        </div>
+
+    </form>
+
+    <div ng-include src="'/app/Auth/AuthLink/_auth_link.html'"></div>
+
+</div>

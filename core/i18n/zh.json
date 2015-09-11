@@ -1,0 +1,1942 @@
+{
+	"errors": {
+		"messages": {
+			"taken_in_past": "过去已发生！",
+			"equal_to_current_password": "必须与当前密码不同！",
+			"already_confirmed": "已经确认，请重新登录.",
+			"confirmation_period_expired": "必须在 %{period} 以内确认，请重新申请",
+			"expired": "您已过期，请重新申请",
+			"not_found": "没有找到",
+			"not_locked": "未锁定",
+			"not_saved": {
+				"one": "因为1个错误导致此%{resource}保存失败:",
+				"other": "因为%{count}个错误导致此%{resource}保存失败:"
+			}
+		}
+	},
+	"devise": {
+		"invalid_captcha": "验证码输入有误！",
+		"password_expired": {
+			"submit": "更改密码",
+			"updated": "您的新密码已保存。",
+			"change_required": "您的密码已过期。请更新您的密码！",
+			"forgot_password_message": "让您忘了密码，请点击布局然后重置密码。"
+		},
+		"failure": {
+			"session_limited": "您的登陆凭据曾在其他浏览器中使用过，请在此浏览器中重新登陆以继续。",
+			"expired": "您的帐户因太久没有使用而过期，请联系网站管理员。",
+			"disabled": "您的帐户被禁用。",
+			"not_allowed_ip": "您无法使用当前 IP 地址登陆该用户。",
+			"already_authenticated": "您已经登录.",
+			"inactive": "您还没有激活帐户.",
+			"invalid": "邮箱或密码错误",
+			"last_attempt": "你还有多一次尝试正确的密码，过后你的帐户会被锁住",
+			"locked": "您的帐号已被锁定.",
+			"not_found_in_database": "邮箱或密码错误",
+			"timeout": "您已登录超时，请重新登录.",
+			"unauthenticated": "继续操作前请注册或者登录.",
+			"unconfirmed": "继续操作前请先确认您的帐号."
+		},
+		"confirmations": {
+			"confirmed": "您的帐号已经确认，请登录.",
+			"send_instructions": "几分钟后，您将收到确认帐号的电子邮件.",
+			"send_paranoid_instructions": "如果您的邮箱存在于我们的数据库中，您将收到一封确认账号的邮件."
+		},
+		"mailer": {
+			"confirmation_instructions": {
+				"subject": "确认信息"
+			},
+			"reset_password_instructions": {
+				"subject": "重置密码信息"
+			},
+			"unlock_instructions": {
+				"subject": "解锁信息"
+			}
+		},
+		"omniauth_callbacks": {
+			"failure": "因为%{reason}，所以您无法从%{kind}获得授权.",
+			"success": "成功地从%{kind}获得授权."
+		},
+		"passwords": {
+			"no_token": "您暂时不能访问此页面。您需要通过密码重置邮件中的重置链接来访问此页面，如果您正是通过重置链接访问，请确定链接的正确性。",
+			"send_instructions": "几分钟后，您将收到重置密码的电子邮件.",
+			"send_paranoid_instructions": "如果您的邮箱存在于我们的数据库中，您将收到一封找回密码的邮件.",
+			"updated": "您的密码已修改成功，您现在已登录.",
+			"updated_not_active": "您的密码已修改成功."
+		},
+		"registrations": {
+			"destroyed": "再见！您的帐户已成功注销。我们希望很快可以再见到您.",
+			"signed_up": "欢迎您！您已注册成功.",
+			"signed_up_but_inactive": "谢谢您！然而您的账号还未被激活，在这之前无法登陆。",
+			"signed_up_but_locked": "谢谢您！然而您的账号已被锁定，无法登陆。",
+			"signed_up_but_unconfirmed": "谢谢您！一封确认邮件已经发至您的邮箱，请点击其中的链接激活您的账号。",
+			"update_needs_confirmation": "新的账号信息已成功提交，一封确认邮件已经发至您的邮箱，请点击其中的链接以使您的新E-mail地址生效。",
+			"updated": "帐号资料更新成功."
+		},
+		"sessions": {
+			"already_signed_out": "成功的登出",
+			"signed_in": "登录成功.",
+			"signed_out": "退出成功."
+		},
+		"unlocks": {
+			"send_instructions": "几分钟后，您将收到一封解锁帐号的邮件.",
+			"send_paranoid_instructions": "如果您的邮箱存在于我们的数据库中，您将收到一封解锁账号的邮件.",
+			"unlocked": "您的帐号已成功解锁，您现在已登录."
+		}
+	},
+	"activerecord": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "不可包含分段。",
+							"has_query_parameter": "不可包含查询参数。",
+							"invalid_uri": "必须是一个有效的URI。",
+							"relative_uri": "必须是绝对URI。"
+						}
+					}
+				},
+				"user": {
+					"attributes": {
+						"password": {
+							"wrong_password": "invalid email address or password"
+						}
+					}
+				},
+				"profile": {
+					"attributes": {
+						"age": {
+							"greater_than_or_equal_to": "verification {{count}}+"
+						}
+					}
+				},
+				"payment": {
+					"not_enough_money": "金钱不足",
+					"not_enough_unlocked_money": "由于活跃奖励您的部分或全部资金被锁定。请满足您的奖金投注要求以兑现。",
+					"unresolved_cashout_request_presents": "您先前的退币请求尚未处理，我们会尽快处理。在提交新的退币请求前，请等待我们对您先前退币请求的处理。",
+					"pending_deposit_presents": "我们仍在等待确认你的上次存款",
+					"commission_is_greater_that_amount": "佣金大于金额",
+					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
+					"not_used_account": "Account you are going to cashout was not used before.",
+					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
+					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
+					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+				},
+				"commission_connection": {
+					"not_overlap": "不能与使用同种货币的其他连接重叠",
+					"future_from_time": "只能在后来",
+					"greater_than_from_time": "必须大于开始时间",
+					"strategies_equivalence": "必须使用与合营伙伴个人资料相同的付款方案",
+					"greater_than_now": "必须大于当前"
+				},
+				"commission": {
+					"wrong_strategy_settings": "您的支付方案设置中存在错误"
+				},
+				"bonus_issue": {
+					"not_enough_to_lock": "大于用户余额"
+				},
+				"external_bet": {
+					"rollback_expired": "结果登记24小时后复原不被接受"
+				},
+				"notification/subscription": {
+					"invalid_types": "您只能订阅通知"
+				}
+			}
+		},
+		"models": {
+			"account": "帐户",
+			"admin_user": "管理员用户",
+			"affiliate_profile": "合营伙伴个人资料",
+			"bet": "输",
+			"bonus": "奖励",
+			"bonus_issue": "奖金发放",
+			"document": "文档",
+			"event": "赛事",
+			"external_bet": "外部投注",
+			"game": "游戏",
+			"game_category": "Game Category",
+			"game_step": "步骤",
+			"game_table": "游戏桌",
+			"payment": "付款",
+			"payment_system": "支付系统",
+			"profile": "个人资料",
+			"reports/base_collection/result_record": "结果",
+			"suspicion": "可疑",
+			"user": "用户",
+			"player": "玩家",
+			"retention_email": "保留邮件"
+		},
+		"attributes": {
+			"balance_correction": {
+				"action": "操作",
+				"amount": "数额",
+				"account": "帐户",
+				"comment": "注释"
+			},
+			"game_category": {
+				"name": "名称",
+				"disabled": "已禁用",
+				"created_at": "创建日期",
+				"games": "游戏",
+				"position": "Position"
+			},
+			"notification": {
+				"type": "类型",
+				"user": "用户",
+				"admin_user": "管理员",
+				"target": "目标",
+				"target_type": "目标类型"
+			},
+			"affiliate_link": {
+				"name": "名称",
+				"code": "代码"
+			},
+			"affiliate_profile": {
+				"name": "标题",
+				"strategy": "支付方案",
+				"no_debt": "无负结转",
+				"links": "Links",
+				"active": "活动的"
+			},
+			"account": {
+				"currency": "货币",
+				"amount": "数额",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"active_admin/comment": {
+				"author": "作者",
+				"body": "主体",
+				"resource": "资源"
+			},
+			"admin_user": {
+				"email": "电子邮件地址",
+				"encrypted_password": "已加密的密码",
+				"password": "密码",
+				"password_confirmation": "确认密码",
+				"current_password": "当前密码",
+				"remember_me": "记住我",
+				"reset_password_token": "重置密码令牌",
+				"reset_password_sent_at": "重置密码发送地址",
+				"remember_created_at": "记住创建日期",
+				"sign_in_count": "登录次数",
+				"current_sign_in_at": "当前登录日期",
+				"last_sign_in_at": "上次登录日期",
+				"current_sign_in_ip": "当前登录 IP",
+				"last_sign_in_ip": "上次登录 IP",
+				"failed_attempts": "失败次数",
+				"unlock_token": "解除锁定令牌",
+				"locked_at": "锁定日期",
+				"password_changed_at": "密码更改日期",
+				"created_at": "创建日期",
+				"updated_at": "更新日期",
+				"disabled": "已禁用",
+				"allowed_ips_string": "允许的 IP 地址",
+				"roles_names": "角色"
+			},
+			"balance_transaction": {
+				"reference": "参考",
+				"amount": "数额",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"bet": {
+				"bet_type": "赌注类型",
+				"bet_amount": "赌注数额",
+				"win_amount": "盈利金额",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"bonus": {
+				"strategy": "类型",
+				"title": "标题",
+				"description": "描述",
+				"percentage": "百分比",
+				"currency": "货币",
+				"amount": "数额",
+				"percent": "百分比",
+				"max_amount": "最大数额",
+				"code": "代码",
+				"extra_info": "额外信息",
+				"wager_multiplier": "下注倍数",
+				"wagering_epsilon": "最小数额",
+				"cashable": "可兑现",
+				"sticky": "粘性",
+				"enabled": "已启用",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"bonus_issue": {
+				"strategy": "策略",
+				"stage": "阶段",
+				"amount": "数额",
+				"amount_wager_requirement": "下注额要求",
+				"amount_wager": "下注额",
+				"wagered_percent": "押注百分比",
+				"amount_locked": "锁定数额",
+				"valid_until": "过期日期",
+				"extra_info": "额外信息",
+				"cashable": "可兑现金",
+				"sticky": "粘性",
+				"wager": "下注",
+				"created_at": "接收日期",
+				"issued_at": "发放日期",
+				"updated_at": "更新日期"
+			},
+			"freespin_issue": {
+				"stage": "阶段",
+				"amount": "数额",
+				"freespins_total": "Freespins Awarded",
+				"activatable_until": "过期日期",
+				"win_amount_cents": "Alredy won",
+				"valid_until": "过期日期",
+				"extra": "额外信息",
+				"external_id": "外部 ID",
+				"created_at": "接收日期",
+				"issued_at": "发放日期",
+				"updated_at": "更新日期"
+			},
+			"bonus_strategy/feature/payment_system": {
+				"ids_list": "支付系统"
+			},
+			"contact": {
+				"email": "电子邮件地址",
+				"content": "内容"
+			},
+			"document": {
+				"approved": "已批准",
+				"description": "描述",
+				"removed": "已移除",
+				"created_at": "创建日期",
+				"updated_at": "更新日期",
+				"attachment": "附件",
+				"attachment_file_name": "附件文件名",
+				"attachment_content_type": "附件内容类型",
+				"attachment_file_size": "附件文件大小",
+				"attachment_updated_at": "Added at"
+			},
+			"event": {
+				"subject": "主题",
+				"event_type": "事件类型",
+				"ip": "IP 地址",
+				"country": "国家",
+				"coordinates": "坐标",
+				"latitude": "维度",
+				"longitude": "经度",
+				"address": "地址",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"external_bet": {
+				"id": "本地 ID",
+				"account_id": "账户 ID",
+				"account": "帐户",
+				"external_id": "外部 ID",
+				"bet_amount": "输",
+				"win_amount": "赢",
+				"oauth_application": "OAuth应用程序",
+				"oauth_application_id": "OAuth应用程序ID"
+			},
+			"game": {
+				"data": "数据",
+				"finished_at": "结束时间",
+				"created_at": "开始时间",
+				"updated_at": "更新时间"
+			},
+			"game_step": {
+				"state": "国家",
+				"action": "操作",
+				"data": "输入",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"game_table": {
+				"base_type": "基本游戏类型",
+				"variation": "特定类型",
+				"identifier": "标示符",
+				"title": "游戏名称",
+				"client": "客户端",
+				"provider": "Game provider",
+				"description": "描述",
+				"active": "活动的",
+				"currency": "货币",
+				"secondary_currency": "第二货币",
+				"amount_win": "总赌注",
+				"amount_loss": "总赢",
+				"chips": "筹码",
+				"default_chip": "默认筹码",
+				"min_bet": "最低赌注",
+				"max_bet": "最高赌注",
+				"paytable": "赔付表",
+				"options": "选项",
+				"bet_playthrough_percent": "要求下注百分比",
+				"line_bets": "线注",
+				"archived_at": "存档位置",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"modification": {
+				"subject": "主题",
+				"entity": "实体",
+				"data": "数据",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"paritcipation": {
+				"active": "活动的",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"payment": {
+				"amount": "数额",
+				"commission_amount": "佣金",
+				"amount_after_commission": "金额（佣金扣除）",
+				"currency": "货币",
+				"action": "操作",
+				"source": "源",
+				"extra": "额外",
+				"success": "成功",
+				"finished_at": "完成日期",
+				"created_at": "创建日期",
+				"updated_at": "更新日期",
+				"recipient_address": "地址",
+				"manual_confirmation_code": "确认代码",
+				"source_id": "Payment Code"
+			},
+			"payment_system": {
+				"system_name": "系统名称",
+				"disabled": "已禁用",
+				"currency_options": "货币选项",
+				"test_mode": "测试模式",
+				"data": "数据",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"payment_system_debt": {
+				"system_name": "系统名称",
+				"system_account": "Account in system",
+				"amount_cents": "Debt",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"profile_setting": {
+				"name": "名称",
+				"enabled": "已启用",
+				"required": "必填",
+				"show_at_registration": "在注册时显示",
+				"show_at_edition": "在编辑模式下显示",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			},
+			"suspicion": {
+				"suspect": "嫌疑人",
+				"discarded": "已放弃",
+				"created_at": "创建日期",
+				"updated_at": "更新日期",
+				"related_suspect": "相关嫌疑人",
+				"data": "数据",
+				"failed_check": "失败的检查"
+			},
+			"user": {
+				"email": "电子邮件地址",
+				"encrypted_password": "加密的密码",
+				"password": "密码",
+				"password_confirmation": "密码确认",
+				"current_password": "当前密码",
+				"remember_me": "记住我",
+				"reset_password_token": "重置密码令牌",
+				"reset_password_sent_at": "重置密码发送地址",
+				"remember_created_at": "记住创建日期",
+				"sign_in_count": "登录次数",
+				"current_sign_in_at": "当前登录时间",
+				"last_sign_in_at": "上次登录时间",
+				"current_sign_in_ip": "当前登录 IP 地址",
+				"last_sign_in_ip": "上次登录 IP 地址",
+				"confirmation_token": "确认令牌",
+				"confirmed_at": "确认日期",
+				"confirmation_sent_at": "确认发送日期",
+				"unconfirmed_email": "未确认的电子邮件",
+				"failed_attempts": "失败的尝试",
+				"unlock_token": "解除锁定令牌",
+				"locked_at": "锁定日期",
+				"authentication_token": "认证令牌",
+				"created_at": "创建日期",
+				"updated_at": "更新日期",
+				"disabled": "已禁用",
+				"allowed_ips_string": "允许的 IP 地址",
+				"guest": "客人",
+				"main_bitcoin_address": "主比特币地址",
+				"bonus_code": "Bonus Code"
+			},
+			"profile": {
+				"full_name": "全名",
+				"first_name": "名",
+				"last_name": "姓",
+				"title": "称谓",
+				"nickname": "昵称",
+				"date_of_birth": "出生日期",
+				"personal_id_number": "个人 ID 号码",
+				"gender": "性别",
+				"country": "国家",
+				"city": "城市",
+				"place_of_birth": "出生地",
+				"address": "地址",
+				"address2": "其他地址",
+				"postal_code": "邮政编码",
+				"time_zone": "时区",
+				"mobile_phone": "移动电话",
+				"phone": "电话",
+				"skype": "Skype",
+				"send_payment_confirmation": "发送付款确认",
+				"receive_newsletters": "接收新闻稿",
+				"receive_promos": "接收促销",
+				"never_call": "不要致电",
+				"currency": "货币",
+				"language": "语言",
+				"security_question": "安全问题",
+				"security_answer": "安全问题答案",
+				"age_acceptance": "确认年龄",
+				"terms_acceptance": "同意条款和条件",
+				"bonus_issuance_policy": "奖金发放政策",
+				"allowed_ips_string": "允许的 IP 地址"
+			},
+			"profile/admin": {
+				"full_name": "全名",
+				"first_name": "名",
+				"last_name": "姓",
+				"title": "称谓",
+				"nickname": "昵称",
+				"date_of_birth": "出生日期",
+				"personal_id_number": "个人 ID 号码",
+				"gender": "性别",
+				"country": "国家",
+				"city": "城市",
+				"place_of_birth": "出生地",
+				"address": "地址",
+				"address2": "其他地址",
+				"postal_code": "邮政编码",
+				"time_zone": "时区",
+				"mobile_phone": "移动电话",
+				"phone": "电话",
+				"skype": "Skype",
+				"send_payment_confirmation": "发送付款确认",
+				"receive_newsletters": "接收新闻稿",
+				"receive_promos": "接收促销",
+				"never_call": "不要致电",
+				"currency": "货币",
+				"language": "语言",
+				"security_question": "安全问题",
+				"security_answer": "安全问题答案",
+				"age_acceptance": "确认年龄至少已经到达 {{age}}",
+				"terms_acceptance": "同意条款和条件",
+				"bonus_issuance_policy": "奖金发放政策",
+				"allowed_ips_string": "允许的 IP 地址"
+			},
+			"profile/user": {
+				"full_name": "全名",
+				"first_name": "名",
+				"last_name": "姓",
+				"title": "称谓",
+				"nickname": "昵称",
+				"date_of_birth": "出生日期",
+				"personal_id_number": "个人 ID 号码",
+				"gender": "性别",
+				"country": "国家",
+				"city": "城市",
+				"place_of_birth": "出生地",
+				"address": "地址",
+				"address2": "其他地址",
+				"postal_code": "邮政编码",
+				"time_zone": "时区",
+				"mobile_phone": "移动电话",
+				"phone": "电话",
+				"skype": "Skype",
+				"send_payment_confirmation": "发送付款确认",
+				"receive_newsletters": "接收新闻稿",
+				"receive_promos": "接收促销",
+				"never_call": "不用致电",
+				"currency": "货币",
+				"language": "语言",
+				"security_question": "安全问题",
+				"security_answer": "安全问题答案",
+				"age_acceptance": "我确认我的年龄超过 {{age}} 岁",
+				"terms_acceptance": "我同意%（文本）",
+				"bonus_issuance_policy": "奖金发放政策",
+				"allowed_ips_string": "允许的 IP 地址"
+			},
+			"provable_fair_data": {
+				"secret": "加密",
+				"client_seed": "客户端种子",
+				"result": "结果",
+				"hash": "Hash"
+			},
+			"retention_email": {
+				"strategy": "类别",
+				"template_name": "模板名称",
+				"days_interval": "间隔日",
+				"enabled": "已启用",
+				"created_at": "创建日期",
+				"updated_at": "更新日期"
+			}
+		}
+	},
+	"mongoid": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "不可包含分段。",
+							"has_query_parameter": "不可包含查询参数。",
+							"invalid_uri": "必须是一个有效的URI。",
+							"relative_uri": "必须是绝对URI。"
+						}
+					}
+				}
+			}
+		}
+	},
+	"mongo_mapper": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "不可包含分段。",
+							"has_query_parameter": "不可包含查询参数。",
+							"invalid_uri": "必须是一个有效的URI。",
+							"relative_uri": "必须是绝对URI。"
+						}
+					}
+				}
+			}
+		}
+	},
+	"doorkeeper": {
+		"errors": {
+			"messages": {
+				"invalid_request": "请求缺少必要的参数，包括不支持的参数值，或者是格式不正确。",
+				"invalid_redirect_uri": "包括无效的回调地址。",
+				"unauthorized_client": "客户无权使用此方法执行申请。",
+				"access_denied": "资源所有者或授权服务器拒绝请求。",
+				"invalid_scope": "请求范围是无效的，未知的，或格式错误。",
+				"server_error": "授权服务器遇到意外情况无法完成请求。",
+				"temporarily_unavailable": "授权服务器目前因暂时超载或维护无法处理请求。",
+				"credential_flow_not_configured": "资源所有者密码认证流程因Doorkeeper.configure.resource_owner_from_credentials未配置而失败。",
+				"resource_owner_authenticator_not_configured": "资源所有者搜索因Doorkeeper.configure.resource_owner_authenticator未配置而失败。",
+				"unsupported_response_type": "授权服务器不支持此响应类型。",
+				"invalid_client": "客户端身份验证由于未知客户，包含无客户端身份验证，或不支持的身份验证方法而失败。",
+				"invalid_grant": "所提供的授权授予无效，过期，被撤销，与用于授权请求的回调URI不匹配，或已被授予另一个客户端。",
+				"unsupported_grant_type": "授权授出类型不被授权服务器所支持。",
+				"invalid_resource_owner": "提供的资源所有者凭证是无效的，或资源拥有者无法找到。",
+				"invalid_token": {
+					"revoked": "访问令牌被撤销。",
+					"expired": "访问令牌过期。",
+					"unknown": "访问令牌是无效的。"
+				}
+			}
+		},
+		"flash": {
+			"applications": {
+				"create": {
+					"notice": "应用程序已创建。"
+				},
+				"destroy": {
+					"notice": "应用程序已删除。"
+				},
+				"update": {
+					"notice": "应用程序已更新。"
+				}
+			},
+			"authorized_applications": {
+				"destroy": {
+					"notice": "应用程序已撤销。"
+				}
+			}
+		},
+		"authorize_title": "需OAuth授权",
+		"authorize_required": "需要认证",
+		"authorize": "授权",
+		"authorization_code": "授权码",
+		"deny": "拒绝",
+		"rights_title": "此应用程序将能够：",
+		"allow_authorization": "授权％{应用程序}使用您的帐户？",
+		"authorize_as_regular_user": "请登出来宾帐户然后以普通用户身份登入。",
+		"scopes": {
+			"profile": "访问您的个人资料数据",
+			"bets": "访问您的余额数据，并以您的名义投注"
+		}
+	},
+	"amatic": {
+		"verification": {
+			"error_popup": {
+				"title": "Error",
+				"description": "Amatic server does not respond"
+			},
+			"popup": {
+				"copy": "Copy",
+				"title": "验证成功",
+				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
+				"message": "Your Text",
+				"signature": "Amatic Signature",
+				"address": "比特币地址"
+			},
+			"title": "Amatic verification",
+			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
+			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"form": {
+				"your_text": "Your Text",
+				"verify": "验证"
+			}
+		},
+		"amatic": "Amatic"
+	},
+	"http": {
+		"not_found": {
+			"title": "Page Not Found",
+			"oops": "Oops,",
+			"cannot_be_found": "The page you are looking for cannot be found.",
+			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
+			"link_to_root": "Here is a link to our start page:"
+		}
+	},
+	"common": {
+		"in_out": "IN/OUT",
+		"players": "玩家",
+		"email": "电子邮件地址",
+		"content": "内容",
+		"loading": "正在载入...",
+		"yes": "是",
+		"no": "否",
+		"all": "全部",
+		"default": "默认",
+		"date": "日期",
+		"result": "结果",
+		"total_bet": "投注总额",
+		"total_win": "总赢彩额",
+		"gross_win": "收入总额",
+		"cashouts_sum": "付款金额",
+		"deposits_sum": "存款金额",
+		"net_revenue": "净收入",
+		"client": "客户端",
+		"amount": "数额",
+		"help": "帮助",
+		"currency": "货币",
+		"total": "总计",
+		"limit": "限额",
+		"live_casino": "真人娱乐场",
+		"address": "地址",
+		"good_news": "Good news, {{nickname}}.",
+		"save": "保存",
+		"edit": "编辑",
+		"remove": "移除",
+		"destroy": "销毁",
+		"cancel": "取消",
+		"close": "Close",
+		"create": "创建",
+		"add": "添加",
+		"update": "更新",
+		"reset": "重置",
+		"refresh": "刷新",
+		"proceed": "继续",
+		"filter": "过滤",
+		"are_you_sure": "您确定吗？",
+		"set": "Set",
+		"enabled": "已启用",
+		"disabled": "已禁用",
+		"active": "活动的",
+		"preview": "预览",
+		"select": "选择",
+		"summary": "摘要",
+		"status": "状态",
+		"options": "选项",
+		"genders": {
+			"m": "男",
+			"f": "女"
+		},
+		"player": "玩家",
+		"guest": "客人",
+		"subject": "主题",
+		"actions": "操作",
+		"balance": "余额",
+		"profit": "利润",
+		"payout": "派彩率",
+		"bets_sum": "赌注金额",
+		"wins_sum": "赢取金额",
+		"bets": "赌注",
+		"total_payouts": "总派彩：",
+		"terms_and_conditions": "条款及细则",
+		"net_total": "净总额",
+		"blog": "博客",
+		"comments": "评论",
+		"comment": "注释",
+		"empty_search_results": "There are no items according to the filtering parameters",
+		"add_more_coins": "Add more Coins",
+		"show_more_games": "Show more games",
+		"warning": "收益",
+		"new_as_novelty": "新",
+		"already_member": "Already a member?",
+		"have_account": "Have an account?"
+	},
+	"locales": {
+		"af": "南非荷兰语",
+		"bg": "保加利亚语",
+		"de": "德语",
+		"el": "希腊语",
+		"en": "英语",
+		"es": "西班牙语",
+		"fi": "芬兰语",
+		"fr": "French",
+		"it": "意大利语",
+		"ja": "日语",
+		"ko": "Korean",
+		"nl": "荷兰语",
+		"pl": "波兰语",
+		"pt": "葡萄牙语",
+		"ru": "俄语",
+		"sv": "瑞典语",
+		"tr": "土耳其语",
+		"vi": "越南语",
+		"zh": "简体中文"
+	},
+	"date": {
+		"day": "日",
+		"week": "周",
+		"month": "月",
+		"year": "年"
+	},
+	"casino": {
+		"casino": "娱乐场",
+		"not_enough_money": "余额不足",
+		"events": {
+			"modified": {
+				"user": "用户个人资料已修改",
+				"admin_user": "管理员已修改",
+				"game_table": "游戏已修改",
+				"bonus_issue": "奖金发放",
+				"bonus": "奖金已修改",
+				"payment_system": "支付系统",
+				"retention_email": "保留电子邮件修改",
+				"casino_cash_balance": "Casino Cash Balance Modified",
+				"commission_connection": "Commission Connection Modified",
+				"payment": "游戏已修改",
+				"affiliate_profile": "Affiliate Profile Modified"
+			},
+			"game": {
+				"step": "游戏步骤已生成"
+			},
+			"user": {
+				"sign_out": "用户已登录",
+				"sign_in": "用户已登录",
+				"failed_sign_in": "用户登录失败"
+			},
+			"admin_user": {
+				"sign_out": "管理员已注销",
+				"sign_in": "管理员已登录",
+				"failed_sign_in": "管理员登录失败"
+			},
+			"notifications": {
+				"balance_correction_created": "Balance correction created",
+				"cashout_requested": "已发出提现请求",
+				"deposit_made": "存款完成",
+				"cashout_made": "提现完成",
+				"auto_cashout_made": "自动提现完成",
+				"cashout_rejected": "提现请求已拒绝",
+				"deposit_rejected": "Deposit rejected",
+				"user_upload_document": "User Uploaded Document",
+				"payment_created_by_admin": "Admin Created Payment",
+				"user_disabled": "User Disabled",
+				"contact": "User Requested Support",
+				"admin_comment_created": "Admin Left Comment"
+			},
+			"affiliate": {
+				"redirect": "新代销商用户访问"
+			},
+			"bitcoin_addresses_uploaded": "比特币地址已上传"
+		},
+		"bonuses": {
+			"names": {
+				"no_deposit": "无存款",
+				"first_deposit": "首存",
+				"nth_deposit": "第 N 笔存款",
+				"deposit_system": "支付系统奖金",
+				"coupon": "赠券"
+			},
+			"issuance_policy": {
+				"can-issue": "自动发放奖金",
+				"can-refuse": "玩家可以在游戏前取消奖金",
+				"can-cancel": "玩家可以取消奖金"
+			}
+		},
+		"retention_emails": {
+			"names": {
+				"welcome": "欢迎",
+				"welcome_promo": "欢迎促销",
+				"no_deposit": "无存款",
+				"nth_deposit": "无第n个存款"
+			}
+		},
+		"payment_systems": {
+			"names": {
+				"qiwi": "Qiwi",
+				"skrill": "Skrill",
+				"interkassa": "Interkassa",
+				"paysafecard": "paysafecard",
+				"ukash": "Ukash",
+				"neteller": "Neteller",
+				"card_pay": "CardPay",
+				"b_cash": "B-Cash",
+				"wirecard": "Wirecard",
+				"coupon": "赠券",
+				"cashbox": "金库",
+				"cep_bank": "Cep Bank",
+				"bank_transfer": "Bank Transfer",
+				"cubits": "Cubits",
+				"lavapay": "Lavapay",
+				"bitcoin_payment": "比特币",
+				"ripple_payment": "Ripple"
+			},
+			"payer": {
+				"cashout_email_subject": "赌场提现",
+				"cashout_email_note": "提现操作已执行"
+			},
+			"system_name": "通过 {{parent}} 的 {{child}}",
+			"all_locked": "为了您的安全，我们只允许通过您以前用于存款的支付系统退款。如果您有任何疑问，请联系技术支持。",
+			"child_systems": {
+				"visa": "Visa",
+				"mastercard": "MasterCard",
+				"online_bank_transfer": "网上银行转账",
+				"ideal": "iDEAL",
+				"nordea_solo": "Nordea Solo",
+				"bancontact_mister_cash": "Bancontact/Mister Cash",
+				"cards": "信用卡",
+				"ccard": "信用卡",
+				"click_to_pay": "CLICK2PAY",
+				"ekonto": "eKonto",
+				"eps": "EPS 电子支付",
+				"giropay": "giropay",
+				"installment": "payolution安装",
+				"invoice": "payolution发票",
+				"moneta": "moneta.ru",
+				"mpass": "mpass",
+				"przelewy": "Przelewy24",
+				"paypal": "PayPal",
+				"paybox": "Paybox",
+				"poli": "POLi支付",
+				"paysafecard": "paysafecard",
+				"quick": "Quick",
+				"sepa": "SEPA Direct Debit",
+				"skrill_direct": "Skrill Direct",
+				"skrill_wallet": "Skrill数字钱包",
+				"sofort": "SOFORT银行业务",
+				"tatrapay": "TatraPay",
+				"trustly": "忠实地",
+				"bank_transfer": "Bank Transfer",
+				"lavapay_balance": "LavaPay Balance",
+				"cheque": "Cheque",
+				"perfect": "Perfect Money",
+				"liqpay": "LiqPay",
+				"webmoney": "WebMoney",
+				"yandex": "Yandex Money",
+				"okpay": "OKPAY",
+				"qiwi": "Qiwi",
+				"mailru": "money@mail.ru",
+				"lavapay_bitcoin": "比特币",
+				"egopay": "EgoPay",
+				"lavapay_litecoin": "LiteCoin",
+				"paxum": "Paxum",
+				"ecoin": "eCoin",
+				"btce": "BTC-E",
+				"privatbank": "PrivatBank.ua",
+				"nsmep": "NSMEP",
+				"telemoney": "TeleMoney",
+				"ukrterminal": "UkrTerminal",
+				"rusterminal": "RusTerminal",
+				"rusbank": "Rusbank",
+				"mobileretails": "MobileRetails",
+				"unistream": "Unistream",
+				"ruspost": "RusPost",
+				"contact": "Contact",
+				"anelik": "Anelik",
+				"leader": "Leader",
+				"mts": "MTS",
+				"megafon": "Megafon",
+				"beeline": "Beeline",
+				"alfaclick": "AlfaClick",
+				"fortumo": "Fortumo",
+				"cashu": "CashU",
+				"privat_terminal": "Privat Terminal",
+				"kazakhstan_terminal": "Kazakhstan Terminal",
+				"tjs_terminal": "Tjs Terminal",
+				"moldova_terminal": "Moldova Terminal",
+				"georgia_terminal": "Georgia Terminal",
+				"euroset": "Euroset",
+				"kievstar": "KievStar",
+				"promsvyazbank": "PromSvyazBank",
+				"easypay": "EasyPay",
+				"bpay": "BPay",
+				"pravex": "Pravex Bank",
+				"ukrsib": "UkrSib Bank",
+				"liberty": "Liberty Bank",
+				"faktura": "Faktura.ru",
+				"privatbank_cashin": "Privatbank Cash-in",
+				"sberbank_cashin": "Sberbank Cash-in",
+				"qiwi_visa": "Visa Qiwi",
+				"qiwi_mastercard": "Mastercard Qiwi",
+				"qiwi_maestro": "Maestro Qiwi",
+				"cis_cards": "Bank Cards",
+				"yandex_personal": "Yandex Personal",
+				"local_bank_transfer": "Local Bank Transfer",
+				"w1": "W1",
+				"wallet_one": "Wallet One",
+				"russian_standard": "Russian Standard Bank"
+			}
+		},
+		"commissions": {
+			"strategies": {
+				"registration": "CPA",
+				"percent": "收入共享"
+			}
+		},
+		"games": {
+			"unknown_action": "未知操作",
+			"unavailable_action": "不可用操作",
+			"roulette": {
+				"notice": {
+					"bet_is_not_valid": "下注无效",
+					"bet_type_not_found": "找不到赌注类型",
+					"unknown_bet": "未知赌注",
+					"unknown_value": "选择的未知值",
+					"unknown_column": "选择的未知列",
+					"unknown_dozen": "选择的十二点未知"
+				}
+			}
+		},
+		"provable_fair": {
+			"provable_fair": "可证明的公平",
+			"provability": "可证明性",
+			"not_available": "Provability widget available at game page",
+			"verify": "验证",
+			"loading": "进行随机 ...",
+			"is_unavailable": "Provable fair is not available for this game.",
+			"next_game": "下一个游戏",
+			"last_game": "最后一个游戏",
+			"reel_number": "卷轴 {{index}}",
+			"fields": {
+				"hash": "Hash (结果+秘密)",
+				"client_seed": "客户端种子",
+				"secret": "结果+秘密",
+				"result": "最终结果"
+			},
+			"hint": {
+				"common": "输入客户端种子（0 - {{max_seed}}）",
+				"roulette": "进一步推球：",
+				"card": "切牌",
+				"poker": "切牌",
+				"slots": "转动卷轴多一点："
+			},
+			"verification": {
+				"success": {
+					"title": "验证成功",
+					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
+				},
+				"failure": {
+					"title": "验证失败",
+					"body": "请联系我们的支持。"
+				}
+			}
+		},
+		"bitcoin": {
+			"update_balance": "刷新余额数据",
+			"current_balance": "当前余额 {{balance}}。",
+			"send_text": "将任何 {{currency}} 款项 (加上矿工费用) 发送至",
+			"cant_attach_address": "对不起，我们在比特币方面遇到一些问题。已经通知了管理员。请稍后重试。",
+			"private_address_note": "这是您的私人存款地址。您对该地址的任何交易都将立即反应在您的余额中。",
+			"xrp": {
+				"send_text": "发送任意数量的瑞波币 {{currency}} 到",
+				"private_address_note": "这是您的私人存款地址和目标标记。您对带有目标标记地址的任何交易都将立即反应在您的余额中。"
+			}
+		}
+	},
+	"frontend": {
+		"placeholders": {
+			"email": "输入您的邮箱",
+			"password": "输入您的密码",
+			"password_confirmation": "确认密码",
+			"current_password": "输入您当前的密码"
+		},
+		"age_acceptance": "我确认我的年龄超过 {{age}} 岁",
+		"choose_game": "选择任何游戏",
+		"games_played": "游戏被演奏",
+		"or": "或",
+		"please_or": "Please {{first}} or {{second}}",
+		"mbtc_total_winnings": "mBTC 赢钱总额",
+		"hi_guest": "您好，游客",
+		"hi_user": "您好，{{nickname}}",
+		"password_difficulty": "密码强度",
+		"password_difficulties": {
+			"very_weak": "非常弱",
+			"weak": "弱",
+			"so_so": "一般",
+			"strong": "强",
+			"great": "非常强"
+		},
+		"playing": {
+			"playing_fun": "支付{{货币}}",
+			"playing_real": "支付{{货币}}",
+			"play_fun": "支付{{货币}}",
+			"play_real": "支付{{货币}}"
+		},
+		"links": {
+			"support": "帮助",
+			"help": "帮助",
+			"how_to_start": "开始方式",
+			"casino_promotions": "娱乐场促销",
+			"bonuses": "奖金",
+			"affiliate_program": "联属计划",
+			"terms_and_conditions": "条款及细则",
+			"back": "返回",
+			"create_ticket": "创建票证",
+			"send_form": "提交表单",
+			"online_chat": "在线聊天",
+			"home": "主页",
+			"frontpage": "Frontpage",
+			"casino_games": "赌场游戏",
+			"about_casino": "关于游乐场",
+			"all_games": "所有游戏",
+			"load_more_games": "Load More Games",
+			"rules": "游戏规则",
+			"autoregister": "自动注册",
+			"quick_register": "Quick Register",
+			"play_for_fun": "娱乐模式",
+			"demo": "Demo",
+			"play_for_real": "真钱模式",
+			"play_for_bitcoin": "比特币模式",
+			"free_play": "免费试玩",
+			"real_play": "真实游戏",
+			"play_now": "开始游戏",
+			"join_now": "现在加入",
+			"profile": "个人资料",
+			"dice": "骰子",
+			"deposit": "存款",
+			"withdraw": "Withdraw",
+			"cashout": "提现",
+			"cashbox": "金库",
+			"sign_out": "登出",
+			"sign_in": "登录",
+			"sign_up": "注册",
+			"register": "注册",
+			"login": "登录",
+			"logout": "Logout",
+			"start_playing": "Start Playing",
+			"forgot_password": "忘了密码？",
+			"didnt_receive_confirmation": "没有收到确认指导？",
+			"didnt_receive_unlock": "没有收到解锁指导？",
+			"affiliate_profiles": "合营伙伴个人资料",
+			"settings": "设置"
+		},
+		"captions": {
+			"affiliates": "联盟",
+			"help": "帮助",
+			"games": "游戏",
+			"quick_links": "快速链接",
+			"languages": "语言",
+			"info": "Info",
+			"information": "信息",
+			"promotion": "推广",
+			"follow_us": "关注我们"
+		},
+		"actions": {
+			"go_bang": "开始!",
+			"deposit_now": "Deposit Now",
+			"sign_up_now": "Sign Up Now"
+		},
+		"games_bet_playthrough_percent": "游戏赌注下注百分比",
+		"contact": {
+			"title": "联系表",
+			"hint": "请填写下方的表格，所有字段均需填写。",
+			"labels": {
+				"email": "电子邮件地址",
+				"content": "信息",
+				"send": "发送"
+			}
+		},
+		"no_flash": {
+			"flash_isnt_available": "未找到 Adobe Flash 播放器",
+			"flash_usage": "亲爱的用户，为了保证提供最佳分辨率的游戏体验，我们的赌场使用了 Adobe Flash 技术。",
+			"desktop_section": "桌面支持",
+			"desktop_section_link": "请安装桌面版 Adobe Flash 播放器",
+			"mobile_section": "移动设置支持",
+			"mobile_section_text": "Adobe Flash 与移动设备上的原生浏览器不兼容。但是，您可以下载能够提供绝佳用户体验的第三方应用。我们推荐使用 %s 与 %s。"
+		},
+		"devise": {
+			"resend_confirmation": "重新发送确认指导",
+			"send_reset_instructions": "重置密码",
+			"send_unlock_instructions": "重新发送解锁指导",
+			"change_your_password": "更改您的密码",
+			"change_my_password": "更改我的密码",
+			"new_password": "新密码",
+			"confirm_new_password": "确认密码",
+			"password_hint": "（若无需更改，请留空）",
+			"current_password_hint": "（我们需要您的当前密码来确认更改操作）",
+			"unlock_hint": "如果您的帐户被锁定，填写您的e-mail地址，我们会向您的e-mail发送解锁指令。",
+			"resend_hint": "填写您的e-mail地址，我们会向您的e-mail发送重置密码说明。",
+			"contact_us_hint_html": "如果您需要进一步的帮助通过{{page}}与我们联系。",
+			"custom": {
+				"not_valid_email": "Not a valid email",
+				"too_short": "Too short",
+				"not_match": "Not match",
+				"min_characters": "Minimum 1 character"
+			}
+		},
+		"payment_system_redirect": {
+			"notification": "You will be redirected to {{system}} side shortly to finish your transaction",
+			"text": "要继续付款，请点击下面的按钮",
+			"button": "继续付款"
+		},
+		"social": {
+			"follow_us": "关注我们"
+		},
+		"filters": {
+			"find_your_game": "找到你的游戏"
+		},
+		"rules_priority_warning": "这些游戏规则可以以英语之外的其他各种语言表述以供参考。如果英文版的游戏规则（可从网站获取）和其他语言版本的游戏规则产生任何分歧或冲突，以英文版本为准。"
+	},
+	"winners": {
+		"winners": "赢家",
+		"latest_winners": "最新赢家",
+		"top_winners": "Top Winners",
+		"amount_in_game": "％{金额}在％{游戏}",
+		"parts": {
+			"just_won": "just won",
+			"in": "in"
+		}
+	},
+	"restriction": {
+		"default": "此页面在您所在的国家受限",
+		"game_restricted_in_country": "此游戏在您所在的国家受限",
+		"registration_restricted_in_country": "此注册在您所在的国家受限"
+	},
+	"documents": {
+		"removed_successfully": "Document was successfully removed",
+		"document": {
+			"edit_description": "编辑描述",
+			"approved": "已批准",
+			"not_approved": "未批准"
+		},
+		"index": {
+			"upload_document": "上传文档"
+		}
+	},
+	"sportsbook": {
+		"sports": "体育",
+		"live_betting": "即时投注",
+		"sports_bets": "体育投注"
+	},
+	"formtastic": {
+		"labels": {
+			"card_holder": "持牌人",
+			"credit_card_number": "信用卡卡号",
+			"cvc": "信用卡安全码",
+			"expiration_date": "过期日期",
+			"amount": "数额",
+			"recipient": "Recipient",
+			"document": {
+				"attachment": "附件",
+				"description": "描述"
+			},
+			"btc_amount": "Amount in BTC",
+			"wallet_address": "Wallet Address"
+		},
+		"actions": {
+			"game": {
+				"create": "创建游戏",
+				"update": "更新游戏"
+			},
+			"player": {
+				"create": "创建玩家",
+				"update": "更新玩家"
+			},
+			"bonus": {
+				"create": "创建奖金",
+				"update": "更新奖金"
+			},
+			"bonus_issue": {
+				"create": "创建奖金发放",
+				"update": "更新奖金发放"
+			},
+			"admin_user": {
+				"create": "创建管理员用户",
+				"update": "更新管理员用户"
+			},
+			"payment_system": {
+				"create": "创建支付系统",
+				"update": "更新支付系统"
+			},
+			"document": {
+				"submit": "Submit document"
+			},
+			"create": "创建"
+		},
+		"hints": {
+			"payment_system": {
+				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+			},
+			"profile": {
+				"currency": "注册完成后您可以在任何阶段改变货币类型。"
+			},
+			"btc_amount": "Amount may differ due to exchange rate changes"
+		}
+	},
+	"bonus_issues": {
+		"title": "%{bonus} Issue",
+		"stages": {
+			"wait": "等待",
+			"handle_bets": "活动的",
+			"canceled": "已取消",
+			"expired": "Expired",
+			"wager_done": "下注完成",
+			"lost": "丢失的",
+			"pending": "待定"
+		}
+	},
+	"freespin_issues": {
+		"title": "%{bonus} Issue",
+		"games": "游戏",
+		"activate": "活动的",
+		"stages": {
+			"issued": "Issued",
+			"activated": "Activated",
+			"canceled": "已取消",
+			"expired": "Expired",
+			"finished": "玩家",
+			"pending": "待定"
+		},
+		"mailer": {
+			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
+			"activation_prompt_html": "To activate freespins go to {{link}}."
+		}
+	},
+	"games": {
+		"title": "赌场游戏",
+		"categories": {
+			"all": "所有游戏",
+			"card": "纸牌游戏",
+			"poker": "扑克牌游戏",
+			"table": "Table Games",
+			"roulette": "轮盘",
+			"slots": "老虎机",
+			"video_poker": "视频扑克",
+			"blackjack": "Blackjack",
+			"bingo": "Bingo",
+			"live": "行",
+			"fruit": "Fruit Slots",
+			"theme": "Theme Slots",
+			"casual": "休闲",
+			"lottery": "抽奖",
+			"keno": "Keno",
+			"progressive": "Progressive",
+			"stat": {
+				"most_popular": "最受欢迎的",
+				"new": "新",
+				"manual": "特色应用程序",
+				"last_played": "最近播放"
+			},
+			"device": {
+				"desktop": "桌面",
+				"mobile": "手机"
+			}
+		},
+		"providers": {
+			"all": "All Providers",
+			"softswiss": "SoftSwiss",
+			"amatic": "Amatic",
+			"betsoftgaming": "BetSoft Gaming",
+			"casinotechnology": "Casino Technology",
+			"quickfire": "Quickfire",
+			"ezugi": "Ezugi"
+		},
+		"roulette": {
+			"bets": {
+				"calc_by_max_bet": "按最大赌注计算",
+				"inside_bets": "内围注",
+				"outside_bets": "外围注",
+				"straight_up": "顺子",
+				"split": "分注",
+				"street": "街注",
+				"trio": "三重注",
+				"basket": "篮注",
+				"corner": "角注",
+				"first_four": "四个数字组合",
+				"first_five": "五个数字组合",
+				"line": "行",
+				"column": "列",
+				"dozen": "12 个数字注",
+				"red": "红",
+				"black": "黑",
+				"odd": "奇数",
+				"even": "偶数",
+				"low": "低注",
+				"high": "高"
+			}
+		},
+		"titles": {
+			"baccarat": {
+				"classic": "百家乐"
+			},
+			"blackjack": {
+				"double_exposure": "双亮二十一点",
+				"european": "欧洲二十一点",
+				"multihand": "多手二十一点",
+				"multihand_pro": "多手二十一点专业版",
+				"pontoon": "英式二十一点",
+				"surrender": "二十一点投降"
+			},
+			"hi_lo": {
+				"switch": "猜大小"
+			},
+			"casual": {
+				"horse_racing": "赛马",
+				"minesweeper": "Minesweeper",
+				"heads_tails": "Heads and Tails",
+				"scratch_dice": "Scratch Dice"
+			},
+			"poker": {
+				"caribbean": "加勒比海扑克",
+				"casino_holdem": "赌场扑克",
+				"let_it_ride": "任逍遥",
+				"oasis": "绿洲扑克",
+				"texas_holdem": "德州扑克",
+				"trey_poker": "特雷扑克"
+			},
+			"roulette": {
+				"american": "美式轮盘",
+				"european": "欧洲轮盘",
+				"french": "法式轮盘"
+			},
+			"slots": {
+				"aztec_magic": "阿兹塔克魔法",
+				"book_of_pyramids": "金字塔之书",
+				"scroll_of_adventure": "冒险卷轴",
+				"brave_viking": "勇敢的维京人",
+				"cherry_fiesta": "樱桃嘉年华",
+				"crazy_starter": "疯狂的初学者",
+				"desert_treasure": "沙漠寻宝",
+				"hawaii_cocktails": "夏威夷鸡尾酒",
+				"horse_slot": "赛马老虎机",
+				"lucky_blue": "幸运大海",
+				"lucky_lady_clover": "幸运女士的四叶草",
+				"lucky_sweets": "幸运糖果",
+				"platinum_lightning": "铂金闪电",
+				"princess_of_sky": "天空公主",
+				"princess_royal": "皇家公主",
+				"sport_slot": "体育老虎机",
+				"three_lines_slot": "女孩老虎机",
+				"west_town": "West Town"
+			},
+			"video_poker": {
+				"jacks_or_better": "一对J或更大",
+				"wild_texas": "狂野德州",
+				"video_poker": "视频扑克"
+			}
+		}
+	},
+	"users": {
+		"statuses": {
+			"enabled": "已启用",
+			"disabled": "已禁用",
+			"not_confirmed": "未确认",
+			"locked": "已锁定",
+			"normal": "活动的",
+			"manually_suspected": "Manually marked as suspicious"
+		}
+	},
+	"affiliate_bills": {
+		"billed_from": "支付起始日",
+		"billed_to": "支付截止日",
+		"paid": "已支付",
+		"submit": "提交"
+	},
+	"affiliate_links": {
+		"add": "Add Link",
+		"name": {
+			"hint": "标识仅能用于私人用途"
+		},
+		"code": {
+			"hint": "Unique code for affiliate link"
+		}
+	},
+	"affiliate_profiles": {
+		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"commission": "佣金",
+		"registration_settings": {
+			"reward": "CPA 奖励",
+			"conditions": "条件",
+			"rule": "若受邀请用户下注大于 {{amount}} {{currency}}"
+		},
+		"percent_settings": {
+			"one": "%{percent}%",
+			"default": "%{百分比}% 若受邀请用户输钱低于 %{限定} %{货币}",
+			"rule": "%{百分比}% 若受邀请用户输钱低于 %{限定} %{货币}",
+			"intermediate_rule": "%{百分比}% 若受邀请用户输钱低于 %{限定} %{货币}"
+		},
+		"no_default_commissions": "您尚未有任何分配的佣金。请联系支持人员。",
+		"active": "活动的",
+		"not_active": "非活动的",
+		"affiliate_profiles": "合营伙伴个人资料",
+		"statistics": {
+			"statistics": "统计信息",
+			"year": "年",
+			"month": "月",
+			"week": "周",
+			"day": "日",
+			"since": "从",
+			"to": "到",
+			"submit": "提交",
+			"grouped_by": "按下列条件分组",
+			"deposits_count": "存款",
+			"redirects_count": "访问",
+			"registered_users_count": "注册用户（有存款）",
+			"date": "日期",
+			"invited_users_income": "博彩收入净额",
+			"ggr": "博彩收入净额",
+			"total": "Period Total",
+			"link_name": "Link Name"
+		},
+		"affiliate_profile": {
+			"code": "代码",
+			"url": "URL",
+			"strategy": "支付方案"
+		},
+		"banners": {
+			"banners": "横幅",
+			"sizes": "Sizes",
+			"types_title": "类型",
+			"types": {
+				"image": "Image",
+				"html": "HTML",
+				"swf": "Flash"
+			}
+		},
+		"form": {
+			"name_hint": "标识仅能用于私人用途"
+		},
+		"add": "创建合营伙伴链接",
+		"add_link": "创建合营伙伴链接",
+		"strategy": "支付方案",
+		"bills": {
+			"bills": "支付",
+			"billed_at": "支付日期",
+			"amount": "金额",
+			"paid": "已支付",
+			"not_billed_for_date": "不支付下列日期"
+		}
+	},
+	"games_history": {
+		"title": "游戏",
+		"from": "从",
+		"result": "结果",
+		"win": "赢",
+		"lose": "损失",
+		"game_name": "游戏",
+		"bet": "输"
+	},
+	"bonuses": {
+		"history": {
+			"title": "奖金",
+			"wager": "下注",
+			"valid_until": "有效期结束于",
+			"status": "状态",
+			"from": "从"
+		},
+		"promo_form": {
+			"title": "加入促销代码",
+			"sub_title": "并获得奖励"
+		},
+		"bonus_settings": "奖励设置",
+		"refuse": "我不希望收到任何奖励"
+	},
+	"freespin_bonuses": {
+		"history": {
+			"title": "Freespins"
+		},
+		"gift": "礼物"
+	},
+	"profiles": {
+		"menu": {
+			"balance": "余额",
+			"history": "历史",
+			"bonuses": "奖金",
+			"affiliate": "联盟",
+			"profile": "配置信息",
+			"documents": "文档"
+		},
+		"info": {
+			"personal": "个人"
+		},
+		"index": {
+			"my_account": "我的账户",
+			"my_bets": "My Bets",
+			"transaction": "Transaction",
+			"welcome": "欢迎",
+			"balance": "您的余额",
+			"account_balance": "帐户余额"
+		},
+		"show": {
+			"edit_profile": "编辑您的个人资料",
+			"edit_settings": "编辑设置",
+			"attach_documents": "添加文档",
+			"change_credentials": "更改密码",
+			"set_email_and_password": "设置邮箱和密码",
+			"create_cashout_request": "提现",
+			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
+			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
+			"cashout_request_created": "退币请求已收到正等待工作人员批准。我们会尽快处理您的请求。",
+			"cashout_successfully": "提现成功完成",
+			"cashout_technically_impossible": "很抱歉发生了一些错误。我们正在使用紧急模式努力解决这些问题。如果您有任何疑问请联系技术支持。",
+			"profile_info": {
+				"title": "配置信息"
+			},
+			"autoregister_info": {
+				"title": "目前，您可以通过访问您的个人登录网址登录到您的帐户"
+			},
+			"accounts": {
+				"title": "帐户",
+				"available_to_cashout": "可供提现",
+				"add_currency": "增加货币"
+			},
+			"bonuses": {
+				"title": "奖金",
+				"no_bonuses": "您目前还没有任何奖励。",
+				"cancel_bonus": "没收奖励",
+				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
+				"bonus_canceled": "取消的奖金",
+				"bonus_not_canceled": "不能取消该奖金"
+			},
+			"coupons": {
+				"activated": "优惠券“％{代码}”成功激活。",
+				"not_activated": "无法激活优惠券“％{代码}”。请重试或联系支持。",
+				"already_activated": "优惠券“％{代码}”已经激活。"
+			},
+			"payments": {
+				"title": "付款"
+			},
+			"not_finished_games": {
+				"title": "未完成的游戏",
+				"hint": "您可以继续游戏，或取消这些游戏。取消会导致赌注损失。",
+				"game_canceled": "游戏已取消"
+			},
+			"bets": {
+				"title": "赌注",
+				"all_bets": "所有赌注"
+			},
+			"cashbox": "金库",
+			"payments_history": "交易历史记录",
+			"bets_history": "押注历史",
+			"bonuses_history": "奖金历史记录",
+			"freespin_bonuses_history": "Freespins History",
+			"deposit_to_address_hint": "资金到您的账户，存款到这个地址",
+			"freespin_bonuses": {
+				"bonus_canceled": "取消的奖金",
+				"bonus_not_canceled": "Failed to cancel bonus",
+				"bonus_activated": "Bonus was activated",
+				"bonus_not_activated": "Bonus was not activated"
+			}
+		},
+		"edit": {
+			"title": "编辑个人资料",
+			"info_updated": "信息已更新",
+			"not_saved": "修改已保存",
+			"settings_section_updated": "已成功更新部分策",
+			"valid_data_warning": "Please enter valid contact details in the form below. Make sure it is accurate before saving."
+		}
+	},
+	"payments": {
+		"actions": {
+			"deposit": "存款",
+			"cashout": "提现",
+			"gift": "礼物",
+			"chargeback": "退款",
+			"affiliate_payment": "合营伙伴奖励"
+		},
+		"statuses": {
+			"success": "已接受",
+			"failure": "已放弃",
+			"pending": "待定"
+		},
+		"canceled_by_user": "您已取消您的交易",
+		"wait_for_confirmation": "您的付款将很快被确认",
+		"not_performed": "Payment was not performed",
+		"confirmed": "支付已确认",
+		"canceled": "支付未确认",
+		"make_deposit": "存款",
+		"make_cashout": "请求提现",
+		"confirm_address": "Confirm address",
+		"bonus_code_show": "I have a Bonus Code",
+		"bonus_code_hide": "Hide Bonus Code",
+		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
+		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
+		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+		"invalid_profile_message": "为了能够套现，你必须填写你的个人资料必填字段。",
+		"try_again": "由于连接问题交易不能开始。如果问题仍然存在，请联系我们的支持。",
+		"select_currency": "选择余额货币",
+		"select_currency_hint": {
+			"deposit": "我想充值我的余额",
+			"cashout": "我想提现"
+		},
+		"select_payment_method": "选择支付方式",
+		"current_balance": {
+			"deposit": "您当前的余额为 {{钱}}。",
+			"cashout": "可供提现：{{钱}}。请参照{balance_link}页获得详细说明。"
+		},
+		"payment_methods": {
+			"empty": "该货币没有可用的付款方式。",
+			"pay_with_cubits": "使用Cubits 支付"
+		},
+		"limits": {
+			"currency": "支付{{货币}}",
+			"min": "最小{{最小}}",
+			"max": "最大{{最大}}",
+			"fee": "fee {{fee}}"
+		},
+		"processing_time": {
+			"instantly": "Instantly",
+			"range": "%{min}-%{max} banking days"
+		}
+	},
+	"security_check": {
+		"user_is_suspicious": "用户为可疑用户",
+		"user_not_suspicious": "用户为可疑用户",
+		"user_has_suspicious_games": "用户存在可疑的游戏",
+		"cashout_amount": "金额超过允许的最大",
+		"cashout_wins": "金额超过用户限额",
+		"casino_cashout": "金额超过娱乐场每日限额",
+		"crypto_address_confirmed": "Address was not used before",
+		"manual": {
+			"title": "该用户手动标记为可疑"
+		},
+		"chargeback": {
+			"title": "User made chargeback"
+		},
+		"duplicate": {
+			"title": "用户有副本",
+			"reason_html": "User duplicates {{user}}"
+		},
+		"balance_sum": {
+			"title": "余额金额与基于交易和游戏统计计算的金额不匹配",
+			"text": "玩家的余额与期望值不符"
+		},
+		"balance_transaction": {
+			"title": "在过去24小时赢取金额过大",
+			"reason_html": "Suspicious wins in {{table}} during {{period}} by {{player}}"
+		},
+		"wager_done": {
+			"title": "User done wager bonus requirement"
+		},
+		"cubits_payment_difference": {
+			"title": "Cumulative cubits exchange rate losses are too big"
+		}
+	},
+	"notification": {
+		"contact_form": {
+			"sender_notice": "您的消息已成功发出。",
+			"mail_subject": "通过您赌场网站上的联系人表中收到的消息"
+		},
+		"payment_confirmation": {
+			"mail_subject": "付款确认代码"
+		},
+		"daily_stats": {
+			"mail_subject": "日%（货币）统计%（日期）"
+		},
+		"report": {
+			"day_mail_subject": "日统计",
+			"week_mail_subject": "周统计",
+			"day_mail_title": "日{{货币}} 统计 {{时期}}",
+			"week_mail_title": "周{{货币}} 统计 {{时期}}",
+			"fields": {
+				"net_revenue": "净游戏收入",
+				"gross_win": "总赢额",
+				"bets": "总投注",
+				"wins": "总赢额",
+				"payout": "赔付（%）",
+				"game_rounds": "游戏轮数",
+				"new_registrations": "新注册与存款",
+				"players_made_deposits": "玩家进行存款",
+				"total_users": "总用户",
+				"deposits_sum": "存款金额",
+				"deposits_avg": "存款平均",
+				"cashouts_sum": "提现金额",
+				"cashouts_avg": "提现平均"
+			},
+			"previous": "上一个％{类型}"
+		}
+	},
+	"user_mailer": {
+		"auth": {
+			"welcome": "欢迎， {{name}}！",
+			"hello": "您好，{{name}}！",
+			"confirmation": {
+				"you_can_confirm_email_by_pressing_next_link": "您可以点击下面的链接确认您的帐户邮件：",
+				"confirm_my_account": "确认我的帐户"
+			},
+			"reset_password": {
+				"change_my_password": "更改我的密码",
+				"link_to_change_password_are_requested": "有人发出更改您的密码的请求链接，您可以点击下面的链接完成此操作。",
+				"you_can_ignore_this_mail": "若您并未提出此请求，请忽略该邮件。",
+				"your_password_didnt_changed_yet": "除非您进入上述链接并创建新的密码，否则您的密码不会改变。"
+			},
+			"unlock": {
+				"unlock_my_account": "解锁我的帐户",
+				"your_account_has_been_locked": "您的帐户因为登录错误次数过多，已被锁定。",
+				"click_to_unlock": "请点击下方的链接解锁您的帐户："
+			}
+		},
+		"deposit": {
+			"deposit_made": "您的存款已收到"
+		},
+		"cashout": {
+			"cashout_approved": "您的提现请求已获批准"
+		},
+		"not_enough_money_for_cashout": {
+			"subject": "帐户余额不足，无法提现",
+			"body": "帐户余额不足，无法处理提交的提现请求，所以您的提现被禁用。请根据当前余额重新提交新的提现请求。"
+		},
+		"address_confirmation_required": {
+			"subject": "Cashout address confirmation required"
+		}
+	},
+	"activemodel": {
+		"errors": {
+			"models": {
+				"affiliate_forms/assign_commission": {
+					"attributes": {
+						"from_date": {
+							"must_be_in_future": "只能在后来"
+						},
+						"to_date": {
+							"must_be_in_future": "只能在后来",
+							"must_be_less_then_from": "must be less then From"
+						}
+					}
+				},
+				"payment_system/cashout_form/wirecard": {
+					"attributes": {
+						"credit_card_number": {
+							"invalid": "is not a valid credit card number"
+						}
+					}
+				},
+				"casino_cash_balance/balance_options": {
+					"attributes": {
+						"base": {
+							"rules_error": "规则中存在错误"
+						}
+					}
+				},
+				"commissions/registration_settings": {
+					"attributes": {
+						"base": {
+							"rules_error": "规则中存在错误"
+						}
+					}
+				},
+				"commissions/registration_settings_rule": {
+					"attributes": {
+						"base": {
+							"uniq": "应为唯一"
+						}
+					}
+				}
+			}
+		},
+		"attributes": {
+			"payment_system/bank_transfer/access_data": {
+				"deposit_snippet_name": "Deposit Snippet Name",
+				"cashout_snippet_name": "Cashout Snippet Name"
+			},
+			"affiliate_forms/assign_commission": {
+				"from_date": "从",
+				"to_date": "到"
+			},
+			"newsletters_filter": {
+				"tag": "User tag",
+				"locale": "Locale",
+				"type": "类型",
+				"deposits_number_equals": "存款",
+				"last_deposit_at": "上一存款",
+				"registered_at": "已注册",
+				"payments_currency": "支付货币"
+			}
+		}
+	},
+	"retention_mailer": {
+		"welcome": "欢迎",
+		"no_deposit": "您还没有作出存款",
+		"nth_deposit": "我们正在等待您的存款",
+		"welcome_promo": "再次访问我们"
+	},
+	"jackpot": {
+		"jackpots": "Jackpots"
+	},
+	"game_categories": {
+		"favorite": "My favorites",
+		"add_to_favorites": "Add To Favorites",
+		"remove_from_favorites": "Remove From Favorites",
+		"favorites": {
+			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+		}
+	},
+	"betsoftgaming_api": {
+		"betsoftgaming": "Betsoftgaming"
+	},
+	"backend": {
+		"menu": {
+			"bitcoin_addresses": "比特币地址"
+		},
+		"bitcoin_wallets": {
+			"filters": {
+				"all": "全部",
+				"available": "可用",
+				"occupied": "已占用"
+			}
+		},
+		"bitcoin": {
+			"add_new_addresses": "上传文件或粘贴新地址",
+			"upload_new_addresses": "添加地址",
+			"cashout": "提现",
+			"deposit_to_wallet": "向钱包中存款",
+			"deposit_currency_to_wallet": "存款％{货币}到钱包中",
+			"enough_available_addresses_left": "剩余 {{count}} 个可用地址",
+			"not_enough_available_addresses_left": "无可用的比特币地址。您可以在{{link}}添加地址。",
+			"here": "这里",
+			"current_wallet_balance": "当前钱包余额",
+			"total_balance": "Total: {{amount}}",
+			"available_balance": "Spendable: {{amount}}",
+			"transfer_to": "增加",
+			"increase_system_balance": "要提高系统钱包余额，请向下个地址发送比特币："
+		}
+	},
+	"bitcoin_wallets": {
+		"address_sources": {
+			"imported": "From pool",
+			"generated": "Generated",
+			"cubits_invoice": "Cubits Invoice",
+			"cubits_channel": "Cubits Channel"
+		}
+	},
+	"sidebar": {
+		"available_addresses": "可用地址",
+		"wallet_balance": "钱包余额"
+	},
+	"casinotechnology_api": {
+		"casinotechnology": "CasinoTechnology",
+		"timeout_message": "Game provider's server has not responded. Please retry later."
+	},
+	"ezugi_api": {
+		"ezugi": "Ezugi"
+	},
+	"quickfire_api": {
+		"quickfire": "Quickfire"
+	}
+}

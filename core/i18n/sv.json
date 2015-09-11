@@ -1,0 +1,1942 @@
+{
+	"errors": {
+		"messages": {
+			"taken_in_past": "har redan tagits tidigare!",
+			"equal_to_current_password": "måste vara olikt det nuvarande lösenordet!",
+			"already_confirmed": "är redan bekräftad, vänligen logga in igen",
+			"confirmation_period_expired": "behöver bekräftas inom %{period}. Vänligen begär en ny",
+			"expired": "är inte längre giltig. Vänligen begär en ny",
+			"not_found": "hittades inte",
+			"not_locked": "var inte låst",
+			"not_saved": {
+				"one": "1 fel hindrade denna %{resource} från att sparas:",
+				"other": "%{count} fel hindrade denna %{resource} från att sparas:"
+			}
+		}
+	},
+	"devise": {
+		"invalid_captcha": "Captcha-inmatningen är ogiltig!",
+		"password_expired": {
+			"submit": "Ändra lösenord",
+			"updated": "Ditt nya lösenord har sparats.",
+			"change_required": "Ditt lösenord har gått ut. Vänligen förnya ditt lösenord!",
+			"forgot_password_message": "Om du glömt ditt lösenord, klicka \"Logga ut\" sedan återställ ditt lösenord."
+		},
+		"failure": {
+			"session_limited": "Dina inloggningsreferenser har använts i en annan webbläsare. Vänligen logga in på nytt för att fortsätta i den här webbläsaren.",
+			"expired": "Ditt konto har gått ut på grund av inaktivitet. Vänligen kontakta sidans webbmaster.",
+			"disabled": "Ditt konto har avaktiverats.",
+			"not_allowed_ip": "Din IP tillåts inte för denna användare.",
+			"already_authenticated": "Du är redan inloggad.",
+			"inactive": "Ditt konto har inte aktiverats ännu.",
+			"invalid": "Ogiltig epost eller lösenord.",
+			"last_attempt": "Du har ett försök kvar, sen låser vi ditt konto.",
+			"locked": "Ditt konto är låst.",
+			"not_found_in_database": "Ogiltig epost eller lösenord.",
+			"timeout": "Din session är inte längre giltig, vänligen logga in igen för att fortsätta.",
+			"unauthenticated": "Du måste logga in eller skapa ett konto innan du kan fortsätta.",
+			"unconfirmed": "Du måste bekräfta ditt konto innan du kan fortsätta."
+		},
+		"confirmations": {
+			"confirmed": "Ditt konto har bekräftats. Du är nu inloggad.",
+			"send_instructions": "Du kommer att få epost med instruktioner om hur du kan bekräfta ditt konto inom några minuter.",
+			"send_paranoid_instructions": "Om din epostadress finns i vår databas, kommer du att få ett epost-meddelande inom några minuter med instruktioner om hur du ska göra för att aktivera ditt konto igen."
+		},
+		"mailer": {
+			"confirmation_instructions": {
+				"subject": "Instruktioner för bekräftning av konto"
+			},
+			"reset_password_instructions": {
+				"subject": "Instruktioner för återställning av lösenord"
+			},
+			"unlock_instructions": {
+				"subject": "Instruktioner för upplåsning av konto"
+			}
+		},
+		"omniauth_callbacks": {
+			"failure": "Kunde inte autentisera dig med %{kind} för \"%{reason}\".",
+			"success": "Autentiserat med %{kind}-konto."
+		},
+		"passwords": {
+			"no_token": "Tillgång till den här sidan kräver att du kommer från ett mejl som sätter tillbaka ditt lösenord. Om du kom hit från ett sånt mejl, säkerställ att du har använt hela URL:en.",
+			"send_instructions": "Du kommer få epost med instruktioner för hur du kan återställa ditt lösenord inom några minuter.",
+			"send_paranoid_instructions": "Om din epostadress finns i vår databas kommer du att få en lösenordslänk skickad till din epost.",
+			"updated": "Ditt lösenord har uppdaterats. Du är nu inloggad.",
+			"updated_not_active": "Ditt lösenord uppdaterades."
+		},
+		"registrations": {
+			"destroyed": "Hej då! Ditt konto har avregistrerats. Vi hoppas få se dig snart igen.",
+			"signed_up": "Välkommen! Ditt nya konto har skapats.",
+			"signed_up_but_inactive": "Du är nu registrerad. Däremot kunde vi inte logga in dig, eftersom ditt konto ännu inte aktiverats.",
+			"signed_up_but_locked": "Du är nu registrerad. Däremot kunde vi inte logga in dig, eftersom ditt konto är låst.",
+			"signed_up_but_unconfirmed": "Ett meddelande med en länk för att bekräfta din registrering har skickats till din epostadress. Följ länken för att aktivera ditt konto.",
+			"update_needs_confirmation": "Ditt konto uppdaterades, men vi behöver verifiera din nya epostadress. Kontrollera din epost och klicka på länken för att bekräfta din nya epostadress.",
+			"updated": "Ditt konto har uppdaterats."
+		},
+		"sessions": {
+			"already_signed_out": "Du är nu utloggad.",
+			"signed_in": "Loggade in.",
+			"signed_out": "Loggade ut."
+		},
+		"unlocks": {
+			"send_instructions": "Du kommer få epost med instruktioner om hur du kan låsa upp ditt konto inom några minuter.",
+			"send_paranoid_instructions": "Om ditt konto finns, kommer du att få ett email med instruktioner om hur du låser upp det inom några minuter.",
+			"unlocked": "Ditt konto har låsts upp. Du är nu inloggad."
+		}
+	},
+	"activerecord": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "cannot contain a fragment.",
+							"has_query_parameter": "cannot contain a query parameter.",
+							"invalid_uri": "must be a valid URI.",
+							"relative_uri": "must be an absolute URI."
+						}
+					}
+				},
+				"user": {
+					"attributes": {
+						"password": {
+							"wrong_password": "invalid email address or password"
+						}
+					}
+				},
+				"profile": {
+					"attributes": {
+						"age": {
+							"greater_than_or_equal_to": "verification {{count}}+"
+						}
+					}
+				},
+				"payment": {
+					"not_enough_money": "Inte tillräckligt med pengar",
+					"not_enough_unlocked_money": "Some or all of your funds are locked due to an active bonus. Please meet your bonus wagering requirement to be able to cash out.",
+					"unresolved_cashout_request_presents": "Your previous cashout request has not yet been processed. We will do it as fast as we can. Before requesting another cashout, please wait for your previous request to be processed.",
+					"pending_deposit_presents": "We are still waiting for confirmation of your last deposit",
+					"commission_is_greater_that_amount": "Commission is greater than amount",
+					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
+					"not_used_account": "Account you are going to cashout was not used before.",
+					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
+					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
+					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+				},
+				"commission_connection": {
+					"not_overlap": "Får inte överlappa med andra anslutningar med samma valuta",
+					"future_from_time": "måste vara i framtiden",
+					"greater_than_from_time": "måste vara större än från tiden",
+					"strategies_equivalence": "måste ha samma betalningsschema som partnerprofilen",
+					"greater_than_now": "måste vara större än nu"
+				},
+				"commission": {
+					"wrong_strategy_settings": "Du har felaktigheter i betalningsschemats inställningar"
+				},
+				"bonus_issue": {
+					"not_enough_to_lock": "is greater than user balance"
+				},
+				"external_bet": {
+					"rollback_expired": "Rollback can not be accepted if 24 hours passed after result enrollment"
+				},
+				"notification/subscription": {
+					"invalid_types": "You can subscribe only to a notification"
+				}
+			}
+		},
+		"models": {
+			"account": "Konto",
+			"admin_user": "Adminanvändare",
+			"affiliate_profile": "Partnerprofil",
+			"bet": "Insats",
+			"bonus": "Bonus",
+			"bonus_issue": "Bonusutfärdande",
+			"document": "Dokument",
+			"event": "Evenemang",
+			"external_bet": "External Bet",
+			"game": "Spel",
+			"game_category": "Game Category",
+			"game_step": "Steg",
+			"game_table": "Spelbord",
+			"payment": "Betalning",
+			"payment_system": "Betalningssystem",
+			"profile": "Profil",
+			"reports/base_collection/result_record": "Resultat",
+			"suspicion": "Misstanke",
+			"user": "Användare",
+			"player": "Spelare",
+			"retention_email": "Kundlojalitets e-post "
+		},
+		"attributes": {
+			"balance_correction": {
+				"action": "Action",
+				"amount": "Amount",
+				"account": "Account",
+				"comment": "Comment"
+			},
+			"game_category": {
+				"name": "Namn",
+				"disabled": "Inaktiverad",
+				"created_at": "Skapad den",
+				"games": "Spel",
+				"position": "Position"
+			},
+			"notification": {
+				"type": "Type",
+				"user": "Användare",
+				"admin_user": "Admin",
+				"target": "Target",
+				"target_type": "Target type"
+			},
+			"affiliate_link": {
+				"name": "Name",
+				"code": "Code"
+			},
+			"affiliate_profile": {
+				"name": "Titel",
+				"strategy": "Betalningsschema",
+				"no_debt": "No Neg. Carryover",
+				"links": "Links",
+				"active": "Active"
+			},
+			"account": {
+				"currency": "Valuta",
+				"amount": "Summa",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"active_admin/comment": {
+				"author": "Author",
+				"body": "Body",
+				"resource": "Resource"
+			},
+			"admin_user": {
+				"email": "E-post",
+				"encrypted_password": "Krypterat lösenord",
+				"password": "Lösenord",
+				"password_confirmation": "Bekräfta nytt lösenord",
+				"current_password": "Nuvarande lösenord",
+				"remember_me": "Kom ihåg mig",
+				"reset_password_token": "Återställ lösenord",
+				"reset_password_sent_at": "Återställning av lösenord skickats den",
+				"remember_created_at": "Kom ihåg skapad den",
+				"sign_in_count": "Inloggningsräknare",
+				"current_sign_in_at": "Nuvarande inloggning kl",
+				"last_sign_in_at": "Senaste inloggning kl",
+				"current_sign_in_ip": "Nuvarande inloggnings-IP",
+				"last_sign_in_ip": "Senaste inloggnings-IP",
+				"failed_attempts": "Misslyckat försök",
+				"unlock_token": "Lås upp pollett",
+				"locked_at": "Låst den",
+				"password_changed_at": "Lösenord ändrat den",
+				"created_at": "Skapat den",
+				"updated_at": "Uppdaterat den",
+				"disabled": "Inaktiverad",
+				"allowed_ips_string": "Tillåtna IP-adresser",
+				"roles_names": "Roles"
+			},
+			"balance_transaction": {
+				"reference": "Referens",
+				"amount": "Summa",
+				"created_at": "Skapat den",
+				"updated_at": "Uppdaterat den"
+			},
+			"bet": {
+				"bet_type": "Insatstyp",
+				"bet_amount": "Insatsbelopp",
+				"win_amount": "Vinstbelopp",
+				"created_at": "Skapat den",
+				"updated_at": "Uppdaterat den"
+			},
+			"bonus": {
+				"strategy": "Type",
+				"title": "Titel",
+				"description": "Beskrivning",
+				"percentage": "Procent",
+				"currency": "Valuta",
+				"amount": "Summa",
+				"percent": "Procent",
+				"max_amount": "Maxbelopp",
+				"code": "Kod",
+				"extra_info": "Extrainfo",
+				"wager_multiplier": "Lönmultiplicerare",
+				"wagering_epsilon": "Lönepsilon",
+				"cashable": "Inlösningsbar",
+				"sticky": "Klibbig",
+				"enabled": "Aktiverad",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"bonus_issue": {
+				"strategy": "Strategi",
+				"stage": "Stadium",
+				"amount": "Summa",
+				"amount_wager_requirement": "Vadkravsbelopp",
+				"amount_wager": "Vadsbelopp",
+				"wagered_percent": "Wagered percent",
+				"amount_locked": "Belopp låst",
+				"valid_until": "Expiry date",
+				"extra_info": "Extra info",
+				"cashable": "Utbetalningsbar",
+				"sticky": "Klibbigt",
+				"wager": "Vad",
+				"created_at": "Date received",
+				"issued_at": "Utfärdad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"freespin_issue": {
+				"stage": "Stage",
+				"amount": "Amount",
+				"freespins_total": "Freespins Awarded",
+				"activatable_until": "Expiry date",
+				"win_amount_cents": "Alredy won",
+				"valid_until": "Expiry date",
+				"extra": "Extra info",
+				"external_id": "External ID",
+				"created_at": "Date received",
+				"issued_at": "Issued at",
+				"updated_at": "Updated at"
+			},
+			"bonus_strategy/feature/payment_system": {
+				"ids_list": "Betalningssystem"
+			},
+			"contact": {
+				"email": "E-post",
+				"content": "Innehåll"
+			},
+			"document": {
+				"approved": "Godkänd",
+				"description": "Beskrivning",
+				"removed": "Raderad",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den",
+				"attachment": "Bilaga",
+				"attachment_file_name": "Bilagans filnamn",
+				"attachment_content_type": "Bilagans innehållstyp",
+				"attachment_file_size": "Bilagans filstorlek",
+				"attachment_updated_at": "Added at"
+			},
+			"event": {
+				"subject": "Ämne",
+				"event_type": "Evenemangstyp",
+				"ip": "IP",
+				"country": "Land",
+				"coordinates": "Koordinater",
+				"latitude": "Lattitud",
+				"longitude": "Longitud",
+				"address": "Adress",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"external_bet": {
+				"id": "Local Id",
+				"account_id": "Account Id",
+				"account": "Konto",
+				"external_id": "External Id",
+				"bet_amount": "Insats",
+				"win_amount": "Vinst",
+				"oauth_application": "OAuth Application",
+				"oauth_application_id": "OAuth Application Id"
+			},
+			"game": {
+				"data": "Data",
+				"finished_at": "Slutförd den",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"game_step": {
+				"state": "Status",
+				"action": "Händelse",
+				"data": "Data",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"game_table": {
+				"base_type": "Bastyp",
+				"variation": "Variation",
+				"identifier": "Identifierare",
+				"title": "Titel",
+				"client": "Klient",
+				"provider": "Game provider",
+				"description": "Beskrivning",
+				"active": "Aktiv",
+				"currency": "Valuta",
+				"secondary_currency": "Sekundär valuta",
+				"amount_win": "Total bet",
+				"amount_loss": "Total win",
+				"chips": "Marker",
+				"default_chip": "Förvalda marker",
+				"min_bet": "Minsta insats",
+				"max_bet": "Maxinsats",
+				"paytable": "Vinsttabell",
+				"options": "Alternativ",
+				"bet_playthrough_percent": "Satsa i procent",
+				"line_bets": "Linjeinsats",
+				"archived_at": "Arkiverad den",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"modification": {
+				"subject": "Ämne",
+				"entity": "Entitet",
+				"data": "Data",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"paritcipation": {
+				"active": "Aktiv",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"payment": {
+				"amount": "Summa",
+				"commission_amount": "Provision",
+				"amount_after_commission": "Amount (commission subtracted)",
+				"currency": "Valuta",
+				"action": "Händelse",
+				"source": "Källa",
+				"extra": "Extra",
+				"success": "Succé",
+				"finished_at": "Slutförd den",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den",
+				"recipient_address": "Adress",
+				"manual_confirmation_code": "Bekräftelsepollett",
+				"source_id": "Payment Code"
+			},
+			"payment_system": {
+				"system_name": "Systemnamn",
+				"disabled": "Inaktiverad",
+				"currency_options": "Valutaalternativ",
+				"test_mode": "Testläge",
+				"data": "Data",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"payment_system_debt": {
+				"system_name": "Systemnamn",
+				"system_account": "Account in system",
+				"amount_cents": "Debt",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"profile_setting": {
+				"name": "Namn",
+				"enabled": "Aktiverad",
+				"required": "Obligatorisk",
+				"show_at_registration": "Visa vid registrering",
+				"show_at_edition": "Show in Edit Mode",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			},
+			"suspicion": {
+				"suspect": "Misstänkt",
+				"discarded": "Kasserad",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den",
+				"related_suspect": "Relaterad misstänkt",
+				"data": "Data",
+				"failed_check": "Misslyckad kontroll"
+			},
+			"user": {
+				"email": "E-post",
+				"encrypted_password": "Krypterat lösenord",
+				"password": "Lösenord",
+				"password_confirmation": "Lösenordsbekräftelse",
+				"current_password": "Nuvarande lösenord",
+				"remember_me": "Kom ihåg mig",
+				"reset_password_token": "Pollett för att återställa lösenord",
+				"reset_password_sent_at": "Återställ lösenord skickat den",
+				"remember_created_at": "Kom ihåg skapat den",
+				"sign_in_count": "Inloggningsräknare",
+				"current_sign_in_at": "Aktuell inloggning kl",
+				"last_sign_in_at": "Senaste inloggning kl",
+				"current_sign_in_ip": "Aktuell inloggnings-IP",
+				"last_sign_in_ip": "Senaste inloggnings-IP",
+				"confirmation_token": "Bekräftelsepollett",
+				"confirmed_at": "Bekräftad den",
+				"confirmation_sent_at": "Bekräftelse skickad den",
+				"unconfirmed_email": "Icke-bekräftat e-postmeddelande",
+				"failed_attempts": "Misslyckade försök",
+				"unlock_token": "Lås upp pollett",
+				"locked_at": "Låst den",
+				"authentication_token": "Autentiseringspollett",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den",
+				"disabled": "Inaktiverad",
+				"allowed_ips_string": "Tillåtna IP-adresser",
+				"guest": "Gäster",
+				"main_bitcoin_address": "Huvudsaklig bitcoinadress",
+				"bonus_code": "Bonus Code"
+			},
+			"profile": {
+				"full_name": "Fullständigt namn",
+				"first_name": "Förnamn",
+				"last_name": "Efternamn",
+				"title": "Titel",
+				"nickname": "Smeknamn",
+				"date_of_birth": "Födelsedatum",
+				"personal_id_number": "Personnummer",
+				"gender": "Kön",
+				"country": "Land",
+				"city": "Stad",
+				"place_of_birth": "Födelseort",
+				"address": "Adress",
+				"address2": "Andra adress",
+				"postal_code": "Postnummer",
+				"time_zone": "Tidszon",
+				"mobile_phone": "Mobiltelefon",
+				"phone": "Telefon",
+				"skype": "Skype",
+				"send_payment_confirmation": "Skicka betalningsbekräftelse",
+				"receive_newsletters": "Få nyhetsbrev",
+				"receive_promos": "Få erbjudanden",
+				"never_call": "Ring aldrig",
+				"currency": "Valuta",
+				"language": "Språk",
+				"security_question": "Säkerhetsfråga",
+				"security_answer": "Säkerhetssvar",
+				"age_acceptance": "Ålder bekräftad",
+				"terms_acceptance": "Agreed to Terms and Conditions",
+				"bonus_issuance_policy": "Policy för bonusutfärdande",
+				"allowed_ips_string": "Tillåtna IP-adresser"
+			},
+			"profile/admin": {
+				"full_name": "Fullständigt namn",
+				"first_name": "Förnamn",
+				"last_name": "Efternamn",
+				"title": "Titel",
+				"nickname": "Smeknamn",
+				"date_of_birth": "Födelsedatum",
+				"personal_id_number": "Personnummer",
+				"gender": "Kön",
+				"country": "Land",
+				"city": "Stad",
+				"place_of_birth": "Födelseort",
+				"address": "Adress",
+				"address2": "Andra adress",
+				"postal_code": "Postnummer",
+				"time_zone": "Tidszon",
+				"mobile_phone": "Mobiltelefon",
+				"phone": "Telefon",
+				"skype": "Skype",
+				"send_payment_confirmation": "Skicka betalningsbekräftelse",
+				"receive_newsletters": "Få nyhetsbrev",
+				"receive_promos": "Få erbjudanden",
+				"never_call": "Ring aldrig",
+				"currency": "Valuta",
+				"language": "Språk",
+				"security_question": "Säkerhetsfråga",
+				"security_answer": "Säkerhetssvar",
+				"age_acceptance": "Bekräfta att du är åtminstone {{age}}",
+				"terms_acceptance": "Agree to Terms and Conditions",
+				"bonus_issuance_policy": "Policy för bonusutfärdande",
+				"allowed_ips_string": "Tillåtna IP-adresser"
+			},
+			"profile/user": {
+				"full_name": "Fullständigt namn",
+				"first_name": "Förnamn",
+				"last_name": "Efternamn",
+				"title": "Titel",
+				"nickname": "Smeknamn",
+				"date_of_birth": "Födelsedatum",
+				"personal_id_number": "Personnummer",
+				"gender": "Kön",
+				"country": "Land",
+				"city": "Stad",
+				"place_of_birth": "Födelseort",
+				"address": "Adress",
+				"address2": "Andra adress",
+				"postal_code": "Postnummer",
+				"time_zone": "Tidszon",
+				"mobile_phone": "Mobiltelefon",
+				"phone": "Telefon",
+				"skype": "Skype",
+				"send_payment_confirmation": "Skicka betalningsbekräftelse",
+				"receive_newsletters": "Få nyhetsbrev",
+				"receive_promos": "Få erbjudanden",
+				"never_call": "Ring aldrig",
+				"currency": "Valuta",
+				"language": "Språk",
+				"security_question": "Säkerhetsfråga",
+				"security_answer": "Säkerhetssvar",
+				"age_acceptance": "Jag bekräftar att jag är över {{age}} är gammal",
+				"terms_acceptance": "I agree to {{text}}",
+				"bonus_issuance_policy": "Policy för bonusutfärdande",
+				"allowed_ips_string": "Tillåtna IP-adresser"
+			},
+			"provable_fair_data": {
+				"secret": "Secret",
+				"client_seed": "Client seed",
+				"result": "Resultat",
+				"hash": "Hash"
+			},
+			"retention_email": {
+				"strategy": "Type",
+				"template_name": "Template name",
+				"days_interval": "Days interval",
+				"enabled": "Aktiverad",
+				"created_at": "Skapad den",
+				"updated_at": "Uppdaterad den"
+			}
+		}
+	},
+	"mongoid": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "cannot contain a fragment.",
+							"has_query_parameter": "cannot contain a query parameter.",
+							"invalid_uri": "must be a valid URI.",
+							"relative_uri": "must be an absolute URI."
+						}
+					}
+				}
+			}
+		}
+	},
+	"mongo_mapper": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "cannot contain a fragment.",
+							"has_query_parameter": "cannot contain a query parameter.",
+							"invalid_uri": "must be a valid URI.",
+							"relative_uri": "must be an absolute URI."
+						}
+					}
+				}
+			}
+		}
+	},
+	"doorkeeper": {
+		"errors": {
+			"messages": {
+				"invalid_request": "The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.",
+				"invalid_redirect_uri": "The redirect uri included is not valid.",
+				"unauthorized_client": "The client is not authorized to perform this request using this method.",
+				"access_denied": "The resource owner or authorization server denied the request.",
+				"invalid_scope": "The requested scope is invalid, unknown, or malformed.",
+				"server_error": "The authorization server encountered an unexpected condition which prevented it from fulfilling the request.",
+				"temporarily_unavailable": "The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.",
+				"credential_flow_not_configured": "Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.",
+				"resource_owner_authenticator_not_configured": "Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.",
+				"unsupported_response_type": "The authorization server does not support this response type.",
+				"invalid_client": "Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method.",
+				"invalid_grant": "The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.",
+				"unsupported_grant_type": "The authorization grant type is not supported by the authorization server.",
+				"invalid_resource_owner": "The provided resource owner credentials are not valid, or resource owner cannot be found",
+				"invalid_token": {
+					"revoked": "The access token was revoked",
+					"expired": "The access token expired",
+					"unknown": "The access token is invalid"
+				}
+			}
+		},
+		"flash": {
+			"applications": {
+				"create": {
+					"notice": "Application created."
+				},
+				"destroy": {
+					"notice": "Application deleted."
+				},
+				"update": {
+					"notice": "Application updated."
+				}
+			},
+			"authorized_applications": {
+				"destroy": {
+					"notice": "Application revoked."
+				}
+			}
+		},
+		"authorize_title": "OAuth authorize required",
+		"authorize_required": "Authorize required",
+		"authorize": "Authorize",
+		"authorization_code": "Authorization code",
+		"deny": "Deny",
+		"rights_title": "This application will be able to:",
+		"allow_authorization": "Authorize {{app}} to use your account?",
+		"authorize_as_regular_user": "Please sign out from guest account and sign in as a regular user.",
+		"scopes": {
+			"profile": "Access your profile data",
+			"bets": "Access your balance data and make bets on your behalf"
+		}
+	},
+	"amatic": {
+		"verification": {
+			"error_popup": {
+				"title": "Error",
+				"description": "Amatic server does not respond"
+			},
+			"popup": {
+				"copy": "Copy",
+				"title": "Successfull verification",
+				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
+				"message": "Your Text",
+				"signature": "Amatic Signature",
+				"address": "Bitcoin Address"
+			},
+			"title": "Amatic verification",
+			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
+			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"form": {
+				"your_text": "Your Text",
+				"verify": "Verify"
+			}
+		},
+		"amatic": "Amatic"
+	},
+	"http": {
+		"not_found": {
+			"title": "Page Not Found",
+			"oops": "Oops,",
+			"cannot_be_found": "The page you are looking for cannot be found.",
+			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
+			"link_to_root": "Here is a link to our start page:"
+		}
+	},
+	"common": {
+		"in_out": "IN/OUT",
+		"players": "Players",
+		"email": "E-post",
+		"content": "Innehåll",
+		"loading": "Loading...",
+		"yes": "Ja",
+		"no": "Nej",
+		"all": "Alla",
+		"default": "Förvalt",
+		"date": "Datum",
+		"result": "Resultat",
+		"total_bet": "Total Bet",
+		"total_win": "Total Win",
+		"gross_win": "Gross Revenue",
+		"cashouts_sum": "Sum of cashouts",
+		"deposits_sum": "Sum of deposits",
+		"net_revenue": "Net Revenue",
+		"client": "Klient",
+		"amount": "Summa",
+		"help": "Hjälp",
+		"currency": "Valuta",
+		"total": "Totalt",
+		"limit": "Begränsning",
+		"live_casino": "Live Casino",
+		"address": "Adress",
+		"good_news": "Good news, {{nickname}}.",
+		"save": "Spara",
+		"edit": "Redigera",
+		"remove": "Ta bort",
+		"destroy": "Förstör",
+		"cancel": "Avbryt",
+		"close": "Stäng",
+		"create": "Skapa",
+		"add": "Lägg till",
+		"update": "Uppdatera",
+		"reset": "Nollställ",
+		"refresh": "Uppdatera",
+		"proceed": "Fortsätt",
+		"filter": "Filtrera",
+		"are_you_sure": "Är du säker?",
+		"set": "Set",
+		"enabled": "Aktiverad",
+		"disabled": "Inaktiverad",
+		"active": "Aktiv",
+		"preview": "Förhandsgranska",
+		"select": "Välj",
+		"summary": "Summering",
+		"status": "Status",
+		"options": "Alternativ",
+		"genders": {
+			"m": "Man",
+			"f": "Kvinna"
+		},
+		"player": "Spelare",
+		"guest": "Gäst",
+		"subject": "Ämne",
+		"actions": "Händelser",
+		"balance": "Saldo",
+		"profit": "Vinst",
+		"payout": "Utbetalning",
+		"bets_sum": "Insatssumma",
+		"wins_sum": "Vinstsummering",
+		"bets": "Insatser:",
+		"total_payouts": "Totala utbetalningar:",
+		"terms_and_conditions": "Juridiska villkor",
+		"net_total": "Net total",
+		"blog": "Blogg",
+		"comments": "Comments",
+		"comment": "Comment",
+		"empty_search_results": "There are no items according to the filtering parameters",
+		"add_more_coins": "Add more Coins",
+		"show_more_games": "Show more games",
+		"warning": "Inkomster",
+		"new_as_novelty": "New",
+		"already_member": "Already a member?",
+		"have_account": "Have an account?"
+	},
+	"locales": {
+		"af": "Afrikaans",
+		"bg": "Bulgarian",
+		"de": "Tyska",
+		"el": "Grekiska",
+		"en": "Engelska",
+		"es": "Spanska",
+		"fi": "Finska",
+		"fr": "French",
+		"it": "Italienska",
+		"ja": "Japanska",
+		"ko": "Korean",
+		"nl": "Holländska",
+		"pl": "Polska",
+		"pt": "Portugisiska",
+		"ru": "Ryska",
+		"sv": "Svenska",
+		"tr": "Turkiska",
+		"vi": "Vietnamesiska",
+		"zh": "Kinesiska"
+	},
+	"date": {
+		"day": "Dag",
+		"week": "Vecka",
+		"month": "Månad",
+		"year": "År"
+	},
+	"casino": {
+		"casino": "Casino",
+		"not_enough_money": "Inte tillräckligt med pengar",
+		"events": {
+			"modified": {
+				"user": "Användarprofil ändrad",
+				"admin_user": "Admin ändrad",
+				"game_table": "Spelet ändrat",
+				"bonus_issue": "Bonus utfärdad",
+				"bonus": "Bonus ändrad",
+				"payment_system": "Betalningssystem",
+				"retention_email": "Retention email Modified",
+				"casino_cash_balance": "Casino Cash Balance Modified",
+				"commission_connection": "Commission Connection Modified",
+				"payment": "Payment Modified",
+				"affiliate_profile": "Affiliate Profile Modified"
+			},
+			"game": {
+				"step": "Spelsteg skapat"
+			},
+			"user": {
+				"sign_out": "Användaren utloggad",
+				"sign_in": "Användaren inloggad",
+				"failed_sign_in": "Användaren kunde inte logga in"
+			},
+			"admin_user": {
+				"sign_out": "Admin utloggad",
+				"sign_in": "Admin inloggad",
+				"failed_sign_in": "Admin kunde inte logga in"
+			},
+			"notifications": {
+				"balance_correction_created": "Balance correction created",
+				"cashout_requested": "Cashout requested",
+				"deposit_made": "Deposit made",
+				"cashout_made": "Cashout made",
+				"auto_cashout_made": "Auto-cashout made",
+				"cashout_rejected": "Cashout request rejected",
+				"deposit_rejected": "Deposit rejected",
+				"user_upload_document": "User Uploaded Document",
+				"payment_created_by_admin": "Admin Created Payment",
+				"user_disabled": "User Disabled",
+				"contact": "User Requested Support",
+				"admin_comment_created": "Admin Left Comment"
+			},
+			"affiliate": {
+				"redirect": "New affiliate's user visit"
+			},
+			"bitcoin_addresses_uploaded": "Bitcoin addresses uploaded"
+		},
+		"bonuses": {
+			"names": {
+				"no_deposit": "Ingen deposition",
+				"first_deposit": "Första deposition",
+				"nth_deposit": "e deposition",
+				"deposit_system": "Betalningssystembonus",
+				"coupon": "Coupon"
+			},
+			"issuance_policy": {
+				"can-issue": "Automatisk bonus",
+				"can-refuse": "Spelaren kan avbryta bonus innan spel",
+				"can-cancel": "Spelaren kan avbryta bonus"
+			}
+		},
+		"retention_emails": {
+			"names": {
+				"welcome": "Välkommen",
+				"welcome_promo": "Welcome promos",
+				"no_deposit": "Ingen deposition",
+				"nth_deposit": "No Nth deposit"
+			}
+		},
+		"payment_systems": {
+			"names": {
+				"qiwi": "Qiwi",
+				"skrill": "Skrill",
+				"interkassa": "Interkassa",
+				"paysafecard": "paysafecard",
+				"ukash": "Ukash",
+				"neteller": "Neteller",
+				"card_pay": "CardPay",
+				"b_cash": "B-Cash",
+				"wirecard": "Wirecard",
+				"coupon": "Coupon",
+				"cashbox": "Pengalåda",
+				"cep_bank": "Cep Bank",
+				"bank_transfer": "Bank Transfer",
+				"cubits": "Cubits",
+				"lavapay": "Lavapay",
+				"bitcoin_payment": "Bitcoin",
+				"ripple_payment": "Ripple"
+			},
+			"payer": {
+				"cashout_email_subject": "Casino utbetalning",
+				"cashout_email_note": "Utbetalning genomförd"
+			},
+			"system_name": "%{child} via %{parent}",
+			"all_locked": "Av säkerhetsskäl tillåter vi endast uttag genom betalningssystem du tidigare använt för insättning. Om du har några frågor, kontakta supporten.",
+			"child_systems": {
+				"visa": "Visa",
+				"mastercard": "MasterCard",
+				"online_bank_transfer": "Online banköverföring",
+				"ideal": "iDEAL",
+				"nordea_solo": "Nordea Solo",
+				"bancontact_mister_cash": "Bancontact/Mister Cash",
+				"cards": "Credit Cards",
+				"ccard": "Credit Card",
+				"click_to_pay": "CLICK2PAY",
+				"ekonto": "eKonto",
+				"eps": "EPS e-payment",
+				"giropay": "giropay",
+				"installment": "Installment by payolution",
+				"invoice": "Invoice by payolution",
+				"moneta": "moneta.ru",
+				"mpass": "mpass",
+				"przelewy": "Przelewy24",
+				"paypal": "PayPal",
+				"paybox": "Paybox",
+				"poli": "POLi payments",
+				"paysafecard": "Paysafecard",
+				"quick": "Quick",
+				"sepa": "SEPA Direct Debit",
+				"skrill_direct": "Skrill Direct",
+				"skrill_wallet": "Skrill Digital Wallet",
+				"sofort": "SOFORT Banking",
+				"tatrapay": "TatraPay",
+				"trustly": "Trustly",
+				"bank_transfer": "Bank Transfer",
+				"lavapay_balance": "LavaPay Balance",
+				"cheque": "Cheque",
+				"perfect": "Perfect Money",
+				"liqpay": "LiqPay",
+				"webmoney": "WebMoney",
+				"yandex": "Yandex Money",
+				"okpay": "OKPAY",
+				"qiwi": "Qiwi",
+				"mailru": "money@mail.ru",
+				"lavapay_bitcoin": "Bitcoin",
+				"egopay": "EgoPay",
+				"lavapay_litecoin": "LiteCoin",
+				"paxum": "Paxum",
+				"ecoin": "eCoin",
+				"btce": "BTC-E",
+				"privatbank": "PrivatBank.ua",
+				"nsmep": "NSMEP",
+				"telemoney": "TeleMoney",
+				"ukrterminal": "UkrTerminal",
+				"rusterminal": "RusTerminal",
+				"rusbank": "Rusbank",
+				"mobileretails": "MobileRetails",
+				"unistream": "Unistream",
+				"ruspost": "RusPost",
+				"contact": "Contact",
+				"anelik": "Anelik",
+				"leader": "Leader",
+				"mts": "MTS",
+				"megafon": "Megafon",
+				"beeline": "Beeline",
+				"alfaclick": "AlfaClick",
+				"fortumo": "Fortumo",
+				"cashu": "CashU",
+				"privat_terminal": "Privat Terminal",
+				"kazakhstan_terminal": "Kazakhstan Terminal",
+				"tjs_terminal": "Tjs Terminal",
+				"moldova_terminal": "Moldova Terminal",
+				"georgia_terminal": "Georgia Terminal",
+				"euroset": "Euroset",
+				"kievstar": "KievStar",
+				"promsvyazbank": "PromSvyazBank",
+				"easypay": "EasyPay",
+				"bpay": "BPay",
+				"pravex": "Pravex Bank",
+				"ukrsib": "UkrSib Bank",
+				"liberty": "Liberty Bank",
+				"faktura": "Faktura.ru",
+				"privatbank_cashin": "Privatbank Cash-in",
+				"sberbank_cashin": "Sberbank Cash-in",
+				"qiwi_visa": "Visa Qiwi",
+				"qiwi_mastercard": "Mastercard Qiwi",
+				"qiwi_maestro": "Maestro Qiwi",
+				"cis_cards": "Bank Cards",
+				"yandex_personal": "Yandex Personal",
+				"local_bank_transfer": "Local Bank Transfer",
+				"w1": "W1",
+				"wallet_one": "Wallet One",
+				"russian_standard": "Russian Standard Bank"
+			}
+		},
+		"commissions": {
+			"strategies": {
+				"registration": "CPA",
+				"percent": "Rev share"
+			}
+		},
+		"games": {
+			"unknown_action": "Okänd händelse",
+			"unavailable_action": "Otillgänglig händelse",
+			"roulette": {
+				"notice": {
+					"bet_is_not_valid": "Satsningen är inte giltig",
+					"bet_type_not_found": "Satsningstyp ej funnen",
+					"unknown_bet": "Okänd satsning",
+					"unknown_value": "Okänt värde markerat",
+					"unknown_column": "Okänd kolumn markerad",
+					"unknown_dozen": "Okänt dussin markerat"
+				}
+			}
+		},
+		"provable_fair": {
+			"provable_fair": "Bevisligen rättvisa",
+			"provability": "Bevisbarhet",
+			"not_available": "Bevisbarhets-widget tillgänglig på spelets sida.",
+			"verify": "Verifiera",
+			"loading": "Randomizing ...",
+			"is_unavailable": "Provable fair is not available for this game.",
+			"next_game": "Nästa Spel",
+			"last_game": "Efternamn",
+			"reel_number": "Reel {{index}}",
+			"fields": {
+				"hash": "Hash (Resultat + Hemlighet)",
+				"client_seed": "Client seed",
+				"secret": "Resultat + Hemlighet",
+				"result": "SLUTRESULTAT"
+			},
+			"hint": {
+				"common": "Skriv in client seed (0-{{max_seed}})",
+				"roulette": "Knuffa bollen vidare",
+				"card": "Kapa leken:",
+				"poker": "Kapa leken:",
+				"slots": "Snurra hjulen lite mer:"
+			},
+			"verification": {
+				"success": {
+					"title": "Verifieringen lyckades",
+					"body": "Fantastiskt, hashen vi skickade dig i början av spelet matchar spelresultatets hash exakt! Din seed hade den förväntade inverkan på slutresultatet."
+				},
+				"failure": {
+					"title": "Verification failed",
+					"body": "Please contact our support."
+				}
+			}
+		},
+		"bitcoin": {
+			"update_balance": "Uppdatera saldodata",
+			"current_balance": "Nuvarande saldo {{balance}}.",
+			"send_text": "Skicka valfri summa i {{currency}} (plus avgift) till",
+			"cant_attach_address": "Vi beklagar, vi har lite problem med Bitcoins. Admin har kontaktats. Försök igen inom kort.",
+			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
+			"xrp": {
+				"send_text": "Send any amount of {{currency}} to",
+				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
+			}
+		}
+	},
+	"frontend": {
+		"placeholders": {
+			"email": "Skriv in din e-postadress",
+			"password": "Ändra ditt lösenord",
+			"password_confirmation": "Bekräfta ditt lösenord",
+			"current_password": "Ange ditt nuvarande lösenord"
+		},
+		"age_acceptance": "Jag bekräftar att jag är över {{age}} är gammal",
+		"choose_game": "Välj ett spel",
+		"games_played": "Spelade spel",
+		"or": "eller",
+		"please_or": "Please {{first}} or {{second}}",
+		"mbtc_total_winnings": "mBTC Totala vinsten",
+		"hi_guest": "Hej, Gäst.",
+		"hi_user": "Hej, {{nickname}}",
+		"password_difficulty": "Lösenordets svårighetsgrad",
+		"password_difficulties": {
+			"very_weak": "Väldigt svagt",
+			"weak": "Svag",
+			"so_so": "Sådär",
+			"strong": "Starkt",
+			"great": "Utmärkt"
+		},
+		"playing": {
+			"playing_fun": "Playing for {{currency}}",
+			"playing_real": "Spela med",
+			"play_fun": "Spela för",
+			"play_real": "Spela med"
+		},
+		"links": {
+			"support": "Support",
+			"help": "Hjälp",
+			"how_to_start": "Så här börjar du",
+			"casino_promotions": "Casino Promovering",
+			"bonuses": "Bonusar",
+			"affiliate_program": "Affiliateprogram",
+			"terms_and_conditions": "Villkor",
+			"back": "Svart",
+			"create_ticket": "Skapa en biljett",
+			"send_form": "Sända en form",
+			"online_chat": "Online chatt",
+			"home": "Hem",
+			"frontpage": "Hem",
+			"casino_games": "Casinospel",
+			"about_casino": "Om Casino",
+			"all_games": "Alla spel",
+			"load_more_games": "Load More Games",
+			"rules": "Spelregler",
+			"autoregister": "Autoregister",
+			"quick_register": "Quick Register",
+			"play_for_fun": "Spela för FUN",
+			"demo": "Demo",
+			"play_for_real": "Spela på pengarna",
+			"play_for_bitcoin": "Spela för Bitcoin",
+			"free_play": "Free Play",
+			"real_play": "Real Play",
+			"play_now": "Spela nu",
+			"join_now": "Gå med nu",
+			"profile": "Profil",
+			"dice": "Tärning",
+			"deposit": "Sätt in",
+			"withdraw": "Ta ut",
+			"cashout": "Ta ut",
+			"cashbox": "Pengalåda",
+			"sign_out": "Logga ut",
+			"sign_in": "Logga in",
+			"sign_up": "Registrera",
+			"register": "Registrera",
+			"login": "Logga in",
+			"logout": "Logout",
+			"start_playing": "Start Playing",
+			"forgot_password": "Glömt ditt lösenord?",
+			"didnt_receive_confirmation": "Har du inte mottagit bekräftelseinstruktionerna?",
+			"didnt_receive_unlock": "Har du inte mottagit upplåsningsinstruktionerna?",
+			"affiliate_profiles": "Partnerprofiler",
+			"settings": "Inställningar"
+		},
+		"captions": {
+			"affiliates": "Affiliates",
+			"help": "Hjälp",
+			"games": "Spel",
+			"quick_links": "Quick links",
+			"languages": "Språk",
+			"info": "Info",
+			"information": "Information",
+			"promotion": "Erbjudandet",
+			"follow_us": "Följ oss"
+		},
+		"actions": {
+			"go_bang": "Go!",
+			"deposit_now": "Deposit Now",
+			"sign_up_now": "Sign Up Now"
+		},
+		"games_bet_playthrough_percent": "Spelen satsas i procent",
+		"contact": {
+			"title": "Kontaktformulär",
+			"hint": "Vänligen fyll i informationen nedan. Alla fält är obligatoriska.",
+			"labels": {
+				"email": "E-post",
+				"content": "Innehåll",
+				"send": "Skicka"
+			}
+		},
+		"no_flash": {
+			"flash_isnt_available": "Adobe Flash Player isn't available",
+			"flash_usage": "Dear users, in order to ensure the best high definition gaming experience, our casino runs on Adobe Flash.",
+			"desktop_section": "Desktop support",
+			"desktop_section_link": "Please install Adobe Flash player for Desktop",
+			"mobile_section": "Mobile devices support",
+			"mobile_section_text": "Adobe Flash is not fully compatible with native browsers on mobile devices. However, you can download 3rd party apps that provide great user experience. We can suggest %s and %s."
+		},
+		"devise": {
+			"resend_confirmation": "Skicka bekräftelseinstruktioner på nytt",
+			"send_reset_instructions": "Skicka mig instruktioner för att nollställa lösenord",
+			"send_unlock_instructions": "Skicka upplåsningsinstruktioner på nytt",
+			"change_your_password": "Ändra ditt lösenord",
+			"change_my_password": "Ändra mitt lösenord",
+			"new_password": "Nytt lösenord",
+			"confirm_new_password": "Bekräfta nytt lösenord",
+			"password_hint": "(lämna tomt om du inte vill ändra det)",
+			"current_password_hint": "(vi behöver ditt nuvarande lösenord för att bekräfta dina ändringar)",
+			"unlock_hint": "If your account has been locked, fill in your e-mail address and we will send you unlock instructions via e-mail.",
+			"resend_hint": "Fill in your e-mail address and we will send you instructions on how to reset your password via e-mail.",
+			"contact_us_hint_html": "Contact us via {{page}} if you need further help.",
+			"custom": {
+				"not_valid_email": "Not a valid email",
+				"too_short": "Too short",
+				"not_match": "Not match",
+				"min_characters": "Minimum 1 character"
+			}
+		},
+		"payment_system_redirect": {
+			"notification": "Du kommer snart att omdirigeras till {{system}} för att slutföra din överföring",
+			"text": "För att fortsätta med betalningen, klicka på knappen nedan.",
+			"button": "Fortsätt med betalningen"
+		},
+		"social": {
+			"follow_us": "Följ oss:"
+		},
+		"filters": {
+			"find_your_game": "Hitta ditt spel"
+		},
+		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
+	},
+	"winners": {
+		"winners": "Vinnare",
+		"latest_winners": "Senaste vinnare",
+		"top_winners": "Topp vinnare",
+		"amount_in_game": "%{amount} in %{game}",
+		"parts": {
+			"just_won": "Vinnare just nu",
+			"in": "i"
+		}
+	},
+	"restriction": {
+		"default": "This page is appears to be restricted in your country",
+		"game_restricted_in_country": "This game is appears to be restricted in your country",
+		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
+	},
+	"documents": {
+		"removed_successfully": "Document was successfully removed",
+		"document": {
+			"edit_description": "Redigera beskrivning",
+			"approved": "Godkänd",
+			"not_approved": "Ej godkänd"
+		},
+		"index": {
+			"upload_document": "Ladda upp ett dokument"
+		}
+	},
+	"sportsbook": {
+		"sports": "Sports",
+		"live_betting": "Live Betting",
+		"sports_bets": "Sports Bets"
+	},
+	"formtastic": {
+		"labels": {
+			"card_holder": "Card holder",
+			"credit_card_number": "Credit card number",
+			"cvc": "Card security code",
+			"expiration_date": "Expiration date",
+			"amount": "Amount",
+			"recipient": "Recipient",
+			"document": {
+				"attachment": "Attachment",
+				"description": "Description"
+			},
+			"btc_amount": "Amount in BTC",
+			"wallet_address": "Wallet Address"
+		},
+		"actions": {
+			"game": {
+				"create": "Skapa spel",
+				"update": "Uppdatera spel"
+			},
+			"player": {
+				"create": "Skapa spelare",
+				"update": "Uppdatera spelare"
+			},
+			"bonus": {
+				"create": "Skapa bonus",
+				"update": "Uppdatera bonus"
+			},
+			"bonus_issue": {
+				"create": "Skapa bonusutfärdande",
+				"update": "Uppdatera bonusutfärdande"
+			},
+			"admin_user": {
+				"create": "Skapa adminanvändare",
+				"update": "Uppdatera adminanvändare"
+			},
+			"payment_system": {
+				"create": "Skapa betalningssystem",
+				"update": "Uppdatera betalningssystem"
+			},
+			"document": {
+				"submit": "Submit document"
+			},
+			"create": "Skapa"
+		},
+		"hints": {
+			"payment_system": {
+				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+			},
+			"profile": {
+				"currency": "Ni kan ändra valuta efter registrering ."
+			},
+			"btc_amount": "Amount may differ due to exchange rate changes"
+		}
+	},
+	"bonus_issues": {
+		"title": "%{bonus} Issue",
+		"stages": {
+			"wait": "Vänta",
+			"handle_bets": "Aktiv",
+			"canceled": "Avbruten",
+			"expired": "Expired",
+			"wager_done": "Wager klar",
+			"lost": "Förlorade",
+			"pending": "Pending"
+		}
+	},
+	"freespin_issues": {
+		"title": "%{bonus} Issue",
+		"games": "Games",
+		"activate": "Activate",
+		"stages": {
+			"issued": "Issued",
+			"activated": "Activated",
+			"canceled": "Canceled",
+			"expired": "Expired",
+			"finished": "Played",
+			"pending": "Pending"
+		},
+		"mailer": {
+			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
+			"activation_prompt_html": "To activate freespins go to {{link}}."
+		}
+	},
+	"games": {
+		"title": "Casinospel",
+		"categories": {
+			"all": "Alla spel",
+			"card": "Kortspel",
+			"poker": "Poker",
+			"table": "Bordsspel",
+			"roulette": "Roulettespel",
+			"slots": "Slots",
+			"video_poker": "Videopoker",
+			"blackjack": "Blackjack",
+			"bingo": "Bingo",
+			"live": "Linje",
+			"fruit": "Fruit Slots",
+			"theme": "Theme Slots",
+			"casual": "Casual",
+			"lottery": "Lottery",
+			"keno": "Keno",
+			"progressive": "Progressive",
+			"stat": {
+				"most_popular": "Populärast",
+				"new": "Ny",
+				"manual": "Featured",
+				"last_played": "Senast spelad"
+			},
+			"device": {
+				"desktop": "Desktop",
+				"mobile": "Mobil"
+			}
+		},
+		"providers": {
+			"all": "All Providers",
+			"softswiss": "SoftSwiss",
+			"amatic": "Amatic",
+			"betsoftgaming": "BetSoft Gaming",
+			"casinotechnology": "Casino Technology",
+			"quickfire": "Quickfire",
+			"ezugi": "Ezugi"
+		},
+		"roulette": {
+			"bets": {
+				"calc_by_max_bet": "Räkna ut enligt Maxinsats",
+				"inside_bets": "Inre insatser",
+				"outside_bets": "Yttre insatser",
+				"straight_up": "Straight Up",
+				"split": "Split",
+				"street": "Street",
+				"trio": "Trio",
+				"basket": "Basket",
+				"corner": "Hörna",
+				"first_four": "Första fyra",
+				"first_five": "Första fem",
+				"line": "Linje",
+				"column": "Kolumn",
+				"dozen": "Dussin",
+				"red": "Röd",
+				"black": "Svart",
+				"odd": "Udda",
+				"even": "Jämn",
+				"low": "Låg",
+				"high": "Hög"
+			}
+		},
+		"titles": {
+			"baccarat": {
+				"classic": "Baccarat"
+			},
+			"blackjack": {
+				"double_exposure": "Dubbelexponering",
+				"european": "Europeisk Blackjack",
+				"multihand": "Multihand Blackjack",
+				"multihand_pro": "Multihand Blackjack Pro",
+				"pontoon": "Pontoon",
+				"surrender": "Blackjack Surrender"
+			},
+			"hi_lo": {
+				"switch": "Hi-Lo reglage"
+			},
+			"casual": {
+				"horse_racing": "Hästkapplöpning",
+				"minesweeper": "Minesweeper",
+				"heads_tails": "Heads and Tails",
+				"scratch_dice": "Scratch Dice"
+			},
+			"poker": {
+				"caribbean": "Karibisk poker",
+				"casino_holdem": "Kasino Hold'em",
+				"let_it_ride": "Let it ride",
+				"oasis": "Oasispoker",
+				"texas_holdem": "Texas Hold'em",
+				"trey_poker": "Treypoker"
+			},
+			"roulette": {
+				"american": "Amerikansk roulette",
+				"european": "Europeisk roulette",
+				"french": "Fransk roulette"
+			},
+			"slots": {
+				"aztec_magic": "Aztekmagi",
+				"book_of_pyramids": "Pyramidbok",
+				"scroll_of_adventure": "Scroll of Adventure",
+				"brave_viking": "Modiga vikingar",
+				"cherry_fiesta": "Körsbärsfest",
+				"crazy_starter": "Galen förrätt",
+				"desert_treasure": "Efterrättsskatt",
+				"hawaii_cocktails": "Hawaiicocktails",
+				"horse_slot": "Hästfack",
+				"lucky_blue": "Lycklig blå",
+				"lucky_lady_clover": "Lyckliga damens klöver",
+				"lucky_sweets": "Lyckliga godisar",
+				"platinum_lightning": "Platinumljus",
+				"princess_of_sky": "Himmelens prinsessa",
+				"princess_royal": "Princess Royal",
+				"sport_slot": "Sportfack",
+				"three_lines_slot": "Girl slot",
+				"west_town": "West Town"
+			},
+			"video_poker": {
+				"jacks_or_better": "Knekt eller bättre",
+				"wild_texas": "Vilda Texas",
+				"video_poker": "Videopoker"
+			}
+		}
+	},
+	"users": {
+		"statuses": {
+			"enabled": "Aktiverad",
+			"disabled": "Inaktiverad",
+			"not_confirmed": "Ej bekräftad",
+			"locked": "Låst",
+			"normal": "Aktiv",
+			"manually_suspected": "Manually marked as suspicious"
+		}
+	},
+	"affiliate_bills": {
+		"billed_from": "Fakturerad från",
+		"billed_to": "Fakturerad till",
+		"paid": "Betalad",
+		"submit": "Skicka in"
+	},
+	"affiliate_links": {
+		"add": "Add Link",
+		"name": {
+			"hint": "Identification for your private use only"
+		},
+		"code": {
+			"hint": "Unique code for affiliate link"
+		}
+	},
+	"affiliate_profiles": {
+		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"commission": "Provision",
+		"registration_settings": {
+			"reward": "CPA Reward",
+			"conditions": "Villkor",
+			"rule": "if invited user wager > {{amount}} {{currency}}"
+		},
+		"percent_settings": {
+			"one": "%{percent}%",
+			"default": "%{percent}% if generated greater than %{limit} %{currency}",
+			"rule": "%{percent}% if generated less than %{limit} %{currency}",
+			"intermediate_rule": "%{percent}% if generated between %{limits} %{currency}"
+		},
+		"no_default_commissions": "Du har inte tilldelats några provisioner. Vänligen kontakta supporten.",
+		"active": "Aktiv",
+		"not_active": "Inte aktiv",
+		"affiliate_profiles": "Partnerprofiler",
+		"statistics": {
+			"statistics": "Statistik",
+			"year": "År",
+			"month": "Månad",
+			"week": "Vecka",
+			"day": "Dag",
+			"since": "Sedan",
+			"to": "Till",
+			"submit": "Skicka in",
+			"grouped_by": "Grupperad enligt",
+			"deposits_count": "Depositioner",
+			"redirects_count": "Besök",
+			"registered_users_count": "Registrerad användare (Med depositioner)",
+			"date": "Datum",
+			"invited_users_income": "NGR (net gaming revenue)",
+			"ggr": "GGR (gross gaming revenue)",
+			"total": "Period Total",
+			"link_name": "Link Name"
+		},
+		"affiliate_profile": {
+			"code": "Kod",
+			"url": "URL",
+			"strategy": "Betalningsschema"
+		},
+		"banners": {
+			"banners": "Reklamer",
+			"sizes": "Storlek",
+			"types_title": "Typ",
+			"types": {
+				"image": "Image",
+				"html": "HTML",
+				"swf": "Flash"
+			}
+		},
+		"form": {
+			"name_hint": "Identification for your private use only"
+		},
+		"add": "Create affiliate profile",
+		"add_link": "Create affiliate profile link",
+		"strategy": "Betalningsschema",
+		"bills": {
+			"bills": "Fakturor",
+			"billed_at": "Fakturerad på",
+			"amount": "Summa",
+			"paid": "Betalad",
+			"not_billed_for_date": "Inte fakturerad på datum"
+		}
+	},
+	"games_history": {
+		"title": "Spel",
+		"from": "From",
+		"result": "Resultat",
+		"win": "Vinst",
+		"lose": "Förlorade",
+		"game_name": "Spel",
+		"bet": "Insats"
+	},
+	"bonuses": {
+		"history": {
+			"title": "Bonusar",
+			"wager": "Vad",
+			"valid_until": "Giltig till",
+			"status": "Status",
+			"from": "Från"
+		},
+		"promo_form": {
+			"title": "Lägg till kampanjkod",
+			"sub_title": "och en bonus"
+		},
+		"bonus_settings": "Bonusinställningar",
+		"refuse": "Jag vill inte ha några bonusar"
+	},
+	"freespin_bonuses": {
+		"history": {
+			"title": "Freespins"
+		},
+		"gift": "Gift"
+	},
+	"profiles": {
+		"menu": {
+			"balance": "Saldo",
+			"history": "History",
+			"bonuses": "Bonusar",
+			"affiliate": "Partners",
+			"profile": "Profile Info",
+			"documents": "Dokument"
+		},
+		"info": {
+			"personal": "Personal"
+		},
+		"index": {
+			"my_account": "Mitt Konto",
+			"my_bets": "Mina spel",
+			"transaction": "Transaktion",
+			"welcome": "Välkommen",
+			"balance": "Ditt saldo",
+			"account_balance": "Kontosaldo"
+		},
+		"show": {
+			"edit_profile": "Redigera din profil",
+			"edit_settings": "Redigera inställningar",
+			"attach_documents": "Bifoga dokument",
+			"change_credentials": "Ändra lösenord",
+			"set_email_and_password": "Set email and password",
+			"create_cashout_request": "Utbetalning",
+			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
+			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
+			"cashout_request_created": "Cashout request has been received and requires approval by our staff. We will process your request as fast as we can.",
+			"cashout_successfully": "Konton",
+			"cashout_technically_impossible": "We're sorry, but some errors occurred. We're working to fix them in an emergency mode. Please contact support if you have any questions.",
+			"profile_info": {
+				"title": "Profile Info"
+			},
+			"autoregister_info": {
+				"title": "Currently, you can log in to your account by visiting your personal login url"
+			},
+			"accounts": {
+				"title": "Bonusutfärdanden",
+				"available_to_cashout": "Kan utbetalas",
+				"add_currency": "Add currency"
+			},
+			"bonuses": {
+				"title": "Bonusar",
+				"no_bonuses": "Du har för närvarande inga bonusar.",
+				"cancel_bonus": "Forfeit Bonus",
+				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
+				"bonus_canceled": "Bonus avbruten",
+				"bonus_not_canceled": "Denna bonus kan inte avbrytas"
+			},
+			"coupons": {
+				"activated": "Coupon \"{{code}}\" successfully activated.",
+				"not_activated": "Unable to activate coupon \"{{code}}\". Please try again or contact support.",
+				"already_activated": "Coupon \"{{code}}\" already activated."
+			},
+			"payments": {
+				"title": "Betalningar"
+			},
+			"not_finished_games": {
+				"title": "Oavslutade Spel",
+				"hint": "Du kan antingen fortsätta spela eller avsluta dessa spel. Avslutar du dem innebär det förlorad insats.",
+				"game_canceled": "Spelet har avbrutits"
+			},
+			"bets": {
+				"title": "Insatser",
+				"all_bets": "All Bets"
+			},
+			"cashbox": "Pengalåda",
+			"payments_history": "Transaktionshistorik",
+			"bets_history": "Satsningshistorik",
+			"bonuses_history": "Bonushistoria",
+			"freespin_bonuses_history": "Freespins History",
+			"deposit_to_address_hint": "Insättning till denna adress för att finansiera ditt konto.",
+			"freespin_bonuses": {
+				"bonus_canceled": "Bonus canceled",
+				"bonus_not_canceled": "Failed to cancel bonus",
+				"bonus_activated": "Bonus was activated",
+				"bonus_not_activated": "Bonus was not activated"
+			}
+		},
+		"edit": {
+			"title": "Redigera profil",
+			"info_updated": "Infon har uppdaterats",
+			"not_saved": "Changes was not saved",
+			"settings_section_updated": "Sektionen har uppdaterats",
+			"valid_data_warning": "Ange aktuella kontaktuppgifter i formuläret nedan. Kolla att allt är korrekt innan du sparar. "
+		}
+	},
+	"payments": {
+		"actions": {
+			"deposit": "Sätt in",
+			"cashout": "Ta ut",
+			"gift": "Gåva",
+			"chargeback": "Återköp",
+			"affiliate_payment": "Partnerbelöning"
+		},
+		"statuses": {
+			"success": "Accepterat",
+			"failure": "Nekat",
+			"pending": "Avvaktar"
+		},
+		"canceled_by_user": "Du har avbrutit din transaktion",
+		"wait_for_confirmation": "Din betalning kommer snart att bekräftas",
+		"not_performed": "Payment was not performed",
+		"confirmed": "Payment confirmed",
+		"canceled": "Payment not confirmed",
+		"make_deposit": "Gör en insättning",
+		"make_cashout": "Begär utbetalning",
+		"confirm_address": "Confirm address",
+		"bonus_code_show": "I have a Bonus Code",
+		"bonus_code_hide": "Hide Bonus Code",
+		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
+		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
+		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+		"invalid_profile_message": "To be able to cash out, you must fill in the required fields in your Profile.",
+		"try_again": "Transaction could not be initiated due to connection problems. If the problem persists, please contact our support.",
+		"select_currency": "Välj Saldovaluta",
+		"select_currency_hint": {
+			"deposit": "Jag vill fylla på mitt saldo med",
+			"cashout": "Jag vill ta ut"
+		},
+		"select_payment_method": "Välj betalningsmetod",
+		"current_balance": {
+			"deposit": "Ditt aktuella saldo: {{money}}.",
+			"cashout": "Tillgängligt för uttag: {{money}}. Vänligen se {{balance_link}} för detaljerad uppdelning."
+		},
+		"payment_methods": {
+			"empty": "There are no available payment methods for this currency.",
+			"pay_with_cubits": "Pay with Cubits"
+		},
+		"limits": {
+			"currency": "%{currency} betalning",
+			"min": "min {{min}}",
+			"max": "max {{max}}",
+			"fee": "%{fee} avgift"
+		},
+		"processing_time": {
+			"instantly": "Direkt",
+			"range": "%{min}-%{max} bankdagar"
+		}
+	},
+	"security_check": {
+		"user_is_suspicious": "Användaren är suspekt",
+		"user_not_suspicious": "Användaren är suspekt",
+		"user_has_suspicious_games": "Användaren har suspekta spel",
+		"cashout_amount": "Amount exceeds allowed maximum",
+		"cashout_wins": "Amount exceeds user limit",
+		"casino_cashout": "Amount exceeds casino daily limit",
+		"crypto_address_confirmed": "Address was not used before",
+		"manual": {
+			"title": "User was manually marked as suspicious"
+		},
+		"chargeback": {
+			"title": "User made chargeback"
+		},
+		"duplicate": {
+			"title": "User has duplicates",
+			"reason_html": "User duplicates {{user}}"
+		},
+		"balance_sum": {
+			"title": "Balance amount doesn't match the amount calculated based on transations and games statistic",
+			"text": "Spelarens saldo stämmer inte med förväntat saldo"
+		},
+		"balance_transaction": {
+			"title": "The winning amount is too big for the last 24 hours",
+			"reason_html": "Suspicious wins in {{table}} during {{period}} by {{player}}"
+		},
+		"wager_done": {
+			"title": "User done wager bonus requirement"
+		},
+		"cubits_payment_difference": {
+			"title": "Cumulative cubits exchange rate losses are too big"
+		}
+	},
+	"notification": {
+		"contact_form": {
+			"sender_notice": "Ditt meddelande har skickast.",
+			"mail_subject": "Meddelande mottaget via kontaktformuläret på din casinosida"
+		},
+		"payment_confirmation": {
+			"mail_subject": "Payment confirmation code"
+		},
+		"daily_stats": {
+			"mail_subject": "Daily {{currency}} statistics for {{date}}"
+		},
+		"report": {
+			"day_mail_subject": "Daily statistics",
+			"week_mail_subject": "Weekly statistics",
+			"day_mail_title": "Daily {{currency}} statistics for {{period}}",
+			"week_mail_title": "Weekly {{currency}} statistics for {{period}}",
+			"fields": {
+				"net_revenue": "Net Gaming Revenue (NGR)",
+				"gross_win": "Gross Win",
+				"bets": "Total Bet",
+				"wins": "Total Win",
+				"payout": "Payout (in %)",
+				"game_rounds": "Game Rounds",
+				"new_registrations": "New Registrations With Deposit",
+				"players_made_deposits": "Players Made Deposits",
+				"total_users": "Total Users",
+				"deposits_sum": "Depositionssumma",
+				"deposits_avg": "Deposits Average",
+				"cashouts_sum": "Utlösningssumma",
+				"cashouts_avg": "Cashouts Average"
+			},
+			"previous": "Previous {{type}}"
+		}
+	},
+	"user_mailer": {
+		"auth": {
+			"welcome": "Välkommen {{name}}!",
+			"hello": "Hej {{name}}!",
+			"confirmation": {
+				"you_can_confirm_email_by_pressing_next_link": "Du kan bekräfta e-postadressen för ditt konto genom länken nedan:",
+				"confirm_my_account": "Bekräfta mitt konto"
+			},
+			"reset_password": {
+				"change_my_password": "Ändra mitt lösenord",
+				"link_to_change_password_are_requested": "Någon har begärt en läng för att ändra ditt lösenord och du kan göra detta via länken nedan.",
+				"you_can_ignore_this_mail": "Om du inte har begärt detta, vänligen ignorera detta e-postmeddelande.",
+				"your_password_didnt_changed_yet": "Ditt lösenord kommer inte att ändras förrän du går in på länken nedan och skapar ett nytt."
+			},
+			"unlock": {
+				"unlock_my_account": "Lås upp mitt konto",
+				"your_account_has_been_locked": "Ditt konto har låsts på grund av för många inloggningsförsök.",
+				"click_to_unlock": "Klicka på länken nedan för att låsa upp ditt konto:"
+			}
+		},
+		"deposit": {
+			"deposit_made": "Your deposit received"
+		},
+		"cashout": {
+			"cashout_approved": "Din utbetalningsförfrågan har godkänts"
+		},
+		"not_enough_money_for_cashout": {
+			"subject": "Otillräckligt saldo för utbetalning",
+			"body": "Din utbetalning har inaktiverats eftersom saldot inte räckte till för att bearbeta den efterfrågade utbetalningen. Vänligen skicka en ny förfrågan om utbetalning i enlighet med nuvarande saldo."
+		},
+		"address_confirmation_required": {
+			"subject": "Cashout address confirmation required"
+		}
+	},
+	"activemodel": {
+		"errors": {
+			"models": {
+				"affiliate_forms/assign_commission": {
+					"attributes": {
+						"from_date": {
+							"must_be_in_future": "måste vara i framtiden"
+						},
+						"to_date": {
+							"must_be_in_future": "måste vara i framtiden",
+							"must_be_less_then_from": "must be less then From"
+						}
+					}
+				},
+				"payment_system/cashout_form/wirecard": {
+					"attributes": {
+						"credit_card_number": {
+							"invalid": "is not a valid credit card number"
+						}
+					}
+				},
+				"casino_cash_balance/balance_options": {
+					"attributes": {
+						"base": {
+							"rules_error": "Du har fel i reglerna"
+						}
+					}
+				},
+				"commissions/registration_settings": {
+					"attributes": {
+						"base": {
+							"rules_error": "Du har fel i reglerna"
+						}
+					}
+				},
+				"commissions/registration_settings_rule": {
+					"attributes": {
+						"base": {
+							"uniq": "should be unique"
+						}
+					}
+				}
+			}
+		},
+		"attributes": {
+			"payment_system/bank_transfer/access_data": {
+				"deposit_snippet_name": "Deposit Snippet Name",
+				"cashout_snippet_name": "Cashout Snippet Name"
+			},
+			"affiliate_forms/assign_commission": {
+				"from_date": "From",
+				"to_date": "Till"
+			},
+			"newsletters_filter": {
+				"tag": "User tag",
+				"locale": "Locale",
+				"type": "Type",
+				"deposits_number_equals": "Sätt in",
+				"last_deposit_at": "Last deposit",
+				"registered_at": "Registrera",
+				"payments_currency": "Payments currency"
+			}
+		}
+	},
+	"retention_mailer": {
+		"welcome": "Välkommen",
+		"no_deposit": "You haven't made a deposit",
+		"nth_deposit": "We are waiting for your deposit",
+		"welcome_promo": "Visit us again"
+	},
+	"jackpot": {
+		"jackpots": "Jackpots"
+	},
+	"game_categories": {
+		"favorite": "My favorites",
+		"add_to_favorites": "Add To Favorites",
+		"remove_from_favorites": "Remove From Favorites",
+		"favorites": {
+			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+		}
+	},
+	"betsoftgaming_api": {
+		"betsoftgaming": "Betsoftgaming"
+	},
+	"backend": {
+		"menu": {
+			"bitcoin_addresses": "Bitcoinadresser"
+		},
+		"bitcoin_wallets": {
+			"filters": {
+				"all": "Alla",
+				"available": "Tillgänglig",
+				"occupied": "Upptagen"
+			}
+		},
+		"bitcoin": {
+			"add_new_addresses": "Ladda upp fil eller klistra in nya adresser",
+			"upload_new_addresses": "Lägg till adresser",
+			"cashout": "Utbetalning",
+			"deposit_to_wallet": "Deposition till plånbok",
+			"deposit_currency_to_wallet": "Deposit {{currency}} to Wallet",
+			"enough_available_addresses_left": "%{count} tillgängliga adresser kvar",
+			"not_enough_available_addresses_left": "Endast 1 tillgänglig bitcoinadress kvar. Du kan lägga till fler adresser {{link}}.",
+			"here": "här",
+			"current_wallet_balance": "Current wallet balance:",
+			"total_balance": "Total: {{amount}}",
+			"available_balance": "Spendable: {{amount}}",
+			"transfer_to": "Increase",
+			"increase_system_balance": "För att öka saldot i systemplånboken vänligen skicka bitcoins till nästa adress:"
+		}
+	},
+	"bitcoin_wallets": {
+		"address_sources": {
+			"imported": "From pool",
+			"generated": "Generated",
+			"cubits_invoice": "Cubits Invoice",
+			"cubits_channel": "Cubits Channel"
+		}
+	},
+	"sidebar": {
+		"available_addresses": "Tillgängliga adresser",
+		"wallet_balance": "Plånbokssaldo"
+	},
+	"casinotechnology_api": {
+		"casinotechnology": "CasinoTechnology",
+		"timeout_message": "Game provider's server has not responded. Please retry later."
+	},
+	"ezugi_api": {
+		"ezugi": "Ezugi"
+	},
+	"quickfire_api": {
+		"quickfire": "QuickFire"
+	}
+}

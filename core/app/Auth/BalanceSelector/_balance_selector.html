@@ -1,0 +1,14 @@
+<div class="balance-selector">
+    <span class="dropdown">
+            <span id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-link" ng-repeat="balance in balances" ng-if="balance.code == data.user.currency">
+                <a>{{balance.amount_cents / balance.subunits_to_unit}} {{balance.currency}}</a>
+                <span class="caret"></span>
+            </span>
+
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" ng-if="balances.length > 1">
+                <li ng-repeat="balance in balances" ng-if="balance.code != data.user.currency" ng-click="changeCurrency(balance.code)">
+                    <a>{{balance.amount_cents / balance.subunits_to_unit}} {{balance.currency}}</a>
+                </li>
+            </ul>
+    </span>
+</div>

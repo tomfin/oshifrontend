@@ -1,0 +1,58 @@
+<div>
+    <div access-level="accessLevels.anon">
+        <a class="login_lnk" href="" ng-controller="AuthModal" ng-click="auth_modal.showLogin()" translate="frontend.links.sign_in"></a>
+        <a class="register_lnk" href="" ng-controller="AuthModal" ng-click="auth_modal.showRegistration()" translate="frontend.links.sign_up"></a>
+    </div>
+    <div access-level="accessLevels.user">
+        <div class="btn-group">
+            <casino-deposit-button></casino-deposit-button>
+        </div>
+
+        <div class="user" dropdown on-toggle="toggled(open)">
+            <div class="user__name" dropdown-toggle>{{user.data.email}}</div>
+            <div class="user__menu"></div>
+            <ul class="user__menu-list dropdown-menu" role="menu" >
+                <li class="user__menu-item ">
+                    <a href="{{profile_routes.profile}}">{{'profiles.index.my_account' | translate}}</a>
+                </li>
+                <li class="user__menu-item">
+                    <a href="{{profile_routes.bonuses.active}}">{{'profiles.menu.bonuses' | translate}}</a>
+                </li>
+                <li class="user__menu-item">
+                    <a href="{{profile_routes.bets}}">{{'profiles.index.my_bets' | translate}}</a>
+                </li>
+                <li class="user__menu-item">
+                    <a href="{{profile_routes.bonuses.history}}">{{'profiles.menu.history' | translate}}</a>
+                </li>
+                <li class="user__menu-item">
+                    <a href="" ng-click="widgetAuthTop.logout()">{{'frontend.links.sign_out' | translate}}</a>
+                </li>
+            </ul>
+
+
+        </div>
+        <!--<div class="btn-group username-wrap">-->
+            <!--<a class="dropdown-toggle profile-username" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">-->
+                <!--{{user.data.email}}-->
+                <!--<span class="caret"></span>-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">-->
+                <!--<li class="user__menu-item ">-->
+                    <!--<a href="{{profile_routes.profile}}">{{'profiles.index.my_account' | translate}}</a>-->
+                <!--</li>-->
+                <!--<li class="user__menu-item">-->
+                    <!--<a href="{{profile_routes.bonuses.active}}">{{'profiles.menu.bonuses' | translate}}</a>-->
+                <!--</li>-->
+                <!--<li class="user__menu-item">-->
+                    <!--<a href="{{profile_routes.bets}}">{{'profiles.index.my_bets' | translate}}</a>-->
+                <!--</li>-->
+                <!--<li class="user__menu-item">-->
+                    <!--<a href="{{profile_routes.bonuses.history}}">{{'profiles.menu.history' | translate}}</a>-->
+                <!--</li>-->
+                <!--<li class="user__menu-item">-->
+                    <!--<a href="" ng-click="widgetAuthTop.logout()">{{'frontend.links.sign_out' | translate}}</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    </div>
+</div>

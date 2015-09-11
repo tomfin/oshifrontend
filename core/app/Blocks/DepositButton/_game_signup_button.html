@@ -1,0 +1,9 @@
+<span>
+        <a ng-controller="AuthModal" access-level="accessLevels.anon" ng-click="auth_modal.showRegistration()">
+            <button class="tabs__login">{{'frontend.links.sign_up' | translate}}</button>
+        </a>
+
+        <a access-level="accessLevels.user" target="_self" ng-controller="ProfileRoutes" href="{{profile.deposit[currentCurrency]}}">
+            <button class="tabs__login">{{'frontend.links.deposit' | translate}}</button>
+        </a>
+</span>

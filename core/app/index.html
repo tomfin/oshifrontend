@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="casino">
+    <head>
+        <base href="/">
+        <title ng-bind="page.title + ' ' + page.snippet_title"></title>
+        <meta name="description" content="{{page.description}}">
+        <meta name="keywords" content="{{page.keywords}}">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- inject:lib:js --><!-- endinject -->
+        <!-- inject:app:js --><!-- endinject -->
+        <!-- inject:templates:js --><!-- endinject -->
+
+        <!-- inject:app-style:css --><!-- endinject -->
+    </head>
+    <body class="page-{{state.current.name}} device-{{data.device}}">
+        <casino-preloader></casino-preloader>
+        <casino-game></casino-game>
+        <div class="main">
+            <casino-header></casino-header>
+
+            <div class="inner clearfix">
+                <casino-notification></casino-notification>
+
+                <div ui-view autoscroll="false"></div>
+            </div>
+            <casino-footer></casino-footer>
+        </div>
+    </body>
+</html>

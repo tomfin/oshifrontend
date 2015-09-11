@@ -1,0 +1,1942 @@
+{
+	"errors": {
+		"messages": {
+			"taken_in_past": "já foi ocupado no passado!",
+			"equal_to_current_password": "deve ser diferente da senha actual!",
+			"already_confirmed": "já foi confirmado, por favor tente efectuar a autenticação",
+			"confirmation_period_expired": "necessitava de confirmação até %{period}, por favor faça um novo pedido",
+			"expired": "expirou, por favor solicite um novo",
+			"not_found": "não foi encontrado",
+			"not_locked": "não foi bloqueado",
+			"not_saved": {
+				"one": "1 erro impediu %{resource} de ser gravado:",
+				"other": "%{count} erros impediram %{resource} de ser gravado:"
+			}
+		}
+	},
+	"devise": {
+		"invalid_captcha": "O captcha introduzido não é válido!",
+		"password_expired": {
+			"submit": "Alterar senha",
+			"updated": "A sua nova senha está guardada.",
+			"change_required": "A sua senha expirou. Por favor renove a sua senha!",
+			"forgot_password_message": "Se não se lembra da senha, clique em 'Logout' e restaure a sua senha."
+		},
+		"failure": {
+			"session_limited": "As suas credenciais de login foram utilizadas noutro browser. Por favor introduza-as novamente para continuar neste browser.",
+			"expired": "A sua conta expirou por inactividade. Por favor contacte o administrador do site.",
+			"disabled": "A sua conta está desactivada.",
+			"not_allowed_ip": "O seu IP não é permitido para este utilizador.",
+			"already_authenticated": "Já se encontra autenticado.",
+			"inactive": "A sua conta ainda não foi activada.",
+			"invalid": "O endereço de email ou a palavra-passe são inválidos.",
+			"last_attempt": "Tem mais uma tentativa antes da sua conta ser bloqueada.",
+			"locked": "A sua conta está bloqueada.",
+			"not_found_in_database": "O endereço de email ou a palavra-passe são inválidos.",
+			"timeout": "A sua sessão expirou, por favor autentique-se novamente para continuar.",
+			"unauthenticated": "Antes de continuar tem de se autenticar ou efectuar um registo.",
+			"unconfirmed": "Tem de confirmar a sua conta antes de continuar."
+		},
+		"confirmations": {
+			"confirmed": "A sua conta foi confirmada com sucesso.",
+			"send_instructions": "Dentro de alguns minutos irá receber um email com instruções para confirmar a sua conta.",
+			"send_paranoid_instructions": "Se o seu email existir na nossa base de dados, irá receber dentro de alguns minutos um email com instruções para confirmar a sua conta."
+		},
+		"mailer": {
+			"confirmation_instructions": {
+				"subject": "Instruções de confirmação"
+			},
+			"reset_password_instructions": {
+				"subject": "Instruções de recuperação de palavra-passe"
+			},
+			"unlock_instructions": {
+				"subject": "Instruções de desbloqueio"
+			}
+		},
+		"omniauth_callbacks": {
+			"failure": "Não foi possível autenticar a sua conta por %{kind} porque \"%{reason}\".",
+			"success": "A sua conta foi autenticada por %{kind} com sucesso."
+		},
+		"passwords": {
+			"no_token": "Não pode aceder a esta página sem vir do email de redefinição da senha. Se vem dum email para redefinir a senha, por favor certifique-se que usou o URL completo que foi enviado.",
+			"send_instructions": "Dentro de alguns minutos irá receber um email com instruções de reinicialização da palavra-passe.",
+			"send_paranoid_instructions": "Se o seu e-mail existir na nossa base de dados, irá receber dentro de alguns minutos um e-mail com instruções para recuperar a sua senha.",
+			"updated": "A sua palavra-passe foi alterada com sucesso. Agora está autenticado.",
+			"updated_not_active": "A sua password foi alterada com sucesso."
+		},
+		"registrations": {
+			"destroyed": "A sua conta foi cancelada com sucesso.",
+			"signed_up": "Bemvindo! A autenticação foi efectuada com sucesso.",
+			"signed_up_but_inactive": "Registou-se com sucesso. No entanto, não podemos iniciar a sua sessão porque ainda não confirmou a sua conta.",
+			"signed_up_but_locked": "Registou-se com sucesso. No entanto, não podemos iniciar a sua sessão porque a sua conta encontra-se bloqueada.",
+			"signed_up_but_unconfirmed": "Foi enviado um email com um link para confirmar o seu email. Por favor abra o link para activar a sua conta.",
+			"update_needs_confirmation": "A sua conta foi actualizada com sucesso, mas precisamos de confirmar o seu email. Por favor veja o seu email e clique no link para finalizar a confirmação do seu email.",
+			"updated": "A sua conta foi actualizada com sucesso."
+		},
+		"sessions": {
+			"already_signed_out": "Sessão terminada com sucesso.",
+			"signed_in": "Autenticação efectuada com sucesso.",
+			"signed_out": "Saiu da sessão com sucesso."
+		},
+		"unlocks": {
+			"send_instructions": "Dentro de alguns minutos irá receber um email com as instruções para desbloquear a sua conta.",
+			"send_paranoid_instructions": "Se a sua conta existir, irá receber dentro de alguns minutos um email com instruções para a desbloquear.",
+			"unlocked": "A sua conta foi desbloqueada com sucesso. Por favor autentique-se para continuar."
+		}
+	},
+	"activerecord": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "cannot contain a fragment.",
+							"has_query_parameter": "cannot contain a query parameter.",
+							"invalid_uri": "must be a valid URI.",
+							"relative_uri": "must be an absolute URI."
+						}
+					}
+				},
+				"user": {
+					"attributes": {
+						"password": {
+							"wrong_password": "invalid email address or password"
+						}
+					}
+				},
+				"profile": {
+					"attributes": {
+						"age": {
+							"greater_than_or_equal_to": "verification {{count}}+"
+						}
+					}
+				},
+				"payment": {
+					"not_enough_money": "Sem fundos suficientes",
+					"not_enough_unlocked_money": "Some or all of your funds are locked due to an active bonus. Please meet your bonus wagering requirement to be able to cash out.",
+					"unresolved_cashout_request_presents": "Your previous cashout request has not yet been processed. We will do it as fast as we can. Before requesting another cashout, please wait for your previous request to be processed.",
+					"pending_deposit_presents": "We are still waiting for confirmation of your last deposit",
+					"commission_is_greater_that_amount": "Commission is greater than amount",
+					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
+					"not_used_account": "Account you are going to cashout was not used before.",
+					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
+					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
+					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+				},
+				"commission_connection": {
+					"not_overlap": "Must not overlap with other connections with same commission level",
+					"future_from_time": "deve ser no futuro",
+					"greater_than_from_time": "deve ser superior que o tempo",
+					"strategies_equivalence": "deve ter o mesmo esquema de pagamento do perfil afiliado",
+					"greater_than_now": "deve ser superior a agora"
+				},
+				"commission": {
+					"wrong_strategy_settings": "Existem erros nas definições do esquema de pagamento"
+				},
+				"bonus_issue": {
+					"not_enough_to_lock": "is greater than user balance"
+				},
+				"external_bet": {
+					"rollback_expired": "Rollback can not be accepted if 24 hours passed after result enrollment"
+				},
+				"notification/subscription": {
+					"invalid_types": "You can subscribe only to a notification"
+				}
+			}
+		},
+		"models": {
+			"account": "Conta",
+			"admin_user": "Utilizador admin",
+			"affiliate_profile": "Affiliate Profile",
+			"bet": "Aposta",
+			"bonus": "Bónus",
+			"bonus_issue": "Emissão de bónus",
+			"document": "Documento",
+			"event": "Evento",
+			"external_bet": "External Bet",
+			"game": "Jogo",
+			"game_category": "Game Category",
+			"game_step": "Passo",
+			"game_table": "Mesa de jogo",
+			"payment": "Pagamento",
+			"payment_system": "Sistema de pagamento",
+			"profile": "Perfil",
+			"reports/base_collection/result_record": "Result",
+			"suspicion": "Suspeita",
+			"user": "Utilizador",
+			"player": "Jogador",
+			"retention_email": "Retention email"
+		},
+		"attributes": {
+			"balance_correction": {
+				"action": "Action",
+				"amount": "Amount",
+				"account": "Account",
+				"comment": "Comment"
+			},
+			"game_category": {
+				"name": "Name",
+				"disabled": "Disabled",
+				"created_at": "Created at",
+				"games": "Games",
+				"position": "Position"
+			},
+			"notification": {
+				"type": "Type",
+				"user": "User",
+				"admin_user": "Admin",
+				"target": "Target",
+				"target_type": "Target type"
+			},
+			"affiliate_link": {
+				"name": "Name",
+				"code": "Code"
+			},
+			"affiliate_profile": {
+				"name": "Título",
+				"strategy": "Esquema de pagamento",
+				"no_debt": "No Neg. Carryover",
+				"links": "Links",
+				"active": "Active"
+			},
+			"account": {
+				"currency": "Moeda",
+				"amount": "Quantia",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"active_admin/comment": {
+				"author": "Author",
+				"body": "Body",
+				"resource": "Resource"
+			},
+			"admin_user": {
+				"email": "Email",
+				"encrypted_password": "Senha encriptada",
+				"password": "Senha",
+				"password_confirmation": "Confirm password",
+				"current_password": "Senha actual",
+				"remember_me": "Lembrar-me",
+				"reset_password_token": "Restaurar token de senha",
+				"reset_password_sent_at": "Restaurar senha enviada em",
+				"remember_created_at": "Lembrete criado em",
+				"sign_in_count": "Contagem de sessão",
+				"current_sign_in_at": "Sessão actual em",
+				"last_sign_in_at": "Ultima sessão em",
+				"current_sign_in_ip": "IP da sessão actual",
+				"last_sign_in_ip": "IP da última sessão",
+				"failed_attempts": "Tentativas falhadas",
+				"unlock_token": "Desbloquear token",
+				"locked_at": "Bloqueado em",
+				"password_changed_at": "Senha alterada em",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em",
+				"disabled": "Desactivado",
+				"allowed_ips_string": "IPs permitidos",
+				"roles_names": "Roles"
+			},
+			"balance_transaction": {
+				"reference": "Referência",
+				"amount": "Quantia",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"bet": {
+				"bet_type": "Tipo de aposta",
+				"bet_amount": "Valor da aposta",
+				"win_amount": "Valor ganho",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"bonus": {
+				"strategy": "Type",
+				"title": "Título",
+				"description": "Descrição",
+				"percentage": "Percentagem",
+				"currency": "Moeda",
+				"amount": "Quantia",
+				"percent": "Por cento",
+				"max_amount": "Quantia máx",
+				"code": "Código",
+				"extra_info": "Info adicional",
+				"wager_multiplier": "Multiplicador de aposta",
+				"wagering_epsilon": "Epsilon de apostas",
+				"cashable": "Cashable",
+				"sticky": "Sticky",
+				"enabled": "Activo",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"bonus_issue": {
+				"strategy": "Estratégia",
+				"stage": "Etapa",
+				"amount": "Quantia",
+				"amount_wager_requirement": "Valor de aposta requirido",
+				"amount_wager": "Valor de aposta",
+				"wagered_percent": "Wagered percent",
+				"amount_locked": "Quantia bloqueada",
+				"valid_until": "Expiry date",
+				"extra_info": "Info adicional",
+				"cashable": "Cashable",
+				"sticky": "Sticky",
+				"wager": "Aposta",
+				"created_at": "Date received",
+				"issued_at": "Emitido em",
+				"updated_at": "Actualizado em"
+			},
+			"freespin_issue": {
+				"stage": "Stage",
+				"amount": "Amount",
+				"freespins_total": "Freespins Awarded",
+				"activatable_until": "Expiry date",
+				"win_amount_cents": "Alredy won",
+				"valid_until": "Expiry date",
+				"extra": "Extra info",
+				"external_id": "External ID",
+				"created_at": "Date received",
+				"issued_at": "Issued at",
+				"updated_at": "Updated at"
+			},
+			"bonus_strategy/feature/payment_system": {
+				"ids_list": "Sistemas de pagamento"
+			},
+			"contact": {
+				"email": "Email",
+				"content": "Conteúdo"
+			},
+			"document": {
+				"approved": "Aprovado",
+				"description": "Descrição",
+				"removed": "Removido",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em",
+				"attachment": "Anexo",
+				"attachment_file_name": "Nome do ficheiro anexo",
+				"attachment_content_type": "Tipo de conteúdo do anexo",
+				"attachment_file_size": "Tamanho do ficheiro em anexo",
+				"attachment_updated_at": "Added at"
+			},
+			"event": {
+				"subject": "Assunto",
+				"event_type": "Tipo de evento",
+				"ip": "IP",
+				"country": "País",
+				"coordinates": "Coordenadas",
+				"latitude": "Latitude",
+				"longitude": "Longitude",
+				"address": "Endereço",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"external_bet": {
+				"id": "Local Id",
+				"account_id": "Account Id",
+				"account": "Conta",
+				"external_id": "External Id",
+				"bet_amount": "Aposta",
+				"win_amount": "Ganho",
+				"oauth_application": "OAuth Application",
+				"oauth_application_id": "OAuth Application Id"
+			},
+			"game": {
+				"data": "Dados",
+				"finished_at": "Terminado em",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"game_step": {
+				"state": "Estado",
+				"action": "Acção",
+				"data": "Dados",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"game_table": {
+				"base_type": "Tipo de base",
+				"variation": "Variação",
+				"identifier": "Identificador",
+				"title": "Título",
+				"client": "Cliente",
+				"provider": "Game provider",
+				"description": "Descrição",
+				"active": "Activo",
+				"currency": "Moeda",
+				"secondary_currency": "Moeda secundária",
+				"amount_win": "Total bet",
+				"amount_loss": "Total win",
+				"chips": "Fichas",
+				"default_chip": "Ficha por defeito",
+				"min_bet": "Aposta mín",
+				"max_bet": "Aposta máx",
+				"paytable": "Tabela de pagamentos",
+				"options": "Opções",
+				"bet_playthrough_percent": "Aposta playthrough por cento",
+				"line_bets": "Apostas em linha",
+				"archived_at": "Arquivado em",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"modification": {
+				"subject": "Assunto",
+				"entity": "Entidade",
+				"data": "Dados",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"paritcipation": {
+				"active": "Activo",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"payment": {
+				"amount": "Quantia",
+				"commission_amount": "Comissão",
+				"amount_after_commission": "Amount (commission subtracted)",
+				"currency": "Moeda",
+				"action": "Acção",
+				"source": "Fonte",
+				"extra": "Extra",
+				"success": "Sucesso",
+				"finished_at": "Terminado em",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em",
+				"recipient_address": "Endereço",
+				"manual_confirmation_code": "Token de confirmação",
+				"source_id": "Payment Code"
+			},
+			"payment_system": {
+				"system_name": "Nome de sistema",
+				"disabled": "Desactivado",
+				"currency_options": "Opções de moeda",
+				"test_mode": "Modo de teste",
+				"data": "Dados",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"payment_system_debt": {
+				"system_name": "System name",
+				"system_account": "Account in system",
+				"amount_cents": "Debt",
+				"created_at": "Created at",
+				"updated_at": "Updated at"
+			},
+			"profile_setting": {
+				"name": "Nome",
+				"enabled": "Activo",
+				"required": "Obrigatório",
+				"show_at_registration": "Mostrar no registo",
+				"show_at_edition": "Show in Edit Mode",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			},
+			"suspicion": {
+				"suspect": "Suspeito",
+				"discarded": "Descartado",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em",
+				"related_suspect": "Suspeito relacionado",
+				"data": "Dados",
+				"failed_check": "Confirmação falhada"
+			},
+			"user": {
+				"email": "Email",
+				"encrypted_password": "Senha encriptada",
+				"password": "Senha",
+				"password_confirmation": "Confirmação de senha",
+				"current_password": "Senha actual",
+				"remember_me": "Lembrar-me",
+				"reset_password_token": "Restaurar token de senha",
+				"reset_password_sent_at": "Restaurar senha enviada em",
+				"remember_created_at": "Lembrete criado em",
+				"sign_in_count": "Contagem de sessão",
+				"current_sign_in_at": "Sessão actual em",
+				"last_sign_in_at": "Última sessão em",
+				"current_sign_in_ip": "IP de sessão actual",
+				"last_sign_in_ip": "IP da última sessão",
+				"confirmation_token": "Token de confirmação",
+				"confirmed_at": "Confirmado em",
+				"confirmation_sent_at": "Confirmação enviada em",
+				"unconfirmed_email": "Email sem confirmação",
+				"failed_attempts": "Tentativas falhadas",
+				"unlock_token": "Desbloquear token",
+				"locked_at": "Trancado em",
+				"authentication_token": "Token de autenticação",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em",
+				"disabled": "Desactivado",
+				"allowed_ips_string": "IPs permitidos",
+				"guest": "Convidado",
+				"main_bitcoin_address": "Endereço bitcoin principal",
+				"bonus_code": "Bonus Code"
+			},
+			"profile": {
+				"full_name": "Nome completo",
+				"first_name": "Primeiro nome",
+				"last_name": "Último nome",
+				"title": "Título",
+				"nickname": "Apelido",
+				"date_of_birth": "Data de nascimento",
+				"personal_id_number": "Número de identificação pessoal",
+				"gender": "Género",
+				"country": "País",
+				"city": "Cidade",
+				"place_of_birth": "Local de nascimento",
+				"address": "Endereço",
+				"address2": "Endereço adicional",
+				"postal_code": "Código postal",
+				"time_zone": "Fuso horário",
+				"mobile_phone": "Telemóvel",
+				"phone": "Telefone",
+				"skype": "Skype",
+				"send_payment_confirmation": "Enviar confirmação de pagamento",
+				"receive_newsletters": "Receber Newsletters",
+				"receive_promos": "Receber Promos",
+				"never_call": "Nunca ligar",
+				"currency": "Moeda",
+				"language": "Idioma",
+				"security_question": "Pergunta de segurança",
+				"security_answer": "Resposta de segurança",
+				"age_acceptance": "Idade confirmada",
+				"terms_acceptance": "Agreed to Terms and Conditions",
+				"bonus_issuance_policy": "Política de emissão de bónus",
+				"allowed_ips_string": "IPs permitidos"
+			},
+			"profile/admin": {
+				"full_name": "Nome completo",
+				"first_name": "Primeiro nome",
+				"last_name": "Último nome",
+				"title": "Título",
+				"nickname": "Apelido",
+				"date_of_birth": "Data de nascimento",
+				"personal_id_number": "Número de identificação pessoal",
+				"gender": "Género",
+				"country": "País",
+				"city": "Cidade",
+				"place_of_birth": "Local de nascimento",
+				"address": "Endereço",
+				"address2": "Endereço adicional",
+				"postal_code": "Código postal",
+				"time_zone": "Fuso Horário",
+				"mobile_phone": "Telemóvel",
+				"phone": "Telefone",
+				"skype": "Skype",
+				"send_payment_confirmation": "Enviar confirmação de pagamento",
+				"receive_newsletters": "Receber Newsletters",
+				"receive_promos": "Receber promos",
+				"never_call": "Nunca ligar",
+				"currency": "Moeda",
+				"language": "Idioma",
+				"security_question": "Pergunta de segurança",
+				"security_answer": "Resposta de segurança",
+				"age_acceptance": "Confirmar idade mínima de {{age}}",
+				"terms_acceptance": "Agree to Terms and Conditions",
+				"bonus_issuance_policy": "Política de emissão de bónus",
+				"allowed_ips_string": "IPs permitidos"
+			},
+			"profile/user": {
+				"full_name": "Nome completo",
+				"first_name": "Primeiro nome",
+				"last_name": "Último nome",
+				"title": "Título",
+				"nickname": "Apelido",
+				"date_of_birth": "Data de nascimento",
+				"personal_id_number": "Número de identificação pessoal",
+				"gender": "Género",
+				"country": "País",
+				"city": "Cidade",
+				"place_of_birth": "Local de nascimento",
+				"address": "Endereço",
+				"address2": "Endereço adicional",
+				"postal_code": "Código postal",
+				"time_zone": "Fuso horário",
+				"mobile_phone": "Telemóvel",
+				"phone": "Telefone",
+				"skype": "Skype",
+				"send_payment_confirmation": "Enviar confirmação de pagamento",
+				"receive_newsletters": "Receber newsletters",
+				"receive_promos": "Receber promos",
+				"never_call": "Nunca ligar",
+				"currency": "Moeda",
+				"language": "Idioma",
+				"security_question": "Pergunta de segurança",
+				"security_answer": "Resposta de segurança",
+				"age_acceptance": "Confirmo que tenho mais de {{age}} anos",
+				"terms_acceptance": "I agree to {{text}}",
+				"bonus_issuance_policy": "Política de emissão de bónus",
+				"allowed_ips_string": "IPs permitidos"
+			},
+			"provable_fair_data": {
+				"secret": "Secret",
+				"client_seed": "Client seed",
+				"result": "Resultado",
+				"hash": "Hash"
+			},
+			"retention_email": {
+				"strategy": "Type",
+				"template_name": "Template name",
+				"days_interval": "Days interval",
+				"enabled": "Activo",
+				"created_at": "Criado em",
+				"updated_at": "Actualizado em"
+			}
+		}
+	},
+	"mongoid": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "cannot contain a fragment.",
+							"has_query_parameter": "cannot contain a query parameter.",
+							"invalid_uri": "must be a valid URI.",
+							"relative_uri": "must be an absolute URI."
+						}
+					}
+				}
+			}
+		}
+	},
+	"mongo_mapper": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "cannot contain a fragment.",
+							"has_query_parameter": "cannot contain a query parameter.",
+							"invalid_uri": "must be a valid URI.",
+							"relative_uri": "must be an absolute URI."
+						}
+					}
+				}
+			}
+		}
+	},
+	"doorkeeper": {
+		"errors": {
+			"messages": {
+				"invalid_request": "The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.",
+				"invalid_redirect_uri": "The redirect uri included is not valid.",
+				"unauthorized_client": "The client is not authorized to perform this request using this method.",
+				"access_denied": "The resource owner or authorization server denied the request.",
+				"invalid_scope": "The requested scope is invalid, unknown, or malformed.",
+				"server_error": "The authorization server encountered an unexpected condition which prevented it from fulfilling the request.",
+				"temporarily_unavailable": "The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.",
+				"credential_flow_not_configured": "Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.",
+				"resource_owner_authenticator_not_configured": "Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.",
+				"unsupported_response_type": "The authorization server does not support this response type.",
+				"invalid_client": "Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method.",
+				"invalid_grant": "The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.",
+				"unsupported_grant_type": "The authorization grant type is not supported by the authorization server.",
+				"invalid_resource_owner": "The provided resource owner credentials are not valid, or resource owner cannot be found",
+				"invalid_token": {
+					"revoked": "The access token was revoked",
+					"expired": "The access token expired",
+					"unknown": "The access token is invalid"
+				}
+			}
+		},
+		"flash": {
+			"applications": {
+				"create": {
+					"notice": "Application created."
+				},
+				"destroy": {
+					"notice": "Application deleted."
+				},
+				"update": {
+					"notice": "Application updated."
+				}
+			},
+			"authorized_applications": {
+				"destroy": {
+					"notice": "Application revoked."
+				}
+			}
+		},
+		"authorize_title": "OAuth authorize required",
+		"authorize_required": "Authorize required",
+		"authorize": "Authorize",
+		"authorization_code": "Authorization code",
+		"deny": "Deny",
+		"rights_title": "This application will be able to:",
+		"allow_authorization": "Authorize {{app}} to use your account?",
+		"authorize_as_regular_user": "Please sign out from guest account and sign in as a regular user.",
+		"scopes": {
+			"profile": "Access your profile data",
+			"bets": "Access your balance data and make bets on your behalf"
+		}
+	},
+	"amatic": {
+		"verification": {
+			"error_popup": {
+				"title": "Error",
+				"description": "Amatic server does not respond"
+			},
+			"popup": {
+				"copy": "Copy",
+				"title": "Successfull verification",
+				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
+				"message": "Your Text",
+				"signature": "Amatic Signature",
+				"address": "Bitcoin Address"
+			},
+			"title": "Amatic verification",
+			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
+			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"form": {
+				"your_text": "Your Text",
+				"verify": "Verify"
+			}
+		},
+		"amatic": "Amatic"
+	},
+	"http": {
+		"not_found": {
+			"title": "Page Not Found",
+			"oops": "Oops,",
+			"cannot_be_found": "The page you are looking for cannot be found.",
+			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
+			"link_to_root": "Here is a link to our start page:"
+		}
+	},
+	"common": {
+		"in_out": "IN/OUT",
+		"players": "Players",
+		"email": "Email",
+		"content": "Content",
+		"loading": "Loading...",
+		"yes": "Sim",
+		"no": "Não",
+		"all": "Tudo",
+		"default": "Padrão",
+		"date": "Data",
+		"result": "Resultado",
+		"total_bet": "Total Bet",
+		"total_win": "Total Win",
+		"gross_win": "Gross Revenue",
+		"cashouts_sum": "Sum of cashouts",
+		"deposits_sum": "Sum of deposits",
+		"net_revenue": "Net Revenue",
+		"client": "Cliente",
+		"amount": "Quantia",
+		"help": "Ajuda",
+		"currency": "Moeda",
+		"total": "Total",
+		"limit": "Limite",
+		"live_casino": "Live Casino",
+		"address": "Address",
+		"good_news": "Good news, {{nickname}}.",
+		"save": "Guardar",
+		"edit": "Editar",
+		"remove": "Remover",
+		"destroy": "Destruir",
+		"cancel": "Cancelar",
+		"close": "Close",
+		"create": "Criar",
+		"add": "Adicionar",
+		"update": "Actualização",
+		"reset": "Restaurar",
+		"refresh": "Actualizar",
+		"proceed": "Proceed",
+		"filter": "Filtro",
+		"are_you_sure": "Tem a certeza?",
+		"set": "Set",
+		"enabled": "Activo",
+		"disabled": "Desactivado",
+		"active": "Activo",
+		"preview": "Pré-visualização",
+		"select": "Select",
+		"summary": "Resumo",
+		"status": "Estado",
+		"options": "Opções",
+		"genders": {
+			"m": "Masculino",
+			"f": "Feminino"
+		},
+		"player": "Jogador",
+		"guest": "Convidado",
+		"subject": "Assunto",
+		"actions": "Acções",
+		"balance": "Saldo",
+		"profit": "Lucro",
+		"payout": "Pagamento",
+		"bets_sum": "Soma de apostas",
+		"wins_sum": "Soma de ganhos",
+		"bets": "Apostas",
+		"total_payouts": "Total payouts:",
+		"terms_and_conditions": "Terms and Conditions",
+		"net_total": "Net total",
+		"blog": "Blog",
+		"comments": "Comments",
+		"comment": "Comment",
+		"empty_search_results": "There are no items according to the filtering parameters",
+		"add_more_coins": "Add more Coins",
+		"show_more_games": "Show more games",
+		"warning": "Warning",
+		"new_as_novelty": "New",
+		"already_member": "Already a member?",
+		"have_account": "Have an account?"
+	},
+	"locales": {
+		"af": "Afrikaans",
+		"bg": "Bulgarian",
+		"de": "Alemão",
+		"el": "Grego",
+		"en": "Inglês",
+		"es": "Espanhol",
+		"fi": "Finnish",
+		"fr": "French",
+		"it": "Italiano",
+		"ja": "Japonês",
+		"ko": "Korean",
+		"nl": "Holandês",
+		"pl": "Polaco",
+		"pt": "Português",
+		"ru": "Russo",
+		"sv": "Sueco",
+		"tr": "Turco",
+		"vi": "Vietnamita",
+		"zh": "Chinês"
+	},
+	"date": {
+		"day": "Dia",
+		"week": "Semana",
+		"month": "Mês",
+		"year": "Ano"
+	},
+	"casino": {
+		"casino": "Casino",
+		"not_enough_money": "Fundos insuficientes",
+		"events": {
+			"modified": {
+				"user": "Perfil de utilizador modificado",
+				"admin_user": "Admin modificado",
+				"game_table": "Jogo modificado",
+				"bonus_issue": "Emissão de bónus",
+				"bonus": "Bónus modificado",
+				"payment_system": "Sistema de pagamento",
+				"retention_email": "Retention email Modified",
+				"casino_cash_balance": "Casino Cash Balance Modified",
+				"commission_connection": "Commission Connection Modified",
+				"payment": "Payment Modified",
+				"affiliate_profile": "Affiliate Profile Modified"
+			},
+			"game": {
+				"step": "Passo de jogo efectuado"
+			},
+			"user": {
+				"sign_out": "Utilizador fechou sessão",
+				"sign_in": "Utilizador iniciou sessão",
+				"failed_sign_in": "O utilizador não conseguiu iniciar sessão"
+			},
+			"admin_user": {
+				"sign_out": "Admin fechou sessão",
+				"sign_in": "Admin iniciou sessão",
+				"failed_sign_in": "Admin não conseguiu iniciar sessão"
+			},
+			"notifications": {
+				"balance_correction_created": "Balance correction created",
+				"cashout_requested": "Cashout requested",
+				"deposit_made": "Deposit made",
+				"cashout_made": "Cashout made",
+				"auto_cashout_made": "Auto-cashout made",
+				"cashout_rejected": "Cashout request rejected",
+				"deposit_rejected": "Deposit rejected",
+				"user_upload_document": "User Uploaded Document",
+				"payment_created_by_admin": "Admin Created Payment",
+				"user_disabled": "User Disabled",
+				"contact": "User Requested Support",
+				"admin_comment_created": "Admin Left Comment"
+			},
+			"affiliate": {
+				"redirect": "New affiliate's user visit"
+			},
+			"bitcoin_addresses_uploaded": "Bitcoin addresses uploaded"
+		},
+		"bonuses": {
+			"names": {
+				"no_deposit": "Sem depósito",
+				"first_deposit": "Primeiro depósito",
+				"nth_deposit": "Nth Depósito",
+				"deposit_system": "Bónus do sistema de pagamento",
+				"coupon": "Coupon"
+			},
+			"issuance_policy": {
+				"can-issue": "Emitir bónus automaticamente",
+				"can-refuse": "O jogador pode cancelar o bónus antes de jogar",
+				"can-cancel": "O jogador pode cancelar bónus"
+			}
+		},
+		"retention_emails": {
+			"names": {
+				"welcome": "Bem-vindo",
+				"welcome_promo": "Welcome promos",
+				"no_deposit": "Sem depósito",
+				"nth_deposit": "No Nth deposit"
+			}
+		},
+		"payment_systems": {
+			"names": {
+				"qiwi": "Qiwi",
+				"skrill": "Skrill",
+				"interkassa": "Interkassa",
+				"paysafecard": "paysafecard",
+				"ukash": "Ukash",
+				"neteller": "Neteller",
+				"card_pay": "CardPay",
+				"b_cash": "B-Cash",
+				"wirecard": "Wirecard",
+				"coupon": "Coupon",
+				"cashbox": "Caixa",
+				"cep_bank": "Cep Bank",
+				"bank_transfer": "Bank Transfer",
+				"cubits": "Cubits",
+				"lavapay": "Lavapay",
+				"bitcoin_payment": "Bitcoin",
+				"ripple_payment": "Ripple"
+			},
+			"payer": {
+				"cashout_email_subject": "Levantamento no Casino",
+				"cashout_email_note": "Levantamento efectuado"
+			},
+			"system_name": "%{child} via %{parent}",
+			"all_locked": "For your safety we only allow cashout through payment systems you previously used for deposit. If you have questions, please contact support.",
+			"child_systems": {
+				"visa": "Visa",
+				"mastercard": "MasterCard",
+				"online_bank_transfer": "Transferência bancária online",
+				"ideal": "iDEAL",
+				"nordea_solo": "Nordea Solo",
+				"bancontact_mister_cash": "Bancontact/Mister Cash",
+				"cards": "Credit Cards",
+				"ccard": "Credit Card",
+				"click_to_pay": "CLICK2PAY",
+				"ekonto": "eKonto",
+				"eps": "EPS e-payment",
+				"giropay": "giropay",
+				"installment": "Installment by payolution",
+				"invoice": "Invoice by payolution",
+				"moneta": "moneta.ru",
+				"mpass": "mpass",
+				"przelewy": "Przelewy24",
+				"paypal": "PayPal",
+				"paybox": "Paybox",
+				"poli": "POLi payments",
+				"paysafecard": "paysafecard",
+				"quick": "Quick",
+				"sepa": "SEPA Direct Debit",
+				"skrill_direct": "Skrill Direct",
+				"skrill_wallet": "Skrill Digital Wallet",
+				"sofort": "SOFORT Banking",
+				"tatrapay": "TatraPay",
+				"trustly": "Trustly",
+				"bank_transfer": "Bank Transfer",
+				"lavapay_balance": "LavaPay Balance",
+				"cheque": "Cheque",
+				"perfect": "Perfect Money",
+				"liqpay": "LiqPay",
+				"webmoney": "WebMoney",
+				"yandex": "Yandex Money",
+				"okpay": "OKPAY",
+				"qiwi": "Qiwi",
+				"mailru": "money@mail.ru",
+				"lavapay_bitcoin": "Bitcoin",
+				"egopay": "EgoPay",
+				"lavapay_litecoin": "LiteCoin",
+				"paxum": "Paxum",
+				"ecoin": "eCoin",
+				"btce": "BTC-E",
+				"privatbank": "PrivatBank.ua",
+				"nsmep": "NSMEP",
+				"telemoney": "TeleMoney",
+				"ukrterminal": "UkrTerminal",
+				"rusterminal": "RusTerminal",
+				"rusbank": "Rusbank",
+				"mobileretails": "MobileRetails",
+				"unistream": "Unistream",
+				"ruspost": "RusPost",
+				"contact": "Contact",
+				"anelik": "Anelik",
+				"leader": "Leader",
+				"mts": "MTS",
+				"megafon": "Megafon",
+				"beeline": "Beeline",
+				"alfaclick": "AlfaClick",
+				"fortumo": "Fortumo",
+				"cashu": "CashU",
+				"privat_terminal": "Privat Terminal",
+				"kazakhstan_terminal": "Kazakhstan Terminal",
+				"tjs_terminal": "Tjs Terminal",
+				"moldova_terminal": "Moldova Terminal",
+				"georgia_terminal": "Georgia Terminal",
+				"euroset": "Euroset",
+				"kievstar": "KievStar",
+				"promsvyazbank": "PromSvyazBank",
+				"easypay": "EasyPay",
+				"bpay": "BPay",
+				"pravex": "Pravex Bank",
+				"ukrsib": "UkrSib Bank",
+				"liberty": "Liberty Bank",
+				"faktura": "Faktura.ru",
+				"privatbank_cashin": "Privatbank Cash-in",
+				"sberbank_cashin": "Sberbank Cash-in",
+				"qiwi_visa": "Visa Qiwi",
+				"qiwi_mastercard": "Mastercard Qiwi",
+				"qiwi_maestro": "Maestro Qiwi",
+				"cis_cards": "Bank Cards",
+				"yandex_personal": "Yandex Personal",
+				"local_bank_transfer": "Local Bank Transfer",
+				"w1": "W1",
+				"wallet_one": "Wallet One",
+				"russian_standard": "Russian Standard Bank"
+			}
+		},
+		"commissions": {
+			"strategies": {
+				"registration": "CPA",
+				"percent": "Participação na receita"
+			}
+		},
+		"games": {
+			"unknown_action": "Acção desconhecida",
+			"unavailable_action": "Acção não disponível",
+			"roulette": {
+				"notice": {
+					"bet_is_not_valid": "A aposta não é válida",
+					"bet_type_not_found": "Tipo de aposta não encontrado",
+					"unknown_bet": "Aposta desconhecida",
+					"unknown_value": "Selecionado valor desconhecido",
+					"unknown_column": "Selecionada coluna desconhecida",
+					"unknown_dozen": "Selecionada dúzia desconhecida"
+				}
+			}
+		},
+		"provable_fair": {
+			"provable_fair": "Provable fair",
+			"provability": "Provability",
+			"not_available": "Provability widget available at game page",
+			"verify": "Verify",
+			"loading": "Randomizing ...",
+			"is_unavailable": "Provable fair is not available for this game.",
+			"next_game": "Novo jogo",
+			"last_game": "Last game",
+			"reel_number": "Reel {{index}}",
+			"fields": {
+				"hash": "Hash (Result + Secret)",
+				"client_seed": "Client seed",
+				"secret": "Result + Secret",
+				"result": "Final result"
+			},
+			"hint": {
+				"common": "Enter client Seed (0-{{max_seed}})",
+				"roulette": "Push the ball further:",
+				"card": "Cut the deck:",
+				"poker": "Cut the deck:",
+				"slots": "Spin the reels a bit more:"
+			},
+			"verification": {
+				"success": {
+					"title": "Successful verification",
+					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
+				},
+				"failure": {
+					"title": "Verification failed",
+					"body": "Please contact our support."
+				}
+			}
+		},
+		"bitcoin": {
+			"update_balance": "Actualizar dados de saldo",
+			"current_balance": "Saldo actual {{balance}}.",
+			"send_text": "Envie qualquer quantia de {{currency}} (mais taxa miner) para",
+			"cant_attach_address": "Lamentamos, estamos com problemas com bitcoins. Já notificámos a admin. Tente novamente.",
+			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
+			"xrp": {
+				"send_text": "Send any amount of {{currency}} to",
+				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
+			}
+		}
+	},
+	"frontend": {
+		"placeholders": {
+			"email": "Enter your email",
+			"password": "Alterar a sua senha",
+			"password_confirmation": "Confirmar nova senha",
+			"current_password": "Enter your current password"
+		},
+		"age_acceptance": "Please confirm that you are over {{age}} years old",
+		"choose_game": "Escolha um jogo",
+		"games_played": "Partidas jogados",
+		"or": "or",
+		"please_or": "Please {{first}} or {{second}}",
+		"mbtc_total_winnings": "mBTC Total de ganhos",
+		"hi_guest": "Olá, Visitante.",
+		"hi_user": "Olá, {{nickname}}",
+		"password_difficulty": "Dificuldade da senha",
+		"password_difficulties": {
+			"very_weak": "Muito fraco",
+			"weak": "Fraco",
+			"so_so": "Mais ou menos",
+			"strong": "Forte",
+			"great": "Óptimo"
+		},
+		"playing": {
+			"playing_fun": "Playing for {{currency}}",
+			"playing_real": "Playing with {{currency}}",
+			"play_fun": "Play for {{currency}}",
+			"play_real": "Play with {{currency}}"
+		},
+		"links": {
+			"support": "Suporte",
+			"help": "Ajuda",
+			"how_to_start": "How to Start",
+			"casino_promotions": "Casino Promotions",
+			"bonuses": "Bónus",
+			"affiliate_program": "Affiliate program",
+			"terms_and_conditions": "Terms and Conditions",
+			"back": "Preto",
+			"create_ticket": "Criar um ticket",
+			"send_form": "Enviar um formulário",
+			"online_chat": "Chat online",
+			"home": "Home",
+			"frontpage": "Frontpage",
+			"casino_games": "Jogos de Casino",
+			"about_casino": "About Casino",
+			"all_games": "Todos os jogos",
+			"load_more_games": "Load More Games",
+			"rules": "Regras dos jogos",
+			"autoregister": "Autoregister",
+			"quick_register": "Quick Register",
+			"play_for_fun": "Jogar por FUN",
+			"demo": "Demo",
+			"play_for_real": "Jogar a sério",
+			"play_for_bitcoin": "Jogar por Bitcoin",
+			"free_play": "Free Play",
+			"real_play": "Real Play",
+			"play_now": "Play now",
+			"join_now": "Join now",
+			"profile": "Perfil",
+			"dice": "Dados",
+			"deposit": "Depósito",
+			"withdraw": "Withdraw",
+			"cashout": "Levantamento",
+			"cashbox": "Caixa",
+			"sign_out": "Fechar sessão",
+			"sign_in": "Iniciar sessão",
+			"sign_up": "Inscrever-se",
+			"register": "Register",
+			"login": "Login",
+			"logout": "Logout",
+			"start_playing": "Start Playing",
+			"forgot_password": "Esqueceu-se da sua senha?",
+			"didnt_receive_confirmation": "Não recebeu instruções de confirmação?",
+			"didnt_receive_unlock": "Não recebeu instruções de desbloqueio?",
+			"affiliate_profiles": "Perfis afiliados",
+			"settings": "Definições"
+		},
+		"captions": {
+			"affiliates": "Affiliates",
+			"help": "Ajuda",
+			"games": "Games",
+			"quick_links": "Quick links",
+			"languages": "Idioma",
+			"info": "Info",
+			"information": "Information",
+			"promotion": "Promotion",
+			"follow_us": "Follow us"
+		},
+		"actions": {
+			"go_bang": "Go!",
+			"deposit_now": "Deposit Now",
+			"sign_up_now": "Sign Up Now"
+		},
+		"games_bet_playthrough_percent": "Aposta de jogos playthrough por cento",
+		"contact": {
+			"title": "Formulário de contacto",
+			"hint": "Por favor preencha as informações abaixo. Todos os campos são obrigatórios.",
+			"labels": {
+				"email": "Email",
+				"content": "Mensagem",
+				"send": "Enviar"
+			}
+		},
+		"no_flash": {
+			"flash_isnt_available": "Adobe Flash Player não está disponível",
+			"flash_usage": "Caros utilizadores, para assegurar a melhor experiência de jogo em alta definição, o nosso casino corre em Adobe Flash.",
+			"desktop_section": "Suporte desktop",
+			"desktop_section_link": "Por favor instale Adobe Flash player para Desktop",
+			"mobile_section": "Suporte de dispositivos móveis",
+			"mobile_section_text": "Adobe Flash não é totalmente compatível com os browsers nativos dos dispositivos móveis. No entanto, pode descarregar apps de terceiros que garante uma excelente experiência ao utilizador. Podemos sugerir %s e %s."
+		},
+		"devise": {
+			"resend_confirmation": "Reenviar Instruções de Confirmação",
+			"send_reset_instructions": "Restaurar Senha",
+			"send_unlock_instructions": "Reenviar Instruções de desbloqueio",
+			"change_your_password": "Alterar a sua senha",
+			"change_my_password": "Alterar a minha senha",
+			"new_password": "Nova senha",
+			"confirm_new_password": "Confirmar nova senha",
+			"password_hint": "(deixe em branco se não quiser alterar)",
+			"current_password_hint": "(precisamos da sua senha actual para confirmar as alterações)",
+			"unlock_hint": "If your account has been locked, fill in your e-mail address and we will send you unlock instructions via e-mail.",
+			"resend_hint": "Fill in your e-mail address and we will send you instructions on how to reset your password via e-mail.",
+			"contact_us_hint_html": "Contact us via {{page}} if you need further help.",
+			"custom": {
+				"not_valid_email": "Not a valid email",
+				"too_short": "Too short",
+				"not_match": "Not match",
+				"min_characters": "Minimum 1 character"
+			}
+		},
+		"payment_system_redirect": {
+			"notification": "You will be redirected to {{system}} side shortly to finish your transaction",
+			"text": "Para continuar om o pagamento clique no botão abaixo.",
+			"button": "Continuar com o pagamento"
+		},
+		"social": {
+			"follow_us": "Follow us"
+		},
+		"filters": {
+			"find_your_game": "Find your game"
+		},
+		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
+	},
+	"winners": {
+		"winners": "Vencedores",
+		"latest_winners": "Vencedores recentes",
+		"top_winners": "Top Winners",
+		"amount_in_game": "%{amount} in %{game}",
+		"parts": {
+			"just_won": "just won",
+			"in": "in"
+		}
+	},
+	"restriction": {
+		"default": "This page is appears to be restricted in your country",
+		"game_restricted_in_country": "This game is appears to be restricted in your country",
+		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
+	},
+	"documents": {
+		"removed_successfully": "Document was successfully removed",
+		"document": {
+			"edit_description": "Editar descrição",
+			"approved": "Aprovado",
+			"not_approved": "Não aprovado"
+		},
+		"index": {
+			"upload_document": "Carregar um documento"
+		}
+	},
+	"sportsbook": {
+		"sports": "Sports",
+		"live_betting": "Live Betting",
+		"sports_bets": "Sports Bets"
+	},
+	"formtastic": {
+		"labels": {
+			"card_holder": "Card holder",
+			"credit_card_number": "Credit card number",
+			"cvc": "Card security code",
+			"expiration_date": "Expiration date",
+			"amount": "Amount",
+			"recipient": "Recipient",
+			"document": {
+				"attachment": "Attachment",
+				"description": "Description"
+			},
+			"btc_amount": "Amount in BTC",
+			"wallet_address": "Wallet Address"
+		},
+		"actions": {
+			"game": {
+				"create": "Criar jogo",
+				"update": "Actualizar jogo"
+			},
+			"player": {
+				"create": "Criar jogador",
+				"update": "Actualizar jogador"
+			},
+			"bonus": {
+				"create": "Criar bónus",
+				"update": "Actualizar bónus"
+			},
+			"bonus_issue": {
+				"create": "Criar emissão de bónus",
+				"update": "Actualizar emissão de bónus"
+			},
+			"admin_user": {
+				"create": "Criar utilizador admin",
+				"update": "Actualizar utilizador admin"
+			},
+			"payment_system": {
+				"create": "Criar sistema de pagamento",
+				"update": "Actualizar sistema de pagamento"
+			},
+			"document": {
+				"submit": "Submit document"
+			},
+			"create": "Criar"
+		},
+		"hints": {
+			"payment_system": {
+				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+			},
+			"profile": {
+				"currency": "You can change currency at any stage after registration is completed."
+			},
+			"btc_amount": "Amount may differ due to exchange rate changes"
+		}
+	},
+	"bonus_issues": {
+		"title": "%{bonus} Issue",
+		"stages": {
+			"wait": "Aguarde",
+			"handle_bets": "Activo",
+			"canceled": "Cancelado",
+			"expired": "Expired",
+			"wager_done": "Aposta feita",
+			"lost": "Perdido",
+			"pending": "Pending"
+		}
+	},
+	"freespin_issues": {
+		"title": "%{bonus} Issue",
+		"games": "Games",
+		"activate": "Activate",
+		"stages": {
+			"issued": "Issued",
+			"activated": "Activated",
+			"canceled": "Canceled",
+			"expired": "Expired",
+			"finished": "Played",
+			"pending": "Pending"
+		},
+		"mailer": {
+			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
+			"activation_prompt_html": "To activate freespins go to {{link}}."
+		}
+	},
+	"games": {
+		"title": "Jogos de Casino",
+		"categories": {
+			"all": "All Games",
+			"card": "Jogos de cartas",
+			"poker": "Jogos de Poker",
+			"table": "Table Games",
+			"roulette": "Roulette",
+			"slots": "Slots",
+			"video_poker": "Video Poker",
+			"blackjack": "Blackjack",
+			"bingo": "Bingo",
+			"live": "Live",
+			"fruit": "Fruit Slots",
+			"theme": "Theme Slots",
+			"casual": "Casual",
+			"lottery": "Lottery",
+			"keno": "Keno",
+			"progressive": "Progressive",
+			"stat": {
+				"most_popular": "Mais populares",
+				"new": "Novo",
+				"manual": "Featured",
+				"last_played": "Last Played"
+			},
+			"device": {
+				"desktop": "Desktop",
+				"mobile": "Mobile"
+			}
+		},
+		"providers": {
+			"all": "All Providers",
+			"softswiss": "SoftSwiss",
+			"amatic": "Amatic",
+			"betsoftgaming": "BetSoft Gaming",
+			"casinotechnology": "Casino Technology",
+			"quickfire": "Quickfire",
+			"ezugi": "Ezugi"
+		},
+		"roulette": {
+			"bets": {
+				"calc_by_max_bet": "Calcular por Aposta Máx",
+				"inside_bets": "Apostas internas",
+				"outside_bets": "Apostas externas",
+				"straight_up": "Straight Up",
+				"split": "Dividir",
+				"street": "Street",
+				"trio": "Trio",
+				"basket": "Cesto",
+				"corner": "Canto",
+				"first_four": "Primeiros quatro",
+				"first_five": "Primeiros cinco",
+				"line": "Linha",
+				"column": "Coluna",
+				"dozen": "Dúzia",
+				"red": "Vermelho",
+				"black": "Preto",
+				"odd": "Ímpar",
+				"even": "Par",
+				"low": "Baixo",
+				"high": "Alto"
+			}
+		},
+		"titles": {
+			"baccarat": {
+				"classic": "Baccarat"
+			},
+			"blackjack": {
+				"double_exposure": "Double Exposure",
+				"european": "European Blackjack",
+				"multihand": "Multihand Blackjack",
+				"multihand_pro": "Multihand Blackjack Pro",
+				"pontoon": "Pontoon",
+				"surrender": "Blackjack Surrender"
+			},
+			"hi_lo": {
+				"switch": "Hi-Lo Switch"
+			},
+			"casual": {
+				"horse_racing": "Horse Racing",
+				"minesweeper": "Minesweeper",
+				"heads_tails": "Heads and Tails",
+				"scratch_dice": "Scratch Dice"
+			},
+			"poker": {
+				"caribbean": "Caribbean Poker",
+				"casino_holdem": "Casino Hold`em",
+				"let_it_ride": "Let it Ride",
+				"oasis": "Oasis Poker",
+				"texas_holdem": "Texas Hold`em",
+				"trey_poker": "Trey Poker"
+			},
+			"roulette": {
+				"american": "American Roulette",
+				"european": "European Roulette",
+				"french": "French Roulette"
+			},
+			"slots": {
+				"aztec_magic": "Aztec Magic",
+				"book_of_pyramids": "Book of Pyramids",
+				"scroll_of_adventure": "Scroll of Adventure",
+				"brave_viking": "Brave Viking",
+				"cherry_fiesta": "Cherry Fiesta",
+				"crazy_starter": "Crazy Starter",
+				"desert_treasure": "Desert Treasure",
+				"hawaii_cocktails": "Hawaii Cocktails",
+				"horse_slot": "Horse Slot",
+				"lucky_blue": "Lucky Blue",
+				"lucky_lady_clover": "Lucky Lady's Clover",
+				"lucky_sweets": "Lucky Sweets",
+				"platinum_lightning": "Platinum Lightning",
+				"princess_of_sky": "Princess of Sky",
+				"princess_royal": "Princess Royal",
+				"sport_slot": "Sport Slot",
+				"three_lines_slot": "Girl slot",
+				"west_town": "West Town"
+			},
+			"video_poker": {
+				"jacks_or_better": "Jacks or Better",
+				"wild_texas": "Wild Texas",
+				"video_poker": "Video Poker"
+			}
+		}
+	},
+	"users": {
+		"statuses": {
+			"enabled": "Activo",
+			"disabled": "Desactivado",
+			"not_confirmed": "Não confirmado",
+			"locked": "Bloqueado",
+			"normal": "Activo",
+			"manually_suspected": "Manually marked as suspicious"
+		}
+	},
+	"affiliate_bills": {
+		"billed_from": "Facturado de",
+		"billed_to": "Facturado a",
+		"paid": "Pago",
+		"submit": "Enviar"
+	},
+	"affiliate_links": {
+		"add": "Add Link",
+		"name": {
+			"hint": "Identification for your private use only"
+		},
+		"code": {
+			"hint": "Unique code for affiliate link"
+		}
+	},
+	"affiliate_profiles": {
+		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"commission": "Comissão",
+		"registration_settings": {
+			"reward": "Recompensa CPA",
+			"conditions": "Condições",
+			"rule": "se aposta de utilizador convidado > {{amount}} {{currency}}"
+		},
+		"percent_settings": {
+			"one": "%{percent}%",
+			"default": "%{percent}% if generated greater than %{limit} %{currency}",
+			"rule": "%{percent}% if generated less than %{limit} %{currency}",
+			"intermediate_rule": "%{percent}% if generated between %{limits} %{currency}"
+		},
+		"no_default_commissions": "Não tem comissões atribuídas. Por favor contacte o suporte.",
+		"active": "Activo",
+		"not_active": "Não activo",
+		"affiliate_profiles": "Perfis afiliados",
+		"statistics": {
+			"statistics": "Estatísticas",
+			"year": "Ano",
+			"month": "Mês",
+			"week": "Semana",
+			"day": "Dia",
+			"since": "Desde",
+			"to": "Para",
+			"submit": "Enviar",
+			"grouped_by": "Agrupado por",
+			"deposits_count": "Depósitos",
+			"redirects_count": "Visitas",
+			"registered_users_count": "Utilizadores registados (com depósitos)",
+			"date": "Data",
+			"invited_users_income": "NGR (net gaming revenue)",
+			"ggr": "GGR (gross gaming revenue)",
+			"total": "Period Total",
+			"link_name": "Link Name"
+		},
+		"affiliate_profile": {
+			"code": "Código",
+			"url": "Url",
+			"strategy": "Esquema de pagamento"
+		},
+		"banners": {
+			"banners": "Banners",
+			"sizes": "Sizes",
+			"types_title": "Types",
+			"types": {
+				"image": "Image",
+				"html": "HTML",
+				"swf": "Flash"
+			}
+		},
+		"form": {
+			"name_hint": "Identificação exclusiva para sua utilização privada"
+		},
+		"add": "Create affiliate profile",
+		"add_link": "Create affiliate profile link",
+		"strategy": "Esquema de pagamento",
+		"bills": {
+			"bills": "Facturas",
+			"billed_at": "Facturado em",
+			"amount": "Quantia",
+			"paid": "Pago",
+			"not_billed_for_date": "Não facturado por data"
+		}
+	},
+	"games_history": {
+		"title": "Jogos",
+		"from": "From",
+		"result": "Resultado",
+		"win": "Ganho",
+		"lose": "Perdido",
+		"game_name": "Jogo",
+		"bet": "Aposta"
+	},
+	"bonuses": {
+		"history": {
+			"title": "Bónus",
+			"wager": "Aposta",
+			"valid_until": "Válido até",
+			"status": "Estado",
+			"from": "From"
+		},
+		"promo_form": {
+			"title": "Add Promo Code",
+			"sub_title": "and receive a bonus"
+		},
+		"bonus_settings": "Bonus Settings",
+		"refuse": "I don't want to receive any Bonuses"
+	},
+	"freespin_bonuses": {
+		"history": {
+			"title": "Freespins"
+		},
+		"gift": "Gift"
+	},
+	"profiles": {
+		"menu": {
+			"balance": "Saldo",
+			"history": "History",
+			"bonuses": "Bónus",
+			"affiliate": "Afiliados",
+			"profile": "Profile Info",
+			"documents": "Documents"
+		},
+		"info": {
+			"personal": "Personal"
+		},
+		"index": {
+			"my_account": "My Account",
+			"my_bets": "My Bets",
+			"transaction": "Transaction",
+			"welcome": "Bem-vindo",
+			"balance": "O seu saldo",
+			"account_balance": "Saldo da conta"
+		},
+		"show": {
+			"edit_profile": "Editar o seu perfil",
+			"edit_settings": "Editar definições",
+			"attach_documents": "Anexar documentos",
+			"change_credentials": "Change password",
+			"set_email_and_password": "Set email and password",
+			"create_cashout_request": "Levantamento",
+			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
+			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
+			"cashout_request_created": "Cashout request has been received and requires approval by our staff. We will process your request as fast as we can.",
+			"cashout_successfully": "O levantamento foi efectuado com sucesso",
+			"cashout_technically_impossible": "We're sorry, but some errors occurred. We're working to fix them in an emergency mode. Please contact support if you have any questions.",
+			"profile_info": {
+				"title": "Profile Info"
+			},
+			"autoregister_info": {
+				"title": "Currently, you can log in to your account by visiting your personal login url"
+			},
+			"accounts": {
+				"title": "Contas",
+				"available_to_cashout": "Available to cash out",
+				"add_currency": "Add currency"
+			},
+			"bonuses": {
+				"title": "Bónus",
+				"no_bonuses": "You currently do not have any bonus.",
+				"cancel_bonus": "Forfeit Bonus",
+				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
+				"bonus_canceled": "Bónus cancelado",
+				"bonus_not_canceled": "Este bónus não pode ser cancelado"
+			},
+			"coupons": {
+				"activated": "Coupon \"{{code}}\" successfully activated.",
+				"not_activated": "Unable to activate coupon \"{{code}}\". Please try again or contact support.",
+				"already_activated": "Coupon \"{{code}}\" already activated."
+			},
+			"payments": {
+				"title": "Pagamentos"
+			},
+			"not_finished_games": {
+				"title": "Unfinished Games",
+				"hint": "You can either continue playing, or cancel these games. Canceling will result in loss of bet.",
+				"game_canceled": "O jogo foi cancelado"
+			},
+			"bets": {
+				"title": "Apostas",
+				"all_bets": "All Bets"
+			},
+			"cashbox": "Caixa",
+			"payments_history": "Histórico de transacções",
+			"bets_history": "Histórico de bónus",
+			"bonuses_history": "Histórico de bónus",
+			"freespin_bonuses_history": "Freespins History",
+			"deposit_to_address_hint": "Deposite para este endereço para financiar sua conta.",
+			"freespin_bonuses": {
+				"bonus_canceled": "Bonus canceled",
+				"bonus_not_canceled": "Failed to cancel bonus",
+				"bonus_activated": "Bonus was activated",
+				"bonus_not_activated": "Bonus was not activated"
+			}
+		},
+		"edit": {
+			"title": "Editar perfil",
+			"info_updated": "A informação foi actualizada",
+			"not_saved": "Changes was not saved",
+			"settings_section_updated": "Secção actualizada com sucesso",
+			"valid_data_warning": "Please enter valid contact details in the form below. Make sure it is accurate before saving."
+		}
+	},
+	"payments": {
+		"actions": {
+			"deposit": "Depósito",
+			"cashout": "Levantamento",
+			"gift": "Presente",
+			"chargeback": "Estorno",
+			"affiliate_payment": "Recompensa de afiliado"
+		},
+		"statuses": {
+			"success": "Aceite",
+			"failure": "Descartado",
+			"pending": "Pendente"
+		},
+		"canceled_by_user": "Cancelou a sua transacção",
+		"wait_for_confirmation": "O seu pagamento será confirmado em breve",
+		"not_performed": "Payment was not performed",
+		"confirmed": "Payment confirmed",
+		"canceled": "Payment not confirmed",
+		"make_deposit": "Fazer depósito",
+		"make_cashout": "Pedir levantamento",
+		"confirm_address": "Confirm address",
+		"bonus_code_show": "I have a Bonus Code",
+		"bonus_code_hide": "Hide Bonus Code",
+		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
+		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
+		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+		"invalid_profile_message": "To be able to cash out, you must fill in the required fields in your Profile.",
+		"try_again": "Transaction could not be initiated due to connection problems. If the problem persists, please contact our support.",
+		"select_currency": "Select Balance Currency",
+		"select_currency_hint": {
+			"deposit": "I would like to top up my balance in",
+			"cashout": "I would like to cash out"
+		},
+		"select_payment_method": "Select Payment Method",
+		"current_balance": {
+			"deposit": "Your current balance: {{money}}.",
+			"cashout": "Available to cash out: {{money}}. Please refer to {{balance_link}} page for detailed break down."
+		},
+		"payment_methods": {
+			"empty": "There are no available payment methods for this currency.",
+			"pay_with_cubits": "Pay with Cubits"
+		},
+		"limits": {
+			"currency": "Payment {{currency}}",
+			"min": "min {{min}}",
+			"max": "max {{max}}",
+			"fee": "fee {{fee}}"
+		},
+		"processing_time": {
+			"instantly": "Instantly",
+			"range": "%{min}-%{max} banking days"
+		}
+	},
+	"security_check": {
+		"user_is_suspicious": "O utilizador é suspeito",
+		"user_not_suspicious": "O utilizador é suspeito",
+		"user_has_suspicious_games": "O utilizador tem jogos suspeitos",
+		"cashout_amount": "Amount exceeds allowed maximum",
+		"cashout_wins": "Amount exceeds user limit",
+		"casino_cashout": "Amount exceeds casino daily limit",
+		"crypto_address_confirmed": "Address was not used before",
+		"manual": {
+			"title": "User was manually marked as suspicious"
+		},
+		"chargeback": {
+			"title": "User made chargeback"
+		},
+		"duplicate": {
+			"title": "User has duplicates",
+			"reason_html": "User duplicates {{user}}"
+		},
+		"balance_sum": {
+			"title": "Balance amount doesn't match the amount calculated based on transations and games statistic",
+			"text": "O saldo do jogador não corresponde ao saldo esperado"
+		},
+		"balance_transaction": {
+			"title": "The winning amount is too big for the last 24 hours",
+			"reason_html": "Suspicious wins in {{table}} during {{period}} by {{player}}"
+		},
+		"wager_done": {
+			"title": "User done wager bonus requirement"
+		},
+		"cubits_payment_difference": {
+			"title": "Cumulative cubits exchange rate losses are too big"
+		}
+	},
+	"notification": {
+		"contact_form": {
+			"sender_notice": "A sua mensagem foi enviada com sucesso.",
+			"mail_subject": "Mensagem recebida via formulário de contacto no seu site de casino"
+		},
+		"payment_confirmation": {
+			"mail_subject": "Payment confirmation code"
+		},
+		"daily_stats": {
+			"mail_subject": "Daily {{currency}} statistics for {{date}}"
+		},
+		"report": {
+			"day_mail_subject": "Daily statistics",
+			"week_mail_subject": "Weekly statistics",
+			"day_mail_title": "Daily {{currency}} statistics for {{period}}",
+			"week_mail_title": "Weekly {{currency}} statistics for {{period}}",
+			"fields": {
+				"net_revenue": "Net Gaming Revenue (NGR)",
+				"gross_win": "Gross Win",
+				"bets": "Total Bet",
+				"wins": "Total Win",
+				"payout": "Payout (in %)",
+				"game_rounds": "Game Rounds",
+				"new_registrations": "New Registrations With Deposit",
+				"players_made_deposits": "Players Made Deposits",
+				"total_users": "Total Users",
+				"deposits_sum": "Soma de depósitos",
+				"deposits_avg": "Deposits Average",
+				"cashouts_sum": "Soma de Levantamentos",
+				"cashouts_avg": "Cashouts Average"
+			},
+			"previous": "Previous {{type}}"
+		}
+	},
+	"user_mailer": {
+		"auth": {
+			"welcome": "Bem-vindo {{name}}!",
+			"hello": "Olá {{name}}!",
+			"confirmation": {
+				"you_can_confirm_email_by_pressing_next_link": "Pode confirmar o seu email de conta através da ligação abaixo:",
+				"confirm_my_account": "Confirmar a minha conta"
+			},
+			"reset_password": {
+				"change_my_password": "Alterar a minha senha",
+				"link_to_change_password_are_requested": "Alguém requisitou uma ligação para alterar a sua senha, pode fazê-lo através da ligação abaixo.",
+				"you_can_ignore_this_mail": "Se não efectuou este pedido, por favor ignore este email.",
+				"your_password_didnt_changed_yet": "A sua senha não será alterada até aceder à ligação acima e criar uma nova."
+			},
+			"unlock": {
+				"unlock_my_account": "Desbloquear a minha conta",
+				"your_account_has_been_locked": "A sua conta foi bloqueada devido a tentativas excessivas de iniciar sessão.",
+				"click_to_unlock": "Clique na ligação abaixo para desbloquear a sua conta:"
+			}
+		},
+		"deposit": {
+			"deposit_made": "O seu depósito recebido"
+		},
+		"cashout": {
+			"cashout_approved": "O seu levantamento foi aprovado"
+		},
+		"not_enough_money_for_cashout": {
+			"subject": "Saldo insuficiente para levantamento",
+			"body": "O seu levantamento foi cancelado porque o saldo deixou de ser suficiente para proceder ao levantamento requerido. Por favor introduza um novo pedido de levantamento de acordo com o saldo actual."
+		},
+		"address_confirmation_required": {
+			"subject": "Cashout address confirmation required"
+		}
+	},
+	"activemodel": {
+		"errors": {
+			"models": {
+				"affiliate_forms/assign_commission": {
+					"attributes": {
+						"from_date": {
+							"must_be_in_future": "must be in future"
+						},
+						"to_date": {
+							"must_be_in_future": "must be in future",
+							"must_be_less_then_from": "must be less then From"
+						}
+					}
+				},
+				"payment_system/cashout_form/wirecard": {
+					"attributes": {
+						"credit_card_number": {
+							"invalid": "is not a valid credit card number"
+						}
+					}
+				},
+				"casino_cash_balance/balance_options": {
+					"attributes": {
+						"base": {
+							"rules_error": "You have errors in rules"
+						}
+					}
+				},
+				"commissions/registration_settings": {
+					"attributes": {
+						"base": {
+							"rules_error": "You have errors in rules"
+						}
+					}
+				},
+				"commissions/registration_settings_rule": {
+					"attributes": {
+						"base": {
+							"uniq": "should be unique"
+						}
+					}
+				}
+			}
+		},
+		"attributes": {
+			"payment_system/bank_transfer/access_data": {
+				"deposit_snippet_name": "Deposit Snippet Name",
+				"cashout_snippet_name": "Cashout Snippet Name"
+			},
+			"affiliate_forms/assign_commission": {
+				"from_date": "From",
+				"to_date": "To"
+			},
+			"newsletters_filter": {
+				"tag": "User tag",
+				"locale": "Locale",
+				"type": "Type",
+				"deposits_number_equals": "Depósito",
+				"last_deposit_at": "Last deposit",
+				"registered_at": "Registered",
+				"payments_currency": "Payments currency"
+			}
+		}
+	},
+	"retention_mailer": {
+		"welcome": "Bem-vindo",
+		"no_deposit": "You haven't made a deposit",
+		"nth_deposit": "We are waiting for your deposit",
+		"welcome_promo": "Visit us again"
+	},
+	"jackpot": {
+		"jackpots": "Jackpots"
+	},
+	"game_categories": {
+		"favorite": "My favorites",
+		"add_to_favorites": "Add To Favorites",
+		"remove_from_favorites": "Remove From Favorites",
+		"favorites": {
+			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+		}
+	},
+	"betsoftgaming_api": {
+		"betsoftgaming": "Betsoftgaming"
+	},
+	"backend": {
+		"menu": {
+			"bitcoin_addresses": "Endereços bitcoin"
+		},
+		"bitcoin_wallets": {
+			"filters": {
+				"all": "Tudo",
+				"available": "Disponível",
+				"occupied": "Ocupado"
+			}
+		},
+		"bitcoin": {
+			"add_new_addresses": "Carregar ficheiro ou colar novos endereços",
+			"upload_new_addresses": "Adicionar endereços",
+			"cashout": "Levantamento",
+			"deposit_to_wallet": "Depositar na carteira",
+			"deposit_currency_to_wallet": "Deposit {{currency}} to Wallet",
+			"enough_available_addresses_left": "Sobram {{count}} endereços disponíveis",
+			"not_enough_available_addresses_left": "Resta apenas 1 endereço bitcoin. Pode adicionar mais endereços {{link}}.",
+			"here": "aqui",
+			"current_wallet_balance": "Current wallet balance:",
+			"total_balance": "Total: {{amount}}",
+			"available_balance": "Spendable: {{amount}}",
+			"transfer_to": "Increase",
+			"increase_system_balance": "Para aumentar o saldo da carteira do sistema, por favor envie bitcoins para o seguinte endereço:"
+		}
+	},
+	"bitcoin_wallets": {
+		"address_sources": {
+			"imported": "From pool",
+			"generated": "Generated",
+			"cubits_invoice": "Cubits Invoice",
+			"cubits_channel": "Cubits Channel"
+		}
+	},
+	"sidebar": {
+		"available_addresses": "Endereços disponíveis",
+		"wallet_balance": "Saldo da carteira"
+	},
+	"casinotechnology_api": {
+		"casinotechnology": "CasinoTechnology",
+		"timeout_message": "Game provider's server has not responded. Please retry later."
+	},
+	"ezugi_api": {
+		"ezugi": "Ezugi"
+	},
+	"quickfire_api": {
+		"quickfire": "QuickFire"
+	}
+}

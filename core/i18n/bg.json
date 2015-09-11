@@ -1,0 +1,1942 @@
+{
+	"errors": {
+		"messages": {
+			"taken_in_past": "вече беше взето!",
+			"equal_to_current_password": "трябва да бъде различен от текущата парола!",
+			"already_confirmed": "е вече потвърден, моля опитайте да влезете в профила си",
+			"confirmation_period_expired": "трябва да се потвърди в рамките на %{period}, моля направете нова заявка за потвърждаване",
+			"expired": "е изтекъл, моля заявете нов",
+			"not_found": "не е намерен",
+			"not_locked": "не бе заключен",
+			"not_saved": {
+				"one": "Една грешка попречи този %{resource} да бъде записан:",
+				"other": "%{count} грешки попречиха този %{resource} да бъде записан:"
+			}
+		}
+	},
+	"devise": {
+		"invalid_captcha": "Входът за Captcha не е валиден!",
+		"password_expired": {
+			"submit": "Смяна на парола",
+			"updated": "Вашата нова парола е регистирирана.",
+			"change_required": "Текущата ви парола изтече. Променете я сега.",
+			"forgot_password_message": "Ако сте забравили паролата си, кликнете вас \"Изход\", а след промените паролата си."
+		},
+		"failure": {
+			"session_limited": "Вашето потребителски имена и пароли са били използвани в друг браузър. Моля, влезте отново, за да продължи в този браузър.",
+			"expired": "Вашата сметка е изтекъла, поради неактивност.Моля, свържете се с администратора на сайта.",
+			"disabled": "Вашата регистрация е изключена.",
+			"not_allowed_ip": "Вашето IP не е разрешено за този потребител.",
+			"already_authenticated": "Вече сте влезли в профила си.",
+			"inactive": "Профилът Ви все още не е активиран.",
+			"invalid": "Невалиден имейл адрес или парола.",
+			"last_attempt": "Имате още един опит преди акаунтът Ви да бъде заключен.",
+			"locked": "Профилът Ви е заключен.",
+			"not_found_in_database": "Невалиден имейл адрес или парола.",
+			"timeout": "Сесията Ви е изтекла, моля влезте отново, за да продължите.",
+			"unauthenticated": "Преди да продължите, трябва да влезете в профила си или да се регистрирате.",
+			"unconfirmed": "Преди да продължите, трябва да потвърдите регистрацията си."
+		},
+		"confirmations": {
+			"confirmed": "Регистрацията Ви е потвърдена.",
+			"send_instructions": "Ще получите имейл с инструкции за потвърждаване на Вашата регистрация до няколко минути.",
+			"send_paranoid_instructions": "Ако Вашият имейл адрес съществува в нашата база данни, ще получите имейл с инструкции за потвърждаване на Вашия профил до няколко минути."
+		},
+		"mailer": {
+			"confirmation_instructions": {
+				"subject": "Инструкции за потвърждаване"
+			},
+			"reset_password_instructions": {
+				"subject": "Инструкции за смяна на паролата"
+			},
+			"unlock_instructions": {
+				"subject": "Инструкции за отключване"
+			}
+		},
+		"omniauth_callbacks": {
+			"failure": "Не успяхме да ви оторизираме чрез %{kind}, защото \"%{reason}\".",
+			"success": "Успешно оторизиран чрез %{kind} профил."
+		},
+		"passwords": {
+			"no_token": "Може да достъпвате тази страница само от имейл за промяна на паролата. Ако сте отворили тази страница от такъв имейл, уверете се, че използвате целия URL-адрес, който сме ви изпратили.",
+			"send_instructions": "Ще получите имейл с инструкции как да промените паролата си до няколко минути.",
+			"send_paranoid_instructions": "Ако вашият имейл адрес съществува в базата ни, ще получите инструкции за промяна на вашата парола.",
+			"updated": "Паролата Ви е променена успешно. Влязохте успешно в профила си.",
+			"updated_not_active": "Паролата Ви е променена успешно."
+		},
+		"registrations": {
+			"destroyed": "Довиждане! Вашият профил беше успешно изтрит. Надяваме се скоро да Ви видим отново.",
+			"signed_up": "Добре дошли! Вие се регистрирахте успешно.",
+			"signed_up_but_inactive": "Регистирахте се успешно. Въпреки това, не можете да влезете в профила си, защото той все още не е активиран.",
+			"signed_up_but_locked": "Регистрирахте се успешно. Въпреки това, не можете да влезете в профила си, защото той е заключен.",
+			"signed_up_but_unconfirmed": "Писмо с линк за потвърждаване на профила Ви беше изпратено на вашия имейл адрес. Моля, отворете линка, за да активирате Вашия профил.",
+			"update_needs_confirmation": "Обновихте профила си успешно, но трябва да проверим Вашия нов имейл адрес. Моля, проверете пощата си и отворете линка за потвърждаване на новия адрес.",
+			"updated": "Обновихте профила си успешно."
+		},
+		"sessions": {
+			"already_signed_out": "Излязохте успешно.",
+			"signed_in": "Влязохте успешно.",
+			"signed_out": "Излязохте успешно."
+		},
+		"unlocks": {
+			"send_instructions": "Ще получите имейл с инструкции как да отключите профила си до няколко минути.",
+			"send_paranoid_instructions": "Ако профилът Ви съществува в базата ни, ще получите имейл с инструкции за отключването му до няколко минути.",
+			"unlocked": "Профилът Ви е отключен успешно. За да продължите, моля влезте."
+		}
+	},
+	"activerecord": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "Не може да съдържа фрагмент.",
+							"has_query_parameter": "Не може да съдържа параметър на заявка.",
+							"invalid_uri": "трябва да бъде валидно URI.",
+							"relative_uri": "трябва да бъде абсолютно URI."
+						}
+					}
+				},
+				"user": {
+					"attributes": {
+						"password": {
+							"wrong_password": "invalid email address or password"
+						}
+					}
+				},
+				"profile": {
+					"attributes": {
+						"age": {
+							"greater_than_or_equal_to": "verification {{count}}+"
+						}
+					}
+				},
+				"payment": {
+					"not_enough_money": "Няма достатъчно пари",
+					"not_enough_unlocked_money": "Някои или всички запаси са заключени поради активен бонус. Моля, отговаря на вашите изисквания за превъртане на бонус да бъде в състояние да ги изтеглиш.",
+					"unresolved_cashout_request_presents": "Някои или всички запаси са заключени поради активен бонус. Моля, отговаря на вашите изисквания за превъртане на бонус да бъде в състояние да ги изтеглиш.",
+					"pending_deposit_presents": "Ние сме все още чака потвърждение от последния си депозит",
+					"commission_is_greater_that_amount": "Комисията е по-голяма от сумата",
+					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
+					"not_used_account": "Account you are going to cashout was not used before.",
+					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
+					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
+					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+				},
+				"commission_connection": {
+					"not_overlap": "Must not overlap with other connections with same commission level",
+					"future_from_time": "трябва да бъде в бъдеще",
+					"greater_than_from_time": "трябва да бъде по-голям от от време",
+					"strategies_equivalence": "трябва да имат една и съща схема за плащане, филиал профил",
+					"greater_than_now": "Трябва да е по-голяма, отколкото сега"
+				},
+				"commission": {
+					"wrong_strategy_settings": "Имате грешки в настройките на схема за плащане"
+				},
+				"bonus_issue": {
+					"not_enough_to_lock": "е по-голяма, отколкото на потребителя баланс"
+				},
+				"external_bet": {
+					"rollback_expired": "Намаление на цените не може да се приема, ако 24 часа изминали след резултат записване"
+				},
+				"notification/subscription": {
+					"invalid_types": "You can subscribe only to a notification"
+				}
+			}
+		},
+		"models": {
+			"account": "Акаунт",
+			"admin_user": "Администратор",
+			"affiliate_profile": "Партньорски Профил",
+			"bet": "Залог",
+			"bonus": "Бонус",
+			"bonus_issue": "Bonus Issue",
+			"document": "Документ",
+			"event": "Събитие",
+			"external_bet": "Външен залог",
+			"game": "Игра",
+			"game_category": "Game Category",
+			"game_step": "Стъпка",
+			"game_table": "Game Table",
+			"payment": "Плащане",
+			"payment_system": "Система за плащане",
+			"profile": "Профил",
+			"reports/base_collection/result_record": "Result",
+			"suspicion": "Подозрение",
+			"user": "Потребител",
+			"player": "Играч",
+			"retention_email": "задържани имейл"
+		},
+		"attributes": {
+			"balance_correction": {
+				"action": "Action",
+				"amount": "Amount",
+				"account": "Account",
+				"comment": "Comment"
+			},
+			"game_category": {
+				"name": "Name",
+				"disabled": "Disabled",
+				"created_at": "Created at",
+				"games": "Games",
+				"position": "Position"
+			},
+			"notification": {
+				"type": "Type",
+				"user": "User",
+				"admin_user": "Admin",
+				"target": "Target",
+				"target_type": "Target type"
+			},
+			"affiliate_link": {
+				"name": "Name",
+				"code": "Code"
+			},
+			"affiliate_profile": {
+				"name": "Титла",
+				"strategy": "Схема на плащане",
+				"no_debt": "Не отр. Пренасяне",
+				"links": "Links",
+				"active": "Active"
+			},
+			"account": {
+				"currency": "Валута",
+				"amount": "Сума",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"active_admin/comment": {
+				"author": "Автор",
+				"body": "Тяло",
+				"resource": "Ресурс"
+			},
+			"admin_user": {
+				"email": "Е-поща",
+				"encrypted_password": "Криптирана парола",
+				"password": "Парола",
+				"password_confirmation": "Confirm password",
+				"current_password": "Текуща парола",
+				"remember_me": "Запомни ме",
+				"reset_password_token": "Рестартирайте паролата символичено",
+				"reset_password_sent_at": "Възстанови паролата и изпрати",
+				"remember_created_at": "Запомни създаден в",
+				"sign_in_count": "Влезте в counta",
+				"current_sign_in_at": "Влезте в текущaта",
+				"last_sign_in_at": "Последно влизане в",
+				"current_sign_in_ip": "Текущo влизане в ip",
+				"last_sign_in_ip": "Последно влизане в ip",
+				"failed_attempts": "Неуспешни опити",
+				"unlock_token": "Отключи символично",
+				"locked_at": "Заключена в",
+				"password_changed_at": "Паролата e променена в",
+				"created_at": "Създадено в",
+				"updated_at": "Актуализирано в",
+				"disabled": "Изключено",
+				"allowed_ips_string": "Позволени IP адреси",
+				"roles_names": "Роли"
+			},
+			"balance_transaction": {
+				"reference": "Reference",
+				"amount": "Сума",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"bet": {
+				"bet_type": "Вид залог",
+				"bet_amount": "Сумата на залога",
+				"win_amount": "Сума на печалбата",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"bonus": {
+				"strategy": "Тип",
+				"title": "Титла",
+				"description": "Описвание",
+				"percentage": "Процент",
+				"currency": "Валута",
+				"amount": "Сума",
+				"percent": "Процент",
+				"max_amount": "Максимална сума",
+				"code": "Код",
+				"extra_info": "Допълнителна информация:",
+				"wager_multiplier": "Залог множител",
+				"wagering_epsilon": "Залагания епсилон",
+				"cashable": "Cashable",
+				"sticky": "Лепкав",
+				"enabled": "Включено",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"bonus_issue": {
+				"strategy": "Стратегия",
+				"stage": "Етап",
+				"amount": "Сума",
+				"amount_wager_requirement": "Изисквано количество на залога",
+				"amount_wager": "Сума на залога",
+				"wagered_percent": "Заложите на процента",
+				"amount_locked": "Сумата е заключена",
+				"valid_until": "Изтичане на датата",
+				"extra_info": "Допълнителна информация",
+				"cashable": "Cashable",
+				"sticky": "Лепкав",
+				"wager": "Залог",
+				"created_at": "Получено на дата",
+				"issued_at": "Издаден в",
+				"updated_at": "Актуализирано в"
+			},
+			"freespin_issue": {
+				"stage": "Stage",
+				"amount": "Amount",
+				"freespins_total": "Freespins Awarded",
+				"activatable_until": "Expiry date",
+				"win_amount_cents": "Alredy won",
+				"valid_until": "Expiry date",
+				"extra": "Extra info",
+				"external_id": "External ID",
+				"created_at": "Date received",
+				"issued_at": "Issued at",
+				"updated_at": "Updated at"
+			},
+			"bonus_strategy/feature/payment_system": {
+				"ids_list": "Система за плащане"
+			},
+			"contact": {
+				"email": "Е-поща",
+				"content": "Съдържание"
+			},
+			"document": {
+				"approved": "Одобрен",
+				"description": "Описвание",
+				"removed": "Изтриване",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в",
+				"attachment": "Прикрепка",
+				"attachment_file_name": "Име на прикачен файл",
+				"attachment_content_type": "Закрепване тип съдържание",
+				"attachment_file_size": "Размер на прикачения файл",
+				"attachment_updated_at": "Added at"
+			},
+			"event": {
+				"subject": "Тема",
+				"event_type": "Вид на събитието",
+				"ip": "IP",
+				"country": "Държава",
+				"coordinates": "Координати",
+				"latitude": "Ширина",
+				"longitude": "Дължина",
+				"address": "Адрес",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"external_bet": {
+				"id": "Локално ID",
+				"account_id": "Идентификатор на регистрацията",
+				"account": "Сметки",
+				"external_id": "Външен идентификатор",
+				"bet_amount": "Залагане",
+				"win_amount": "Печеля",
+				"oauth_application": "OAuth програмата",
+				"oauth_application_id": "OAuth идентификатор на приложението"
+			},
+			"game": {
+				"data": "Дата",
+				"finished_at": "Завършено на",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"game_step": {
+				"state": "Етап",
+				"action": "Действия",
+				"data": "Дата",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"game_table": {
+				"base_type": "Базов тип",
+				"variation": "Вариация",
+				"identifier": "Идентификатор",
+				"title": "Титла",
+				"client": "Клиент",
+				"provider": "Game provider",
+				"description": "Описвание",
+				"active": "Активна",
+				"currency": "Валута",
+				"secondary_currency": "Вторична валута",
+				"amount_win": "Общо залози",
+				"amount_loss": "Общо печалби",
+				"chips": "Чипове",
+				"default_chip": "Подразбиран чип",
+				"min_bet": "Мин залог",
+				"max_bet": "Максимален залог",
+				"paytable": "Таблица на печалбите",
+				"options": "Опции",
+				"bet_playthrough_percent": "Игри залозите играят чрез проценти",
+				"line_bets": "Линии за залози",
+				"archived_at": "Архивирана в",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"modification": {
+				"subject": "Тема",
+				"entity": "Същност",
+				"data": "Дата",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"paritcipation": {
+				"active": "Активна",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"payment": {
+				"amount": "Сума",
+				"commission_amount": "Комисионна",
+				"amount_after_commission": "Сума (комисионна изважда)",
+				"currency": "Валута",
+				"action": "Действия",
+				"source": "Източник",
+				"extra": "Допълнително",
+				"success": "Успешно",
+				"finished_at": "Завършено на",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в",
+				"recipient_address": "Адрес",
+				"manual_confirmation_code": "Код за потвърждение",
+				"source_id": "Payment Code"
+			},
+			"payment_system": {
+				"system_name": "Името на система",
+				"disabled": "Изключено",
+				"currency_options": "Настройки на валута",
+				"test_mode": "Тестов режим",
+				"data": "Дата",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"payment_system_debt": {
+				"system_name": "System name",
+				"system_account": "Account in system",
+				"amount_cents": "Debt",
+				"created_at": "Created at",
+				"updated_at": "Updated at"
+			},
+			"profile_setting": {
+				"name": "Игри",
+				"enabled": "Включено",
+				"required": "Задължително",
+				"show_at_registration": "Покажи на регистрация",
+				"show_at_edition": "Покажи в режим на редактиране",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			},
+			"suspicion": {
+				"suspect": "Заподозрян",
+				"discarded": "Излязло от употреба",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в",
+				"related_suspect": "Свързани заподозрян",
+				"data": "Дата",
+				"failed_check": "Неуспешно проверка"
+			},
+			"user": {
+				"email": "Е-поща",
+				"encrypted_password": "Криптирана парола",
+				"password": "Парола",
+				"password_confirmation": "Потвърждение на паролата",
+				"current_password": "Текуща парола",
+				"remember_me": "Запомни ме",
+				"reset_password_token": "Възстановите паролата символичен",
+				"reset_password_sent_at": "Възстанови парола изпратено",
+				"remember_created_at": "Запомни създаден в",
+				"sign_in_count": "Влезте в брой",
+				"current_sign_in_at": "Влезте текущa в",
+				"last_sign_in_at": "Влезен Последен в",
+				"current_sign_in_ip": "Влезте текущa ip",
+				"last_sign_in_ip": "Последен Влезен ip",
+				"confirmation_token": "Потвърждение символичен",
+				"confirmed_at": "Потвърден в",
+				"confirmation_sent_at": "Потвърждение, изпратено на",
+				"unconfirmed_email": "Непотвърдени имейл",
+				"failed_attempts": "Неуспешни опити",
+				"unlock_token": "Отключи символичен",
+				"locked_at": "Заключена в",
+				"authentication_token": "Удостоверяване символично",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в",
+				"disabled": "Изключено",
+				"allowed_ips_string": "Позволени IP адреси",
+				"guest": "Гост",
+				"main_bitcoin_address": "Main bitcoin address",
+				"bonus_code": "Bonus Code"
+			},
+			"profile": {
+				"full_name": "Цяло име",
+				"first_name": "Първо име",
+				"last_name": "Фамилия",
+				"title": "Титла",
+				"nickname": "Прякор",
+				"date_of_birth": "Дата на раждане",
+				"personal_id_number": "ЕГН",
+				"gender": "Пол",
+				"country": "Държава",
+				"city": "Град",
+				"place_of_birth": "Място на раждане",
+				"address": "Адрес",
+				"address2": "Допълнителен адрес",
+				"postal_code": "Пощенски код",
+				"time_zone": "Часова зона",
+				"mobile_phone": "Мобилен телефон",
+				"phone": "Телефон",
+				"skype": "Skype",
+				"send_payment_confirmation": "Изпрати Потвърждение на плащане",
+				"receive_newsletters": "Получавате бюлетини",
+				"receive_promos": "Получавате промоции",
+				"never_call": "Никога повикване",
+				"currency": "Валута",
+				"language": "Езици",
+				"security_question": "Въпрос за сигурност",
+				"security_answer": "Отговор сигурност",
+				"age_acceptance": "Възраст Потвърден",
+				"terms_acceptance": "Потвърдено Условия",
+				"bonus_issuance_policy": "Застраховка на бонус полица",
+				"allowed_ips_string": "Позволени IP адреси"
+			},
+			"profile/admin": {
+				"full_name": "Цяло име",
+				"first_name": "Първо име",
+				"last_name": "Фамилия",
+				"title": "Титла",
+				"nickname": "Прякор",
+				"date_of_birth": "Дата на раждане",
+				"personal_id_number": "ЕГН",
+				"gender": "Пол",
+				"country": "Държава",
+				"city": "Град",
+				"place_of_birth": "Място на раждане",
+				"address": "Адрес",
+				"address2": "Допълнителен адрес",
+				"postal_code": "Пощенски код",
+				"time_zone": "Часова зона",
+				"mobile_phone": "Мобилен телефон",
+				"phone": "Телефон",
+				"skype": "Skype",
+				"send_payment_confirmation": "Изпрати Потвърждение на плащане",
+				"receive_newsletters": "Получавате бюлетини",
+				"receive_promos": "Получаване промоции",
+				"never_call": "Никога повикване",
+				"currency": "Валута",
+				"language": "Езици",
+				"security_question": "Въпрос за сигурност",
+				"security_answer": "Отговор Сигурност",
+				"age_acceptance": "Уверете се, че най-малко {{age}}",
+				"terms_acceptance": "Съгласен съм с Условия за ползване",
+				"bonus_issuance_policy": "застраховка на бонус полица",
+				"allowed_ips_string": "Позволени IP адреси"
+			},
+			"profile/user": {
+				"full_name": "Цяло име",
+				"first_name": "Първо име",
+				"last_name": "Фамилия",
+				"title": "Титла",
+				"nickname": "Прякор",
+				"date_of_birth": "Дата на раждане",
+				"personal_id_number": "ЕГН",
+				"gender": "Пол",
+				"country": "Държава",
+				"city": "Град",
+				"place_of_birth": "Място на раждане",
+				"address": "Адрес",
+				"address2": "Допълнителен адрес",
+				"postal_code": "Пощенски код",
+				"time_zone": "Часова зона",
+				"mobile_phone": "Мобилен телефон",
+				"phone": "Телефон",
+				"skype": "Skype",
+				"send_payment_confirmation": "Изпрати Потвърждение на плащане",
+				"receive_newsletters": "Получавате бюлетини",
+				"receive_promos": "Получавате промоции",
+				"never_call": "Никога повикване",
+				"currency": "Валута",
+				"language": "Езици",
+				"security_question": "Въпрос за сигурност",
+				"security_answer": "Отговор сигурност",
+				"age_acceptance": "I confirm that I am over {{age}} years old",
+				"terms_acceptance": "I agree to {{text}}",
+				"bonus_issuance_policy": "застраховка на бонус полица",
+				"allowed_ips_string": "Позволени IP адреси"
+			},
+			"provable_fair_data": {
+				"secret": "Секретно",
+				"client_seed": "Клиент семена",
+				"result": "Резултат",
+				"hash": "Хеш"
+			},
+			"retention_email": {
+				"strategy": "Тип",
+				"template_name": "Име на шаблона",
+				"days_interval": "Дни интервал",
+				"enabled": "Включено",
+				"created_at": "Създадено по",
+				"updated_at": "Актуализирано в"
+			}
+		}
+	},
+	"mongoid": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "Не може да съдържа фрагмент.",
+							"has_query_parameter": "Не може да съдържа параметър на заявка.",
+							"invalid_uri": "трябва да бъде валидно URI.",
+							"relative_uri": "трябва да бъде абсолютно URI."
+						}
+					}
+				}
+			}
+		}
+	},
+	"mongo_mapper": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "Не може да съдържа фрагмент.",
+							"has_query_parameter": "Не може да съдържа параметър на заявка.",
+							"invalid_uri": "трябва да бъде валидно URI.",
+							"relative_uri": "трябва да бъде абсолютно URI."
+						}
+					}
+				}
+			}
+		}
+	},
+	"doorkeeper": {
+		"errors": {
+			"messages": {
+				"invalid_request": "Искането липсва задължителен параметър, включва неподдържана стойност параметър, или по друг начин деформиран.",
+				"invalid_redirect_uri": "Отклоняването URI включени не е валиден.",
+				"unauthorized_client": "Клиентът не е упълномощен да изпълнява това искане, използвайки този метод.",
+				"access_denied": "Собственикът на ресурс или разрешение сървъра отхвърлил искането.",
+				"invalid_scope": "Исканият обхват е невалиден, неизвестен, или деформиран.",
+				"server_error": "В упълномощеният сървър възникна неочаквано състояние, което му е попречило да изпълни искането.",
+				"temporarily_unavailable": "В упълномощеният сървър в момента не може да се справят с искането поради временно претоварване или поддръжка на сървъра.",
+				"credential_flow_not_configured": "Ресурс Собственик Парола Пълномощия поток провалиха порадиDoorkeeper.configure.resource_owner_from_credentials се неконфигурирана.",
+				"resource_owner_authenticator_not_configured": "Ресурс Собственик Намирам се провали поради Doorkeeper.configure.resource_owner_authenticator се неконфигурирана.",
+				"unsupported_response_type": "В упълномощеният сървър не поддържа този тип отговор.",
+				"invalid_client": "Удостовереният клиент се провали поради неизвестен клиент, няма клиент за удостоверяване,или неподдържан метод за удостоверяване.",
+				"invalid_grant": "Предоставената грант разрешение е невалидна, изтекъла, отнета, не съвпада с пренасочване URI, използвани в искането за разрешение, или е бил издаден на друг клиент.",
+				"unsupported_grant_type": "Типът на грант разрешение не се поддържа от сървъра.",
+				"invalid_resource_owner": "Предвидените пълномощията собствениците на ресурси не са валидни, или собственик на ресурсите не може да бъде намерена",
+				"invalid_token": {
+					"revoked": "Означението за достъп е било отменено.",
+					"expired": "Означението за достъп изтекъл",
+					"unknown": "Означението за достъп е невалиден"
+				}
+			}
+		},
+		"flash": {
+			"applications": {
+				"create": {
+					"notice": "Заявлението е създадено."
+				},
+				"destroy": {
+					"notice": "Заявлението е заличено."
+				},
+				"update": {
+					"notice": "Заявлението е актуализирано."
+				}
+			},
+			"authorized_applications": {
+				"destroy": {
+					"notice": "Заявлението е отменено."
+				}
+			}
+		},
+		"authorize_title": "OAuth разрешение изисква",
+		"authorize_required": "Разрешение изисква",
+		"authorize": "Разрешаване",
+		"authorization_code": "Разрешени код",
+		"deny": "Отказ",
+		"rights_title": "Това приложение ще бъде в състояние да:",
+		"allow_authorization": "Упълномощаване {{app}} да използвате сметката си?",
+		"authorize_as_regular_user": "Моля, излезте от гост сметка и влезте като обикновен потребител.",
+		"scopes": {
+			"profile": "Достъп до данните на профила ви",
+			"bets": "Достъп до вашите данни и направите залози на ваше име"
+		}
+	},
+	"amatic": {
+		"verification": {
+			"error_popup": {
+				"title": "Error",
+				"description": "Amatic server does not respond"
+			},
+			"popup": {
+				"copy": "Copy",
+				"title": "Successfull verification",
+				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
+				"message": "Your Text",
+				"signature": "Amatic Signature",
+				"address": "Bitcoin Address"
+			},
+			"title": "Amatic verification",
+			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
+			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"form": {
+				"your_text": "Your Text",
+				"verify": "Verify"
+			}
+		},
+		"amatic": "Amatic"
+	},
+	"http": {
+		"not_found": {
+			"title": "Page Not Found",
+			"oops": "Oops,",
+			"cannot_be_found": "The page you are looking for cannot be found.",
+			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
+			"link_to_root": "Here is a link to our start page:"
+		}
+	},
+	"common": {
+		"in_out": "IN/OUT",
+		"players": "Players",
+		"email": "Е-поща",
+		"content": "Content",
+		"loading": "Зареждане…",
+		"yes": "Да",
+		"no": "Не",
+		"all": "Всички",
+		"default": "Стандартна",
+		"date": "Дата",
+		"result": "Резултат",
+		"total_bet": "Общо Залози",
+		"total_win": "Обща Печалба",
+		"gross_win": "Бруто приходи",
+		"cashouts_sum": "Сума от тегленията",
+		"deposits_sum": "Сума на депозитите",
+		"net_revenue": "Нетни приходи",
+		"client": "Клиент",
+		"amount": "Сума",
+		"help": "Помощ",
+		"currency": "Валута",
+		"total": "Общо",
+		"limit": "Лимит",
+		"live_casino": "Казино на живо",
+		"address": "Address",
+		"good_news": "Good news, {{nickname}}.",
+		"save": "Запис",
+		"edit": "Редактиране",
+		"remove": "Изтриване",
+		"destroy": "Унищожаване",
+		"cancel": "Отказване",
+		"close": "Close",
+		"create": "Създаване",
+		"add": "Добавяне",
+		"update": "Обновяване",
+		"reset": "Изчистване",
+		"refresh": "Обновяване",
+		"proceed": "Proceed",
+		"filter": "Филтър",
+		"are_you_sure": "Сигурни ли сте?",
+		"set": "Set",
+		"enabled": "Включено",
+		"disabled": "Изключено",
+		"active": "Активна",
+		"preview": "Преглед",
+		"select": "Select",
+		"summary": "Обобщение",
+		"status": "Статус",
+		"options": "Опции",
+		"genders": {
+			"m": "Мъж",
+			"f": "Жена"
+		},
+		"player": "Играч",
+		"guest": "Гост",
+		"subject": "Тема",
+		"actions": "Действия",
+		"balance": "Баланс",
+		"profit": "Печалба",
+		"payout": "Заплащане",
+		"bets_sum": "Сумата на залозите",
+		"wins_sum": "Обща печалба",
+		"bets": "Залози",
+		"total_payouts": "Общо изплащания",
+		"terms_and_conditions": "Условия за Ползване",
+		"net_total": "Нет на печалба",
+		"blog": "Блог",
+		"comments": "Коментари",
+		"comment": "Коментар",
+		"empty_search_results": "There are no items according to the filtering parameters",
+		"add_more_coins": "Add more Coins",
+		"show_more_games": "Show more games",
+		"warning": "Warning",
+		"new_as_novelty": "New",
+		"already_member": "Already a member?",
+		"have_account": "Have an account?"
+	},
+	"locales": {
+		"af": "Африканци",
+		"bg": "Български",
+		"de": "Немски",
+		"el": "Гръцки",
+		"en": "Английски",
+		"es": "Испански",
+		"fi": "Финландски",
+		"fr": "French",
+		"it": "Италиански",
+		"ja": "Японски",
+		"ko": "Korean",
+		"nl": "Холандски",
+		"pl": "Полски",
+		"pt": "Португалски",
+		"ru": "Руски",
+		"sv": "Шведски",
+		"tr": "Турски",
+		"vi": "Виетнамски",
+		"zh": "Китайски"
+	},
+	"date": {
+		"day": "Ден",
+		"week": "Седмица",
+		"month": "Месец",
+		"year": "Година"
+	},
+	"casino": {
+		"casino": "Казино",
+		"not_enough_money": "Няма достатъчно пари",
+		"events": {
+			"modified": {
+				"user": "Потребителският профил е променен",
+				"admin_user": "Сменен от Администратора",
+				"game_table": "Игра е променен",
+				"bonus_issue": "Bonus Issue",
+				"bonus": "Бонус е Модифициран",
+				"payment_system": "Система за плащане",
+				"retention_email": "Задържаният имейл е Модифициран",
+				"casino_cash_balance": "Casino Cash Balance Modified",
+				"commission_connection": "Commission Connection Modified",
+				"payment": "Payment Modified",
+				"affiliate_profile": "Affiliate Profile Modified"
+			},
+			"game": {
+				"step": "Game Step Made"
+			},
+			"user": {
+				"sign_out": "Потребителят излезе",
+				"sign_in": "Потребителят влезе",
+				"failed_sign_in": "Потребителят не може да влезе"
+			},
+			"admin_user": {
+				"sign_out": "Администраторът излезе",
+				"sign_in": "Администраторът влезе",
+				"failed_sign_in": "Администраторът не може да влезе"
+			},
+			"notifications": {
+				"balance_correction_created": "Balance correction created",
+				"cashout_requested": "Cashout requested",
+				"deposit_made": "Deposit made",
+				"cashout_made": "Cashout made",
+				"auto_cashout_made": "Auto-cashout made",
+				"cashout_rejected": "Cashout request rejected",
+				"deposit_rejected": "Deposit rejected",
+				"user_upload_document": "User Uploaded Document",
+				"payment_created_by_admin": "Admin Created Payment",
+				"user_disabled": "User Disabled",
+				"contact": "User Requested Support",
+				"admin_comment_created": "Admin Left Comment"
+			},
+			"affiliate": {
+				"redirect": "Нови филиали за потребителско посещение"
+			},
+			"bitcoin_addresses_uploaded": "Bitcoin адреси качени"
+		},
+		"bonuses": {
+			"names": {
+				"no_deposit": "Без Депозит",
+				"first_deposit": "Първи Депозит",
+				"nth_deposit": "И Депозит",
+				"deposit_system": "Платежна Система Бонус",
+				"coupon": "Купон"
+			},
+			"issuance_policy": {
+				"can-issue": "Auto емитиране на бонуси",
+				"can-refuse": "Играчът може да отмени бонуса си преди да играе",
+				"can-cancel": "Играча може да отмени бонуса си"
+			}
+		},
+		"retention_emails": {
+			"names": {
+				"welcome": "Добре дошли",
+				"welcome_promo": "Добре дошли бонус",
+				"no_deposit": "Без депозит",
+				"nth_deposit": "Без ..и депозит"
+			}
+		},
+		"payment_systems": {
+			"names": {
+				"qiwi": "Qiwi",
+				"skrill": "Skrill",
+				"interkassa": "Interkassa",
+				"paysafecard": "paysafecard",
+				"ukash": "Ukash",
+				"neteller": "Neteller",
+				"card_pay": "CardPay",
+				"b_cash": "B-Cash",
+				"wirecard": "Wirecard",
+				"coupon": "Купон",
+				"cashbox": "Cashbox",
+				"cep_bank": "Cep Bank",
+				"bank_transfer": "Bank Transfer",
+				"cubits": "Cubits",
+				"lavapay": "Lavapay",
+				"bitcoin_payment": "Bitcoin",
+				"ripple_payment": "Ripple"
+			},
+			"payer": {
+				"cashout_email_subject": "Casino Cashout",
+				"cashout_email_note": "Тегленето извършено"
+			},
+			"system_name": "%{child} via %{parent}",
+			"all_locked": "За вашата безопасност ние позволяваме теглене чрез платежни системи, които сте използвали преди това за депозит. Ако имате въпроси, моля, свържете се с поддръжката.",
+			"child_systems": {
+				"visa": "Visa",
+				"mastercard": "MasterCard",
+				"online_bank_transfer": "Online Bank Transfer",
+				"ideal": "iDEAL",
+				"nordea_solo": "Nordea Solo",
+				"bancontact_mister_cash": "Bancontact/Mister Cash",
+				"cards": "Credit Cards",
+				"ccard": "Кредитна карта",
+				"click_to_pay": "CLICK2PAY",
+				"ekonto": "eKonto",
+				"eps": "EPS e-payment",
+				"giropay": "giropay",
+				"installment": "Вноска от payolution",
+				"invoice": "Фактура от payolution",
+				"moneta": "moneta.ru",
+				"mpass": "mpass",
+				"przelewy": "Przelewy24",
+				"paypal": "PayPal",
+				"paybox": "Paybox",
+				"poli": "Poli плащания",
+				"paysafecard": "Paysafecard",
+				"quick": "Бързо",
+				"sepa": "SEPA Direct Debit",
+				"skrill_direct": "Skrill Директен",
+				"skrill_wallet": "Skrill Дигитален Портфейл",
+				"sofort": "SOFORT Banking",
+				"tatrapay": "TatraPay",
+				"trustly": "Trustly",
+				"bank_transfer": "Bank Transfer",
+				"lavapay_balance": "LavaPay Balance",
+				"cheque": "Cheque",
+				"perfect": "Perfect Money",
+				"liqpay": "LiqPay",
+				"webmoney": "WebMoney",
+				"yandex": "Yandex Money",
+				"okpay": "OKPAY",
+				"qiwi": "Qiwi",
+				"mailru": "money@mail.ru",
+				"lavapay_bitcoin": "Bitcoin",
+				"egopay": "EgoPay",
+				"lavapay_litecoin": "LiteCoin",
+				"paxum": "Paxum",
+				"ecoin": "eCoin",
+				"btce": "BTC-E",
+				"privatbank": "PrivatBank.ua",
+				"nsmep": "NSMEP",
+				"telemoney": "TeleMoney",
+				"ukrterminal": "UkrTerminal",
+				"rusterminal": "RusTerminal",
+				"rusbank": "Rusbank",
+				"mobileretails": "MobileRetails",
+				"unistream": "Unistream",
+				"ruspost": "RusPost",
+				"contact": "Contact",
+				"anelik": "Anelik",
+				"leader": "Leader",
+				"mts": "MTS",
+				"megafon": "Megafon",
+				"beeline": "Beeline",
+				"alfaclick": "AlfaClick",
+				"fortumo": "Fortumo",
+				"cashu": "CashU",
+				"privat_terminal": "Privat Terminal",
+				"kazakhstan_terminal": "Kazakhstan Terminal",
+				"tjs_terminal": "Tjs Terminal",
+				"moldova_terminal": "Moldova Terminal",
+				"georgia_terminal": "Georgia Terminal",
+				"euroset": "Euroset",
+				"kievstar": "KievStar",
+				"promsvyazbank": "PromSvyazBank",
+				"easypay": "EasyPay",
+				"bpay": "BPay",
+				"pravex": "Pravex Bank",
+				"ukrsib": "UkrSib Bank",
+				"liberty": "Liberty Bank",
+				"faktura": "Faktura.ru",
+				"privatbank_cashin": "Privatbank Cash-in",
+				"sberbank_cashin": "Sberbank Cash-in",
+				"qiwi_visa": "Visa Qiwi",
+				"qiwi_mastercard": "Mastercard Qiwi",
+				"qiwi_maestro": "Maestro Qiwi",
+				"cis_cards": "Bank Cards",
+				"yandex_personal": "Yandex Personal",
+				"local_bank_transfer": "Local Bank Transfer",
+				"w1": "W1",
+				"wallet_one": "Wallet One",
+				"russian_standard": "Russian Standard Bank"
+			}
+		},
+		"commissions": {
+			"strategies": {
+				"registration": "CPA",
+				"percent": "Rev share"
+			}
+		},
+		"games": {
+			"unknown_action": "Непознато действие",
+			"unavailable_action": "Не позволено действие",
+			"roulette": {
+				"notice": {
+					"bet_is_not_valid": "Залог не е валиден",
+					"bet_type_not_found": "Тип Залогът не е намерен",
+					"unknown_bet": "Неизвестен залог",
+					"unknown_value": "Неизвестна стойност e избрана",
+					"unknown_column": "Неизвестнa колона e избранa",
+					"unknown_dozen": "Неизвестнa дузина e избранa"
+				}
+			}
+		},
+		"provable_fair": {
+			"provable_fair": "Доказуемо справедлив",
+			"provability": "Доказуемост",
+			"not_available": "Provability widget available at game page",
+			"verify": "Удостоверяване",
+			"loading": "Randomizing ...",
+			"is_unavailable": "Provable fair is not available for this game.",
+			"next_game": "Следващата игра",
+			"last_game": "Last game",
+			"reel_number": "Reel {{index}}",
+			"fields": {
+				"hash": "Hash (Result + Secret)",
+				"client_seed": "Client seed",
+				"secret": "Result + Secret",
+				"result": "Final result"
+			},
+			"hint": {
+				"common": "Enter client Seed (0-{{max_seed}})",
+				"roulette": "Push the ball further:",
+				"card": "Cut the deck:",
+				"poker": "Cut the deck:",
+				"slots": "Spin the reels a bit more:"
+			},
+			"verification": {
+				"success": {
+					"title": "Successful verification",
+					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
+				},
+				"failure": {
+					"title": "Verification failed",
+					"body": "Please contact our support."
+				}
+			}
+		},
+		"bitcoin": {
+			"update_balance": "Обновяване на данни баланс",
+			"current_balance": "Current balance {{balance}}.",
+			"send_text": "Send any amount of {{currency}} (plus miner fee) to",
+			"cant_attach_address": "За съжаление, ние имаме някои проблеми с bitcoins. Admin вече е бил уведомен. Опитайте отново скоро.",
+			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
+			"xrp": {
+				"send_text": "Send any amount of {{currency}} to",
+				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
+			}
+		}
+	},
+	"frontend": {
+		"placeholders": {
+			"email": "Въведете вашия имейл",
+			"password": "Въведете паролата си",
+			"password_confirmation": "Потвърдете паролата си",
+			"current_password": "Въведете текущата парола"
+		},
+		"age_acceptance": "Please confirm that you are over {{age}} years old",
+		"choose_game": "Изберете игра",
+		"games_played": "Изиграни игри",
+		"or": "или",
+		"please_or": "Please {{first}} or {{second}}",
+		"mbtc_total_winnings": "mBTC Обща Печалба",
+		"hi_guest": "Здравей, Гост.",
+		"hi_user": "Здравей , {{nickname}}",
+		"password_difficulty": "Парола трудност",
+		"password_difficulties": {
+			"very_weak": "Много слаба",
+			"weak": "слаб",
+			"so_so": "Горе-долу",
+			"strong": "Силно",
+			"great": "Прекрасно!"
+		},
+		"playing": {
+			"playing_fun": "Playing for {{currency}}",
+			"playing_real": "Playing with {{currency}}",
+			"play_fun": "Play for {{currency}}",
+			"play_real": "Play with {{currency}}"
+		},
+		"links": {
+			"support": "Поддръжка",
+			"help": "Помощ",
+			"how_to_start": "Как да започнете",
+			"casino_promotions": "Казино промоции",
+			"bonuses": "Бонусите",
+			"affiliate_program": "Филиал програма",
+			"terms_and_conditions": "Условия за Ползване",
+			"back": "Назад",
+			"create_ticket": "Създаване на билет",
+			"send_form": "Изпрати форма",
+			"online_chat": "Онлайн чат",
+			"home": "Дом",
+			"frontpage": "Frontpage",
+			"casino_games": "Казино игри",
+			"about_casino": "За Казиното",
+			"all_games": "Всички Игри",
+			"load_more_games": "Load More Games",
+			"rules": "Игри Правила",
+			"autoregister": "Aвто Регистър",
+			"quick_register": "Quick Register",
+			"play_for_fun": "Играй за забавление",
+			"demo": "Demo",
+			"play_for_real": "Играй Реално",
+			"play_for_bitcoin": "Играй за Bitcoin",
+			"free_play": "Свободна Игра",
+			"real_play": "Реална игра",
+			"play_now": "Играй сега",
+			"join_now": "Играй сега",
+			"profile": "Профил",
+			"dice": "Зарове",
+			"deposit": "Депозит",
+			"withdraw": "Withdraw",
+			"cashout": "Cashout",
+			"cashbox": "Cashbox",
+			"sign_out": "Изход",
+			"sign_in": "Влизане",
+			"sign_up": "Регистриране",
+			"register": "Регистър",
+			"login": "Логин",
+			"logout": "Logout",
+			"start_playing": "Start Playing",
+			"forgot_password": "Забравена парола?",
+			"didnt_receive_confirmation": "Още не получите инструкции за потвърждение?",
+			"didnt_receive_unlock": "Още не получават инструкции за отключване?",
+			"affiliate_profiles": "Партньорски Профили",
+			"settings": "Настройки"
+		},
+		"captions": {
+			"affiliates": "Affiliates",
+			"help": "Помощ",
+			"games": "Games",
+			"quick_links": "Бързи връзки",
+			"languages": "Езици",
+			"info": "Info",
+			"information": "Информация",
+			"promotion": "Промоция",
+			"follow_us": "Следвайте ни"
+		},
+		"actions": {
+			"go_bang": "Старт!",
+			"deposit_now": "Deposit Now",
+			"sign_up_now": "Sign Up Now"
+		},
+		"games_bet_playthrough_percent": "Игри залозите играят чрез проценти",
+		"contact": {
+			"title": "Форма за обратна връзка",
+			"hint": "Моля, попълнете информацията по-долу. Всички полета са задължителни.",
+			"labels": {
+				"email": "Е-поща",
+				"content": "Съобщение",
+				"send": "Изпращане"
+			}
+		},
+		"no_flash": {
+			"flash_isnt_available": "Adobe Flash Player не е налична",
+			"flash_usage": "Уважаеми потребители, за да се осигури най-добрата гейминг изживяване с висока разделителна способност, нашето казино работи на Adobe Flash.",
+			"desktop_section": "Desktop Подкрепа",
+			"desktop_section_link": "Моля инсталирайте Adobe Flash Player за Desktop",
+			"mobile_section": "Подкрепа за Мобилни Устройства",
+			"mobile_section_text": "Adobe Flash не е напълно съвместим с местни браузъри за мобилни устройства. Въпреки това, можете да изтеглите от трета страна приложение, което осигурява отлично впечатление у потребителя. Ние може да предложи %s и %s."
+		},
+		"devise": {
+			"resend_confirmation": "Повторно изпращане на инструкции за потвърждение",
+			"send_reset_instructions": "Преправяне паролата",
+			"send_unlock_instructions": "Повторно изпращане отключите инструкции",
+			"change_your_password": "Сменете паролата си.",
+			"change_my_password": "Смяна на парола",
+			"new_password": "Нова парола",
+			"confirm_new_password": "Потвърдете новата парола",
+			"password_hint": "(оставете празно, ако не искате да я промените)",
+			"current_password_hint": "(имаме нужда от сегашната си парола, за да потвърдите вашите промени)",
+			"unlock_hint": "Ако профилът ви е бил изключен, изпратете вашия имейл адрес и ние ще ви изпратим инструкции по електронната поща за да отключите.",
+			"resend_hint": "Попълнете вашият имейл адрес и ние ще Ви изпратим инструкции как да възстановите паролата си чрез електронна поща.",
+			"contact_us_hint_html": "Свържете се с нас {{page}}, ако имате нужда от допълнителна помощ.",
+			"custom": {
+				"not_valid_email": "Not a valid email",
+				"too_short": "Too short",
+				"not_match": "Not match",
+				"min_characters": "Minimum 1 character"
+			}
+		},
+		"payment_system_redirect": {
+			"notification": "You will be redirected to {{system}} side shortly to finish your transaction",
+			"text": "За да продължите да платите кликнете бутона по-долу.",
+			"button": "За да продължите да плащате"
+		},
+		"social": {
+			"follow_us": "Следвайте ни"
+		},
+		"filters": {
+			"find_your_game": "Намерете вашата игра"
+		},
+		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
+	},
+	"winners": {
+		"winners": "Победители",
+		"latest_winners": "Последни Победители",
+		"top_winners": "Top Winners",
+		"amount_in_game": "%{amount} in %{game}",
+		"parts": {
+			"just_won": "just won",
+			"in": "in"
+		}
+	},
+	"restriction": {
+		"default": "This page is appears to be restricted in your country",
+		"game_restricted_in_country": "This game is appears to be restricted in your country",
+		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
+	},
+	"documents": {
+		"removed_successfully": "Document was successfully removed",
+		"document": {
+			"edit_description": "Редактиране на описанието",
+			"approved": "Одобрен",
+			"not_approved": "Неодобрен"
+		},
+		"index": {
+			"upload_document": "Качване на документ"
+		}
+	},
+	"sportsbook": {
+		"sports": "Спортове",
+		"live_betting": "Залози на живо",
+		"sports_bets": "Sports Bets"
+	},
+	"formtastic": {
+		"labels": {
+			"card_holder": "Притежател на картата",
+			"credit_card_number": "Номер на кредитна карта",
+			"cvc": "Карт код за сигурност",
+			"expiration_date": "Дата на изтичане",
+			"amount": "Amount",
+			"recipient": "Recipient",
+			"document": {
+				"attachment": "Attachment",
+				"description": "Description"
+			},
+			"btc_amount": "Amount in BTC",
+			"wallet_address": "Wallet Address"
+		},
+		"actions": {
+			"game": {
+				"create": "Създаване на игра",
+				"update": "Обновяване на игра"
+			},
+			"player": {
+				"create": "Създаване на играч",
+				"update": "Актуализиране на играч"
+			},
+			"bonus": {
+				"create": "Създаване бонус",
+				"update": "Актуализиране на бонусa"
+			},
+			"bonus_issue": {
+				"create": "Създаване на допълнителна емисия",
+				"update": "Актуализиране на допълнителна емисия"
+			},
+			"admin_user": {
+				"create": "Създаване на администратор",
+				"update": "Актуализиране на администратор"
+			},
+			"payment_system": {
+				"create": "Създаване на система за плащане",
+				"update": "Актуализиране на система за плащане"
+			},
+			"document": {
+				"submit": "Submit document"
+			},
+			"create": "Създаване"
+		},
+		"hints": {
+			"payment_system": {
+				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+			},
+			"profile": {
+				"currency": "Можете да обмените валутата на всеки етап след регистрацията си."
+			},
+			"btc_amount": "Amount may differ due to exchange rate changes"
+		}
+	},
+	"bonus_issues": {
+		"title": "%{bonus} Issue",
+		"stages": {
+			"wait": "Изчакване",
+			"handle_bets": "Активна",
+			"canceled": "Отказване",
+			"expired": "Expired",
+			"wager_done": "Залогът e направен",
+			"lost": "Загуби",
+			"pending": "Pending"
+		}
+	},
+	"freespin_issues": {
+		"title": "%{bonus} Issue",
+		"games": "Games",
+		"activate": "Activate",
+		"stages": {
+			"issued": "Issued",
+			"activated": "Activated",
+			"canceled": "Canceled",
+			"expired": "Expired",
+			"finished": "Played",
+			"pending": "Pending"
+		},
+		"mailer": {
+			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
+			"activation_prompt_html": "To activate freespins go to {{link}}."
+		}
+	},
+	"games": {
+		"title": "Казино игри",
+		"categories": {
+			"all": "All Games",
+			"card": "Игри с карти",
+			"poker": "Покер Игри",
+			"table": "Table Games",
+			"roulette": "Рулетка",
+			"slots": "Слотове",
+			"video_poker": "Видео Покер",
+			"blackjack": "Blackjack",
+			"bingo": "Bingo",
+			"live": "Live",
+			"fruit": "Fruit Slots",
+			"theme": "Theme Slots",
+			"casual": "Casual",
+			"lottery": "Лотария",
+			"keno": "Keno",
+			"progressive": "Progressive",
+			"stat": {
+				"most_popular": "Най-популярни",
+				"new": "Нов",
+				"manual": "Препоръчани",
+				"last_played": "Последно Играна"
+			},
+			"device": {
+				"desktop": "Desktop",
+				"mobile": "Мобилен"
+			}
+		},
+		"providers": {
+			"all": "All Providers",
+			"softswiss": "SoftSwiss",
+			"amatic": "Amatic",
+			"betsoftgaming": "BetSoft Gaming",
+			"casinotechnology": "Casino Technology",
+			"quickfire": "Quickfire",
+			"ezugi": "Ezugi"
+		},
+		"roulette": {
+			"bets": {
+				"calc_by_max_bet": "Изчисли от Max Bet",
+				"inside_bets": "Вътрешни залози",
+				"outside_bets": "Външни залози",
+				"straight_up": "Straight Up",
+				"split": "Split",
+				"street": "Street",
+				"trio": "Trio",
+				"basket": "Basket",
+				"corner": "Corner",
+				"first_four": "First Four",
+				"first_five": "First Five",
+				"line": "Линия",
+				"column": "Колона",
+				"dozen": "дузина",
+				"red": "Червено",
+				"black": "Черно",
+				"odd": "Odd",
+				"even": "Even",
+				"low": "Low",
+				"high": "High"
+			}
+		},
+		"titles": {
+			"baccarat": {
+				"classic": "Baccarat"
+			},
+			"blackjack": {
+				"double_exposure": "Двойна Експозиция",
+				"european": "European Blackjack",
+				"multihand": "Multihand Blackjack",
+				"multihand_pro": "Multihand Blackjack Pro",
+				"pontoon": "Понтон",
+				"surrender": "Blackjack Surrender"
+			},
+			"hi_lo": {
+				"switch": "Hi-Lo Switch"
+			},
+			"casual": {
+				"horse_racing": "Horse Racing",
+				"minesweeper": "Minesweeper",
+				"heads_tails": "Heads and Tails",
+				"scratch_dice": "Scratch Dice"
+			},
+			"poker": {
+				"caribbean": "Caribbean Poker",
+				"casino_holdem": "Casino Hold`em",
+				"let_it_ride": "Let it Ride",
+				"oasis": "Oasis Poker",
+				"texas_holdem": "Texas Hold`em",
+				"trey_poker": "Trey Poker"
+			},
+			"roulette": {
+				"american": "American Roulette",
+				"european": "European Roulette",
+				"french": "French Roulette"
+			},
+			"slots": {
+				"aztec_magic": "Aztec Magic",
+				"book_of_pyramids": "Book of Pyramids",
+				"scroll_of_adventure": "Scroll of Adventure",
+				"brave_viking": "Brave Viking",
+				"cherry_fiesta": "Cherry Fiesta",
+				"crazy_starter": "Crazy Starter",
+				"desert_treasure": "Desert Treasure",
+				"hawaii_cocktails": "Hawaii Cocktails",
+				"horse_slot": "Horse Slot",
+				"lucky_blue": "Lucky Blue",
+				"lucky_lady_clover": "Lucky Lady's Clover",
+				"lucky_sweets": "Lucky Sweets",
+				"platinum_lightning": "Platinum Lightning",
+				"princess_of_sky": "Princess of Sky",
+				"princess_royal": "Princess Royal",
+				"sport_slot": "Sport Slot",
+				"three_lines_slot": "Girl slot",
+				"west_town": "West Town"
+			},
+			"video_poker": {
+				"jacks_or_better": "Jacks or Better",
+				"wild_texas": "Wild Texas",
+				"video_poker": "Japan Poker"
+			}
+		}
+	},
+	"users": {
+		"statuses": {
+			"enabled": "Включено",
+			"disabled": "Изключено",
+			"not_confirmed": "Не е потвърдено",
+			"locked": "Заключен",
+			"normal": "Активна",
+			"manually_suspected": "Manually marked as suspicious"
+		}
+	},
+	"affiliate_bills": {
+		"billed_from": "Обявен От",
+		"billed_to": "фактурирана",
+		"paid": "Платен",
+		"submit": "Изпращане"
+	},
+	"affiliate_links": {
+		"add": "Add Link",
+		"name": {
+			"hint": "Identification for your private use only"
+		},
+		"code": {
+			"hint": "Unique code for affiliate link"
+		}
+	},
+	"affiliate_profiles": {
+		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"commission": "Комисионна",
+		"registration_settings": {
+			"reward": "CPA награда ",
+			"conditions": "Условия",
+			"rule": "if invited user wager > {{amount}} {{currency}}"
+		},
+		"percent_settings": {
+			"one": "%{percent}%",
+			"default": "%{percent}% if generated greater than %{limit} %{currency}",
+			"rule": "%{percent}% if generated less than %{limit} %{currency}",
+			"intermediate_rule": "%{percent}% if generated between %{limits} %{currency}"
+		},
+		"no_default_commissions": "Нямате възложени комисионни. Моля, свържете се с поддръжката.",
+		"active": "Активна",
+		"not_active": "Не е активиран",
+		"affiliate_profiles": "Партньорски Профили",
+		"statistics": {
+			"statistics": "Статистики",
+			"year": "Година",
+			"month": "Месец",
+			"week": "Седмица",
+			"day": "Ден",
+			"since": "От",
+			"to": "до",
+			"submit": "Изпращане",
+			"grouped_by": "Групиране по",
+			"deposits_count": "Депозити",
+			"redirects_count": "Посещения",
+			"registered_users_count": "Регистрирани потребители (с депозити)",
+			"date": "Дата",
+			"invited_users_income": "NGR (нетни приходи от хазарт)",
+			"ggr": "GGR (gross gaming revenue)",
+			"total": "Period Total",
+			"link_name": "Link Name"
+		},
+		"affiliate_profile": {
+			"code": "Код",
+			"url": "Url",
+			"strategy": "Схема на плащане"
+		},
+		"banners": {
+			"banners": "Банери",
+			"sizes": "Sizes",
+			"types_title": "Types",
+			"types": {
+				"image": "Image",
+				"html": "HTML",
+				"swf": "Flash"
+			}
+		},
+		"form": {
+			"name_hint": "Идентификация само за лично ползване"
+		},
+		"add": "Create affiliate profile",
+		"add_link": "Create affiliate profile link",
+		"strategy": "Схема на плащане",
+		"bills": {
+			"bills": "Банкноти",
+			"billed_at": "таксувани в",
+			"amount": "Сума",
+			"paid": "Платен",
+			"not_billed_for_date": "Не са таксували за Датата"
+		}
+	},
+	"games_history": {
+		"title": "Игри",
+		"from": "Oт",
+		"result": "Резултат",
+		"win": "Печеля",
+		"lose": "Загубихте",
+		"game_name": "Игри",
+		"bet": "Залагане"
+	},
+	"bonuses": {
+		"history": {
+			"title": "Бонусите",
+			"wager": "Залог",
+			"valid_until": "Валидна до",
+			"status": "Статус",
+			"from": "Oт"
+		},
+		"promo_form": {
+			"title": "Добави Promo Code",
+			"sub_title": "и получавате бонус"
+		},
+		"bonus_settings": "Бонус настройки",
+		"refuse": "Аз не искам да получавам някакви бонуси"
+	},
+	"freespin_bonuses": {
+		"history": {
+			"title": "Freespins"
+		},
+		"gift": "Gift"
+	},
+	"profiles": {
+		"menu": {
+			"balance": "Баланс",
+			"history": "История",
+			"bonuses": "Бонусите",
+			"affiliate": "Филиал",
+			"profile": "Информация за профила",
+			"documents": "Documents"
+		},
+		"info": {
+			"personal": "Лични"
+		},
+		"index": {
+			"my_account": "My Account",
+			"my_bets": "My Bets",
+			"transaction": "Transaction",
+			"welcome": "Добре дошли",
+			"balance": "Вашият баланс",
+			"account_balance": "Акаунт баланс"
+		},
+		"show": {
+			"edit_profile": "Редактирайте вашия профил",
+			"edit_settings": "Редактиране на настройки",
+			"attach_documents": "Прикрепете документи",
+			"change_credentials": "Change password",
+			"set_email_and_password": "Комплект електронна поща и парола",
+			"create_cashout_request": "Cash out",
+			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
+			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
+			"cashout_request_created": "Cash out заявка е била получена и изисква одобрение от нашият екип. Ние ще обработим заявката ви, колкото ce може по бързо",
+			"cashout_successfully": "Cash out е направена успешно",
+			"cashout_technically_impossible": "We're sorry, but some errors occurred. We're working to fix them in an emergency mode. Please contact support if you have any questions.",
+			"profile_info": {
+				"title": "Информация за профила"
+			},
+			"autoregister_info": {
+				"title": "В момента, можете да влезете в профила си, като посетите вашия личен URL адрес за вход"
+			},
+			"accounts": {
+				"title": "Сметки",
+				"available_to_cashout": " Може да се изтегли",
+				"add_currency": "Добави валута"
+			},
+			"bonuses": {
+				"title": "Бонусите",
+				"no_bonuses": "В момента нямате никакви бонуси.",
+				"cancel_bonus": "Forfeit Bonus",
+				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
+				"bonus_canceled": "Бонусът e отменен",
+				"bonus_not_canceled": "Тoзи бонус не може да бъде отменен"
+			},
+			"coupons": {
+				"activated": "Купон \"{{code}}\" успешно активирана.",
+				"not_activated": "Купон \"{{code}}\". Не може да ce активира. Моля, опитайте отново или се свържете с поддръжката.",
+				"already_activated": "Купон \"{{code}}\" вече е активиран."
+			},
+			"payments": {
+				"title": "Плащания"
+			},
+			"not_finished_games": {
+				"title": "Незавършени игри",
+				"hint": "Можете да продължите да играете, или да отмените тези игри. Отмянатa ще доведе до загуба на залог.",
+				"game_canceled": "Играта е била отменена"
+			},
+			"bets": {
+				"title": "Залози",
+				"all_bets": "Всички залози"
+			},
+			"cashbox": "Cashbox",
+			"payments_history": "Транзакции История",
+			"bets_history": "Залозите История",
+			"bonuses_history": "Бонус История",
+			"freespin_bonuses_history": "Freespins History",
+			"deposit_to_address_hint": "Сложете депозит на този адрес, за да захраните Вашата сметка.",
+			"freespin_bonuses": {
+				"bonus_canceled": "Bonus canceled",
+				"bonus_not_canceled": "Failed to cancel bonus",
+				"bonus_activated": "Bonus was activated",
+				"bonus_not_activated": "Bonus was not activated"
+			}
+		},
+		"edit": {
+			"title": "Редактиране на профила",
+			"info_updated": "информация е била актуализирана",
+			"not_saved": "Промените не сa се запаметили",
+			"settings_section_updated": "Разделът ce актуализира успешно",
+			"valid_data_warning": "Please enter valid contact details in the form below. Make sure it is accurate before saving."
+		}
+	},
+	"payments": {
+		"actions": {
+			"deposit": "Депозит",
+			"cashout": "Cashout",
+			"gift": "Подарък",
+			"chargeback": "Заредете отново",
+			"affiliate_payment": "Филиал Награда"
+		},
+		"statuses": {
+			"success": "Прието",
+			"failure": "Излязло от употреба",
+			"pending": "Изчакване"
+		},
+		"canceled_by_user": "Вие сте се отказали вашата транзакция",
+		"wait_for_confirmation": "Вашето плащане ще бъде потвърденo скоро",
+		"not_performed": "Payment was not performed",
+		"confirmed": "Заплащането е потвърдено",
+		"canceled": "Заплащането не е потвърдено",
+		"make_deposit": "Направи Депозит",
+		"make_cashout": "Заявка за теглене",
+		"confirm_address": "Confirm address",
+		"bonus_code_show": "I have a Bonus Code",
+		"bonus_code_hide": "Hide Bonus Code",
+		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
+		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
+		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+		"invalid_profile_message": "За да можете да теглите, трябва да попълните необходимите полета във вашия профил.",
+		"try_again": "Tранзакция не може да започне поради проблеми с връзката. Ако проблемът продължава, моля свържете се с нашата поддръжка.",
+		"select_currency": "Изберете баланс валута",
+		"select_currency_hint": {
+			"deposit": "Бих искал да захранвам баланса си в",
+			"cashout": "Бих искал да ги изтеглия"
+		},
+		"select_payment_method": "Изберете метод на плащане",
+		"current_balance": {
+			"deposit": "Текущият ви баланс е: {{money}}.",
+			"cashout": "Предлага се cashout:% {пари}. Моля, консултирайте се с% {баланс връзка} страница за подробности не работи."
+		},
+		"payment_methods": {
+			"empty": "Не са налични методитe за плащане на тази валута.",
+			"pay_with_cubits": "Pay with Cubits"
+		},
+		"limits": {
+			"currency": "Payment {{currency}}",
+			"min": "min {{min}}",
+			"max": "max {{max}}",
+			"fee": "fee {{fee}}"
+		},
+		"processing_time": {
+			"instantly": "Instantly",
+			"range": "%{min}-%{max} banking days"
+		}
+	},
+	"security_check": {
+		"user_is_suspicious": "Потребителят е подозрителен",
+		"user_not_suspicious": "Потребителят е подозрителен",
+		"user_has_suspicious_games": "Потребителят има съмнителни игри",
+		"cashout_amount": "Сума надвишава допустимата максимална",
+		"cashout_wins": "Сумата надвишава лимита на потребителя",
+		"casino_cashout": "Сумата надвишава дневеният лимит казиното",
+		"crypto_address_confirmed": "Address was not used before",
+		"manual": {
+			"title": "User was manually marked as suspicious"
+		},
+		"chargeback": {
+			"title": "User made chargeback"
+		},
+		"duplicate": {
+			"title": "User has duplicates",
+			"reason_html": "User duplicates {{user}}"
+		},
+		"balance_sum": {
+			"title": "Сумата на баланса не съответства на сумата, изчислена въз основа на статистиката на игри сделките",
+			"text": "Баланса на играча не съвпада с очакваният баланс"
+		},
+		"balance_transaction": {
+			"title": "Печелившата сума е твърде голяма за последните 24 часа",
+			"reason_html": "Suspicious wins in {{table}} during {{period}} by {{player}}"
+		},
+		"wager_done": {
+			"title": "User done wager bonus requirement"
+		},
+		"cubits_payment_difference": {
+			"title": "Cumulative cubits exchange rate losses are too big"
+		}
+	},
+	"notification": {
+		"contact_form": {
+			"sender_notice": "Вашето съобщение беше изпратено успешно.",
+			"mail_subject": "Съобщението е получено чрез форма на контакта"
+		},
+		"payment_confirmation": {
+			"mail_subject": "Платежен код за потвърждение"
+		},
+		"daily_stats": {
+			"mail_subject": "Daily {{currency}} statistics for {{date}}"
+		},
+		"report": {
+			"day_mail_subject": "Ежедневни статистики",
+			"week_mail_subject": "Седмични статистики",
+			"day_mail_title": "Daily {{currency}} statistics for {{period}}",
+			"week_mail_title": "Weekly {{currency}} statistics for {{period}}",
+			"fields": {
+				"net_revenue": "Нетни Приходи от Игри (NGR)",
+				"gross_win": "Бруто печалба",
+				"bets": "Общо Залози",
+				"wins": "Обща Печалба",
+				"payout": "Payout (in %)",
+				"game_rounds": "Етапи на играта",
+				"new_registrations": "Нови регистрации с депозит",
+				"players_made_deposits": "Играчите направиха депозити",
+				"total_users": "Общо потребители",
+				"deposits_sum": "Сумата на депозитите",
+				"deposits_avg": "Deposits Average",
+				"cashouts_sum": "Cash out Sum",
+				"cashouts_avg": "Cashouts Average"
+			},
+			"previous": "Previous {{type}}"
+		}
+	},
+	"user_mailer": {
+		"auth": {
+			"welcome": "Welcome {{name}}!",
+			"hello": "Hello {{name}}!",
+			"confirmation": {
+				"you_can_confirm_email_by_pressing_next_link": "Можете да потвърдите вашия имейл акаунт чрез линка по-долу:",
+				"confirm_my_account": "Потвърдете моята сметка"
+			},
+			"reset_password": {
+				"change_my_password": "Смяна на парола",
+				"link_to_change_password_are_requested": "Някой е поискал линк за смяна на паролата ви, и можете да направите това чрез линка по-долу.",
+				"you_can_ignore_this_mail": "Ако не сте поискали това, моля игнорирайте този имейл.",
+				"your_password_didnt_changed_yet": "Вашата парола няма да се промени, докато не влезете в линка по-горе и да се създаде нова парола."
+			},
+			"unlock": {
+				"unlock_my_account": "Отключване на моя акаунт",
+				"your_account_has_been_locked": "Профилът ви е заключен поради прекомерно неуспешни опити за влизане.",
+				"click_to_unlock": "Кликнете върху линка по-долу, за да отключите профила си:"
+			}
+		},
+		"deposit": {
+			"deposit_made": "Вашият депозит е получен"
+		},
+		"cashout": {
+			"cashout_approved": "Заявката за cash out беше одобрена"
+		},
+		"not_enough_money_for_cashout": {
+			"subject": "Недостатъчен баланс по сметката за cash out",
+			"body": "Вашият cash out е невъзможен, тъй като салдото по сметката става. Моля, изпратете ново cash out искане според текущатият баланс."
+		},
+		"address_confirmation_required": {
+			"subject": "Cashout address confirmation required"
+		}
+	},
+	"activemodel": {
+		"errors": {
+			"models": {
+				"affiliate_forms/assign_commission": {
+					"attributes": {
+						"from_date": {
+							"must_be_in_future": "must be in future"
+						},
+						"to_date": {
+							"must_be_in_future": "must be in future",
+							"must_be_less_then_from": "must be less then From"
+						}
+					}
+				},
+				"payment_system/cashout_form/wirecard": {
+					"attributes": {
+						"credit_card_number": {
+							"invalid": "is not a valid credit card number"
+						}
+					}
+				},
+				"casino_cash_balance/balance_options": {
+					"attributes": {
+						"base": {
+							"rules_error": "You have errors in rules"
+						}
+					}
+				},
+				"commissions/registration_settings": {
+					"attributes": {
+						"base": {
+							"rules_error": "You have errors in rules"
+						}
+					}
+				},
+				"commissions/registration_settings_rule": {
+					"attributes": {
+						"base": {
+							"uniq": "should be unique"
+						}
+					}
+				}
+			}
+		},
+		"attributes": {
+			"payment_system/bank_transfer/access_data": {
+				"deposit_snippet_name": "Deposit Snippet Name",
+				"cashout_snippet_name": "Cashout Snippet Name"
+			},
+			"affiliate_forms/assign_commission": {
+				"from_date": "From",
+				"to_date": "To"
+			},
+			"newsletters_filter": {
+				"tag": "User tag",
+				"locale": "Locale",
+				"type": "Тип",
+				"deposits_number_equals": "Депозит",
+				"last_deposit_at": "Последен депозит",
+				"registered_at": "Регистриран",
+				"payments_currency": "Плащания валута"
+			}
+		}
+	},
+	"retention_mailer": {
+		"welcome": "Добре дошли",
+		"no_deposit": "Вие не сте направили депозит",
+		"nth_deposit": "Чакаме ви депозит",
+		"welcome_promo": "Посетете ни отново"
+	},
+	"jackpot": {
+		"jackpots": "Jackpots"
+	},
+	"game_categories": {
+		"favorite": "My favorites",
+		"add_to_favorites": "Add To Favorites",
+		"remove_from_favorites": "Remove From Favorites",
+		"favorites": {
+			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+		}
+	},
+	"betsoftgaming_api": {
+		"betsoftgaming": "Betsoftgaming"
+	},
+	"backend": {
+		"menu": {
+			"bitcoin_addresses": "Bitcoin Addresses"
+		},
+		"bitcoin_wallets": {
+			"filters": {
+				"all": "Всички",
+				"available": "На линия",
+				"occupied": "Зает"
+			}
+		},
+		"bitcoin": {
+			"add_new_addresses": "Качване на файл или поставете нови адреси",
+			"upload_new_addresses": "Добавяне на адреси",
+			"cashout": "Cashout",
+			"deposit_to_wallet": "Deposit to Wallet",
+			"deposit_currency_to_wallet": "Deposit {{currency}} to Wallet",
+			"enough_available_addresses_left": "Left {{count}} available addresses",
+			"not_enough_available_addresses_left": "Only 1 available bitcoin address left. You can add more addresses {{link}}.",
+			"here": "тук",
+			"current_wallet_balance": "текущия портфейл баланс:",
+			"total_balance": "Total: {{amount}}",
+			"available_balance": "Spendable: {{amount}}",
+			"transfer_to": "Повишаване",
+			"increase_system_balance": "За да се увеличи баланса на портфейла система моля изпратете bitcoins към следващия адрес:"
+		}
+	},
+	"bitcoin_wallets": {
+		"address_sources": {
+			"imported": "From pool",
+			"generated": "Generated",
+			"cubits_invoice": "Cubits Invoice",
+			"cubits_channel": "Cubits Channel"
+		}
+	},
+	"sidebar": {
+		"available_addresses": "Налични адреси",
+		"wallet_balance": "Портфейла баланс"
+	},
+	"casinotechnology_api": {
+		"casinotechnology": "CasinoTechnology",
+		"timeout_message": "Game provider's server has not responded. Please retry later."
+	},
+	"ezugi_api": {
+		"ezugi": "Ezugi"
+	},
+	"quickfire_api": {
+		"quickfire": "QuickFire"
+	}
+}

@@ -1,0 +1,6 @@
+<div ng-class="{'checkbox': data.localData.type =='checkbox', 'form-group': data.localData.type !='checkbox', 'has-error':errors}">
+
+    <!--element-->
+
+    <div class="error_msg" ng-repeat="(error_key, error_value) in errors" translate="{{error_value}}"></div>
+</div>

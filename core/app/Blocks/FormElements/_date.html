@@ -1,0 +1,17 @@
+<label class="control-label" for="{{name}}"><span translate="{{label}}"></span></label>
+<abbr  ng-show="data.required" title="required">*</abbr>
+
+<div class="row" id="{{name}}">
+	<div class="col-md-6">
+		<p class="input-group">
+			<input type="text"
+				   class="form-control"
+				   datepicker-options="{{datepickerOptions}}"
+				   show-button-bar="false"
+				   datepicker-popup="dd.MM.yyyy"
+				   ng-model="value"
+				   is-open="opened"
+				   ng-click="open($event)"/>
+		</p>
+	</div>
+</div>

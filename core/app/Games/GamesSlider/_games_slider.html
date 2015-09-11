@@ -1,0 +1,20 @@
+<span>
+<ul class="footer__subnav" ng-controller="Game"
+    data-uix-bxslider="
+        mode: 'horizontal',
+        pager: false,
+        controls: true,
+        minSlides: 1,
+        maxSlides:20,
+        slideWidth: 200,
+        slideMargin:20,
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        moveSlides: 4"
+        >
+    <li class="footer__subnav-item" ng-repeat="game in games | gameDevice: device | gameCurrency : data.user.currency | gameOrder: 'popularity' | limitTo: 20 " data-notify-when-repeat-finished>
+        <ng-include src="'/app/Games/GamesSlider/_game_slider_item.html'"></ng-include>
+    </li>
+
+</ul>
+</span>

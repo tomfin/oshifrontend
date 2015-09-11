@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 translate="frontend.links.sign_in" class="block-header"></h1>
+    <div class="block-content-form">
+        <div class="form-container">
+            <form ng-submit="login.submit()" name="loginForm" class="col-xs-6 col-xs-offset-3">
+                <div class="form-group" ng-class="{'has-error':login.errors.login}">
+                    <label translate="activerecord.attributes.user.email" class="control-label" for="email"></label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="{{'frontend.placeholders.email' | translate}}" ng-model="login.data.user.email" auto-fill-sync />
+                    <span class="help-inline" ng-repeat="(error_key, error_value) in login.errors.email" translate="{{error_value}}"></span>
+                </div>
+                <div class="form-group" ng-class="{'has-error':login.errors.password}">
+                    <label translate="activerecord.attributes.user.password" class="control-label" for="password"></label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="{{'frontend.placeholders.password' | translate}}" ng-model="login.data.user.password" auto-fill-sync />
+                    <span ng-repeat="(error_key, error_value) in login.errors.password" class="help-inline" translate="{{error_value}}"></span>
+                </div>
+                <div class="form-group">
+                    <a href="" ui-sref="users.password({action: 'new'})" translate="frontend.links.forgot_password"></a>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-3">
+                        <input value="{{'frontend.links.login' | translate}}" type="submit" class="btn btn-success btn-flat">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

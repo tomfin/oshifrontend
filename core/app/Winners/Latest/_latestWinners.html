@@ -1,0 +1,16 @@
+<div class="winners_list">
+
+    <div class="winner_item" ng-repeat="game in games_winners | limitTo: 6">
+        <a href="{{getUrl(game.game_identifier)}}" class="winner_item_img img_box">
+            <img ng-src="{{game.game_table_image_path}}" alt="{{game.game_identifier}}" class="img">
+        </a>
+        <div class="winner_item_info">
+            <a ng-href="{{getUrl(game.game_identifier)}}" ng-bind="game.game_title"></a>
+            <div class="descr">
+                <span class="val" ng-bind="game.humanized_win"></span>
+                <span class="user" ng-bind="game.nickname"></span>
+            </div>
+        </div>
+    </div>
+
+</div>

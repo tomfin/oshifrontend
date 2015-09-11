@@ -1,0 +1,24 @@
+.bx-wrapper {
+    border: 0;
+    margin: 0;
+
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: none;
+}
+
+.bx-viewport {
+    margin-top: 0;
+}
+
+.bx-wrapper .bx-loading {
+    background: url('/resources/images/bxSlider/bx_loader.gif') center center no-repeat #e7f2ff;
+}
+
+.bx-wrapper .bx-prev {
+    background: url('/resources/images/bxSlider/controls.png') no-repeat 0 -32px;
+}
+.bx-wrapper .bx-next {
+    background: url('/resources/images/bxSlider/controls.png') no-repeat -43px -32px;
+}

@@ -1,0 +1,9 @@
+<span class="auth-block">
+        <a ng-controller="AuthModal" access-level="accessLevels.anon" ng-click="auth_modal.showRegistration()">
+            <button class="">{{'frontend.links.sign_up' | translate}}</button>
+        </a>
+
+        <a access-level="accessLevels.user" target="_self" ng-controller="ProfileRoutes" href="{{profile.cashout[currentCurrency]}}">
+            <button class="">{{'frontend.links.withdraw' | translate}}</button>
+        </a>
+</span>

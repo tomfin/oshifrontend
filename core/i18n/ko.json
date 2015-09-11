@@ -1,0 +1,1939 @@
+{
+	"errors": {
+		"messages": {
+			"taken_in_past": "이미 사용중입니다.",
+			"equal_to_current_password": "현재의 비밀번호와 달라야 됩니다!",
+			"already_confirmed": "(은)는 이미 인증되었습니다. 다시 로그인해 보세요",
+			"confirmation_period_expired": "%{period} 이내에 이메일 인증을 해야 합니다. 새로 요청해 주세요",
+			"expired": "(이)가 만료되었습니다 새로 요청해 주세요.",
+			"not_found": "찾을 수 없습니다.",
+			"not_locked": "(은)는 잠기지 않았습니다.",
+			"not_saved": "%{count}개의 오류로 인해 %{resource} 저장이 금지 되었습니다."
+		}
+	},
+	"devise": {
+		"invalid_captcha": "CAPTCHA가 잘못됩니다.",
+		"password_expired": {
+			"submit": "비밀번호 바꾸기",
+			"updated": "새로운 비밀번호를 저장했습니다",
+			"change_required": "현재 비밀번호가 만료되었습니다. 지금 비밀번호를 바꾸십시오.",
+			"forgot_password_message": "비밀법호를 잊어버리면 \"로그아웃\"을 클릭하고 비밀번호를 다시 설정하십시오."
+		},
+		"failure": {
+			"session_limited": "당신의 로그인 정보를 다른 브라우저에서 사용했습니다. 이 브라우저에서 계속하기위해 다시 사인인해 주십시오.",
+			"expired": "비활동 때문에 계정은 만기가 되었습니다. 관리자한테 연락해주십시오.",
+			"disabled": "계정이 사용 금지되었습니다",
+			"not_allowed_ip": "이런 사용자가 당신의 IP를 사용하면 안됩니다.",
+			"already_authenticated": "이미 로그인되어 있습니다.",
+			"inactive": "계정이 아직 활성화되지 않았습니다.",
+			"invalid": "이메일 혹은 비밀번호가 틀립니다.",
+			"last_attempt": "이번 로그인 시도를 실패하면 계정이 잠깁니다.",
+			"locked": "계정이 잠겨있습니다.",
+			"not_found_in_database": "이메일 주소나 비밀번호가 틀립니다.",
+			"timeout": "세션이 만료되었습니다. 계속하려면 다시 로그인해야 합니다.",
+			"unauthenticated": "계속하려면 로그인하거나 가입해야 합니다.",
+			"unconfirmed": "계속하기 전에 이메일 주소를 인증해야 합니다."
+		},
+		"confirmations": {
+			"confirmed": "이메일 주소가 성공적으로 인증되었습니다.",
+			"send_instructions": "이메일로 이메일 주소 인증 지침이 전송되었습니다.",
+			"send_paranoid_instructions": "이메일 주소가 이미 등록되어 있으며, 이메일 주소 인증 지침 메일을 잠시 후 받을 수 있습니다."
+		},
+		"mailer": {
+			"confirmation_instructions": {
+				"subject": "이메일 인증 지침"
+			},
+			"reset_password_instructions": {
+				"subject": "비밀번호 재설정 지침"
+			},
+			"unlock_instructions": {
+				"subject": "잠금 해제 지침"
+			}
+		},
+		"omniauth_callbacks": {
+			"failure": "%{reason}(으)로 인하여 %{kind}(으)로부터 인증받지 못했습니다.",
+			"success": "%{kind} 계정으로부터 인증되었습니다."
+		},
+		"passwords": {
+			"no_token": "비밀번호 재설정 이메일을 거치지 않고 이 페이지에 접근할 수 없습니다. 비밀번호 재설정 이메일에서 오셨다면, 주소가 제대로 되었는지 확인해 주세요.",
+			"send_instructions": "잠시후에 비밀번호 재설정 지침 메일을 받을 수 있습니다.",
+			"send_paranoid_instructions": "이메일이 데이터베이스에 존재할 경우, 몇 분 안에 비밀번호 재설정 주소를 이메일로 받으실 수 있습니다.",
+			"updated": "성공적으로 비밀번호를 변경했습니다. 로그인 되었습니다.",
+			"updated_not_active": "비밀번호가 성공적으로 변경되었습니다."
+		},
+		"registrations": {
+			"destroyed": "안녕! 계정이 성공적으로 탈퇴되었습니다. 다시 볼 수 있기 바랍니다.",
+			"signed_up": "환영합니다! 성공적으로 로그인되었습니다.",
+			"signed_up_but_inactive": "성공적으로 가입되었지만, 아직 계정이 활성화되어 있지 않아 로그인 할 수 없습니다..",
+			"signed_up_but_locked": "성공적으로 가입되었지만, 계정이 잠겨있어 로그인 할 수 없습니다.",
+			"signed_up_but_unconfirmed": "인증 주소가 포함된 메시지를 이메일 주소로 보냈습니다. 계정을 활성화하기 위해 메일을 확인하세요.",
+			"update_needs_confirmation": "계정이 성공적으로 수정되었지만, 새로운 이메일 주소를 확인해야 합니다. 이메일로 전송된 이메일 인증 주소를 클릭하여 새로운 이메일 주소를 인증해 주세요.",
+			"updated": "계정이 성공적으로 수정되었습니다."
+		},
+		"sessions": {
+			"already_signed_out": "성공적으로 로그아웃했습니다.",
+			"signed_in": "성공적으로 로그인했습니다.",
+			"signed_out": "성공적으로 로그아웃했습니다."
+		},
+		"unlocks": {
+			"send_instructions": "잠시 후 이메일로 계정 잠금 해제 지침을 받아보실 수 있습니다.",
+			"send_paranoid_instructions": "계정이 존재하면, 잠시 후 이메일로 계정 잠금 해제 지침을 받아보실 수 있습니다.",
+			"unlocked": "계정이 성공적으로 잠금 해제되었습니다. 로그인하여 계속해 주세요."
+		}
+	},
+	"activerecord": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "단편이 들어 있을 수 없습니다.",
+							"has_query_parameter": "쿼리 매개 변수가 들어 있을 수 없습니다.",
+							"invalid_uri": "유효한 URI이 필요합니다.",
+							"relative_uri": "절대 URL이 필요합니다"
+						}
+					}
+				},
+				"user": {
+					"attributes": {
+						"password": {
+							"wrong_password": "이메일이나 비밀번호가 유효하지 않습니다"
+						}
+					}
+				},
+				"profile": {
+					"attributes": {
+						"age": {
+							"greater_than_or_equal_to": "확인 {{count}}+"
+						}
+					}
+				},
+				"payment": {
+					"not_enough_money": "돈이 부족합니다",
+					"not_enough_unlocked_money": "왕성한 보너스 때문에 자금이 잠겨있습니다. 캐시아웃하기 위해 보너스 도박 필요조건을 충족시키십시오.",
+					"unresolved_cashout_request_presents": "당신의 이전 캐시아웃 신청을 아직 처리하지 않았습니다. 우리는 최대한 빨리 그 일을 진행하려고 합니다. 캐시아웃을 더 신청하기 전에 이전 캐시아웃 신청을 기다려주집지오.",
+					"pending_deposit_presents": "마지막 예금 확인을 기다리고 있습니다",
+					"commission_is_greater_that_amount": "수수료가 금액 보다 더 높습니다",
+					"cashout_only_to_main_address": "%{address}를 주된 비트코인 주소로 설정했는데 이 주소에만 캐시아웃할 수 있습니다",
+					"not_used_account": "Account you are going to cashout was not used before.",
+					"debt_to_another_payment_system": "여기에 미납된 부채가 있습니다. 먼저 부채를 갚아주십시오.",
+					"debt_to_another_payment_system_account": "다른 께정에 미납된 부채가 있습니다 ({{account}}) ",
+					"more_debts_exist": "다른 계정에 하고 지불 시스템에 부채가 있습니다. 개시아웃하기 전에 빚을 깊어야 합니다. 현재 지불 시스템에 부채가 {{debt_amount}}입니다."
+				},
+				"commission_connection": {
+					"not_overlap": "같은 수수료 정도가 있는 관련성과 겹치면 안됩니다.",
+					"future_from_time": "미래 해야 합니다",
+					"greater_than_from_time": "현재보다 더 많습니다",
+					"strategies_equivalence": "어필리에이트 프로파일과 같은 지불 기법 사용하야 됩니다.",
+					"greater_than_now": "현재 보다 더 많습니다."
+				},
+				"commission": {
+					"wrong_strategy_settings": "지불 기법의 설정에 오류가 나왔습니다."
+				},
+				"bonus_issue": {
+					"not_enough_to_lock": "사용자의 잔고 보다 더 많습니다"
+				},
+				"external_bet": {
+					"rollback_expired": "결과를 입력할때 부터 24 시간이 흐르면 롤백될 수 없습니다. "
+				},
+				"notification/subscription": {
+					"invalid_types": "통지만 구독할 수 있습니다"
+				}
+			}
+		},
+		"models": {
+			"account": "계정 계정",
+			"admin_user": "관리자 관리자",
+			"affiliate_profile": "아필리에이트 프로필 아필리에이트 프로필",
+			"bet": "베팅 베팅",
+			"bonus": "보너스 보너스",
+			"bonus_issue": "보너스 발행  보너스 발행",
+			"document": "문서 문서",
+			"event": "이벤트 이벤트",
+			"external_bet": "외부 베팅 외부 베팅",
+			"game": "게임 게임",
+			"game_category": "Game Category",
+			"game_step": "단계 단계 ",
+			"game_table": "게임 테이블  게임 테이블들",
+			"payment": "지불 지불",
+			"payment_system": "지불 체계 지불 체례",
+			"profile": " 프로파일 프로파일",
+			"reports/base_collection/result_record": "결과 결과",
+			"suspicion": "의혹 의혹",
+			"user": "사용자 사용자",
+			"player": "플레이어 플레이어",
+			"retention_email": "이메일 기억 이메일 기억"
+		},
+		"attributes": {
+			"balance_correction": {
+				"action": "Action",
+				"amount": "Amount",
+				"account": "Account",
+				"comment": "Comment"
+			},
+			"game_category": {
+				"name": "이름",
+				"disabled": "사용중지",
+				"created_at": "만든 시각",
+				"games": "게임",
+				"position": "직위"
+			},
+			"notification": {
+				"type": "종류",
+				"user": "사용자",
+				"admin_user": "관리자",
+				"target": "대상",
+				"target_type": "대상 유형"
+			},
+			"affiliate_link": {
+				"name": "이름",
+				"code": "코드"
+			},
+			"affiliate_profile": {
+				"name": "제목",
+				"strategy": "지불 제도",
+				"no_debt": "캐리오버 없음",
+				"links": "Links",
+				"active": "사용중"
+			},
+			"account": {
+				"currency": "통화",
+				"amount": "금액",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"active_admin/comment": {
+				"author": "보낸이",
+				"body": "본문",
+				"resource": "자원"
+			},
+			"admin_user": {
+				"email": "이메일",
+				"encrypted_password": "비밀번호를 암호화 해서 기록함",
+				"password": "비밀번호",
+				"password_confirmation": "비밀번호 확인",
+				"current_password": "현재 비밀번호",
+				"remember_me": "기억하기",
+				"reset_password_token": "비밀번호 재설정 토큰 ",
+				"reset_password_sent_at": "비밀번호 재설정한 시각",
+				"remember_created_at": "메모 만든 시각",
+				"sign_in_count": "사인인 수",
+				"current_sign_in_at": "현재 사인인한 시각",
+				"last_sign_in_at": "마지막 사인인한 시각",
+				"current_sign_in_ip": "현재 사인인의 IP",
+				"last_sign_in_ip": "마지막 사인인한 IP",
+				"failed_attempts": "실패한 시도",
+				"unlock_token": "언록 토큰",
+				"locked_at": "잠근 시각",
+				"password_changed_at": "비밀번호 바꾼 시각",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각",
+				"disabled": "사용중지",
+				"allowed_ips_string": "사용할 수 있는 IP",
+				"roles_names": "역할 "
+			},
+			"balance_transaction": {
+				"reference": "참조",
+				"amount": "금액",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"bet": {
+				"bet_type": "베팅 유형",
+				"bet_amount": "베팅 금액",
+				"win_amount": "승리 금액",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"bonus": {
+				"strategy": "종류",
+				"title": "제목",
+				"description": "설명",
+				"percentage": "퍼센트 비율",
+				"currency": "통화",
+				"amount": "금액",
+				"percent": "퍼센트",
+				"max_amount": "최대 금액",
+				"code": "코드",
+				"extra_info": "추가 정보",
+				"wager_multiplier": "웨이저 멀티플라이어",
+				"wagering_epsilon": "웨이저 엡실론",
+				"cashable": "캐시아웃할 수 있는",
+				"sticky": "Sticky",
+				"enabled": "사용중",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"bonus_issue": {
+				"strategy": "방식",
+				"stage": "스테이지",
+				"amount": "금액",
+				"amount_wager_requirement": "금액 웨이저 필요",
+				"amount_wager": "금액 웨이저 ",
+				"wagered_percent": "웨이저 퍼센트",
+				"amount_locked": "금액이 잠겨 있습니다.",
+				"valid_until": "유효 기간 ",
+				"extra_info": "추가 정보",
+				"cashable": "캐기아웃할 수 있는",
+				"sticky": "Sticky",
+				"wager": "웨이저",
+				"created_at": "받은 날짜",
+				"issued_at": "발급 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"freespin_issue": {
+				"stage": "Stage",
+				"amount": "Amount",
+				"freespins_total": "Freespins Awarded",
+				"activatable_until": "Expiry date",
+				"win_amount_cents": "Alredy won",
+				"valid_until": "Expiry date",
+				"extra": "Extra info",
+				"external_id": "External ID",
+				"created_at": "Date received",
+				"issued_at": "Issued at",
+				"updated_at": "Updated at"
+			},
+			"bonus_strategy/feature/payment_system": {
+				"ids_list": "지불 기법"
+			},
+			"contact": {
+				"email": "이메일",
+				"content": "내용"
+			},
+			"document": {
+				"approved": "입증됨",
+				"description": "설명",
+				"removed": "제거됨",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각",
+				"attachment": "첨부",
+				"attachment_file_name": "첨부 파일 이름",
+				"attachment_content_type": "첨부 내용 종류",
+				"attachment_file_size": "첨부 파일 크기",
+				"attachment_updated_at": "추가한 시각"
+			},
+			"event": {
+				"subject": "제목",
+				"event_type": "이벤트 형식",
+				"ip": "IP",
+				"country": "국가",
+				"coordinates": "좌표",
+				"latitude": "위도",
+				"longitude": "경도",
+				"address": "주소",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"external_bet": {
+				"id": "로컬 ID ",
+				"account_id": "계정 ID",
+				"account": "계정",
+				"external_id": "외부 ID",
+				"bet_amount": "베팅",
+				"win_amount": "승리",
+				"oauth_application": "OAuth 응용 프로그램",
+				"oauth_application_id": "OAuth 응용 프로그램 ID"
+			},
+			"game": {
+				"data": "자료",
+				"finished_at": "끝난 시각",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"game_step": {
+				"state": "상태",
+				"action": "행동",
+				"data": "자료",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"game_table": {
+				"base_type": "입력 데이터 형식",
+				"variation": "변화",
+				"identifier": "식별 이름",
+				"title": "제목",
+				"client": "클라이언트",
+				"provider": "Game provider",
+				"description": "설명",
+				"active": "사용중",
+				"currency": "통화",
+				"secondary_currency": "추가적인 통화",
+				"amount_win": "총 베팅",
+				"amount_loss": "총 승리",
+				"chips": "칩스",
+				"default_chip": "기본 칩",
+				"min_bet": "베팅의 최소값",
+				"max_bet": "베팅의 최대값",
+				"paytable": "페이테이블",
+				"options": "옵션",
+				"bet_playthrough_percent": "베팅 playthrough 퍼센트",
+				"line_bets": "라인 베팅",
+				"archived_at": "기록된 시각",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"modification": {
+				"subject": "제목",
+				"entity": "엔티티",
+				"data": "자료",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"paritcipation": {
+				"active": "사용중",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"payment": {
+				"amount": "금액",
+				"commission_amount": "수수료",
+				"amount_after_commission": "금액 (수수료를 덜린 후에)",
+				"currency": "통화",
+				"action": "행동",
+				"source": "근원",
+				"extra": "추가",
+				"success": "성공!",
+				"finished_at": "끝난 시각",
+				"created_at": "만든 시간",
+				"updated_at": "업데이트 시각",
+				"recipient_address": "주소",
+				"manual_confirmation_code": "확인 코드",
+				"source_id": "Payment Code"
+			},
+			"payment_system": {
+				"system_name": "시스템 이름",
+				"disabled": "사용중지",
+				"currency_options": "통화 옵션",
+				"test_mode": "테스트 모드",
+				"data": "자료",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"payment_system_debt": {
+				"system_name": "지불 체계",
+				"system_account": "지불체계의 계정",
+				"amount_cents": "부채",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"profile_setting": {
+				"name": "이름",
+				"enabled": "사용중",
+				"required": "요구됨",
+				"show_at_registration": "가입할때 보여 주기",
+				"show_at_edition": "에딧도드에 보여 주기",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각"
+			},
+			"suspicion": {
+				"suspect": "수상쩍은",
+				"discarded": "버림",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각",
+				"related_suspect": "미심한 사용자에 관련됩니다",
+				"data": "자료",
+				"failed_check": "확인에 실패했음"
+			},
+			"user": {
+				"email": "이메일",
+				"encrypted_password": "비밀번호를 암호화 해서 기록함",
+				"password": "비밀번호",
+				"password_confirmation": "비밀번호 확인",
+				"current_password": "현재 비밀번호",
+				"remember_me": "기억하기",
+				"reset_password_token": " 비밀번호 재설정 토큰",
+				"reset_password_sent_at": "재설정한 비밀번호 보낸 시각",
+				"remember_created_at": "메모 만든 시각",
+				"sign_in_count": "사인인 수",
+				"current_sign_in_at": "현재 사인인한 시각",
+				"last_sign_in_at": "마지막 사인인한 시각",
+				"current_sign_in_ip": "현재 사인인의 IP",
+				"last_sign_in_ip": "마지막 사인인의 IP",
+				"confirmation_token": "확인 토큰",
+				"confirmed_at": "확인한 시각",
+				"confirmation_sent_at": "확인을 보낸 시각",
+				"unconfirmed_email": "확인되지 않은 이메일 주소",
+				"failed_attempts": "실패한 시도",
+				"unlock_token": "언락 토큰",
+				"locked_at": " 잠근 시각",
+				"authentication_token": "인증 토큰",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각",
+				"disabled": "사용중지",
+				"allowed_ips_string": "사용할 수 있는 IP",
+				"guest": "손님",
+				"main_bitcoin_address": "주된 비트코인 주소",
+				"bonus_code": "Bonus Code"
+			},
+			"profile": {
+				"full_name": "전체 이름",
+				"first_name": "이름",
+				"last_name": "성",
+				"title": "칭호",
+				"nickname": "닉네임",
+				"date_of_birth": "생년월일",
+				"personal_id_number": "개인 식별 번호",
+				"gender": "성별",
+				"country": "국가",
+				"city": "도시",
+				"place_of_birth": "출생지",
+				"address": "주소",
+				"address2": "추가 주소",
+				"postal_code": "우편번호",
+				"time_zone": "시간대",
+				"mobile_phone": "휴대 전화번호",
+				"phone": "전화번호",
+				"skype": "스카이프",
+				"send_payment_confirmation": "지불 확인 보내기",
+				"receive_newsletters": "회보 받기",
+				"receive_promos": "프로모 받기",
+				"never_call": "호출 제하기",
+				"currency": "통화",
+				"language": "언어",
+				"security_question": "보안 질문",
+				"security_answer": "보안 대답",
+				"age_acceptance": "나이 확인했음",
+				"terms_acceptance": "계약조건을 동의했음",
+				"bonus_issuance_policy": "보너스 보험 증권",
+				"allowed_ips_string": "사용할 수 있는 IP"
+			},
+			"profile/admin": {
+				"full_name": "전체 이름",
+				"first_name": "이름",
+				"last_name": "성",
+				"title": " 칭호",
+				"nickname": "닉네임",
+				"date_of_birth": "생년월일",
+				"personal_id_number": "개인 식별 번호",
+				"gender": "성별",
+				"country": "국가",
+				"city": "도시",
+				"place_of_birth": "출생지",
+				"address": "주소",
+				"address2": "추가 주소",
+				"postal_code": "우편번호",
+				"time_zone": "시간대",
+				"mobile_phone": "휴대 전화번호",
+				"phone": "전화번호",
+				"skype": "스카이프",
+				"send_payment_confirmation": "지불 확인 보내기",
+				"receive_newsletters": "회보 받기",
+				"receive_promos": "프로모 받기",
+				"never_call": "호출 제하기",
+				"currency": "통화",
+				"language": "언어",
+				"security_question": "보안 질문",
+				"security_answer": "보안 대답",
+				"age_acceptance": "당신은 {{age}} 새 이상이  된다고  확인해 주십시오.",
+				"terms_acceptance": "이용약관에 동의합니다",
+				"bonus_issuance_policy": "보너스 보험 증권",
+				"allowed_ips_string": "사용할 수 있는 IP"
+			},
+			"profile/user": {
+				"full_name": "전체 이름",
+				"first_name": "이름",
+				"last_name": "성",
+				"title": "칭호",
+				"nickname": "닉네임",
+				"date_of_birth": "생년월일",
+				"personal_id_number": "개인 식별 번호",
+				"gender": "성별",
+				"country": "국가",
+				"city": "도시",
+				"place_of_birth": "출생지",
+				"address": "주소",
+				"address2": "추가 주소",
+				"postal_code": "우편번호",
+				"time_zone": "시간대",
+				"mobile_phone": "휴대 전화번호",
+				"phone": "전화번호",
+				"skype": "스카이프",
+				"send_payment_confirmation": "지불 확인 보내기",
+				"receive_newsletters": "회보 받기",
+				"receive_promos": "프로모 받기",
+				"never_call": "호출 제하기",
+				"currency": "통화",
+				"language": "언어",
+				"security_question": "보안 질문",
+				"security_answer": "보안 대답",
+				"age_acceptance": "제가 {{age}}새 이상이 된다고 확인합니다.",
+				"terms_acceptance": "%{text} 다는 것에 동의합니다",
+				"bonus_issuance_policy": "보너스 보험 증권",
+				"allowed_ips_string": "사용할 수 있는 IP"
+			},
+			"provable_fair_data": {
+				"secret": "비밀",
+				"client_seed": "클라이언트 스드",
+				"result": "결과",
+				"hash": "해쉬"
+			},
+			"retention_email": {
+				"strategy": "종류",
+				"template_name": "서식 파일 이름",
+				"days_interval": "간격 일수",
+				"enabled": "사용중",
+				"created_at": "만든 시각",
+				"updated_at": "업데이트 시각: "
+			}
+		}
+	},
+	"mongoid": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "단편이 들어 있을 수 없습니다.",
+							"has_query_parameter": "쿼리 매개 변수가 들어 있을 수 없습니다.",
+							"invalid_uri": "유효한 URI이 필요합니다.",
+							"relative_uri": "절대 URL이 필요합니다."
+						}
+					}
+				}
+			}
+		}
+	},
+	"mongo_mapper": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "단편이 들어 있을 수 없습니다.",
+							"has_query_parameter": "쿼리 매개 변수가 들어 있을 수 없습니다.",
+							"invalid_uri": "유효한 URI이 필요합니다.",
+							"relative_uri": "절대 URL이 필요합니다."
+						}
+					}
+				}
+			}
+		}
+	},
+	"doorkeeper": {
+		"errors": {
+			"messages": {
+				"invalid_request": "요청은 필수 매개 변수를 잦을 수 없거나 지원되지 않는 변수 값을 포함하거나 거장이 났습니다.",
+				"invalid_redirect_uri": "리디렉트하는 url이 잘못됩니다.",
+				"unauthorized_client": "사용자가 이 방법을 사용하면 신청할 권한이 없습니다.",
+				"access_denied": "자원 소유자나 검증 서버가 요청을 거부했습니다.",
+				"invalid_scope": "요청 스코프가 잘못되거나 알 수 없거나 기형입니다.",
+				"server_error": "예기치 않은 컨디션 때문에 검증 서버가 신청을 이행할 수 없습니다 ",
+				"temporarily_unavailable": "검증 서버 정비하기 때문에 현재 신청을 이행할 수 없습니다. ",
+				"credential_flow_not_configured": "Doorkeeper.configure.resource_owner_from_credentials 구성 못되기 때문에 자원 소유자의 비밀번호 자격을 입력할때 실패했습니다.",
+				"resource_owner_authenticator_not_configured": "Doorkeeper.configure.resource_owner_authenticator 구성 못 되기 때문에 자원 소유저의 자격을 못 잦았습니다.",
+				"unsupported_response_type": "검증 서버가 이런 반응형을 지원하지 않습니다",
+				"invalid_client": "클라이언트를 알 수 없거나 클라이언트의 인증 정보가 없거나 입증되지 않아서 인증에 실패했습니다.",
+				"invalid_grant": "인증방식은  잘못되거나 만기가 되거나 취소하거나 인증 신청에서 사용하는  리디렉션 url와 일치하지 않거나 다른 클라이언트한테 발부했습니다.",
+				"unsupported_grant_type": "허가 서버가 인증방식을 지원하지 못합니다.",
+				"invalid_resource_owner": "리소스의 소유자가 준 정보는 잘못되거나 리소스의 소유자를 잦을 수 없습니다.",
+				"invalid_token": {
+					"revoked": "접근 토큰을 취소했습니다",
+					"expired": "접근 토큰이 잘못됩니다.",
+					"unknown": "접근 토큰이 잘못됩니다."
+				}
+			}
+		},
+		"flash": {
+			"applications": {
+				"create": {
+					"notice": "응용프로그램을 만렀습니다."
+				},
+				"destroy": {
+					"notice": "응용프로그램을 삭제했습니다."
+				},
+				"update": {
+					"notice": "프로그램을 갱심했습니다."
+				}
+			},
+			"authorized_applications": {
+				"destroy": {
+					"notice": "응용프로그램을 취소했습니다."
+				}
+			}
+		},
+		"authorize_title": "OAuth 인증해야 합니다",
+		"authorize_required": "인증해야 합니다",
+		"authorize": "인증하기",
+		"authorization_code": "인증 코드",
+		"deny": "거부",
+		"rights_title": "이 응용 프로그램이 해도 될 것:",
+		"allow_authorization": "당신의 계정을 사용하기 위해 {{app}} 인증하곘습니까?",
+		"authorize_as_regular_user": "손님 계정을 사인아웃하고 정식 사용자로 사인인해 주십시오.",
+		"scopes": {
+			"profile": "프로필 정보에 접근",
+			"bets": "잔고 정보에 접근하고 당신을 대신 하여 베팅하기"
+		}
+	},
+	"amatic": {
+		"verification": {
+			"error_popup": {
+				"title": "Error",
+				"description": "Amatic server does not respond"
+			},
+			"popup": {
+				"copy": "Copy",
+				"title": "입증했습니다.",
+				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
+				"message": "Your Text",
+				"signature": "Amatic Signature",
+				"address": "비트코인 주소"
+			},
+			"title": "Amatic verification",
+			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
+			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"form": {
+				"your_text": "Your Text",
+				"verify": "인증"
+			}
+		},
+		"amatic": "Amatic"
+	},
+	"http": {
+		"not_found": {
+			"title": "Page Not Found",
+			"oops": "Oops,",
+			"cannot_be_found": "The page you are looking for cannot be found.",
+			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
+			"link_to_root": "Here is a link to our start page:"
+		}
+	},
+	"common": {
+		"in_out": "IN/OUT",
+		"players": "플레이어",
+		"email": "이메일",
+		"content": "내용",
+		"loading": "읽어들이는 중...",
+		"yes": "예",
+		"no": "아니요",
+		"all": "모두",
+		"default": "기본",
+		"date": "날짜",
+		"result": "결과",
+		"total_bet": "총 베팅",
+		"total_win": "총 승리",
+		"gross_win": "총수입",
+		"cashouts_sum": "캐시아웃의 금액",
+		"deposits_sum": "예금의 금액",
+		"net_revenue": "순세입",
+		"client": "클라이언트",
+		"amount": "금액",
+		"help": "도움",
+		"currency": "통화",
+		"total": "합계",
+		"limit": "한계값",
+		"live_casino": "라이브 카지노",
+		"address": "주소",
+		"good_news": "Good news, {{nickname}}.",
+		"save": "저장하기",
+		"edit": "수정",
+		"remove": "삭제",
+		"destroy": "삭제",
+		"cancel": "취소",
+		"close": "닫기",
+		"create": "만들기",
+		"add": "추가",
+		"update": "갱신",
+		"reset": "재설정",
+		"refresh": "개신",
+		"proceed": "진행하기",
+		"filter": "필터",
+		"are_you_sure": "정말로 그렇게 하시겠습니까?",
+		"set": "설정",
+		"enabled": "사용중",
+		"disabled": "사용중지",
+		"active": "사용중",
+		"preview": "미리보기",
+		"select": "선택하기",
+		"summary": "요약",
+		"status": "상태",
+		"options": "옵션",
+		"genders": {
+			"m": "남성",
+			"f": "여성"
+		},
+		"player": "플레이어",
+		"guest": "손님",
+		"subject": "제목",
+		"actions": "동작",
+		"balance": "잔고",
+		"profit": "이익",
+		"payout": "배당금",
+		"bets_sum": "베팅의 금액",
+		"wins_sum": "승리의 금액",
+		"bets": "베팅:",
+		"total_payouts": "총 배당금:",
+		"terms_and_conditions": "계약조건",
+		"net_total": "총 순세입",
+		"blog": "블로그",
+		"comments": "댓글",
+		"comment": "댓글",
+		"empty_search_results": "필터 매개 변수와 부합하는 정보를 잦을 수 없습니다.",
+		"add_more_coins": "코인을 더하기",
+		"show_more_games": "Show more games",
+		"warning": "경고",
+		"new_as_novelty": "새로운 게임",
+		"already_member": "Already a member?",
+		"have_account": "Have an account?"
+	},
+	"locales": {
+		"af": "남아프리카 공용어",
+		"bg": "불가리아어",
+		"de": "독일어",
+		"el": "그리스어",
+		"en": "영어",
+		"es": "스페인어",
+		"fi": "핀란드어",
+		"fr": "French",
+		"it": "이탈리아어",
+		"ja": "일본어",
+		"ko": "Korean",
+		"nl": "네델란드어",
+		"pl": "폴란드어",
+		"pt": "포르투갈어",
+		"ru": "러시아어",
+		"sv": "스웨덴어",
+		"tr": "터키어",
+		"vi": "베트남어",
+		"zh": "중국어"
+	},
+	"date": {
+		"day": "일",
+		"week": "주",
+		"month": "월",
+		"year": "년"
+	},
+	"casino": {
+		"casino": "카지노",
+		"not_enough_money": "돈이 부족합니다",
+		"events": {
+			"modified": {
+				"user": "수정 사용자 프로필 수정",
+				"admin_user": "관리자가 수정했음",
+				"game_table": "게임 수정 ",
+				"bonus_issue": "보너스 발행",
+				"bonus": " 보너스 수정 ",
+				"payment_system": " 지불 기법",
+				"retention_email": "이메일 유지 수정  ",
+				"casino_cash_balance": "Casino Cash Balance Modified",
+				"commission_connection": "Commission Connection Modified",
+				"payment": "Payment Modified",
+				"affiliate_profile": "Affiliate Profile Modified"
+			},
+			"game": {
+				"step": "게임 스텝을 했음"
+			},
+			"user": {
+				"sign_out": "사용자가 사인아웃했습니다",
+				"sign_in": "사용자가 사인인했습니다.",
+				"failed_sign_in": "사인인할때 실패했습니다"
+			},
+			"admin_user": {
+				"sign_out": "관리자가 사인아웃했습니다",
+				"sign_in": "관리자가 상인인했습니다",
+				"failed_sign_in": "관리자가 사인인할때 실패했습니다"
+			},
+			"notifications": {
+				"balance_correction_created": "Balance correction created",
+				"cashout_requested": "Cashout requested",
+				"deposit_made": "Deposit made",
+				"cashout_made": "Cashout made",
+				"auto_cashout_made": "Auto-cashout made",
+				"cashout_rejected": "Cashout request rejected",
+				"deposit_rejected": "Deposit rejected",
+				"user_upload_document": "User Uploaded Document",
+				"payment_created_by_admin": "Admin Created Payment",
+				"user_disabled": "User Disabled",
+				"contact": "User Requested Support",
+				"admin_comment_created": "Admin Left Comment"
+			},
+			"affiliate": {
+				"redirect": "새로운 어필리에이트 사용자"
+			},
+			"bitcoin_addresses_uploaded": "비트코인 주소를 업로드했음"
+		},
+		"bonuses": {
+			"names": {
+				"no_deposit": "예금 없음",
+				"first_deposit": "첫번째 예금",
+				"nth_deposit": "N번째 예금",
+				"deposit_system": "지불 기법 보너스",
+				"coupon": "쿠폰"
+			},
+			"issuance_policy": {
+				"can-issue": "자동 발행하는 보너스",
+				"can-refuse": "플레이어가 게임하기전에 보너스를 취소할 수 있습니다.",
+				"can-cancel": "플레이어가 보너스를 취소할 수 있습니다."
+			}
+		},
+		"retention_emails": {
+			"names": {
+				"welcome": "환영합니다!",
+				"welcome_promo": "웰콤 프로모",
+				"no_deposit": "예금 없음",
+				"nth_deposit": "N번째 예금 없음"
+			}
+		},
+		"payment_systems": {
+			"names": {
+				"qiwi": "Qiwi",
+				"skrill": "Skrill",
+				"interkassa": "Interkassa",
+				"paysafecard": "페이세이프카드",
+				"ukash": "Ukash",
+				"neteller": "Neleller",
+				"card_pay": "CardPay",
+				"b_cash": "B-Cash",
+				"wirecard": "Wirecard",
+				"coupon": "Coupon",
+				"cashbox": "Cashbox",
+				"cep_bank": "Cep Bank",
+				"bank_transfer": "은행 간환",
+				"cubits": "Cubits",
+				"lavapay": "Lavapay",
+				"bitcoin_payment": "비트코인",
+				"ripple_payment": "Ripple"
+			},
+			"payer": {
+				"cashout_email_subject": "카지노 캐시아웃",
+				"cashout_email_note": "캐시아웃했음"
+			},
+			"system_name": "%{child} via %{parent}",
+			"all_locked": "당신의 안전을 위해 이전에 예금하기 위해 사용한 지불 기법으로만 캐시아웃할 수 있습니다. 질문이 있으면 우리 지원으로 연락해 주십시오.",
+			"child_systems": {
+				"visa": "비자카드",
+				"mastercard": "마스터카드",
+				"online_bank_transfer": "오라인 은행 간환",
+				"ideal": "iDEAL",
+				"nordea_solo": "Nordea Solo",
+				"bancontact_mister_cash": "Bancontact/Mister Cash",
+				"cards": "Credit Cards",
+				"ccard": "신용카드",
+				"click_to_pay": "CLICK2PAY",
+				"ekonto": "eKonto",
+				"eps": "이피에스",
+				"giropay": "giropay",
+				"installment": "payolution으로 지불하기",
+				"invoice": "payolution 청구서",
+				"moneta": "moneta.ru",
+				"mpass": "mpass",
+				"przelewy": "Przelewy24",
+				"paypal": "페이팔",
+				"paybox": "페이박스",
+				"poli": "POLi payments",
+				"paysafecard": "페이세이프카드",
+				"quick": "Quick",
+				"sepa": "SEPA Direct Debit",
+				"skrill_direct": "Skrill Direct",
+				"skrill_wallet": "Skrill Digital Wallet",
+				"sofort": "SOFORT 뱅킹",
+				"tatrapay": "TatraPay",
+				"trustly": "Trustly",
+				"bank_transfer": "Bank Transfer",
+				"lavapay_balance": "LavaPay Balance",
+				"cheque": "Cheque",
+				"perfect": "Perfect Money",
+				"liqpay": "LiqPay",
+				"webmoney": "WebMoney",
+				"yandex": "Yandex Money",
+				"okpay": "OKPAY",
+				"qiwi": "Qiwi",
+				"mailru": "money@mail.ru",
+				"lavapay_bitcoin": "Bitcoin",
+				"egopay": "EgoPay",
+				"lavapay_litecoin": "LiteCoin",
+				"paxum": "Paxum",
+				"ecoin": "eCoin",
+				"btce": "BTC-E",
+				"privatbank": "PrivatBank.ua",
+				"nsmep": "NSMEP",
+				"telemoney": "TeleMoney",
+				"ukrterminal": "UkrTerminal",
+				"rusterminal": "RusTerminal",
+				"rusbank": "Rusbank",
+				"mobileretails": "MobileRetails",
+				"unistream": "Unistream",
+				"ruspost": "RusPost",
+				"contact": "Contact",
+				"anelik": "Anelik",
+				"leader": "Leader",
+				"mts": "MTS",
+				"megafon": "Megafon",
+				"beeline": "Beeline",
+				"alfaclick": "AlfaClick",
+				"fortumo": "Fortumo",
+				"cashu": "CashU",
+				"privat_terminal": "Privat Terminal",
+				"kazakhstan_terminal": "Kazakhstan Terminal",
+				"tjs_terminal": "Tjs Terminal",
+				"moldova_terminal": "Moldova Terminal",
+				"georgia_terminal": "Georgia Terminal",
+				"euroset": "Euroset",
+				"kievstar": "KievStar",
+				"promsvyazbank": "PromSvyazBank",
+				"easypay": "EasyPay",
+				"bpay": "BPay",
+				"pravex": "Pravex Bank",
+				"ukrsib": "UkrSib Bank",
+				"liberty": "Liberty Bank",
+				"faktura": "Faktura.ru",
+				"privatbank_cashin": "Privatbank Cash-in",
+				"sberbank_cashin": "Sberbank Cash-in",
+				"qiwi_visa": "Visa Qiwi",
+				"qiwi_mastercard": "Mastercard Qiwi",
+				"qiwi_maestro": "Maestro Qiwi",
+				"cis_cards": "Bank Cards",
+				"yandex_personal": "Yandex Personal",
+				"local_bank_transfer": "Local Bank Transfer",
+				"w1": "W1",
+				"wallet_one": "Wallet One",
+				"russian_standard": "Russian Standard Bank"
+			}
+		},
+		"commissions": {
+			"strategies": {
+				"registration": "공인회계사",
+				"percent": "수익 공유"
+			}
+		},
+		"games": {
+			"unknown_action": "알 수 없는 행동",
+			"unavailable_action": "할 수 없는 행동",
+			"roulette": {
+				"notice": {
+					"bet_is_not_valid": "베팅이 잘못됩니다.",
+					"bet_type_not_found": "베팅 유형을 잦을 수 없습니다.",
+					"unknown_bet": "알 수 없는 베팅",
+					"unknown_value": "알 수 없는 값을 선택했습니다",
+					"unknown_column": "알 수 없는 열을 선택했습니다",
+					"unknown_dozen": "알 수 없은 더즌을 선택했습니다"
+				}
+			}
+		},
+		"provable_fair": {
+			"provable_fair": "Provable fair",
+			"provability": "프로바빌리티",
+			"not_available": "프로바빌리티 위젯을 게임페이즈에서 잦을 수 있습니다.",
+			"verify": "인증",
+			"loading": "순서를 정하기",
+			"is_unavailable": "Provable fair is not available for this game.",
+			"next_game": "다음 게임",
+			"last_game": "마지막 게임",
+			"reel_number": "릴 {{index}}",
+			"fields": {
+				"hash": "해시 (결과 + 비밀)",
+				"client_seed": "클라이언트 시드",
+				"secret": "결과 +비밀",
+				"result": "최종 결과"
+			},
+			"hint": {
+				"common": "클라이언트 시드 (0-{{max_seed}}) 입력하시기",
+				"roulette": "공을 더 밀기",
+				"card": "커팅 더 덱:",
+				"poker": "커팅 더 덱:",
+				"slots": "릴을 좀 더 화전하기"
+			},
+			"verification": {
+				"success": {
+					"title": "입증했습니다.",
+					"body": "개임 시작할때 우리가 보낸 해시는 게임결과의 해시와 또같습니다. 당신의 플레이어 시드가 최종 결과에 예상한 영향을 미쳤습니다."
+				},
+				"failure": {
+					"title": "인증에 실패했습니다",
+					"body": "우리 지원으로 연락해 주십시오"
+				}
+			}
+		},
+		"bitcoin": {
+			"update_balance": "잔고 자료 재생되기",
+			"current_balance": "현제 잔고{{balance}}.",
+			"send_text": "%{currency}를 얼마든지 (+ 마이너 수수료) 보내기",
+			"cant_attach_address": "죄송하지만 현재 비트코인에 문제가 나왔습니다. 관리자는 이미 신고했습니다. 나중에 다시  시도해 주십시오.",
+			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
+			"xrp": {
+				"send_text": "Send any amount of {{currency}} to",
+				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
+			}
+		}
+	},
+	"frontend": {
+		"placeholders": {
+			"email": "이메일 주소를 입력하십시오",
+			"password": "비밀번호를 입력하십시오",
+			"password_confirmation": "비밀번호를 확인하십시오",
+			"current_password": "현재 비밀번호를 입력하십시오"
+		},
+		"age_acceptance": "당신은 {{age}} 새 이상이  된다고  확인해 주십시오.",
+		"choose_game": "게임을 선택하십시오",
+		"games_played": "진행한 게임 수:",
+		"or": "또는",
+		"please_or": "Please {{first}} or {{second}}",
+		"mbtc_total_winnings": "mBTC 총 승리",
+		"hi_guest": "안녕하세요, 손님",
+		"hi_user": "안녕하세요, {{nickname}}",
+		"password_difficulty": "비밀번호 안전성",
+		"password_difficulties": {
+			"very_weak": "매우 취약",
+			"weak": "취약",
+			"so_so": "보통",
+			"strong": "강함",
+			"great": "강함"
+		},
+		"playing": {
+			"playing_fun": "%{currency}로 게임하기",
+			"playing_real": "%{currency}로 개임하기",
+			"play_fun": "%{currency}로 게임하기",
+			"play_real": "%{currency}로 개임하기"
+		},
+		"links": {
+			"support": "지원",
+			"help": "도움",
+			"how_to_start": "시작하기",
+			"casino_promotions": "카지노 프로모션",
+			"bonuses": "보너스",
+			"affiliate_program": "어필리에이트  프로그램",
+			"terms_and_conditions": "계약 조건",
+			"back": "뒤로",
+			"create_ticket": "티켓 만들기",
+			"send_form": "보낸 서식",
+			"online_chat": "온라인 채팅",
+			"home": "홈",
+			"frontpage": "프론트페이지",
+			"casino_games": "게임의 종류",
+			"about_casino": "카지노에 대한 정보 ",
+			"all_games": "모든 게임",
+			"load_more_games": "Load More Games",
+			"rules": "게임의 규칙",
+			"autoregister": "자동 등록하기",
+			"quick_register": "Quick Register",
+			"play_for_fun": "재미로 게임하기",
+			"demo": "Demo",
+			"play_for_real": "진짜로 게임하기",
+			"play_for_bitcoin": "비트코인으로 개임하기",
+			"free_play": "무료 게임",
+			"real_play": "진짜로 게임하기",
+			"play_now": "지금 재생",
+			"join_now": "지금 가입하기",
+			"profile": "프로파일",
+			"dice": "다이스",
+			"deposit": "입금하기",
+			"withdraw": "취소하기",
+			"cashout": "출금하기",
+			"cashbox": "캐시박스",
+			"sign_out": "로그아웃",
+			"sign_in": "로그인",
+			"sign_up": "회원가입",
+			"register": "가입하기",
+			"login": "로그인",
+			"logout": "로그아웃",
+			"start_playing": "재생 시작",
+			"forgot_password": "비밀번호를 잊었습니까?",
+			"didnt_receive_confirmation": "확인 전보를 받지 않았습니까?",
+			"didnt_receive_unlock": "언락에 대한 전보를 받지 않았습니까?",
+			"affiliate_profiles": "아필리에이트 프로필",
+			"settings": "설정"
+		},
+		"captions": {
+			"affiliates": "아필리에이트",
+			"help": "도움",
+			"games": "게임",
+			"quick_links": "빠른 링크",
+			"languages": "언어",
+			"info": "정보",
+			"information": "정보",
+			"promotion": "프로모션",
+			"follow_us": "팔로우"
+		},
+		"actions": {
+			"go_bang": "시작!",
+			"deposit_now": "지금 예금하기",
+			"sign_up_now": "Sign Up Now"
+		},
+		"games_bet_playthrough_percent": "베팅 게임 playthrough 퍼센트",
+		"contact": {
+			"title": "연락처",
+			"hint": "아래에 정보를 입력해주십시오. 모든 필드가 필요합니다.",
+			"labels": {
+				"email": "이메일",
+				"content": "메시지",
+				"send": "보내기"
+			}
+		},
+		"no_flash": {
+			"flash_isnt_available": "어도비 플래시 플레이어를 지금 사용할 수 없습니다.",
+			"flash_usage": "여러분께서, 고급 게임플레이 경험을 위해 우리 카지노는 어도비 플래시를 사용합니다.",
+			"desktop_section": "데스크탑 지원",
+			"desktop_section_link": "어도비 플래시 플레이어를 설치하십시오",
+			"mobile_section": "휴대폰 지원",
+			"mobile_section_text": "어도비 플래시는 모바일 브라우저에 맞지 않지만 당신은 다른 고급 경험주는 응용 프로그램도 다운로드해서 사용할 수 있습니다. %s 하고 %s  추천할 수 있습니다."
+		},
+		"devise": {
+			"resend_confirmation": "학인 전보를 다시 보내기",
+			"send_reset_instructions": " 비밀번호를 다시 설정",
+			"send_unlock_instructions": "언락에 대한 전보를 다시 보내기",
+			"change_your_password": "비밀번호를 바꾸기",
+			"change_my_password": "비밀번호를 바꾸기",
+			"new_password": "새 비밀번호",
+			"confirm_new_password": "새 비밀번호를 확인",
+			"password_hint": "(바꾸고 싶지 않으면 비워 놓으십시오.)",
+			"current_password_hint": "(바꾸기를 확정하기 위해서 당신의 현제 비밀번호가 필요합니다)",
+			"unlock_hint": "계정이 잠겨있는데 이메일 주소를 입력하면  우리는 이메일로 언락에 대한 정보를 보낼 겁니다. ",
+			"resend_hint": "당신의 이메일 조수를 입력하면 우리는 어떻개 비밀번호를 다시 설정하는지에 대한 전보를 이메일로 보낼 겁니다.",
+			"contact_us_hint_html": "도움이 더 필요하면 {{page}}로 우리한테 연락해주십시오.",
+			"custom": {
+				"not_valid_email": "잘못된 이메일",
+				"too_short": "너무 짧습니다",
+				"not_match": "일치하지 않습니다",
+				"min_characters": "최소 부호 1개최소 부호 {{count}}개"
+			}
+		},
+		"payment_system_redirect": {
+			"notification": "거래를 끝내기 위해 {{system}}에 곧 전송될 겁니다.",
+			"text": "지불을 계속하기 위해 아래 버턴을 클릭하십시오.",
+			"button": "지불 계속하기"
+		},
+		"social": {
+			"follow_us": "팔로우"
+		},
+		"filters": {
+			"find_your_game": "당신의 이름을 잦아 보십시오"
+		},
+		"rules_priority_warning": "웹 페이지에서 원래 게시한 게임 규칙을 영어로 게신했습니다.  다른 언어로 한 번역 을  성실하게 했습니다. 애매함이 있으면 영어판이우선권을 쥡니다. "
+	},
+	"winners": {
+		"winners": "승자",
+		"latest_winners": "마지막 승자",
+		"top_winners": "최고 승자",
+		"amount_in_game": "%{game}에 %{amount}",
+		"parts": {
+			"just_won": "이제 승리하셨습니다",
+			"in": "에"
+		}
+	},
+	"restriction": {
+		"default": " 당신의 나라에서 이 페이지를 보면 안됩니다.",
+		"game_restricted_in_country": "당신의 나라에서 이 게임을 하면 안됩니다.",
+		"registration_restricted_in_country": "당신의 나라에서 가입하면 안됩니다."
+	},
+	"documents": {
+		"removed_successfully": "문서를 삭제했습니다",
+		"document": {
+			"edit_description": "설명을 수정",
+			"approved": "승인됨",
+			"not_approved": "승인되지 않음"
+		},
+		"index": {
+			"upload_document": "문서 업로드"
+		}
+	},
+	"sportsbook": {
+		"sports": "스포츠",
+		"live_betting": "라이브 베팅",
+		"sports_bets": "스포츠 베팅"
+	},
+	"formtastic": {
+		"labels": {
+			"card_holder": "카드홀더",
+			"credit_card_number": "신용카드번호",
+			"cvc": "카드 보안 코드",
+			"expiration_date": "만료 날짜",
+			"amount": "금액",
+			"recipient": "고객의 입금주소",
+			"document": {
+				"attachment": "첨부",
+				"description": "설명"
+			},
+			"btc_amount": "Amount in BTC",
+			"wallet_address": "Wallet Address"
+		},
+		"actions": {
+			"game": {
+				"create": "게임 만들기",
+				"update": "게임 갱신"
+			},
+			"player": {
+				"create": "플레이어 만들기",
+				"update": "플레이어 갱신"
+			},
+			"bonus": {
+				"create": "보너스 만들기",
+				"update": "보너스 갱신"
+			},
+			"bonus_issue": {
+				"create": "보너스 발행 만들기",
+				"update": "보너스 발행 갱신"
+			},
+			"admin_user": {
+				"create": "관리자 만들기",
+				"update": "관리자 갱신"
+			},
+			"payment_system": {
+				"create": "지불 체계 만들기",
+				"update": "지불 체계 업데이트"
+			},
+			"document": {
+				"submit": "Submit document"
+			},
+			"create": "만들기"
+		},
+		"hints": {
+			"payment_system": {
+				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+			},
+			"profile": {
+				"currency": "등록을 완료한 후에 어떤 단계에서도 통화를 바꿀 수 있습니다."
+			},
+			"btc_amount": "Amount may differ due to exchange rate changes"
+		}
+	},
+	"bonus_issues": {
+		"title": "%{bonus} Issue",
+		"stages": {
+			"wait": "기다려주십시오",
+			"handle_bets": "사용중",
+			"canceled": "취소함",
+			"expired": "만료됨",
+			"wager_done": "웨이저 했음",
+			"lost": "졌음",
+			"pending": "Pending"
+		}
+	},
+	"freespin_issues": {
+		"title": "%{bonus} Issue",
+		"games": "Games",
+		"activate": "Activate",
+		"stages": {
+			"issued": "Issued",
+			"activated": "Activated",
+			"canceled": "Canceled",
+			"expired": "Expired",
+			"finished": "Played",
+			"pending": "Pending"
+		},
+		"mailer": {
+			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
+			"activation_prompt_html": "To activate freespins go to {{link}}."
+		}
+	},
+	"games": {
+		"title": "카지노 게임",
+		"categories": {
+			"all": "모든 게임",
+			"card": "카드 게임",
+			"poker": "포커 게임",
+			"table": "테이블 게임",
+			"roulette": "룰렛",
+			"slots": "슬롯",
+			"video_poker": "비디오 포커",
+			"blackjack": "블랙잭",
+			"bingo": "Bingo",
+			"live": "라이브",
+			"fruit": "프룻 슬롯",
+			"theme": "주제로 한 슬롯",
+			"casual": "보통",
+			"lottery": "로터리",
+			"keno": "케노",
+			"progressive": "Progressive",
+			"stat": {
+				"most_popular": "가장 잘나가는 게임",
+				"new": "새로운 게임",
+				"manual": "추천한 게임",
+				"last_played": "마지막으로 한 게임"
+			},
+			"device": {
+				"desktop": "데스크탑",
+				"mobile": "휴대폰"
+			}
+		},
+		"providers": {
+			"all": "All Providers",
+			"softswiss": "SoftSwiss",
+			"amatic": "Amatic",
+			"betsoftgaming": "Betsoftgaming",
+			"casinotechnology": "Casino Technology",
+			"quickfire": "QuickFire",
+			"ezugi": "Ezugi"
+		},
+		"roulette": {
+			"bets": {
+				"calc_by_max_bet": "최대 베팅으로 계산하기",
+				"inside_bets": "인사이드 베팅",
+				"outside_bets": "아웃사이드 베팅",
+				"straight_up": "스트레이트 업",
+				"split": "스플릿",
+				"street": "스트릿",
+				"trio": "트리오",
+				"basket": "바스켓",
+				"corner": "코너",
+				"first_four": "펴스트 4",
+				"first_five": "펴스트 5",
+				"line": "줄",
+				"column": "열",
+				"dozen": "더즌",
+				"red": "빨간색",
+				"black": "검은색",
+				"odd": "홀수",
+				"even": "짝수",
+				"low": "낮은 수 ",
+				"high": "높을 수"
+			}
+		},
+		"titles": {
+			"baccarat": {
+				"classic": "바카라"
+			},
+			"blackjack": {
+				"double_exposure": "Double Exposure",
+				"european": "유럽 블랙잭",
+				"multihand": "멀티핸드 블랙잭",
+				"multihand_pro": "멀티 핸드 블랙잭 프로",
+				"pontoon": "폰툰",
+				"surrender": "블랙잭 서렌더"
+			},
+			"hi_lo": {
+				"switch": "하이-로우 스위치"
+			},
+			"casual": {
+				"horse_racing": "호스 레이싱",
+				"minesweeper": "지뢰 찾기",
+				"heads_tails": "Heads and Tails",
+				"scratch_dice": "Scratch Dice"
+			},
+			"poker": {
+				"caribbean": "캐리비언 포커",
+				"casino_holdem": "카지노 홀덤",
+				"let_it_ride": "렛 잇 라이드",
+				"oasis": "오아시스 포커",
+				"texas_holdem": "텍사스 홀덤",
+				"trey_poker": "트레이 포커"
+			},
+			"roulette": {
+				"american": "아메리칸 룰렛",
+				"european": "유럽 룰렛",
+				"french": "프랑스 룰렛"
+			},
+			"slots": {
+				"aztec_magic": "Aztec Magic",
+				"book_of_pyramids": "Book of Pyramids",
+				"scroll_of_adventure": "Scroll of Adventure",
+				"brave_viking": "Brave Viking",
+				"cherry_fiesta": "Cherry Fiesta",
+				"crazy_starter": "Crazy Starter",
+				"desert_treasure": "Desert Treasure",
+				"hawaii_cocktails": "Hawaii Cocktails",
+				"horse_slot": "Horse Slot",
+				"lucky_blue": "Lucky Blue",
+				"lucky_lady_clover": "Lucky Lady's Clover",
+				"lucky_sweets": "Lucky Sweets",
+				"platinum_lightning": "Platinum Lightning",
+				"princess_of_sky": "Princess of Sky",
+				"princess_royal": "Princess Royal",
+				"sport_slot": "스포츠 슬롯",
+				"three_lines_slot": "Girl Slot",
+				"west_town": "West Town"
+			},
+			"video_poker": {
+				"jacks_or_better": "잭스 오어 베터",
+				"wild_texas": "Wild Texas",
+				"video_poker": "일본 포커"
+			}
+		}
+	},
+	"users": {
+		"statuses": {
+			"enabled": "사용중",
+			"disabled": "사용중지",
+			"not_confirmed": "확인 못했음",
+			"locked": "잠금",
+			"normal": "사용중",
+			"manually_suspected": "수사하다고 표시했음"
+		}
+	},
+	"affiliate_bills": {
+		"billed_from": "... 부터 계산서 보내기 ",
+		"billed_to": "...까지 계산서 보내기",
+		"paid": "지불됨",
+		"submit": "제출"
+	},
+	"affiliate_links": {
+		"add": "Add Link",
+		"name": {
+			"hint": "개인 전용만 위해 신분 증명합니다"
+		},
+		"code": {
+			"hint": "Unique code for affiliate link"
+		}
+	},
+	"affiliate_profiles": {
+		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"commission": "수수료",
+		"registration_settings": {
+			"reward": "공인회계사의 보상",
+			"conditions": "조건",
+			"rule": " 초대한 사용자의 웨이저 > {{amount}} {{currency}} "
+		},
+		"percent_settings": {
+			"one": "%{percent}%",
+			"default": "초대한 사용자들이 {{limit}} {{currency}}보다 더 많은 돈을 쓰면{{percent}}%",
+			"rule": "초대한 사용자들이 {{limit}} {{currency}}보다 더 적은 돈을 쓰면{{percent}}%",
+			"intermediate_rule": "초대한 사용자들이 {{limit}} {{currency}}미만의 쓰면{{percent}}%"
+		},
+		"no_default_commissions": " 아무 수수료를 부과하지 않았습니다. 지원으로 연락해 주십시오. ",
+		"active": "사용중",
+		"not_active": "사용중지",
+		"affiliate_profiles": "어필리에이트 프로필",
+		"statistics": {
+			"statistics": "통계",
+			"year": "년",
+			"month": "월",
+			"week": "주",
+			"day": "일",
+			"since": "부터",
+			"to": "까지",
+			"submit": "제출",
+			"grouped_by": "그룹화 기준",
+			"deposits_count": "에금",
+			"redirects_count": "연결 횟수",
+			"registered_users_count": "가입하고 금액한 사용자들",
+			"date": "날짜",
+			"invited_users_income": "순게임수입",
+			"ggr": "순게임수입",
+			"total": "Period Total",
+			"link_name": "Link Name"
+		},
+		"affiliate_profile": {
+			"code": "코드",
+			"url": "URL",
+			"strategy": "지불 기법"
+		},
+		"banners": {
+			"banners": "배너",
+			"sizes": "크기",
+			"types_title": "형식",
+			"types": {
+				"image": "이미지",
+				"html": "HTML",
+				"swf": "플래시"
+			}
+		},
+		"form": {
+			"name_hint": "개인 전용만 위해 신분 증명합니다"
+		},
+		"add": "아필리에이트 링크 만들기",
+		"add_link": "아필리에이트 링크 만들기",
+		"strategy": "지불하는 제도",
+		"bills": {
+			"bills": "청구서",
+			"billed_at": "계산서를 보낸 날짜",
+			"amount": "금액",
+			"paid": "지불됨",
+			"not_billed_for_date": "이 날짜에 계산서를 보내지 않았습니다."
+		}
+	},
+	"games_history": {
+		"title": "게임",
+		"from": "부터",
+		"result": "결과",
+		"win": "승리",
+		"lose": "루즈",
+		"game_name": "게임",
+		"bet": "베팅"
+	},
+	"bonuses": {
+		"history": {
+			"title": "보너스",
+			"wager": "웨이저",
+			"valid_until": "유효 기간 종료:",
+			"status": "상태",
+			"from": "부터"
+		},
+		"promo_form": {
+			"title": "프로모 코드 추가하기",
+			"sub_title": "그리고 보너스 받기"
+		},
+		"bonus_settings": "보너스 설정",
+		"refuse": "보너스를 받고 싶지 않습니다."
+	},
+	"freespin_bonuses": {
+		"history": {
+			"title": "Freespins"
+		},
+		"gift": "Gift"
+	},
+	"profiles": {
+		"menu": {
+			"balance": "잔고",
+			"history": "내역",
+			"bonuses": "보너스",
+			"affiliate": "아필리에이트",
+			"profile": "프로파일 정부",
+			"documents": "문서"
+		},
+		"info": {
+			"personal": "개인"
+		},
+		"index": {
+			"my_account": "내 계정",
+			"my_bets": "내 베팅",
+			"transaction": "트랜잭션",
+			"welcome": "환영합니다",
+			"balance": "당신의 잔고",
+			"account_balance": "계정 잔고"
+		},
+		"show": {
+			"edit_profile": "프로필편집하기 ",
+			"edit_settings": "설정 편집하기",
+			"attach_documents": "문서를 첨부하기",
+			"change_credentials": "비밀 번호 바꾸기",
+			"set_email_and_password": "이메일과 비밀번호 설정",
+			"create_cashout_request": "개시아웃",
+			"confirm_address": "안전을 위해 사용한 적이 없는 주소를 이메일로 확인해야 합니다. 확인 링크를 이미 당신의 이메일 주소로 보냈는데 메일 박스를 확인해 주십시오.",
+			"address_confirmation_failed": "주소를 확인할 수 없고 캐시아웃도 하지 못했습니다.",
+			"cashout_request_created": "우리가 캐시아웃 신청을 받았는데 이 신청을 확인해야 합니다. 잠시 기다려 주십시오.",
+			"cashout_successfully": "캐시아웃했슴니다",
+			"cashout_technically_impossible": "죄송하지만 오류가 생겼습니다. 우리는 문제 바로잡기 위해 지금 열심히 일합니다. 질문이 있으면 지원한테 연락해 주십시오.",
+			"profile_info": {
+				"title": "프로파일 정보"
+			},
+			"autoregister_info": {
+				"title": "현재 당신의 개인 로그인 url를 방문하면 당신의 계정에 로그인도 할 수 있습니다."
+			},
+			"accounts": {
+				"title": "계정",
+				"available_to_cashout": "캐시아웃할 수 있습니다",
+				"add_currency": "통화 추가"
+			},
+			"bonuses": {
+				"title": "보너스",
+				"no_bonuses": "현재 보너스가 없습니다.",
+				"cancel_bonus": " 보너스 몰수하기",
+				"cancel_bonus_confirmation": "보너스를 몰수하면 당신의 승리도 몰수할 겁니다.",
+				"bonus_canceled": "보너스를 취소했음",
+				"bonus_not_canceled": "이 보너스를 취소할 수 없습니다"
+			},
+			"coupons": {
+				"activated": "쿠본 \"{{code}}\" 활성화되었습니다.",
+				"not_activated": "쿠본 \"{{code}}\" 활성화될 수 없습니다. 다시 시도하거나 지원한태 연락해 주십시오.",
+				"already_activated": "쿠본 \"{{code}}\" 이미 활성화되었습니다."
+			},
+			"payments": {
+				"title": "지불"
+			},
+			"not_finished_games": {
+				"title": "아직 끝나지 않은 개임",
+				"hint": "게임을 계속할 수도 있고 게임을 취소할 수도 있습니다. 게임을 취소하면 베팅도 취소할 겁니다.",
+				"game_canceled": "게임을 취소했습니다"
+			},
+			"bets": {
+				"title": "베팅",
+				"all_bets": "모든 베팅"
+			},
+			"cashbox": "개시벅스",
+			"payments_history": "거래 내역",
+			"bets_history": "베팅의 내역",
+			"bonuses_history": "보너스의 내역",
+			"freespin_bonuses_history": "Freespins History",
+			"deposit_to_address_hint": "계정에 예금하려면 이 주소에 예금하십시오.",
+			"freespin_bonuses": {
+				"bonus_canceled": "Bonus canceled",
+				"bonus_not_canceled": "Failed to cancel bonus",
+				"bonus_activated": "Bonus was activated",
+				"bonus_not_activated": "Bonus was not activated"
+			}
+		},
+		"edit": {
+			"title": "프로파일 편집",
+			"info_updated": "정부를 갱신했습니다",
+			"not_saved": "변경사항 저장되지 않습니다",
+			"settings_section_updated": "부분을 업데이트했습니다",
+			"valid_data_warning": "아래 서식에 유효한 연락 정보를 기입해 주십시오. 저장하기 전에 이 정보가 정확한지 확인하십시오."
+		}
+	},
+	"payments": {
+		"actions": {
+			"deposit": "예금",
+			"cashout": "개시아웃",
+			"gift": "선물",
+			"chargeback": "예금취소",
+			"affiliate_payment": "어필리에이트 보상금"
+		},
+		"statuses": {
+			"success": "수락",
+			"failure": "버림",
+			"pending": "대기 중"
+		},
+		"canceled_by_user": "거래를 취소했습니다.",
+		"wait_for_confirmation": "지불을 곧 허ㅏㄱ인할 겁니다",
+		"not_performed": "Payment was not performed",
+		"confirmed": "지불을 확인했습니다",
+		"canceled": "지불을 확인하지 않았습니다.",
+		"make_deposit": "입금하기",
+		"make_cashout": "개시아웃 신청하기",
+		"confirm_address": "주소 확인하기",
+		"bonus_code_show": "I have a Bonus Code",
+		"bonus_code_hide": "Hide Bonus Code",
+		"address_confirmation_email_body": "%{address}로 캐시아웃을 신청했습니다. 이 주소를 사용한 적이 없습니다. 안전을 위해  이 주소를 확인해 주십시오. 확인히기 위해 이 링크를 클릭해 주십시오.",
+		"address_confirmation_email_warning": "이 주소는 당신의 주소가 안이면 지원으로 연락하고 비밀번호를 바꾸십시오.",
+		"invalid_profile_before_deposit_message": "예금하기 위해 먼저는 필요한 공락을 기입해 주십시오. 유효한 연락 정보를 아래 서식에 기입해 주세요. 정확한 정보를 기입하도록 하십시오.",
+		"invalid_profile_message": "개시아웃하기 위해 프로필에서 필수 필드를 작성해야 됩니다.",
+		"try_again": "연결 문제 때문에 거래하기를 시작 못 됩니다. 문제를 계속하면 우리 지원으로 연락해 주십시오.",
+		"select_currency": "잔고의 통화 선택하기",
+		"select_currency_hint": {
+			"deposit": "...로 내 잔고를 보충하기 바랍니다.",
+			"cashout": "저는 케시아웃하기 바랍니다."
+		},
+		"select_payment_method": "지불 기법 선택",
+		"current_balance": {
+			"deposit": "현재 잔고: {{money}}.",
+			"cashout": "%{money}를 캐시아웃할 수 있습니다. %{balance_link} 웹페이지에 명세를 잦을 수 있습니다."
+		},
+		"payment_methods": {
+			"empty": "이런 통화로 지불할 수 없습니다.",
+			"pay_with_cubits": "Pay with Cubits"
+		},
+		"limits": {
+			"currency": "예금 {{currency}}",
+			"min": "최소값 {{min}}",
+			"max": "최대값 {{max}}",
+			"fee": "수수료 {{fee}}"
+		},
+		"processing_time": {
+			"instantly": "즉시",
+			"range": "%{min}-%{max} 은행 영업일"
+		}
+	},
+	"security_check": {
+		"user_is_suspicious": "사용자가 수상합니다.",
+		"user_not_suspicious": "사용자가 수상합니다.",
+		"user_has_suspicious_games": "사용자는 수상한 게임을 합니다.",
+		"cashout_amount": "금액이 인출 한도를 초과합니다",
+		"cashout_wins": "금액이 사용자의 인출 한도를 초과합니다.",
+		"casino_cashout": "금액이 카지노의 하루 인출 한도를 초과합니다",
+		"crypto_address_confirmed": "이 주소를 사용한 적이 없습니다",
+		"manual": {
+			"title": "사용자가 수상하다고 표시했음"
+		},
+		"chargeback": {
+			"title": "User made chargeback"
+		},
+		"duplicate": {
+			"title": "사용자는 복사가 있습니다",
+			"reason_html": "사용자가 {{user}}를 복사합니다."
+		},
+		"balance_sum": {
+			"title": "계정의잔고가 거래하고 게임통계에 근거하여 계산한 잔고와 맞지 않습니다",
+			"text": "플레이어의 잔고는 예상되는 금액과 일치하지 않습니다."
+		},
+		"balance_transaction": {
+			"title": "승리 금액이 하루한도를 넘습니다",
+			"reason_html": "%{table}에 있는 %{player}의 승리들이 수상합니다."
+		},
+		"wager_done": {
+			"title": "사용자가 웨이저 보너스의 요구조건을 부응했습니다."
+		},
+		"cubits_payment_difference": {
+			"title": "Cumulative cubits exchange rate losses are too big"
+		}
+	},
+	"notification": {
+		"contact_form": {
+			"sender_notice": "메시지를 보냈습니다!",
+			"mail_subject": "카지노의 웹페이지에 있는 연락처로 메시지를 받았습니다."
+		},
+		"payment_confirmation": {
+			"mail_subject": "지불 확인 코드"
+		},
+		"daily_stats": {
+			"mail_subject": "%{date}자의 %{currency} 하루의 통계"
+		},
+		"report": {
+			"day_mail_subject": "하루의 통계",
+			"week_mail_subject": "주통계",
+			"day_mail_title": "%{period}동안 하루 통계",
+			"week_mail_title": "%{period}동안 주 통계",
+			"fields": {
+				"net_revenue": "순게임수입",
+				"gross_win": "총 승리",
+				"bets": "총 베팅",
+				"wins": "총 승리",
+				"payout": "배당금",
+				"game_rounds": "게임 라운드",
+				"new_registrations": "금액한 새 사용자",
+				"players_made_deposits": "플레이어가 예금했습니다",
+				"total_users": "총 사용자",
+				"deposits_sum": "예금 금액",
+				"deposits_avg": "평균 예금",
+				"cashouts_sum": "개시아웃 금액",
+				"cashouts_avg": "평균 개시아웃"
+			},
+			"previous": "이전 {{type}}"
+		}
+	},
+	"user_mailer": {
+		"auth": {
+			"welcome": " {{name}}, 환영합니다!",
+			"hello": "안녕하세요, {{name}}!",
+			"confirmation": {
+				"you_can_confirm_email_by_pressing_next_link": "아래 링크로 계정을 확인할수 있습니다",
+				"confirm_my_account": "계정 확인"
+			},
+			"reset_password": {
+				"change_my_password": "내 비밀번호 바꾸기",
+				"link_to_change_password_are_requested": "비밀 번호를 바꾸기 위해 아래 링크를 클릭해 주십시오.",
+				"you_can_ignore_this_mail": "이 정보을 신청하지 않으면 이 이메일을 무시하십시오.",
+				"your_password_didnt_changed_yet": " 현재 비밀 번호를 바꾸려면 아래 링크를 클릭하고 새로운 비밀번호를 만드십시오."
+			},
+			"unlock": {
+				"unlock_my_account": "계정 언락",
+				"your_account_has_been_locked": "잘못된 사인인 시도가 너무 많았기 때문에 지금 당신의 계정이 잠겨 있습니다.",
+				"click_to_unlock": "계정을 언락하기 위해 아래 링크를 클릭하십시오."
+			}
+		},
+		"deposit": {
+			"deposit_made": "당신의 예금을 받았습니다."
+		},
+		"cashout": {
+			"cashout_approved": "캐기아웃 신청을 확인했습니다"
+		},
+		"not_enough_money_for_cashout": {
+			"subject": "캐시아웃하기 위해 계정 잔고가 불충분합니다",
+			"body": "계정 잔고가 불충분하기 때문에 캐시아웃할 수 없습니다. 현재 잔고대로 다시 캐시아웃하십시오."
+		},
+		"address_confirmation_required": {
+			"subject": "캐시아웃 주소를 확인하야 합니다"
+		}
+	},
+	"activemodel": {
+		"errors": {
+			"models": {
+				"affiliate_forms/assign_commission": {
+					"attributes": {
+						"from_date": {
+							"must_be_in_future": "미래에 있어야 합니다"
+						},
+						"to_date": {
+							"must_be_in_future": "미래에 있어야 합니다",
+							"must_be_less_then_from": "보다 더 늦습니다"
+						}
+					}
+				},
+				"payment_system/cashout_form/wirecard": {
+					"attributes": {
+						"credit_card_number": {
+							"invalid": "신용카드 번호가 유효하지 않습니다"
+						}
+					}
+				},
+				"casino_cash_balance/balance_options": {
+					"attributes": {
+						"base": {
+							"rules_error": "게임 규칙에 실수가 있습니다"
+						}
+					}
+				},
+				"commissions/registration_settings": {
+					"attributes": {
+						"base": {
+							"rules_error": "규칙에 오류가 있습니다."
+						}
+					}
+				},
+				"commissions/registration_settings_rule": {
+					"attributes": {
+						"base": {
+							"uniq": "고유한 것이어야 합니다."
+						}
+					}
+				}
+			}
+		},
+		"attributes": {
+			"payment_system/bank_transfer/access_data": {
+				"deposit_snippet_name": "Deposit Snippet Name",
+				"cashout_snippet_name": "Cashout Snippet Name"
+			},
+			"affiliate_forms/assign_commission": {
+				"from_date": "부터",
+				"to_date": "까지"
+			},
+			"newsletters_filter": {
+				"tag": "User tag",
+				"locale": "현장",
+				"type": "종류",
+				"deposits_number_equals": "예금",
+				"last_deposit_at": "마지막 예금",
+				"registered_at": "등록됨",
+				"payments_currency": "지불 통화"
+			}
+		}
+	},
+	"retention_mailer": {
+		"welcome": "환영합니다",
+		"no_deposit": "착수금을 지불하지 않았습니다.",
+		"nth_deposit": "당신의 착수금을 기다리고 있습니다.",
+		"welcome_promo": "다시 한번 와 주십시오."
+	},
+	"jackpot": {
+		"jackpots": "Jackpots"
+	},
+	"game_categories": {
+		"favorite": "My favorites",
+		"add_to_favorites": "Add To Favorites",
+		"remove_from_favorites": "Remove From Favorites",
+		"favorites": {
+			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+		}
+	},
+	"betsoftgaming_api": {
+		"betsoftgaming": "Betsoftgaming"
+	},
+	"backend": {
+		"menu": {
+			"bitcoin_addresses": "비트코인 주소"
+		},
+		"bitcoin_wallets": {
+			"filters": {
+				"all": "모두",
+				"available": "사용할수 있는",
+				"occupied": "사용할 수 없는"
+			}
+		},
+		"bitcoin": {
+			"add_new_addresses": "파일을 업로드하거나 새 주소를 기입하십시오.",
+			"upload_new_addresses": "주소 기입학",
+			"cashout": "캐시아웃",
+			"deposit_to_wallet": "지갑에 냅니다",
+			"deposit_currency_to_wallet": "지갑에 {{currency}} 냅니다.",
+			"enough_available_addresses_left": "사용할 수 있는 주소가 {{count}} 남았습니다.",
+			"not_enough_available_addresses_left": "비트코인 주소가 1개만 남았습니다. {{link}} 여기에서 주소를 더할수 있습니다.비트코인 주소가 {{count}}개만 남았습니다. {{link}} 여기에서 주소를 더할수 있습니다.",
+			"here": "여기",
+			"current_wallet_balance": "현재 지갑 잔고:",
+			"total_balance": "총수: {{amount}}",
+			"available_balance": "사용할 수 있는: {{amount}}",
+			"transfer_to": "증가",
+			"increase_system_balance": "지갑의 잔고를 늘리기 위해 비트코인을 다음 주소로 보내 주십시오."
+		}
+	},
+	"bitcoin_wallets": {
+		"address_sources": {
+			"imported": "From pool",
+			"generated": "Generated",
+			"cubits_invoice": "Cubits Invoice",
+			"cubits_channel": "Cubits Channel"
+		}
+	},
+	"sidebar": {
+		"available_addresses": "사용할 수 있는 주소",
+		"wallet_balance": "지갑의 잔고"
+	},
+	"casinotechnology_api": {
+		"casinotechnology": "CasinoTechnology",
+		"timeout_message": "Game provider's server has not responded. Please retry later."
+	},
+	"ezugi_api": {
+		"ezugi": "Ezugi"
+	},
+	"quickfire_api": {
+		"quickfire": "QuickFire"
+	}
+}

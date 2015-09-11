@@ -1,0 +1,6 @@
+<nav class="foo_menu">
+    <a class="foo_menu_item" href="" translate="frontend.links.home" ui-sref="home" ui-sref-active="current"></a>
+    <a class="foo_menu_item" href="" translate="frontend.links.casino_games" ui-sref="games" ui-sref-active="current"></a>
+    <a class="foo_menu_item" href="" ng-repeat="item in menu" ng-class="{current: state.includes('cms', {path: item.path})}" ui-sref="{{get_sref(item.path)}}" ng-bind="item.title"></a>
+</nav>
+

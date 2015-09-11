@@ -1,0 +1,1942 @@
+{
+	"errors": {
+		"messages": {
+			"taken_in_past": "Đã được đặt chỗ trước",
+			"equal_to_current_password": "Mật khẩu hiện tại phải khác so với mật khẩu lần trước",
+			"already_confirmed": "đã được xác nhận, vui lòng đăng nhập để tiếp tục.",
+			"confirmation_period_expired": "cần được xác nhận trong %{period}, xin vui lòng yêu cầu mã mới.",
+			"expired": "đã hết hạn, vui lòng gửi yêu cầu mới.",
+			"not_found": "không tìm thấy",
+			"not_locked": "không bị khóa",
+			"not_saved": {
+				"one": "1 lỗi khi lưu %{resource}:",
+				"other": "%{count} lỗi khi lưu %{resource}:"
+			}
+		}
+	},
+	"devise": {
+		"invalid_captcha": "Mã captcha không chính xác",
+		"password_expired": {
+			"submit": "Đổi mật khẩu",
+			"updated": "Mật khẩu mới của bạn đã được lưu",
+			"change_required": "Mật khẩu hiện thời của bạn đã hết hạn sử dụng. Hãy thay đổi mật khẩu ngay bây giờ.",
+			"forgot_password_message": "Nếu bạn quên mật khẩu, hãy click 'Thoát' sau đó thiết lập lại mật khẩu của bạn."
+		},
+		"failure": {
+			"session_limited": "Tài khoản của bạn đã được đăng nhập trên một trình duyệt khác. Hãy đăng nhập lại để tiếp tục sử dụng trên trình duyệt nay.",
+			"expired": "Tài khoản của bạn đã hết hạn do không hoạt động . Hãy liên hệ với người quản trị trang web ",
+			"disabled": "Tài khoản của bạn đã bị vô hiệu hóa",
+			"not_allowed_ip": "Địa chỉ IP của bạn không được phép sử dụng cho người dùng này.",
+			"already_authenticated": "Bạn đã đăng nhập.",
+			"inactive": "Tài khoản của bạn chưa được kích hoạt.",
+			"invalid": "Email hoặc mật khẩu không chính xác.",
+			"last_attempt": "Bạn còn một lần thử đăng nhập nữa trước khi tài khoản của bạn bị khóa.",
+			"locked": "Tài khoản của bạn đã bị khóa.",
+			"not_found_in_database": "Email hoặc mật khẩu không chính xác",
+			"timeout": "Phiên làm việc của bạn đã kết thúc, bạn cần đăng nhập lại để tiếp tục.",
+			"unauthenticated": "Bạn cần phải đăng nhập hoặc đăng ký trước khi tiếp tục.",
+			"unconfirmed": "Bạn cần phải xác nhận tài khoản trước khi tiếp tục."
+		},
+		"confirmations": {
+			"confirmed": "Xác nhận tài khoản thành công! Bạn hiện đang đăng nhập.",
+			"send_instructions": "Bạn sẽ nhận được email hướng dẫn xác nhận tài khoản trong vài phút nữa.",
+			"send_paranoid_instructions": "Nếu email của bạn có trong hệ thống, bạn sẽ nhận được email hướng dẫn xác nhận tài khoản trong một vài phút nữa."
+		},
+		"mailer": {
+			"confirmation_instructions": {
+				"subject": "Hướng dẫn xác nhận tài khoản"
+			},
+			"reset_password_instructions": {
+				"subject": "Hướng dẫn thiết lập lại mật khẩu"
+			},
+			"unlock_instructions": {
+				"subject": "Hướng dẫn mở khóa tài khoản"
+			}
+		},
+		"omniauth_callbacks": {
+			"failure": "Không thể đăng nhập qua tài khoản %{kind} vì \"%{reason}\".",
+			"success": "Đăng nhập thành công bằng tài khoản %{kind}."
+		},
+		"passwords": {
+			"no_token": "Bạn chỉ có thể truy cập trang này từ email đặt lại mật khẩu. Nếu bạn truy cập từ email đặt lại mật khẩu, xin chắc chắn rằng bạn dùng đường dẫn đầy đủ trong email.",
+			"send_instructions": "Bạn sẽ nhận được email hướng dẫn thiết lập lại mật khẩu trong vài phút nữa.",
+			"send_paranoid_instructions": "Nếu email của bạn có trong hệ thống, bạn sẽ nhận được đường dẫn khôi phục mật khẩu trong vài phút nữa qua email.",
+			"updated": "Đổi mật khẩu thành công! Bạn hiện đang đăng nhập.",
+			"updated_not_active": "Mật khẩu của bạn đã được thay đổi thành công."
+		},
+		"registrations": {
+			"destroyed": "Tạm biệt! Tài khoản của bạn đã được xóa. Chúng tôi hy vọng sẽ sớm gặp lại bạn.",
+			"signed_up": "Xin chào! Bạn đã đăng ký thành công.",
+			"signed_up_but_inactive": "Bạn đã đăng ký thành công. Tuy nhiên, bạn cần phải kích hoạt tài khoản trước khi có thể đăng nhập được.",
+			"signed_up_but_locked": "Bạn đã đăng ký thành công. Tuy nhiên tài khoản của bạn đã bị khóa nên không thể đăng nhập được.",
+			"signed_up_but_unconfirmed": "Một email chứa đường dẫn xác nhận tài khoản đã được gửi cho bạn. Bạn vui lòng kiểm tra email.",
+			"update_needs_confirmation": "Tài khoản của bạn được cập nhật thành công, nhưng bạn cần xác nhận địa chỉ email mới. Vui lòng kiểm tra email và nhấn vào đường dẫn xác nhận tài khoản để hoàn tất việc thay đổi địa chỉ email.",
+			"updated": "Cập nhật tài khoản thành công."
+		},
+		"sessions": {
+			"already_signed_out": null,
+			"signed_in": "Đăng nhập thành công.",
+			"signed_out": "Đăng xuất thành công."
+		},
+		"unlocks": {
+			"send_instructions": "Bạn sẽ nhận được email hướng dẫn cách mở khóa tài khoản trong vài phút nữa.",
+			"send_paranoid_instructions": "Nếu tài khoản của bạn tồn tại, bạn sẽ nhận được email hướng dẫn cách mở khóa tài khoản trong vài phút nữa.",
+			"unlocked": "Tài khoản của bạn đã được mở khóa thành công. Vui lòng đăng nhập để tiếp tục."
+		}
+	},
+	"activerecord": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "Không thể chứa một tham số truy vấn.",
+							"has_query_parameter": "không thể chứa một tham số truy vấn.",
+							"invalid_uri": "phải có một URI hợp lệ.",
+							"relative_uri": "phải có một URI cần thiết ."
+						}
+					}
+				},
+				"user": {
+					"attributes": {
+						"password": {
+							"wrong_password": "Địa chỉ email hoặc mật khẩu không hợp lệ"
+						}
+					}
+				},
+				"profile": {
+					"attributes": {
+						"age": {
+							"greater_than_or_equal_to": "Xác minh {{count}}+"
+						}
+					}
+				},
+				"payment": {
+					"not_enough_money": "Không đủ tiền",
+					"not_enough_unlocked_money": "Một số hoặc tất cả các khoản tiền của bạn đang bị khóa do một loại tiền thưởng. Hãy đáp ứng yêu cầu đặt cược tiền thưởng của bạn để có thể rút tiền.",
+					"unresolved_cashout_request_presents": "Yêu cầu rút tiền vừa rồi của bạn vẫn chưa được xử lí. Chúng tôi sẽ xem xét nhanh nhất có thể. Trước khi yêu cầu thêm 1 lần rút tiền nữa, vui lòng đợi yêu cầu trước của bạn được xử lí xong",
+					"pending_deposit_presents": "Chúng tôi vẫn đang đợi xác nhận từ lần đặt cọc cuối của bạn",
+					"commission_is_greater_that_amount": "Hoa hồng nhiều hơn tổng tiền",
+					"cashout_only_to_main_address": "Bạn đã đặt {{address}} là địa chỉ bitcoin chính và bạn chỉ có thể rút tiền về địa chỉ đó",
+					"not_used_account": "Account you are going to cashout was not used before.",
+					"debt_to_another_payment_system": "Bạn có 1 khoản nợ chưa trả trong {{system_name}}. Vui lòng, trả khoản nợ đó trước",
+					"debt_to_another_payment_system_account": "Có của bạn một khoản nợ chưa thanh toán vào tài khoản khác ({{account}})",
+					"more_debts_exist": "Có khoản nợ hệ thống thanh toán và tài khoản. Bạn nên trả tất cả các khoản nợ trước khi rút tiền thắng cuộc. Số nợ hệ thống thanh toán hiện tại là {{debt_amount}}."
+				},
+				"commission_connection": {
+					"not_overlap": "Không được trùng với các kết nối khác với mức hoa hồng tương đương",
+					"future_from_time": "Phải trong tương lai",
+					"greater_than_from_time": "Phải lớn hơn từ thời gian",
+					"strategies_equivalence": "Phải có chương trình thanh toán tương tự như hồ sơ thành viên",
+					"greater_than_now": "Phải lớn hơn so với hiện nay"
+				},
+				"commission": {
+					"wrong_strategy_settings": "Bạn có lỗi trong cài đặt chương trình thanh toán"
+				},
+				"bonus_issue": {
+					"not_enough_to_lock": "Lớn hơn số dư của người dùng"
+				},
+				"external_bet": {
+					"rollback_expired": "Quay lại không được chấp nhận nếu 24 giờ đã trôi qua sau khi đăng kí kết quả"
+				},
+				"notification/subscription": {
+					"invalid_types": "Bạn chỉ có thể đăng ký một thông báo"
+				}
+			}
+		},
+		"models": {
+			"account": "Tài khoảnTài khoản",
+			"admin_user": "Người dùng quản trịNgười dùng quản trị",
+			"affiliate_profile": "Hồ sơ thành viênHồ sơ thành viên",
+			"bet": "CượcCược",
+			"bonus": "Tiền thưởngTiền thưởng",
+			"bonus_issue": "Vấn đề tiền thưởngVấn đề tiền thưởng",
+			"document": "Tài liệuTài liệu",
+			"event": "Sự kiệnSự kiện",
+			"external_bet": "Tiền cược ngoàiTiền cược ngoài",
+			"game": "Trò chơiTrò chơi",
+			"game_category": "Thể loại trò chơiThể loại trò chơi",
+			"game_step": "BướcCác bước",
+			"game_table": "Bàn chơi Bàn chơi ",
+			"payment": "Thanh toánThanh toán",
+			"payment_system": "Hệ thống thanh toánHệ thống thanh toán",
+			"profile": "Hồ sơHồ sơ",
+			"reports/base_collection/result_record": "Kết quảKết quả",
+			"suspicion": "Nghi ngờNghi ngờ",
+			"user": "Người dùngNgười dùng",
+			"player": "Người chơiNgười chơi",
+			"retention_email": "Email duy trìEmail duy trì"
+		},
+		"attributes": {
+			"balance_correction": {
+				"action": "Action",
+				"amount": "Amount",
+				"account": "Account",
+				"comment": "Comment"
+			},
+			"game_category": {
+				"name": "Tên",
+				"disabled": "Vô hiệu",
+				"created_at": "Được tạo lúc",
+				"games": "Trò chơi",
+				"position": "Vị trí"
+			},
+			"notification": {
+				"type": "Loại",
+				"user": "Người dùng",
+				"admin_user": "Quản trị",
+				"target": "Mục tiêu",
+				"target_type": "Loại mục tiêu"
+			},
+			"affiliate_link": {
+				"name": "Tên",
+				"code": "Mã xác nhận"
+			},
+			"affiliate_profile": {
+				"name": "Tiêu đề",
+				"strategy": "Phương thức rút tiền",
+				"no_debt": "Không mang sang âm",
+				"links": "Liên kết",
+				"active": "Hoạt động"
+			},
+			"account": {
+				"currency": "Tiền tệ",
+				"amount": "Tiền tệ",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"active_admin/comment": {
+				"author": "Tác giả",
+				"body": "Thân bài",
+				"resource": "Nguồn"
+			},
+			"admin_user": {
+				"email": "Email",
+				"encrypted_password": "Mật khẩu mã hóa",
+				"password": "Mật khẩu",
+				"password_confirmation": "Xác nhận mật khẩu",
+				"current_password": "Mật khẩu hiện tại",
+				"remember_me": "Ghi nhớ",
+				"reset_password_token": "Mã token làm mới mật khẩu",
+				"reset_password_sent_at": "Làm mới mật khẩu được gửi lúc",
+				"remember_created_at": "Ghi nhớ được tạo lúc",
+				"sign_in_count": "Số lần đăng nhập",
+				"current_sign_in_at": "Đăng nhập hiện tại lúc",
+				"last_sign_in_at": "Đăng nhập lần cuối lúc",
+				"current_sign_in_ip": "Địa chỉ IP đăng nhập hiện tại",
+				"last_sign_in_ip": "Địa chỉ IP lần cuối đăng nhập",
+				"failed_attempts": "Các nỗ lực bị hỏng",
+				"unlock_token": "Bằng chứng mở khóa",
+				"locked_at": "Bị khóa lúc",
+				"password_changed_at": "Mật khẩu thay đổi lúc",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc",
+				"disabled": "Vô hiệu",
+				"allowed_ips_string": "Địa chỉ IP được cho phép",
+				"roles_names": "Vai trò"
+			},
+			"balance_transaction": {
+				"reference": "Tham khảo",
+				"amount": "Số tiền",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"bet": {
+				"bet_type": "Loại cược",
+				"bet_amount": "Số tiền cược",
+				"win_amount": "Số tiền thắng",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"bonus": {
+				"strategy": "Loại",
+				"title": "Tiêu đề",
+				"description": "Mô tả",
+				"percentage": "Phần trăm",
+				"currency": "Tiền tệ",
+				"amount": "Số tiền",
+				"percent": "Phần trăm",
+				"max_amount": "Số tiền lớn nhất",
+				"code": "Mã",
+				"extra_info": "Thông tin thêm",
+				"wager_multiplier": "Hệ số đánh cược",
+				"wagering_epsilon": "Số epsilon đánh cược",
+				"cashable": "Có thể thanh toán bằng tiền mặt",
+				"sticky": "Dính",
+				"enabled": "Hoạt động",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"bonus_issue": {
+				"strategy": "Chiến thuật",
+				"stage": "Màn",
+				"amount": "Số tiền",
+				"amount_wager_requirement": "Số tiền cược yêu cầu",
+				"amount_wager": "Số tiền cược",
+				"wagered_percent": "Phần trăm tiền cược",
+				"amount_locked": "Số tiền bị khóa",
+				"valid_until": "Ngày hết hạn",
+				"extra_info": "Thông tin thêm",
+				"cashable": "Có thể thanh toán bằng tiền mặt",
+				"sticky": "Dính",
+				"wager": "Đặt cược",
+				"created_at": "Ngày nhận",
+				"issued_at": "Ban hành lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"freespin_issue": {
+				"stage": "Stage",
+				"amount": "Amount",
+				"freespins_total": "Freespins Awarded",
+				"activatable_until": "Expiry date",
+				"win_amount_cents": "Alredy won",
+				"valid_until": "Expiry date",
+				"extra": "Extra info",
+				"external_id": "External ID",
+				"created_at": "Date received",
+				"issued_at": "Issued at",
+				"updated_at": "Updated at"
+			},
+			"bonus_strategy/feature/payment_system": {
+				"ids_list": "Hệ thống thanh toán"
+			},
+			"contact": {
+				"email": "Email",
+				"content": "Nội dung"
+			},
+			"document": {
+				"approved": "Được phê duyệt",
+				"description": "Mô tả",
+				"removed": "Đã gỡ bỏ",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc",
+				"attachment": "Đính kèm",
+				"attachment_file_name": "Tên tệp đính kèm",
+				"attachment_content_type": "Nội dung tệp đính kèm",
+				"attachment_file_size": "Dung lượng tệp đính kèm",
+				"attachment_updated_at": "Thêm vào lúc"
+			},
+			"event": {
+				"subject": "Chủ đề",
+				"event_type": "Loại sự kiện",
+				"ip": "IP",
+				"country": "Quốc gia",
+				"coordinates": "Tọa độ",
+				"latitude": "Vĩ độ",
+				"longitude": "Kinh độ",
+				"address": "Địa chỉ",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"external_bet": {
+				"id": "Id địa phương",
+				"account_id": "ID tài khoản",
+				"account": "Tài khoản",
+				"external_id": "ID bên ngoài",
+				"bet_amount": "Cược",
+				"win_amount": "Thắng",
+				"oauth_application": "Ứng dụng OAuth",
+				"oauth_application_id": "ID ứng dụng OAuth"
+			},
+			"game": {
+				"data": "Dữ liệu",
+				"finished_at": "Hoàn thành lúc",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"game_step": {
+				"state": "Trạng thái",
+				"action": "Hành động",
+				"data": "Dữ liệu",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"game_table": {
+				"base_type": "Loại cơ bản",
+				"variation": "Sự biến đổi",
+				"identifier": "Định danh",
+				"title": "Tiêu đề",
+				"client": "Khách hàng",
+				"provider": "Nhà cung cấp dịch vụ trò chơi",
+				"description": "Mô tả",
+				"active": "Hoạt động",
+				"currency": "Tiền tệ",
+				"secondary_currency": "Tiền tệ thứ 2",
+				"amount_win": "Tổng cược",
+				"amount_loss": "Tổng số trận thắng",
+				"chips": "Chips",
+				"default_chip": "Chip mặc định",
+				"min_bet": "Mức cược thấp nhất",
+				"max_bet": "Mức cược cao nhất",
+				"paytable": "Bảng trả tiền",
+				"options": "Tùy chọn",
+				"bet_playthrough_percent": "Phần trăm cược lúc chơi",
+				"line_bets": "Đường cược",
+				"archived_at": "Lưu trữ lúc",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"modification": {
+				"subject": "Chủ đề",
+				"entity": "Thực thể",
+				"data": "Dữ liệu",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"paritcipation": {
+				"active": "Hoạt động",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"payment": {
+				"amount": "Số tiền",
+				"commission_amount": "Hoa hồng",
+				"amount_after_commission": "Tổng tiền (đã trừ hoa hồng)",
+				"currency": "Tiền tệ",
+				"action": "Hành động",
+				"source": "Nguồn",
+				"extra": "Thêm",
+				"success": "Thành công",
+				"finished_at": "Hoàn thành lúc",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc",
+				"recipient_address": "Địa chỉ",
+				"manual_confirmation_code": "Mã xác nhận",
+				"source_id": "Mã thanh toán"
+			},
+			"payment_system": {
+				"system_name": "Tên hệ thống",
+				"disabled": "Vô hiệu",
+				"currency_options": "Tùy chọn tiền tệ",
+				"test_mode": "Chế độ kiểm tra",
+				"data": "Dữ liệu",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"payment_system_debt": {
+				"system_name": "Tên hệ thống",
+				"system_account": "Tài khoản trong hệ thống",
+				"amount_cents": "Nợ",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"profile_setting": {
+				"name": "Tên",
+				"enabled": "Sẵn sàng",
+				"required": "Yêu cầu",
+				"show_at_registration": "Hiển thị lúc đăng kí",
+				"show_at_edition": "Hiển thị trong chế độ chỉnh sửa",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			},
+			"suspicion": {
+				"suspect": "Nghi ngờ",
+				"discarded": "Bị hủy",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc",
+				"related_suspect": "Liên quan đến tình nghi",
+				"data": "Dữ liệu",
+				"failed_check": "Kiểm tra thất bại"
+			},
+			"user": {
+				"email": "Email",
+				"encrypted_password": "Mật khẩu mã hóa",
+				"password": "Mật khẩu",
+				"password_confirmation": "Xác nhận mật khẩu",
+				"current_password": "Mật khẩu hiện tại",
+				"remember_me": "Ghi nhớ",
+				"reset_password_token": "Mã Token thay đổi mật khẩu",
+				"reset_password_sent_at": "Thay đổi mật khẩu được gửi lúc",
+				"remember_created_at": "Ghi nhớ được tạo lúc",
+				"sign_in_count": "Số lần đăng nhập",
+				"current_sign_in_at": "Đăng nhập hiện tại lúc",
+				"last_sign_in_at": "Đăng nhập lần cuối lúc",
+				"current_sign_in_ip": "Địa chỉ IP đăng nhập hiện tại",
+				"last_sign_in_ip": "Đại chỉ IP đăng nhập lần cuối",
+				"confirmation_token": "Mã token xác minh",
+				"confirmed_at": "Được xác minh lúc",
+				"confirmation_sent_at": "Xác minh được gửi lúc",
+				"unconfirmed_email": "Email chưa được xác minh",
+				"failed_attempts": "Nỗ lực thất bại",
+				"unlock_token": "Bằng chứng mở khóa",
+				"locked_at": "Bị khóa lúc",
+				"authentication_token": "Bằng chứng xác nhận",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc",
+				"disabled": "Vô hiệu",
+				"allowed_ips_string": "Các địa chỉ IP được cho phép",
+				"guest": "Khách",
+				"main_bitcoin_address": "Địa chỉ bitcoin chính",
+				"bonus_code": "Mã thưởng"
+			},
+			"profile": {
+				"full_name": "Tên đầy đủ",
+				"first_name": "Tên",
+				"last_name": "Họ",
+				"title": "Tiêu đề",
+				"nickname": "Biệt hiệu",
+				"date_of_birth": "Ngày sinh",
+				"personal_id_number": "Số định danh cá nhân",
+				"gender": "Giới tính",
+				"country": "Quốc gia",
+				"city": "Thành phố",
+				"place_of_birth": "Nơi sinh",
+				"address": "Địa chỉ",
+				"address2": "Địa chỉ khác",
+				"postal_code": "Mã vùng",
+				"time_zone": "Múi giờ",
+				"mobile_phone": "Điện thoại đi động",
+				"phone": "Điện thoại",
+				"skype": "Skype",
+				"send_payment_confirmation": "Xác minh gửi thanh toán",
+				"receive_newsletters": "Nhận tin tức",
+				"receive_promos": "Nhận quảng cáo",
+				"never_call": "Không bao giờ gọi",
+				"currency": "Tiền tệ",
+				"language": "Ngôn ngữ",
+				"security_question": "Câu hỏi bảo mật",
+				"security_answer": "Câu trả lời bảo mật",
+				"age_acceptance": "Tuổi được xác nhận",
+				"terms_acceptance": "Đồng ý với các điều khoản và điều kiện",
+				"bonus_issuance_policy": "Chính sách ban thưởng",
+				"allowed_ips_string": "Các địa chỉ IP được cho phép"
+			},
+			"profile/admin": {
+				"full_name": "Tên đầy đủ",
+				"first_name": "Tên",
+				"last_name": "Họ",
+				"title": "Tiêu đề",
+				"nickname": "Biệt hiệu",
+				"date_of_birth": "Ngày sinh",
+				"personal_id_number": "Số định danh cá nhân",
+				"gender": "Giới tính",
+				"country": "Quốc gia",
+				"city": "Thành phố",
+				"place_of_birth": "Nơi sinh",
+				"address": "Địa chỉ",
+				"address2": "Địa chỉ khác",
+				"postal_code": "Mã vùng",
+				"time_zone": "Múi giờ",
+				"mobile_phone": "Điện thoại đi động",
+				"phone": "Điện thoại",
+				"skype": "Skype",
+				"send_payment_confirmation": "Xác minh gửi thanh toán",
+				"receive_newsletters": "Nhận tin tức",
+				"receive_promos": "Nhận quảng cáo",
+				"never_call": "Không bao giờ gọi",
+				"currency": "Tiền tệ",
+				"language": "Ngôn ngữ",
+				"security_question": "Câu hỏi bảo mật",
+				"security_answer": "Câu trả lời bảo mật",
+				"age_acceptance": "Xác nhận bạn ít nhất {{age}}",
+				"terms_acceptance": "Đồng ý với các điều khoản và điều kiện",
+				"bonus_issuance_policy": "Chính sách ban thưởng",
+				"allowed_ips_string": "Các địa chỉ IP được cho phép"
+			},
+			"profile/user": {
+				"full_name": "Tên đầy đủ",
+				"first_name": "Tên",
+				"last_name": "Họ",
+				"title": "Tiêu đề",
+				"nickname": "Biệt hiệu",
+				"date_of_birth": "Ngày sinh",
+				"personal_id_number": "Số định danh cá nhân",
+				"gender": "Giới tính",
+				"country": "Quốc gia",
+				"city": "Thành phố",
+				"place_of_birth": "Nơi sinh",
+				"address": "Địa chỉ",
+				"address2": "Địa chỉ khác",
+				"postal_code": "Mã vùng",
+				"time_zone": "Múi giờ",
+				"mobile_phone": "Điện thoại đi động",
+				"phone": "Điện thoại",
+				"skype": "Skype",
+				"send_payment_confirmation": "Xác minh gửi thanh toán",
+				"receive_newsletters": "Nhận tin tức",
+				"receive_promos": "Nhận quảng cáo",
+				"never_call": "Không bao giờ gọi",
+				"currency": "Tiền tệ",
+				"language": "Ngôn ngữ",
+				"security_question": "Câu hỏi bảo mật",
+				"security_answer": "Câu trả lời bảo mật",
+				"age_acceptance": "Tôi xác nhận là mình hơn {{age}}",
+				"terms_acceptance": "Tôi đồng ý với {{text}}",
+				"bonus_issuance_policy": "Chính sách ban thưởng",
+				"allowed_ips_string": "Các địa chỉ IP được cho phép"
+			},
+			"provable_fair_data": {
+				"secret": "Bí mật",
+				"client_seed": "Client seed",
+				"result": "Kết quả",
+				"hash": "Hash"
+			},
+			"retention_email": {
+				"strategy": "Loại",
+				"template_name": "Tên mẫu",
+				"days_interval": "Ngày nghỉ",
+				"enabled": "Hoạt động",
+				"created_at": "Được tạo lúc",
+				"updated_at": "Được cập nhật lúc"
+			}
+		}
+	},
+	"mongoid": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "Không thể chứa fragment.",
+							"has_query_parameter": "không thể chứa query parameter.",
+							"invalid_uri": "phải có một URI hợp lệ.",
+							"relative_uri": "phải có một địa chỉ URI chính xác."
+						}
+					}
+				}
+			}
+		}
+	},
+	"mongo_mapper": {
+		"errors": {
+			"models": {
+				"application": {
+					"attributes": {
+						"redirect_uri": {
+							"fragment_present": "không thể bao hàm một mảng.",
+							"has_query_parameter": "không thể bao hàm một tham số truy vấn",
+							"invalid_uri": "phải có một địa chỉ URI hợp lệ",
+							"relative_uri": "phải là đường dẫn URI tuyệt đối"
+						}
+					}
+				}
+			}
+		}
+	},
+	"doorkeeper": {
+		"errors": {
+			"messages": {
+				"invalid_request": "Các yêu cầu là thiếu một tham số cần thiết, bao gồm một giá trị tham số không được hỗ trợ, hoặc không bị thay đổi.",
+				"invalid_redirect_uri": "Chuyển hướng uri bao gồm không hợp lệ.",
+				"unauthorized_client": "Khách hàng không được ủy quyền thực hiện yêu cầu bằng cách sử dụng phương pháp này.",
+				"access_denied": "Chủ sở hữu tài nguyên hoặc người được ủy quyền từ chối yêu cầu.",
+				"invalid_scope": "Phạm vi yêu cầu không hợp lệ, không rõ hoặc không chính xác.",
+				"server_error": "Các máy chủ ủy quyền gặp phải tình huống bất ngờ, nó ngăn cản việc thực hiện yêu cầu.",
+				"temporarily_unavailable": "Máy chủ ủy quyền hiện không thể xử lý các yêu cầu do tạm thời bị quá tải hoặc đang bảo trì máy chủ.",
+				"credential_flow_not_configured": "Ủy quyền mật khẩu cho tài nguyên của người sở hữu bị lỗi do Doorkeeper.configure.resource_owner_from_credentials đang không được cấu hình",
+				"resource_owner_authenticator_not_configured": "Tìm kiếm tài nguyên của người sở hữu bị lỗi do Doorkeeper.configure.resource_owner_authenticator đang không được cấu hình",
+				"unsupported_response_type": "Máy chủ ủy quyền không trợ kiểu hồi đáp này",
+				"invalid_client": "Xác minh ở máy khách bị lỗi do không biết khách hàng, khách hàng không có thông tin xác minh hoặc phương thức xác minh không được hỗ trợ",
+				"invalid_grant": "Việc trao quyền xác thực không hợp lệ, hết hạn, bị thu hồi, không khớp với URI chuyển hướng sử dụng trong yêu cầu xác minh hoặc bị chuyển sang 1 máy khách khác",
+				"unsupported_grant_type": "Loại trao quyền xác thực không được hỗ trợ bởi máy ủy quyền",
+				"invalid_resource_owner": "Các thông tin chủ sở hữu nguồn tài nguyên được cung cấp không hợp lệ, hoặc chủ sở hữu tài nguyên không thể được tìm thấy",
+				"invalid_token": {
+					"revoked": "Các mã thông báo truy cập đã bị thu hồi",
+					"expired": "Mã truy cập đã hết hạn.",
+					"unknown": "Mã truy cập bị trừ chối."
+				}
+			}
+		},
+		"flash": {
+			"applications": {
+				"create": {
+					"notice": "Ứng dụng đã được tạo."
+				},
+				"destroy": {
+					"notice": "Ứng dụng đã bị xóa."
+				},
+				"update": {
+					"notice": "Ứng dụng đã được cập nhật."
+				}
+			},
+			"authorized_applications": {
+				"destroy": {
+					"notice": "Ứng dụng đã bị hủy bỏ."
+				}
+			}
+		},
+		"authorize_title": "OAuth ủy quyền là bắt buộc",
+		"authorize_required": "Ủy quyền là bắt buộc",
+		"authorize": "Ủy quyền",
+		"authorization_code": "Mã ủy quyền",
+		"deny": "Từ chối",
+		"rights_title": "Ứng dụng này sẽ có khả năng:",
+		"allow_authorization": "Ủy quyền {{app}} sử dụng tài khoản của bạn?",
+		"authorize_as_regular_user": "Vui lòng đăng xuất khỏi tài khoản của khách và đăng nhập như một người dùng thông thường.",
+		"scopes": {
+			"profile": "Truy cập dữ liệu cá nhân của bạn",
+			"bets": "Truy cập dữ liệu tài khoản của bạn và đặt cược thay mặt bạn"
+		}
+	},
+	"amatic": {
+		"verification": {
+			"error_popup": {
+				"title": "Lỗi",
+				"description": "Máy chủ Amatic không phản hồi."
+			},
+			"popup": {
+				"copy": "Sao chép",
+				"title": "Xác minh thành công",
+				"description": "Tuyệt vời! Đoạn văn đã được kí bởi chữ kí mật của Amatic Industries. Bạn có thể xác minh nó bất kì dịch vụ bên thứ 3 nào",
+				"message": "Văn bản của bạn",
+				"signature": "Chữ kí Amatic",
+				"address": "Địa chỉ Bitcoin"
+			},
+			"title": "Xác minh của Amatic",
+			"description1": "Chúng tôi cung cấp phần mềm tự động xác minh chữ kí dựa trên Bitcoin cho các trò chơi của Amatic. Giúp bạn tránh bị lừa đảo.",
+			"description2": "Hãy đánh vài chữ xuống dưới đây. Amatic Industries sẽ kí nó và giả lại bạn.",
+			"form": {
+				"your_text": "Văn bản của bạn",
+				"verify": "Kiểm tra"
+			}
+		},
+		"amatic": "Amatic"
+	},
+	"http": {
+		"not_found": {
+			"title": "Không tìm thấy trang",
+			"oops": "Ối,",
+			"cannot_be_found": "Trang mà bạn đang tìm không được tìm thấy.",
+			"description": "Có thể nó đã được gỡ bỏ, tên của nó đã thay đổi, hoặc tạm thời không có. Casino Team rất xin lỗi, chúng tôi không thể cung cấp cho bạn những gì bạn đang tìm kiếm, nhưng chúng tôi hứa sẽ cố gắng hết sức để giúp đỡ bạn.",
+			"link_to_root": "Đây là liên kết đến trang chủ của bạn."
+		}
+	},
+	"common": {
+		"in_out": "Trong/Ngoài",
+		"players": "Người chơi",
+		"email": "Email",
+		"content": "Nội dung",
+		"loading": "Đang tải...",
+		"yes": "Đồng ý",
+		"no": "Không đồng ý",
+		"all": "Toàn bộ",
+		"default": "Mặc định",
+		"date": "Ngày",
+		"result": "Kết quả",
+		"total_bet": "Tổng tiền cược",
+		"total_win": "Tổng số lần thắng",
+		"gross_win": "Doanh thu gộp",
+		"cashouts_sum": "Tổng tiền rút",
+		"deposits_sum": "Tổng tiền cọc",
+		"net_revenue": "Doanh thu thuần",
+		"client": "Khách hàng",
+		"amount": "Số tiền",
+		"help": "Trợ giúp",
+		"currency": "Tiền tệ",
+		"total": "Tổng số",
+		"limit": "Giới hạn",
+		"live_casino": "Casino trực tuyến",
+		"address": "Địa chỉ",
+		"good_news": "Good news, {{nickname}}.",
+		"save": "Lưu",
+		"edit": "Chỉnh sửa",
+		"remove": "Gỡ bỏ",
+		"destroy": "Phá hủy",
+		"cancel": "Hủy bỏ",
+		"close": "Đóng",
+		"create": "Tạo",
+		"add": "Thêm",
+		"update": "Cập nhật",
+		"reset": "Đặt lại",
+		"refresh": "Làm mới",
+		"proceed": "Tiếp tục",
+		"filter": "Bộ lọc",
+		"are_you_sure": "Bạn có chắc không ?",
+		"set": "Thiết lập",
+		"enabled": "Hoạt động",
+		"disabled": "Đã tắt",
+		"active": "Hoạt động",
+		"preview": "Xem trước",
+		"select": "Chọn",
+		"summary": "Tổng kết",
+		"status": "Trạng thái",
+		"options": "Tùy chọn",
+		"genders": {
+			"m": "Nam",
+			"f": "Nữ"
+		},
+		"player": "Người chơi",
+		"guest": "Khách",
+		"subject": "Chủ đề",
+		"actions": "Hành động",
+		"balance": "Cân bằng",
+		"profit": "Tiền lời",
+		"payout": "Thanh toán",
+		"bets_sum": "Tổng tiền cược",
+		"wins_sum": "Tổng tiền thắng cuộc",
+		"bets": "Cược:",
+		"total_payouts": "Tổng tiền thanh toán:",
+		"terms_and_conditions": "Điều khoản và điều kiện",
+		"net_total": "Tổng số Net",
+		"blog": "Blog",
+		"comments": "Bình luận",
+		"comment": "Bình luận",
+		"empty_search_results": "Không có các kết quả theo tham số lọc",
+		"add_more_coins": "Thêm nhiều Coins",
+		"show_more_games": "Hiện thêm các trò chơi",
+		"warning": "Cảnh báo",
+		"new_as_novelty": "Mới",
+		"already_member": "Đã là thành viên ?",
+		"have_account": "Đã có tài khoản ?"
+	},
+	"locales": {
+		"af": "Afrikaans",
+		"bg": "Bulgarian",
+		"de": "German",
+		"el": "Greek",
+		"en": "English",
+		"es": "Spanish",
+		"fi": "Finnish",
+		"fr": "French",
+		"it": "Italian",
+		"ja": "Japanese",
+		"ko": "Korean",
+		"nl": "Dutch",
+		"pl": "Polish",
+		"pt": "Portuguese",
+		"ru": "Russian",
+		"sv": "Swedish",
+		"tr": "Turkish",
+		"vi": "Vietnamese",
+		"zh": "Chinese"
+	},
+	"date": {
+		"day": "Ngày",
+		"week": "Tuần",
+		"month": "Tháng",
+		"year": "Năm"
+	},
+	"casino": {
+		"casino": "Casino",
+		"not_enough_money": "Không đủ tiền",
+		"events": {
+			"modified": {
+				"user": "Chỉnh sửa hồ sơ cá nhân",
+				"admin_user": "Chỉnh sửa người quản trị",
+				"game_table": "Chỉnh sửa Game",
+				"bonus_issue": "Bổ sung vấn đề",
+				"bonus": "Chỉnh sửa bổ sung",
+				"payment_system": "Hệ thống thanh toán",
+				"retention_email": "Duy trì chỉnh sửa Email",
+				"casino_cash_balance": "Casino Cash Balance Modified",
+				"commission_connection": "Commission Connection Modified",
+				"payment": "Payment Modified",
+				"affiliate_profile": "Affiliate Profile Modified"
+			},
+			"game": {
+				"step": "Các bước hoàn thành game"
+			},
+			"user": {
+				"sign_out": "Người dùng đã đăng xuất",
+				"sign_in": "Người dùng đã đăng nhập",
+				"failed_sign_in": "Người dùng đăng nhập lỗi"
+			},
+			"admin_user": {
+				"sign_out": "Người quản trị đã đăng xuất",
+				"sign_in": "Người quản trị đã đăng nhập",
+				"failed_sign_in": "Người quản trị đăng nhập lỗi"
+			},
+			"notifications": {
+				"balance_correction_created": "Balance correction created",
+				"cashout_requested": "Cashout requested",
+				"deposit_made": "Deposit made",
+				"cashout_made": "Cashout made",
+				"auto_cashout_made": "Auto-cashout made",
+				"cashout_rejected": "Cashout request rejected",
+				"deposit_rejected": "Deposit rejected",
+				"user_upload_document": "User Uploaded Document",
+				"payment_created_by_admin": "Admin Created Payment",
+				"user_disabled": "User Disabled",
+				"contact": "User Requested Support",
+				"admin_comment_created": "Admin Left Comment"
+			},
+			"affiliate": {
+				"redirect": "Truy cập liên kết người dùng mới"
+			},
+			"bitcoin_addresses_uploaded": "Địa chỉ Bitcoin đã được tải lên"
+		},
+		"bonuses": {
+			"names": {
+				"no_deposit": "Không có tiền gửi",
+				"first_deposit": "Tiền đặt cọc",
+				"nth_deposit": "Tiền lãi",
+				"deposit_system": "Hệ thống thanh toán thêm",
+				"coupon": "Mã khuyến mại"
+			},
+			"issuance_policy": {
+				"can-issue": "Tiền thưởng tự động phát hành",
+				"can-refuse": "Người chơi có thể hủy bỏ tiền thưởng trước khi chơi",
+				"can-cancel": "Người chơi có thể hủy bỏ tiền thưởng"
+			}
+		},
+		"retention_emails": {
+			"names": {
+				"welcome": "Chào mừng",
+				"welcome_promo": "Khuyến mãi chào mừng",
+				"no_deposit": "Không có tiền gửi",
+				"nth_deposit": "Không có tiền lãi"
+			}
+		},
+		"payment_systems": {
+			"names": {
+				"qiwi": "Tài khoản Qiwi",
+				"skrill": "Tài khoản Skrill",
+				"interkassa": "Tài khoản Interkassa",
+				"paysafecard": "Thanh toán thẻ an toàn qua mạng",
+				"ukash": "Phương thức thanh toán Ukash",
+				"neteller": "Hình thức thanh toán Neteller",
+				"card_pay": "Thanh toán bằng CardPay",
+				"b_cash": "Thanh toán bằng B-Cash",
+				"wirecard": "Thanh toán bằng Wirecard",
+				"coupon": "Mã khuyến mại",
+				"cashbox": "Thanh toán bằng Cashbox",
+				"cep_bank": "Thanh toán bằng Cep Bank",
+				"bank_transfer": "Chuyền tiền ngân hàng",
+				"cubits": "Cubits",
+				"lavapay": "Lavapay",
+				"bitcoin_payment": "Bitcoin",
+				"ripple_payment": "Ripple"
+			},
+			"payer": {
+				"cashout_email_subject": "Rút tiền từ Casino",
+				"cashout_email_note": "Thực hiện việc rút tiền"
+			},
+			"system_name": "%{child} đến %{parent}",
+			"all_locked": "Để đảm bảo sự an toàn của bạn, chúng tôi chỉ cho phép rút tiền ra khỏi hệ thống thông qua hệ thống thanh toán mà bạn đã dùng để gửi chúng vào. Nếu bạn có câu hỏi nào, xin vui long liên hệ để được hỗ trợ.",
+			"child_systems": {
+				"visa": "Thẻ Visa",
+				"mastercard": "Thẻ MasterCard",
+				"online_bank_transfer": "Chuyển tiền ngân hàng online",
+				"ideal": "Ý tưởng",
+				"nordea_solo": "Nordea Solo",
+				"bancontact_mister_cash": "Bancontact/Mister Cash",
+				"cards": "Credit Cards",
+				"ccard": "Thẻ tín dụng",
+				"click_to_pay": "Phương thức thanh toán LICK2PAY",
+				"ekonto": "Tài khoản eKonto",
+				"eps": "Hệ thống thanh toán điện tử EPS",
+				"giropay": "Hệ thống thanh toán Giropay",
+				"installment": "Chi trả góp bằng hình thức trả tiền",
+				"invoice": "Thanh toán hóa đơn bằng cách trả tiền",
+				"moneta": "moneta.ru",
+				"mpass": "mpass",
+				"przelewy": "Przelewy24",
+				"paypal": "PayPal",
+				"paybox": "Paybox",
+				"poli": "Thanh toán qua POLi",
+				"paysafecard": "Thanh toán thẻ an toàn qua mạng",
+				"quick": "Thanh toán nhanh",
+				"sepa": "Ghi nợ trực tiếp qua SEPA",
+				"skrill_direct": "Thanh toán qua Skrill Direct",
+				"skrill_wallet": "Ví điện tử Skrill",
+				"sofort": "Hình thức thanh toán Soffort Banking",
+				"tatrapay": "Thanh toán qua TatraPay",
+				"trustly": "Thanh toán qua Trustly",
+				"bank_transfer": "Bank Transfer",
+				"lavapay_balance": "LavaPay Balance",
+				"cheque": "Cheque",
+				"perfect": "Perfect Money",
+				"liqpay": "LiqPay",
+				"webmoney": "WebMoney",
+				"yandex": "Yandex Money",
+				"okpay": "OKPAY",
+				"qiwi": "Qiwi",
+				"mailru": "money@mail.ru",
+				"lavapay_bitcoin": "Bitcoin",
+				"egopay": "EgoPay",
+				"lavapay_litecoin": "LiteCoin",
+				"paxum": "Paxum",
+				"ecoin": "eCoin",
+				"btce": "BTC-E",
+				"privatbank": "PrivatBank.ua",
+				"nsmep": "NSMEP",
+				"telemoney": "TeleMoney",
+				"ukrterminal": "UkrTerminal",
+				"rusterminal": "RusTerminal",
+				"rusbank": "Rusbank",
+				"mobileretails": "MobileRetails",
+				"unistream": "Unistream",
+				"ruspost": "RusPost",
+				"contact": "Contact",
+				"anelik": "Anelik",
+				"leader": "Leader",
+				"mts": "MTS",
+				"megafon": "Megafon",
+				"beeline": "Beeline",
+				"alfaclick": "AlfaClick",
+				"fortumo": "Fortumo",
+				"cashu": "CashU",
+				"privat_terminal": "Privat Terminal",
+				"kazakhstan_terminal": "Kazakhstan Terminal",
+				"tjs_terminal": "Tjs Terminal",
+				"moldova_terminal": "Moldova Terminal",
+				"georgia_terminal": "Georgia Terminal",
+				"euroset": "Euroset",
+				"kievstar": "KievStar",
+				"promsvyazbank": "PromSvyazBank",
+				"easypay": "EasyPay",
+				"bpay": "BPay",
+				"pravex": "Pravex Bank",
+				"ukrsib": "UkrSib Bank",
+				"liberty": "Liberty Bank",
+				"faktura": "Faktura.ru",
+				"privatbank_cashin": "Privatbank Cash-in",
+				"sberbank_cashin": "Sberbank Cash-in",
+				"qiwi_visa": "Visa Qiwi",
+				"qiwi_mastercard": "Mastercard Qiwi",
+				"qiwi_maestro": "Maestro Qiwi",
+				"cis_cards": "Bank Cards",
+				"yandex_personal": "Yandex Personal",
+				"local_bank_transfer": "Local Bank Transfer",
+				"w1": "W1",
+				"wallet_one": "Wallet One",
+				"russian_standard": "Russian Standard Bank"
+			}
+		},
+		"commissions": {
+			"strategies": {
+				"registration": "Thanh toán qua CPA",
+				"percent": "Thanh toán qua Rev Share"
+			}
+		},
+		"games": {
+			"unknown_action": "Hành động sai",
+			"unavailable_action": "Hành động không có sẵn",
+			"roulette": {
+				"notice": {
+					"bet_is_not_valid": "Đặt cược không hợp lệ",
+					"bet_type_not_found": "Không tìm thấy loại cược",
+					"unknown_bet": "Đặt cược sai",
+					"unknown_value": "Giá trị không biết được lựa chọn",
+					"unknown_column": "Cột không biết được chọn",
+					"unknown_dozen": "1 tá không biết được chọn"
+				}
+			}
+		},
+		"provable_fair": {
+			"provable_fair": "Chứng minh công bằng",
+			"provability": "Sự chứng minh",
+			"not_available": "Widget xác suất có sẵn tại trang trò chơi",
+			"verify": "Kiểm tra",
+			"loading": "Đang lấy ngẫu nhiên ...",
+			"is_unavailable": "Chứng minh công bằng không có sẵn cho trò chơi này.",
+			"next_game": "Trò tiếp theo",
+			"last_game": "Trò vừa rồi",
+			"reel_number": "Guồng quay {{index}}",
+			"fields": {
+				"hash": "Mớ lộn xộn (Kết quả + Bí mật)",
+				"client_seed": "Hạt giống khách hàng",
+				"secret": "Kết quả + Bí mật",
+				"result": "Kết quả cuối cùng"
+			},
+			"hint": {
+				"common": "Nhập hạt giống của khách hàng (0-{{max_seed}})",
+				"roulette": "Đẩy bóng xa thêm:",
+				"card": "Cắt bài",
+				"poker": "Cắt bài",
+				"slots": "Xoay guồng thêm một chút:"
+			},
+			"verification": {
+				"success": {
+					"title": "Xác minh thành công",
+					"body": "Tuyệt vời, số hỗn độn chúng tôi đã gửi cho bạn lúc bắt đầu trò chơi khớp chính xác với giá trị của trò chơi. Hạt giống người chơi của bạn đã có ảnh hưởng giống mong đợi về kết quả cuối cùng"
+				},
+				"failure": {
+					"title": "Xác nhận thất bại",
+					"body": "Vui lòng liên hệ bộ phận hỗ trợ của chúng tôi."
+				}
+			}
+		},
+		"bitcoin": {
+			"update_balance": "Làm mới dữ liệu tài khoản",
+			"current_balance": "Số dư hiện tại {{balance}}.",
+			"send_text": "Gửi bất kì lượng {{currency}} (cộng khoản phí nhỏ) tới",
+			"cant_attach_address": "Xin lỗi, chúng tôi có một số vấn đề với Bitcoins. Quản trị viên đã được thông báo. Hãy thử lại sau.",
+			"private_address_note": "Đây là địa chỉ gửi tiền cá nhân của bạn. Bất kỳ giao dịch bạn thực hiện cho địa chỉ này sẽ hiển thị ngay lập tức trong số dư của bạn.",
+			"xrp": {
+				"send_text": "Gửi bất kỳ số lượng {{currency}} tới",
+				"private_address_note": "Đây là địa chỉ gửi tiền và thẻ điểm đến của bạn. Bất kỳ giao dịch bạn thực hiện với địa chỉ này và thẻ điểm đến này sẽ hiển thị ngay lập tức trong số dư của bạn."
+			}
+		}
+	},
+	"frontend": {
+		"placeholders": {
+			"email": "Nhập email của bạn",
+			"password": "Nhập mật khẩu của bạn",
+			"password_confirmation": "Xác nhận mật khẩu của bạn",
+			"current_password": "Nhập mật khẩu hiện tại của bạn"
+		},
+		"age_acceptance": "Vui lòng xác nhận rằng bạn đang trên {{age}} tuổi",
+		"choose_game": "Chọn một trò chơi",
+		"games_played": "Trò đã chơi",
+		"or": "hoặc",
+		"please_or": "Vui lòng {{first}} hoặc {{second}}",
+		"mbtc_total_winnings": "Tổng số tiền trúng mBTC",
+		"hi_guest": "Chào, Khách hàng.",
+		"hi_user": "Chào, {{nickname}}",
+		"password_difficulty": "Độ khó mật khẩu",
+		"password_difficulties": {
+			"very_weak": "Rất yếu",
+			"weak": "Yếu",
+			"so_so": "Vừa vừa",
+			"strong": "Mạnh",
+			"great": "Hay quá !"
+		},
+		"playing": {
+			"playing_fun": "Chơi cho {{currency}}",
+			"playing_real": "Chơi với {{currency}}",
+			"play_fun": "Chơi cho {{currency}}",
+			"play_real": "Chơi cho {{currency}}"
+		},
+		"links": {
+			"support": "Hỗ trợ",
+			"help": "Trợ giúp",
+			"how_to_start": "Làm thế nào để bắt đầu",
+			"casino_promotions": "Khuyến mãi Casino",
+			"bonuses": "Tiền thưởng",
+			"affiliate_program": "Chương trình liên kết",
+			"terms_and_conditions": "Các điều khoản và điều kiện",
+			"back": "Quay lại",
+			"create_ticket": "Tạo vé",
+			"send_form": "Gửi mẫu",
+			"online_chat": "Chat trực tuyến",
+			"home": "Trang chủ",
+			"frontpage": "Trang đầu",
+			"casino_games": "Trò chơi Casino",
+			"about_casino": "Về Casino",
+			"all_games": "Tất cả trò chơi",
+			"load_more_games": "Load More Games",
+			"rules": "Luật lệ trò chơi",
+			"autoregister": "Đăng ký tự động",
+			"quick_register": "Đăng ký nhanh",
+			"play_for_fun": "Chơi cho vui",
+			"demo": "Bản diễn thử",
+			"play_for_real": "Chơi thật",
+			"play_for_bitcoin": "Chơi lấy Bitcoin",
+			"free_play": "Chơi tự do",
+			"real_play": "Chơi thật",
+			"play_now": "Chơi ngay",
+			"join_now": "Tham gia ngay",
+			"profile": "Hồ sơ",
+			"dice": "Xúc xắc",
+			"deposit": "Tiền cọc",
+			"withdraw": "Rút",
+			"cashout": "Rút tiền",
+			"cashbox": "Hộp tiền",
+			"sign_out": "Đăng xuất",
+			"sign_in": "Đăng nhập",
+			"sign_up": "Đăng kí",
+			"register": "Đăng kí",
+			"login": "Đăng nhập",
+			"logout": "Đăng xuất",
+			"start_playing": "Bắt đầu chơi",
+			"forgot_password": "Quên Mật Khẩu?",
+			"didnt_receive_confirmation": "Không nhận được hướng dẫn xác nhận?",
+			"didnt_receive_unlock": "Không nhận được hướng dẫn mở khóa?",
+			"affiliate_profiles": "Hồ sơ hội viên",
+			"settings": "Cài đặt"
+		},
+		"captions": {
+			"affiliates": "Hội viên",
+			"help": "Giúp đỡ",
+			"games": "Các trò chơi",
+			"quick_links": "Liên kết nhanh",
+			"languages": "Ngôn ngữ",
+			"info": "Thông tin",
+			"information": "Thông tin",
+			"promotion": "Đề cử",
+			"follow_us": "Theo dõi chúng tôi"
+		},
+		"actions": {
+			"go_bang": "Bắt đầu!",
+			"deposit_now": "Đặt cọc ngay",
+			"sign_up_now": "Đăng kí ngay"
+		},
+		"games_bet_playthrough_percent": "Phần trăm đặt cược khi chơi",
+		"contact": {
+			"title": "Mẫu liên hệ",
+			"hint": "Xin vui lòng điền các thông tin dưới đây. Tất cả các trường là bắt buộc.",
+			"labels": {
+				"email": "Thư điện tử",
+				"content": "Tin nhắn",
+				"send": "Gửi"
+			}
+		},
+		"no_flash": {
+			"flash_isnt_available": "Adobe Flash Player không có sẵn",
+			"flash_usage": "Khách hàng thân mến, để đảm bảo trải nghiệm tốt nhất khi chơi game với độ nét cao, casino của chúng tôi chạy trên Adobe Flash.",
+			"desktop_section": "Hỗ trợ máy tính để bàn",
+			"desktop_section_link": "Vui lòng cài đặt Adobe Flash player cho máy tính ",
+			"mobile_section": "Hỗ trợ thiết bị di động ",
+			"mobile_section_text": "Adobe Flash không hoàn toàn tương thích với các trình duyệt gốc trên các thiết bị di động. Tuy nhiên, bạn có thể tải về các ứng dụng của bên thứ 3 cung cấp trải nghiệm người dùng tuyệt vời. Chúng tôi có thể đề nghị %s và %s."
+		},
+		"devise": {
+			"resend_confirmation": "Gửi lại Hướng dẫn nhận",
+			"send_reset_instructions": "Đặt Lại Mật Khẩu",
+			"send_unlock_instructions": "Gửi lại hướng dẫn Mở khóa",
+			"change_your_password": "Thay đổi mật khẩu của bạn",
+			"change_my_password": "Thay đổi mật khẩu của mình",
+			"new_password": "Mật khẩu mới",
+			"confirm_new_password": "Xác nhận mật khẩu mới",
+			"password_hint": "(Để trống nếu bạn không muốn thay đổi nó)",
+			"current_password_hint": "(Chúng tôi cần mật khẩu hiện tại của bạn để xác nhận thay đổi của bạn)",
+			"unlock_hint": "Nếu tài khoản của bạn đã bị khóa, điền vào địa chỉ e-mail của bạn và chúng tôi sẽ gửi cho bạn hướng dẫn mở khóa thông qua e-mail.",
+			"resend_hint": "Điền địa chỉ e-mail của bạn và chúng tôi sẽ gửi cho bạn các hướng dẫn về làm thế nào để thiết lập lại mật khẩu của bạn thông qua e-mail.",
+			"contact_us_hint_html": "Liên hệ với chúng tôi qua {{page}} nếu bạn cần thêm trợ giúp.",
+			"custom": {
+				"not_valid_email": "Không phải là một email hợp lệ",
+				"too_short": "Quá ngắn",
+				"not_match": "Không khớp",
+				"min_characters": "Nhỏ nhất {{count}} ký tự"
+			}
+		},
+		"payment_system_redirect": {
+			"notification": "Bạn sẽ được chuyển đến {{system}} trong thời gian ngắn để hoàn tất giao dịch của bạn",
+			"text": "Để tiếp tục bấm vào nút thanh toán dưới đây.",
+			"button": "Tiếp tục thanh toán"
+		},
+		"social": {
+			"follow_us": "Theo dõi chúng tôi"
+		},
+		"filters": {
+			"find_your_game": "Tìm trò chơi của bạn"
+		},
+		"rules_priority_warning": "Quy tắc trò chơi như được xuất bản trên trang web này đều là tiếng Anh. Việc dịch sang các ngôn ngữ khác được cung cấp như một dịch vụ được tin tưởng. Trong trường hợp có sự nhập nhằng giữa một phiên bản tiếng Anh và bản dịch, bản tiếng Anh luôn giữ được ưu tiên."
+	},
+	"winners": {
+		"winners": "Những người chiến thắng",
+		"latest_winners": "Người chiến thắng mới nhất",
+		"top_winners": "Những người chiến thắng hàng đầu",
+		"amount_in_game": "%{amount} trong %{game}",
+		"parts": {
+			"just_won": "vừa mới thắng",
+			"in": "trong"
+		}
+	},
+	"restriction": {
+		"default": "Trang này bị cấm ở nước bạn",
+		"game_restricted_in_country": "Trò chơi này bị cấm ở nước bạn",
+		"registration_restricted_in_country": "Việc đăng kí bị cấm ở nước bạn"
+	},
+	"documents": {
+		"removed_successfully": "Tài liệu đã được xóa thành công",
+		"document": {
+			"edit_description": "Chỉnh sửa mô tả",
+			"approved": "Đã được phê duyệt",
+			"not_approved": "Không được chấp thuận"
+		},
+		"index": {
+			"upload_document": "Tải lên một tài liệu"
+		}
+	},
+	"sportsbook": {
+		"sports": "Các môn thể thao",
+		"live_betting": "Cược trực tuyến",
+		"sports_bets": "Cược các môn thể thao"
+	},
+	"formtastic": {
+		"labels": {
+			"card_holder": "Chủ bài",
+			"credit_card_number": "Số thẻ tín dụng",
+			"cvc": "Mã bảo vệ thẻ",
+			"expiration_date": "Ngày hết hạn",
+			"amount": "Số tiền",
+			"recipient": "Người nhận",
+			"document": {
+				"attachment": "File đính kèm",
+				"description": "Miêu tả"
+			},
+			"btc_amount": "Amount in BTC",
+			"wallet_address": "Wallet Address"
+		},
+		"actions": {
+			"game": {
+				"create": "Tạo trò chơi",
+				"update": "Cập nhật trò chơi"
+			},
+			"player": {
+				"create": "Tạo người chơi",
+				"update": "Cập nhật người chơi"
+			},
+			"bonus": {
+				"create": "Tạo tiền thưởng",
+				"update": "Cập nhật tiền thưởng"
+			},
+			"bonus_issue": {
+				"create": "Vấn đề tạo thưởng",
+				"update": "Vấn đề cập nhật thưởng"
+			},
+			"admin_user": {
+				"create": "Tạo người dùng quản trị",
+				"update": "Cập nhật người dùng quản trị"
+			},
+			"payment_system": {
+				"create": "Tạo hệ thống thanh toán",
+				"update": "Cập nhật hệ thống thanh toán"
+			},
+			"document": {
+				"submit": "Gửi tài liệu"
+			},
+			"create": "Tạo"
+		},
+		"hints": {
+			"payment_system": {
+				"deposit_snippet_name": "Trong đoạn mã sử dụng {{cms: helper: payment_total_amount}} và {{cms: helper: payment_uniq_code}} để thêm số tiền thanh toán và mã thanh toán duy nhất tương ứng"
+			},
+			"profile": {
+				"currency": "Bạn có thể đổi tiền tại bất kỳ giai đoạn sau khi đăng ký hoàn tất."
+			},
+			"btc_amount": "Amount may differ due to exchange rate changes"
+		}
+	},
+	"bonus_issues": {
+		"title": "Vấn đề {{bonus}}",
+		"stages": {
+			"wait": "Đợi",
+			"handle_bets": "Hoạt động",
+			"canceled": "Bị hủy bỏ",
+			"expired": "Hết hạn",
+			"wager_done": "Cược xong",
+			"lost": "Mất",
+			"pending": "Pending"
+		}
+	},
+	"freespin_issues": {
+		"title": "%{bonus} Issue",
+		"games": "Games",
+		"activate": "Activate",
+		"stages": {
+			"issued": "Issued",
+			"activated": "Activated",
+			"canceled": "Canceled",
+			"expired": "Expired",
+			"finished": "Played",
+			"pending": "Pending"
+		},
+		"mailer": {
+			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
+			"activation_prompt_html": "To activate freespins go to {{link}}."
+		}
+	},
+	"games": {
+		"title": "Các trò chơi Casino",
+		"categories": {
+			"all": "Tất cả các trò chơi",
+			"card": "Game bài",
+			"poker": "Game bài tây",
+			"table": "Trò chơi bàn",
+			"roulette": "Bàn chơi bài",
+			"slots": "Game Slots",
+			"video_poker": "Video Poker",
+			"blackjack": "Blackjack(Xì dách)",
+			"bingo": "Bingo(Lô tô)",
+			"live": "Live",
+			"fruit": "Fruit Slots",
+			"theme": "Theme Slots",
+			"casual": "Game đơn giản(Casual)",
+			"lottery": "Xổ số(Lottery)",
+			"keno": "Keno",
+			"progressive": "Tăng dần",
+			"stat": {
+				"most_popular": "Phổ biến nhất",
+				"new": "Mới",
+				"manual": "Nổi bật",
+				"last_played": "Lần chơi cuối"
+			},
+			"device": {
+				"desktop": "Máy bàn",
+				"mobile": "Di động"
+			}
+		},
+		"providers": {
+			"all": "Tất cả các nhà cung cấp",
+			"softswiss": "SoftSwiss",
+			"amatic": "Amatic",
+			"betsoftgaming": "BetSoft Gaming",
+			"casinotechnology": "Casino Technology",
+			"quickfire": "Quickfire",
+			"ezugi": "Ezugi"
+		},
+		"roulette": {
+			"bets": {
+				"calc_by_max_bet": "Calculate by Max Bet",
+				"inside_bets": "Cược bên trong",
+				"outside_bets": "Cược bên ngoài",
+				"straight_up": "Thẳng",
+				"split": "Chia",
+				"street": "Phố",
+				"trio": "Bộ 3",
+				"basket": "Giỏ",
+				"corner": "Góc",
+				"first_four": "4 lá đầu tiên",
+				"first_five": "5 lá đầu tiên",
+				"line": "Hàng",
+				"column": "Cột",
+				"dozen": "1 tá",
+				"red": "Đỏ",
+				"black": "Đen",
+				"odd": "Lẻ",
+				"even": "Chẵn",
+				"low": "Thấp",
+				"high": "Cao"
+			}
+		},
+		"titles": {
+			"baccarat": {
+				"classic": "Baccarat"
+			},
+			"blackjack": {
+				"double_exposure": "Lật bài đôi",
+				"european": "Xì dách châu Âu",
+				"multihand": "Xì dách nhiều tay",
+				"multihand_pro": "Xì dách nhiều tay chuyên nghiệp",
+				"pontoon": "Chơi bài kiểu 21(Pontoon)",
+				"surrender": "Đầu hàng xì tố(Blackjack Surrender)"
+			},
+			"hi_lo": {
+				"switch": "Công tắc cao-thấp"
+			},
+			"casual": {
+				"horse_racing": "Đua ngựa(Horse Racing)",
+				"minesweeper": "Dò mìn(Minesweeper)",
+				"heads_tails": "Đầu và đuôi(Heads and Tails)",
+				"scratch_dice": "Gieo xí ngầu(Scratch Dice)"
+			},
+			"poker": {
+				"caribbean": "Poker Caribê(Caribbean Poker)",
+				"casino_holdem": "Casino Hold`em",
+				"let_it_ride": "Để nó chạy(Let it Ride)",
+				"oasis": "Poker Ốc đảo(Oasis Poker)",
+				"texas_holdem": "Texas Hold`em",
+				"trey_poker": "Trey Poker"
+			},
+			"roulette": {
+				"american": "Bài Rulet kiểu Mỹ(American Roulette)",
+				"european": "Bài Rulet kiểu Âu(European Roulette)",
+				"french": "Bài Rulet kiểu Pháp(French Roulette)"
+			},
+			"slots": {
+				"aztec_magic": "Bài ma thuật Aztec(Aztec Magic)",
+				"book_of_pyramids": "Quyển sách Kim tự tháp(Book of Pyramids)",
+				"scroll_of_adventure": "Cuộn giấy phiêu lưu(Scroll of Adventure)",
+				"brave_viking": "Người Viking dũng cảm(Brave Viking)",
+				"cherry_fiesta": "Ngày hội anh đào(Cherry Fiesta)",
+				"crazy_starter": "Người bắt đầu điên khùng(Crazy Starter)",
+				"desert_treasure": "Kho báu sa mạc(Desert Treasure)",
+				"hawaii_cocktails": "Cốc tai Ha-oai(Hawaii Cocktails)",
+				"horse_slot": "Khe đua ngựa(Horse Slot)",
+				"lucky_blue": "Màu xanh may mắn(Lucky Blue)",
+				"lucky_lady_clover": "Cỏ ba lá may mắn của quý bà(Lucky Lady's Clover)",
+				"lucky_sweets": "Đồ ngọt may mắn(Lucky Sweets)",
+				"platinum_lightning": "Sét bạch kim(Platinum Lightning)",
+				"princess_of_sky": "Công chúa bầu trời(Princess of Sky)",
+				"princess_royal": "Công chúa Hoàng Gia(Princess Royal)",
+				"sport_slot": "Sport Slot",
+				"three_lines_slot": "Girl slot",
+				"west_town": "Thị trấn miền Tây(West Town)"
+			},
+			"video_poker": {
+				"jacks_or_better": "Quân J hoặc tốt hơn(Jacks or Better)",
+				"wild_texas": "Texas hoang dã(Wild Texas)",
+				"video_poker": "Poker Nhật Bản(Japan Poker)"
+			}
+		}
+	},
+	"users": {
+		"statuses": {
+			"enabled": "Sẵng sàng",
+			"disabled": "Vô hiệu",
+			"not_confirmed": "Không xác định",
+			"locked": "Bị khóa",
+			"normal": "Hoạt động",
+			"manually_suspected": "Ghi nhận là đáng ngờ"
+		}
+	},
+	"affiliate_bills": {
+		"billed_from": "Hóa đơn từ",
+		"billed_to": "Hóa đơn đến",
+		"paid": "Đã trả tiền",
+		"submit": "Gửi"
+	},
+	"affiliate_links": {
+		"add": "Thêm liên kết",
+		"name": {
+			"hint": "Xác định việc sử dụng cá nhân của riêng bạn"
+		},
+		"code": {
+			"hint": "Unique code for affiliate link"
+		}
+	},
+	"affiliate_profiles": {
+		"tip": "Doanh thu cho mỗi hồ sơ được tính độc lập. Sử dụng liên kết hồ sơ cho người chơi theo dõi.",
+		"commission": "Hoa hồng",
+		"registration_settings": {
+			"reward": "Thưởng CPA",
+			"conditions": "Điều kiện",
+			"rule": "Nếu người chơi được mời đặt cược > {{amount}} {{currency}}"
+		},
+		"percent_settings": {
+			"one": "%{percent}%",
+			"default": "%{percent}% i nếu được tạo ra nhiều hơn %{limit} %{currency}",
+			"rule": "%{percent}% nếu được tạo ra ít hơn %{limit} %{currency}",
+			"intermediate_rule": "%{percent}% nếu được tạo ra giữa %{limits} %{currency}"
+		},
+		"no_default_commissions": "Bạn không có bất kỳ khoản hoa hồng nào được giao. Vui lòng liên hệ hỗ trợ.",
+		"active": "Hoạt động",
+		"not_active": "Không hoạt động",
+		"affiliate_profiles": "Hồ sơ chi nhánh",
+		"statistics": {
+			"statistics": "Thống kê",
+			"year": "Năm",
+			"month": "Tháng",
+			"week": "Tuần",
+			"day": "Ngày",
+			"since": "Kể từ",
+			"to": "Tới",
+			"submit": "Gửi",
+			"grouped_by": "Được nhóm bởi",
+			"deposits_count": "Tiền cọc",
+			"redirects_count": "Lượt xem",
+			"registered_users_count": "Người dùng đã đăng kí (với tiền cọc)",
+			"date": "Ngày",
+			"invited_users_income": "NGR (lợi nhuận thật từ trò chơi)",
+			"ggr": "GGR (lợi nhuận tổng từ trò chơi)",
+			"total": "Tổng thời gian",
+			"link_name": "Tên liên kết"
+		},
+		"affiliate_profile": {
+			"code": "Mã",
+			"url": "Url",
+			"strategy": "Phương thức thanh toán"
+		},
+		"banners": {
+			"banners": "Quảng cáo",
+			"sizes": "Kích cỡ",
+			"types_title": "Loại",
+			"types": {
+				"image": "Ảnh",
+				"html": "HTML",
+				"swf": "Flash"
+			}
+		},
+		"form": {
+			"name_hint": "Xác định việc sử dụng cá nhân của riêng bạn"
+		},
+		"add": "Tạo hồ sơ thành viên",
+		"add_link": "Liên kết tạo hồ sơ thành viên",
+		"strategy": "Phương thức thanh toán",
+		"bills": {
+			"bills": "Hóa đơn",
+			"billed_at": "Tính hóa đơn lúc",
+			"amount": "Số tiền",
+			"paid": "Đã thanh toán",
+			"not_billed_for_date": "Không tính hóa đơn cho ngày"
+		}
+	},
+	"games_history": {
+		"title": "Trò chơi",
+		"from": "Từ",
+		"result": "Kết quả",
+		"win": "Thắng",
+		"lose": "Thua",
+		"game_name": "Trò chơi",
+		"bet": "Cược"
+	},
+	"bonuses": {
+		"history": {
+			"title": "Thưởng",
+			"wager": "Đặt cược",
+			"valid_until": "Có hiệu lực đến",
+			"status": "Trạng thái",
+			"from": "Từ"
+		},
+		"promo_form": {
+			"title": "Thêm mã quảng cáo",
+			"sub_title": "và nhận 1 phần thưởng"
+		},
+		"bonus_settings": "Cài đặt phần thưởng",
+		"refuse": "Tôi không muốn nhận thêm phần thưởng"
+	},
+	"freespin_bonuses": {
+		"history": {
+			"title": "Freespins"
+		},
+		"gift": "Gift"
+	},
+	"profiles": {
+		"menu": {
+			"balance": "Số dư",
+			"history": "Lịch sử",
+			"bonuses": "Thưởng",
+			"affiliate": "Thành viên",
+			"profile": "Thông tin hồ sơ",
+			"documents": "Tài liệu"
+		},
+		"info": {
+			"personal": "Cá nhân"
+		},
+		"index": {
+			"my_account": "Tài khoản của tôi",
+			"my_bets": "Tiền cược của tôi",
+			"transaction": "Chuyển khoản",
+			"welcome": "Chào mừng",
+			"balance": "Số dư của bạn",
+			"account_balance": "Số dư tài khoản"
+		},
+		"show": {
+			"edit_profile": "Chỉnh sửa hồ sơ",
+			"edit_settings": "Chỉnh sửa cài đặt",
+			"attach_documents": "Tài liệu đính kèm",
+			"change_credentials": "Đổi mật khẩu",
+			"set_email_and_password": "Đặt email và mật khẩu",
+			"create_cashout_request": "Rút tiền",
+			"confirm_address": "Vì lí do bảo mật, địa chỉ chưa được dùng trước đây phải được xác nhận qua email. Đường dẫn xác minh đã được gửi tới email của bạn, hãy kiểm tra hòm thư",
+			"address_confirmation_failed": "Địa chỉ không được xác minh, thanh toán tiền không được thực hiện",
+			"cashout_request_created": "Yêu cầu rút tiền đã được nhận và cần sự chấp thuận của đội ngũ nhân viên chúng tôi. Chúng tôi sẽ xử lý yêu cầu của bạn nhanh nhất có thể.",
+			"cashout_successfully": "Rút tiền thành công",
+			"cashout_technically_impossible": "Chúng tôi xin lỗi, nhưng một số lỗi xảy ra. Chúng tôi đang làm việc để giải quyết chúng trong chế độ khẩn cấp. Vui lòng liên hệ hỗ trợ nếu bạn có bất kỳ câu hỏi nào.",
+			"profile_info": {
+				"title": "Thông tin hồ sơ"
+			},
+			"autoregister_info": {
+				"title": "Hiện tại, bạn có thể đăng nhập vào tài khoản của bạn bằng cách truy cập địa chỉ đăng nhập cá nhân"
+			},
+			"accounts": {
+				"title": "Tài khoản",
+				"available_to_cashout": "Có sẵn để rút tiền",
+				"add_currency": "Thêm tiền tệ"
+			},
+			"bonuses": {
+				"title": "Tiền thưởng",
+				"no_bonuses": "Hiện tại bạn không có thưởng",
+				"cancel_bonus": "Mất thưởng",
+				"cancel_bonus_confirmation": "Lưu ý để mất thưởng cũng có nghĩa bạn bị mất chiến thắng",
+				"bonus_canceled": "Tiền thưởng đã bị hủy",
+				"bonus_not_canceled": "Tiền thưởng này không thể hủy"
+			},
+			"coupons": {
+				"activated": "Phiếu giảm giá \"{{code}}\" kích hoạt thành công.",
+				"not_activated": "Không thể kích hoạt coupon \"{{code}}\". Vui lòng thử lại hoặc liên hệ với bộ phận hỗ trợ.",
+				"already_activated": "Phiếu giảm giá \"{{code}}\" đã được kích hoạt rồi."
+			},
+			"payments": {
+				"title": "Thanh toán"
+			},
+			"not_finished_games": {
+				"title": "Trò chơi chưa hoàn thành",
+				"hint": "Bạn có thể tiếp tục chơi, hoặc hủy bỏ các trò chơi. Hủy sẽ dẫn đến việc mất đặt cược.",
+				"game_canceled": "Trò chơi đã được hủy bỏ"
+			},
+			"bets": {
+				"title": "Đặt cược",
+				"all_bets": "Tất cả tiền cược"
+			},
+			"cashbox": "Hộp tiền",
+			"payments_history": "Lịch sử giao dịch",
+			"bets_history": "Lịch sử đặt cược",
+			"bonuses_history": "Lịch sử tiền thưởng",
+			"freespin_bonuses_history": "Freespins History",
+			"deposit_to_address_hint": "Gửi tiền cọc đến địa chỉ này để tài trợ cho tài khoản của bạn.",
+			"freespin_bonuses": {
+				"bonus_canceled": "Bonus canceled",
+				"bonus_not_canceled": "Failed to cancel bonus",
+				"bonus_activated": "Bonus was activated",
+				"bonus_not_activated": "Bonus was not activated"
+			}
+		},
+		"edit": {
+			"title": "Sửa hồ sơ",
+			"info_updated": "Thông tin đã được cập nhật",
+			"not_saved": "Thay đổi không được lưu",
+			"settings_section_updated": "Phần cập nhật thành công",
+			"valid_data_warning": "Vui lòng nhập thông tin liên hệ hợp lệ 1 cách chi tiết theo mẫu dưới đây. Hãy chắc chắn thông tin đã chính xác trước khi lưu."
+		}
+	},
+	"payments": {
+		"actions": {
+			"deposit": "Tiền cọc",
+			"cashout": "Rút tiền",
+			"gift": "Quà tặng",
+			"chargeback": "Tính phí lại",
+			"affiliate_payment": "Thưởng thành viên"
+		},
+		"statuses": {
+			"success": "Được chấp nhận",
+			"failure": "Bị từ chối",
+			"pending": "Đang treo"
+		},
+		"canceled_by_user": "Bạn đã hủy bỏ giao dịch của bạn",
+		"wait_for_confirmation": "Thanh toán của bạn sẽ được xác nhận ngay",
+		"not_performed": "Thanh toán không được thực hiện",
+		"confirmed": "Thanh toán được xác nhận",
+		"canceled": "Thanh toán không được xác nhận",
+		"make_deposit": "Đặt cọc",
+		"make_cashout": "Yêu cầu rút tiền",
+		"confirm_address": "Xác minh địa chỉ",
+		"bonus_code_show": "Tôi có mã tiền thưởng",
+		"bonus_code_hide": "Ẩn mã tiền thưởng",
+		"address_confirmation_email_body": "Bạn yêu cầu rút tiền đến {{address}}. Bạn đã không sử dụng địa chỉ này trước đây. Để bảo vệ tài khoản của bạn, chúng tôi yêu cầu bạn xác nhận địa chỉ này. Để xác nhận địa chỉ xin vui lòng ấn vào đường dẫn:",
+		"address_confirmation_email_warning": "Nếu địa chỉ này không thuộc về bạn, liên hệ bộ phận hỗ trợ và thay đổi mật khẩu của bạn:",
+		"invalid_profile_before_deposit_message": "Bạn cần điền vào các phần bắt buộc trước khi đặt cọc. Vui lòng nhập thông tin liên hệ hợp lệ theo mẫu dưới đây. Hãy chắc chắn rằng thông tin đã chính xác trước khi lưu.",
+		"invalid_profile_message": "Để có thể rút tiền, bạn phải điền vào các trường bắt buộc trong hồ sơ của bạn.",
+		"try_again": "Giao dịch không thể diễn ra do các vấn đề kết nối. Nếu vấn đề vẫn còn tồn tại, xin vui lòng liên hệ với hỗ trợ của chúng tôi.",
+		"select_currency": "Chọn loại tiền tệ",
+		"select_currency_hint": {
+			"deposit": "Tôi muốn tăng số dư tài khoản trong",
+			"cashout": "Tôi muốn rút tiền"
+		},
+		"select_payment_method": "Chọn phương thức thanh toán",
+		"current_balance": {
+			"deposit": "Số dư hiện tại của bạn: {{money}}.",
+			"cashout": "Có thể rút tiền: {{money}}. Vui lòng đến trang {{balance_link}} để biết thêm chi tiết."
+		},
+		"payment_methods": {
+			"empty": "Không có phương thức thanh toán có sẵn nào cho loại tiền tệ này.",
+			"pay_with_cubits": "Thanh toán với Cubits"
+		},
+		"limits": {
+			"currency": "Thanh toán {{currency}}",
+			"min": "ít nhất {{min}}",
+			"max": "nhiều nhất {{max}}",
+			"fee": "phí {{fee}}"
+		},
+		"processing_time": {
+			"instantly": "Ngay lập tức",
+			"range": "Ngày làm việc {{min}}-{{max}}"
+		}
+	},
+	"security_check": {
+		"user_is_suspicious": "Người sử dụng đáng ngờ",
+		"user_not_suspicious": "Người sử dụng đáng ngờ",
+		"user_has_suspicious_games": "Người sử dụng có trò chơi đáng ngờ",
+		"cashout_amount": "Số tiền vượt quá tối đa cho phép",
+		"cashout_wins": "Số tiền vượt quá giới hạn người dùng",
+		"casino_cashout": "Số tiền vượt quá giới hạn hàng ngày của casino",
+		"crypto_address_confirmed": "Địa chỉ chưa từng được sử dụng trước đây",
+		"manual": {
+			"title": "Người sử dụng đã được ghi nhận là đáng ngờ"
+		},
+		"chargeback": {
+			"title": "User made chargeback"
+		},
+		"duplicate": {
+			"title": "Người sử dụng có bản sao",
+			"reason_html": "Người dùng trùng với {{user}}"
+		},
+		"balance_sum": {
+			"title": "Số dư không khớp với số lượng tính toán dựa trên số liệu thống kê các giao dịch và các trò chơi",
+			"text": "Số dư của người chơi không khớp với số dư được mong đợi"
+		},
+		"balance_transaction": {
+			"title": "Lượng thắng trong vòng 24h vừa qua quá lớn",
+			"reason_html": "Thắng đáng ngờ trong {{table}} trong {{period}} bằng {{player}}"
+		},
+		"wager_done": {
+			"title": "Người dùng xong cược yêu cầu thưởng"
+		},
+		"cubits_payment_difference": {
+			"title": "Cumulative cubits exchange rate losses are too big"
+		}
+	},
+	"notification": {
+		"contact_form": {
+			"sender_notice": "Thông điệp của bạn đã được gửi thành công.",
+			"mail_subject": "Nhận được tin nhắn thông qua mẫu liên hệ tại trang web casino của bạn"
+		},
+		"payment_confirmation": {
+			"mail_subject": "Mã xác nhận thanh toán"
+		},
+		"daily_stats": {
+			"mail_subject": "Thống kê {{currency}} hàng ngày cho {{date}}"
+		},
+		"report": {
+			"day_mail_subject": "Thống kê hàng ngày",
+			"week_mail_subject": "Thống kê hàng tuần",
+			"day_mail_title": "Thống kê {{currency}} hàng ngày cho {{period}}",
+			"week_mail_title": "Thống kê {{currency}} hàng tuần cho {{period}}",
+			"fields": {
+				"net_revenue": "Doanh thu chơi chuẩn (NGR)",
+				"gross_win": "Thắng gộp",
+				"bets": "Tổng cược",
+				"wins": "Tổng thắng",
+				"payout": "Trả (theo %)",
+				"game_rounds": "Các vòng chơi",
+				"new_registrations": "Đăng ký mới với tiền cọc",
+				"players_made_deposits": "Người chơi tạo tiền cọc",
+				"total_users": "Tổng số người dùng",
+				"deposits_sum": "Tổng tiền cọc",
+				"deposits_avg": "Tiền cọc trung bình",
+				"cashouts_sum": "Tổng tiền thanh toán",
+				"cashouts_avg": "Thanh toán trung binh"
+			},
+			"previous": "%{type} trước"
+		}
+	},
+	"user_mailer": {
+		"auth": {
+			"welcome": "Chào mừng {{name}}!",
+			"hello": "Chào {{name}}!",
+			"confirmation": {
+				"you_can_confirm_email_by_pressing_next_link": "Bạn có thể xác nhận email tài khoản của bạn thông qua liên kết dưới đây:",
+				"confirm_my_account": "Xác nhận tài khoản của tôi"
+			},
+			"reset_password": {
+				"change_my_password": "Thay đổi mật khẩu của tôi",
+				"link_to_change_password_are_requested": "Một người nào đó đã yêu cầu một liên kết để thay đổi mật khẩu của bạn, và bạn có thể làm điều này thông qua liên kết dưới đây.",
+				"you_can_ignore_this_mail": "Nếu bạn không yêu cầu điều này, xin vui lòng bỏ qua email này.",
+				"your_password_didnt_changed_yet": "Mật khẩu của bạn sẽ không thay đổi cho đến khi bạn truy cập vào liên kết ở trên và tạo một mật khẩu mới."
+			},
+			"unlock": {
+				"unlock_my_account": "Mở khóa tài khoản của tôi",
+				"your_account_has_been_locked": "Tài khoản của bạn đã bị khóa do có quá nhiều nỗ lực đăng nhập nhưng không thành công",
+				"click_to_unlock": "Nhấp vào liên kết dưới đây để mở khóa tài khoản của bạn:"
+			}
+		},
+		"deposit": {
+			"deposit_made": "Tiền cọc của bạn đã được nhận"
+		},
+		"cashout": {
+			"cashout_approved": "Yêu cầu rút tiền của bạn đã được chấp thuận"
+		},
+		"not_enough_money_for_cashout": {
+			"subject": "Số dư tài khoản không đủ để rút tiền",
+			"body": "Việc rút tiền của bạn đã bị vô hiệu hóa do số dư tài khoản không đủ để xử lý tiền gửi ra. Vui lòng đệ trình lại yêu cầu rút tiền mới theo số dư hiện tại"
+		},
+		"address_confirmation_required": {
+			"subject": "Yêu cầu xác nhận địa chỉ rút tiền"
+		}
+	},
+	"activemodel": {
+		"errors": {
+			"models": {
+				"affiliate_forms/assign_commission": {
+					"attributes": {
+						"from_date": {
+							"must_be_in_future": "Phải trong tương lai"
+						},
+						"to_date": {
+							"must_be_in_future": "Phải trong tương lai",
+							"must_be_less_then_from": "Phải nhỏ hơn Từ"
+						}
+					}
+				},
+				"payment_system/cashout_form/wirecard": {
+					"attributes": {
+						"credit_card_number": {
+							"invalid": "Không phải là một số thẻ tín dụng hợp lệ"
+						}
+					}
+				},
+				"casino_cash_balance/balance_options": {
+					"attributes": {
+						"base": {
+							"rules_error": "Bạn có sai sót trong quy tắc"
+						}
+					}
+				},
+				"commissions/registration_settings": {
+					"attributes": {
+						"base": {
+							"rules_error": "Bạn có sai sót trong quy tắc"
+						}
+					}
+				},
+				"commissions/registration_settings_rule": {
+					"attributes": {
+						"base": {
+							"uniq": "Phải là duy nhất"
+						}
+					}
+				}
+			}
+		},
+		"attributes": {
+			"payment_system/bank_transfer/access_data": {
+				"deposit_snippet_name": "Tên đặt cọc ngắn",
+				"cashout_snippet_name": "Tên rút tiền ngắn"
+			},
+			"affiliate_forms/assign_commission": {
+				"from_date": "Từ",
+				"to_date": "Đến"
+			},
+			"newsletters_filter": {
+				"tag": "Thẻ người dùng",
+				"locale": "Ngôn ngữ",
+				"type": "Loại",
+				"deposits_number_equals": "Tiền cọc",
+				"last_deposit_at": "Lần đặt cọc cuối",
+				"registered_at": "Đã được đăng kí",
+				"payments_currency": "Tiền tệ khi thanh toán"
+			}
+		}
+	},
+	"retention_mailer": {
+		"welcome": "Chào mừng",
+		"no_deposit": "Bạn đã không tạo tiền cọc",
+		"nth_deposit": "Chúng tôi đang chờ tiền cọc của bạn",
+		"welcome_promo": "Ghé thăm chúng tôi một lần nữa"
+	},
+	"jackpot": {
+		"jackpots": "Giải đặc biệt"
+	},
+	"game_categories": {
+		"favorite": "My favorites",
+		"add_to_favorites": "Add To Favorites",
+		"remove_from_favorites": "Remove From Favorites",
+		"favorites": {
+			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+		}
+	},
+	"betsoftgaming_api": {
+		"betsoftgaming": "Betsoft Gaming"
+	},
+	"backend": {
+		"menu": {
+			"bitcoin_addresses": "Địa chỉ Bitcoin"
+		},
+		"bitcoin_wallets": {
+			"filters": {
+				"all": "Tất cả",
+				"available": "Sẵn sàng",
+				"occupied": "Đã được lấy"
+			}
+		},
+		"bitcoin": {
+			"add_new_addresses": "Tải lên tập tin hoặc dán địa chỉ mới",
+			"upload_new_addresses": "Thêm các địa chỉ",
+			"cashout": "Rút tiền",
+			"deposit_to_wallet": "Đặt cọc tới ví",
+			"deposit_currency_to_wallet": "Đặt cọc {{currency}} tới ví",
+			"enough_available_addresses_left": "Còn {{count}} địa chỉ có sẵn",
+			"not_enough_available_addresses_left": "Chỉ còn lại {{count}} địa chỉ bitcoin có sẵn. Bạn có thể thêm nhiều địa chỉ {{link}}.",
+			"here": "ở đây",
+			"current_wallet_balance": "Số dư ví hiện tại",
+			"total_balance": "Tổng: {{amount}}",
+			"available_balance": "Có thể tiêu: {{amount}}",
+			"transfer_to": "Tăng",
+			"increase_system_balance": "Để tăng số dư trong ví hệ thống vui lòng gửi bitcoin tới địa chỉ sau đây:"
+		}
+	},
+	"bitcoin_wallets": {
+		"address_sources": {
+			"imported": "Từ bàn",
+			"generated": "Đã được tạo",
+			"cubits_invoice": "Cubits Invoice",
+			"cubits_channel": "Cubits Channel"
+		}
+	},
+	"sidebar": {
+		"available_addresses": "Các địa chỉ có sẵn",
+		"wallet_balance": "Tài khoản Wallet"
+	},
+	"casinotechnology_api": {
+		"casinotechnology": "Công nghệ Casino",
+		"timeout_message": "Máy chủ của nhà cung cấp dịch vụ trò chơi không phải hồi. Vui lòng thử lại sau."
+	},
+	"ezugi_api": {
+		"ezugi": "Ezugi"
+	},
+	"quickfire_api": {
+		"quickfire": "QuickFire"
+	}
+}

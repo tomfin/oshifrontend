@@ -1,0 +1,8 @@
+<span>
+<ul class="footer__subnav" ng-controller="Game" data-uix-bxslider="">
+    <li class="footer__subnav-item" ng-repeat="game in games | gameDevice: device | gameCurrency : data.user.currency | lastPlayedGames: lastPlayed.get_list() : true | orderByArray: 'id': lastPlayed.get_list() | limitTo: 100 track by $index" data-notify-when-repeat-finished>
+        <ng-include src="'/app/Games/GamesSlider/_game_slider_item.html'"></ng-include>
+    </li>
+
+</ul>
+</span>

@@ -1,0 +1,9 @@
+<span class="auth-block">
+        <a ng-controller="AuthModal" access-level="accessLevels.anon" ng-click="auth_modal.showRegistration()">
+            <button class="btn btn_lg btn-success">{{'frontend.links.sign_up' | translate}}</button>
+        </a>
+
+        <a access-level="accessLevels.user" target="_self" href="" ng-href="{{profileRoutes.deposit[data.user.currency]}}" ng-controller="ProfileRoutes">
+            <button class="btn btn_lg btn-success">{{'frontend.links.deposit' | translate}}</button>
+        </a>
+</span>

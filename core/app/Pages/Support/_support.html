@@ -1,0 +1,41 @@
+<div>
+    <h1 id="support" translate="frontend.contact.title"></h1>
+
+    <div id="contact-form">
+        <form novalidate="novalidate" method="post" id="new_contact" class="form-horizontal"
+              ng-submit="support.submit();">
+            <div class="alert alert-warning" translate="frontend.contact.hint"></div>
+            <div class="form-group">
+                <div class="col-sm-3 form-label">
+                    <label for="contact_email" class="control-label">
+                        {{'frontend.contact.labels.email' | translate}}
+                        <abbr title="required">*</abbr>
+                    </label>
+                </div>
+                <div class="col-sm-6">
+                    <input type="email" ng-model="support.data.contact.email" id="contact_email" class="form-control">
+                    <p class="inline-errors" ng-repeat="(error_key, error_value) in support.errors.email" translate="{{error_value}}"></p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-3 form-label">
+                    <label for="contact_content" class="control-label">
+                        {{'frontend.contact.labels.content' | translate}}
+                        <abbr title="required">*</abbr>
+                    </label>
+                </div>
+                <div class="col-sm-6">
+                <textarea rows="8" name="contact[content]" id="contact_content" cols="50"
+                          ng-model="support.data.contact.content" class="form-control"></textarea>
+                    <p class="inline-errors" ng-repeat="(error_key, error_value) in support.errors.content" translate="{{error_value}}"></p>
+                </div>
+            </div>
+
+            <div id="contact_submit_action" class="col-sm-3 col-sm-offset-3">
+                <button translate="frontend.contact.labels.send" name="submit" class="btn btn-lg btn-success btn-flat"
+                        type="submit"></button>
+            </div>
+        </form>
+    </div>
+</div>

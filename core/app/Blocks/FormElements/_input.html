@@ -1,0 +1,11 @@
+<label class="control-label" for="{{name}}"><span translate="{{label}}"></span></label>
+<abbr  ng-show="data.required" title="required">*</abbr>
+<input  type="{{data.localData.type}}"
+        class="form-control"
+        name="{{name}}"
+        id="{{name}}"
+        placeholder="{{placeholder | translate}}"
+        ng-model="value"
+        min="data.length.minimum"
+        max="data.length.maximum"
+        auto-fill-sync />

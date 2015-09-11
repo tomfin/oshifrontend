@@ -1,0 +1,14 @@
+<div>
+    <div class="ing-search-bar cf" ng-class="{'overflow-visible': search.length}">
+        <a class="close-search-bar" href="#" title="Hide Search Bar" ><i class="ing-icon-close"></i></a>
+        <input id="search" type="text" autocomplete="off" placeholder="Start typing ..." ng-model="search" name="search"  auto-fill-sync>
+        <ul class="ing-search-complite" ng-show="search.length && (games| gameDevice: device  | gameCurrency : currency | gameTitle: search | limitTo: limit_count).length">
+            <li class="cf" ng-repeat="game in games| gameDevice: device  | gameCurrency : currency | gameTitle: search | limitTo: limit_count">
+                <a class="" href="{{game.play_url}}" target="_self"><img class="" ng-src="{{game.icon_cdn_path}}" width="87" height="47" data-no-retina="true">{{game.title}}</a>
+            </li>
+        </ul>
+    </div>
+    <a class="ing-navbar-search" href="#">
+        <i class="ing-icon-search"></i>
+    </a>
+</div>

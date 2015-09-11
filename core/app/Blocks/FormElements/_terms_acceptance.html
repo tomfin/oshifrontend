@@ -1,0 +1,21 @@
+<div class="checkbox reg-tnc" ng-init="false">
+    <label class="reg-label">
+        <button class="tnc-check" tabindex="20" ng-click="value = !value" ng-class="{'active': value}" type="button">
+        </button>
+        <span class="ng-scope" translate="">I accept the</span>
+        <a class="ng-scope" href="" ng-click="openPage('bonus-terms-and-conditions')">terms &amp; conditions</a>
+    </label>
+
+    <div class="validate-container" ng-show="errors">
+        <div class="validate-message popover left in">
+            <div class="arrow"></div>
+            <div class="popover-inner">
+                <div class="popover-content">
+                    <div>
+                        <span class="help-inline" ng-repeat="(error_key, error_value) in errors" translate="{{error_value}}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
