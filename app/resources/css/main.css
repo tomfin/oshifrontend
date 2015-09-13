@@ -1702,6 +1702,7 @@ footer>.inner {
     background-color: #FCFCFC;
     outline: 0;
     box-shadow: 0 0 20px rgba(2, 2, 3, .2);
+    color: #000000;
 }
 .modal-backdrop {
     position: absolute;
