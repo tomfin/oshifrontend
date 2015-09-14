@@ -175,31 +175,31 @@
     }
     .tabs__login {
       width: 100%;
-    color: #fff;
-    background: #36aa62;
-    font-size: 20px;
-    line-height: 1.5;
-    padding: 10px 0;
+      color: #fff;
+      background: #36aa62;
+      font-size: 20px;
+      line-height: 1.5;
+      padding: 10px 0;
 
-	text-decoration: none!important;
-    cursor: pointer;
+  	  text-decoration: none!important;
+      cursor: pointer;
 		
-    background-image: -webkit-linear-gradient(#FFE2A0 0, #FFC02C 100%);
-    background-image: -o-linear-gradient(#FFE2A0 0, #FFC02C 100%);
-    background-image: linear-gradient(#FFE2A0 0, #FFC02C 100%);
+      background-image: -webkit-linear-gradient(#FFE2A0 0, #FFC02C 100%);
+      background-image: -o-linear-gradient(#FFE2A0 0, #FFC02C 100%);
+      background-image: linear-gradient(#FFE2A0 0, #FFC02C 100%);
 		
-    -webkit-transition: background-color .15s;
-    transition: background-color .15s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+      -webkit-transition: background-color .15s;
+      transition: background-color .15s;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
       &:hover {
          background-color: #FFC02C;
-    background-image: -webkit-linear-gradient(#FFDF98 0%, #F1A800 100%);
-    background-image: -o-linear-gradient(#FFDF98 0%, #F1A800 100%);
-    background-image: linear-gradient(#FFDF98 0%, #F1A800 100%);
-	text-decoration: none!important;
+         background-image: -webkit-linear-gradient(#FFDF98 0%, #F1A800 100%);
+         background-image: -o-linear-gradient(#FFDF98 0%, #F1A800 100%);
+         background-image: linear-gradient(#FFDF98 0%, #F1A800 100%);
+	     text-decoration: none!important;
       }
     }
     .tabs__icon {
@@ -268,25 +268,23 @@
 
     .nav-pills > li > a {
       border-radius: 0;
-    border-left: 6px solid transparent;
-    font-size: 18px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    
+      border-left: 6px solid transparent;
+      font-size: 18px;
+      padding-top: 16px;
+      padding-bottom: 16px;
 	
-	color: #FFFFFF;
-	cursor: pointer;
-    background-image: -webkit-linear-gradient(#8C8C8C 0,#131313 100%);
-    background-image: -o-linear-gradient(#8C8C8C 0,#131313 100%);
-    background-image: linear-gradient(#8C8C8C 0,#131313 100%)
-    -webkit-transition: background-color .15s;
-    transition: background-color .15s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    text-decoration: none!important;
-	
+	  color: #FFFFFF;
+	  cursor: pointer;
+      background-image: -webkit-linear-gradient(#8C8C8C 0,#131313 100%);
+      background-image: -o-linear-gradient(#8C8C8C 0,#131313 100%);
+      background-image: linear-gradient(#8C8C8C 0,#131313 100%);
+      -webkit-transition: background-color .15s;
+      transition: background-color .15s;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      text-decoration: none!important;
 
       &:hover {
         color: #FFFFFF;
@@ -294,23 +292,22 @@
     }
 
     .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-   color: #FFFFFF;
-	cursor: pointer;
-    background-image: -webkit-linear-gradient(#545454 0,#141414 100%);
-    background-image: -o-linear-gradient(#545454 0,#141414 100%);
-    background-image: linear-gradient(#545454 0,#141414 100%);
-    -webkit-transition: background-color .15s;
-    transition: background-color .15s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+      color: #FFFFFF;
+	  cursor: pointer;
+      background-image: -webkit-linear-gradient(#545454 0,#141414 100%);
+      background-image: -o-linear-gradient(#545454 0,#141414 100%);
+      background-image: linear-gradient(#545454 0,#141414 100%);
+      -webkit-transition: background-color .15s;
+      transition: background-color .15s;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
     }
     .nav-stacked > li:last-child {
       -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.1);
       -moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.1);
       box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.1);
-
     }
 
     .top-nav-ico {
@@ -444,7 +441,6 @@
       list-style-type: none;
       margin: 0;
 
-
       a {
         color: #000;
         margin: 15px;
@@ -503,41 +499,40 @@
       }
     }
     .footer__link {
-     display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    line-height: 50px;
-    padding: 0 35px;
-    font-family: arial, sans-serif;
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      line-height: 50px;
+      padding: 0 35px;
+      font-family: arial, sans-serif;
 	
-	color: #FFFFFF;
-	cursor: pointer;
-    background-image: -webkit-linear-gradient(#8C8C8C 0,#131313 100%);
-    background-image: -o-linear-gradient(#8C8C8C 0,#131313 100%);
-    background-image: linear-gradient(#8C8C8C 0,#131313 100%)
-    -webkit-transition: background-color .15s;
-    transition: background-color .15s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-	text-decoration: none!important;
-      }
+	  color: #FFFFFF;
+	  cursor: pointer;
+      background-image: -webkit-linear-gradient(#8C8C8C 0,#131313 100%);
+      background-image: -o-linear-gradient(#8C8C8C 0,#131313 100%);
+      background-image: linear-gradient(#8C8C8C 0,#131313 100%);
+      -webkit-transition: background-color .15s;
+      transition: background-color .15s;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+	  text-decoration: none!important;
     }
 
     ._active .footer__link {
-    color: #FFFFFF;
-    cursor: pointer;
-    background-image: -webkit-linear-gradient(#545454 0,#141414 100%);
-    background-image: -o-linear-gradient(#545454 0,#141414 100%);
-    background-image: linear-gradient(#545454 0,#141414 100%);
-    -webkit-transition: background-color .15s;
-    transition: background-color .15s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+      color: #FFFFFF;
+      cursor: pointer;
+      background-image: -webkit-linear-gradient(#545454 0,#141414 100%);
+      background-image: -o-linear-gradient(#545454 0,#141414 100%);
+      background-image: linear-gradient(#545454 0,#141414 100%);
+      -webkit-transition: background-color .15s;
+      transition: background-color .15s;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
 
       &:before {
         content: "";

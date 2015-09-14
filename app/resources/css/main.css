@@ -1,4 +1,4 @@
-}body, html {
+body, html {
     height: 100%;
     width: 100%}
 body {
@@ -1957,7 +1957,7 @@ footer>.inner {
     letter-spacing: 56px;
 }
 }@media only screen and (min-width:992px) {
-    .a: hover, a:hover {
+    .a:hover {
     color: #016a46;
     text-decoration: underline;
 }
