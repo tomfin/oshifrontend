@@ -488,7 +488,7 @@ header .profile-username .caret {
     text-decoration: underline;
 }
 .header-user-block .user__name {
-    color: #000;
+    color: #FFFFFF;
     display: inline-block;
     position: relative;
     cursor: pointer;
