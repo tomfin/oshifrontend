@@ -69,7 +69,7 @@
 
 
     .game__option {
-       background: #141414;
+      background: #141414;
       height: 50px;
       font-size: 0;
       line-height: 0;
@@ -112,7 +112,7 @@
           }
         }
         &:hover {
-          background: #f0f0ee;
+          background: #141414;
         }
       }
     }
@@ -144,10 +144,11 @@
         display: inline-block;
         width: 50px;
         height: 50px;
-        background: #d9ddd8 url('/resources/images/sga/right-nav-ico.png') 9px 14px no-repeat;
+        background: #141414 url('/resources/images/sga/right-nav-ico.png') 9px 14px no-repeat;
         &:hover {
-          background-color: #f0f0ee;
+          background-color: #141414;
           background-position: -109px 14px;
+           cursor: pointer;
         }
         &._full {
           background-position: 9px -35px;
@@ -175,19 +176,16 @@
     }
     .tabs__login {
       width: 100%;
-      color: #fff;
-      background: #36aa62;
-      font-size: 20px;
-      line-height: 1.5;
+      color: #000;
+      background: #FFCD56;
+      font-size: 24px;
+      line-height: 2;
       padding: 10px 0;
-
-  	  text-decoration: none!important;
+      text-decoration: none!important;
       cursor: pointer;
-		
       background-image: -webkit-linear-gradient(#FFE2A0 0, #FFC02C 100%);
       background-image: -o-linear-gradient(#FFE2A0 0, #FFC02C 100%);
       background-image: linear-gradient(#FFE2A0 0, #FFC02C 100%);
-		
       -webkit-transition: background-color .15s;
       transition: background-color .15s;
       -webkit-user-select: none;
@@ -199,7 +197,7 @@
          background-image: -webkit-linear-gradient(#FFDF98 0%, #F1A800 100%);
          background-image: -o-linear-gradient(#FFDF98 0%, #F1A800 100%);
          background-image: linear-gradient(#FFDF98 0%, #F1A800 100%);
-	     text-decoration: none!important;
+         text-decoration: none!important;
       }
     }
     .tabs__icon {
@@ -263,7 +261,7 @@
     .nav-pills > li {
       padding: 0;
       margin: 0;
-      border-bottom: 1px solid #bbbbbb;
+      border-bottom: 1px solid #141414;
     }
 
     .nav-pills > li > a {
@@ -272,9 +270,8 @@
       font-size: 18px;
       padding-top: 16px;
       padding-bottom: 16px;
-	
-	  color: #FFFFFF;
-	  cursor: pointer;
+      color: #FFFFFF;
+      cursor: pointer;
       background-image: -webkit-linear-gradient(#8C8C8C 0,#131313 100%);
       background-image: -o-linear-gradient(#8C8C8C 0,#131313 100%);
       background-image: linear-gradient(#8C8C8C 0,#131313 100%);
@@ -285,7 +282,6 @@
       -o-user-select: none;
       user-select: none;
       text-decoration: none!important;
-
       &:hover {
         color: #FFFFFF;
       }
@@ -293,7 +289,7 @@
 
     .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
       color: #FFFFFF;
-	  cursor: pointer;
+      cursor: pointer;
       background-image: -webkit-linear-gradient(#545454 0,#141414 100%);
       background-image: -o-linear-gradient(#545454 0,#141414 100%);
       background-image: linear-gradient(#545454 0,#141414 100%);
@@ -506,9 +502,8 @@
       line-height: 50px;
       padding: 0 35px;
       font-family: arial, sans-serif;
-	
-	  color: #FFFFFF;
-	  cursor: pointer;
+      color: #FFFFFF;
+      cursor: pointer;
       background-image: -webkit-linear-gradient(#8C8C8C 0,#131313 100%);
       background-image: -o-linear-gradient(#8C8C8C 0,#131313 100%);
       background-image: linear-gradient(#8C8C8C 0,#131313 100%);
@@ -518,7 +513,7 @@
       -moz-user-select: none;
       -o-user-select: none;
       user-select: none;
-	  text-decoration: none!important;
+      text-decoration: none!important;
     }
 
     ._active .footer__link {
