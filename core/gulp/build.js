@@ -5,12 +5,18 @@ var plugins = require('gulp-load-plugins')({
     lazy: false
 });
 
-var DEV_MODE = !!plugins.util.env.dev;
+var DEV_MODE = !!plugins.util.env.dev; 
+/*var DEV_MODE = true; */
+
+var publicDir = plugins.path.resolve('./build');
+if (DEV_MODE) {
+	publicDir = plugins.path.resolve('./_project');
+}
 
 var everywhere = '_project/app/**/**/**/*',
     bower_components = 'bower_components/**/**/**/*',
     expressRoot = plugins.path.resolve('./.tmp'),
-    publicDir = plugins.path.resolve('./build'),
+    /*publicDir = plugins.path.resolve('./build'),*/
     source = require('vinyl-source-stream');
 
 function clean(relativePath, callback) {
@@ -83,6 +89,7 @@ function libs(callback) {
 
 function styles(callback) {
     clean('/resources/css/app*.css');
+    clean('/css/app*.css*');
     plugins.util.log('Rebuilding application styles');
 
     var cssFiles = plugins.mainBowerFiles({
@@ -93,6 +100,7 @@ function styles(callback) {
     cssFiles.push('_project/app/**/*.scss');
     cssFiles.push('!_project/app/**/_*.scss');
 
+plugins.util.log('cssFiles DEV_MODE: ' + DEV_MODE);
     gulp.src(cssFiles)
         .pipe(DEV_MODE ? plugins.sourcemaps.init() : plugins.util.noop())
         .pipe(plugins.sass().on('error', plugins.sass.logError))
@@ -173,7 +181,7 @@ function indexHtml(cb) {
 
     function buildIndex(path, callback) {
         gulp.src('_project/app/index.html')
-            .pipe(inject('./css/app*.css', path, 'app-style'))
+            .pipe(!DEV_MODE ? inject('./css/app*.css', path, 'app-style') : inject('./css/*.css', path, 'app-style'))
             .pipe(inject('./js/app*.js', path, 'app'))
             .pipe(inject('./js/templates*.js', path, 'templates'))
             .pipe(inject('./js/lib*.js', path, 'lib'))
@@ -226,6 +234,31 @@ gulp.task('build', ['prepare'], function (done) {
     })
 });
 
+gulp.task('buildDev', ['prepareDev'], function (done) {
+        plugins.async.series([
+                bower,
+                function (callback){
+                    plugins.async.parallel([
+                        fonts,
+                        i18n,
+                        images,
+                        styles
+                    ],callback);
+                },
+                function (callback){
+                    plugins.async.parallel([
+                        libs,
+                        templates,
+                        scripts
+                    ],callback);
+                },
+                indexHtml,
+                clearTmpDir
+            ], function (){
+        done();
+    })
+});
+
 var express = require('express'),
     refresh = require('gulp-livereload'),
     livereload = require('connect-livereload'),
@@ -239,8 +272,8 @@ server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({
     extended: true
 }));
-server.use(livereload({port: livereloadport}));
-
+server.use(livereload({port: livereloadport, start: true, reloadPage: 'index.html'}));
+/*
 server.use(express.static('build/'));
 server.use(['/assets','/css','/fonts','/i18n','/js'], function(req, res, next){
     if (!plugins.fs.existsSync(plugins.path.join(__dirname + '../build',req.url)) || req.url == "/favicon.ico") {
@@ -252,21 +285,34 @@ server.use(['/assets','/css','/fonts','/i18n','/js'], function(req, res, next){
 server.all('/*', function(req, res) {
     res.sendFile('index.html', { root: 'build/' });
 });
+*/
+server.use(express.static(publicDir + '/'));
+server.use(['/assets','/css','/fonts','/i18n','/js'], function(req, res, next){
+    if (!plugins.fs.existsSync(plugins.path.join(__dirname + '../'+publicDir,req.url)) || req.url == "/favicon.ico") {
+        res.status(404).send('');
+    } else {
+        res.sendFile('index.html', { root: publicDir + '/' });
+    }
+});
+server.all('/*', function(req, res) {
+    res.sendFile('index.html', { root: publicDir + '/' });
+});
 
-gulp.task('watch', ['build'], function () {
+gulp.task('watch', ['buildDev'], function () {
     gulp.start('site:open');
-
-    plugins.watch(['app/**', 'core/**'],
+	
+    plugins.watch(['app/**/*', 'core/**/*'],
         plugins.batch(function (events, done) {
             gulp.start('build', function (){
                 refresh.changed();
+		refresh();
                 done();
             });
         })
     );
 });
 
-gulp.task('server:start', [], function (){
+gulp.task('server:start', ['watch'], function (){
     server.listen(serverport);
     refresh.listen(livereloadport);
 });

@@ -1,5 +1,6 @@
 'use strict';
 
+
 var gulp = require('gulp');
 var debug = require('gulp-debug');
 require('require-dir')('./core/gulp');
@@ -13,12 +14,13 @@ gulp.task('default', ['clean'], function () {
 });
 
 gulp.task('dev', ['clean'], function () {
-    gulp.start('prepare', 'build-dev')
+    gulp.start('prepareCore', 'prepareDev', 'buildDev');
 });
 
 gulp.task('watch', [], function () {
-    gulp.watch('app/**', function () {
-        gulp.start('dev')
+    gulp.watch('app/**', function (file) {
+        gulp.start('buildDev');
+	console.log('D> Change on: ', file.path);
     });
 });
 
