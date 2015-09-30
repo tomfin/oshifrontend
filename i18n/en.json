@@ -15,7 +15,7 @@
 		}
 	},
 	"devise": {
-		"invalid_captcha": "Oh Dear, the captcha input is'nt right. Try again?",
+		"invalid_captcha": "Oh Dear, the captcha input isn't right. Try again?",
 		"password_expired": {
 			"submit": "Change your password",
 			"updated": "Great! your new password is saved.",
@@ -24,16 +24,13 @@
 		},
 		"failure": {
 			"session_limited": "You're logged in on another browser, that's why you're locked out here. Just sign in again here and you're back up and running.",
-			"expired": "Thanks for coming back. Your account had gone into 'sleep mode' because you are away for so long. To reactivate your account, just go to our support page, give us the email associated 
-with your account and will reactivate you immediately. ",
+			"expired": "Thanks for coming back. Your account had gone into 'sleep mode' because you are away for so long. To reactivate your account, just go to our support page, give us the email associated with your account and will reactivate you immediately. ",
 			"disabled": "Please don't hate us...your account is disabled. Can you contact Oshi support so we can sort this out for you.",
-			"not_allowed_ip": "Please don't hate us… but our system doesn't like this IP address. You may be in a jurisdiction we can't accept customers from. Shame, because we would love to have you play 
-on Oshi!",
+			"not_allowed_ip": "Please don't hate us… but our system doesn't like this IP address. You may be in a jurisdiction we can't accept customers from. Shame, because we would love to have you play on Oshi!",
 			"already_authenticated": "Ah! Your already signed in.",
 			"inactive": "Your account is'nt activated yet.",
 			"invalid": "Oh dear, you accidentally put in the wrong email or password. Try another.",
-			"last_attempt": "Okay... Deep breath... Pause...You have one more attempt before your account is locked. Good news, it's easy to reset the password and its much less hassle than dealing with a 
-locked account.",
+			"last_attempt": "Okay... Deep breath... Pause...You have one more attempt before your account is locked. Good news, it's easy to reset the password and its much less hassle than dealing with a locked account.",
 			"locked": "Deep breath...your account is locked. This is easy to sort out.",
 			"not_found_in_database": "We can't find either your email or your password, try another. ",
 			"timeout": "Welcome back. Because you been away for a while, your session expired. Just sign in again to continue.",
@@ -42,10 +39,8 @@ locked account.",
 		},
 		"confirmations": {
 			"confirmed": "Great! Your email address has been confirmed.",
-			"send_instructions": "Go to your inbox now. You'll receive an email from us with easy instructions to confirm your email address. Important! If you don't see an email from us within a minute or so, 
-just check your spam folder. ",
-			"send_paranoid_instructions": "If your email is already in our database, you will receive an email just now with instructions to confirm your email address. If you don't see an email from us within a 
-minute or so, just check your spam folder."
+			"send_instructions": "Go to your inbox now. You'll receive an email from us with easy instructions to confirm your email address. Important! If you don't see an email from us within a minute or so, just check your spam folder. ",
+			"send_paranoid_instructions": "If your email is already in our database, you will receive an email just now with instructions to confirm your email address. If you don't see an email from us within a minute or so, just check your spam folder."
 		},
 		"mailer": {
 			"confirmation_instructions": {
@@ -63,12 +58,9 @@ minute or so, just check your spam folder."
 			"success": "Successfully authenticated from %{kind} account."
 		},
 		"passwords": {
-			"no_token": "Okay....You can't access this page without coming from your password reset email. If you do come from you password reset email, please make sure you used the full URL provided, 
-because sometimes email clients 'munge' links.",
-			"send_instructions": "Okay, this is all in hand. You will get an email with instructions on how to reset your password just now. If the email doesn't come through in a minute or so, just check your 
-spam folder",
-			"send_paranoid_instructions": "If your email is already on our database, you'll receive an email with a password recovery link just now.   If the email doesn't come through in a minute or so, just check your 
-spam folder.",
+			"no_token": "Okay....You can't access this page without coming from your password reset email. If you do come from you password reset email, please make sure you used the full URL provided, because sometimes email clients 'munge' links.",
+			"send_instructions": "Okay, this is all in hand. You will get an email with instructions on how to reset your password just now. If the email doesn't come through in a minute or so, just check your spam folder",
+			"send_paranoid_instructions": "If your email is already on our database, you'll receive an email with a password recovery link just now.   If the email doesn't come through in a minute or so, just check your spam folder.",
 			"updated": "Excellent, your password has been changed and you're signed in!",
 			"updated_not_active": "Great, your password has been changed."
 		},
@@ -78,8 +70,7 @@ spam folder.",
 			"signed_up_but_inactive": "Were nearly there, you've signed up successfully but we couldn't sign you in because your account isn't activated yet.",
 			"signed_up_but_locked": "The good news: You've signed up successfully. The annoying news: we couldn't sign you in because your account is locked. To unlock your account,  ",
 			"signed_up_but_unconfirmed": "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.",
-			"update_needs_confirmation": "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new 
-email address.",
+			"update_needs_confirmation": "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address.",
 			"updated": "Your account has been updated successfully."
 		},
 		"sessions": {
@@ -123,16 +114,14 @@ email address.",
 				"payment": {
 					"not_enough_money": "Not enough money",
 					"not_enough_unlocked_money": "Some or all of your funds are locked due to an active bonus. Please meet your bonus wagering requirement to be able to cash out.",
-					"unresolved_cashout_request_presents": "Your previous cashout request has not yet been processed. We will do it as fast as we can. Before requesting another cashout, 
-please wait for your previous request to be processed.",
+					"unresolved_cashout_request_presents": "Your previous cashout request has not yet been processed. We will do it as fast as we can. Before requesting another cashout, please wait for your previous request to be processed.",
 					"pending_deposit_presents": "We are still waiting for confirmation of your last deposit",
 					"commission_is_greater_that_amount": "Commission is greater than amount",
 					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
 					"not_used_account": "Account you are going to cashout was not used before.",
 					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
 					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
-					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is 
-{{debt_amount}}."
+					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
 				},
 				"commission_connection": {
 					"not_overlap": "Must not overlap with other connections with same commission level",
@@ -708,8 +697,7 @@ please wait for your previous request to be processed.",
 			"title": "Page Not Found",
 			"oops": "Oops,",
 			"cannot_be_found": "The page you are looking for cannot be found.",
-			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we 
-promise to try our best to help you.",
+			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
 			"link_to_root": "Here is a link to our start page:"
 		}
 	},
@@ -1051,8 +1039,7 @@ promise to try our best to help you.",
 			"verification": {
 				"success": {
 					"title": "Successful verification",
-					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final 
-result."
+					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
 				},
 				"failure": {
 					"title": "Verification failed",
@@ -1068,8 +1055,7 @@ result."
 			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
 			"xrp": {
 				"send_text": "Send any amount of {{currency}} to",
-				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your 
-balance."
+				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
 			}
 		}
 	},
@@ -1182,8 +1168,7 @@ balance."
 			"desktop_section": "Desktop support",
 			"desktop_section_link": "Please install Adobe Flash player for Desktop",
 			"mobile_section": "Mobile devices support",
-			"mobile_section_text": "Adobe Flash is not fully compatible with native browsers on mobile devices. However, you can download 3rd party apps that provide great user experience. We can suggest 
-%s and %s."
+			"mobile_section_text": "Adobe Flash is not fully compatible with native browsers on mobile devices. However, you can download 3rd party apps that provide great user experience. We can suggest %s and %s."
 		},
 		"devise": {
 			"resend_confirmation": "Resend Confirmation Instructions",
@@ -1216,8 +1201,7 @@ balance."
 		"filters": {
 			"find_your_game": "Find your game"
 		},
-		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English 
-version and a translation, the English version always retains priority."
+		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
 	},
 	"winners": {
 		"winners": "Winners",
@@ -1691,8 +1675,7 @@ version and a translation, the English version always retains priority."
 		"confirm_address": "Confirm address",
 		"bonus_code_show": "I have a Bonus Code",
 		"bonus_code_hide": "Hide Bonus Code",
-		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click 
-the link:",
+		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
 		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
 		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
 		"invalid_profile_message": "To be able to cash out, you must fill in the required fields in your Profile.",
