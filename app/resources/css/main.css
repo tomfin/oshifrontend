@@ -17,6 +17,9 @@ body {
     -webkit-transition: color .15s;
     transition: color .15s;
 }
+.a:hover, a:hover{
+ color: #DEDEDE;
+}
 a img {
     border: none;
 }
