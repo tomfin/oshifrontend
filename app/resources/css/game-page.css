@@ -1,0 +1,24 @@
+.game-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1000;
+    border: 0;
+}
+.game-container .close {
+    border-radius: 35px;
+    display: block;
+    height: 40px;
+    padding: 10px 8px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    z-index: 1000000;
+}
+.page-game {
+    overflow: hidden;
+}
