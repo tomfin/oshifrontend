@@ -871,7 +871,7 @@ ul.ng-scope {
     border-left: 1px solid transparent;
 }
 .winners .nav-tabs>li.active>a:focus, .winners .nav-tabs>li.active>a:hover {
-    color: #555;
+    color: #DEDEDE;
     cursor: default;
     /*background-color: #fff; */
     border-bottom: 5px solid #E50914;
@@ -2099,7 +2099,7 @@ footer, header {
     line-height: 28px;
     white-space: nowrap;
 }
-.register_row .register_lnk {
+.register_lnk {
     display: inline-block;
     overflow: hidden;
     position: relative;

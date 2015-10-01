@@ -68,20 +68,20 @@
 			"destroyed": "I'm really sorry to see you go. Your account has been successfully cancelled. Maybe try Oshi again in a while...so we can do better next time. Nick Garner - CEO Oshi.",
 			"signed_up": "Welcome to Oshi! You signed up successfully.",
 			"signed_up_but_inactive": "Were nearly there, you've signed up successfully but we couldn't sign you in because your account isn't activated yet.",
-			"signed_up_but_locked": "The good news: You've signed up successfully. The annoying news: we couldn't sign you in because your account is locked. To unlock your account,  ",
-			"signed_up_but_unconfirmed": "A message with a confirmation link has been sent to your email address. Please follow the link to activate your account.",
-			"update_needs_confirmation": "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address.",
-			"updated": "Your account has been updated successfully."
+			"signed_up_but_locked": "The good news: you've signed up successfully. The annoying news: we couldn't sign you in because your account is locked. Unlocking your account is easy and quick, just go through the account unlock process or contact Oshi support.",
+			"signed_up_but_unconfirmed": "You're nearly there. An email with a confirmation link has been sent just now. Follow the link to activate your account. If you don't see an email from us within a minute or so, just check your spam folder. ",
+			"update_needs_confirmation": "Great! You have updated your account successfully, but you need to verify your new email address. Can you check your email and follow the confirm link to confirm your new email address?  If you don't see an email from us within a minute or so, just check your spam folder. ",
+			"updated": "Wonderful! Your account has been updated successfully."
 		},
 		"sessions": {
-			"already_signed_out": "Signed out successfully.",
-			"signed_in": "Signed in successfully.",
-			"signed_out": "Signed out successfully."
+			"already_signed_out": "You have signed out successfully.",
+			"signed_in": "Super! You have signed in successfully.",
+			"signed_out": "You have signed out successfully."
 		},
 		"unlocks": {
-			"send_instructions": "You will receive an email with instructions for how to unlock your account in a few minutes.",
-			"send_paranoid_instructions": "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes.",
-			"unlocked": "Your account has been unlocked successfully. Please sign in to continue."
+			"send_instructions": "Hold tight... You're nearly there. Were sending you an email just now, with simple instructions on how to unlock your account.  If you don't see an email from us within a minute or so, just check your spam folder.",
+			"send_paranoid_instructions": "Deep breath...If your account exists, we will send you an email with simple instructions for how to unlock your account.  If you don't see an email from us within a minute or so, just check your spam folder.",
+			"unlocked": "Phew! Great news! Your account has been unlocked. Sign in now, if you want."
 		}
 	},
 	"activerecord": {
@@ -100,7 +100,7 @@
 				"user": {
 					"attributes": {
 						"password": {
-							"wrong_password": "invalid email address or password"
+							"wrong_password": "Oops, you may have mistyped your email or password. Try again."
 						}
 					}
 				},
@@ -112,19 +112,19 @@
 					}
 				},
 				"payment": {
-					"not_enough_money": "Not enough money",
-					"not_enough_unlocked_money": "Some or all of your funds are locked due to an active bonus. Please meet your bonus wagering requirement to be able to cash out.",
-					"unresolved_cashout_request_presents": "Your previous cashout request has not yet been processed. We will do it as fast as we can. Before requesting another cashout, please wait for your previous request to be processed.",
-					"pending_deposit_presents": "We are still waiting for confirmation of your last deposit",
-					"commission_is_greater_that_amount": "Commission is greater than amount",
-					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
-					"not_used_account": "Account you are going to cashout was not used before.",
-					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
-					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
-					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+					"not_enough_money": "Oh dear, there's not enough money",
+					"not_enough_unlocked_money": "Because you've got an active bonus, some or maybe all of your funds are locked. You just need to meet your bonus wagering requirements to be able to cashout i.e. you may need to bet some more. If wagering requirements aren't the problem, please contact Oshi support so we can sort this out with you.",
+					"unresolved_cashout_request_presents": "Ah, okay...your previous cashout request hasn't been processed yet. Were on it and sorting out your money as fast as we can. Before you can request another cashout, just wait for your current cashout request to be completed. Sorry about all of this hassle.",
+					"pending_deposit_presents": "Were still still waiting for confirmation of your last deposit. If you need an update, just contact Oshi support.",
+					"commission_is_greater_that_amount": "That's annoying...commission is greater than amount. Sorry about that.",
+					"cashout_only_to_main_address": "You have set {{address}} as main Bitcoin address. You can cashout only to that address. Hopefully you understand, it's a security thing.",
+					"not_used_account": "The account you're going to cashout into, hasn't been used before.",
+					"debt_to_another_payment_system": "Ah... You've got an unpaid debt in {{system_name}}. Please, can you pay that debt?",
+					"debt_to_another_payment_system_account": "Ah... You've got an unpaid debt to a different account : ({{account}})",
+					"more_debts_exist": "You've got debts to another payment systems and accounts. You should pay all these debts before cashing out your winnings. Debt to current payment system is {{debt_amount}}."
 				},
 				"commission_connection": {
-					"not_overlap": "Must not overlap with other connections with same commission level",
+					"not_overlap": "Mustn't overlap with other connections with same commission level",
 					"future_from_time": "must be in future",
 					"greater_than_from_time": "must be greater than from time",
 					"strategies_equivalence": "must have same payment scheme as affiliate profile",
@@ -214,8 +214,8 @@
 				"email": "Email",
 				"encrypted_password": "Encrypted password",
 				"password": "Password",
-				"password_confirmation": "Confirm password",
-				"current_password": "Current password",
+				"password_confirmation": "Confirm your password",
+				"current_password": "Your current password",
 				"remember_me": "Remember me",
 				"reset_password_token": "Reset password token",
 				"reset_password_sent_at": "Reset password sent at",
@@ -441,9 +441,9 @@
 			"user": {
 				"email": "Email",
 				"encrypted_password": "Encrypted password",
-				"password": "Password",
+				"password": "Your password",
 				"password_confirmation": "Password confirmation",
-				"current_password": "Current password",
+				"current_password": "Your current password",
 				"remember_me": "Remember me",
 				"reset_password_token": "Reset password token",
 				"reset_password_sent_at": "Reset password sent at",
@@ -466,7 +466,7 @@
 				"disabled": "Disabled",
 				"allowed_ips_string": "Allowed IPs",
 				"guest": "Guest",
-				"main_bitcoin_address": "Main bitcoin address",
+				"main_bitcoin_address": "Your main bitcoin address",
 				"bonus_code": "Bonus Code"
 			},
 			"profile": {
@@ -695,10 +695,10 @@
 	"http": {
 		"not_found": {
 			"title": "Page Not Found",
-			"oops": "Oops,",
-			"cannot_be_found": "The page you are looking for cannot be found.",
-			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
-			"link_to_root": "Here is a link to our start page:"
+			"oops": "Ah! that's a 404...",
+			"cannot_be_found": "For some reason, the page you're looking for can't be found.",
+			"description": "Most likely, the original page may have been removed, had its name changed, or is temporarily unavailable. Oshi SWAT Tech team keeps a track of all new error pages, so we'll fix this ASAP!",
+			"link_to_root": "Best option...go back the Oshi homepage :"
 		}
 	},
 	"common": {
@@ -706,7 +706,7 @@
 		"players": "Players",
 		"email": "Email",
 		"content": "Content",
-		"loading": "Loading...",
+		"loading": "It's loading...",
 		"yes": "Yes",
 		"no": "No",
 		"all": "All",
@@ -727,7 +727,7 @@
 		"limit": "Limit",
 		"live_casino": "Live Casino",
 		"address": "Address",
-		"good_news": "Good news, {{nickname}}.",
+		"good_news": "Great news, {{nickname}}.",
 		"save": "Save",
 		"edit": "Edit",
 		"remove": "Remove",
@@ -808,17 +808,17 @@
 	},
 	"casino": {
 		"casino": "Casino",
-		"not_enough_money": "Not enough money",
+		"not_enough_money": "Oh dear, not enough money",
 		"events": {
 			"modified": {
-				"user": "User Profile Modified",
+				"user": "Your User Profile Modified",
 				"admin_user": "Admin Modified",
 				"game_table": "Game Modified",
 				"bonus_issue": "Bonus Issue",
 				"bonus": "Bonus Modified",
 				"payment_system": "Payment System",
 				"retention_email": "Retention email Modified",
-				"casino_cash_balance": "Casino Cash Balance Modified",
+				"casino_cash_balance": "Oshi Cash Balance Modified",
 				"commission_connection": "Commission Connection Modified",
 				"payment": "Payment Modified",
 				"affiliate_profile": "Affiliate Profile Modified"
@@ -827,26 +827,26 @@
 				"step": "Game Step Made"
 			},
 			"user": {
-				"sign_out": "User signed out",
-				"sign_in": "User signed in",
-				"failed_sign_in": "User failed to sign in"
+				"sign_out": "You have signed out",
+				"sign_in": "You have signed in",
+				"failed_sign_in": "There's a small problem, you failed to sign in"
 			},
 			"admin_user": {
-				"sign_out": "Admin signed out",
-				"sign_in": "Admin signed in",
-				"failed_sign_in": "Admin failed to sign in"
+				"sign_out": "Oshi, the overlord has signed out - we miss you oh great one!",
+				"sign_in": "The power is with him...Oshi the overlord has signed in",
+				"failed_sign_in": "Oshi the overlord has failed to sign in - disaster!"
 			},
 			"notifications": {
 				"balance_correction_created": "Balance correction created",
 				"cashout_requested": "Cashout requested",
-				"deposit_made": "Deposit made",
-				"cashout_made": "Cashout made",
-				"auto_cashout_made": "Auto-cashout made",
-				"cashout_rejected": "Cashout request rejected",
-				"deposit_rejected": "Deposit rejected",
-				"user_upload_document": "User Uploaded Document",
-				"payment_created_by_admin": "Admin Created Payment",
-				"user_disabled": "User Disabled",
+				"deposit_made": "Thanks! Deposit made",
+				"cashout_made": "Well done and enjoy your money! Cashout made",
+				"auto_cashout_made": "Nice! Auto-cashout made",
+				"cashout_rejected": "Please don't hate us...but your cash at the request has been rejected. If you don't know why,  can you contact Oshi support now?",
+				"deposit_rejected": "This is very strange, your deposit has been rejected. If you don't know why, can you contact Oshi support now? ",
+				"user_upload_document": "Great, that document has been uploaded",
+				"payment_created_by_admin": "Oshi Created Payment",
+				"user_disabled": "Strange...User Disabled",
 				"contact": "User Requested Support",
 				"admin_comment_created": "Admin Left Comment"
 			},
@@ -902,7 +902,7 @@
 				"cashout_email_note": "Cashout performed"
 			},
 			"system_name": "%{child} via %{parent}",
-			"all_locked": "For your safety we only allow cashout through payment systems you previously used for deposit. If you have questions, please contact support.",
+			"all_locked": "Sorry about this hassle, you can only cashout through payment systems you previously used for deposit. If we can help, please contact Oshi support.",
 			"child_systems": {
 				"visa": "Visa",
 				"mastercard": "MasterCard",
@@ -1004,22 +1004,22 @@
 			"unavailable_action": "Unavailable action",
 			"roulette": {
 				"notice": {
-					"bet_is_not_valid": "Bet is not valid",
-					"bet_type_not_found": "Bet type not found",
-					"unknown_bet": "Unknown bet",
-					"unknown_value": "Unknown value selected",
-					"unknown_column": "Unknown column selected",
-					"unknown_dozen": "Unknown dozen selected"
+					"bet_is_not_valid": "Ah...the bet isn't valid, try another? ",
+					"bet_type_not_found": "We can't find this bet type",
+					"unknown_bet": " It's an unknown bet, try another?",
+					"unknown_value": "You've selected an unknown value, try another? ",
+					"unknown_column": "You've selected an unknown column, try another?",
+					"unknown_dozen": "You've selected an unknown dozen, try another?"
 				}
 			}
 		},
 		"provable_fair": {
-			"provable_fair": "Provable fair",
+			"provable_fair": "Provably fair",
 			"provability": "Provability",
-			"not_available": "Provability widget available at game page",
+			"not_available": "The provability widget is available on the game page.",
 			"verify": "Verify",
 			"loading": "Randomizing ...",
-			"is_unavailable": "Provable fair is not available for this game.",
+			"is_unavailable": "We can't certify this game is provably fair. But it's still a great game backed by our Oshi fair play guarantee.",
 			"next_game": "Next game",
 			"last_game": "Last game",
 			"reel_number": "Reel {{index}}",
@@ -1038,12 +1038,12 @@
 			},
 			"verification": {
 				"success": {
-					"title": "Successful verification",
+					"title": "Well done! You've been successfully verified.",
 					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
 				},
 				"failure": {
-					"title": "Verification failed",
-					"body": "Please contact our support."
+					"title": "Ah... Your verification failed",
+					"body": "Can you contact Oshi supports to sort this out?"
 				}
 			}
 		},
@@ -1051,7 +1051,7 @@
 			"update_balance": "Refresh balance data",
 			"current_balance": "Current balance {{balance}}.",
 			"send_text": "Send any amount of {{currency}} (plus miner fee) to",
-			"cant_attach_address": "Sorry, we have some problems with bitcoins. Admin has already been notified. Try again soon.",
+			"cant_attach_address": "Okay...we have some problems with bitcoins. Oshi support has already been notified and were sorting this out. Can you try again soon?",
 			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
 			"xrp": {
 				"send_text": "Send any amount of {{currency}} to",
@@ -1079,8 +1079,8 @@
 			"very_weak": "Very Weak",
 			"weak": "Weak",
 			"so_so": "So-so",
-			"strong": "Strong",
-			"great": "Great"
+			"strong": "Strong...",
+			"great": "Awesome!"
 		},
 		"playing": {
 			"playing_fun": "Playing for {{currency}}",
@@ -1089,34 +1089,34 @@
 			"play_real": "Play with {{currency}}"
 		},
 		"links": {
-			"support": "Support",
+			"support": "Oshi Support",
 			"help": "Help",
 			"how_to_start": "How to Start",
 			"casino_promotions": "Casino Promotions",
-			"bonuses": "Bonuses",
+			"bonuses": "Oshi Bonuses",
 			"affiliate_program": "Affiliate program",
 			"terms_and_conditions": "Terms and Conditions",
 			"back": "Back",
-			"create_ticket": "Create ticket",
+			"create_ticket": "Create a ticket",
 			"send_form": "Send form",
 			"online_chat": "Online chat",
 			"home": "Home",
 			"frontpage": "Frontpage",
 			"casino_games": "Casino Games",
-			"about_casino": "About Casino",
+			"about_casino": "About Oshi",
 			"all_games": "All Games",
 			"load_more_games": "Load More Games",
 			"rules": "Games Rules",
 			"autoregister": "Autoregister",
 			"quick_register": "Quick Register",
-			"play_for_fun": "Play for Fun",
+			"play_for_fun": "Practice Play",
 			"demo": "Demo",
 			"play_for_real": "Play for Real",
 			"play_for_bitcoin": "Play for Bitcoin",
-			"free_play": "Free Play",
+			"free_play": "Practice Play",
 			"real_play": "Real Play",
 			"play_now": "Play now",
-			"join_now": "Join now",
+			"join_now": "Join Today",
 			"profile": "Profile",
 			"dice": "Dice",
 			"deposit": "Deposit",
@@ -1125,14 +1125,14 @@
 			"cashbox": "Cashbox",
 			"sign_out": "Sign Out",
 			"sign_in": "Sign In",
-			"sign_up": "Sign Up",
+			"sign_up": "Join Today!",
 			"register": "Register",
 			"login": "Login",
 			"logout": "Logout",
 			"start_playing": "Start Playing",
 			"forgot_password": "Forgot Your Password?",
-			"didnt_receive_confirmation": "Didn't receive confirmation instructions?",
-			"didnt_receive_unlock": "Didn't receive unlock instructions?",
+			"didnt_receive_confirmation": "Didn't receive your confirmation instructions? Just check your spam folder in case your Oshi confirmation email has ended up there.",
+			"didnt_receive_unlock": "Didn't receive your unlock instructions? Just check your spam folder in case your Oshi unlock email has ended up there.",
 			"affiliate_profiles": "Affliate Profiles",
 			"settings": "Settings"
 		},
@@ -1150,12 +1150,12 @@
 		"actions": {
 			"go_bang": "Go!",
 			"deposit_now": "Deposit Now",
-			"sign_up_now": "Sign Up Now"
+			"sign_up_now": "Sign Up Today"
 		},
 		"games_bet_playthrough_percent": "Games bet playthrough percent",
 		"contact": {
-			"title": "Contact Form",
-			"hint": "Please, fill the information below. All fields are required.",
+			"title": "Oshi contact Form",
+			"hint": "Can you fill in the form below? All the fields are needed.",
 			"labels": {
 				"email": "Email",
 				"content": "Message",
@@ -1163,45 +1163,45 @@
 			}
 		},
 		"no_flash": {
-			"flash_isnt_available": "Adobe Flash Player isn't available",
-			"flash_usage": "Dear users, in order to ensure the best high definition gaming experience, our casino runs on Adobe Flash.",
+			"flash_isnt_available": "Ah...you don't have Adobe Flash Player",
+			"flash_usage": "Sometimes Adobe Flash is the best thing for a high definition gaming experience...that's why Oshi uses it.",
 			"desktop_section": "Desktop support",
-			"desktop_section_link": "Please install Adobe Flash player for Desktop",
+			"desktop_section_link": "Can you install Adobe Flash player for Desktop?",
 			"mobile_section": "Mobile devices support",
-			"mobile_section_text": "Adobe Flash is not fully compatible with native browsers on mobile devices. However, you can download 3rd party apps that provide great user experience. We can suggest %s and %s."
+			"mobile_section_text": "Yes...It's annoying...Adobe Flash is'nt fully compatible with native browsers on mobile devices. But you can download some great 3rd party apps which allow you to run Flash on your mobile. Try %s and %s."
 		},
 		"devise": {
-			"resend_confirmation": "Resend Confirmation Instructions",
-			"send_reset_instructions": "Reset Password",
-			"send_unlock_instructions": "Resend Unlock Instructions",
+			"resend_confirmation": "Resend Your Confirmation Instructions",
+			"send_reset_instructions": "Reset Your Password",
+			"send_unlock_instructions": "Resend Your Unlock Instructions",
 			"change_your_password": "Change your password",
 			"change_my_password": "Change my password",
 			"new_password": "New password",
-			"confirm_new_password": "Confirm new password",
-			"password_hint": "(leave blank if you don't want to change it)",
-			"current_password_hint": "(we need your current password to confirm your changes)",
-			"unlock_hint": "If your account has been locked, fill in your e-mail address and we will send you unlock instructions via e-mail.",
-			"resend_hint": "Fill in your e-mail address and we will send you instructions on how to reset your password via e-mail.",
-			"contact_us_hint_html": "Contact us via {{page}} if you need further help.",
+			"confirm_new_password": "Confirm your new password",
+			"password_hint": "(leave this blank if you don't want to change it)",
+			"current_password_hint": "(We need your current password to confirm your changes)",
+			"unlock_hint": "If your account has been locked, just fill in the your e-mail address and we'll send you unlock instructions via e-mail just now. If you don't see the Oshi email in the next minute or so, just check your spam folder.",
+			"resend_hint": "Fill in your e-mail address and we will send you instructions on how to reset your password via e-mail. If you don't see the Oshi email in the next minute or so, just check your spam folder.",
+			"contact_us_hint_html": "Contact us through {{page}} if you need any more help.",
 			"custom": {
-				"not_valid_email": "Not a valid email",
-				"too_short": "Too short",
-				"not_match": "Not match",
+				"not_valid_email": "Oops, try typing your email in again?",
+				"too_short": "Oops, too short",
+				"not_match": "Not matching",
 				"min_characters": "Minimum 1 character"
 			}
 		},
 		"payment_system_redirect": {
 			"notification": "You will be redirected to {{system}} side shortly to finish your transaction",
-			"text": "To continue payment click button below.",
+			"text": "To continue your payment, click the button below.",
 			"button": "Continue payment"
 		},
 		"social": {
-			"follow_us": "Follow us"
+			"follow_us": "Follow Oshi!"
 		},
 		"filters": {
-			"find_your_game": "Find your game"
+			"find_your_game": "Search Here"
 		},
-		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
+		"rules_priority_warning": "The Game Rules as published on Oshi.io are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
 	},
 	"winners": {
 		"winners": "Winners",
@@ -1214,19 +1214,19 @@
 		}
 	},
 	"restriction": {
-		"default": "This page is appears to be restricted in your country",
-		"game_restricted_in_country": "This game is appears to be restricted in your country",
-		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
+		"default": "Ah... There's a small problem. Because of Oshi's licensing obligations, we have to restrict this page in your country. That's disappointing, because we think you'd love Oshi.",
+		"game_restricted_in_country": "Ah... There's a small problem. Because of Oshi's licensing obligations, we have to restrict this game in your country. That's disappointing, because we think you'd love Oshi.",
+		"registration_restricted_in_country": "Please don't hate us…Because of Oshi's licensing obligations we can't accept customers from your country. That's really disappointing, because we think you'd love Oshi."
 	},
 	"documents": {
-		"removed_successfully": "Document was successfully removed",
+		"removed_successfully": "Your document was successfully removed",
 		"document": {
 			"edit_description": "Edit Description",
 			"approved": "Approved",
 			"not_approved": "Not Approved"
 		},
 		"index": {
-			"upload_document": "Upload a Document"
+			"upload_document": "Upload your Document"
 		}
 	},
 	"sportsbook": {
@@ -1469,7 +1469,7 @@
 	},
 	"affiliate_profiles": {
 		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
-		"commission": "Commission",
+		"commission": "Your commission",
 		"registration_settings": {
 			"reward": "CPA Reward",
 			"conditions": "Conditions",
@@ -1586,46 +1586,46 @@
 		"show": {
 			"edit_profile": "Edit your profile",
 			"edit_settings": "Edit Settings",
-			"attach_documents": "Attach documents",
-			"change_credentials": "Change password",
-			"set_email_and_password": "Set email and password",
+			"attach_documents": "Attach your documents",
+			"change_credentials": "Change your password",
+			"set_email_and_password": "Set your email and password",
 			"create_cashout_request": "Cashout",
-			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
-			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
-			"cashout_request_created": "Cashout request has been received and requires approval by our staff. We will process your request as fast as we can.",
-			"cashout_successfully": "Cashout has been made successfully",
-			"cashout_technically_impossible": "We're sorry, but some errors occurred. We're working to fix them in an emergency mode. Please contact support if you have any questions.",
+			"confirm_address": "Oshi security! If we have never seen your email address on our system, we need to confirm it via email. A confirmation link has been sent to your inbox just now. Just click on the link and your email address will be confirmed. If you don't see our email within a minute, just check your spam inbox. ",
+			"address_confirmation_failed": "Ah...because your address wasn't confirmed, your cashout was not processed. If you're not sure about sorting this out, can you contact Oshi support?",
+			"cashout_request_created": "We've got your cashout request but it needs approval. Were dealing with this as top priority, because we know how much you care about getting your money, when you want it.",
+			"cashout_successfully": "Yea! Your cashout has come through - enjoy your money!",
+			"cashout_technically_impossible": "Please don't hate us... There's a technical problem which means we can't do your cashout right now. This is really serious and were on it. If you need reassurance or updates, just contact Oshi support and we will help.",
 			"profile_info": {
 				"title": "Profile Info"
 			},
 			"autoregister_info": {
-				"title": "Currently, you can log in to your account by visiting your personal login url"
+				"title": "You can log in to your account really quickly by using your personal login url"
 			},
 			"accounts": {
 				"title": "Accounts",
-				"available_to_cashout": "Available to cash out",
+				"available_to_cashout": "Available to cashout!",
 				"add_currency": "Add currency"
 			},
 			"bonuses": {
 				"title": "Bonuses",
-				"no_bonuses": "You currently do not have any bonus.",
-				"cancel_bonus": "Forfeit Bonus",
-				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
-				"bonus_canceled": "Bonus canceled",
+				"no_bonuses": "Ah, okay...you don't have any bonus.",
+				"cancel_bonus": "No bonus for me (Pause...deep breath...think about it before clicking)",
+				"cancel_bonus_confirmation": "Important! If you cancel your bonus, it means we have to 'Zero' your bonus related winnings.",
+				"bonus_canceled": "Your bonus has been cancelled canceled",
 				"bonus_not_canceled": "This bonus can't be canceled"
 			},
 			"coupons": {
-				"activated": "Coupon \"{{code}}\" successfully activated.",
-				"not_activated": "Unable to activate coupon \"{{code}}\". Please try again or contact support.",
-				"already_activated": "Coupon \"{{code}}\" already activated."
+				"activated": "Yea! your coupon \"{{code}}\" successfully activated.",
+				"not_activated": "for some reason, we can't activate your coupon: \"{{code}}\". Can you try again? And if that fails can you contact Oshi support?",
+				"already_activated": "Your coupon \"{{code}}\" already activated. Yea!"
 			},
 			"payments": {
 				"title": "Payments"
 			},
 			"not_finished_games": {
-				"title": "Unfinished Games",
-				"hint": "You can either continue playing, or cancel these games. Canceling will result in loss of bet.",
-				"game_canceled": "Game has been canceled"
+				"title": "You've forgotten to finish your game",
+				"hint": "You can either carry on playing, or maybe cancel your game. Important! If you cancel your game and there's a stake in the game, you will lose that bet.",
+				"game_canceled": "You've cancelled your game"
 			},
 			"bets": {
 				"title": "Bets",
@@ -1638,18 +1638,18 @@
 			"freespin_bonuses_history": "Freespins History",
 			"deposit_to_address_hint": "Deposit to this address to fund your account.",
 			"freespin_bonuses": {
-				"bonus_canceled": "Bonus canceled",
-				"bonus_not_canceled": "Failed to cancel bonus",
-				"bonus_activated": "Bonus was activated",
-				"bonus_not_activated": "Bonus was not activated"
+				"bonus_canceled": "Your bonus was cancelled",
+				"bonus_not_canceled": "You didn't cancel your bonus",
+				"bonus_activated": "Your bonus was activated",
+				"bonus_not_activated": "Ah, your bonus wasn't activated"
 			}
 		},
 		"edit": {
 			"title": "Edit Profile",
-			"info_updated": "Info has been updated",
-			"not_saved": "Changes was not saved",
-			"settings_section_updated": "Section successfully updated",
-			"valid_data_warning": "Please enter valid contact details in the form below. Make sure it is accurate before saving."
+			"info_updated": "Your Info is updated",
+			"not_saved": "Ah, your changes weren't saved.",
+			"settings_section_updated": "Great! The section successfully updated",
+			"valid_data_warning": "Important! Make sure you enter the correct information in the form below before saving."
 		}
 	},
 	"payments": {
@@ -1666,32 +1666,32 @@
 			"pending": "Pending"
 		},
 		"canceled_by_user": "You have canceled your transaction",
-		"wait_for_confirmation": "Your payment will be confirmed shortly",
-		"not_performed": "Payment was not performed",
-		"confirmed": "Payment confirmed",
+		"wait_for_confirmation": "We're nearly there, your payment will be confirmed shortly",
+		"not_performed": "Your payment was not performed",
+		"confirmed": "Your payment has been confirmed",
 		"canceled": "Payment not confirmed",
 		"make_deposit": "Make Deposit",
-		"make_cashout": "Request Cashout",
+		"make_cashout": "Get Cashout",
 		"confirm_address": "Confirm address",
 		"bonus_code_show": "I have a Bonus Code",
 		"bonus_code_hide": "Hide Bonus Code",
-		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
-		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
-		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
-		"invalid_profile_message": "To be able to cash out, you must fill in the required fields in your Profile.",
-		"try_again": "Transaction could not be initiated due to connection problems. If the problem persists, please contact our support.",
+		"address_confirmation_email_body": "You've requested a cashout to {{address}}. But, you haven't used this address before. To protect your account, can you confirm this address? It only takes a moment. Just click the link:",
+		"address_confirmation_email_warning": "Important! If this address doesn't belong to you, can you contact support and change your password?:",
+		"invalid_profile_before_deposit_message": "Can you fill in the required fields 1st to make a deposit? Just enter the correct contact information in the form below. Tip: just make sure it's accurate before saving.",
+		"invalid_profile_message": "Important! To cashout, can you fill the required fields in your profile (sorry about the hassle)",
+		"try_again": "Technical glitch:  because of connection problems, your transaction couldn't be actioned. Can you try again? If you have the same problem again, contact Oshi support.",
 		"select_currency": "Select Balance Currency",
 		"select_currency_hint": {
-			"deposit": "I would like to top up my balance in",
-			"cashout": "I would like to cash out"
+			"deposit": "I'd like to top up my balance",
+			"cashout": "I want to cashout"
 		},
 		"select_payment_method": "Select Payment Method",
 		"current_balance": {
 			"deposit": "Your current balance: {{money}}.",
-			"cashout": "Available to cash out: {{money}}. Please refer to {{balance_link}} page for detailed break down."
+			"cashout": "Available to cashout: {{money}}. Please refer to {{balance_link}} page for detailed break down."
 		},
 		"payment_methods": {
-			"empty": "There are no available payment methods for this currency.",
+			"empty": "Ah...there aren't any available payment methods for this currency.",
 			"pay_with_cubits": "Pay with Cubits"
 		},
 		"limits": {
@@ -1711,7 +1711,7 @@
 		"user_has_suspicious_games": "User has suspicious games",
 		"cashout_amount": "Amount exceeds allowed maximum",
 		"cashout_wins": "Amount exceeds user limit",
-		"casino_cashout": "Amount exceeds casino daily limit",
+		"casino_cashout": "Amount exceeds Oshi's daily limit",
 		"crypto_address_confirmed": "Address was not used before",
 		"manual": {
 			"title": "User was manually marked as suspicious"
@@ -1740,20 +1740,20 @@
 	},
 	"notification": {
 		"contact_form": {
-			"sender_notice": "Your message was sent successfully.",
-			"mail_subject": "Received message via contact form at your casino site"
+			"sender_notice": "Great! Your message has been sent.",
+			"mail_subject": "From Oshi - Just to let you know, we've received your message through our contact form."
 		},
 		"payment_confirmation": {
-			"mail_subject": "Payment confirmation code"
+			"mail_subject": "Oshi payment confirmation code"
 		},
 		"daily_stats": {
-			"mail_subject": "Daily {{currency}} statistics for {{date}}"
+			"mail_subject": "Oshi daily {{currency}} statistics for {{date}}"
 		},
 		"report": {
-			"day_mail_subject": "Daily statistics",
-			"week_mail_subject": "Weekly statistics",
-			"day_mail_title": "Daily {{currency}} statistics for {{period}}",
-			"week_mail_title": "Weekly {{currency}} statistics for {{period}}",
+			"day_mail_subject": "Oshi daily statistics",
+			"week_mail_subject": "Oshi weekly statistics",
+			"day_mail_title": "Oshi daily {{currency}} statistics for {{period}}",
+			"week_mail_title": "Oshi weekly {{currency}} statistics for {{period}}",
 			"fields": {
 				"net_revenue": "Net Gaming Revenue (NGR)",
 				"gross_win": "Gross Win",
@@ -1774,36 +1774,36 @@
 	},
 	"user_mailer": {
 		"auth": {
-			"welcome": "Welcome {{name}}!",
-			"hello": "Hello {{name}}!",
+			"welcome": "Welcome to Oshi! {{name}}!",
+			"hello": "Hi {{name}}!",
 			"confirmation": {
-				"you_can_confirm_email_by_pressing_next_link": "You can confirm your account email through the link below:",
-				"confirm_my_account": "Confirm my account"
+				"you_can_confirm_email_by_pressing_next_link": "You can confirm your account email, by clicking the link below?:",
+				"confirm_my_account": "Confirm my Oshi account"
 			},
 			"reset_password": {
-				"change_my_password": "Change my password",
-				"link_to_change_password_are_requested": "Someone has requested a link to change your password, and you can do this through the link below.",
-				"you_can_ignore_this_mail": "If you didn't request this, please ignore this email.",
-				"your_password_didnt_changed_yet": "Your password won't change until you access the link above and create a new one."
+				"change_my_password": "Change my Oshi password",
+				"link_to_change_password_are_requested": "someone's requested a link to change your password ( hopefully it was you! ). You can do this by clicking the link below.",
+				"you_can_ignore_this_mail": "If you didn't request this, please ignore our email. But, if you get more than one of these, can you contact support? Then we can look into it and see if someone's trying to get into your account. Also, just as a precaution maybe you should change your password as well.",
+				"your_password_didnt_changed_yet": "Important! Your password won't change until you click the link above to create a new one."
 			},
 			"unlock": {
-				"unlock_my_account": "Unlock my account",
-				"your_account_has_been_locked": "Your account has been locked due to an excessive amount of unsuccessful sign in attempts.",
-				"click_to_unlock": "Click the link below to unlock your account:"
+				"unlock_my_account": "Unlock my account (sorry about this hassle)",
+				"your_account_has_been_locked": "Because you've tried too many wrong passwords, your account has been locked. Fortunately, it's easy to sort out.",
+				"click_to_unlock": "Just click the link below to unlock your account:"
 			}
 		},
 		"deposit": {
-			"deposit_made": "Your deposit received"
+			"deposit_made": "Great! We received your deposit"
 		},
 		"cashout": {
-			"cashout_approved": "Your cashout request was approved"
+			"cashout_approved": "Wonderful! You can cashout now!"
 		},
 		"not_enough_money_for_cashout": {
-			"subject": "Insufficient account balance for cashout",
-			"body": "Your cash out was disabled because account balance became insufficient to process the submitted cash out. Please submit the new cash out request according to current balance."
+			"subject": "Ah...there isn't enough money on your Oshi balance for a cashout.",
+			"body": "Sorry about the hassle, your cashout request couldn't go through...It's because your account balance fell below the amount you wanted to take out. Tip: do a new cashout request that's the same as, or less than your current balance."
 		},
 		"address_confirmation_required": {
-			"subject": "Cashout address confirmation required"
+			"subject": "We need your cashout address to be confirmed"
 		}
 	},
 	"activemodel": {

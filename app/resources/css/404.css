@@ -1,6 +1,6 @@
 .content-404 {
 
-    background: url(https://www.oshi.io/system/comfy/cms/files/files/000/000/018/original/404image1.jpg) center center no-repeat #000;
+    background: url(https://www.oshi.io/system/comfy/cms/files/files/000/000/018/original/404-1.gif) center center no-repeat #000;
     background-size: cover;
     position: fixed;
     top: 0;
@@ -26,7 +26,7 @@
 .content-404 .oops {
     margin-top: 36px;
     max-width: 522px;
-    font-size: 120pt;
+    font-size: 80pt;
 }
 .content-404 .cannot-be-found, .content-404 .link-to-root, .content-404 .oops {
     font-weight: 400;
