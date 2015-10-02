@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="casino">
+    <head>
+        <base href="/">
+        <title ng-bind="page.title + ' ' + page.snippet_title"></title>
+        <meta name="description" content="{{page.description}}">
+        <meta name="keywords" content="{{page.keywords}}">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="google-site-verification" content="2WDS65UJa5jZ_3yUB5Qu1_QMCxLOK37LpvvNxxBQCdg" />        <!-- inject:lib:js --><!-- endinject -->
+        <!-- inject:app:js --><!-- endinject -->
+        <!-- inject:templates:js --><!-- endinject -->
+
+        <!-- inject:app-style:css --><!-- endinject -->
+    </head>
+    <body class="page-{{state.current.name}} device-{{data.device}}">
+        <casino-preloader></casino-preloader>
+        <casino-game></casino-game>
+        <div class="main">
+            <casino-header></casino-header>
+
+            <div class="inner clearfix">
+                <casino-notification></casino-notification>
+
+                <div ui-view autoscroll="false"></div>
+            </div>
+            <casino-footer></casino-footer>
+        </div>
+        <div ng-show="false">
+        	<p>Oshi is a crypto currency casino which accepts Bitcoin, Litecoin, Dogecoin. All our games work with either of these three crypto currencies. 
+We have Poker Games, Blackjack, Table Games, Roulette, Slots, Card Games, Video Poker, Casual games, Theme Slots and Fruit Slots.
+Oshi is a 'provably fair' Bitcoin casino licensed in Curaçao. It is owned by 90 Ltd and works in partnership with SoftSwiss</p>
+			<p>Responsibilities for Oshi:</p>
+			<p>Operational: SoftSwiss</p>
+			<p>Marketing: 90 Limited trading as 90 Digital</p>
+			<p>Why another bitcoin casino?</p>
+			<p>Having spent many years in the iGaming sector, both Nick and Tom have their opinions on what makes an amazing casino. So instead of just talking about it, they set up Oshi.</p>
+			<p>Who runs the casino platform? </p>
+			<p>We work with SoftSwiss, really excellent platform provider and we have built up a team in the UK support the business.</p>
+			<p>Responsible Gambling</p>
+			<p>Gambling should always be for entertainment. If it goes beyond that point, something is wrong. That's why we take responsible gambling very seriously and it's why we have a number of projects underway to help people if they going 'over the edge'.</p>
+			<p>Our Gambling Licence</p>
+			<p>We have a Curaçao sub-license from SoftSwiss, our casino provider. <a href="http://www.gaminglicences.com/pages/validate.php?lid=8048-S1908799">http://www.gaminglicences.com/pages/validate.php?lid=8048-S1908799</a></p>
+			<p>Provably fair</p>
+			<p>All casinos on the SoftSwiss platform are provably fair. In summary, we have certified that winnings and losses are truly random and therefore 'provably' fair. Itech labs, the certifying body we use gives a very good explanation of how random number generated testing works: <a href="http://www.itechlabs.com.au/sidebar-eng/rng-testing-certification">http://www.itechlabs.com.au/sidebar-eng/rng-testing-certification/</a></p>
+			<p>Oshi's marketing functions are based in the UK:
+			Oshi Online Casino
+			Manor House
+			Manor Road 
+			Leeds 
+			LS71PZ</p>
+        </div>
+    </body>
+</html>
