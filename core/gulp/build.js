@@ -166,6 +166,15 @@ function images(callback) {
         .on('error', plugins.util.log);
 }
 
+function files(callback) {
+    plugins.util.log('Copying helpful files');
+
+    gulp.src(['_project/app/robots.txt'])
+        .pipe(gulp.dest(publicDir))
+        .on('end', callback || function() {})
+        .on('error', plugins.util.log);
+}
+
 function indexHtml(cb) {
     plugins.util.log('Rebuilding index.html');
 
@@ -217,6 +226,7 @@ gulp.task('build', ['prepare'], function (done) {
                         fonts,
                         i18n,
                         images,
+                        files,
                         styles
                     ],callback);
                 },
