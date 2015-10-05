@@ -169,7 +169,7 @@ function images(callback) {
 function files(callback) {
     plugins.util.log('Copying helpful files');
 
-    gulp.src(['_project/app/robots.txt'])
+    gulp.src(['_project/app/robots.txt', '_project/app/favicon*', '_project/app/android-icon*', '_project/app/apple-icon*', '_project/app/ms-icon*', '_project/app/browserconfig.xml', '_project/app/manifest.json'])
         .pipe(gulp.dest(publicDir))
         .on('end', callback || function() {})
         .on('error', plugins.util.log);
