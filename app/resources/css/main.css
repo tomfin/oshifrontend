@@ -1,3 +1,43 @@
+/* oswald-300 - latin_latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/oswald-v10-latin_latin-ext-300.eot'); /* IE9 Compat Modes */
+  src: local('Oswald Light'), local('Oswald-Light'),
+       url('../fonts/oswald-v10-latin_latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/oswald-v10-latin_latin-ext-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/oswald-v10-latin_latin-ext-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/oswald-v10-latin_latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/oswald-v10-latin_latin-ext-300.svg#Oswald') format('svg'); /* Legacy iOS */
+}
+/* oswald-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/oswald-v10-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local('Oswald Regular'), local('Oswald-Regular'),
+       url('../fonts/oswald-v10-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/oswald-v10-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/oswald-v10-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/oswald-v10-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/oswald-v10-latin_latin-ext-regular.svg#Oswald') format('svg'); /* Legacy iOS */
+}
+/* oswald-700 - latin_latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/oswald-v10-latin_latin-ext-700.eot'); /* IE9 Compat Modes */
+  src: local('Oswald Bold'), local('Oswald-Bold'),
+       url('../fonts/oswald-v10-latin_latin-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/oswald-v10-latin_latin-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/oswald-v10-latin_latin-ext-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/oswald-v10-latin_latin-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/oswald-v10-latin_latin-ext-700.svg#Oswald') format('svg'); /* Legacy iOS */
+}
+
 body, html {
     height: 100%;
     width: 100%}
@@ -401,7 +441,7 @@ li {
 }
 header {
     position: absolute;
-    top: 0;
+    top: 20px;
     width: 100%;
     height: 100px;
     background-color: #141414;
@@ -657,7 +697,7 @@ color: #FFF;
 }
 .main_promo_area {
     margin: 19px -15px;
-    padding-bottom: 43px;
+   /* padding-bottom: 43px; */
     background-color: #141414;
 }
 .promo_box_main {
@@ -1046,7 +1086,7 @@ ul.ng-scope {
 }
 .content_area {
     position: relative;
-    padding: 35px 0 20px;
+    padding: 10px 0 20px;
     z-index: 0;
 }
 .content_area:before {
@@ -1753,15 +1793,16 @@ footer>.inner {
 }
 .modal-dialog {
     position: relative;
-    width: 960px;
-    margin: 40px auto;
+    width: 550px;
+    margin: 10px auto;
 }
 .modal-content {
     position: relative;
-    background-color: #383737;
-    outline: 0;
-    box-shadow: 0 0 20px rgba(2, 2, 3, .2);
+    background-color: #141414;
+    outline: 1;
+    box-shadow: 0 5px 15px rgb(243, 184, 52);
     color: #fff;
+   
 }
 .modal-backdrop {
     position: absolute;
@@ -1784,13 +1825,35 @@ footer>.inner {
     color: #2e834d;
     cursor: pointer;
     z-index: 1;
+  
 }
-.modal-header {
-    position: relative;
-    height: 100px;
-    padding: 60px 40px;
+.modal-heading {
+    /* position: relative;
+    height: 40px;
+    padding: 10px 40px;*/
     color: #fff;
+    text-transform: capitalize;
 }
+.10pxspacer {
+	height:10px;	
+}
+h1.modal-heading {
+	font-weight:700;
+	font-size: 42px;
+}
+
+h2.modal-heading {
+	font-weight:700;
+	font-size: 24px;
+}
+
+h3.modal-heading {
+	font-weight:400;
+	font-size: 18px;
+}
+
+
+
 .modal-title {
     font-size: 28px;
     text-align: center;
@@ -1798,7 +1861,9 @@ footer>.inner {
 .modal-body {
     position: relative;
     padding: 10px 40px 30px;
+    color: #FFF;
 }
+ 
 .modal-scrollbar-measure {
     position: absolute;
     top: -9999px;

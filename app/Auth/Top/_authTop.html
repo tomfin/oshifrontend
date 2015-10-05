@@ -1,0 +1,54 @@
+<div class="form_fast_login">
+<div  access-level="accessLevels.anon"> 
+    <div class="form" ng-controller="LoginCtrl">
+
+        <div class="form_title">
+            <i class="fonticon fa fa-sign-in"></i><span translate="frontend.links.sign_in"></span>
+        </div>
+
+        <form method="post" ng-submit="login.submit()" id="sign_in_panel_new_user" accept-charset="UTF-8">
+
+            <div class="form_row">
+                <div class="label" translate="activerecord.attributes.user.email"></div>
+                <div class="input">
+                    <input type="email"
+                           class="text_input"
+                           ng-class="{'error':login.errors.password}",
+                           ng-model="login.data.user.email" value="" tabindex="1" name="user[email]"
+                           id="sign_in_panel_user_email">
+
+                    <div class="error_msg" ng-if="login.errors" ng-repeat="(error_key, error_value) in login.errors.password" translate="{{error_value}}"></div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="label" translate="activerecord.attributes.user.password"></div>
+                <div class="input">
+                    <input type="password"
+                           class="text_input",
+                           ng-class="{'error':login.errors.password}",
+                           ng-model="login.data.user.password" tabindex="2" name="user[password]"
+                           id="sign_in_panel_user_password">
+                </div>
+            </div>
+
+            <div class="form_actions_row">
+                <div class="label">&nbsp;</div>
+                <div class="input">
+                    <button type="submit" class="btn btn_sm btn-success" translate="frontend.links.login"></button>
+                    <a class="pass_link" href="" ui-sref="users_password_new" translate="frontend.links.forgot_password"></a>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="register_row">
+        <div class="title" translate="common.have_account"></div>
+        <a class="register_lnk btn btn-game" href="" ng-controller="AuthModal" ng-click="auth_modal.showRegistration()" translate="frontend.links.quick_register"></a>
+    </div>
+</div>
+
+<!--<a access-level="accessLevels.user" class="logout btn btn-success btn-flat" href="" ng-click="widgetAuthTop.logout()">{{'frontend.links.sign_out' | translate}}</a>-->
+</div>

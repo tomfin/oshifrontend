@@ -1,0 +1,28 @@
+<form method="post" name="registrationForm" ng-submit="submit();">
+    <div class="row">
+        <div ng-repeat="fields in registrationFields" class="col-lg-{{12 / registrationFields.length}} col-md-{{(12 / registrationFields.length)}} col-sm-{{(12 / registrationFields.length) * 2}} ">
+            <casino-form-element
+                    ng-repeat="field in fields"
+                    data="field"
+                    ng-model="registration.data[field.scope][field.field]"
+                    errors = "registration.errors[field.name]">
+            </casino-form-element>
+        </div>
+    </div>
+    <div class="row">
+        <div ng-repeat="fields in registrationFieldsCheckbox" class="col-lg-{{12 / registrationFieldsCheckbox.length}} col-md-{{(12 / registrationFieldsCheckbox.length)}} col-sm-{{(12 / registrationFieldsCheckbox.length) * 2}} ">
+            <casino-form-element
+                    ng-repeat="field in fields"
+                    data="field"
+                    ng-model="registration.data[field.scope][field.field]"
+                    errors = "registration.errors[field.name]">
+            </casino-form-element>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <button translate="frontend.links.sign_up" name="submit" class="btn btn-lg btn-game btn-flat"
+                    type="submit"></button>
+        </div>
+    </div>
+</form>
