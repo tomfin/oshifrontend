@@ -59,6 +59,8 @@ body {
 }
 .a:hover, a:hover{
  color: #DEDEDE;
+    -webkit-transition: color .15s;
+    transition: color .15s;
 }
 a img {
     border: none;
@@ -92,7 +94,7 @@ sup {
     border-radius: 2px;
     box-shadow: none;
     color: #FFFFFF;
-    font: 14px Arial, Helvetica, sans-serif;
+    font: 14px 'Roboto', sans-serif;
 }
 .text_input {
     padding: 0 10px;
@@ -357,12 +359,14 @@ ul {
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 .h2, h2 {
     margin-bottom: 15px;
     color: #2B2B2B;
     font-size: 26px;
     font-weight: 400;
+    font-family: 'Oswald', sans-serif;
 }
 .h3, h3 {
     margin-bottom: 15px;
@@ -370,10 +374,12 @@ ul {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 
 .h4, h4 {
     font-size: 16px;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -475,6 +481,7 @@ header .navbar-default {
     padding-top: 28px;
     text-align: right;
 }
+
 header .navbar-nav>li {
     line-height: 69px;
 }
@@ -495,9 +502,12 @@ header .profile-username .caret {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;
-    line-height: 40px;
-    /* text-transform: uppercase;*/
+    /* line-height: 40px;
+    text-transform: uppercase;*/
     text-decoration: none!important; 
+    -webkit-transition: 0.5s ease;
+            transition: 0.5s ease;
+    
 }
 .header-user-block a{
     display: inline-block;
@@ -518,6 +528,8 @@ color: #FFF;
 
 .header-user-block a:hover, .navbar-nav>li>a.main_menu_item:hover {
     text-decoration: underline!important;
+    -webkit-transition: color .15s;
+    transition: color .15s;
      
 }
 .header-user-block {
@@ -751,11 +763,20 @@ color: #FFF;
     /* padding: 20px 0; */
     overflow: hidden;
     color: #000000;
-    background-color: #FFFFFF;
     padding: 20px;
-    font-family: sans-serif;
+    margin-top:20px;
+   font-family: 'Roboto', sans-serif;
 	border: 1px solid #FFFFFF;
-    border-radius: 3px;
+    border-radius: 6px;
+    background-color: #FFFFFF; 
+    background: rgba(255,249,186,1);
+	background: -moz-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,249,186,1)), color-stop(100%, rgba(255,248,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff9ba', endColorstr='#fff8ed', GradientType=0 );
 }
 
 .page-container a {
@@ -766,15 +787,20 @@ color: #FFF;
 	color: #444444;
 	text-decoration:none;
 }
+p.page-container {
+	margin-bottom: 10px;
+}
+.page-container ul li{
+	list-style-type: disc;
+	padding-left:10px;
+	line-height: 90%;
+	margin-left:40px;	
+}
+.page-container ul li li{
+	list-style-type: circle;
+	padding-left:10px;
+}
 
-p.ng-scope {
-	margin: 0px;
-}
-ul.ng-scope {
-	 list-style-type: disc;
-	 padding-left:30px;
-	 line-height: 0px;
-}
 .wysiwyg h2{
 	color:#FFF;
 	}
