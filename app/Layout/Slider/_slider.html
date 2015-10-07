@@ -1,7 +1,9 @@
 <div class="main_banner">
     <carousel data-interval="7000" class="carousel-fade">
         <slide ng-repeat="slide in slides" active="slide.active">
-            <img ng-src="{{slide.image}}" style="margin:auto;" />
+            <a href="{{slide.anchor}}">
+                <img ng-src="{{slide.image}}" style="margin:auto;" />
+            </a>
             <div class="main-slider-inner">
                 <casino-cms-content text="{{slide.description}}"></casino-cms-content>
             </div>

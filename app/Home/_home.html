@@ -1,10 +1,29 @@
 <div>
     <div class="main_promo_area">
         <div class="promo_box_main clearfix">
-            <casino-slider category="slider-index-top"></casino-slider>
+            <div class="slider_primary">
+                <casino-slider category="slider-index-top"></casino-slider>
+            </div>
+            <div class="slider_123_cta">
+                <casino-slider category="123-cta"></casino-slider>
+            </div>
+            <div class="slider_secondary">
+                 <div class="slider_left">
+                    <casino-slider category="slider-index-left"></casino-slider>
+                </div>
+                <div class="slider_middle">
+                    <casino-slider category="slider-index-middle"></casino-slider>
+                </div>
+                <div class="slider_right">
+                    <div class="slider_right_top">
+                        <casino-slider category="slider-index-topright"></casino-slider>
+                    </div>
+                    <div class="slider_right_bottom">
+                        <casino-slider category="slider-index-bottomright"></casino-slider>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
-
     <casino-games-list limit="16"></casino-games-list>
 </div>
