@@ -22,8 +22,7 @@ CasinoDirectives
                 'slider-index-top': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
                 'slider-index-left': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
                 'slider-index-middle': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
-                'slider-index-topright': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
-                'slider-index-bottomright': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
+                'slider-index-right': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
             };
 
             $rootScope.$watch('Info.files', function () {
