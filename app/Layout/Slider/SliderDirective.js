@@ -20,7 +20,6 @@ CasinoDirectives
             $scope.state = $state;
             $scope.sliderUrls = {
                 'slider-index-top': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
-                '123-cta': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
                 'slider-index-left': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
                 'slider-index-middle': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],
                 'slider-index-topright': ['http://www.google.com/','http://facebook.com/','http://yahoo.com/'],

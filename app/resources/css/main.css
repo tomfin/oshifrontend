@@ -727,7 +727,7 @@ color: #FFF;
 }
 .promo_box_main {
     position: relative;
-    height: 400px;
+    /*height: 400px;*/
 }
 .carousel-inner, .main_banner {
     position: relative;
@@ -1983,11 +1983,8 @@ h3.modal-heading {
 .slider_primary{height:390px; margin:3px}
 .slider_secondary{width:100%; display:block; float:left}
 .slider_123_cta{height:130px; margin:6px 3px 3px}
-.slider_left, .slider_middle{height:520px; float: left; width: 32.85%; margin:3px}
-.slider_right{height:445px; width:32.8%; float:left;  margin:3px}
-.slider_right_top, .slider_right_bottom{height:257px;}
-.slider_right_top{margin-bottom:6px}
-
+.slider_left, .slider_middle,.slider_right{height:247px; float: left; width: 32.85%; margin:3px}
+.slider_left img, .slider_middle img,.slider_right img{width:100%}
 
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-inner>.item {
