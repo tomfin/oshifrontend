@@ -57,13 +57,13 @@ body {
     outline: 0;
     text-decoration: none;
     cursor: pointer;
-    -webkit-transition: color .15s;
-    transition: color .15s;
+    -webkit-transition: color .5s;
+    transition: color .5s;
 }
 .a:hover, a:hover{
- 	color: #d3d7cf;
-    -webkit-transition: color .25s;
-    transition: color .25s;
+ 	color: #FFE2A0;
+    -webkit-transition: color .5s;
+    transition: color .5s;
     text-decoration: underline;
 }
 a img {
@@ -330,7 +330,7 @@ ul {
     background-image: -o-linear-gradient(#FFE2A0 0, #FFC02C 100%);
     background-image: linear-gradient(#FFE2A0 0, #FFC02C 100%);
     -webkit-transition: background-color .15s;
-    transition: background-color .15s;
+    transition: background-color .5s;
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
@@ -359,7 +359,8 @@ ul {
     line-height: 52px;
 }
 .h1, h1 {
-    margin-bottom: 35px;
+    margin-top:35px;
+    margin-bottom:20px;
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
@@ -479,7 +480,9 @@ header .navbar-default {
     display: inline-block;
     vertical-align: middle;
     max-width: 100%;
-    max-height: 100%}
+    max-height: 100%;
+    padding-bottom:10px;
+    }
 .main_menu {
     overflow: hidden;
     padding-top: 28px;
@@ -498,7 +501,7 @@ header .btn-group.open .dropdown-toggle.profile-username {
 header .profile-username .caret {
     right: -11px;
 }
-.navbar-default .navbar-nav>li>a.main_menu_item {
+.navbar-nav>li>a.main_menu_item {
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
@@ -510,17 +513,18 @@ header .profile-username .caret {
     text-transform: uppercase;*/
     text-decoration: none!important; 
     -webkit-transition: 0.5s ease;
-            transition: 0.5s ease;
+    transition: 0.5s ease;
     
 }
 
-.navbar-nav>li>a:hover main_menu_item {
+/*
+.navbar-nav>li>a:hover {
     text-decoration:underline!important; 
     -webkit-transition: 0.5s ease;
             transition: 0.5s ease;
-    
+    color: #FFE2A0;
 }
-
+ */
 
 .header-user-block a{
     display: inline-block;
@@ -541,8 +545,9 @@ color: #FFF;
 
 .header-user-block a:hover, .navbar-nav>li>a.main_menu_item:hover {
     text-decoration: underline!important;
-    -webkit-transition: color .15s;
-    transition: color .15s;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+     color: #FFE2A0;
      
 }
 .header-user-block {
@@ -655,7 +660,7 @@ color: #FFF;
     padding: 5px 10px;
     font-size: 12px;
     font-size: 1.2rem;
-    color: #777;
+    /*color: #777;*/
     background-image: none;
 }
 .header-user-block .user__menu-item a:hover {
@@ -1143,6 +1148,9 @@ font-family: 'Roboto', sans-serif;
     z-index: 0;
     float:left; clear: both
 }
+.alert {
+	font-family: 'Roboto', sans-serif;	
+}
 .content_area:before {
     content: '';
     display: block;
@@ -1427,14 +1435,14 @@ text-decoration: underline;
     overflow: hidden;
     z-index: 1;
     -webkit-transition: opacity .25s;
-    transition: opacity .25s;
+    transition: opacity .5s;
 }
 .item_actions .btn-game, .item_actions .btn-game-alter {
     position: relative;
     display: inline-block;
     min-width: 118px;
-    -webkit-transition: all .25s;
-    transition: all .25s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 .item_actions .btn-game {
     height: 40px;
@@ -1443,7 +1451,7 @@ text-decoration: underline;
     line-height: 40px;
 }
 .item_actions .btn-game-alter:focus, .item_actions .btn-game-alter:hover {
-    color: #141414;
+    color: #FFE2A0;
 }
 .item_actions .btn-game:focus, .item_actions .btn-game:hover {
     color: #141414;
@@ -1460,7 +1468,8 @@ text-decoration: underline;
 }
 .catalog_list_item .img_box {
     width: 100%;
-    height: 100%}
+    height: 100%
+}
 .item_info {
     margin-top: 8px;
     font-size: 14px;
@@ -1495,7 +1504,7 @@ text-decoration: underline;
     margin-bottom: 25px;
 }
 .catalog_list_item:hover {
-    color: #232b00;
+    color: #edd400;
     text-decoration: none;
 }
 .catalog_list_item:hover .item_actions {
@@ -1508,7 +1517,7 @@ text-decoration: underline;
     top: 29px;
 }
 .games_filter {
-    margin-bottom: 20px;
+    margin:10px 0 20px 0; 
 }
 .games_filter_right {
     float: right;
@@ -1524,6 +1533,9 @@ text-decoration: underline;
     font-weight: 400;
     text-decoration: none!important;
     text-transform: uppercase;
+}
+.games_filter_item:hover {
+	text-decoration: underline!important;
 }
 .games_filter_item.current {
     border-bottom-color: #E50914;
@@ -1829,7 +1841,7 @@ footer>.inner {
 .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform .3s ease-out;
     -o-transition: -o-transform .3s ease-out;
-    transition: transform .3s ease-out;
+    transition: transform .5s ease-out;
     -webkit-transform: translate(0, -25%);
     -ms-transform: translate(0, -25%);
     -o-transform: translate(0, -25%);
@@ -1852,7 +1864,7 @@ footer>.inner {
 }
 .modal-content {
     position: relative;
-   /* background-color: #141414; /*
+    background-color: #141414; 
     outline: 1;
     box-shadow: 0 5px 15px rgb(243, 184, 52);
     color: #fff;
@@ -1887,9 +1899,11 @@ footer>.inner {
     padding: 10px 40px;*/
     color: #fff;
     text-transform: capitalize;
+    
 }
 .10pxspacer {
 	height:10px;	
+	
 }
 h1.modal-heading {
 	font-weight:700;
@@ -1977,7 +1991,7 @@ h3.modal-heading {
     display: none;
     -webkit-transition: .6s ease-in-out left;
     -o-transition: .6s ease-in-out left;
-    transition: .6s ease-in-out left;
+    transition: .5s ease-in-out left;
 }
 
 .slider_primary{height:390px; margin:3px}
@@ -1990,7 +2004,7 @@ h3.modal-heading {
     .carousel-inner>.item {
     -webkit-transition: -webkit-transform .6s ease-in-out;
     -o-transition: -o-transform .6s ease-in-out;
-    transition: transform .6s ease-in-out;
+    transition: transform .5s ease-in-out;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-perspective: 1000;
@@ -2171,7 +2185,7 @@ h3.modal-heading {
     background-image: linear-gradient(#606060 0, #3E3E3E 100%);
 }
 .foo_menu_item:hover {
-    color: #fff;
+   color: #FFE2A0;
 }
 .language_selector .btn {
     background: #fff;
@@ -2358,8 +2372,8 @@ footer {
     position: relative;
     white-space: normal;
     margin-left: -218px;
-    -webkit-transition: margin .35s;
-    transition: margin .35s;
+    -webkit-transition: margin .5s;
+    transition: margin .5s;
 }
 .games_wrap .content {
     position: relative;
