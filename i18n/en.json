@@ -1,9 +1,9 @@
 {
 	"errors": {
 		"messages": {
-			"taken_in_past": "oops!,  that's already been taken. Try another?",
-			"equal_to_current_password": "oh dear, it's the same as your old password. Try another one.",
-			"already_confirmed": "was already confirmed, try signing in now",
+			"taken_in_past": "Oops!,  that's already been taken. Try another?",
+			"equal_to_current_password": "Oh dear, it's the same as your old password. Try another one.",
+			"already_confirmed": "Your account has already been confirmed, try signing in now.",
 			"confirmation_period_expired": "needs to be confirmed within %{period}, just get a new one, it's easy.",
 			"expired": "has expired, get a new one, it's easy",
 			"not_found": "not found",
