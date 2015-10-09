@@ -403,7 +403,9 @@ li {
     max-width: 1250px;
     min-height: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
+    padding: 0 7px;
+
 }
 .main>.inner {
    /* box-shadow: 0 0 10px rgba(2, 2, 3, .1); 
@@ -1155,9 +1157,13 @@ font-family: 'Roboto', sans-serif;
 }
 .search_box {
     margin-bottom: 15px;
+    float:left;
 }
 .games_area>.search_box {
     display: none;
+}
+.page_title{
+    margin-top:15px;
 }
 .search_input {
     position: relative;
@@ -1228,6 +1234,7 @@ text-decoration: underline;
 .catalog_list {
     margin: 0 -16px -25px 0;
     font-size: 0;
+    clear:both;
 }
 .catalog_list_item {
     position: relative;
@@ -1480,6 +1487,7 @@ text-decoration: underline;
 .games_filter {
     margin:10px 0 20px 0; 
     font-family: 'Oswald', sans-serif;
+    float:left;
 }
 .games_filter_right {
     float: right;
