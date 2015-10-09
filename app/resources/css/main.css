@@ -10,7 +10,6 @@ body {
     color: #FFFFFF;
     font-size:18px;
 	font-family: 'Roboto', sans-serif;
-
 }
 .a, a {
     color: #FFFFFF;
@@ -397,6 +396,7 @@ li {
     height: 100%;
     position: relative;
     padding: 100px 0 325px;
+    font-family: 'Roboto', sans-serif;
 }
 .inner {
     position: relative;
