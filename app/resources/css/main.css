@@ -1962,6 +1962,148 @@ h3.modal-heading {
 .slider_left, .slider_middle,.slider_right{height:247px; float: left; width: 32.85%; margin:3px}
 .slider_left img, .slider_middle img,.slider_right img{width:100%}
 
+/**********/
+.portlet-games-info .nav {
+    display: block;
+    text-align: justify;
+    margin: 0;
+    padding: 0 10px;
+    /* because li is inline-block */
+    font-size: 0; 
+}
+.portlet-games-info .nav li {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-indent: 0;
+    position: relative;
+    margin-left: 30px;
+    vertical-align: top; 
+}
+.portlet-games-info .nav li.placeholder {
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+.portlet-games-info .nav li.active a {
+    color: #fff; 
+}
+.portlet-games-info .nav a {
+    padding: 40px 0 0;
+    color: #bababa;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block; 
+}
+.portlet-games-info .nav h2 {
+    font-size: inherit;
+    font-weight: normal; 
+}
+.portlet-games-info .nav .category a:after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    margin: 0 0 0 -18px;
+    width: 37px;
+    height: 38px;
+    background-image: url("http://cache2casino2.ladbrokes.com/lb-responsive-casino-com-theme/images/categories.png");
+    background-repeat: no-repeat;
+    background-position: -4px -4px; 
+}
+
+/*poker*/
+.portlet-games-info .nav .category-poker a:after {
+    background-position: -184px -96px; 
+}
+.portlet-games-info .nav .current.category-poker a:after {
+    background-position: -184px -142px; 
+}
+
+/*blackjack*/
+.portlet-games-info .nav .category-blackjack a:after {
+    background-position: -4px -96px; 
+}
+.portlet-games-info .nav .current.category-blackjack a:after {
+    background-position: -49px -96px; 
+}
+
+/*table*/
+.portlet-games-info .nav .category-table a:after {
+    background-position: -184px -4px; 
+}
+.portlet-games-info .nav .current.category-table a:after {
+    background-position: -184px -50px; 
+}
+
+/*roulette*/
+.portlet-games-info .nav .category-roulette a:after {
+    background-position: -94px -96px; 
+}
+.portlet-games-info .nav .current.category-roulette a:after {
+    background-position: -139px -96px;
+}
+
+/*slots*/
+.portlet-games-info .nav .category-slots a:after {
+    background-position: -94px -142px; 
+}
+.portlet-games-info .nav .current.category-slots a:after {
+    background-position: -139px -142px; 
+}
+
+/*card games*/
+.portlet-games-info .nav .category-card a:after {
+    background-position: -4px -188px;
+}
+.portlet-games-info .nav .current.category-card a:after {
+    background-position: -49px -188px;
+}
+
+/*video poker*/
+.portlet-games-info .nav .category-video_poker a:after {
+    background-position: -4px -142px;
+}
+.portlet-games-info .nav .current.category-video_poker a:after {
+    background-position: -49px -142px;
+}
+
+/*casual*/
+.portlet-games-info .nav .category-casual a:after {
+    background-position: -94px -4px; 
+}
+.portlet-games-info .nav .current.category-casual a:after {
+    background-position: -139px -4px; 
+}
+
+/*theme slots*/
+.portlet-games-info .nav .category-theme a:after {
+    background-position: -4px -50px; 
+}
+.portlet-games-info .nav .current.category-theme a:after {
+    background-position: -49px -50px; 
+}
+
+/*fruit slots*/
+.portlet-games-info .nav .category-fruit a:after {
+    background-position: -94px -50px; 
+}
+.portlet-games-info .nav .current.category-fruit a:after {
+    background-position: -139px -50px; 
+}
+
+/*all games*/
+.portlet-games-info .nav .category-all a:after {
+    background-position: -49px -4px; 
+}
+.portlet-games-info .nav .current.category-all a:after {
+    background-position: -4px -4px; 
+}
+
+/**********/
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-inner>.item {
     -webkit-transition: -webkit-transform .6s ease-in-out;

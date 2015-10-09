@@ -23,7 +23,6 @@ CasinoDirectives
             else{
                 $scope.myInterval = 0;
             }
-            console.log($scope.myInterval);
             $scope.slides = [];
             $scope.state = $state;
             $scope.sliderUrls = {
