@@ -117,7 +117,7 @@
                         <i class="fonticon fa fa-search"></i>
                     </div>
                 </div>
-                <div class="games_filter">
+                <div class="games_filter" ng-show="subFilter">
                     <a ng-click="collectionOrder = collection" class="games_filter_item" ng-class="{current: collectionOrder == collection}">{{'games.categories.stat.manual' | translate}}</a>
                     <a ng-click="collectionOrder = 'novelty'" class="games_filter_item" ng-class="{current: collectionOrder == 'novelty'}">{{'games.categories.stat.new' | translate}}</a>
                     <a ng-click="collectionOrder = 'popularity'" class="games_filter_item" ng-class="{current: collectionOrder == 'popularity'}">{{'games.categories.stat.most_popular' | translate}}</a>
