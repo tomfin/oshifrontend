@@ -2164,6 +2164,11 @@ h3.modal-heading {
 .tab-content>.active {
     display: block;
 }
+
+div.navbar {float:left}
+div.navbar .navbar-collapse {float:left}
+.header-user-block {float:right}
+
 @media all and (transform-3d), (-webkit-transform-3d) {
     .bar_toggle, .catalog_list_item .item_actions, .item_actions .btn-game, .item_actions .btn-game-alter {
     -webkit-transform: translate3d(0, 0, 0);
