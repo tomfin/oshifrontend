@@ -790,6 +790,7 @@ color: #FFF;
     padding: 20px;
     margin-top:20px;
     font-family: 'Roboto', sans-serif;
+    line-height:160%;
 	border: 1px solid #FFFFFF;
     border-radius: 6px;
     background-color: #FFFFFF; 
@@ -802,6 +803,22 @@ color: #FFF;
 	background: linear-gradient(to bottom, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff9ba', endColorstr='#fff8ed', GradientType=0 );
 }
+.page-container h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+}
+.page-container h1 {
+	font-size:30px;
+	padding-bottom:10px;
+}
+.page-container h2 {
+	font-size:26px;
+		padding-bottom:8px;
+}
+.page-container h3 {
+	font-size:18px;
+		padding-bottom:6px;
+}
+
 
 .page-container a {
 	color: #000;
@@ -812,12 +829,12 @@ color: #FFF;
 	text-decoration:none;
 }
 p.page-container {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 .page-container ul li{
 	list-style-type: disc;
 	padding-left:10px;
-	line-height: 90%;
+	line-height: 130%;
 	margin-left:40px;	
 }
 .page-container ul li li{
@@ -1884,7 +1901,12 @@ footer>.inner {
     outline: 1;
     box-shadow: 0 5px 15px rgb(243, 184, 52);
     color: #fff;
+    font-family: 'Roboto', sans-serif;
    
+}
+
+.modal-content h1 h2 h3 {
+	line-height: 105%;
 }
 .modal-backdrop {
     position: absolute;
