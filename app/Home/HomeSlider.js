@@ -10,5 +10,5 @@ CasinoDirectives.directive('mainSlider', function() {
         }
       }
     };
-    alert('test');
+    
 });
