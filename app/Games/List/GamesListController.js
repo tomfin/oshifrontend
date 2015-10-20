@@ -1,5 +1,5 @@
 CasinoControllers
-    .controller('GamesList', ['$scope', 'GamesList', 'Auth', '$stateParams', 'FavoriteList', 'LastPlayedList', '$state', '$rootScope', function ($scope, GamesList, Auth, $stateParams, FavoriteList, LastPlayedList, $state, $rootScope) {
+    .controller('GamesList', ['$scope', 'GamesList', 'Auth', '$stateParams', 'FavoriteList', 'LastPlayedList', '$state', '$rootScope', 'AuthModalService', function ($scope, GamesList, Auth, $stateParams, FavoriteList, LastPlayedList, $state, $rootScope, AuthModalService) {
         $scope.subFilter  = true;
         $scope.accessLevels = Auth.accessLevels;
         $scope.data = $rootScope.data;
@@ -25,6 +25,15 @@ CasinoControllers
 
         $scope.lastPlayed = LastPlayedList;
 
+    	$scope.init = function () {
+    	    if ($stateParams.rego === 'new') {
+                AuthModalService.showRegistration();
+    	    } else {
+    	        // Do nothing
+	    	}
+    	}
+    	$scope.init();
+    	
         $scope.changeCollection = function (key, order) {
             $scope.collection = key;
             
