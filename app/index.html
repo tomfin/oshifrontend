@@ -51,7 +51,8 @@
             <div class="inner clearfix">
                 <casino-notification></casino-notification>
                 <!-- Slider code start -->
-                    <div class="main_promo_area">
+                <div ng-controller="Home">
+                    <div class="main_promo_area" ng-if="isHome()">
                         <div class="promo_box_main clearfix">
                             <div class="slider_primary">
                                 <main-slider type="text/javascript-lazy"><!--custom directive -->
@@ -76,6 +77,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 <!-- Slider code end -->
                 <div ui-view autoscroll="false"></div>
