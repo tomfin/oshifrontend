@@ -97,6 +97,7 @@ function styles(callback) {
     });
 
     cssFiles.push('_project/app/**/*.css');
+    cssFiles.push('!_project/app/**/styles.css');
     cssFiles.push('_project/app/**/*.scss');
     cssFiles.push('!_project/app/**/_*.scss');
 
@@ -171,8 +172,12 @@ function files(callback) {
 
     gulp.src(['_project/app/robots.txt', '_project/app/favicon*', '_project/app/android-icon*', '_project/app/apple-icon*', '_project/app/ms-icon*', '_project/app/browserconfig.xml', '_project/app/manifest.json'])
         .pipe(gulp.dest(publicDir))
-        .on('end', callback || function() {})
-        .on('error', plugins.util.log);
+    	.on('error', plugins.util.log);
+    
+    gulp.src(['_project/app/resources/css/styles.css'])
+    	.pipe(gulp.dest(publicDir + '/resources/profile/css'))
+    	.on('end', callback || function() {})
+    	.on('error', plugins.util.log);
 }
 
 function indexHtml(cb) {
