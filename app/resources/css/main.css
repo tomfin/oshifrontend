@@ -1939,7 +1939,7 @@ footer>.inner {
     text-transform: capitalize;
     
 }
-.z10pxspacer {
+.10pxspacer {
 	height:10px;	
 	
 }
@@ -2037,6 +2037,9 @@ h3.modal-heading {
 .slider_123_cta{height:130px; margin:6px 3px 3px}
 .slider_left, .slider_middle,.slider_right{height:247px; float: left; width: 32.85%; margin:3px}
 .slider_left img, .slider_middle img,.slider_right img{width:100%}
+.promo_box_main iframe{
+    opacity: 1!important;
+}
 
 /**********/
 .portlet-games-info .nav {
