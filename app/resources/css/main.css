@@ -951,6 +951,13 @@ font-family: 'Roboto', sans-serif;
     width: 250px;
     white-space: nowrap;
 }
+
+.row{
+	width:700px;
+    margin-right: -35px;
+    margin-left: -35px;
+} 
+
 .register_row {
     padding: 14px 5px 0;
     border-top: 1px solid #D7D7D7;
@@ -1892,7 +1899,7 @@ footer>.inner {
 }
 .modal-dialog {
     position: relative;
-    width: 550px;
+    width: 800px;
     margin: 10px auto;
 }
 .modal-content {
@@ -1908,6 +1915,17 @@ footer>.inner {
 .modal-content h1 h2 h3 {
 	line-height: 105%;
 }
+
+.modal-content .h1, h1 {
+    margin-top:15px;
+    margin-bottom:10px;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+
 .modal-backdrop {
     position: absolute;
     top: 0;
@@ -1966,7 +1984,7 @@ h3.modal-heading {
 }
 .modal-body {
     position: relative;
-    padding: 10px 40px 30px;
+    padding: 10px 20px 20px;
     color: #FFF;
 }
  
