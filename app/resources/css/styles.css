@@ -2264,7 +2264,7 @@ html, body {
     left: 275px;
     top: 0;
     bottom: 0;
-    background: url(/assets/profile_shadow-764dab8d200bbbeaba21573b5cf17525.png) repeat-y;
+   /* background: url(/assets/profile_shadow-764dab8d200bbbeaba21573b5cf17525.png) repeat-y; */
 }
 .profile-section .profile-side {
     float: left;
