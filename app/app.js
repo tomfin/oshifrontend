@@ -101,7 +101,6 @@ angular.module(
 	  	templateUrl: '/app/Home/_home.html',
 	  	controller: function($scope, $stateParams) {
 	  		$scope.rego = $stateParams.rego;
-	  		console.log('D> Rego at source: ', $scope.rego);
 	  	},
 		params: {
 			 registration: {
