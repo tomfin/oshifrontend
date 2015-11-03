@@ -60,7 +60,7 @@
 
             <ul class="nav">
                 <li ng-repeat="filter_collection in collections | collectionsOrder: true" ng-class="{current: collection == '{{filter_collection.id}}'}" class="category category-{{filter_collection.id}}">
-                    <h2>
+                    <h2 ng-if="filter_collection.id != 'landing'">
                         <a class="datalink" ng-click="changeCollection(filter_collection.id);"  ng-bind="filter_collection.title">{{filter_collection.name}}</a>
                         <!--<a class="datalink" ui-sref="games_category({category: filter_collection.name != 'all' ? filter_collection.id : ''})" ng-bind="filter_collection.title">{{filter_collection.name}}</a>-->
                     </h2>

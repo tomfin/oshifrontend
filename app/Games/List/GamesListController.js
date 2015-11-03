@@ -8,7 +8,7 @@ CasinoControllers
         $scope.games = games;
         $scope.state = $state;
 
-        $scope.collection = $stateParams.category || $scope.category || 'all';
+        $scope.collection = $stateParams.category || $scope.category || 'landing';
 
         $scope.limit = $scope.limit_count || 1000;//FIXME in angular v 1.4.1
 
@@ -63,5 +63,6 @@ CasinoControllers
         GamesList.make($scope);
         GamesList.collections($scope);
         GamesList.providers($scope);
+        
     }]
 );
