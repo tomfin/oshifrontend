@@ -1,0 +1,99 @@
+<div class="content_area games_area clearfix" ng-class="{'open_menu': left_col}" ng-init="query = ''">
+
+    <div class="search_box">
+        <div class="input search_input">
+            <input ng-model="query" type="text"
+                   placeholder="{{'frontend.filters.find_your_game' | translate}}"
+                   class="text_input">
+            <i class="fonticon fa fa-search"></i></div>
+    </div>
+    <div class="games_wrap">
+        <sidebar class="left_col">
+
+            <div class="search_box">
+                <div class="input search_input">
+                    <input ng-model="query" type="text"
+                           placeholder="{{'frontend.filters.find_your_game' | translate}}"
+                           class="text_input">
+                    <i class="fonticon fa fa-search"></i></div>
+            </div>
+            <ul class="left_menu games_menu">
+                <li ng-repeat="filter_collection in gamesData.data.collections | collectionsOrder: true" ng-class="{current: filters.data.collection == '{{filter_collection.id}}'}">
+                    <a class="left_menu_link" ui-sref="app.games_category({category: filter_collection.id != 'all' ? filter_collection.id : '', lang: $root.currentLocale, provider: false})">{{filter_collection.title}}</a>
+                </li>
+            </ul>
+            <ul class="left_menu games_menu">
+                <li ng-class="{current: filters.data.provider == false}">
+                    <a class="left_menu_link" ng-click="filters.changeFilter({provider: false})" >{{'games.providers.all' | translate}}</a>
+                </li>
+                <li ng-repeat="filter_provider in gamesData.data.providers" ng-class="{current: filters.data.provider == '{{filter_provider.id}}'}">
+                    <a class="left_menu_link" ng-click="filters.changeFilter({provider: filter_provider.id})">{{filter_provider.title}}</a>
+                </li>
+            </ul>
+        </sidebar>
+
+        <div class="content clearfix">
+            <button class="btn aside_toggler" ng-click="left_col = !left_col"><i class="fa fa-bars"></i></button>
+
+            <div class="page_title">
+                <div class="games_filter">
+                    <a ng-click="filters.changeFilter({collectionOrder: filters.data.collection})" class="games_filter_item" ng-class="{current: filters.data.collectionOrder == filters.data.collection}">{{'games.categories.stat.manual' | translate}}</a>
+                    <a ng-click="filters.changeFilter({collectionOrder: 'novelty'})" class="games_filter_item" ng-class="{current: filters.data.collectionOrder == 'novelty'}">{{'games.categories.stat.new' | translate}}</a>
+                    <a ng-click="filters.changeFilter({collectionOrder: 'popularity'})" class="games_filter_item" ng-class="{current: filters.data.collectionOrder == 'popularity'}">{{'games.categories.stat.most_popular' | translate}}</a>
+                </div>
+
+            </div>
+
+            <div class="catalog_list" ng-controller="Game">
+            <span infinite-scroll="loadMore(4)">
+                <span class="catalog_list_item"
+                      ng-repeat="game in filters.games | gameTitle: query | limitTo: limit_count track by game.identifier">
+                    <span ng-include="'/app/Games/_game_item.html'"></span>
+                </span>
+            </span>
+            </div>
+        </div>
+    </div>
+
+
+    <casino-snippet type="footer-logos"></casino-snippet>
+
+    <div class="pay_link_wrap">
+        <div class="pay_links providers">
+            <casino-softswiss-footer-link></casino-softswiss-footer-link>
+            <span class="pay_link"><img src="resources/images/icon/providers/black/netent.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/providers/black/microgaming.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/providers/black/betsoft.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/providers/black/amatic.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/providers/black/ezugi.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/providers/black/endorphina.svg"/></span>
+        </div>
+        <div class="pay_links payments">
+            <span class="pay_link"><img src="resources/images/icon/payments/black/mastercard.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/visa.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/maestro.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/diners.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/skrill.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/neteller.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/cubits.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/btc_accepted.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/paysafecard.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/wirecard.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/pugglepay.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/lava_pay.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/payments/black/unionpay.svg"/></span>
+        </div>
+        <div class="pay_links security">
+            <casino-softswiss-footer-link></casino-softswiss-footer-link>
+            <a href="" class="pay_link"><img src="resources/images/icon/security/black/curacao.svg"/></a>
+            <span class="pay_link"><img src="resources/images/icon/security/black/rng.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/security/black/provablyfair.svg"/></span>
+            <a href="" class="pay_link"><img src="resources/images/icon/security/black/itech_labs.svg"/></a>
+            <span class="pay_link"><img src="resources/images/icon/security/black/askgamblers.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/security/black/ssl.svg"/></span>
+            <span class="pay_link"><img src="resources/images/icon/security/black/safe_secure.svg"/></span>
+        </div>
+
+    </div>
+</div>
+

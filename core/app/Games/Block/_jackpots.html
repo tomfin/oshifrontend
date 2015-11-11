@@ -1,0 +1,18 @@
+<div>
+    <carousel>
+        <slide ng-repeat="game in filters.games | limitTo: limit_count track by game.identifier" active="slide.active">
+            <div class="img_box" ng-controller="Game">
+                <a href="" ng-click="openGame.modalByCurrency(game);">
+                    <img ng-src="{{game.icon_cdn_path}}" alt="{{game.identifier}}">
+                </a>
+            </div>
+            <div class="descr">
+                <div class="game_name">{{game.title}}</div>
+                <div class="iconbefore icon_crown jckpt_val"
+                     ng-show="game | gameJackpotByCurrency : $root.data.user.currency : 'EUR'">
+                    {{game | gameJackpotByCurrency : $root.data.user.currency : 'EUR'}}
+                </div>
+            </div>
+        </slide>
+    </carousel>
+</div>

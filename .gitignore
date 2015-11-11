@@ -1,5 +1,7 @@
 /bower_components
 /node_modules
+/core/client
+/core/build
 /build
 /logs
 /.tmp

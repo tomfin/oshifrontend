@@ -1,0 +1,27 @@
+<span class="item_image">
+    <span class="item_actions">
+      <a ng-click="openGame.modalByCurrency(game);" href="" access-level="accessLevels.user" class="btn btn-game">{{'frontend.links.play_now' | translate}}</a>
+      <a ng-click="openGame.modalByCurrency(game, 'FUN');" href="" class="btn btn-game-alter">{{'frontend.links.play_for_fun' | translate}}</a>
+    </span>
+    <span class="img_box">
+        <img src="/resources/images/blank/220_103.png"
+             casino-lazy-src="{{game.icon_cdn_path}}"
+             class="show-animated"
+             alt="{{game.identifier}}">
+    </span>
+    <span class="game-new-label" ng-if="(game.collections | filter: 'new').length > 0">new
+        <div class="game-new-value">{{'games.categories.stat.new' | translate}}</div>
+    </span>
+    <span class="game-top-label" ng-if="(game.collections | filter: 'top').length > 0">
+        <div class="game-top-value">Top</div>
+    </span>
+     <span class="game-jackpot-label" ng-if="game | gameJackpotByCurrency : $root.data.user.currency : 'EUR'">
+         <div class="jackpot-value">{{game | gameJackpotByCurrency : $root.data.user.currency : 'EUR'}}</div>
+     </span>
+</span>
+
+<span class="item_info">
+    <a access-level="accessLevels.user" class="add-favorite" ng-class="{'add' : favorites.isFavorite(game)}" ng-click="favorites.favorite(game);"></a>
+    <span class="item_name" ng-bind="game.title"></span>
+    <span class="item_descr" ng-bind="game.provider"></span>
+</span>

@@ -1,0 +1,16 @@
+<div class="winners_list">
+    <div class="winner_item" ng-repeat="game in gamesData.data.winners.latest | limitTo: limit_count">
+        <div ng-controller="Game" class="winners__wrap">
+            <a ng-click="openGame.modalByCurrency(game.data);" href="" class="winner_item_img img_box">
+                <img ng-src="{{game.data.icon_cdn_path}}" alt="{{game.data.identifier}}" class="img">
+            </a>
+            <div class="winner_item_info">
+                <a ng-click="openGame.modalByCurrency(game.data);" href="" ng-bind="game.game_title"></a>
+                <div class="descr">
+                    <span class="val" ng-bind="game.win_amount_cents | humanized_currency: game.currency"></span>
+                    <span class="user" ng-bind="game.nickname"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

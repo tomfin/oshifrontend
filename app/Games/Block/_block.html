@@ -1,0 +1,78 @@
+<span>
+    <div id="games-panel-nav" class="row">
+
+        <div id="games-panel-list" class="">
+            <div class="col-xs-9 col-xs-offset-3 panel panel-default">
+                <div id="filter-panel" class="row panel-heading">
+                    <div class="panel-title">
+                        <!--<nav id="games-panel-devices" class="col-xs-5">-->
+                        <!--<ul class="active nav nav-pills" id="games-devices">-->
+                        <!--<li ng-class="{active: device == 'desktop'}"><a ng-click="device = 'desktop'" data-filter-value="desktop">{{'games.categories.device.desktop' | translate}}</a></li>-->
+                        <!--<li ng-class="{active: device == 'mobile'}"><a ng-click="device = 'mobile'" data-filter-value="mobile">{{'games.categories.device.mobile' | translate}}</a></li>-->
+                        <!--</ul>-->
+                        <!--</nav>-->
+                        <nav id="games-panel-sort" class="col-xs-7">
+                            <ul class="active nav nav-pills text-right" id="games-order" ng-init="collectionOrder = 'landing'">
+                                <li ng-class="{active: filters.data.collectionOrder == filters.data.collection}"><a ng-click="filters.changeFilter({collectionOrder: filters.data.collection});">{{'games.categories.stat.manual' | translate}}</a></li>
+                                <li ng-class="{active: filters.data.collectionOrder == 'novelty'}"><a ng-click="filters.changeFilter({collectionOrder: 'novelty'});">{{'games.categories.stat.new' | translate}}</a></li>
+                                <li ng-class="{active: filters.data.collectionOrder == 'popularity'}"><a ng-click="filters.changeFilter({collectionOrder: 'popularity'});">{{'games.categories.stat.most_popular' | translate}}</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3">
+                    <nav id="games-panel-categories">
+                        <ul class="active list-group" id="games-collections">
+                            <li class="list-group-item" ng-repeat="filter_collection in gamesData.data.collections | collectionsOrder: true" ng-class="{active: filters.data.collection == '{{filter_collection.id}}'}">
+                                <!--<a class="list-group-item-link" ng-click="filters.changeFilter({collection: filter_collection.id, provider: false});"  ng-bind="filter_collection.title"></a>-->
+                                <a class="list-group-item-link" ui-sref="app.games_category({category: filter_collection.id != 'all' ? filter_collection.id : '', lang:'{{currentLocale}}'})" ng-bind="filter_collection.title"></a>
+                            </li>
+                        </ul>
+
+                        <ul class="active list-group" id="games-providers">
+                            <li class="list-group-item" ng-repeat="filter_provider in gamesData.data.providers" ng-class="{active: filters.data.provider == '{{filter_provider.id}}'}">
+                                <a class="list-group-item-link" ng-click="filters.changeFilter({provider:filter_provider.id})">
+                                    {{filter_provider.title}}
+                                </a>
+
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div>
+                        <div id="games-panel-search" >
+                            <form method="get" class="">
+                                <input ng-model="query" type="text"
+                                       placeholder="{{'frontend.filters.find_your_game' | translate}}"
+                                       class="search form-control">
+                                <input type="hidden" value="submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <ul class="games-list col-xs-9" ng-controller="Game">
+                    <li class="games-panel-item"
+                        ng-repeat="game in filters.games"
+                        ng-class="game.collections.join(' ') + ' ' + game.provider + ' ' + game.devices.join(' ')"
+                        data-notify-when-repeat-finished
+                            >
+                        <a ng-click="openGame.pageByCurrency(game);" class="image-link">
+                            <div class="image-wrapper table-client-flash">
+                                <span style="position: absolute;" ng-if="game.jackpot" ng-bind="game.jackpot"></span>
+                                <img src="/resources/images/blank/220_103.png" casino-lazy-src="{{game.icon_cdn_path}}" class="game-image img-rounded" alt="{{game.identifier}}" />
+                            </div>
+                            <div class="image-hv">
+                                <div class="play-now btn btn-success" translate="frontend.links.play_now"></div>
+                            </div>
+                        </a>
+                        <a ng-click="openGame.page(game);" ng-bind="game.title" class="game-title"></a>
+                        <!--<div class="game-cat" ng-bind="game.identifier"></div>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</span>

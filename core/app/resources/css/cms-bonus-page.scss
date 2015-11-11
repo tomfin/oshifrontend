@@ -1,0 +1,56 @@
+.page-cms-bonus {
+
+  .panel-group .panel {
+    border-radius: 0;
+
+  }
+
+  .panel-heading {
+    color: #fff;
+
+    h4 {
+      color: #fff390;
+      font-size: 24px;
+    }
+
+    ul, ol {
+      list-style: initial;
+      padding-left: 40px;
+
+      li {
+        padding: initial;
+        margin: initial;
+      }
+    }
+
+    .open-button {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 27px 0 17px;
+      color: #ffffff;
+      font-size: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 2px;
+      margin-top: 20px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-image: url("/resources/images/arrow_down.png");
+        background-position: 7px center;
+        right: 0;
+        top: 0;
+      }
+
+      &.collapsed:after {
+        background-image: url("/resources/images/arrow_left.png");
+        background-position: center center;
+      }
+    }
+  }
+
+}
