@@ -4,12 +4,16 @@ CasinoDirectives
         restrict: 'E',
         replace: true,
         scope: {
-            type: "@type"
+            name: '@name',
+            template: '@template',
+            default_filters: "=filters",
+            limit_count: "@limit",
+            isolated: '@isolated'
         },
         templateUrl: function(elem, attr){
-            return '/app/Games/GamesSlider/_' + attr.type + '_slider.html';
+            return '/app/Games/GamesSlider/_' + attr.template + '_slider.html';
         },
-        controller: 'GamesList'
+        controller: 'GamesBlock'
     };
 }])
 .directive('uixBxslider', function(){

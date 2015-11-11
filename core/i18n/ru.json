@@ -99,6 +99,14 @@
 						}
 					}
 				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Was created too much time ago",
+							"has_affiliate_profiles": "Есть партнёрский профиль"
+						}
+					}
+				},
 				"user": {
 					"attributes": {
 						"password": {
@@ -120,7 +128,7 @@
 					"pending_deposit_presents": "Мы ждем подтверждения вашего последнего депозита.",
 					"commission_is_greater_that_amount": "Комиссия превышает сумму",
 					"cashout_only_to_main_address": "Вы установили в качестве основного биткоин-адреса следующий адрес: {{address}}. Вы можете получать выплаты только на этот адрес.",
-					"not_used_account": "Account you are going to cashout was not used before.",
+					"not_used_account": "Счёт, на который вы запросили выплату, ранее не использовался.",
 					"debt_to_another_payment_system": "У вас непогашенные обязательства перед {{system_name}}. Пожалуйста, воспользуйтесь данной платёжной системой.",
 					"debt_to_another_payment_system_account": "У вас есть непогашенные обязательства по отношению к следующим счетам ({{account}})",
 					"more_debts_exist": "У Вас есть невыполненные обязательства по отношению к платёжным системам и счетам. Их необходимо погасить, прежде чем вы сможете вывести выигрыш. Сумма долга в текущей платежной системе составляет {{debt_amount}}."
@@ -170,11 +178,23 @@
 			"retention_email": "Письмо удержания"
 		},
 		"attributes": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Баланс казино был изменён",
+				"casino_cash_balance_id": "Casino Cash Balance ID",
+				"action": "Действие",
+				"change_amount": "Change amount",
+				"amount_after_change": "Amount after change",
+				"subject": "Тема",
+				"processed_at": "Processed at",
+				"comment": "Комментарий",
+				"currency": "Валюта"
+			},
 			"balance_correction": {
-				"action": "Action",
-				"amount": "Amount",
-				"account": "Account",
-				"comment": "Comment"
+				"action": "Действие",
+				"amount": "Сумма",
+				"account": "Учётная запись",
+				"comment": "Комментарий"
 			},
 			"game_category": {
 				"name": "Название",
@@ -287,17 +307,17 @@
 				"updated_at": "Изменен"
 			},
 			"freespin_issue": {
-				"stage": "Stage",
-				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
-				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
-				"valid_until": "Expiry date",
-				"extra": "Extra info",
-				"external_id": "External ID",
-				"created_at": "Date received",
-				"issued_at": "Issued at",
-				"updated_at": "Updated at"
+				"stage": "Состояние",
+				"amount": "Сумма",
+				"freespins_total": "Free spins awarded",
+				"activatable_until": "Дата истечения",
+				"win_amount_cents": "Already won",
+				"valid_until": "Дата истечения",
+				"extra": "Дополнительная информация",
+				"external_id": "Внешний идентификатор",
+				"created_at": "Дата получения",
+				"issued_at": "Выдается на",
+				"updated_at": "Изменен"
 			},
 			"bonus_strategy/feature/payment_system": {
 				"ids_list": "Платёжные системы"
@@ -679,7 +699,7 @@
 			"popup": {
 				"copy": "Скопировать",
 				"title": "Верификация успешно завершена.",
-				"description": "Отлично! теперь Ваш текст подписан электронной подписью Amatic Industries. Вы можете проверить её при поможи любого стороннего сервиса.",
+				"description": "Отлично! теперь Ваш текст подписан электронной подписью Amatic Industries. Вы можете проверить её при помощи любого стороннего сервиса.",
 				"message": "Ваш текст",
 				"signature": "Подпись Amatic ",
 				"address": "Биткоин адрес"
@@ -700,11 +720,22 @@
 			"oops": "Ой,",
 			"cannot_be_found": "Страница, которую Вы ищете, не найдена.",
 			"description": "Возможно, она была удалена, переименована, или временно недоступна. Мы сожалеем, что Вам не удалось найти то, что вы искалию Но мы постараемся сделать всё возможное, чтобы помочь Вам.",
-			"link_to_root": "Here is a link to our start page:"
+			"link_to_root": "Ссылка на стартовую страницу:"
+		}
+	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Документ успешно загружен"
+			},
+			"destroy": {
+				"notice": "Документ успешно удалён."
+			}
 		}
 	},
 	"common": {
-		"in_out": "IN/OUT",
+		"required": "Требуется",
+		"in_out": "Вход/Выход",
 		"players": "Игроки",
 		"email": "E-mail",
 		"content": "Сообщение",
@@ -729,7 +760,7 @@
 		"limit": "Лимит",
 		"live_casino": "Live Casino",
 		"address": "Адрес",
-		"good_news": "Good news, {{nickname}}.",
+		"good_news": "Хорошие новости, {{nickname}}.",
 		"save": "Сохранить",
 		"edit": "Правка",
 		"remove": "Удалить",
@@ -745,14 +776,19 @@
 		"filter": "Фильтр",
 		"are_you_sure": "Вы уверены?",
 		"set": "Создать",
+		"recall": "Recall",
 		"enabled": "Включено",
 		"disabled": "Отключено",
 		"active": "Активный",
+		"success": "Успешно",
+		"error": "Ошибка",
 		"preview": "Предварительный просмотр",
 		"select": "Выбрать",
 		"summary": "Статистика",
 		"status": "Статус",
 		"options": "Параметры",
+		"download": "Download",
+		"csv": "CSV",
 		"genders": {
 			"m": "Мужской",
 			"f": "Женский"
@@ -775,7 +811,7 @@
 		"comment": "Комментарий",
 		"empty_search_results": "Не найдено данных, которые бы соответствовали параметрам фильтра.",
 		"add_more_coins": "Добавить монет",
-		"show_more_games": "Show more games",
+		"show_more_games": "Показать больше игр",
 		"warning": "Внимание!",
 		"new_as_novelty": "Новые",
 		"already_member": "Уже зарегистрированы?",
@@ -789,7 +825,7 @@
 		"en": "Английский",
 		"es": "Испанский",
 		"fi": "Финнский",
-		"fr": "French",
+		"fr": "Французский",
 		"it": "Итальянский",
 		"ja": "Японский",
 		"ko": "Корейский",
@@ -820,10 +856,10 @@
 				"bonus": "Бонус изменен",
 				"payment_system": "Платёжная система",
 				"retention_email": "Изменен email",
-				"casino_cash_balance": "Casino Cash Balance Modified",
-				"commission_connection": "Commission Connection Modified",
-				"payment": "Payment Modified",
-				"affiliate_profile": "Affiliate Profile Modified"
+				"casino_cash_balance": "Баланс казино был изменён",
+				"commission_connection": "Изменение назначения комиссии",
+				"payment": "Платеж изменен",
+				"affiliate_profile": "Изменение аффилиатного профиля"
 			},
 			"game": {
 				"step": "Ход в игре сделан"
@@ -839,16 +875,16 @@
 				"failed_sign_in": "Попытка входа админа неудачна"
 			},
 			"notifications": {
-				"balance_correction_created": "Balance correction created",
-				"cashout_requested": "Cashout requested",
-				"deposit_made": "Deposit made",
-				"cashout_made": "Cashout made",
-				"auto_cashout_made": "Auto-cashout made",
-				"cashout_rejected": "Cashout request rejected",
-				"deposit_rejected": "Deposit rejected",
-				"user_upload_document": "User Uploaded Document",
-				"payment_created_by_admin": "Admin Created Payment",
-				"user_disabled": "User Disabled",
+				"balance_correction_created": "Создана коррекция баланса",
+				"cashout_requested": "Запрос на выплату",
+				"deposit_made": "Сделан депозит",
+				"cashout_made": "Выплата осуществлена",
+				"auto_cashout_made": "Сделан авто-кешаут",
+				"cashout_rejected": "Запрос на выплату отклонен",
+				"deposit_rejected": "Депозит отклонен",
+				"user_upload_document": "Игрок загрузил документ",
+				"payment_created_by_admin": "Администратор создал платеж",
+				"user_disabled": "Игрок отключен",
 				"contact": "User Requested Support",
 				"admin_comment_created": "Admin Left Comment"
 			},
@@ -881,6 +917,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -896,6 +933,7 @@
 				"bank_transfer": "Банковский перевод",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "Приложение OAuth",
 				"bitcoin_payment": "Биткойн",
 				"ripple_payment": "Ripple"
 			},
@@ -906,14 +944,28 @@
 			"system_name": "%{child} через %{parent}",
 			"all_locked": "В целях безопасности вывод средств производится только через системы, используемые вами ранее для депозитов. По всем вопросам обращайтесь в службу поддержки.",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Банк",
+				"banklocal": "Bank domestic withdrawal",
+				"bankiban": "Bank domestic IBAN withdrawal",
+				"bankintiban": "Bank international IBAN withdrawal",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "Visa",
 				"mastercard": "MasterCard",
 				"online_bank_transfer": "Банковский перевод в онлайн",
 				"ideal": "iDEAL",
 				"nordea_solo": "Nordea Solo",
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
-				"cards": "Credit Cards",
+				"cards": "Кредитная карта",
 				"ccard": "Кредитная карта",
+				"creditcard": "Кредитная карта",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
 				"eps": "EPS e-payment",
@@ -929,13 +981,14 @@
 				"paysafecard": "Paysafecard",
 				"quick": "Quick",
 				"sepa": "SEPA Direct Debit",
+				"skrill": "Skrill",
 				"skrill_direct": "Skrill Direct",
 				"skrill_wallet": "Skrill Digital Wallet",
 				"sofort": "SOFORT Banking",
 				"tatrapay": "TatraPay",
 				"trustly": "Trustly",
-				"bank_transfer": "Bank Transfer",
-				"lavapay_balance": "LavaPay Balance",
+				"bank_transfer": "Банковский перевод",
+				"lavapay_balance": "Баланс LavaPay",
 				"cheque": "Cheque",
 				"perfect": "Perfect Money",
 				"liqpay": "LiqPay",
@@ -944,7 +997,7 @@
 				"okpay": "OKPAY",
 				"qiwi": "Qiwi",
 				"mailru": "money@mail.ru",
-				"lavapay_bitcoin": "Bitcoin",
+				"lavapay_bitcoin": "Биткойн",
 				"egopay": "EgoPay",
 				"lavapay_litecoin": "LiteCoin",
 				"paxum": "Paxum",
@@ -959,7 +1012,7 @@
 				"mobileretails": "MobileRetails",
 				"unistream": "Unistream",
 				"ruspost": "RusPost",
-				"contact": "Contact",
+				"contact": "Контакт",
 				"anelik": "Anelik",
 				"leader": "Leader",
 				"mts": "MTS",
@@ -989,10 +1042,11 @@
 				"qiwi_maestro": "Maestro Qiwi",
 				"cis_cards": "Bank Cards",
 				"yandex_personal": "Yandex Personal",
-				"local_bank_transfer": "Local Bank Transfer",
+				"local_bank_transfer": "Локальный банковский перевод",
 				"w1": "W1",
 				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"russian_standard": "Russian Standard Bank",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1147,7 +1201,9 @@
 			"info": "Информация",
 			"information": "Информация",
 			"promotion": "Бонусы",
-			"follow_us": "Читайте нас"
+			"follow_us": "Читайте нас",
+			"privacy": "Privacy",
+			"corporate": "Corporate"
 		},
 		"actions": {
 			"go_bang": "Вперед",
@@ -1221,7 +1277,6 @@
 		"registration_restricted_in_country": "Регистрация ограничена для вашей страны"
 	},
 	"documents": {
-		"removed_successfully": "Документ успешно удалён.",
 		"document": {
 			"edit_description": "Изменить описание",
 			"approved": "Одобрено",
@@ -1238,18 +1293,47 @@
 	},
 	"formtastic": {
 		"labels": {
-			"card_holder": "Владелец карточки",
-			"credit_card_number": "Номер кредитной карточки",
-			"cvc": "Код кредитной карточки",
-			"expiration_date": "Дата окончания действия",
+			"clearingNumber": "Clearing number or bank code",
+			"accountNumber": "Account number",
+			"beneficiaryName": "Beneficiary name",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Beneficiary address",
+			"bankName": "Bank name",
+			"branchAddress": "Branch address",
+			"secureId": "Secure ID",
 			"amount": "Сумма",
+			"account": "Учётная запись",
+			"service": "Service",
+			"card_holder": "Владелец карточки",
+			"cardHolder": "Владелец карточки",
+			"credit_card_number": "Номер кредитной карточки",
+			"encCreditcardNumber": "Card number",
+			"countryCode": "Страна",
+			"internalBonusCode": "Бонусный код",
+			"cvc": "Код кредитной карточки",
+			"cvv": "cvv",
+			"expiration_date": "Дата окончания действия",
+			"expiryDate": "Дата истечения",
+			"voucherNumber": "Voucher number",
+			"voucherValue": "Voucher value",
+			"email": "E-mail",
 			"recipient": "Recipient",
+			"phoneNumber": "Phone number",
+			"mobileOperator": "Mobile operator",
+			"username": "Username",
+			"password": "Пароль",
+			"country": "Страна",
 			"document": {
 				"attachment": "Вложение",
 				"description": "Описание"
 			},
 			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"wallet_address": "Адрес кошелька",
+			"deposit_form": {
+				"net_account": "Email/Account ID",
+				"secure_id": "Secure ID"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1292,7 +1376,6 @@
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} Issue",
 		"stages": {
 			"wait": "Ожидает",
 			"handle_bets": "Активный",
@@ -1300,24 +1383,24 @@
 			"expired": "Срок действия истёк",
 			"wager_done": "Отыгрыш завершен",
 			"lost": "Проигран",
-			"pending": "Pending"
+			"pending": "Ожидает"
 		}
 	},
 	"freespin_issues": {
 		"title": "%{bonus} Issue",
-		"games": "Games",
-		"activate": "Activate",
+		"games": "Игры",
+		"activate": "Активировать",
 		"stages": {
-			"issued": "Issued",
-			"activated": "Activated",
-			"canceled": "Canceled",
-			"expired": "Expired",
-			"finished": "Played",
-			"pending": "Pending"
+			"issued": "Выдан",
+			"activated": "Активирован",
+			"canceled": "Отменен",
+			"expired": "Срок действия истёк",
+			"finished": "Отыгран",
+			"pending": "Ожидает"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "You received {{freespins_count}} bonus free spins in {{games}}.",
+			"activation_prompt_html": "To activate free spins go to {{link}}."
 		}
 	},
 	"games": {
@@ -1339,6 +1422,7 @@
 			"lottery": "Лотерея",
 			"keno": "Кено",
 			"progressive": "Прогрессивные",
+			"jackpot": "Games with Jackpot",
 			"stat": {
 				"most_popular": "Популярные",
 				"new": "Новые",
@@ -1354,10 +1438,13 @@
 			"all": "Все провайдеры",
 			"softswiss": "SoftSwiss",
 			"amatic": "Amatic",
-			"betsoftgaming": "Betsoftgaming",
+			"betsoftgaming": "BetSoft Gaming",
 			"casinotechnology": "CasinoTechnology",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1455,10 +1542,12 @@
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "Оплаченые с",
-		"billed_to": "Оплаченные по",
+		"billed_from": "C",
+		"billed_to": "Конец периода",
 		"paid": "Оплачено",
-		"submit": "Показать"
+		"submit": "Показать",
+		"billed": "Billed:",
+		"not_billed": "Not Billed:"
 	},
 	"affiliate_links": {
 		"add": "Добавить ссылку",
@@ -1470,7 +1559,7 @@
 		}
 	},
 	"affiliate_profiles": {
-		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"tip": "Расчет с аффилиатом производится отдельно по каждому профилю. Используйте ссылки профиля для учета игроков.",
 		"commission": "Комиссия",
 		"registration_settings": {
 			"reward": "Плата за регистрацию",
@@ -1502,7 +1591,7 @@
 			"registered_users_count": "Зарегистрированные пользователи(с депозитами)",
 			"date": "Дата",
 			"invited_users_income": "NGR (чистый доход)",
-			"ggr": "NGR (чистый доход)",
+			"ggr": "GGR (игровая гросс прибыль)",
 			"total": "Period Total",
 			"link_name": "Название"
 		},
@@ -1561,9 +1650,9 @@
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Free spins"
 		},
-		"gift": "Gift"
+		"gift": "Подарок"
 	},
 	"profiles": {
 		"menu": {
@@ -1637,10 +1726,10 @@
 			"payments_history": "Журнал операций",
 			"bets_history": "Журнал ставок",
 			"bonuses_history": "Журнал бонусов",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Free spins History",
 			"deposit_to_address_hint": "Чтобы пополнить счёт, сделайте депозит на этот адрес.",
 			"freespin_bonuses": {
-				"bonus_canceled": "Bonus canceled",
+				"bonus_canceled": "Бонус отменён",
 				"bonus_not_canceled": "Failed to cancel bonus",
 				"bonus_activated": "Bonus was activated",
 				"bonus_not_activated": "Bonus was not activated"
@@ -1675,12 +1764,14 @@
 		"make_deposit": "Сделать депозит",
 		"make_cashout": "Запрос на вывод",
 		"confirm_address": "Подтвердите адрес",
-		"bonus_code_show": "I have a Bonus Code",
+		"bonus_code_show": "У меня есть бонус-код",
 		"bonus_code_hide": "Hide Bonus Code",
 		"address_confirmation_email_body": "Вы запросили вывод средств на адрес {{address}}. Поскольку вы ранее не использовали этот адрес, мы просим подтвердить его, перейдя по этой ссылке:",
 		"address_confirmation_email_warning": "Если этот адрес вам не принадлежит, свяжитесь со службой поддержки и измените пароль:",
-		"invalid_profile_before_deposit_message": "Вы должны заполнить все необходимые поля, чтобы сделать депозит. Пожалуйста, введите контактные данные в ниже располагающееся поле. Перед сохранением проверьте корректность вводимых данных.",
-		"invalid_profile_message": "Для вывода средств нужно заполнить необходимые поля в вашем профиле.",
+		"invalid_profile_message": {
+			"deposit": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+			"cashout": "To be able to cash out, you must fill in the required fields in your Profile."
+		},
 		"try_again": "Транзакция не может быть выполнена из-за проблем соединения. Пожалуйста, обратитесь в службу поддержки.",
 		"select_currency": "Выбрать валюту баланса",
 		"select_currency_hint": {
@@ -1688,6 +1779,7 @@
 			"cashout": "Запросить выплату"
 		},
 		"select_payment_method": "Выберите метод оплаты",
+		"saved_methods": "Your Saved Payment Options",
 		"current_balance": {
 			"deposit": "Текущий баланс: {{money}}.",
 			"cashout": "Доступная к выплате сумма: {{money}}. Детальную информацию вы найдете на этой {{balance_link}} странице."
@@ -1705,7 +1797,8 @@
 		"processing_time": {
 			"instantly": "Немедленно",
 			"range": "%{min}-%{max} рабочие дни"
-		}
+		},
+		"cubits_not_available": "Cubits is not available now. Try again later."
 	},
 	"security_check": {
 		"user_is_suspicious": "Пользователь подозрителен",
@@ -1799,13 +1892,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "Ваш запрос на вывод одобрен"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "Баланс счета недостаточен для выплаты",
-			"body": "Выплата отменена, так как баланс счета стал недостаточным для вывода запрашиваемой суммы. Пожалуйста, оставьте новый запрос на вывод согласно текущему балансу."
-		},
-		"address_confirmation_required": {
-			"subject": "Требуется подтверждение адреса для выплаты"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Требуется подтверждение адреса для выплаты",
+			"deposit_made": "Ваш депозит получен",
+			"cashout_approved": "Ваш запрос на вывод одобрен",
+			"freespin_bonus_issued": "Freespins awarded",
+			"welcome": "Добро пожаловать",
+			"no_deposit": "Вы еще не делали депозит",
+			"nth_deposit": "Вы пока ещё не сделали депозит.",
+			"welcome_promo": "Приходите к нам еще",
+			"confirmation_instructions": "Инструкции для подтверждения",
+			"reset_password_instructions": "Reset password instructions",
+			"unlock_instructions": "Unlock instructions"
 		}
 	},
 	"activemodel": {
@@ -1872,12 +1973,6 @@
 			}
 		}
 	},
-	"retention_mailer": {
-		"welcome": "Добро пожаловать",
-		"no_deposit": "Сделайте, пожалуйста, депозит!",
-		"nth_deposit": "Вы пока ещё не сделали депозит.",
-		"welcome_promo": "Приходите к нам еще"
-	},
 	"jackpot": {
 		"jackpots": "Jackpots"
 	},
@@ -1935,10 +2030,17 @@
 		"casinotechnology": "CasinoTechnology",
 		"timeout_message": "Game provider's server has not responded. Please retry later."
 	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
+	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
 	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "To play this game you need to fill in at least First Name, Last Name, Date of Birth and Country"
+	},
 	"quickfire_api": {
-		"quickfire": "Quickfire"
+		"quickfire": "QuickFire"
 	}
 }

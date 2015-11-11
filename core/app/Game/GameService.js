@@ -1,47 +1,84 @@
 CasinoServices
-    .factory('Game', ['GamesList', 'LastPlayedList', '$sce', '$window', '$timeout', '$rootScope', '$state', function (GamesList, LastPlayedList, $sce, $window, $timeout, $rootScope, $state) {
+    .factory('Game', ['GamesData', 'LastPlayedList', '$sce', '$window', '$timeout', '$rootScope', '$state', 'Auth', function (GamesData, LastPlayedList, $sce, $window, $timeout, $rootScope, $state, Auth) {
 
         return {
             showGame: function ($scope, identifier, id) {
-                var game_id = id;
+                if (identifier) {
+                    identifier = identifier.replace('-', '/');
+                }
 
-                GamesList.getGameList(true)
-                    .then(
-                    function(games) {
-                        if (identifier) {
-                            identifier = identifier.replace('-', '/');
-                        }
-                        for (var i = 0, games_length = games.length; i < games_length; i++) {
-                            if (id && games[i].id == id) {
-                                $scope.game_url = $sce.trustAsResourceUrl(games[i].play_url);
-                                break;
-                            }
-                            if (id && games[i].demo_id == id) {
-                                $scope.game_url = $sce.trustAsResourceUrl(games[i].play_url_fun);
-                                break;
-                            }
-                            if (!id && identifier && identifier == games[i].identifier) {
-                                game_id = games[i].id;
-                                $scope.game_url = $sce.trustAsResourceUrl(games[i].play_url);
+                var getGame = function (identifier, id) {
+                    var game = GamesData.getByIdentifier(identifier),
+                        current_game = false;
+
+                    if ($rootScope.data.user.currency && $rootScope.data.user.currency != 'FUN') {
+                        for (var key in game.currencies) {
+                            if (game.currencies[key].id == id) {
+                                current_game = game.currencies[key];
                                 break;
                             }
                         }
+                    } else if (game.currencies) {
+                        current_game = game.currencies['FUN'];
+                    }
 
-                        if(game_id && $scope.game_url) {
-                            if ($state.current.name != 'game') {
-                                $('body').addClass('page-game');
-                            }
-                            $rootScope.page.game_title = games[i].title;
-
-                            LastPlayedList.add(game_id);
+                    if (!current_game) {
+                        current_game = game = GamesData.data.games.restricted[id];
+                        if (!$rootScope.data.games.inited) {
+                            return false;
                         }
-                        $scope.game = games[i];
+                        if (!current_game) {
+                            $state.go('404');
+                            return false;
+                        }
+                    }
+
+                    $scope.game_url = $sce.trustAsResourceUrl(current_game.play_url);
+
+                    if(id && $scope.game_url) {
+                        if ($state.current.name != 'game') {
+                            $('body').addClass('page-game');
+                        }
+
+                        $rootScope.data.user.currency = current_game.currency;
+                        $rootScope.page.game_title = game.title;
+
+                        LastPlayedList.add(identifier);
+                    }
+                    $scope.game = game;
+                    $timeout(function (){
+                        $scope.show_iframe = true;
                         $timeout(function (){
                             $($window).resize();
                             $rootScope.$broadcast("preloadHide");
                         }, 0);
+                    }, 0);
+                };
+
+
+                $scope.show_iframe = false;
+
+
+                Auth.check(function(data){
+                    if ($rootScope.data.games.inited) {
+                        getGame(identifier, id);
+                    } else {
+                        $rootScope.$watch('data.games.inited', function(a,b){
+                            if ($rootScope.data.games.inited) {
+                                getGame(identifier, id);
+                            }
+                        });
                     }
-                );
+                    $rootScope.$watch('data.user.currency', function () {
+                        if ($rootScope.data.user.currency == false || $rootScope.data.user.currency == 'FUN') {
+                            if($scope.game_url) {
+                                getGame(identifier, id);
+                            }
+                        }
+                    })
+                });
+
+
             }
         }
 

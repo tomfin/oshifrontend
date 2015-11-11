@@ -27,20 +27,20 @@
 			"expired": "您的帐户因太久没有使用而过期，请联系网站管理员。",
 			"disabled": "您的帐户被禁用。",
 			"not_allowed_ip": "您无法使用当前 IP 地址登陆该用户。",
-			"already_authenticated": "您已经登录.",
-			"inactive": "您还没有激活帐户.",
-			"invalid": "邮箱或密码错误",
-			"last_attempt": "你还有多一次尝试正确的密码，过后你的帐户会被锁住",
-			"locked": "您的帐号已被锁定.",
+			"already_authenticated": "登录成功",
+			"inactive": "您的账号还未激活",
+			"invalid": "账号或密码错误",
+			"last_attempt": "你还有一次尝试正确的密码，过后你的帐户会被锁住",
+			"locked": "由于您登陆过于频繁，现在我们决定封锁您的账号，请过后再来",
 			"not_found_in_database": "邮箱或密码错误",
-			"timeout": "您已登录超时，请重新登录.",
-			"unauthenticated": "继续操作前请注册或者登录.",
+			"timeout": "登录超时，请重新登录.",
+			"unauthenticated": "继续操作前请确保您已登录.",
 			"unconfirmed": "继续操作前请先确认您的帐号."
 		},
 		"confirmations": {
-			"confirmed": "您的帐号已经确认，请登录.",
+			"confirmed": "恭喜您，注册成功，现在可以登录了",
 			"send_instructions": "几分钟后，您将收到确认帐号的电子邮件.",
-			"send_paranoid_instructions": "如果您的邮箱存在于我们的数据库中，您将收到一封确认账号的邮件."
+			"send_paranoid_instructions": "您将收到一封确认账号的邮件.，请注意查收"
 		},
 		"mailer": {
 			"confirmation_instructions": {
@@ -62,7 +62,7 @@
 			"send_instructions": "几分钟后，您将收到重置密码的电子邮件.",
 			"send_paranoid_instructions": "如果您的邮箱存在于我们的数据库中，您将收到一封找回密码的邮件.",
 			"updated": "您的密码已修改成功，您现在已登录.",
-			"updated_not_active": "您的密码已修改成功."
+			"updated_not_active": "密码修改成功."
 		},
 		"registrations": {
 			"destroyed": "再见！您的帐户已成功注销。我们希望很快可以再见到您.",
@@ -94,6 +94,14 @@
 							"has_query_parameter": "不可包含查询参数。",
 							"invalid_uri": "必须是一个有效的URI。",
 							"relative_uri": "必须是绝对URI。"
+						}
+					}
+				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Was created too much time ago",
+							"has_affiliate_profiles": "Has affiliate profiles"
 						}
 					}
 				},
@@ -168,6 +176,18 @@
 			"retention_email": "保留邮件"
 		},
 		"attributes": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Casino Cash Balance Name",
+				"casino_cash_balance_id": "Casino Cash Balance ID",
+				"action": "Action",
+				"change_amount": "Change amount",
+				"amount_after_change": "Amount after change",
+				"subject": "Subject",
+				"processed_at": "Processed at",
+				"comment": "Comment",
+				"currency": "Currency"
+			},
 			"balance_correction": {
 				"action": "操作",
 				"amount": "数额",
@@ -287,9 +307,9 @@
 			"freespin_issue": {
 				"stage": "阶段",
 				"amount": "数额",
-				"freespins_total": "Freespins Awarded",
+				"freespins_total": "Free spins awarded",
 				"activatable_until": "过期日期",
-				"win_amount_cents": "Alredy won",
+				"win_amount_cents": "Already won",
 				"valid_until": "过期日期",
 				"extra": "额外信息",
 				"external_id": "外部 ID",
@@ -701,7 +721,18 @@
 			"link_to_root": "Here is a link to our start page:"
 		}
 	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Document was successfully uploaded"
+			},
+			"destroy": {
+				"notice": "Document was successfully removed"
+			}
+		}
+	},
 	"common": {
+		"required": "Required",
 		"in_out": "IN/OUT",
 		"players": "玩家",
 		"email": "电子邮件地址",
@@ -743,14 +774,19 @@
 		"filter": "过滤",
 		"are_you_sure": "您确定吗？",
 		"set": "Set",
+		"recall": "Recall",
 		"enabled": "已启用",
 		"disabled": "已禁用",
 		"active": "活动的",
+		"success": "Success",
+		"error": "Error",
 		"preview": "预览",
 		"select": "选择",
 		"summary": "摘要",
 		"status": "状态",
 		"options": "选项",
+		"download": "Download",
+		"csv": "CSV",
 		"genders": {
 			"m": "男",
 			"f": "女"
@@ -879,6 +915,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -894,6 +931,7 @@
 				"bank_transfer": "Bank Transfer",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "OAuth Application",
 				"bitcoin_payment": "比特币",
 				"ripple_payment": "Ripple"
 			},
@@ -904,6 +942,19 @@
 			"system_name": "通过 {{parent}} 的 {{child}}",
 			"all_locked": "为了您的安全，我们只允许通过您以前用于存款的支付系统退款。如果您有任何疑问，请联系技术支持。",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Bank",
+				"banklocal": "Bank domestic withdrawal",
+				"bankiban": "Bank domestic IBAN withdrawal",
+				"bankintiban": "Bank international IBAN withdrawal",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "Visa",
 				"mastercard": "MasterCard",
 				"online_bank_transfer": "网上银行转账",
@@ -912,6 +963,7 @@
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
 				"cards": "信用卡",
 				"ccard": "信用卡",
+				"creditcard": "Credit Card",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
 				"eps": "EPS 电子支付",
@@ -927,6 +979,7 @@
 				"paysafecard": "paysafecard",
 				"quick": "Quick",
 				"sepa": "SEPA Direct Debit",
+				"skrill": "Skrill",
 				"skrill_direct": "Skrill Direct",
 				"skrill_wallet": "Skrill数字钱包",
 				"sofort": "SOFORT银行业务",
@@ -990,7 +1043,8 @@
 				"local_bank_transfer": "Local Bank Transfer",
 				"w1": "W1",
 				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"russian_standard": "Russian Standard Bank",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1145,7 +1199,9 @@
 			"info": "Info",
 			"information": "信息",
 			"promotion": "推广",
-			"follow_us": "关注我们"
+			"follow_us": "关注我们",
+			"privacy": "Privacy",
+			"corporate": "Corporate"
 		},
 		"actions": {
 			"go_bang": "开始!",
@@ -1219,7 +1275,6 @@
 		"registration_restricted_in_country": "此注册在您所在的国家受限"
 	},
 	"documents": {
-		"removed_successfully": "Document was successfully removed",
 		"document": {
 			"edit_description": "编辑描述",
 			"approved": "已批准",
@@ -1236,18 +1291,47 @@
 	},
 	"formtastic": {
 		"labels": {
-			"card_holder": "持牌人",
-			"credit_card_number": "信用卡卡号",
-			"cvc": "信用卡安全码",
-			"expiration_date": "过期日期",
+			"clearingNumber": "Clearing number or bank code",
+			"accountNumber": "Account number",
+			"beneficiaryName": "Beneficiary name",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Beneficiary address",
+			"bankName": "Bank name",
+			"branchAddress": "Branch address",
+			"secureId": "Secure ID",
 			"amount": "数额",
+			"account": "Account",
+			"service": "Service",
+			"card_holder": "持牌人",
+			"cardHolder": "Card holder",
+			"credit_card_number": "信用卡卡号",
+			"encCreditcardNumber": "Card number",
+			"countryCode": "Country",
+			"internalBonusCode": "Bonus code",
+			"cvc": "信用卡安全码",
+			"cvv": "cvv",
+			"expiration_date": "过期日期",
+			"expiryDate": "Expiry date",
+			"voucherNumber": "Voucher number",
+			"voucherValue": "Voucher value",
+			"email": "Email",
 			"recipient": "Recipient",
+			"phoneNumber": "Phone number",
+			"mobileOperator": "Mobile operator",
+			"username": "Username",
+			"password": "Password",
+			"country": "Country",
 			"document": {
 				"attachment": "附件",
 				"description": "描述"
 			},
 			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"wallet_address": "Wallet Address",
+			"deposit_form": {
+				"net_account": "Email/Account ID",
+				"secure_id": "Secure ID"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1290,7 +1374,6 @@
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} Issue",
 		"stages": {
 			"wait": "等待",
 			"handle_bets": "活动的",
@@ -1314,8 +1397,8 @@
 			"pending": "待定"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "You received {{freespins_count}} bonus free spins in {{games}}.",
+			"activation_prompt_html": "To activate free spins go to {{link}}."
 		}
 	},
 	"games": {
@@ -1337,6 +1420,7 @@
 			"lottery": "抽奖",
 			"keno": "Keno",
 			"progressive": "Progressive",
+			"jackpot": "Games with Jackpot",
 			"stat": {
 				"most_popular": "最受欢迎的",
 				"new": "新",
@@ -1355,7 +1439,10 @@
 			"betsoftgaming": "BetSoft Gaming",
 			"casinotechnology": "Casino Technology",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1453,10 +1540,12 @@
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "支付起始日",
-		"billed_to": "支付截止日",
+		"billed_from": "From",
+		"billed_to": "To",
 		"paid": "已支付",
-		"submit": "提交"
+		"submit": "提交",
+		"billed": "Billed:",
+		"not_billed": "Not Billed:"
 	},
 	"affiliate_links": {
 		"add": "Add Link",
@@ -1559,7 +1648,7 @@
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Free spins"
 		},
 		"gift": "礼物"
 	},
@@ -1635,7 +1724,7 @@
 			"payments_history": "交易历史记录",
 			"bets_history": "押注历史",
 			"bonuses_history": "奖金历史记录",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Free spins History",
 			"deposit_to_address_hint": "资金到您的账户，存款到这个地址",
 			"freespin_bonuses": {
 				"bonus_canceled": "取消的奖金",
@@ -1677,8 +1766,10 @@
 		"bonus_code_hide": "Hide Bonus Code",
 		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
 		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
-		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
-		"invalid_profile_message": "为了能够套现，你必须填写你的个人资料必填字段。",
+		"invalid_profile_message": {
+			"deposit": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+			"cashout": "To be able to cash out, you must fill in the required fields in your Profile."
+		},
 		"try_again": "由于连接问题交易不能开始。如果问题仍然存在，请联系我们的支持。",
 		"select_currency": "选择余额货币",
 		"select_currency_hint": {
@@ -1686,6 +1777,7 @@
 			"cashout": "我想提现"
 		},
 		"select_payment_method": "选择支付方式",
+		"saved_methods": "Your Saved Payment Options",
 		"current_balance": {
 			"deposit": "您当前的余额为 {{钱}}。",
 			"cashout": "可供提现：{{钱}}。请参照{balance_link}页获得详细说明。"
@@ -1703,7 +1795,8 @@
 		"processing_time": {
 			"instantly": "Instantly",
 			"range": "%{min}-%{max} banking days"
-		}
+		},
+		"cubits_not_available": "Cubits is not available now. Try again later."
 	},
 	"security_check": {
 		"user_is_suspicious": "用户为可疑用户",
@@ -1797,13 +1890,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "您的提现请求已获批准"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "帐户余额不足，无法提现",
-			"body": "帐户余额不足，无法处理提交的提现请求，所以您的提现被禁用。请根据当前余额重新提交新的提现请求。"
-		},
-		"address_confirmation_required": {
-			"subject": "Cashout address confirmation required"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Cashout address confirmation required",
+			"deposit_made": "Your deposit received",
+			"cashout_approved": "Your cashout request was approved",
+			"freespin_bonus_issued": "Freespins awarded",
+			"welcome": "Welcome",
+			"no_deposit": "You have not made a deposit",
+			"nth_deposit": "We are waiting for your deposit",
+			"welcome_promo": "Visit us again",
+			"confirmation_instructions": "Confirmation instructions",
+			"reset_password_instructions": "Reset password instructions",
+			"unlock_instructions": "Unlock instructions"
 		}
 	},
 	"activemodel": {
@@ -1870,12 +1971,6 @@
 			}
 		}
 	},
-	"retention_mailer": {
-		"welcome": "欢迎",
-		"no_deposit": "您还没有作出存款",
-		"nth_deposit": "我们正在等待您的存款",
-		"welcome_promo": "再次访问我们"
-	},
 	"jackpot": {
 		"jackpots": "Jackpots"
 	},
@@ -1933,8 +2028,15 @@
 		"casinotechnology": "CasinoTechnology",
 		"timeout_message": "Game provider's server has not responded. Please retry later."
 	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
+	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
+	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "To play this game you need to fill in at least First Name, Last Name, Date of Birth and Country"
 	},
 	"quickfire_api": {
 		"quickfire": "Quickfire"

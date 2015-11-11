@@ -13,7 +13,7 @@ CasinoServices
                         }
                         inited = true;
                     });
-                }
+                };
 
                 $rootScope.$watch('currentLocale', function (newValue, oldValue) {
                     if ($rootScope.currentLocale && newValue != oldValue) {

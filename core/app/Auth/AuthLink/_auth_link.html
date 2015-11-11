@@ -1,16 +1,16 @@
 <div class="auth-links">
     <br />
     <div>
-        <a href=""ui-sref="users_unlock_new" translate="frontend.links.didnt_receive_unlock"
+        <a href=""ui-sref="app.users_unlock_new({lang:'{{currentLocale}}'})" translate="frontend.links.didnt_receive_unlock"
            ng-hide="state.current.name == 'users_unlock' || state.current.name == 'users_unlock_new'"></a>
     </div>
     <div>
-        <a href="" ui-sref="users_password_new" translate="frontend.links.forgot_password"
+        <a href="" ui-sref="app.users_password_new({lang:'{{currentLocale}}'})" translate="frontend.links.forgot_password"
            ng-hide="state.current.name == 'users_password' || state.current.name == 'users_password_new'"></a>
 
     </div>
     <div>
-        <a href="" ui-sref="users_confirmation_new" translate="frontend.links.didnt_receive_confirmation"
+        <a href="" ui-sref="app.users_confirmation_new({lang:'{{currentLocale}}'})" translate="frontend.links.didnt_receive_confirmation"
            ng-hide="state.current.name == 'users_confirmation' || state.current.name == 'users_confirmation_new'"></a>
     </div>
 </div>

@@ -4,13 +4,13 @@
 			"taken_in_past": "werd vroeger al gebruikt!",
 			"equal_to_current_password": "moet verschillen van het huidige wachtwoord!",
 			"already_confirmed": "is reeds bevestigd",
-			"confirmation_period_expired": "moet binnen %{period} worden bevestigd, a.u.b. plaats een nieuw verzoek",
+			"confirmation_period_expired": "moet binnen %{period} worden bevestigd, plaats a.u.b. een nieuw verzoek",
 			"expired": "is verlopen, vraag een nieuwe aan",
 			"not_found": "niet gevonden",
 			"not_locked": "is niet gesloten",
 			"not_saved": {
-				"one": "1 error verhinderde het opslaan van deze %{resource}:",
-				"other": "%{count} errors verhinderde het opslaan van deze %{resource}:"
+				"one": "Een fout verhinderde het opslaan van deze %{resource}:",
+				"other": "%{count} fouten verhinderde het opslaan van deze %{resource}:"
 			}
 		}
 	},
@@ -32,7 +32,7 @@
 			"invalid": "Ongeldig e-mail of wachtwoord.",
 			"last_attempt": "Je hebt nog één poging voordat je account vergrendeld wordt.",
 			"locked": "Je account is vergrendeld.",
-			"not_found_in_database": "Ongeldige email of wachtwoord.",
+			"not_found_in_database": "Ongeldig e-mail of wachtwoord.",
 			"timeout": "Je sessie is verlopen, meld je opnieuw aan om door te gaan.",
 			"unauthenticated": "Je dient je aan te melden of in te schrijven om door te gaan.",
 			"unconfirmed": "Je dient eerst je account te bevestigen."
@@ -40,14 +40,14 @@
 		"confirmations": {
 			"confirmed": "Je account is bevestigd.",
 			"send_instructions": "Je ontvangt via e-mail instructies hoe je je account kan bevestigen.",
-			"send_paranoid_instructions": "Als we je e-mail adres terugvinden in onze database, zal je binnen enkele ogenblikken een e-mail ontvangen met de instructies  hoe je je account kan bevestigen."
+			"send_paranoid_instructions": "Als we je e-mailadres terugvinden in onze database, zal je binnen enkele ogenblikken een e-mail ontvangen met instructies hoe je je account kan bevestigen."
 		},
 		"mailer": {
 			"confirmation_instructions": {
 				"subject": "Bevestiging"
 			},
 			"reset_password_instructions": {
-				"subject": "Wachtwoord resetten"
+				"subject": "Instructies om je wachtwoord opnieuw in te stellen"
 			},
 			"unlock_instructions": {
 				"subject": "Ontgrendelinstructies"
@@ -58,30 +58,30 @@
 			"success": "Je bent succesvol ingelogd op je %{kind} account."
 		},
 		"passwords": {
-			"no_token": "Deze pagina is alleen bereikbaar via een wachtwoord reset e-mail. Als je wel via een wachtwoord reset email komt, zorg er dan voor dat je de volledige URL gebruikt.",
-			"send_instructions": "Je ontvangt via e-mail instructies hoe je je wachtwoord moet resetten.",
-			"send_paranoid_instructions": "Als we je e-mail adres terugvinden in onze database, zal je binnen enkele ogenblikken via e-mail een link ontvangen om je paswoord te resetten.",
+			"no_token": "Deze pagina is alleen bereikbaar via een wachtwoord vergeten e-mail. Als je wel via een wachtwoord vergeten e-mail komt, zorg er dan voor dat je de volledige URL gebruikt.",
+			"send_instructions": "Je ontvangt een e-mail met instructies hoe je je wachtwoord opnieuw kan instellen.",
+			"send_paranoid_instructions": "Als we je e-mailadres terugvinden in onze database, zal je binnen enkele ogenblikken via e-mail een link ontvangen om je wachtwoord opnieuw in te stellen.",
 			"updated": "Je wachtwoord is gewijzigd. Je bent nu aangemeld.",
-			"updated_not_active": "Je wachtwoord werd met succes gewijzigd."
+			"updated_not_active": "Je wachtwoord is met succes gewijzigd."
 		},
 		"registrations": {
 			"destroyed": "Je account is verwijderd, wellicht tot ziens!",
 			"signed_up": "Je bent ingeschreven.",
 			"signed_up_but_inactive": "Je bent ingeschreven, maar we konden je niet inloggen omdat je account nog niet is geactiveerd.",
-			"signed_up_but_locked": "Je bent ingeschreven, maar we konden je niet inloggen omdat je account is gelocked.",
-			"signed_up_but_unconfirmed": "Een e-mail met een confirmatie link is naar je e-mail adres gestuurd. Open de link in je browser om je account te activeren.",
-			"update_needs_confirmation": "Je account is geüpdatet, maar we moeten je e-mail adres nog valideren. Een e-mail met een confirmatie link is naar je e-mail adres gestuurd. Open de link in je browser om je e-mail adres te confirmeren.",
-			"updated": "Je account gegevens zijn opgeslagen."
+			"signed_up_but_locked": "Je bent ingeschreven, maar we konden je niet inloggen omdat je account is vergrendeld.",
+			"signed_up_but_unconfirmed": "Een e-mail met een confirmatielink is naar je e-mailadres gestuurd. Open de link in je browser om je account te activeren.",
+			"update_needs_confirmation": "Je account is bijgewerkt, maar we moeten je e-mailadres nog valideren. Een e-mail met een confirmatielink is naar je e-mailadres gestuurd. Open de link in je browser om je e-mailadres te confirmeren.",
+			"updated": "Je accountgegevens zijn opgeslagen."
 		},
 		"sessions": {
-			"already_signed_out": "U bent succesvol uitgelogd.",
+			"already_signed_out": "Je bent succesvol uitgelogd.",
 			"signed_in": "Je bent succesvol ingelogd.",
 			"signed_out": "Je bent succesvol uitgelogd."
 		},
 		"unlocks": {
-			"send_instructions": "Je ontvangt via e-mail instructies hoe je je account kan unlocken.",
-			"send_paranoid_instructions": "Als we je e-mail adres terugvinden in onze database, zal je binnen enkele ogenblikken via e-mail, de instructies ontvangen hoe je je account kan unlocken.",
-			"unlocked": "Je account is ge-unlocked. Je kan nu weer inloggen."
+			"send_instructions": "Je ontvangt via e-mail instructies hoe je je account kan ontgrendelen.",
+			"send_paranoid_instructions": "Als we je e-mailadres terugvinden in onze database, zal je binnen enkele ogenblikken een e-mail ontvangen met instructies hoe je je account kan ontgrendelen.",
+			"unlocked": "Je account is ontgrendeld. Je kan nu weer inloggen."
 		}
 	},
 	"activerecord": {
@@ -94,6 +94,14 @@
 							"has_query_parameter": "cannot contain a query parameter.",
 							"invalid_uri": "must be a valid URI.",
 							"relative_uri": "must be an absolute URI."
+						}
+					}
+				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Was created too much time ago",
+							"has_affiliate_profiles": "Has affiliate profiles"
 						}
 					}
 				},
@@ -124,7 +132,7 @@
 					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
 				},
 				"commission_connection": {
-					"not_overlap": "Must not overlap with other connections with same commission level",
+					"not_overlap": "Mag niet overlappen met andere connecties met dezelfde munteenheid",
 					"future_from_time": "moet in de toekomst zijn",
 					"greater_than_from_time": "moet groter zijn dan tijdstip van",
 					"strategies_equivalence": "moet hetzelfde betaalschema hebben als het partnerprofiel",
@@ -145,51 +153,63 @@
 			}
 		},
 		"models": {
-			"account": "Account",
+			"account": "Accounts",
 			"admin_user": "Beheerder",
 			"affiliate_profile": "Partnerprofiel",
-			"bet": "Bet",
+			"bet": "Inzet",
 			"bonus": "Bonus",
-			"bonus_issue": "Bonus Issue",
-			"document": "Document",
-			"event": "Event",
+			"bonus_issue": "Bonusuitgifte",
+			"document": "Documenten",
+			"event": "Evenementen",
 			"external_bet": "External Bet",
-			"game": "Game",
+			"game": "Spellen",
 			"game_category": "Game Category",
 			"game_step": "Step",
 			"game_table": "Game Table",
-			"payment": "Payment",
+			"payment": "Betalingen",
 			"payment_system": "Betaalsysteem",
-			"profile": "Profile",
-			"reports/base_collection/result_record": "Result",
+			"profile": "Profiel",
+			"reports/base_collection/result_record": "Resultaat",
 			"suspicion": "Verdenking",
-			"user": "User",
-			"player": "Player",
+			"user": "Gebruiker",
+			"player": "Speler",
 			"retention_email": "Retention email"
 		},
 		"attributes": {
-			"balance_correction": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Casino Cash Balance Name",
+				"casino_cash_balance_id": "Casino Cash Balance ID",
 				"action": "Action",
-				"amount": "Amount",
-				"account": "Account",
+				"change_amount": "Change amount",
+				"amount_after_change": "Amount after change",
+				"subject": "Subject",
+				"processed_at": "Processed at",
+				"comment": "Comment",
+				"currency": "Currency"
+			},
+			"balance_correction": {
+				"action": "Handeling",
+				"amount": "Bedrag",
+				"account": "Accounts",
 				"comment": "Comment"
 			},
 			"game_category": {
-				"name": "Name",
-				"disabled": "Disabled",
-				"created_at": "Created at",
-				"games": "Games",
+				"name": "Naam",
+				"disabled": "Uitgeschakeld",
+				"created_at": "Gecreëerd om",
+				"games": "Spellen",
 				"position": "Position"
 			},
 			"notification": {
 				"type": "Type",
-				"user": "User",
+				"user": "Gebruiker",
 				"admin_user": "Admin",
 				"target": "Target",
 				"target_type": "Target type"
 			},
 			"affiliate_link": {
-				"name": "Name",
+				"name": "Naam",
 				"code": "Code"
 			},
 			"affiliate_profile": {
@@ -197,7 +217,7 @@
 				"strategy": "Betaalschema",
 				"no_debt": "No Neg. Carryover",
 				"links": "Links",
-				"active": "Active"
+				"active": "Actief"
 			},
 			"account": {
 				"currency": "Munteenheid",
@@ -214,7 +234,7 @@
 				"email": "E-mail",
 				"encrypted_password": "Gecodeerd wachtwoord",
 				"password": "Wachtwoord",
-				"password_confirmation": "Confirm password",
+				"password_confirmation": "Nieuw wachtwoord bevestigen",
 				"current_password": "Huidig wachtwoord",
 				"remember_me": "Onthoud mij",
 				"reset_password_token": "Wachtwoordtoken resetten",
@@ -285,17 +305,17 @@
 				"updated_at": "Bijgewerkt om"
 			},
 			"freespin_issue": {
-				"stage": "Stage",
-				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
+				"stage": "Fase",
+				"amount": "Bedrag",
+				"freespins_total": "Free spins awarded",
 				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
+				"win_amount_cents": "Already won",
 				"valid_until": "Expiry date",
 				"extra": "Extra info",
 				"external_id": "External ID",
 				"created_at": "Date received",
-				"issued_at": "Issued at",
-				"updated_at": "Updated at"
+				"issued_at": "Uitgegeven om",
+				"updated_at": "Bijgewerkt om"
 			},
 			"bonus_strategy/feature/payment_system": {
 				"ids_list": "Betaalsystemen"
@@ -414,11 +434,11 @@
 				"updated_at": "Bijgewerkt om"
 			},
 			"payment_system_debt": {
-				"system_name": "System name",
+				"system_name": "Systeemnaam",
 				"system_account": "Account in system",
 				"amount_cents": "Debt",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"created_at": "Gecreëerd om",
+				"updated_at": "Bijgewerkt om"
 			},
 			"profile_setting": {
 				"name": "Naam",
@@ -680,7 +700,7 @@
 				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
 				"message": "Your Text",
 				"signature": "Amatic Signature",
-				"address": "Bitcoin Address"
+				"address": "Bitcoinadressen"
 			},
 			"title": "Amatic verification",
 			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
@@ -701,11 +721,22 @@
 			"link_to_root": "Here is a link to our start page:"
 		}
 	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Document was successfully uploaded"
+			},
+			"destroy": {
+				"notice": "Document was successfully removed"
+			}
+		}
+	},
 	"common": {
+		"required": "Required",
 		"in_out": "IN/OUT",
-		"players": "Players",
+		"players": "Spelers",
 		"email": "E-mail",
-		"content": "Content",
+		"content": "Inhoud",
 		"loading": "Loading...",
 		"yes": "Ja",
 		"no": "Nee",
@@ -726,7 +757,7 @@
 		"total": "Totaal",
 		"limit": "Limiet",
 		"live_casino": "Live Casino",
-		"address": "Address",
+		"address": "Adres",
 		"good_news": "Good news, {{nickname}}.",
 		"save": "Opslaan",
 		"edit": "Bewerken",
@@ -743,14 +774,19 @@
 		"filter": "Filteren",
 		"are_you_sure": "Bent u zeker?",
 		"set": "Set",
+		"recall": "Recall",
 		"enabled": "Ingeschakeld",
 		"disabled": "Uitgeschakeld",
 		"active": "Actief",
+		"success": "Success",
+		"error": "Error",
 		"preview": "Voorbeeldweergave",
 		"select": "Select",
 		"summary": "Overzicht",
 		"status": "Status",
 		"options": "Opties",
+		"download": "Download",
+		"csv": "CSV",
 		"genders": {
 			"m": "Man",
 			"f": "Vrouw"
@@ -772,10 +808,10 @@
 		"comments": "Comments",
 		"comment": "Comment",
 		"empty_search_results": "There are no items according to the filtering parameters",
-		"add_more_coins": "Add more Coins",
+		"add_more_coins": "Meer Toevoegen Coins",
 		"show_more_games": "Show more games",
-		"warning": "Warning",
-		"new_as_novelty": "New",
+		"warning": "Verdiensten",
+		"new_as_novelty": "Nieuw",
 		"already_member": "Already a member?",
 		"have_account": "Have an account?"
 	},
@@ -820,7 +856,7 @@
 				"retention_email": "Retention email Modified",
 				"casino_cash_balance": "Casino Cash Balance Modified",
 				"commission_connection": "Commission Connection Modified",
-				"payment": "Payment Modified",
+				"payment": "Spel gewijzigd",
 				"affiliate_profile": "Affiliate Profile Modified"
 			},
 			"game": {
@@ -838,11 +874,11 @@
 			},
 			"notifications": {
 				"balance_correction_created": "Balance correction created",
-				"cashout_requested": "Cashout requested",
-				"deposit_made": "Deposit made",
-				"cashout_made": "Cashout made",
+				"cashout_requested": "Uitbetaling aangevraagd",
+				"deposit_made": "Stortingsmogelijkehden",
+				"cashout_made": "Uitbetaling uitgevoerd",
 				"auto_cashout_made": "Auto-cashout made",
-				"cashout_rejected": "Cashout request rejected",
+				"cashout_rejected": "Aanvraag voor uitbetaling verworpen",
 				"deposit_rejected": "Deposit rejected",
 				"user_upload_document": "User Uploaded Document",
 				"payment_created_by_admin": "Admin Created Payment",
@@ -879,6 +915,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -894,6 +931,7 @@
 				"bank_transfer": "Bank Transfer",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "OAuth Application",
 				"bitcoin_payment": "Bitcoin",
 				"ripple_payment": "Ripple"
 			},
@@ -904,6 +942,19 @@
 			"system_name": "%{child} via %{parent}",
 			"all_locked": "For your safety we only allow cashout through payment systems you previously used for deposit. If you have questions, please contact support.",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Bank",
+				"banklocal": "Bank domestic withdrawal",
+				"bankiban": "Bank domestic IBAN withdrawal",
+				"bankintiban": "Bank international IBAN withdrawal",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "Visa",
 				"mastercard": "MasterCard",
 				"online_bank_transfer": "Online banktransfer",
@@ -912,6 +963,7 @@
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
 				"cards": "Credit Cards",
 				"ccard": "Credit Card",
+				"creditcard": "Credit Card",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
 				"eps": "EPS e-payment",
@@ -927,6 +979,7 @@
 				"paysafecard": "paysafecard",
 				"quick": "Quick",
 				"sepa": "SEPA Direct Debit",
+				"skrill": "Skrill",
 				"skrill_direct": "Skrill Direct",
 				"skrill_wallet": "Skrill Digital Wallet",
 				"sofort": "SOFORT Banking",
@@ -990,7 +1043,8 @@
 				"local_bank_transfer": "Local Bank Transfer",
 				"w1": "W1",
 				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"russian_standard": "Russian Standard Bank",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1021,7 +1075,7 @@
 			"loading": "Randomizing ...",
 			"is_unavailable": "Provable fair is not available for this game.",
 			"next_game": "Nieuw spel",
-			"last_game": "Last game",
+			"last_game": "Achternaam",
 			"reel_number": "Reel {{index}}",
 			"fields": {
 				"hash": "Hash (Result + Secret)",
@@ -1066,7 +1120,7 @@
 			"password_confirmation": "Nieuw wachtwoord bevestigen",
 			"current_password": "Enter your current password"
 		},
-		"age_acceptance": "Please confirm that you are over {{age}} years old",
+		"age_acceptance": "Bevestig je ouder bent dan {{age}}",
 		"choose_game": "Kies een spel",
 		"games_played": "Spellen gespeeld",
 		"or": "or",
@@ -1105,7 +1159,7 @@
 			"casino_games": "Casinospellen",
 			"about_casino": "About Casino",
 			"all_games": "Alle spellen",
-			"load_more_games": "Load More Games",
+			"load_more_games": "Laad Meer Games",
 			"rules": "Spelregels",
 			"autoregister": "Autoregister",
 			"quick_register": "Quick Register",
@@ -1115,7 +1169,7 @@
 			"play_for_bitcoin": "Spelen voor Bitcoins",
 			"free_play": "Free Play",
 			"real_play": "Real Play",
-			"play_now": "Play now",
+			"play_now": "Nu afspelen",
 			"join_now": "Join now",
 			"profile": "Profiel",
 			"dice": "Dobbelspel",
@@ -1128,8 +1182,8 @@
 			"sign_up": "Registreren",
 			"register": "Register",
 			"login": "Login",
-			"logout": "Logout",
-			"start_playing": "Start Playing",
+			"logout": "Uitloggen",
+			"start_playing": "Begin met spelen",
 			"forgot_password": "Wachtwoord vergeten?",
 			"didnt_receive_confirmation": "Geen bevestigingsinstructies ontvangen?",
 			"didnt_receive_unlock": "Geen ontgrendelingsinstructies ontvangen?",
@@ -1137,15 +1191,17 @@
 			"settings": "Instellingen"
 		},
 		"captions": {
-			"affiliates": "Affiliates",
+			"affiliates": "Aangesloten partners",
 			"help": "Help",
-			"games": "Games",
+			"games": "Spellen",
 			"quick_links": "Quick links",
 			"languages": "Taal",
 			"info": "Info",
 			"information": "Information",
 			"promotion": "Promotion",
-			"follow_us": "Follow us"
+			"follow_us": "Follow us",
+			"privacy": "Privacy",
+			"corporate": "Corporate"
 		},
 		"actions": {
 			"go_bang": "Go!",
@@ -1199,7 +1255,7 @@
 			"follow_us": "Follow us"
 		},
 		"filters": {
-			"find_your_game": "Find your game"
+			"find_your_game": "Vind je game"
 		},
 		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
 	},
@@ -1219,7 +1275,6 @@
 		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
 	},
 	"documents": {
-		"removed_successfully": "Document was successfully removed",
 		"document": {
 			"edit_description": "Beschrijving bewerken",
 			"approved": "Goedgekeurd",
@@ -1236,18 +1291,47 @@
 	},
 	"formtastic": {
 		"labels": {
+			"clearingNumber": "Clearing number or bank code",
+			"accountNumber": "Account number",
+			"beneficiaryName": "Beneficiary name",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Beneficiary address",
+			"bankName": "Bank name",
+			"branchAddress": "Branch address",
+			"secureId": "Secure ID",
+			"amount": "Bedrag",
+			"account": "Account",
+			"service": "Service",
 			"card_holder": "Card holder",
+			"cardHolder": "Card holder",
 			"credit_card_number": "Credit card number",
+			"encCreditcardNumber": "Card number",
+			"countryCode": "Country",
+			"internalBonusCode": "Bonus code",
 			"cvc": "Card security code",
+			"cvv": "cvv",
 			"expiration_date": "Expiration date",
-			"amount": "Amount",
+			"expiryDate": "Expiry date",
+			"voucherNumber": "Voucher number",
+			"voucherValue": "Voucher value",
+			"email": "Email",
 			"recipient": "Recipient",
+			"phoneNumber": "Phone number",
+			"mobileOperator": "Mobile operator",
+			"username": "Username",
+			"password": "Password",
+			"country": "Country",
 			"document": {
-				"attachment": "Attachment",
-				"description": "Description"
+				"attachment": "Bijlage",
+				"description": "Beschrijving"
 			},
 			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"wallet_address": "Wallet Address",
+			"deposit_form": {
+				"net_account": "Email/Account ID",
+				"secure_id": "Secure ID"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1290,7 +1374,6 @@
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} Issue",
 		"stages": {
 			"wait": "Even wachten",
 			"handle_bets": "Actief",
@@ -1298,30 +1381,30 @@
 			"expired": "Expired",
 			"wager_done": "Inzet uitgevoerd",
 			"lost": "Verloren",
-			"pending": "Pending"
+			"pending": "In behandeling"
 		}
 	},
 	"freespin_issues": {
 		"title": "%{bonus} Issue",
-		"games": "Games",
-		"activate": "Activate",
+		"games": "Spellen",
+		"activate": "Actief",
 		"stages": {
 			"issued": "Issued",
 			"activated": "Activated",
-			"canceled": "Canceled",
+			"canceled": "Geannuleerd",
 			"expired": "Expired",
-			"finished": "Played",
-			"pending": "Pending"
+			"finished": "Speler",
+			"pending": "In behandeling"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "You received {{freespins_count}} bonus free spins in {{games}}.",
+			"activation_prompt_html": "To activate free spins go to {{link}}."
 		}
 	},
 	"games": {
 		"title": "Casinospellen",
 		"categories": {
-			"all": "All Games",
+			"all": "Alle spellen",
 			"card": "Kaartspellen",
 			"poker": "Pokerspellen",
 			"table": "Table Games",
@@ -1330,13 +1413,14 @@
 			"video_poker": "Video Poker",
 			"blackjack": "Blackjack",
 			"bingo": "Bingo",
-			"live": "Live",
+			"live": "Lijn",
 			"fruit": "Fruit Slots",
 			"theme": "Theme Slots",
 			"casual": "Casual",
 			"lottery": "Lottery",
 			"keno": "Keno",
 			"progressive": "Progressive",
+			"jackpot": "Games with Jackpot",
 			"stat": {
 				"most_popular": "Meest populair",
 				"new": "Nieuw",
@@ -1349,13 +1433,16 @@
 			}
 		},
 		"providers": {
-			"all": "All Providers",
+			"all": "Alle Providers",
 			"softswiss": "SoftSwiss",
 			"amatic": "Amatic",
 			"betsoftgaming": "BetSoft Gaming",
 			"casinotechnology": "Casino Technology",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1397,7 +1484,7 @@
 				"switch": "Hoog-laag omschakelen"
 			},
 			"casual": {
-				"horse_racing": "Horse Racing",
+				"horse_racing": "Paardenrennen",
 				"minesweeper": "Minesweeper",
 				"heads_tails": "Heads and Tails",
 				"scratch_dice": "Scratch Dice"
@@ -1453,10 +1540,12 @@
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "Gefactureerd van",
-		"billed_to": "Gefactureerd aan",
+		"billed_from": "From",
+		"billed_to": "To",
 		"paid": "Betaald",
-		"submit": "Indienen"
+		"submit": "Indienen",
+		"billed": "Billed:",
+		"not_billed": "Not Billed:"
 	},
 	"affiliate_links": {
 		"add": "Add Link",
@@ -1522,8 +1611,8 @@
 		"form": {
 			"name_hint": "Identification for your private use only"
 		},
-		"add": "Create affiliate profile",
-		"add_link": "Create affiliate profile link",
+		"add": "Partnerlink creëren",
+		"add_link": "Partnerlink creëren",
 		"strategy": "Betaalschema",
 		"bills": {
 			"bills": "Facturen",
@@ -1559,9 +1648,9 @@
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Free spins"
 		},
-		"gift": "Gift"
+		"gift": "Geschenk"
 	},
 	"profiles": {
 		"menu": {
@@ -1570,13 +1659,13 @@
 			"bonuses": "Bonussen",
 			"affiliate": "Aangesloten partners",
 			"profile": "Profile Info",
-			"documents": "Documents"
+			"documents": "Documenten"
 		},
 		"info": {
 			"personal": "Personal"
 		},
 		"index": {
-			"my_account": "My Account",
+			"my_account": "Mijn account",
 			"my_bets": "My Bets",
 			"transaction": "Transaction",
 			"welcome": "Welkom",
@@ -1587,7 +1676,7 @@
 			"edit_profile": "Profiel bewerken",
 			"edit_settings": "Instellingen bewerken",
 			"attach_documents": "Documenten toevoegen",
-			"change_credentials": "Change password",
+			"change_credentials": "Wachtwoord wijzigen",
 			"set_email_and_password": "Set email and password",
 			"create_cashout_request": "Uitbetaling",
 			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
@@ -1603,7 +1692,7 @@
 			},
 			"accounts": {
 				"title": "Accounts",
-				"available_to_cashout": "Available to cash out",
+				"available_to_cashout": "Beschikbaar voor uitbetalen",
 				"add_currency": "Add currency"
 			},
 			"bonuses": {
@@ -1635,10 +1724,10 @@
 			"payments_history": "Transactiegeschiedenis",
 			"bets_history": "Bonusgeschiedenis",
 			"bonuses_history": "Bonusgeschiedenis",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Free spins History",
 			"deposit_to_address_hint": "Gelieve te storten naar dit adres om uw account te storten.",
 			"freespin_bonuses": {
-				"bonus_canceled": "Bonus canceled",
+				"bonus_canceled": "Bonus geannuleerd",
 				"bonus_not_canceled": "Failed to cancel bonus",
 				"bonus_activated": "Bonus was activated",
 				"bonus_not_activated": "Bonus was not activated"
@@ -1677,22 +1766,25 @@
 		"bonus_code_hide": "Hide Bonus Code",
 		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
 		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
-		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
-		"invalid_profile_message": "To be able to cash out, you must fill in the required fields in your Profile.",
+		"invalid_profile_message": {
+			"deposit": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+			"cashout": "To be able to cash out, you must fill in the required fields in your Profile."
+		},
 		"try_again": "Transaction could not be initiated due to connection problems. If the problem persists, please contact our support.",
-		"select_currency": "Select Balance Currency",
+		"select_currency": "Selecteer Balance Valuta",
 		"select_currency_hint": {
-			"deposit": "I would like to top up my balance in",
+			"deposit": "Ik wil graag naar boven mijn balans in",
 			"cashout": "I would like to cash out"
 		},
 		"select_payment_method": "Select Payment Method",
+		"saved_methods": "Your Saved Payment Options",
 		"current_balance": {
 			"deposit": "Your current balance: {{money}}.",
-			"cashout": "Available to cash out: {{money}}. Please refer to {{balance_link}} page for detailed break down."
+			"cashout": "Beschikbaar voor uitbetalen: {{money}}. Raadpleeg de pagina {{balance_link}} voor gedetailleerde uitsplitsing."
 		},
 		"payment_methods": {
 			"empty": "There are no available payment methods for this currency.",
-			"pay_with_cubits": "Pay with Cubits"
+			"pay_with_cubits": "Betalen met Cubits"
 		},
 		"limits": {
 			"currency": "Payment {{currency}}",
@@ -1703,7 +1795,8 @@
 		"processing_time": {
 			"instantly": "Instantly",
 			"range": "%{min}-%{max} banking days"
-		}
+		},
+		"cubits_not_available": "Cubits is not available now. Try again later."
 	},
 	"security_check": {
 		"user_is_suspicious": "Gebruiker is verdacht",
@@ -1797,13 +1890,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "Uw aanvraag voor uitbetaling werd goedgekeurd"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "Onvoldoende saldo voor uitbetaling",
-			"body": "Uw uitbetaling is gedeactiveerd omdat het saldo van de account niet volstond. Gelieve een nieuwe aanvraag voor uitbetaling in te dienen overeenkomstig het huidige saldo."
-		},
-		"address_confirmation_required": {
-			"subject": "Cashout address confirmation required"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Cashout address confirmation required",
+			"deposit_made": "Your deposit received",
+			"cashout_approved": "Your cashout request was approved",
+			"freespin_bonus_issued": "Freespins awarded",
+			"welcome": "Welcome",
+			"no_deposit": "You have not made a deposit",
+			"nth_deposit": "We are waiting for your deposit",
+			"welcome_promo": "Visit us again",
+			"confirmation_instructions": "Confirmation instructions",
+			"reset_password_instructions": "Reset password instructions",
+			"unlock_instructions": "Unlock instructions"
 		}
 	},
 	"activemodel": {
@@ -1812,10 +1913,10 @@
 				"affiliate_forms/assign_commission": {
 					"attributes": {
 						"from_date": {
-							"must_be_in_future": "must be in future"
+							"must_be_in_future": "moet in de toekomst zijn"
 						},
 						"to_date": {
-							"must_be_in_future": "must be in future",
+							"must_be_in_future": "moet in de toekomst zijn",
 							"must_be_less_then_from": "must be less then From"
 						}
 					}
@@ -1830,14 +1931,14 @@
 				"casino_cash_balance/balance_options": {
 					"attributes": {
 						"base": {
-							"rules_error": "You have errors in rules"
+							"rules_error": "Er zijn fouten in de regels"
 						}
 					}
 				},
 				"commissions/registration_settings": {
 					"attributes": {
 						"base": {
-							"rules_error": "You have errors in rules"
+							"rules_error": "Er zijn fouten in de regels"
 						}
 					}
 				},
@@ -1857,7 +1958,7 @@
 			},
 			"affiliate_forms/assign_commission": {
 				"from_date": "From",
-				"to_date": "To"
+				"to_date": "Tot"
 			},
 			"newsletters_filter": {
 				"tag": "User tag",
@@ -1869,12 +1970,6 @@
 				"payments_currency": "Payments currency"
 			}
 		}
-	},
-	"retention_mailer": {
-		"welcome": "Welkom",
-		"no_deposit": "You haven't made a deposit",
-		"nth_deposit": "We are waiting for your deposit",
-		"welcome_promo": "Visit us again"
 	},
 	"jackpot": {
 		"jackpots": "Jackpots"
@@ -1933,8 +2028,15 @@
 		"casinotechnology": "CasinoTechnology",
 		"timeout_message": "Game provider's server has not responded. Please retry later."
 	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
+	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
+	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "To play this game you need to fill in at least First Name, Last Name, Date of Birth and Country"
 	},
 	"quickfire_api": {
 		"quickfire": "QuickFire"

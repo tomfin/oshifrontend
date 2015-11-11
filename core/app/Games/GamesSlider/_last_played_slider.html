@@ -1,8 +1,11 @@
-<span>
-<ul class="footer__subnav" ng-controller="Game" data-uix-bxslider="">
-    <li class="footer__subnav-item" ng-repeat="game in games | gameDevice: device | gameCurrency : data.user.currency | lastPlayedGames: lastPlayed.get_list() : true | orderByArray: 'id': lastPlayed.get_list() | limitTo: 100 track by $index" data-notify-when-repeat-finished>
-        <ng-include src="'/app/Games/GamesSlider/_game_slider_item.html'"></ng-include>
-    </li>
-
-</ul>
-</span>
+<div>
+    <ul class="footer__subnav" ng-controller="Game" data-uix-bxslider="">
+        <li class="footer__subnav-item" ng-repeat="identifier in lastPlayed.last_played_list | limitTo: limit_count" data-notify-when-repeat-finished>
+            <div ng-init="game = gamesData.getByIdentifier(identifier)">
+                <div  ng-if="game">
+                    <ng-include src="'/app/Games/GamesSlider/_game_slider_item.html'"></ng-include>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

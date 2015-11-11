@@ -97,6 +97,14 @@
 						}
 					}
 				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Was created too much time ago",
+							"has_affiliate_profiles": "Has affiliate profiles"
+						}
+					}
+				},
 				"user": {
 					"attributes": {
 						"password": {
@@ -168,6 +176,18 @@
 			"retention_email": "задържани имейл"
 		},
 		"attributes": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Casino Cash Balance Name",
+				"casino_cash_balance_id": "Casino Cash Balance ID",
+				"action": "Action",
+				"change_amount": "Change amount",
+				"amount_after_change": "Amount after change",
+				"subject": "Subject",
+				"processed_at": "Processed at",
+				"comment": "Comment",
+				"currency": "Currency"
+			},
 			"balance_correction": {
 				"action": "Action",
 				"amount": "Amount",
@@ -287,9 +307,9 @@
 			"freespin_issue": {
 				"stage": "Stage",
 				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
+				"freespins_total": "Free spins awarded",
 				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
+				"win_amount_cents": "Already won",
 				"valid_until": "Expiry date",
 				"extra": "Extra info",
 				"external_id": "External ID",
@@ -701,7 +721,18 @@
 			"link_to_root": "Here is a link to our start page:"
 		}
 	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Document was successfully uploaded"
+			},
+			"destroy": {
+				"notice": "Document was successfully removed"
+			}
+		}
+	},
 	"common": {
+		"required": "Required",
 		"in_out": "IN/OUT",
 		"players": "Players",
 		"email": "Е-поща",
@@ -743,14 +774,19 @@
 		"filter": "Филтър",
 		"are_you_sure": "Сигурни ли сте?",
 		"set": "Set",
+		"recall": "Recall",
 		"enabled": "Включено",
 		"disabled": "Изключено",
 		"active": "Активна",
+		"success": "Success",
+		"error": "Error",
 		"preview": "Преглед",
 		"select": "Select",
 		"summary": "Обобщение",
 		"status": "Статус",
 		"options": "Опции",
+		"download": "Download",
+		"csv": "CSV",
 		"genders": {
 			"m": "Мъж",
 			"f": "Жена"
@@ -879,6 +915,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -894,6 +931,7 @@
 				"bank_transfer": "Bank Transfer",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "OAuth Application",
 				"bitcoin_payment": "Bitcoin",
 				"ripple_payment": "Ripple"
 			},
@@ -904,6 +942,19 @@
 			"system_name": "%{child} via %{parent}",
 			"all_locked": "За вашата безопасност ние позволяваме теглене чрез платежни системи, които сте използвали преди това за депозит. Ако имате въпроси, моля, свържете се с поддръжката.",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Bank",
+				"banklocal": "Bank domestic withdrawal",
+				"bankiban": "Bank domestic IBAN withdrawal",
+				"bankintiban": "Bank international IBAN withdrawal",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "Visa",
 				"mastercard": "MasterCard",
 				"online_bank_transfer": "Online Bank Transfer",
@@ -912,6 +963,7 @@
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
 				"cards": "Credit Cards",
 				"ccard": "Кредитна карта",
+				"creditcard": "Credit Card",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
 				"eps": "EPS e-payment",
@@ -927,6 +979,7 @@
 				"paysafecard": "Paysafecard",
 				"quick": "Бързо",
 				"sepa": "SEPA Direct Debit",
+				"skrill": "Skrill",
 				"skrill_direct": "Skrill Директен",
 				"skrill_wallet": "Skrill Дигитален Портфейл",
 				"sofort": "SOFORT Banking",
@@ -990,7 +1043,8 @@
 				"local_bank_transfer": "Local Bank Transfer",
 				"w1": "W1",
 				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"russian_standard": "Russian Standard Bank",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1145,7 +1199,9 @@
 			"info": "Info",
 			"information": "Информация",
 			"promotion": "Промоция",
-			"follow_us": "Следвайте ни"
+			"follow_us": "Следвайте ни",
+			"privacy": "Privacy",
+			"corporate": "Corporate"
 		},
 		"actions": {
 			"go_bang": "Старт!",
@@ -1219,7 +1275,6 @@
 		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
 	},
 	"documents": {
-		"removed_successfully": "Document was successfully removed",
 		"document": {
 			"edit_description": "Редактиране на описанието",
 			"approved": "Одобрен",
@@ -1236,18 +1291,47 @@
 	},
 	"formtastic": {
 		"labels": {
-			"card_holder": "Притежател на картата",
-			"credit_card_number": "Номер на кредитна карта",
-			"cvc": "Карт код за сигурност",
-			"expiration_date": "Дата на изтичане",
+			"clearingNumber": "Clearing number or bank code",
+			"accountNumber": "Account number",
+			"beneficiaryName": "Beneficiary name",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Beneficiary address",
+			"bankName": "Bank name",
+			"branchAddress": "Branch address",
+			"secureId": "Secure ID",
 			"amount": "Amount",
+			"account": "Account",
+			"service": "Service",
+			"card_holder": "Притежател на картата",
+			"cardHolder": "Card holder",
+			"credit_card_number": "Номер на кредитна карта",
+			"encCreditcardNumber": "Card number",
+			"countryCode": "Country",
+			"internalBonusCode": "Bonus code",
+			"cvc": "Карт код за сигурност",
+			"cvv": "cvv",
+			"expiration_date": "Дата на изтичане",
+			"expiryDate": "Expiry date",
+			"voucherNumber": "Voucher number",
+			"voucherValue": "Voucher value",
+			"email": "Email",
 			"recipient": "Recipient",
+			"phoneNumber": "Phone number",
+			"mobileOperator": "Mobile operator",
+			"username": "Username",
+			"password": "Password",
+			"country": "Country",
 			"document": {
 				"attachment": "Attachment",
 				"description": "Description"
 			},
 			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"wallet_address": "Wallet Address",
+			"deposit_form": {
+				"net_account": "Email/Account ID",
+				"secure_id": "Secure ID"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1290,7 +1374,6 @@
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} Issue",
 		"stages": {
 			"wait": "Изчакване",
 			"handle_bets": "Активна",
@@ -1314,8 +1397,8 @@
 			"pending": "Pending"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "You received {{freespins_count}} bonus free spins in {{games}}.",
+			"activation_prompt_html": "To activate free spins go to {{link}}."
 		}
 	},
 	"games": {
@@ -1337,6 +1420,7 @@
 			"lottery": "Лотария",
 			"keno": "Keno",
 			"progressive": "Progressive",
+			"jackpot": "Games with Jackpot",
 			"stat": {
 				"most_popular": "Най-популярни",
 				"new": "Нов",
@@ -1355,7 +1439,10 @@
 			"betsoftgaming": "BetSoft Gaming",
 			"casinotechnology": "Casino Technology",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1453,10 +1540,12 @@
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "Обявен От",
-		"billed_to": "фактурирана",
+		"billed_from": "From",
+		"billed_to": "To",
 		"paid": "Платен",
-		"submit": "Изпращане"
+		"submit": "Изпращане",
+		"billed": "Billed:",
+		"not_billed": "Not Billed:"
 	},
 	"affiliate_links": {
 		"add": "Add Link",
@@ -1559,7 +1648,7 @@
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Free spins"
 		},
 		"gift": "Gift"
 	},
@@ -1635,7 +1724,7 @@
 			"payments_history": "Транзакции История",
 			"bets_history": "Залозите История",
 			"bonuses_history": "Бонус История",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Free spins History",
 			"deposit_to_address_hint": "Сложете депозит на този адрес, за да захраните Вашата сметка.",
 			"freespin_bonuses": {
 				"bonus_canceled": "Bonus canceled",
@@ -1677,8 +1766,10 @@
 		"bonus_code_hide": "Hide Bonus Code",
 		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
 		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
-		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
-		"invalid_profile_message": "За да можете да теглите, трябва да попълните необходимите полета във вашия профил.",
+		"invalid_profile_message": {
+			"deposit": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+			"cashout": "To be able to cash out, you must fill in the required fields in your Profile."
+		},
 		"try_again": "Tранзакция не може да започне поради проблеми с връзката. Ако проблемът продължава, моля свържете се с нашата поддръжка.",
 		"select_currency": "Изберете баланс валута",
 		"select_currency_hint": {
@@ -1686,6 +1777,7 @@
 			"cashout": "Бих искал да ги изтеглия"
 		},
 		"select_payment_method": "Изберете метод на плащане",
+		"saved_methods": "Your Saved Payment Options",
 		"current_balance": {
 			"deposit": "Текущият ви баланс е: {{money}}.",
 			"cashout": "Предлага се cashout:% {пари}. Моля, консултирайте се с% {баланс връзка} страница за подробности не работи."
@@ -1703,7 +1795,8 @@
 		"processing_time": {
 			"instantly": "Instantly",
 			"range": "%{min}-%{max} banking days"
-		}
+		},
+		"cubits_not_available": "Cubits is not available now. Try again later."
 	},
 	"security_check": {
 		"user_is_suspicious": "Потребителят е подозрителен",
@@ -1797,13 +1890,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "Заявката за cash out беше одобрена"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "Недостатъчен баланс по сметката за cash out",
-			"body": "Вашият cash out е невъзможен, тъй като салдото по сметката става. Моля, изпратете ново cash out искане според текущатият баланс."
-		},
-		"address_confirmation_required": {
-			"subject": "Cashout address confirmation required"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Cashout address confirmation required",
+			"deposit_made": "Your deposit received",
+			"cashout_approved": "Your cashout request was approved",
+			"freespin_bonus_issued": "Freespins awarded",
+			"welcome": "Welcome",
+			"no_deposit": "You have not made a deposit",
+			"nth_deposit": "We are waiting for your deposit",
+			"welcome_promo": "Visit us again",
+			"confirmation_instructions": "Confirmation instructions",
+			"reset_password_instructions": "Reset password instructions",
+			"unlock_instructions": "Unlock instructions"
 		}
 	},
 	"activemodel": {
@@ -1870,12 +1971,6 @@
 			}
 		}
 	},
-	"retention_mailer": {
-		"welcome": "Добре дошли",
-		"no_deposit": "Вие не сте направили депозит",
-		"nth_deposit": "Чакаме ви депозит",
-		"welcome_promo": "Посетете ни отново"
-	},
 	"jackpot": {
 		"jackpots": "Jackpots"
 	},
@@ -1933,8 +2028,15 @@
 		"casinotechnology": "CasinoTechnology",
 		"timeout_message": "Game provider's server has not responded. Please retry later."
 	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
+	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
+	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "To play this game you need to fill in at least First Name, Last Name, Date of Birth and Country"
 	},
 	"quickfire_api": {
 		"quickfire": "QuickFire"

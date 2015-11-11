@@ -6,7 +6,7 @@ CasinoServices
             remove: {method: 'DELETE'}
         });
     }])
-    .factory('FavoriteList', ['Favorite', 'Auth', '$rootScope', function (Favorite, Auth, $rootScope) {
+    .factory('FavoriteList', ['Favorite', 'Auth', '$rootScope', 'GamesData', function (Favorite, Auth, $rootScope, GamesData) {
         var favorite_list = [],
             user = Auth.user,
             get_list = function () {
@@ -26,21 +26,46 @@ CasinoServices
                 favorite_list.push(id);
             },
             remove = function (id) {
-                Favorite.remove({id: id});
-                favorite_list.splice(favorite_list.indexOf(id), 1);
+                var game_position = favorite_list.indexOf(id);
+                if (game_position > -1) {
+                    Favorite.remove({id: id});
+                    favorite_list.splice(game_position, 1);
+                }
             },
-            favorite = function (id) {
-                if (isFavorite(id)) {
-                    remove(id);
+            favorite = function (game) {
+                var id;
+                if (typeof game == 'object') {
+                    id = GamesData.getGameByCurrency(game).id;
+                } else {
+                    id = game;
+                }
+                if (isFavorite(game)) {
+                    if (typeof game == 'object') {
+                        for (var key in game.currencies) {
+                            remove(game.currencies[key].id);
+                        }
+                    } else {
+                        remove(id);
+                    }
                 } else {
                     add(id);
                 }
             },
-            isFavorite = function (id) {
+            isFavorite = function (game) {
                 var res = false;
-                if (favorite_list.indexOf(id) > -1) {
-                    res = true;
+                if (typeof game == 'object') {
+                    for (var currency in game.currencies) {
+                        if (favorite_list.indexOf(game.currencies[currency].id) > -1) {
+                            res = true;
+                            break;
+                        }
+                    }
+                } else {
+                    if (favorite_list.indexOf(game) > -1) {
+                        res = true;
+                    }
                 }
+
                 return res;
             };
 

@@ -482,9 +482,9 @@ li {
 ******************************/
 .main {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     position: relative;
-    padding: 81px 0 325px;
+    padding: 81px 0 0;
 }
 
 .inner {
@@ -716,8 +716,8 @@ header .profile-username .caret {
 /*btstrp*/
 .caret {
     position: absolute;
-    top: 6px;
-    right: 11px;
+    top: 9px;
+    right: 6px;
 }
 
 .dropdown {
@@ -783,7 +783,7 @@ header .profile-username .caret {
 /*promo box*/
 .main_promo_area {
     margin: 0 -15px;
-    padding-bottom: 43px;
+    padding-bottom: 23px;
     background-color: #fff;
 }
 
@@ -848,6 +848,7 @@ header .profile-username .caret {
 .page-container {
     padding: 20px 0;
     overflow: hidden;
+    min-height: 600px;
 }
 
 .form_fast_login {
@@ -976,7 +977,7 @@ header .profile-username .caret {
 }
 
 .winners .nav-tabs {
-    margin-bottom: 15px;
+    margin-bottom: 0;
     border-bottom: none;
 }
 
@@ -1007,7 +1008,7 @@ header .profile-username .caret {
 
 .winners .nav-tabs a {
     display: block;
-    padding: 16px 5px 8px;
+    padding: 0px 5px 8px;
     border-bottom: 5px solid transparent;
     color: #737373;
     font-size: 16px;
@@ -1336,7 +1337,7 @@ header .profile-username .caret {
 .current .left_menu_link:after {
     content: '\f178';
     position: relative;
-    display: inline-block;
+    display: none;
     top: -1px;
     margin-left: 9px;
     font-size: 14px;
@@ -1538,7 +1539,7 @@ header .profile-username .caret {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #d0d4db;
+    background-color: rgba(208, 212, 219, 0.5);
     opacity: 0;
     overflow: hidden;
     z-index: 1;
@@ -1563,7 +1564,7 @@ header .profile-username .caret {
 
 .item_actions .btn-game-alter:hover,
 .item_actions .btn-game-alter:focus {
-    color: #3A8856;
+    color: #fff;
 }
 
 .item_actions .btn-game:hover,
@@ -1579,7 +1580,6 @@ header .profile-username .caret {
 .table>tfoot>tr>td {
      vertical-align: middle;
 }
-
 
 .item_actions .btn-game-alter {
     height: 24px;
@@ -1648,6 +1648,7 @@ header .profile-username .caret {
 }
 
 .catalog_list_item:hover .item_actions .btn-game-alter {
+    color: #fff;
     top: 29px;
 }
 
@@ -1722,8 +1723,13 @@ header .profile-username .caret {
 }
 
 /*pay links*/
-.pay_links {
+
+.pay_links_wrap {
     padding: 70px 40px 55px;
+
+}
+
+.pay_links {
     text-align: center;
     letter-spacing: 27px;
 }
@@ -1737,8 +1743,22 @@ header .profile-username .caret {
 .pay_link {
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 15px;
-    background: url(/resources/images/icons_payments.png) 0 0 no-repeat;
+    margin: 15px 10px;
+    /*background: url(/resources/images/icons_payments.png) 0 0 no-repeat;*/
+}
+
+.pay_link img {
+    opacity: 0.75;
+    height: 35px;
+}
+
+a.pay_link:hover img {
+    opacity: 1;
+}
+
+.responsibility .pay_link img {
+    height: 40px;
+    opacity: 1;
 }
 
 .pl_ico_unn_pay {
@@ -1856,6 +1876,7 @@ footer {
 
 footer > .inner {
     min-height: 139px;
+    padding-bottom: 30px;
 }
 
 .foo_out_links {
@@ -2196,6 +2217,7 @@ footer > .inner {
 ******************************/
 .carousel-inner > .item {
     position: relative;
+    left: 0;
     display: none;
     -webkit-transition: .6s ease-in-out left;
     -o-transition: .6s ease-in-out left;
@@ -2474,7 +2496,8 @@ tbody.collapse.in{display:table-row-group;}
         background-image: linear-gradient(#606060 0%, #3E3E3E 100%);
     }
 
-    .foo_menu_item:hover {
+    .foo_menu_item:hover,
+    .foo_menu_item:focus {
         color: #fff;
     }
 
@@ -2484,7 +2507,7 @@ tbody.collapse.in{display:table-row-group;}
 
     .dropdown-menu > li > a:hover {
         background-color: #286dbb;
-        color: #fff;
+        color: #000;
         text-decoration: none;
     }
 
@@ -2602,6 +2625,10 @@ tbody.collapse.in{display:table-row-group;}
     footer {
         padding-bottom: 30px;
     }
+}
+
+.games_wrap {
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -5106,4 +5133,16 @@ tbody.collapse.in{display:table-row-group;}
 
 .fa-medium:before {
     content: "\f23a";
+}
+
+label sup {
+    color: red;
+    font-size: 14px;
+    font-size: 1.4rem;
+    top: 0;
+}
+
+.mf__radio {
+    display: inline-block;
+    padding-right: 15px;
 }

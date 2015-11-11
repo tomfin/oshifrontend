@@ -12,7 +12,7 @@
             <span ng-repeat="(error_key, error_value) in login.errors.password" class="help-inline" translate="{{error_value}}"></span>
         </div>
         <div class="form-group">
-            <a ui-sref="users_password_new" href="" translate="frontend.links.forgot_password"></a>
+            <a ui-sref="app.users_password_new({lang:'{{currentLocale}}'})" href="" translate="frontend.links.forgot_password"></a>
         </div>
         <div class="form-group">
             <label class="control-label">&nbsp;</label>

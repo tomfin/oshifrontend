@@ -5,7 +5,7 @@ var plugins = require('gulp-load-plugins')({
     lazy: false
 });
 
-var DEV_MODE = !!plugins.util.env.dev; 
+var DEV_MODE = !!plugins.util.env.dev;
 /*var DEV_MODE = true; */
 
 var publicDir = plugins.path.resolve('./build');
@@ -164,7 +164,7 @@ function images(callback) {
     gulp.src(['_project/app/resources/**', '!_project/app/resources/**css', '!_project/app/resources/css/**'])
         .pipe(gulp.dest(publicDir + '/resources'))
     	.on('error', plugins.util.log);
-    
+
     gulp.src(['_project/app/images/theme/oshi/**'])
     	.pipe(gulp.dest(publicDir + '/images/theme/oshi'))
         .on('end', callback || function() {})
@@ -177,7 +177,7 @@ function files(callback) {
     gulp.src(['_project/app/robots.txt', '_project/app/favicon*', '_project/app/android-icon*', '_project/app/apple-icon*', '_project/app/ms-icon*', '_project/app/browserconfig.xml', '_project/app/manifest.json'])
         .pipe(gulp.dest(publicDir))
     	.on('error', plugins.util.log);
-    
+
     gulp.src(['_project/app/resources/css/styles.css'])
     	.pipe(gulp.dest(publicDir + '/resources/profile/css'))
     	.on('end', callback || function() {})
@@ -319,7 +319,7 @@ server.all('/*', function(req, res) {
 
 gulp.task('watch', ['buildDev'], function () {
     gulp.start('site:open');
-	
+
     plugins.watch(['app/**/*', 'core/**/*'],
         plugins.batch(function (events, done) {
             gulp.start('build', function (){

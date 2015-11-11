@@ -19,7 +19,7 @@ CasinoControllers
             //FIXME
             var parts = $stateParams.id.split('/');
             if (parts.length == 2 && parts[0] == 'games') {
-                $state.go('games_category', {category: parts[1]});
+                $state.go('app.games_category', {category: parts[1], lang: $rootScope.currentLocale});
                 return false;
             }
 
@@ -36,7 +36,7 @@ CasinoControllers
                 //TODO remove id when fix on clients
                 var path = $stateParams.id || $stateParams.path;
                 if (pages.indexOf(path) > -1) {
-                    $state.go('cms', {path: path});
+                    $state.go('app.cms', {path: path, lang: $rootScope.currentLocale});
                     pages = [];
                 } else {
                     //TODO return when possible

@@ -3,11 +3,11 @@
 		"messages": {
 			"taken_in_past": "이미 사용중입니다.",
 			"equal_to_current_password": "현재의 비밀번호와 달라야 됩니다!",
-			"already_confirmed": "(은)는 이미 인증되었습니다. 다시 로그인해 보세요",
-			"confirmation_period_expired": "%{period} 이내에 이메일 인증을 해야 합니다. 새로 요청해 주세요",
-			"expired": "(이)가 만료되었습니다 새로 요청해 주세요.",
+			"already_confirmed": "은(는) 이미 인증되었습니다. 다시 로그인해 보세요.",
+			"confirmation_period_expired": "%{period} 이내에 이메일 인증을 해야 합니다. 새로 요청해 주세요.",
+			"expired": "이(가) 만료되었습니다 새로 요청해 주세요.",
 			"not_found": "찾을 수 없습니다.",
-			"not_locked": "(은)는 잠기지 않았습니다.",
+			"not_locked": "은(는) 잠기지 않았습니다.",
 			"not_saved": "%{count}개의 오류로 인해 %{resource} 저장이 금지 되었습니다."
 		}
 	},
@@ -56,15 +56,15 @@
 		},
 		"passwords": {
 			"no_token": "비밀번호 재설정 이메일을 거치지 않고 이 페이지에 접근할 수 없습니다. 비밀번호 재설정 이메일에서 오셨다면, 주소가 제대로 되었는지 확인해 주세요.",
-			"send_instructions": "잠시후에 비밀번호 재설정 지침 메일을 받을 수 있습니다.",
+			"send_instructions": "잠시 후에 비밀번호 재설정 지침 메일을 받을 수 있습니다.",
 			"send_paranoid_instructions": "이메일이 데이터베이스에 존재할 경우, 몇 분 안에 비밀번호 재설정 주소를 이메일로 받으실 수 있습니다.",
 			"updated": "성공적으로 비밀번호를 변경했습니다. 로그인 되었습니다.",
 			"updated_not_active": "비밀번호가 성공적으로 변경되었습니다."
 		},
 		"registrations": {
-			"destroyed": "안녕! 계정이 성공적으로 탈퇴되었습니다. 다시 볼 수 있기 바랍니다.",
-			"signed_up": "환영합니다! 성공적으로 로그인되었습니다.",
-			"signed_up_but_inactive": "성공적으로 가입되었지만, 아직 계정이 활성화되어 있지 않아 로그인 할 수 없습니다..",
+			"destroyed": "안녕히 가세요! 계정이 성공적으로 탈퇴되었습니다. 다시 볼 수 있기를 바랍니다.",
+			"signed_up": "환영합니다! 성공적으로 가입되었습니다.",
+			"signed_up_but_inactive": "성공적으로 가입되었지만, 아직 계정이 활성화되어 있지 않아 로그인 할 수 없습니다.",
 			"signed_up_but_locked": "성공적으로 가입되었지만, 계정이 잠겨있어 로그인 할 수 없습니다.",
 			"signed_up_but_unconfirmed": "인증 주소가 포함된 메시지를 이메일 주소로 보냈습니다. 계정을 활성화하기 위해 메일을 확인하세요.",
 			"update_needs_confirmation": "계정이 성공적으로 수정되었지만, 새로운 이메일 주소를 확인해야 합니다. 이메일로 전송된 이메일 인증 주소를 클릭하여 새로운 이메일 주소를 인증해 주세요.",
@@ -77,7 +77,7 @@
 		},
 		"unlocks": {
 			"send_instructions": "잠시 후 이메일로 계정 잠금 해제 지침을 받아보실 수 있습니다.",
-			"send_paranoid_instructions": "계정이 존재하면, 잠시 후 이메일로 계정 잠금 해제 지침을 받아보실 수 있습니다.",
+			"send_paranoid_instructions": "계정이 존재한다면, 잠시 후 이메일로 계정 잠금 해제 지침을 받아보실 수 있습니다.",
 			"unlocked": "계정이 성공적으로 잠금 해제되었습니다. 로그인하여 계속해 주세요."
 		}
 	},
@@ -91,6 +91,14 @@
 							"has_query_parameter": "쿼리 매개 변수가 들어 있을 수 없습니다.",
 							"invalid_uri": "유효한 URI이 필요합니다.",
 							"relative_uri": "절대 URL이 필요합니다"
+						}
+					}
+				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Was created too much time ago",
+							"has_affiliate_profiles": "Has affiliate profiles"
 						}
 					}
 				},
@@ -165,6 +173,18 @@
 			"retention_email": "이메일 기억 이메일 기억"
 		},
 		"attributes": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Casino Cash Balance Name",
+				"casino_cash_balance_id": "Casino Cash Balance ID",
+				"action": "Action",
+				"change_amount": "Change amount",
+				"amount_after_change": "Amount after change",
+				"subject": "Subject",
+				"processed_at": "Processed at",
+				"comment": "Comment",
+				"currency": "Currency"
+			},
 			"balance_correction": {
 				"action": "Action",
 				"amount": "Amount",
@@ -284,9 +304,9 @@
 			"freespin_issue": {
 				"stage": "Stage",
 				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
+				"freespins_total": "Free spins awarded",
 				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
+				"win_amount_cents": "Already won",
 				"valid_until": "Expiry date",
 				"extra": "Extra info",
 				"external_id": "External ID",
@@ -698,7 +718,18 @@
 			"link_to_root": "Here is a link to our start page:"
 		}
 	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Document was successfully uploaded"
+			},
+			"destroy": {
+				"notice": "Document was successfully removed"
+			}
+		}
+	},
 	"common": {
+		"required": "Required",
 		"in_out": "IN/OUT",
 		"players": "플레이어",
 		"email": "이메일",
@@ -740,14 +771,19 @@
 		"filter": "필터",
 		"are_you_sure": "정말로 그렇게 하시겠습니까?",
 		"set": "설정",
+		"recall": "Recall",
 		"enabled": "사용중",
 		"disabled": "사용중지",
 		"active": "사용중",
+		"success": "Success",
+		"error": "Error",
 		"preview": "미리보기",
 		"select": "선택하기",
 		"summary": "요약",
 		"status": "상태",
 		"options": "옵션",
+		"download": "Download",
+		"csv": "CSV",
 		"genders": {
 			"m": "남성",
 			"f": "여성"
@@ -876,6 +912,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -891,6 +928,7 @@
 				"bank_transfer": "은행 간환",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "OAuth Application",
 				"bitcoin_payment": "비트코인",
 				"ripple_payment": "Ripple"
 			},
@@ -901,6 +939,19 @@
 			"system_name": "%{child} via %{parent}",
 			"all_locked": "당신의 안전을 위해 이전에 예금하기 위해 사용한 지불 기법으로만 캐시아웃할 수 있습니다. 질문이 있으면 우리 지원으로 연락해 주십시오.",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Bank",
+				"banklocal": "Bank domestic withdrawal",
+				"bankiban": "Bank domestic IBAN withdrawal",
+				"bankintiban": "Bank international IBAN withdrawal",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "비자카드",
 				"mastercard": "마스터카드",
 				"online_bank_transfer": "오라인 은행 간환",
@@ -909,6 +960,7 @@
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
 				"cards": "Credit Cards",
 				"ccard": "신용카드",
+				"creditcard": "Credit Card",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
 				"eps": "이피에스",
@@ -924,6 +976,7 @@
 				"paysafecard": "페이세이프카드",
 				"quick": "Quick",
 				"sepa": "SEPA Direct Debit",
+				"skrill": "Skrill",
 				"skrill_direct": "Skrill Direct",
 				"skrill_wallet": "Skrill Digital Wallet",
 				"sofort": "SOFORT 뱅킹",
@@ -987,7 +1040,8 @@
 				"local_bank_transfer": "Local Bank Transfer",
 				"w1": "W1",
 				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"russian_standard": "Russian Standard Bank",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1142,7 +1196,9 @@
 			"info": "정보",
 			"information": "정보",
 			"promotion": "프로모션",
-			"follow_us": "팔로우"
+			"follow_us": "팔로우",
+			"privacy": "Privacy",
+			"corporate": "Corporate"
 		},
 		"actions": {
 			"go_bang": "시작!",
@@ -1216,7 +1272,6 @@
 		"registration_restricted_in_country": "당신의 나라에서 가입하면 안됩니다."
 	},
 	"documents": {
-		"removed_successfully": "문서를 삭제했습니다",
 		"document": {
 			"edit_description": "설명을 수정",
 			"approved": "승인됨",
@@ -1233,18 +1288,47 @@
 	},
 	"formtastic": {
 		"labels": {
-			"card_holder": "카드홀더",
-			"credit_card_number": "신용카드번호",
-			"cvc": "카드 보안 코드",
-			"expiration_date": "만료 날짜",
+			"clearingNumber": "Clearing number or bank code",
+			"accountNumber": "Account number",
+			"beneficiaryName": "Beneficiary name",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Beneficiary address",
+			"bankName": "Bank name",
+			"branchAddress": "Branch address",
+			"secureId": "Secure ID",
 			"amount": "금액",
+			"account": "Account",
+			"service": "Service",
+			"card_holder": "카드홀더",
+			"cardHolder": "Card holder",
+			"credit_card_number": "신용카드번호",
+			"encCreditcardNumber": "Card number",
+			"countryCode": "Country",
+			"internalBonusCode": "Bonus code",
+			"cvc": "카드 보안 코드",
+			"cvv": "cvv",
+			"expiration_date": "만료 날짜",
+			"expiryDate": "Expiry date",
+			"voucherNumber": "Voucher number",
+			"voucherValue": "Voucher value",
+			"email": "Email",
 			"recipient": "고객의 입금주소",
+			"phoneNumber": "Phone number",
+			"mobileOperator": "Mobile operator",
+			"username": "Username",
+			"password": "Password",
+			"country": "Country",
 			"document": {
 				"attachment": "첨부",
 				"description": "설명"
 			},
 			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"wallet_address": "Wallet Address",
+			"deposit_form": {
+				"net_account": "Email/Account ID",
+				"secure_id": "Secure ID"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1287,7 +1371,6 @@
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} Issue",
 		"stages": {
 			"wait": "기다려주십시오",
 			"handle_bets": "사용중",
@@ -1311,8 +1394,8 @@
 			"pending": "Pending"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "You received {{freespins_count}} bonus free spins in {{games}}.",
+			"activation_prompt_html": "To activate free spins go to {{link}}."
 		}
 	},
 	"games": {
@@ -1334,6 +1417,7 @@
 			"lottery": "로터리",
 			"keno": "케노",
 			"progressive": "Progressive",
+			"jackpot": "Games with Jackpot",
 			"stat": {
 				"most_popular": "가장 잘나가는 게임",
 				"new": "새로운 게임",
@@ -1352,7 +1436,10 @@
 			"betsoftgaming": "Betsoftgaming",
 			"casinotechnology": "Casino Technology",
 			"quickfire": "QuickFire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1450,10 +1537,12 @@
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "... 부터 계산서 보내기 ",
-		"billed_to": "...까지 계산서 보내기",
+		"billed_from": "From",
+		"billed_to": "To",
 		"paid": "지불됨",
-		"submit": "제출"
+		"submit": "제출",
+		"billed": "Billed:",
+		"not_billed": "Not Billed:"
 	},
 	"affiliate_links": {
 		"add": "Add Link",
@@ -1556,7 +1645,7 @@
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Free spins"
 		},
 		"gift": "Gift"
 	},
@@ -1632,7 +1721,7 @@
 			"payments_history": "거래 내역",
 			"bets_history": "베팅의 내역",
 			"bonuses_history": "보너스의 내역",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Free spins History",
 			"deposit_to_address_hint": "계정에 예금하려면 이 주소에 예금하십시오.",
 			"freespin_bonuses": {
 				"bonus_canceled": "Bonus canceled",
@@ -1674,8 +1763,10 @@
 		"bonus_code_hide": "Hide Bonus Code",
 		"address_confirmation_email_body": "%{address}로 캐시아웃을 신청했습니다. 이 주소를 사용한 적이 없습니다. 안전을 위해  이 주소를 확인해 주십시오. 확인히기 위해 이 링크를 클릭해 주십시오.",
 		"address_confirmation_email_warning": "이 주소는 당신의 주소가 안이면 지원으로 연락하고 비밀번호를 바꾸십시오.",
-		"invalid_profile_before_deposit_message": "예금하기 위해 먼저는 필요한 공락을 기입해 주십시오. 유효한 연락 정보를 아래 서식에 기입해 주세요. 정확한 정보를 기입하도록 하십시오.",
-		"invalid_profile_message": "개시아웃하기 위해 프로필에서 필수 필드를 작성해야 됩니다.",
+		"invalid_profile_message": {
+			"deposit": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+			"cashout": "To be able to cash out, you must fill in the required fields in your Profile."
+		},
 		"try_again": "연결 문제 때문에 거래하기를 시작 못 됩니다. 문제를 계속하면 우리 지원으로 연락해 주십시오.",
 		"select_currency": "잔고의 통화 선택하기",
 		"select_currency_hint": {
@@ -1683,6 +1774,7 @@
 			"cashout": "저는 케시아웃하기 바랍니다."
 		},
 		"select_payment_method": "지불 기법 선택",
+		"saved_methods": "Your Saved Payment Options",
 		"current_balance": {
 			"deposit": "현재 잔고: {{money}}.",
 			"cashout": "%{money}를 캐시아웃할 수 있습니다. %{balance_link} 웹페이지에 명세를 잦을 수 있습니다."
@@ -1700,7 +1792,8 @@
 		"processing_time": {
 			"instantly": "즉시",
 			"range": "%{min}-%{max} 은행 영업일"
-		}
+		},
+		"cubits_not_available": "Cubits is not available now. Try again later."
 	},
 	"security_check": {
 		"user_is_suspicious": "사용자가 수상합니다.",
@@ -1794,13 +1887,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "캐기아웃 신청을 확인했습니다"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "캐시아웃하기 위해 계정 잔고가 불충분합니다",
-			"body": "계정 잔고가 불충분하기 때문에 캐시아웃할 수 없습니다. 현재 잔고대로 다시 캐시아웃하십시오."
-		},
-		"address_confirmation_required": {
-			"subject": "캐시아웃 주소를 확인하야 합니다"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Cashout address confirmation required",
+			"deposit_made": "Your deposit received",
+			"cashout_approved": "Your cashout request was approved",
+			"freespin_bonus_issued": "Freespins awarded",
+			"welcome": "Welcome",
+			"no_deposit": "You have not made a deposit",
+			"nth_deposit": "We are waiting for your deposit",
+			"welcome_promo": "Visit us again",
+			"confirmation_instructions": "Confirmation instructions",
+			"reset_password_instructions": "Reset password instructions",
+			"unlock_instructions": "Unlock instructions"
 		}
 	},
 	"activemodel": {
@@ -1867,12 +1968,6 @@
 			}
 		}
 	},
-	"retention_mailer": {
-		"welcome": "환영합니다",
-		"no_deposit": "착수금을 지불하지 않았습니다.",
-		"nth_deposit": "당신의 착수금을 기다리고 있습니다.",
-		"welcome_promo": "다시 한번 와 주십시오."
-	},
 	"jackpot": {
 		"jackpots": "Jackpots"
 	},
@@ -1930,8 +2025,15 @@
 		"casinotechnology": "CasinoTechnology",
 		"timeout_message": "Game provider's server has not responded. Please retry later."
 	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
+	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
+	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "To play this game you need to fill in at least First Name, Last Name, Date of Birth and Country"
 	},
 	"quickfire_api": {
 		"quickfire": "QuickFire"

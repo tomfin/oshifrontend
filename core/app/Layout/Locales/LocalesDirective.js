@@ -7,7 +7,7 @@ CasinoDirectives
                 order: '@order'
             },
             templateUrl: '/app/Layout/Locales/_locales.html',
-            controller: ['$rootScope', '$scope', '$filter', function ($rootScope, $scope, $filter) {
+            controller: ['$rootScope', '$scope', '$filter', '$state', function ($rootScope, $scope, $filter, $state) {
                 var orderLocales = function(locales) {
                     var ordered = [];
                     if ($scope.order && locales) {
@@ -61,6 +61,8 @@ CasinoDirectives
                                 if (newValue != oldValue) {
                                     localStorageService.set('currentLocale', newValue);
                                     $rootScope.currentLocale = newValue;
+                                    $rootScope.user_language = newValue;
+                                    $state.go($state.current.name, {lang:newValue});
                                 }
                             }
                         );

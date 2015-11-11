@@ -9,8 +9,8 @@ CasinoDirectives
                 var getOffsetSum = function (elem) {
                         var top=0, left=0;
                         while(elem) {
-                            top = top + parseFloat(elem.offsetTop)
-                            left = left + parseFloat(elem.offsetLeft)
+                            top = top + parseFloat(elem.offsetTop);
+                            left = left + parseFloat(elem.offsetLeft);
                             elem = elem.offsetParent
                         }
 

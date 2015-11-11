@@ -4,7 +4,6 @@
             ng-model="value"
             auto-fill-sync />
 
-    {{label | translate}}
-    <abbr  ng-show="data.required" title="required">*</abbr>
+    {{label | translate:data.localData.translate_value}}
+    <sup  ng-show="data.required" title="required">*</sup>
 </label>
-

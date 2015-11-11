@@ -4,7 +4,7 @@ CasinoControllers
         $scope.auth_modal = {
             showLogin: AuthModalService.showLogin,
             showRegistration: AuthModalService.showRegistration
-        }
+        };
         $scope.closeWindow = function () {
             $rootScope.mainModal.close();
         };

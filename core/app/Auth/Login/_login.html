@@ -14,7 +14,7 @@
                     <span ng-repeat="(error_key, error_value) in login.errors.password" class="help-inline" translate="{{error_value}}"></span>
                 </div>
                 <div class="form-group">
-                    <a href="" ui-sref="users.password({action: 'new'})" translate="frontend.links.forgot_password"></a>
+                    <a href="" ui-sref="app.users.password({action: 'new', lang:'{{currentLocale}}'})" translate="frontend.links.forgot_password"></a>
                 </div>
                 <div class="row">
                     <div class="col-sm-3 col-sm-offset-3">

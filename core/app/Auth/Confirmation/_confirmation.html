@@ -1,11 +1,11 @@
-<div class="wysiwyg">
+<div class="wysiwyg page-container">
     <h2 translate="frontend.devise.resend_confirmation"></h2>
     <form novalidate="novalidate" method="post" id="new_user" class="form-horizontal" ng-submit="confirmation.submit()" accept-charset="UTF-8">
         <div id="user_email_input" class="form-group" ng-class="{'has-error':confirmation.data.errors.email}">
             <div class="col-sm-3 form-label">
                 <label for="email" class="control-label">
                     {{'activerecord.attributes.user.email' | translate}}
-                    <abbr title="required">*</abbr>
+                    <sup title="required">*</sup>
                 </label>
             </div>
             <div class="col-sm-6">

@@ -5,7 +5,7 @@
     <div class="sga-container" ng-class="{'hd-game' : $parent.isHd}" ng-init="$parent.isHd = true">
         <div class="game_box" ng-class="{'tab_hidden': $parent.isToggled}">
             <div class="game__content">
-                <iframe id="game-block" style="width: 100%; height: 100%;"  ng-src="{{$parent.game_url}}"></iframe>
+                <iframe allowfullscreen="allowfullscreen" id="game-block" style="width: 100%; height: 100%;"  ng-src="{{$parent.game_url}}"></iframe>
 
                 <div class="game__option bottom_panel">
                     <button class="game__favotite"
@@ -28,7 +28,7 @@
                                 {{'winners.latest_winners' | translate}}
                             </tab-heading>
                             <div>
-                                <casino-latest-winners type="latestWinnersGame"></casino-latest-winners>
+                                <casino-games-block name="latest_winners" template="latest_winners_game" limit="8"></casino-games-block>
                             </div>
 
                         </tab>
@@ -38,7 +38,7 @@
                                 {{'winners.top_winners' | translate}}
                             </tab-heading>
                             <div>
-                                <casino-top-winners type="topWinnersGame"></casino-top-winners>
+                                <casino-games-block name="top_winners" template="top_winners_game" limit="8"></casino-games-block>
                             </div>
                         </tab>
                     </tabset>
@@ -48,7 +48,7 @@
             <div class="game__right">
                 <ul class="right-nav">
                     <li class="right-nav__item _menu"><a ng-click="$parent.isToggled = !$parent.isToggled" href=""></a></li>
-                    <li class="right-nav__item _full"><a ng-click="$parent.GameActions.fullscreen.enable('#game-block')" href=""></a></li>
+                    <li class="right-nav__item _full"><a ng-click="$parent.GameActions.enableFullScreen('#game-block')" href=""></a></li>
                     <li class="right-nav__item _close"><a ng-click="$parent.close();" href=""></a></li>
                 </ul>
             </div>
@@ -61,28 +61,30 @@
             <ul>
                 <li class="footer__nav-item" ng-class="{'_active': $parent.show_blocks == 'TopWiners'}">
                     <div  class="footer__subnav-wrap" ng-if="$parent.show_blocks == 'TopWiners'">
-                        <casino-games-slider type="top_games"></casino-games-slider>
+                        <casino-games-slider name="top_games"  filters="{collectionOrder: 'popularity'}" template="top_games" limit="20"></casino-games-slider>
                     </div>
                     <a class="footer__link"  href=""
                        ng-click="$parent.show_blocks = $parent.show_blocks == 'TopWiners' ? false : 'TopWiners'"><i class="_top-games"></i>Top Games</a>
                 </li>
                 <li class="footer__nav-item" ng-class="{'_active': $parent.show_blocks == 'NewGames'}">
                     <div  class="footer__subnav-wrap" ng-if="$parent.show_blocks == 'NewGames'">
-                        <casino-games-slider type="new_games"></casino-games-slider>
+                        <casino-games-slider name="new_games"  filters="{collectionOrder: 'novelty'}" template="new_games" limit="20"></casino-games-slider>
                     </div>
                     <a class="footer__link" href=""
                        ng-click="$parent.show_blocks = $parent.show_blocks == 'NewGames' ? false : 'NewGames'"><i class="_new-games"></i>New Games</a>
                 </li>
                 <li class="footer__nav-item" ng-class="{'_active': $parent.show_blocks == 'Favorites'}" access-level="accessLevels.user">
                     <div  class="footer__subnav-wrap" ng-if="$parent.show_blocks == 'Favorites'">
-                        <casino-games-slider type="favorites_games"></casino-games-slider>
+                        <casino-games-slider name="favorites_games" template="favorites_games"></casino-games-slider>
+                        <!--<casino-games-slider type="favorites_games"></casino-games-slider>-->
                     </div>
                     <a  class="footer__link" href=""
                         ng-click="$parent.show_blocks = $parent.show_blocks == 'Favorites' ? false : 'Favorites'"><i class="_favorites"></i>Favorites</a>
                 </li>
                 <li class="footer__nav-item" ng-class="{'_active': $parent.show_blocks == 'LastPlayed'}">
                     <div  class="footer__subnav-wrap" ng-if="$parent.show_blocks == 'LastPlayed'">
-                        <casino-games-slider type="last_played"></casino-games-slider>
+                        <casino-games-slider name="last_played_games" template="last_played"  limit="50"></casino-games-slider>
+                        <!--<casino-games-slider type="last_played"></casino-games-slider>-->
                     </div>
                     <a  class="footer__link" href=""
                         ng-click="$parent.show_blocks = $parent.show_blocks == 'LastPlayed' ? false : 'LastPlayed'"><i class="_last"></i>Last Played</a>

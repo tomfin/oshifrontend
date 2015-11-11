@@ -29,11 +29,11 @@ CasinoServices
                 var user = Auth.user,
                     actions = {};
 
-                actions.demo = Games.demo({l: $rootScope.currentLocale}).$promise;
+                actions.demo = Games.demo().$promise;
                 //TODO add me to batch
                 actions.order = Games.order().$promise;
                 if (Auth.authorize(Auth.accessLevels.user, user.role) || show_all) {
-                    actions.list = Games.list({l: $rootScope.currentLocale}).$promise;
+                    actions.list = Games.list().$promise;
                     actions.jackpots = Jackpots.list().$promise;
                     actions.currencies = Info.currencies().$promise;
                 }

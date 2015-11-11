@@ -1,4 +1,7 @@
-<label class="control-label" for="{{name}}"><span translate="{{label}}"></span></label>
-<abbr  ng-show="data.required" title="required">*</abbr>
+<label class="control-label" for="{{name}}">
+    <span translate="{{label}}"></span>
+    <sup  ng-show="data.required" title="required">*</sup>
+</label>
+
 
 <select id="{{name}}" ng-options="key as value for (key, value) in data.inclusion.in" class="form-control" ng-model="value"></select>

@@ -1,9 +1,9 @@
 'use strict';
 
 CasinoServices
-    .factory('apiHeaders', ['$q' , 'SYSTEM', '$rootScope', function ($q, SYSTEM, $rootScope) {
+    .factory('apiHeaders', ['$q', 'SYSTEM', '$rootScope', function ($q, SYSTEM, $rootScope) {
         return {
-            'request': function (config){
+            'request': function (config) {
                 config.headers.Accept = SYSTEM.API_REQUEST_ACCEPT;
                 //if ($rootScope.Info.service) {
                 //    config.headers['X-CSRF-Token'] = $rootScope.Info.service.csrf;
@@ -27,11 +27,9 @@ CasinoServices
         };
     }])
 
-    .factory('Init', ['$rootScope', '$location', 'Batch', 'Pages', 'SYSTEM', 'Info', 'Auth', 'localStorageService', '$q', function ($rootScope, $location, Batch, Pages, SYSTEM, Info, Auth, localStorageService, $q) {
+    .factory('siteLanguage', ['$q', '$rootScope', '$stateParams', '$location', 'Info', 'Player', '$state', function ($q, $rootScope, $stateParams, $location, Info, Player, $state) {
         return {
-            local: function (callback) {
-                callback = callback || function() {};
-
+            init: function () {
                 var params = {};
                 $rootScope.Info = {};
 
@@ -48,42 +46,93 @@ CasinoServices
                     $location.search('refer', null);
                 }
 
-                Info.locales(params, function (data) {
+                $q.all({
+                    languages: Info.locales(params).$promise,
+                    user: Player.get().$promise
+                }).then(function (result) {
+                    $rootScope.Info["locales"] = result.languages;
 
-                    $rootScope.Info["locales"] = data;
-
-                    var currentLocale = $rootScope.Info.locales.filter(function (item){
-                       return item.default;
+                    var default_language = $rootScope.Info.locales.filter(function (item) {
+                        return item.default;
                     });
 
-                    if (!localStorageService.get("currentLocale")) {
-						localStorageService.set("currentLocale", currentLocale[0].code);
+                    $rootScope.default_language = default_language[0].code;
+                    if (!$rootScope.currentLocale) {
+                        $rootScope.currentLocale = default_language[0].code;
                     }
 
-                    $rootScope.currentLocale = localStorageService.get("currentLocale");
-
-                    callback();
+                    var user_data = result.user.toJSON();
+                    $rootScope.user_language = user_data.language;
                 });
             },
 
+            run: function () {
+                var defer = $q.defer();
+                $rootScope.$watch('default_language', function (new_value, old_value) {
+                    if (new_value != old_value) {
+                        defer.resolve(true);
+                    }
+                });
+                return defer.promise;
+            },
+
+            check: function () {
+                var reload = false,
+                    lang = $stateParams.lang.replace('/', '');
+
+                if (lang == '') {
+                    lang = $rootScope.default_language;
+                }
+
+                if ($rootScope.user_language && $rootScope.user_language != lang) {
+                    lang = $rootScope.user_language;
+                }
+
+                if ($rootScope.currentLocale != lang) {
+                    $rootScope.currentLocale = lang;
+                    reload = true;
+                }
+
+                if (lang == $rootScope.default_language) {
+                    lang = '';
+                }
+
+                if (lang != $stateParams.lang.replace('/', '')) {
+                    $state.go($state.current, {lang: lang}, {reload: reload});
+                }
+            }
+        };
+    }])
+
+    .factory('Init', ['$rootScope', '$location', 'Batch', 'Pages', 'SYSTEM', 'Info', 'Auth', 'Player', '$q', function ($rootScope, $location, Batch, Pages, SYSTEM, Info, Auth, Player, $q) {
+        return {
+            currency: function () {
+                if (!Auth.authorize(Auth.accessLevels.anon)) {
+                    if (!$rootScope.currentCurrency) {
+                        $rootScope.currentCurrency = $rootScope.Info.currencies[0].code;
+                    }
+                } else {
+                    $rootScope.currentCurrency = false;
+                }
+            },
+
             data: function (callback) {
-                callback = callback || function() {};
+                callback = callback || function () {
+                };
 
                 var urls = [
-                        SYSTEM.URL_API + "/info/currencies",
-                        //SYSTEM.URL_API + "/cms/files",
-                        SYSTEM.URL_API + "/info/time_zones",
-                        SYSTEM.URL_API + "/info/countries",
-                        //SYSTEM.URL_API + "/info/profile_routes",
-                        SYSTEM.URL_API + "/games/order"
+                    SYSTEM.URL_API + "/info/currencies",
+                    SYSTEM.URL_API + "/info/time_zones",
+                    SYSTEM.URL_API + "/info/countries"
                 ];
                 $rootScope.Info = $rootScope.Info || {};
 
                 $q.all({
                     auth: Auth.check(),
-                    batch: Batch.get({'url[]':urls}).$promise
-                }).then(function (result){
-                    urls.forEach(function(item, i) {
+                    batch: Batch.get({'url[]': urls}).$promise
+                }).then(function (result) {
+
+                    urls.forEach(function (item, i) {
                         var url = item.split("/"),
                             category = url.pop(),
                             type = url.pop();
@@ -103,9 +152,10 @@ CasinoServices
             },
 
             files: function (callback) {
-                callback = callback || function () {};
+                callback = callback || function () {
+                };
 
-                Pages.files({l: $rootScope.currentLocale}, function(data){
+                Pages.files({l: $rootScope.currentLocale}, function (data) {
                     $rootScope.Info['files'] = data;
                     callback();
                 });
@@ -133,7 +183,7 @@ CasinoServices
 
     .factory('Batch', ['$resource', 'SYSTEM', function ($resource, SYSTEM) {
         return $resource(SYSTEM.URL_BATCH, {}, {
-            get: {method: 'get', params: {}, cache: true, isArray: true}
+            get: {method: 'get', params: {}, cache: false, isArray: true}
         });
     }])
 

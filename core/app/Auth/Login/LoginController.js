@@ -12,12 +12,15 @@ CasinoControllers
                 var redirect_state = SYSTEM.AFTER_LOGIN_REDIRECT || "home";
                 $rootScope.mainModal.close();
                 $rootScope.errorsLoginForm = '';
-                $state.go(redirect_state);
+
+                if ($state.current.name == 'app.users_sign_in') {
+                    $state.go(redirect_state, {lang: $rootScope.currentLocale});
+                }
             }, function (errors){
 
                 if (showModal) {
                     $rootScope.errorsLoginForm = errors;
-                    $state.go("users_sign_in");
+                    $state.go("app.users_sign_in", {lang: $rootScope.currentLocale});
                 }
             });
         };
@@ -41,7 +44,7 @@ CasinoControllers
                 return true;
             }
             return false;
-        };
+        }
 
         redirectForAuthorized();
     }]);

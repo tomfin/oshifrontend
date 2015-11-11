@@ -1,5 +1,5 @@
 CasinoControllers
-    .controller('Support', ['$scope', 'Auth', '$state', 'Contact', 'Notification', function ($scope, Auth, $state, Contact, Notification) {
+    .controller('Support', ['$scope', '$rootScope', 'Auth', '$state', 'Contact', 'Notification', function ($scope, $rootScope, Auth, $state, Contact, Notification) {
         var support = {data:{contact:{email: '', content: ''}}};
         $scope.user = Auth.user;
 
@@ -13,6 +13,7 @@ CasinoControllers
 
         support.submit = function () {
             Contact.post(support.data, function () {
+                $state.go('home', {lang: $rootScope.currentLocale});
                 Notification.show('notification.contact_form.sender_notice', {classes: 'alert-success'});
                 support.data.contact.content = '';
             }, function (req) {

@@ -3,7 +3,9 @@ CasinoDirectives
     return {
         restrict: 'A',
 
-        controller: ['$scope', '$rootScope', '$state', function ($scope, $rootScope, $state) {
+        controller: ['$scope', '$rootScope', '$state', '$document', function ($scope, $rootScope, $state, $document) {
+            $rootScope.sidebar = {};
+
             $('.opener').on('click', function() {
                 var panel = $(this).parents(".slide-panel");
                 if (panel.hasClass("visible")) {
@@ -20,6 +22,11 @@ CasinoDirectives
                 }
             });
 
+            $rootScope.$on('$stateChangeSuccess',function(event, toState, toParams, fromState, fromParams){
+                for (var panel in $rootScope.sidebar) {
+                    $rootScope.sidebar[panel].visible = false;
+                }
+            });
         }]
     };
 }]);

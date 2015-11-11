@@ -1,4 +1,4 @@
 CasinoControllers
-    .controller('Landing', ['$scope', '$state', function ($scope, $state) {
-        $state.go('home');
+    .controller('Landing', ['$scope', '$state', '$rootScope', function ($scope, $state, $rootScope) {
+        $state.go('home', {lang: $rootScope.currentLocale});
     }]);

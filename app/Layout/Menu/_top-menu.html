@@ -1,9 +1,13 @@
 <ul class="nav navbar-nav">
-    
-    <li><a class="main_menu_item" href="" ui-sref-active="current" translate="frontend.links.home" ui-sref="home"></a></li>
-    <li><a class="main_menu_item" href="" ui-sref-active="current" translate="frontend.links.casino_games" ui-sref="games"></a></li>
-    <li ng-repeat="item in menu"><a class="main_menu_item" href="" ng-class="{current: state.includes('cms', {path: item.path})}"
+<!-- 
+    <li><a class="main_menu_item" ui-sref-active="current" translate="frontend.links.home"
+           ui-sref="home({lang:'{{currentLocale}}'})"></a></li>
+ -->           
+    <li><a class="main_menu_item" ui-sref-active="current" translate="frontend.links.casino_games"
+           ui-sref="app.games({lang:'{{currentLocale}}'})"></a></li>
+    <li ng-repeat="item in menu">
+        <a class="main_menu_item"
+           ng-class="{current: state.includes('app.cms', {path: item.path})}"
                                     ui-sref="{{get_sref(item.path)}}" ng-bind="item.title"></a></li>
-    <!-- <li><a class="main_menu_item" href="http://blog.oshi.io" target="_blank">Blog</a></li> -->
     <li><a class="main_menu_item" href="http://blog.oshi.io" translate="common.blog" target="_blank"></a></li>
 </ul>

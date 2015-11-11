@@ -15,7 +15,7 @@ CasinoDirectives
                     return false;
                 }
                 return true;
-            }
+            };
 
             $scope.slides = [];
             $scope.state = $state;

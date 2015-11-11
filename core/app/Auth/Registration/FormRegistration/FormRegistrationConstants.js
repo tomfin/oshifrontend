@@ -142,6 +142,7 @@ CasinoConstants
         {
             field: "age_acceptance",
             type: 'checkbox',
+            translate_value: {age: 18},
             default: false
         },
         {

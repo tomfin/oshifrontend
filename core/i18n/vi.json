@@ -97,6 +97,14 @@
 						}
 					}
 				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Was created too much time ago",
+							"has_affiliate_profiles": "Has affiliate profiles"
+						}
+					}
+				},
 				"user": {
 					"attributes": {
 						"password": {
@@ -118,7 +126,7 @@
 					"pending_deposit_presents": "Chúng tôi vẫn đang đợi xác nhận từ lần đặt cọc cuối của bạn",
 					"commission_is_greater_that_amount": "Hoa hồng nhiều hơn tổng tiền",
 					"cashout_only_to_main_address": "Bạn đã đặt {{address}} là địa chỉ bitcoin chính và bạn chỉ có thể rút tiền về địa chỉ đó",
-					"not_used_account": "Account you are going to cashout was not used before.",
+					"not_used_account": "Tài khoản bạn đang dùng để rút tiền chưa từng được sử dụng trước đây",
 					"debt_to_another_payment_system": "Bạn có 1 khoản nợ chưa trả trong {{system_name}}. Vui lòng, trả khoản nợ đó trước",
 					"debt_to_another_payment_system_account": "Có của bạn một khoản nợ chưa thanh toán vào tài khoản khác ({{account}})",
 					"more_debts_exist": "Có khoản nợ hệ thống thanh toán và tài khoản. Bạn nên trả tất cả các khoản nợ trước khi rút tiền thắng cuộc. Số nợ hệ thống thanh toán hiện tại là {{debt_amount}}."
@@ -168,11 +176,23 @@
 			"retention_email": "Email duy trìEmail duy trì"
 		},
 		"attributes": {
-			"balance_correction": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Casino Cash Balance Name",
+				"casino_cash_balance_id": "Casino Cash Balance ID",
 				"action": "Action",
-				"amount": "Amount",
-				"account": "Account",
-				"comment": "Comment"
+				"change_amount": "Change amount",
+				"amount_after_change": "Amount after change",
+				"subject": "Subject",
+				"processed_at": "Processed at",
+				"comment": "Comment",
+				"currency": "Currency"
+			},
+			"balance_correction": {
+				"action": "Hành động",
+				"amount": "Số tiền",
+				"account": "Tài khoản",
+				"comment": "Bình luận"
 			},
 			"game_category": {
 				"name": "Tên",
@@ -285,17 +305,17 @@
 				"updated_at": "Được cập nhật lúc"
 			},
 			"freespin_issue": {
-				"stage": "Stage",
-				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
-				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
-				"valid_until": "Expiry date",
-				"extra": "Extra info",
-				"external_id": "External ID",
-				"created_at": "Date received",
-				"issued_at": "Issued at",
-				"updated_at": "Updated at"
+				"stage": "Màn",
+				"amount": "Số tiền",
+				"freespins_total": "Free spins awarded",
+				"activatable_until": "Ngày hết hạn",
+				"win_amount_cents": "Already won",
+				"valid_until": "Ngày hết hạn",
+				"extra": "Thông tin thêm",
+				"external_id": "ID bên ngoài",
+				"created_at": "Ngày nhận",
+				"issued_at": "Ban hành lúc",
+				"updated_at": "Được cập nhật lúc"
 			},
 			"bonus_strategy/feature/payment_system": {
 				"ids_list": "Hệ thống thanh toán"
@@ -701,7 +721,18 @@
 			"link_to_root": "Đây là liên kết đến trang chủ của bạn."
 		}
 	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Document was successfully uploaded"
+			},
+			"destroy": {
+				"notice": "Document was successfully removed"
+			}
+		}
+	},
 	"common": {
+		"required": "Required",
 		"in_out": "Trong/Ngoài",
 		"players": "Người chơi",
 		"email": "Email",
@@ -727,7 +758,7 @@
 		"limit": "Giới hạn",
 		"live_casino": "Casino trực tuyến",
 		"address": "Địa chỉ",
-		"good_news": "Good news, {{nickname}}.",
+		"good_news": "Tin tức tốt, {{nickname}}.",
 		"save": "Lưu",
 		"edit": "Chỉnh sửa",
 		"remove": "Gỡ bỏ",
@@ -743,14 +774,19 @@
 		"filter": "Bộ lọc",
 		"are_you_sure": "Bạn có chắc không ?",
 		"set": "Thiết lập",
+		"recall": "Recall",
 		"enabled": "Hoạt động",
 		"disabled": "Đã tắt",
 		"active": "Hoạt động",
+		"success": "Success",
+		"error": "Error",
 		"preview": "Xem trước",
 		"select": "Chọn",
 		"summary": "Tổng kết",
 		"status": "Trạng thái",
 		"options": "Tùy chọn",
+		"download": "Download",
+		"csv": "CSV",
 		"genders": {
 			"m": "Nam",
 			"f": "Nữ"
@@ -797,7 +833,7 @@
 		"ru": "Russian",
 		"sv": "Swedish",
 		"tr": "Turkish",
-		"vi": "Vietnamese",
+		"vi": "Tiếng Việt",
 		"zh": "Chinese"
 	},
 	"date": {
@@ -818,10 +854,10 @@
 				"bonus": "Chỉnh sửa bổ sung",
 				"payment_system": "Hệ thống thanh toán",
 				"retention_email": "Duy trì chỉnh sửa Email",
-				"casino_cash_balance": "Casino Cash Balance Modified",
-				"commission_connection": "Commission Connection Modified",
-				"payment": "Payment Modified",
-				"affiliate_profile": "Affiliate Profile Modified"
+				"casino_cash_balance": "Chỉnh sửa số dư tiền mặt tại Casino",
+				"commission_connection": "Chỉnh sửa kết nối ủy quyền",
+				"payment": "Chỉnh sửa thanh toán",
+				"affiliate_profile": "Chỉnh sửa hồ sơ cá nhân"
 			},
 			"game": {
 				"step": "Các bước hoàn thành game"
@@ -837,18 +873,18 @@
 				"failed_sign_in": "Người quản trị đăng nhập lỗi"
 			},
 			"notifications": {
-				"balance_correction_created": "Balance correction created",
-				"cashout_requested": "Cashout requested",
-				"deposit_made": "Deposit made",
-				"cashout_made": "Cashout made",
-				"auto_cashout_made": "Auto-cashout made",
-				"cashout_rejected": "Cashout request rejected",
-				"deposit_rejected": "Deposit rejected",
-				"user_upload_document": "User Uploaded Document",
-				"payment_created_by_admin": "Admin Created Payment",
-				"user_disabled": "User Disabled",
-				"contact": "User Requested Support",
-				"admin_comment_created": "Admin Left Comment"
+				"balance_correction_created": "Tạo thu thập số dư",
+				"cashout_requested": "Cashout là bắt buộc",
+				"deposit_made": "Tiền đặt cọc được thực hiện",
+				"cashout_made": "Rút tiền được thực hiện",
+				"auto_cashout_made": "Rút tiền tự động được thực hiện",
+				"cashout_rejected": "Yêu cầu rút tiền bị từ chối",
+				"deposit_rejected": "Từ chối tiền gửi",
+				"user_upload_document": "Bổ sung tài liệu người dùng",
+				"payment_created_by_admin": "Quản trị viên tạo thanh toán",
+				"user_disabled": "Vô hiệu hóa tài khoản",
+				"contact": "Người dùng yêu cầu giúp đỡ",
+				"admin_comment_created": "Quản trị viên bình luận bên trái"
 			},
 			"affiliate": {
 				"redirect": "Truy cập liên kết người dùng mới"
@@ -879,6 +915,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Tài khoản Qiwi",
 				"skrill": "Tài khoản Skrill",
 				"interkassa": "Tài khoản Interkassa",
@@ -894,6 +931,7 @@
 				"bank_transfer": "Chuyền tiền ngân hàng",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "OAuth Application",
 				"bitcoin_payment": "Bitcoin",
 				"ripple_payment": "Ripple"
 			},
@@ -904,14 +942,28 @@
 			"system_name": "%{child} đến %{parent}",
 			"all_locked": "Để đảm bảo sự an toàn của bạn, chúng tôi chỉ cho phép rút tiền ra khỏi hệ thống thông qua hệ thống thanh toán mà bạn đã dùng để gửi chúng vào. Nếu bạn có câu hỏi nào, xin vui long liên hệ để được hỗ trợ.",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Bank",
+				"banklocal": "Bank domestic withdrawal",
+				"bankiban": "Bank domestic IBAN withdrawal",
+				"bankintiban": "Bank international IBAN withdrawal",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "Thẻ Visa",
 				"mastercard": "Thẻ MasterCard",
 				"online_bank_transfer": "Chuyển tiền ngân hàng online",
 				"ideal": "Ý tưởng",
 				"nordea_solo": "Nordea Solo",
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
-				"cards": "Credit Cards",
+				"cards": "Thẻ tín dụng",
 				"ccard": "Thẻ tín dụng",
+				"creditcard": "Credit Card",
 				"click_to_pay": "Phương thức thanh toán LICK2PAY",
 				"ekonto": "Tài khoản eKonto",
 				"eps": "Hệ thống thanh toán điện tử EPS",
@@ -927,20 +979,21 @@
 				"paysafecard": "Thanh toán thẻ an toàn qua mạng",
 				"quick": "Thanh toán nhanh",
 				"sepa": "Ghi nợ trực tiếp qua SEPA",
+				"skrill": "Skrill",
 				"skrill_direct": "Thanh toán qua Skrill Direct",
 				"skrill_wallet": "Ví điện tử Skrill",
 				"sofort": "Hình thức thanh toán Soffort Banking",
 				"tatrapay": "Thanh toán qua TatraPay",
 				"trustly": "Thanh toán qua Trustly",
-				"bank_transfer": "Bank Transfer",
-				"lavapay_balance": "LavaPay Balance",
-				"cheque": "Cheque",
+				"bank_transfer": "Chuyền tiền ngân hàng",
+				"lavapay_balance": "Số dư tài khoản Lavapay",
+				"cheque": "Séc",
 				"perfect": "Perfect Money",
 				"liqpay": "LiqPay",
 				"webmoney": "WebMoney",
 				"yandex": "Yandex Money",
 				"okpay": "OKPAY",
-				"qiwi": "Qiwi",
+				"qiwi": "Tài khoản Qiwi",
 				"mailru": "money@mail.ru",
 				"lavapay_bitcoin": "Bitcoin",
 				"egopay": "EgoPay",
@@ -957,9 +1010,9 @@
 				"mobileretails": "MobileRetails",
 				"unistream": "Unistream",
 				"ruspost": "RusPost",
-				"contact": "Contact",
+				"contact": "Liên hệ ",
 				"anelik": "Anelik",
-				"leader": "Leader",
+				"leader": "Quản lý",
 				"mts": "MTS",
 				"megafon": "Megafon",
 				"beeline": "Beeline",
@@ -987,10 +1040,11 @@
 				"qiwi_maestro": "Maestro Qiwi",
 				"cis_cards": "Bank Cards",
 				"yandex_personal": "Yandex Personal",
-				"local_bank_transfer": "Local Bank Transfer",
+				"local_bank_transfer": "Bộ phận chuyển tiền ngân hàng",
 				"w1": "W1",
-				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"wallet_one": "Ví 1",
+				"russian_standard": "Ngân hàng tiêu chuẩn của Nga",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1105,7 +1159,7 @@
 			"casino_games": "Trò chơi Casino",
 			"about_casino": "Về Casino",
 			"all_games": "Tất cả trò chơi",
-			"load_more_games": "Load More Games",
+			"load_more_games": "Tải thêm game",
 			"rules": "Luật lệ trò chơi",
 			"autoregister": "Đăng ký tự động",
 			"quick_register": "Đăng ký nhanh",
@@ -1145,7 +1199,9 @@
 			"info": "Thông tin",
 			"information": "Thông tin",
 			"promotion": "Đề cử",
-			"follow_us": "Theo dõi chúng tôi"
+			"follow_us": "Theo dõi chúng tôi",
+			"privacy": "Privacy",
+			"corporate": "Corporate"
 		},
 		"actions": {
 			"go_bang": "Bắt đầu!",
@@ -1219,7 +1275,6 @@
 		"registration_restricted_in_country": "Việc đăng kí bị cấm ở nước bạn"
 	},
 	"documents": {
-		"removed_successfully": "Tài liệu đã được xóa thành công",
 		"document": {
 			"edit_description": "Chỉnh sửa mô tả",
 			"approved": "Đã được phê duyệt",
@@ -1236,18 +1291,47 @@
 	},
 	"formtastic": {
 		"labels": {
-			"card_holder": "Chủ bài",
-			"credit_card_number": "Số thẻ tín dụng",
-			"cvc": "Mã bảo vệ thẻ",
-			"expiration_date": "Ngày hết hạn",
+			"clearingNumber": "Clearing number or bank code",
+			"accountNumber": "Account number",
+			"beneficiaryName": "Beneficiary name",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Beneficiary address",
+			"bankName": "Bank name",
+			"branchAddress": "Branch address",
+			"secureId": "Secure ID",
 			"amount": "Số tiền",
+			"account": "Account",
+			"service": "Service",
+			"card_holder": "Chủ bài",
+			"cardHolder": "Card holder",
+			"credit_card_number": "Số thẻ tín dụng",
+			"encCreditcardNumber": "Card number",
+			"countryCode": "Country",
+			"internalBonusCode": "Bonus code",
+			"cvc": "Mã bảo vệ thẻ",
+			"cvv": "cvv",
+			"expiration_date": "Ngày hết hạn",
+			"expiryDate": "Expiry date",
+			"voucherNumber": "Voucher number",
+			"voucherValue": "Voucher value",
+			"email": "Email",
 			"recipient": "Người nhận",
+			"phoneNumber": "Phone number",
+			"mobileOperator": "Mobile operator",
+			"username": "Username",
+			"password": "Password",
+			"country": "Country",
 			"document": {
 				"attachment": "File đính kèm",
 				"description": "Miêu tả"
 			},
-			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"btc_amount": "Số tiền trong BTC",
+			"wallet_address": "Địa chỉ Ví",
+			"deposit_form": {
+				"net_account": "Email/Account ID",
+				"secure_id": "Secure ID"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1286,11 +1370,10 @@
 			"profile": {
 				"currency": "Bạn có thể đổi tiền tại bất kỳ giai đoạn sau khi đăng ký hoàn tất."
 			},
-			"btc_amount": "Amount may differ due to exchange rate changes"
+			"btc_amount": "Số tiền có thể khác do thay đổi tỷ giá hối đoái"
 		}
 	},
 	"bonus_issues": {
-		"title": "Vấn đề {{bonus}}",
 		"stages": {
 			"wait": "Đợi",
 			"handle_bets": "Hoạt động",
@@ -1298,24 +1381,24 @@
 			"expired": "Hết hạn",
 			"wager_done": "Cược xong",
 			"lost": "Mất",
-			"pending": "Pending"
+			"pending": "Đang treo"
 		}
 	},
 	"freespin_issues": {
-		"title": "%{bonus} Issue",
-		"games": "Games",
-		"activate": "Activate",
+		"title": "Vấn đề {{bonus}}",
+		"games": "Các trò chơi",
+		"activate": "Hoạt động",
 		"stages": {
-			"issued": "Issued",
-			"activated": "Activated",
-			"canceled": "Canceled",
-			"expired": "Expired",
-			"finished": "Played",
-			"pending": "Pending"
+			"issued": "Phát hành lúc",
+			"activated": "Kích hoạt",
+			"canceled": "Bị hủy bỏ",
+			"expired": "Hết hạn",
+			"finished": "Người chơi",
+			"pending": "Đang treo"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "You received {{freespins_count}} bonus free spins in {{games}}.",
+			"activation_prompt_html": "To activate free spins go to {{link}}."
 		}
 	},
 	"games": {
@@ -1333,10 +1416,11 @@
 			"live": "Live",
 			"fruit": "Fruit Slots",
 			"theme": "Theme Slots",
-			"casual": "Game đơn giản(Casual)",
+			"casual": "Game đơn giản",
 			"lottery": "Xổ số(Lottery)",
 			"keno": "Keno",
 			"progressive": "Tăng dần",
+			"jackpot": "Games with Jackpot",
 			"stat": {
 				"most_popular": "Phổ biến nhất",
 				"new": "Mới",
@@ -1355,7 +1439,10 @@
 			"betsoftgaming": "BetSoft Gaming",
 			"casinotechnology": "Casino Technology",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1390,55 +1477,55 @@
 				"european": "Xì dách châu Âu",
 				"multihand": "Xì dách nhiều tay",
 				"multihand_pro": "Xì dách nhiều tay chuyên nghiệp",
-				"pontoon": "Chơi bài kiểu 21(Pontoon)",
-				"surrender": "Đầu hàng xì tố(Blackjack Surrender)"
+				"pontoon": "Chơi bài kiểu 21",
+				"surrender": "Đầu hàng xì tố"
 			},
 			"hi_lo": {
 				"switch": "Công tắc cao-thấp"
 			},
 			"casual": {
-				"horse_racing": "Đua ngựa(Horse Racing)",
-				"minesweeper": "Dò mìn(Minesweeper)",
-				"heads_tails": "Đầu và đuôi(Heads and Tails)",
-				"scratch_dice": "Gieo xí ngầu(Scratch Dice)"
+				"horse_racing": "Đua ngựa",
+				"minesweeper": "Dò mìn",
+				"heads_tails": "Đầu và đuôi",
+				"scratch_dice": "Gieo xí ngầu"
 			},
 			"poker": {
-				"caribbean": "Poker Caribê(Caribbean Poker)",
+				"caribbean": "Poker Caribê",
 				"casino_holdem": "Casino Hold`em",
-				"let_it_ride": "Để nó chạy(Let it Ride)",
-				"oasis": "Poker Ốc đảo(Oasis Poker)",
+				"let_it_ride": "Để nó chạy",
+				"oasis": "Poker Ốc đảo",
 				"texas_holdem": "Texas Hold`em",
 				"trey_poker": "Trey Poker"
 			},
 			"roulette": {
-				"american": "Bài Rulet kiểu Mỹ(American Roulette)",
-				"european": "Bài Rulet kiểu Âu(European Roulette)",
-				"french": "Bài Rulet kiểu Pháp(French Roulette)"
+				"american": "Bài Rulet kiểu Mỹ",
+				"european": "Bài Rulet kiểu Âu",
+				"french": "Bài Rulet kiểu Pháp"
 			},
 			"slots": {
-				"aztec_magic": "Bài ma thuật Aztec(Aztec Magic)",
-				"book_of_pyramids": "Quyển sách Kim tự tháp(Book of Pyramids)",
-				"scroll_of_adventure": "Cuộn giấy phiêu lưu(Scroll of Adventure)",
-				"brave_viking": "Người Viking dũng cảm(Brave Viking)",
-				"cherry_fiesta": "Ngày hội anh đào(Cherry Fiesta)",
-				"crazy_starter": "Người bắt đầu điên khùng(Crazy Starter)",
-				"desert_treasure": "Kho báu sa mạc(Desert Treasure)",
-				"hawaii_cocktails": "Cốc tai Ha-oai(Hawaii Cocktails)",
+				"aztec_magic": "Bài ma thuật Aztec",
+				"book_of_pyramids": "Quyển sách Kim tự tháp",
+				"scroll_of_adventure": "Cuộn giấy phiêu lưu",
+				"brave_viking": "Người Viking dũng cảm",
+				"cherry_fiesta": "Ngày hội anh đào",
+				"crazy_starter": "Người bắt đầu điên khùng   ",
+				"desert_treasure": "Kho báu sa mạc",
+				"hawaii_cocktails": "Cốc tai Ha-oai",
 				"horse_slot": "Khe đua ngựa(Horse Slot)",
-				"lucky_blue": "Màu xanh may mắn(Lucky Blue)",
-				"lucky_lady_clover": "Cỏ ba lá may mắn của quý bà(Lucky Lady's Clover)",
-				"lucky_sweets": "Đồ ngọt may mắn(Lucky Sweets)",
-				"platinum_lightning": "Sét bạch kim(Platinum Lightning)",
-				"princess_of_sky": "Công chúa bầu trời(Princess of Sky)",
-				"princess_royal": "Công chúa Hoàng Gia(Princess Royal)",
+				"lucky_blue": "Màu xanh may mắn",
+				"lucky_lady_clover": "Cỏ ba lá may mắn của quý bà",
+				"lucky_sweets": "Đồ ngọt may mắn",
+				"platinum_lightning": "Sét bạch kim",
+				"princess_of_sky": "Công chúa bầu trời",
+				"princess_royal": "Công chúa Hoàng Gia",
 				"sport_slot": "Sport Slot",
 				"three_lines_slot": "Girl slot",
-				"west_town": "Thị trấn miền Tây(West Town)"
+				"west_town": "Thị trấn miền Tây"
 			},
 			"video_poker": {
-				"jacks_or_better": "Quân J hoặc tốt hơn(Jacks or Better)",
-				"wild_texas": "Texas hoang dã(Wild Texas)",
-				"video_poker": "Poker Nhật Bản(Japan Poker)"
+				"jacks_or_better": "Quân J hoặc tốt hơn",
+				"wild_texas": "Texas hoang dã",
+				"video_poker": "Poker Nhật Bản"
 			}
 		}
 	},
@@ -1453,10 +1540,12 @@
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "Hóa đơn từ",
-		"billed_to": "Hóa đơn đến",
+		"billed_from": "From",
+		"billed_to": "To",
 		"paid": "Đã trả tiền",
-		"submit": "Gửi"
+		"submit": "Gửi",
+		"billed": "Billed:",
+		"not_billed": "Not Billed:"
 	},
 	"affiliate_links": {
 		"add": "Thêm liên kết",
@@ -1464,7 +1553,7 @@
 			"hint": "Xác định việc sử dụng cá nhân của riêng bạn"
 		},
 		"code": {
-			"hint": "Unique code for affiliate link"
+			"hint": "Mã duy nhất cho link liên kết"
 		}
 	},
 	"affiliate_profiles": {
@@ -1559,9 +1648,9 @@
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Free spins"
 		},
-		"gift": "Gift"
+		"gift": "Quà tặng"
 	},
 	"profiles": {
 		"menu": {
@@ -1635,13 +1724,13 @@
 			"payments_history": "Lịch sử giao dịch",
 			"bets_history": "Lịch sử đặt cược",
 			"bonuses_history": "Lịch sử tiền thưởng",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Free spins History",
 			"deposit_to_address_hint": "Gửi tiền cọc đến địa chỉ này để tài trợ cho tài khoản của bạn.",
 			"freespin_bonuses": {
-				"bonus_canceled": "Bonus canceled",
-				"bonus_not_canceled": "Failed to cancel bonus",
-				"bonus_activated": "Bonus was activated",
-				"bonus_not_activated": "Bonus was not activated"
+				"bonus_canceled": "Tiền thưởng đã bị hủy",
+				"bonus_not_canceled": "Lỗi hủy bỏ thưởng",
+				"bonus_activated": "Thưởng đã hoạt động",
+				"bonus_not_activated": "Phần thưởng là không hoạt động"
 			}
 		},
 		"edit": {
@@ -1677,8 +1766,10 @@
 		"bonus_code_hide": "Ẩn mã tiền thưởng",
 		"address_confirmation_email_body": "Bạn yêu cầu rút tiền đến {{address}}. Bạn đã không sử dụng địa chỉ này trước đây. Để bảo vệ tài khoản của bạn, chúng tôi yêu cầu bạn xác nhận địa chỉ này. Để xác nhận địa chỉ xin vui lòng ấn vào đường dẫn:",
 		"address_confirmation_email_warning": "Nếu địa chỉ này không thuộc về bạn, liên hệ bộ phận hỗ trợ và thay đổi mật khẩu của bạn:",
-		"invalid_profile_before_deposit_message": "Bạn cần điền vào các phần bắt buộc trước khi đặt cọc. Vui lòng nhập thông tin liên hệ hợp lệ theo mẫu dưới đây. Hãy chắc chắn rằng thông tin đã chính xác trước khi lưu.",
-		"invalid_profile_message": "Để có thể rút tiền, bạn phải điền vào các trường bắt buộc trong hồ sơ của bạn.",
+		"invalid_profile_message": {
+			"deposit": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+			"cashout": "To be able to cash out, you must fill in the required fields in your Profile."
+		},
 		"try_again": "Giao dịch không thể diễn ra do các vấn đề kết nối. Nếu vấn đề vẫn còn tồn tại, xin vui lòng liên hệ với hỗ trợ của chúng tôi.",
 		"select_currency": "Chọn loại tiền tệ",
 		"select_currency_hint": {
@@ -1686,6 +1777,7 @@
 			"cashout": "Tôi muốn rút tiền"
 		},
 		"select_payment_method": "Chọn phương thức thanh toán",
+		"saved_methods": "Your Saved Payment Options",
 		"current_balance": {
 			"deposit": "Số dư hiện tại của bạn: {{money}}.",
 			"cashout": "Có thể rút tiền: {{money}}. Vui lòng đến trang {{balance_link}} để biết thêm chi tiết."
@@ -1703,7 +1795,8 @@
 		"processing_time": {
 			"instantly": "Ngay lập tức",
 			"range": "Ngày làm việc {{min}}-{{max}}"
-		}
+		},
+		"cubits_not_available": "Cubits is not available now. Try again later."
 	},
 	"security_check": {
 		"user_is_suspicious": "Người sử dụng đáng ngờ",
@@ -1717,7 +1810,7 @@
 			"title": "Người sử dụng đã được ghi nhận là đáng ngờ"
 		},
 		"chargeback": {
-			"title": "User made chargeback"
+			"title": "Người chơi tạo giao dịch đòi bồi hoàn(chargeback)"
 		},
 		"duplicate": {
 			"title": "Người sử dụng có bản sao",
@@ -1735,7 +1828,7 @@
 			"title": "Người dùng xong cược yêu cầu thưởng"
 		},
 		"cubits_payment_difference": {
-			"title": "Cumulative cubits exchange rate losses are too big"
+			"title": "Tích lũy lỗ tỷ giá hối đoái quá lớn"
 		}
 	},
 	"notification": {
@@ -1797,13 +1890,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "Yêu cầu rút tiền của bạn đã được chấp thuận"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "Số dư tài khoản không đủ để rút tiền",
-			"body": "Việc rút tiền của bạn đã bị vô hiệu hóa do số dư tài khoản không đủ để xử lý tiền gửi ra. Vui lòng đệ trình lại yêu cầu rút tiền mới theo số dư hiện tại"
-		},
-		"address_confirmation_required": {
-			"subject": "Yêu cầu xác nhận địa chỉ rút tiền"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Cashout address confirmation required",
+			"deposit_made": "Your deposit received",
+			"cashout_approved": "Your cashout request was approved",
+			"freespin_bonus_issued": "Freespins awarded",
+			"welcome": "Welcome",
+			"no_deposit": "You have not made a deposit",
+			"nth_deposit": "We are waiting for your deposit",
+			"welcome_promo": "Visit us again",
+			"confirmation_instructions": "Confirmation instructions",
+			"reset_password_instructions": "Reset password instructions",
+			"unlock_instructions": "Unlock instructions"
 		}
 	},
 	"activemodel": {
@@ -1870,21 +1971,15 @@
 			}
 		}
 	},
-	"retention_mailer": {
-		"welcome": "Chào mừng",
-		"no_deposit": "Bạn đã không tạo tiền cọc",
-		"nth_deposit": "Chúng tôi đang chờ tiền cọc của bạn",
-		"welcome_promo": "Ghé thăm chúng tôi một lần nữa"
-	},
 	"jackpot": {
 		"jackpots": "Giải đặc biệt"
 	},
 	"game_categories": {
-		"favorite": "My favorites",
-		"add_to_favorites": "Add To Favorites",
-		"remove_from_favorites": "Remove From Favorites",
+		"favorite": "Sở thích của tôi",
+		"add_to_favorites": "Thêm sở thích",
+		"remove_from_favorites": "Xóa bỏ sở thích",
 		"favorites": {
-			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+			"no_games": "Không có trò chơi trong list yêu thích của bạn. Dùng biểu tượng Ngôi sao để thêm chúng vào đây."
 		}
 	},
 	"betsoftgaming_api": {
@@ -1921,8 +2016,8 @@
 		"address_sources": {
 			"imported": "Từ bàn",
 			"generated": "Đã được tạo",
-			"cubits_invoice": "Cubits Invoice",
-			"cubits_channel": "Cubits Channel"
+			"cubits_invoice": "Tiền Cubits",
+			"cubits_channel": "Kênh Cubits"
 		}
 	},
 	"sidebar": {
@@ -1933,8 +2028,15 @@
 		"casinotechnology": "Công nghệ Casino",
 		"timeout_message": "Máy chủ của nhà cung cấp dịch vụ trò chơi không phải hồi. Vui lòng thử lại sau."
 	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
+	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
+	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "To play this game you need to fill in at least First Name, Last Name, Date of Birth and Country"
 	},
 	"quickfire_api": {
 		"quickfire": "QuickFire"

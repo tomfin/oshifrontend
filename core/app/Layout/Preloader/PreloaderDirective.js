@@ -16,7 +16,7 @@ CasinoDirectives
 
                 timeoutPreloader = $timeout(function (){
                     $scope.$broadcast("preloadHide");
-                }, duration * 2);
+                }, duration * 10);
 
             });
             $scope.$on('preloadHide', function (){

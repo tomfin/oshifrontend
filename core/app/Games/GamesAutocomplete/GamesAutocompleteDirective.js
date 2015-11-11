@@ -4,10 +4,11 @@ CasinoDirectives
         restrict: 'E',
         replace: true,
         scope: {
-            category: "@category",//default category
+            name: '@name',
+            default_filters: "=filters",
             limit_count: "@limit"
         },
         templateUrl: '/app/Games/GamesAutocomplete/_games_autocomplete.html',
-        controller: 'GamesList'
+        controller: 'GamesBlock'
     };
 }]);

@@ -97,17 +97,25 @@
 						}
 					}
 				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Δημιουργήθηκε πριν από πάρα πολύ χρόνο",
+							"has_affiliate_profiles": "Δημιουργεια θηγατρικου συνδεσμου"
+						}
+					}
+				},
 				"user": {
 					"attributes": {
 						"password": {
-							"wrong_password": "invalid email address or password"
+							"wrong_password": "λάθος email διεύθυνση ή κώδικας"
 						}
 					}
 				},
 				"profile": {
 					"attributes": {
 						"age": {
-							"greater_than_or_equal_to": "verification {{count}}+"
+							"greater_than_or_equal_to": "επαλίθευση {{count}}+"
 						}
 					}
 				},
@@ -116,15 +124,15 @@
 					"not_enough_unlocked_money": "Μερικά ή όλα τα χρήματά σας είναι κλειδωμένα λογω ενεργου μπόνους. Παρακαλώ εκπληρωστε τις απαιτησεις πονταρίσματος σας για να μπορέσετε να εξαργυρώσετε.",
 					"unresolved_cashout_request_presents": "Το προηγούμενο αίτημα εξαργύρωσης σας δεν έχει ακόμα επεξεργαστει. Θα το κάνουμε όσο πιο γρήγορα μπορούμε. Πριν ζητήσετε άλλη εξαργύρωση, παρακαλουμε περιμένετε το προηγούμενο αίτημά σας να επεξεργαστεί.",
 					"pending_deposit_presents": "Είμαστε ακόμα σε αναμονή για την επιβεβαίωση της τελευταίας σας κατάθεσης",
-					"commission_is_greater_that_amount": "Commission is greater than amount",
-					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
-					"not_used_account": "Account you are going to cashout was not used before.",
-					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
-					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
-					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+					"commission_is_greater_that_amount": "Η προμήθεια είναι μεγαλύτερη από το ποσό",
+					"cashout_only_to_main_address": "Έχετε ρυθμίσει {{address}} ως κύρια διεύθυνση Bitcoin και μπορείτε να εξαργύρωση μόνο σε αυτή τη διεύθυνση.",
+					"not_used_account": "Ο λογαριασμός από το οποίο θέλετε να κάνετε εξαργύρωση δεν είχε χρησιμοποιηθεί προηγουμένως.",
+					"debt_to_another_payment_system": "Έχετε ένα απλήρωτο χρέος στο {{system_name}}. Παρακαλούμε, να πληρώσει το χρέος πριν.",
+					"debt_to_another_payment_system_account": "Έχετε ένα απλήρωτο χρέος σε άλλο λογαριασμό ({{account}})",
+					"more_debts_exist": "Υπάρχουν χρέη προς άλλα συστήματα πληρωμών και τους λογαριασμούς. Θα πρέπει να πληρώσετε όλα τα χρέη πριν από την εξαργύρωση των κερδών. Χρέος σε υπάρχοντα συστήματα πληρωμών αποτελείο % {debt_amount}."
 				},
 				"commission_connection": {
-					"not_overlap": "Must not overlap with other connections with same commission level",
+					"not_overlap": "Δεν πρέπει να επικαλύπτεται με άλλες συνδέσεις με το ίδιο νόμισμα",
 					"future_from_time": "Πρεπει να γινει στο μελλον",
 					"greater_than_from_time": "πρέπει να είναι μεγαλύτερο από ό, τι από το χρόνο",
 					"strategies_equivalence": "Πρεπει να εχει καποιο σχεδιο πληρωμης ως θηγατρικο προφιλ",
@@ -137,10 +145,10 @@
 					"not_enough_to_lock": "Ειναι μεγαλυτερο απο το υπολοιπο του χρηστη"
 				},
 				"external_bet": {
-					"rollback_expired": "Rollback can not be accepted if 24 hours passed after result enrollment"
+					"rollback_expired": "Rollback δεν μπορεί να γίνει δεκτό, αν περάσουν 24 ώρες μετά την  αποτελεσματικό enrollment"
 				},
 				"notification/subscription": {
-					"invalid_types": "You can subscribe only to a notification"
+					"invalid_types": "Μπορείτε να εγγραφείτε μόνο για την κοινοποίηση"
 				}
 			}
 		},
@@ -152,52 +160,64 @@
 			"bonus": "Μπονους",
 			"bonus_issue": "Εκδοση μπονους",
 			"document": "ΕγγραφοΈγγραφα",
-			"event": "ΕκδηλωσηΕκδηλωσεις",
-			"external_bet": "Εξωτερικο στοιχημαΕξωτερικα στοιχηματα",
-			"game": "ΠαιχνιδιΠαιχνιδια",
-			"game_category": "Game Category",
+			"event": "Εκδηλωση",
+			"external_bet": "Εξωτερικο στοιχημα",
+			"game": "Παιχνιδι",
+			"game_category": "Κατηγορία παιχνιδιού",
 			"game_step": "Βημα",
 			"game_table": "Πινακας παιχνιδιων",
-			"payment": "ΠληρωμηΠληρωμες",
+			"payment": "Πληρωμη",
 			"payment_system": "Συσυτμα πληρωμης",
 			"profile": "Προφιλ",
-			"reports/base_collection/result_record": "Result",
-			"suspicion": "ΥποψιαΥποψιες",
+			"reports/base_collection/result_record": "Αποτελεσμα",
+			"suspicion": "Υποψια",
 			"user": "Χρηστης ",
 			"player": "Παικτης",
 			"retention_email": "Διατηρηση ηλ-ταΗλ-τα διατηρησης"
 		},
 		"attributes": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Όνομα Casino Cash Υπολοίπου",
+				"casino_cash_balance_id": "ID Υπολοίπου του  Casino Cash",
+				"action": "Ενεργεια",
+				"change_amount": "Ποσό της αλλάγής",
+				"amount_after_change": "Ποσό μετά τη αλλαγή",
+				"subject": "Αντικειμενο",
+				"processed_at": "Υποβάλλονται σε επεξεργασία σε",
+				"comment": "Σχόλιο",
+				"currency": "Νομισμα"
+			},
 			"balance_correction": {
-				"action": "Action",
-				"amount": "Amount",
-				"account": "Account",
-				"comment": "Comment"
+				"action": "Ενεργεια",
+				"amount": "Ποσό",
+				"account": "ΛογαριασμοςΛογαριασμοι",
+				"comment": "Σχόλιο"
 			},
 			"game_category": {
-				"name": "Name",
-				"disabled": "Disabled",
-				"created_at": "Created at",
-				"games": "Games",
-				"position": "Position"
+				"name": "Ονομα",
+				"disabled": "Απενεργοποιημένο",
+				"created_at": "Δημιουργηθηκε στο",
+				"games": "Παιχνιδια",
+				"position": "Θέση"
 			},
 			"notification": {
-				"type": "Type",
-				"user": "User",
+				"type": "Τυπος",
+				"user": "Χρηστης ",
 				"admin_user": "Admin",
-				"target": "Target",
-				"target_type": "Target type"
+				"target": "Στόχος",
+				"target_type": "Είδος στόχους"
 			},
 			"affiliate_link": {
-				"name": "Name",
-				"code": "Code"
+				"name": "Ονομα",
+				"code": "Κωδικας"
 			},
 			"affiliate_profile": {
 				"name": "Τιτλος",
 				"strategy": "Σχεδιο πληρωμης",
 				"no_debt": "Μη διαπραγματεύσιμο αποτελεσμα ",
-				"links": "Links",
-				"active": "Active"
+				"links": "Συνδέσμοι",
+				"active": "Δρων"
 			},
 			"account": {
 				"currency": "Νομισμα",
@@ -207,14 +227,14 @@
 			},
 			"active_admin/comment": {
 				"author": "Δημιουργος",
-				"body": "Body",
+				"body": "Κείμενο",
 				"resource": "Πόρος"
 			},
 			"admin_user": {
 				"email": "Ηλ-τα",
 				"encrypted_password": "Εγκρυμενο διελευτηριο",
 				"password": "Διελευτηριο",
-				"password_confirmation": "Confirm password",
+				"password_confirmation": "Επιβεβαιωστε νεο διελευτηριο",
 				"current_password": "Τρεχων διελευτηριο",
 				"remember_me": "Με θυμασε",
 				"reset_password_token": "Επαναρύθμιση σκυταλης διελευτηριου",
@@ -275,27 +295,27 @@
 				"amount_wager": "Ποσο στοιχηματος",
 				"wagered_percent": "Wagered percent",
 				"amount_locked": "Το ποσό κλειδωθηκε",
-				"valid_until": "Expiry date",
+				"valid_until": "Ημερομηνία λήξης",
 				"extra_info": "Προσθετες πληροφοριες",
 				"cashable": "Εξαργυρωσιμο",
 				"sticky": "Κολλωδης",
 				"wager": "Στοιχημα",
-				"created_at": "Date received",
+				"created_at": "Ημερομηνία παραλαβής",
 				"issued_at": "Εκδοθηκε στο",
 				"updated_at": "Ανανεωθηκε στο"
 			},
 			"freespin_issue": {
-				"stage": "Stage",
-				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
-				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
-				"valid_until": "Expiry date",
-				"extra": "Extra info",
-				"external_id": "External ID",
-				"created_at": "Date received",
-				"issued_at": "Issued at",
-				"updated_at": "Updated at"
+				"stage": "Σταδιο",
+				"amount": "Ποσό",
+				"freespins_total": "Δωρεάν περιστροφές έχουν απονεμηθεί",
+				"activatable_until": "Ημερομηνία λήξης",
+				"win_amount_cents": "Έχετε ήδη κερδίσει ",
+				"valid_until": "Ημερομηνία λήξης",
+				"extra": "Προσθετες πληροφοριες",
+				"external_id": "Εξωτερικη ΤΠ",
+				"created_at": "Ημερομηνία παραλαβής",
+				"issued_at": "Εκδοθηκε στο",
+				"updated_at": "Ενημερωθηκε στο"
 			},
 			"bonus_strategy/feature/payment_system": {
 				"ids_list": "Συστημα πληρωμης"
@@ -314,7 +334,7 @@
 				"attachment_file_name": "Ονομα επισυναπτομενου φακελου",
 				"attachment_content_type": "Τυπος επισυναπτομενου περιεχομενου",
 				"attachment_file_size": "Μεγεθος επισυναπτομενου φακελου",
-				"attachment_updated_at": "Added at"
+				"attachment_updated_at": "Προστέθηκε στο"
 			},
 			"event": {
 				"subject": "Αντικειμενο",
@@ -336,7 +356,7 @@
 				"bet_amount": "Στοιχημα",
 				"win_amount": "Κερδος",
 				"oauth_application": "OAuth Application",
-				"oauth_application_id": "OAuth Application Id"
+				"oauth_application_id": "OAuth Application"
 			},
 			"game": {
 				"data": "Στοιχεια",
@@ -357,7 +377,7 @@
 				"identifier": "Αναγνωριστης",
 				"title": "Τιτλος",
 				"client": "Πελατης",
-				"provider": "Game provider",
+				"provider": "Provider παιχνιδιού",
 				"description": "Περιγραφη",
 				"active": "Ενεργο",
 				"currency": "Νομισμα",
@@ -391,7 +411,7 @@
 			"payment": {
 				"amount": "Ποσό",
 				"commission_amount": "Προμηθεια",
-				"amount_after_commission": "Amount (commission subtracted)",
+				"amount_after_commission": "Ποσό (προμήθεια αφαιρείται)",
 				"currency": "Νομισμα",
 				"action": "Ενεργεια",
 				"source": "Πηγη",
@@ -402,7 +422,7 @@
 				"updated_at": "Ανανεωθηκε στο",
 				"recipient_address": "Διευθυνση",
 				"manual_confirmation_code": "Κωδικας επιβεβαιωσης",
-				"source_id": "Payment Code"
+				"source_id": "Κωδικός πληρωμής"
 			},
 			"payment_system": {
 				"system_name": "Ονομα συστηματος",
@@ -414,11 +434,11 @@
 				"updated_at": "Ανανεωθηκε στο"
 			},
 			"payment_system_debt": {
-				"system_name": "System name",
-				"system_account": "Account in system",
-				"amount_cents": "Debt",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"system_name": "Ονομα συστηματος",
+				"system_account": "Ο λογαριασμός στο σύστημα",
+				"amount_cents": "Χρέος",
+				"created_at": "Δημιουργηθηκε στο",
+				"updated_at": "Ενημερωθηκε στο"
 			},
 			"profile_setting": {
 				"name": "Ονομα",
@@ -467,7 +487,7 @@
 				"allowed_ips_string": "Επιτρεπομενα ΔΠ",
 				"guest": "Καλεσμενος",
 				"main_bitcoin_address": "Κύρια διευθυνση δυφιονόμισματος",
-				"bonus_code": "Bonus Code"
+				"bonus_code": "Μπόνους Κωδικός"
 			},
 			"profile": {
 				"full_name": "Ονοματεπωνυμο",
@@ -671,41 +691,52 @@
 	"amatic": {
 		"verification": {
 			"error_popup": {
-				"title": "Error",
-				"description": "Amatic server does not respond"
+				"title": "Σφάλμα",
+				"description": "Amatic server δεν ανταποκρίνεται"
 			},
 			"popup": {
-				"copy": "Copy",
-				"title": "Successfull verification",
-				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
-				"message": "Your Text",
-				"signature": "Amatic Signature",
-				"address": "Bitcoin Address"
+				"copy": "Να αντιφράψω",
+				"title": "Επιτυχημένη επαλήθευση",
+				"description": "Τέλεια! Το κείμενο αυτό έχει υπογραφεί από Amatic Industries με ιδιωτική υπογραφή. Μπορείτε να το επαληθεύσετε από οποιαδήποτε υπηρεσία τρίτου μέρους.",
+				"message": "Κείμενό σας.",
+				"signature": "Amatic Υπογραφή",
+				"address": "Διευθυνσεις των Bitcoin"
 			},
-			"title": "Amatic verification",
-			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
-			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"title": "Amatic επαλήθευση",
+			"description1": "Παρέχουμε αυτοματοποιημένο Bitcoin με βάση  υπογραφή επαλήθευσης για Amatic παιχνίδια. Προστατεύει κατά της απάτης.",
+			"description2": "Απλά πληκτρολογήστε κάποιο κείμενο κάτω. Amatic Industries θα το υπογράψει και Θα επιστρέψουν πίσω.",
 			"form": {
-				"your_text": "Your Text",
-				"verify": "Verify"
+				"your_text": "Κείμενό σας",
+				"verify": "Επαληθευση"
 			}
 		},
 		"amatic": "Amatic"
 	},
 	"http": {
 		"not_found": {
-			"title": "Page Not Found",
-			"oops": "Oops,",
-			"cannot_be_found": "The page you are looking for cannot be found.",
-			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
-			"link_to_root": "Here is a link to our start page:"
+			"title": "Η σελίδα δε βρέθηκε",
+			"oops": "Όπα!",
+			"cannot_be_found": "Η σελίδα που ψάχνετε δεν μπορεί να βρεθεί.",
+			"description": "Μπορεί να έχει αφαιρεθεί, είχε αλλάξει το όνομά της, ή είναι προσωρινά μη διαθέσιμη. Ομάδα Καζίνο πραγματικά λυπάται που δεν μπορούσαμε να σας παρέχουμε αυτό που αναζητάτε, αλλά υποσχόμαστε να προσπαθήσουμε  να κάνουμε το καλύτερο μας για  να σας βοηθήσουμε.",
+			"link_to_root": "Εδώ είναι μια σύνδεση στη αρχική σελίδα μας"
+		}
+	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Το έγγραφο ήταν ανεβασμένο με επιτυχία."
+			},
+			"destroy": {
+				"notice": "Το έγγραφο αφαιρέθηκε επιτυχώς."
+			}
 		}
 	},
 	"common": {
+		"required": "Απαιτειται",
 		"in_out": "IN/OUT",
-		"players": "Players",
+		"players": "Παικτες",
 		"email": "Email",
-		"content": "Content",
+		"content": "Περιεχομενο",
 		"loading": "Φορτωση...",
 		"yes": "Ναι",
 		"no": "Όχι",
@@ -716,8 +747,8 @@
 		"total_bet": "Συνολικο στοιχημα",
 		"total_win": "Συνολικο κερδος",
 		"gross_win": "Μικτά Έσοδα",
-		"cashouts_sum": "Sum of cashouts",
-		"deposits_sum": "Sum of deposits",
+		"cashouts_sum": "Ποσό εξαργυρώσεων",
+		"deposits_sum": "Ποσό καταθέσεων",
 		"net_revenue": "Καθαρα εσοδα",
 		"client": "Πελατης",
 		"amount": "Ποσό",
@@ -726,14 +757,14 @@
 		"total": "Συνολο",
 		"limit": "Όριο",
 		"live_casino": "Live Casino",
-		"address": "Address",
-		"good_news": "Good news, {{nickname}}.",
+		"address": "Διευθυνση",
+		"good_news": "Καλά νέα, {{nickname}}",
 		"save": "Φυλαξη",
 		"edit": "Διορθωση",
 		"remove": "Απομακρυνση",
 		"destroy": "Καταστροφη ",
 		"cancel": "Ακυρωση",
-		"close": "Close",
+		"close": "Κλείστε",
 		"create": "Δημιουργια",
 		"add": "Προσθηκη",
 		"update": "Ενημερωση",
@@ -742,15 +773,20 @@
 		"proceed": "Συνεχιστε",
 		"filter": "Λογοκρισμικό (φιλτρο)",
 		"are_you_sure": "Ειστε σιγουροι? ",
-		"set": "Set",
+		"set": "Ρυθμίστε",
+		"recall": "Ανακαλέστε",
 		"enabled": "Ενεργοποιημένο",
 		"disabled": "Απενεργοποιημένο",
 		"active": "Δρων",
+		"success": "Επιτυχια",
+		"error": "Σφάλμα",
 		"preview": "Επισκόπηση",
 		"select": "Eπιλογη",
 		"summary": "Συνοψη",
 		"status": "Υποσταση",
 		"options": "Επιλογες",
+		"download": "Κατεβάστε",
+		"csv": "CSV",
 		"genders": {
 			"m": "Αρρεν",
 			"f": "Θηλυ"
@@ -771,26 +807,26 @@
 		"blog": "Ιστολόγος",
 		"comments": "Σχόλια",
 		"comment": "Σχόλιο",
-		"empty_search_results": "There are no items according to the filtering parameters",
-		"add_more_coins": "Add more Coins",
-		"show_more_games": "Show more games",
-		"warning": "Warning",
-		"new_as_novelty": "New",
-		"already_member": "Already a member?",
-		"have_account": "Have an account?"
+		"empty_search_results": "Δεν υπάρχουν στοιχεία σύμφωνα με τις παραμέτρους φιλτραρίσματος",
+		"add_more_coins": "Προσθήκη Περισσότερων Νομισμάτων",
+		"show_more_games": "Δείτε περισσότερα παιχνίδια",
+		"warning": "Προσοχή",
+		"new_as_novelty": "Νεο",
+		"already_member": "Είστε ήδη μέλος;",
+		"have_account": "Έχετε ήδη λογαριασμό;"
 	},
 	"locales": {
-		"af": "Afrikaans",
+		"af": "Αφρικανικά",
 		"bg": "Βουλγαρος",
 		"de": "Γερμανος, γερμανικος",
 		"el": "Ελληνικά",
 		"en": "Αγγλος, αγγλικος",
 		"es": "Ισπανος, ισπανικος",
 		"fi": "Φινλανδος, φινλανδικος",
-		"fr": "French",
+		"fr": "Γαλλικά",
 		"it": "Ιταλος, ιταλικος",
 		"ja": "Ιαπωνας, ιαπωνικος",
-		"ko": "Korean",
+		"ko": "Κορεατικά",
 		"nl": "Ολλανδος, ολλανδικος",
 		"pl": "Πολωνος, πολωνικος",
 		"pt": "Πορτογαλος, πορτογαλικος",
@@ -818,10 +854,10 @@
 				"bonus": "Το μπονους τροποποιηθηκε",
 				"payment_system": "Συσυτμα πληρωμης",
 				"retention_email": "Το email διατήρησης τροποποιηθηκε",
-				"casino_cash_balance": "Casino Cash Balance Modified",
-				"commission_connection": "Commission Connection Modified",
-				"payment": "Payment Modified",
-				"affiliate_profile": "Affiliate Profile Modified"
+				"casino_cash_balance": "Καζίνο Cash Υπόλοιπο ήταν Τροποποιημένο",
+				"commission_connection": "Commission Connection ήταν Τροποποιημένο",
+				"payment": "Пληρωμή ήταν Τροποποιημένο",
+				"affiliate_profile": "Affiliate Προφίλ ήταν Τροποποιημένο"
 			},
 			"game": {
 				"step": "Εγινε βημα του παιχνιδιου"
@@ -837,23 +873,23 @@
 				"failed_sign_in": "Ο διαχειριστης απετυχε να συνδεθει"
 			},
 			"notifications": {
-				"balance_correction_created": "Balance correction created",
-				"cashout_requested": "Cashout requested",
-				"deposit_made": "Deposit made",
-				"cashout_made": "Cashout made",
-				"auto_cashout_made": "Auto-cashout made",
-				"cashout_rejected": "Cashout request rejected",
-				"deposit_rejected": "Deposit rejected",
-				"user_upload_document": "User Uploaded Document",
-				"payment_created_by_admin": "Admin Created Payment",
-				"user_disabled": "User Disabled",
-				"contact": "User Requested Support",
-				"admin_comment_created": "Admin Left Comment"
+				"balance_correction_created": "Δημιουργήθηκε  η διόρθωση του υπολοίπου",
+				"cashout_requested": "Ζητηθηκε Εξαργυρωση",
+				"deposit_made": "Πλαισιο καταθεσης",
+				"cashout_made": "Εγινε Εξαργυρωση ",
+				"auto_cashout_made": "Αυτόματη εξαργύρωση",
+				"cashout_rejected": "Απορριπτεται η αιτηση Εξαργυρωσης",
+				"deposit_rejected": "Κατάθεση απορρίφθηκε",
+				"user_upload_document": "Χρήστης φόρτωσε ένα έγγραφο",
+				"payment_created_by_admin": "Διαχειριστής Δημιουργήθηκε Πληρωμή",
+				"user_disabled": "Xρήστης έχει απενεργοποιηθεί",
+				"contact": "Χρήστης ζητήθηκε υποστήριξη",
+				"admin_comment_created": "Διαχειριστής άφησε ένα σχόλιο"
 			},
 			"affiliate": {
 				"redirect": "Νεα επισκεψη απο χρήστη θυγατρικής"
 			},
-			"bitcoin_addresses_uploaded": "Bitcoin addresses uploaded"
+			"bitcoin_addresses_uploaded": "Bitcoin διευθύνσεις ήταν ανεβασμένες"
 		},
 		"bonuses": {
 			"names": {
@@ -879,6 +915,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -891,9 +928,10 @@
 				"coupon": "Κουπονι",
 				"cashbox": "Κουμπαρας",
 				"cep_bank": "Cep Bank",
-				"bank_transfer": "Bank Transfer",
+				"bank_transfer": "Τραπεζική μεταφορά",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "OAuth Application",
 				"bitcoin_payment": "Δυφιονόμισμα",
 				"ripple_payment": "Ripple"
 			},
@@ -904,14 +942,28 @@
 			"system_name": "%{παιδι} δια %{γονιος}",
 			"all_locked": "Για την ασφάλειά σας επιτρέπουμε εκταμιευση μόνο μέσω των συστημάτων πληρωμής που χρησιμοποιήσατε προηγουμένως για κατάθεση. Εάν έχετε ερωτήσεις, επικοινωνήστε με την υποστήριξη.",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Τράπεζα",
+				"banklocal": "Τραπεζική εγχώρια απόσυρση",
+				"bankiban": "Τραπεζική εγχώρια IBAN απόσυρση",
+				"bankintiban": "Τραπεζική διεθνής IBAN απόσυρση",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "Visa",
 				"mastercard": "MasterCard",
 				"online_bank_transfer": "Τραπεζικη μεταβιβαση σεροή",
 				"ideal": "iDEAL",
 				"nordea_solo": "Nordea Solo",
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
-				"cards": "Credit Cards",
+				"cards": "Πιστωτική κάρτα",
 				"ccard": "Πιστωτικη καρτα",
+				"creditcard": "Πιστωτικη καρτα",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
 				"eps": "EPS e-payment",
@@ -927,12 +979,13 @@
 				"paysafecard": "Paysafecard",
 				"quick": "Quick",
 				"sepa": "SEPA Direct Debit",
+				"skrill": "Skrill",
 				"skrill_direct": "Skrill Direct",
 				"skrill_wallet": "Ψηφιακο πορτοφολι Skrill",
 				"sofort": "SOFORT Banking",
 				"tatrapay": "TatraPay",
 				"trustly": "Trustly",
-				"bank_transfer": "Bank Transfer",
+				"bank_transfer": "Τραπεζική μεταφορά",
 				"lavapay_balance": "LavaPay Balance",
 				"cheque": "Cheque",
 				"perfect": "Perfect Money",
@@ -942,7 +995,7 @@
 				"okpay": "OKPAY",
 				"qiwi": "Qiwi",
 				"mailru": "money@mail.ru",
-				"lavapay_bitcoin": "Bitcoin",
+				"lavapay_bitcoin": "Δυφιονόμισμα",
 				"egopay": "EgoPay",
 				"lavapay_litecoin": "LiteCoin",
 				"paxum": "Paxum",
@@ -990,7 +1043,8 @@
 				"local_bank_transfer": "Local Bank Transfer",
 				"w1": "W1",
 				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"russian_standard": "Russian Standard Bank",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1016,34 +1070,34 @@
 		"provable_fair": {
 			"provable_fair": "Αποδειξιμος δικαια",
 			"provability": "Αποδειξιμοτητα",
-			"not_available": "Provability widget available at game page",
+			"not_available": "Widget Πιθανότητα διαθέσιμη στη σελίδα του παιχνιδιού",
 			"verify": "Επαληθευση",
-			"loading": "Randomizing ...",
-			"is_unavailable": "Provable fair is not available for this game.",
+			"loading": "Τυχαιοποίηση",
+			"is_unavailable": "Αποδείξιμo fair δεν είναι διαθέσιμο για αυτό το παιχνίδι",
 			"next_game": "Επομενο παιχνιδι",
-			"last_game": "Last game",
-			"reel_number": "Reel {{index}}",
+			"last_game": "Επιθετο",
+			"reel_number": "Τρόχος {{index}}",
 			"fields": {
 				"hash": "Hash (Result + Secret)",
-				"client_seed": "Client seed",
-				"secret": "Result + Secret",
-				"result": "Final result"
+				"client_seed": "Σπορος του πελατη",
+				"secret": "Αποτέλεσμα+Μυστικό",
+				"result": "Τελικό αποτέλεσμα"
 			},
 			"hint": {
-				"common": "Enter client Seed (0-{{max_seed}})",
-				"roulette": "Push the ball further:",
-				"card": "Cut the deck:",
-				"poker": "Cut the deck:",
-				"slots": "Spin the reels a bit more:"
+				"common": "Εισάγετε πελήτη Seed (0-{{max_seed}})",
+				"roulette": "Σπρώξτε τη μπάλα πιο μακρυά",
+				"card": "Κόψτε τη τράπουλα",
+				"poker": "Κόψτε τη τράπουλα",
+				"slots": "Περιστρέφτε τους τρσόχους λίγο ακόμα"
 			},
 			"verification": {
 				"success": {
-					"title": "Successful verification",
-					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
+					"title": "Επιτυχής επαλήθευση",
+					"body": "Τέλεια! Το hash που σας στείλαμε κατά την έναρξη του παιχνιδιού ταιριάζει ακριβώς με το hash του αποτελέσματος του παιχνιδιού. Το seed του παίκτη σας είχε την αναμενόμενη επίπτωση στο τελικό αποτέλεσμα."
 				},
 				"failure": {
-					"title": "Verification failed",
-					"body": "Please contact our support."
+					"title": "Επαλήθευση απέτυχε",
+					"body": "Παρακαλούμε, επικοινωνήστε με την υποστήριξη μας"
 				}
 			}
 		},
@@ -1052,10 +1106,10 @@
 			"current_balance": "Τρεχων υπολοιπο {{balance}}.",
 			"send_text": "Στειλτε καθε ποσο σε {{νομισμα}} (συν πλην τέλη) στο",
 			"cant_attach_address": "Δυστυχώς, έχουμε κάποια προβλήματα με δυφιονόμισματα. Ο διαχειριστής έχει ήδη κοινοποιηθεί. Δοκιμάστε ξανά σύντομα.",
-			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
+			"private_address_note": "Αυτό είναι ιδιωτική διεύθυνση καταθέσεων σας. Οποιαδήποτε συναλλαγή που κάνετε σε αυτή τη διεύθυνση  θα εμφανιστεί αμέσως στο υπολοίπό σας. ",
 			"xrp": {
-				"send_text": "Send any amount of {{currency}} to",
-				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
+				"send_text": "Στείλτε οποιοδήποτε ποσό {{currency}} σε",
+				"private_address_note": "Αυτό είναι ιδιωτική διεύθυνση καταθέσεων και tag  προορισμού σας. Οποιαδήποτε συναλλαγή που κάνετε σε αυτή τη διεύθυνση με αυτό το tag  προορισμού  θα εμφανιστεί αμέσως στο λογαριασμό σας."
 			}
 		}
 	},
@@ -1066,11 +1120,11 @@
 			"password_confirmation": "Επιβεβαιωστε το διελευτηριο σας",
 			"current_password": "Εισαγετε το τερχων διελευτηριο σας"
 		},
-		"age_acceptance": "Please confirm that you are over {{age}} years old",
+		"age_acceptance": "Επιβεβαιωνω οτι ειμαι ανω των {{age}} χρονων",
 		"choose_game": "Διαλεξτε παιχνιδι",
 		"games_played": "Παιχνιδια που παιχθηκαν",
 		"or": "ή ",
-		"please_or": "Please {{first}} or {{second}}",
+		"please_or": "Παρκαλώ {{first}} or {{second}}",
 		"mbtc_total_winnings": "mBTC συνολικα κερδη",
 		"hi_guest": "Γεια, (καλεσμενος)",
 		"hi_user": "Γεια, (παρατσουκλι)",
@@ -1083,10 +1137,10 @@
 			"great": "Αριστο"
 		},
 		"playing": {
-			"playing_fun": "Playing for {{currency}}",
-			"playing_real": "Playing with {{currency}}",
-			"play_fun": "Play for {{currency}}",
-			"play_real": "Play with {{currency}}"
+			"playing_fun": "Πληρωμή σε {{currency}}",
+			"playing_real": "Πληρωμή σε {{currency}}",
+			"play_fun": "Παίξτε σε {{currency}}",
+			"play_real": "Παίξτε με {{currency}}"
 		},
 		"links": {
 			"support": "Υποστηριξη",
@@ -1101,14 +1155,14 @@
 			"send_form": "Στειλτε εντυπο",
 			"online_chat": "Συνομιλια ενροη",
 			"home": "Σπιτι",
-			"frontpage": "Frontpage",
+			"frontpage": "Aρχική",
 			"casino_games": "Καζινο Παιχνιδια",
 			"about_casino": "Για το καζινο",
 			"all_games": "Ολα τα παιχνιδια",
-			"load_more_games": "Load More Games",
+			"load_more_games": "Φορτώστε Περισσότερα Παιχνίδια",
 			"rules": "Κανονες των παιχνιδιων",
 			"autoregister": "Αυτο-καταχωρηση",
-			"quick_register": "Quick Register",
+			"quick_register": "Γρήγορη Εγγραφή",
 			"play_for_fun": "Παιξτε για διασκεδαση",
 			"demo": "Demo",
 			"play_for_real": "Παιξτε στα αληθινα",
@@ -1120,7 +1174,7 @@
 			"profile": "Προφιλ",
 			"dice": "Ζαρια",
 			"deposit": "Καταθεση",
-			"withdraw": "Withdraw",
+			"withdraw": "Να αποσύρω",
 			"cashout": "Εκταμιευση",
 			"cashbox": "Κουμπαρας",
 			"sign_out": "Αποσυνδεση",
@@ -1128,8 +1182,8 @@
 			"sign_up": "Εγγραφη",
 			"register": "Καταχωρηση",
 			"login": "Επισύνδεση",
-			"logout": "Logout",
-			"start_playing": "Start Playing",
+			"logout": "Αποσύνδεση",
+			"start_playing": "Ξεκινήστε να Παίζετε",
 			"forgot_password": "Ξεχασατε το διελευτηριο?",
 			"didnt_receive_confirmation": "Δεν λαβατε οδηγιες επιβεβαιωσης? ",
 			"didnt_receive_unlock": "Δεν λαβατε οδηγιες ξεκλειδωματος? ",
@@ -1137,20 +1191,22 @@
 			"settings": "Ρυθμισεις"
 		},
 		"captions": {
-			"affiliates": "Affiliates",
+			"affiliates": "Θηγατρικες",
 			"help": "Βοηθεια",
-			"games": "Games",
+			"games": "Παιχνιδια",
 			"quick_links": "Γρήγοροι σύνδεσμοι",
 			"languages": "Γλωσσες",
-			"info": "Info",
+			"info": "Πληροφορίες",
 			"information": "Πληροφορίες",
-			"promotion": "Promotion",
-			"follow_us": "Ακολουθηστε μας"
+			"promotion": "Пροσφορές",
+			"follow_us": "Ακολουθηστε μας",
+			"privacy": "Προστασία Προσωπικών Δεδομένων",
+			"corporate": "Εταιρική "
 		},
 		"actions": {
 			"go_bang": "Ξεκίνα!",
-			"deposit_now": "Deposit Now",
-			"sign_up_now": "Sign Up Now"
+			"deposit_now": "Καταθέστε τώρα",
+			"sign_up_now": "Εγγραφείτε τώρα"
 		},
 		"games_bet_playthrough_percent": "Ποσοστο εκβασης στοιχηματων σε παιχνιδια",
 		"contact": {
@@ -1184,14 +1240,14 @@
 			"resend_hint": "Συμπληρωστε το ηλ-τα σας και θα σας στειλουμε οδηγιες πως να αναρυθμισετε το διελευτηριο σας μεσω ηλ-τα",
 			"contact_us_hint_html": "Επικοινωστε με μας μεσω (ιστοσελιδα) εαν χρειαζεστε προσθετη βοηθεια",
 			"custom": {
-				"not_valid_email": "Not a valid email",
-				"too_short": "Too short",
-				"not_match": "Not match",
-				"min_characters": "Minimum 1 character"
+				"not_valid_email": "Το email δεν είναι έγκυρο",
+				"too_short": "Πολύ σύντομο",
+				"not_match": "Δεν ταιριάζει",
+				"min_characters": "Τουλάχιστον 1 χαρακτήρας"
 			}
 		},
 		"payment_system_redirect": {
-			"notification": "You will be redirected to {{system}} side shortly to finish your transaction",
+			"notification": "Θα μεταφερθείτε {{system}} πλευρά του συστήματος σύντομα να τελειώσει η συναλλαγή σας.",
 			"text": "Για να συνεχίσετε τη πληρωμη κάντε κλικ στο κουμπί παρακάτω.",
 			"button": "Συνεχιστε πληρωμη. "
 		},
@@ -1201,25 +1257,24 @@
 		"filters": {
 			"find_your_game": "Βρειτε το παιχνιδι σας"
 		},
-		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
+		"rules_priority_warning": "Οι κανόνες του παιχνιδιού, όπως δημοσιεύονται στην παρούσα ιστοσελίδα είναι στην αγγλική γλώσσα. Οι μεταφράσεις σε άλλες γλώσσες παρέχεται ως υπηρεσία. Σε περίπτωση ασυμφωνίας μεταξύ μιας αγγλικής έκδοσης και της μετάφρασης, το αγγλικό κείμενο διατηρεί πάντα προτεραιότητα."
 	},
 	"winners": {
 		"winners": "Νικητες",
 		"latest_winners": "Τελευταιοι νικητες",
-		"top_winners": "Top Winners",
+		"top_winners": "Οι Top νικήτες",
 		"amount_in_game": "%{ποσό} σε %{παιχνιδι}",
 		"parts": {
-			"just_won": "just won",
-			"in": "in"
+			"just_won": "μόλις κέρδισε",
+			"in": "σε"
 		}
 	},
 	"restriction": {
-		"default": "This page is appears to be restricted in your country",
-		"game_restricted_in_country": "This game is appears to be restricted in your country",
-		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
+		"default": "Αυτή η σελίδα φαίνεται να περιορίζεται στη χώρα σας",
+		"game_restricted_in_country": "Αυτό το παιχνίδι φαίνεται να περιορίζεται στη χώρα σας",
+		"registration_restricted_in_country": "Η εγγραφή φαίνεται να περιορίζεται στη χώρα σας"
 	},
 	"documents": {
-		"removed_successfully": "Document was successfully removed",
 		"document": {
 			"edit_description": "Επιμελεια περιγραφης",
 			"approved": "Εγκρήθη",
@@ -1232,22 +1287,51 @@
 	"sportsbook": {
 		"sports": "Αθληματα",
 		"live_betting": "Ζωντανα στοιχηματα",
-		"sports_bets": "Sports Bets"
+		"sports_bets": "Αθλητικά στοιχήματα"
 	},
 	"formtastic": {
 		"labels": {
+			"clearingNumber": "Αριθμός Εκκαθάρισης ή ο κωδικός τράπεζας",
+			"accountNumber": "Αριθμός λογαριασμού",
+			"beneficiaryName": "Όνομα δικαιούχου",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Διεύθυνση του Δικαιούχου",
+			"bankName": "Το όνομά Τράπεζας",
+			"branchAddress": "Διεύθυνση του Τομέα",
+			"secureId": "Aναγνωριστικό ασφαλείας (SID)",
+			"amount": "Ποσό",
+			"account": "Λογαριασμός",
+			"service": "Υπηρεσία",
 			"card_holder": "Ονομα κατοχου καρτας",
+			"cardHolder": "Ονομα κατοχου καρτας",
 			"credit_card_number": "Αριθμος πιστωτικης καρτας",
+			"encCreditcardNumber": "Αριθμός κάρτας",
+			"countryCode": "Κρατος",
+			"internalBonusCode": "Μπόνους Κωδικός",
 			"cvc": "Κωδικας ασφαλειας καρτας",
+			"cvv": "Cvv",
 			"expiration_date": "Ημερομηνία λήξης",
-			"amount": "Amount",
-			"recipient": "Recipient",
+			"expiryDate": "Ημερομηνία λήξης",
+			"voucherNumber": "Αριθμός του Voucher",
+			"voucherValue": "Αξία του Voucher",
+			"email": "Email",
+			"recipient": "Παραλήπτης",
+			"phoneNumber": "Αριθμός τηλεφώνου",
+			"mobileOperator": "Εταιρεία κινητής τηλεφωνίας",
+			"username": "Όνομα Χρήστη",
+			"password": "Διελευτηριο",
+			"country": "Κρατος",
 			"document": {
-				"attachment": "Attachment",
-				"description": "Description"
+				"attachment": "Προσαρτημα ",
+				"description": "Περιγραφη"
 			},
-			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"btc_amount": "Ποσό σε BTC",
+			"wallet_address": "Διεύθυνση πορτοφολιού",
+			"deposit_form": {
+				"net_account": "E-mail / Aναγνωριστικό λογαριασμού",
+				"secure_id": "Aναγνωριστικό ασφαλείας (SID)"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1275,72 +1359,72 @@
 				"update": "Ενημερωστε συστημα πληρωμης"
 			},
 			"document": {
-				"submit": "Submit document"
+				"submit": "Υποβολή εγγράφου"
 			},
 			"create": "Διμιουργηστε"
 		},
 		"hints": {
 			"payment_system": {
-				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+				"deposit_snippet_name": "Στη χρήση αποσπάσματος {{cms:helper:payment_total_amount}} και {{cms:helper:payment_uniq_code}} για να προσθέσετε  ποσό της πληρωμής και uniq κωδικό πληρωμής αντίστοιχα"
 			},
 			"profile": {
 				"currency": "Μπορείτε να αλλάξετε το νόμισμα σε οποιοδήποτε στάδιο μετά την ολοκλήρωση της καταχώρησης."
 			},
-			"btc_amount": "Amount may differ due to exchange rate changes"
+			"btc_amount": "Ποσό μπορεί να διαφέρει λόγω μεταβολών των συναλλαγματικών ισοτιμιών"
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} Issue",
 		"stages": {
 			"wait": "Περιμενετε",
 			"handle_bets": "Ένεργο",
 			"canceled": "Ακυρωθηκε",
-			"expired": "Expired",
+			"expired": "Έληξε",
 			"wager_done": "Στοιχημα εγινε",
 			"lost": "Χασατε",
-			"pending": "Pending"
+			"pending": "Εκκρεμει"
 		}
 	},
 	"freespin_issues": {
-		"title": "%{bonus} Issue",
-		"games": "Games",
-		"activate": "Activate",
+		"title": "%{bonus} Έκδοση",
+		"games": "Παιχνιδια",
+		"activate": "Δρων",
 		"stages": {
-			"issued": "Issued",
-			"activated": "Activated",
-			"canceled": "Canceled",
-			"expired": "Expired",
-			"finished": "Played",
-			"pending": "Pending"
+			"issued": "Εκδόθηκε",
+			"activated": "Δρων",
+			"canceled": "Ακυρωθηκε",
+			"expired": "Έληξε",
+			"finished": "Παικτης",
+			"pending": "Εκκρεμει"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "Εσείς λάβατε {{freespins_count}} μπόνους δωρεάν περιστροφές σε {{games}}.",
+			"activation_prompt_html": "Για να ενεργοποιήσετε τιε δωρεάν περιστροφές πηγαίνετε στο {{link}}.  "
 		}
 	},
 	"games": {
 		"title": "Παιχνιδια καζινο",
 		"categories": {
-			"all": "All Games",
+			"all": "Ολα τα παιχνιδια",
 			"card": "Χαρτοπαιγνια",
 			"poker": "Παιχνιδια ποκερ",
-			"table": "Table Games",
+			"table": "Επιτραπέζια Παιχνίδια",
 			"roulette": "Ρουλέτα",
 			"slots": "Σλοτς",
 			"video_poker": "Video Poker",
 			"blackjack": "Blackjack",
 			"bingo": "Bingo",
 			"live": "Live",
-			"fruit": "Fruit Slots",
-			"theme": "Theme Slots",
-			"casual": "Casual",
-			"lottery": "Lottery",
+			"fruit": "Φρουτάκια",
+			"theme": "Θεματικά Slots ",
+			"casual": "Διάφορα",
+			"lottery": "Λαχείο",
 			"keno": "Keno",
-			"progressive": "Progressive",
+			"progressive": "Προοδευτικό",
+			"jackpot": "Games with Jackpot",
 			"stat": {
 				"most_popular": "Δημοφιλεστερα",
 				"new": "Νεο",
-				"manual": "Featured",
+				"manual": "Προτεινόμενα",
 				"last_played": "Τελευταιο παιχνιδι"
 			},
 			"device": {
@@ -1349,13 +1433,16 @@
 			}
 		},
 		"providers": {
-			"all": "All Providers",
+			"all": "Όλοι οι πάροχοι",
 			"softswiss": "SoftSwiss",
 			"amatic": "Amatic",
 			"betsoftgaming": "BetSoft Gaming",
 			"casinotechnology": "Casino Technology",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1383,7 +1470,7 @@
 		},
 		"titles": {
 			"baccarat": {
-				"classic": "Baccarat"
+				"classic": "Μπακαρά"
 			},
 			"blackjack": {
 				"double_exposure": "Double Exposure",
@@ -1397,10 +1484,10 @@
 				"switch": "Hi-Lo Switch"
 			},
 			"casual": {
-				"horse_racing": "Horse Racing",
-				"minesweeper": "Minesweeper",
-				"heads_tails": "Heads and Tails",
-				"scratch_dice": "Scratch Dice"
+				"horse_racing": "Ιπποδρομιες",
+				"minesweeper": "Ναρκαλιευτής",
+				"heads_tails": "κορώνα και γράμματα",
+				"scratch_dice": "Scratch Ζάρια"
 			},
 			"poker": {
 				"caribbean": "Caribbean Poker",
@@ -1449,26 +1536,28 @@
 			"not_confirmed": "Δεν βεβαιωθηκε",
 			"locked": "Κλειδωμενο",
 			"normal": "Ένεργο",
-			"manually_suspected": "Manually marked as suspicious"
+			"manually_suspected": "Έχει επισημανθεί ως ύποπτος Manually."
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "Τιμολογηθηκε",
-		"billed_to": "Τιμολογειτε στον",
+		"billed_from": "Απο",
+		"billed_to": "Ως",
 		"paid": "Πληρωμενο",
-		"submit": "Καταθεση"
+		"submit": "Καταθεση",
+		"billed": "Τιμολογήθηκε:",
+		"not_billed": "Δεν Τιμολογήθηκε:"
 	},
 	"affiliate_links": {
-		"add": "Add Link",
+		"add": "Προσθήκη Συνδέσμου",
 		"name": {
-			"hint": "Identification for your private use only"
+			"hint": "Αναγνώριση μόνο για ιδιωτική χρήση σας"
 		},
 		"code": {
-			"hint": "Unique code for affiliate link"
+			"hint": "Μοναδικός κωδικός για το affiliate σύνδεσμο"
 		}
 	},
 	"affiliate_profiles": {
-		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
+		"tip": "Έσοδα για κάθε προφίλ υπολογίζονται ανεξάρτητα. Χρησιμοποιήστε Σύνδεσμοι για τη παρακολούθηση των παίκτων.",
 		"commission": "Προημηθεια",
 		"registration_settings": {
 			"reward": "CPA Αμοιβη",
@@ -1477,9 +1566,9 @@
 		},
 		"percent_settings": {
 			"one": "%{percent}%",
-			"default": "%{percent}% if generated greater than %{limit} %{currency}",
-			"rule": "%{percent}% if generated less than %{limit} %{currency}",
-			"intermediate_rule": "%{percent}% if generated between %{limits} %{currency}"
+			"default": "%{percent}% εαν οι καλεσμενοι χρηστες τζογαραν λιγοτερο απο %{limit} %{currency}",
+			"rule": "%{percent}% εαν οι καλεσμενοι χρηστες τζογαραν λιγοτερο απο %{limit} %{currency}",
+			"intermediate_rule": "%{percent}% εαν οι καλεσμενοι χρηστες τζογαραν λιγοτερο απο %{limits} %{currency}"
 		},
 		"no_default_commissions": "Δεν έχετε καμια αναθετημενη προμήθεια. Παρακλουμε επικοινωνήστε με την υποστήριξη.",
 		"active": "Ενεργό",
@@ -1500,9 +1589,9 @@
 			"registered_users_count": "Καταχωρημενοι χρηστες (με καταθεσεις)",
 			"date": "Ημερομηινα",
 			"invited_users_income": "ΚΚΠ (καθαρο κερδος παιχνιδιων)",
-			"ggr": "GGR (gross gaming revenue)",
-			"total": "Period Total",
-			"link_name": "Link Name"
+			"ggr": "ΚΚΠ (καθαρο κερδος παιχνιδιων)",
+			"total": "Περίοδος Σύνολο",
+			"link_name": "Όνομα  Σύνδεσης "
 		},
 		"affiliate_profile": {
 			"code": "Κωδικας",
@@ -1511,19 +1600,19 @@
 		},
 		"banners": {
 			"banners": "Πανό",
-			"sizes": "Sizes",
-			"types_title": "Types",
+			"sizes": "Μεγέθη",
+			"types_title": "Τυπος",
 			"types": {
-				"image": "Image",
+				"image": "Εικόνα",
 				"html": "HTML",
-				"swf": "Flash"
+				"swf": "Φλος"
 			}
 		},
 		"form": {
 			"name_hint": "Αναγνώριση μόνο για ιδιωτική χρήση σας"
 		},
-		"add": "Create affiliate profile",
-		"add_link": "Create affiliate profile link",
+		"add": "Δημιουργεια θηγατρικου συνδεσμου",
+		"add_link": "Δημιουργεια θηγατρικου συνδεσμου",
 		"strategy": "Σχεδιο πληρωμης",
 		"bills": {
 			"bills": "Λογαριασμοι",
@@ -1551,34 +1640,34 @@
 			"from": "Απο"
 		},
 		"promo_form": {
-			"title": "Add Promo Code",
-			"sub_title": "and receive a bonus"
+			"title": "Προσθέσετε Promo κώδικα",
+			"sub_title": "και θα λάβετε ένα μπόνους"
 		},
 		"bonus_settings": "Ρυθμιση μπονους",
-		"refuse": "I don't want to receive any Bonuses"
+		"refuse": "Δεν θέλω να λάβω κανένα μπόνους"
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Δωρεάν Περιστροφές"
 		},
-		"gift": "Gift"
+		"gift": "Δωρο"
 	},
 	"profiles": {
 		"menu": {
 			"balance": "Υπολοιπο",
 			"history": "Ιστορια",
 			"bonuses": "Μπονους",
-			"affiliate": "Θηγατρικες",
+			"affiliate": "Affiliate",
 			"profile": "Πληροφοριες για το προφιλ",
-			"documents": "Documents"
+			"documents": "Έγγραφα"
 		},
 		"info": {
-			"personal": "Personal"
+			"personal": "Προσωπικά"
 		},
 		"index": {
-			"my_account": "My Account",
-			"my_bets": "My Bets",
-			"transaction": "Transaction",
+			"my_account": "Ο Λογαριασμός Μου",
+			"my_bets": "Δικά μου στοιχήματα",
+			"transaction": "Συναλλαγή",
 			"welcome": "Καλοσηλθατε",
 			"balance": "Το υπολοιπο σας",
 			"account_balance": "Υπολοιπο λογαριασμου"
@@ -1587,14 +1676,14 @@
 			"edit_profile": "Επιμελεια του προφιλ σας",
 			"edit_settings": "Επιμελεια των ρυθμισεων",
 			"attach_documents": "Επισυναπτω εγγραφα",
-			"change_credentials": "Change password",
+			"change_credentials": "Αλλαξτε διελευτήριο",
 			"set_email_and_password": "Προσδιοριστε ηλ-τα και διελευτηριο",
 			"create_cashout_request": "Εξαργυρωση",
-			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
-			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
+			"confirm_address": "Για λόγους ασφαλείας η διεύθυνση που δεν έχει χρησιμοποιηθεί ποτέ πρέπει να επιβεβαιωθεί με email.  Σύνδεσμο επιβεβαίωσης στάλθηκε στο email σας, παρακαλούμε να ελέγξετε το mailbox.",
+			"address_confirmation_failed": "Διεύθυνση δεν επιβεβαιώθηκε και εξαργύρωση δεν υποβλήθηκε σε επεξεργασία",
 			"cashout_request_created": "Αίτημα εξαργυρωσης ληφθηκε και απαιτεί έγκριση από το προσωπικό μας. Θα επεξεργαστούμε το αίτημά σας όσο πιο γρήγορα μπορούμε.",
 			"cashout_successfully": "Εξαργυρωση εγινε επιτυχως",
-			"cashout_technically_impossible": "We're sorry, but some errors occurred. We're working to fix them in an emergency mode. Please contact support if you have any questions.",
+			"cashout_technically_impossible": "Δυστυχώς,  παρουσιάστηκε κάποιο σφάλμα. Δουλεύουμε για να τα διορθώσουμε σε μια κατάσταση έκτακτης ανάγκης. Επικοινωνήστε με την υποστήριξη αν έχετε ερωτήσεις.",
 			"profile_info": {
 				"title": "Πληροφοριες για το προφιλ"
 			},
@@ -1603,21 +1692,21 @@
 			},
 			"accounts": {
 				"title": "Λογαριασμοι",
-				"available_to_cashout": "Available to cash out",
-				"add_currency": "Add currency"
+				"available_to_cashout": "Διαθέσιμα για εκταμίευση",
+				"add_currency": "Προσθέσετε νόμισμα"
 			},
 			"bonuses": {
 				"title": "Μπονους",
-				"no_bonuses": "You currently do not have any bonus.",
-				"cancel_bonus": "Forfeit Bonus",
-				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
+				"no_bonuses": "Αυτή τη στιγμή δεν έχετε κανένα μπόνους",
+				"cancel_bonus": "Εκχωρώ το μπόνους",
+				"cancel_bonus_confirmation": "Παρακαλούμε, σημειώστε ότι η εκχώρηση του μπόνους θα οδηγήσει επίσης σε εκχώρηση των κέρδων σας.",
 				"bonus_canceled": "Μπονους ακυρώθη",
 				"bonus_not_canceled": "Αυτο το μπονους δεν μπορει να ακυρωθει"
 			},
 			"coupons": {
-				"activated": "Coupon \"{{code}}\" successfully activated.",
-				"not_activated": "Unable to activate coupon \"{{code}}\". Please try again or contact support.",
-				"already_activated": "Coupon \"{{code}}\" already activated."
+				"activated": "Coupon \"{{code}}\" – ενεργοποιήθηκε επιτυχώς",
+				"not_activated": "Αδύνατη η ενεργοποίηση του coupon \"{{code}}\". Παρακαλούμε δοκιμάστε ξανά ή επικοινωνήστε με την υποστήριξη.",
+				"already_activated": "Coupon \"{{code}}\" έχει ήδη ενεργοποιηθεί."
 			},
 			"payments": {
 				"title": "Πληρωμες"
@@ -1635,21 +1724,21 @@
 			"payments_history": "Ιστορικο μεταβιβασεων",
 			"bets_history": "Ιστορικο μπονους",
 			"bonuses_history": "Ιστορικο μπονους",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Ιστορία Δωρεάν Περιστροφών",
 			"deposit_to_address_hint": "Καντε καταθεση σε αυτη τη διευθυνση για να χρηματοδοτησετε το λογαριασμο σας. ",
 			"freespin_bonuses": {
-				"bonus_canceled": "Bonus canceled",
-				"bonus_not_canceled": "Failed to cancel bonus",
-				"bonus_activated": "Bonus was activated",
-				"bonus_not_activated": "Bonus was not activated"
+				"bonus_canceled": "Μπονους ακυρώθη",
+				"bonus_not_canceled": "Απέτυχε για να ακυρώσει το μπόνους",
+				"bonus_activated": "Το μπόνους έχει  ενεργοποιηθεί.",
+				"bonus_not_activated": "Το μπόνους δεν έχει ενεργοποιηθεί."
 			}
 		},
 		"edit": {
 			"title": "Επιμελεια προφιλ",
 			"info_updated": "Οι πληροφοριες ανανεωθηκαν",
-			"not_saved": "Changes was not saved",
+			"not_saved": "Οι αλλαγές δεν ήταν αποθηκευμένες",
 			"settings_section_updated": "Το τμημα ανανεωθηκε επιτυχως",
-			"valid_data_warning": "Please enter valid contact details in the form below. Make sure it is accurate before saving."
+			"valid_data_warning": "Παρακαλούμε, εισάγετε έγκυρα στοιχεία επικοινωνίας στην παρακάτω φόρμα. Βεβαιωθείτε ότι είναι ακριβείς πριν από την αποθήκευση."
 		}
 	},
 	"payments": {
@@ -1667,43 +1756,47 @@
 		},
 		"canceled_by_user": "Ακυρωσατε τη μεταβιβαση σας",
 		"wait_for_confirmation": "Η πληρωμη σας θα επιβεβαιωθει συντομα",
-		"not_performed": "Payment was not performed",
-		"confirmed": "Payment confirmed",
-		"canceled": "Payment not confirmed",
+		"not_performed": "Η πληρωμή δεν εκτελέστηκε",
+		"confirmed": "Η πληρωμή επιβεβαιώθηκε",
+		"canceled": "Η πληρωμή δεν έχει επιβεβαιωθεί",
 		"make_deposit": "Καντε καταθεση",
 		"make_cashout": "Ζητηστε Εξαργυρωση",
-		"confirm_address": "Confirm address",
-		"bonus_code_show": "I have a Bonus Code",
-		"bonus_code_hide": "Hide Bonus Code",
-		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
-		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
-		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
-		"invalid_profile_message": "Για να μπορειτε να εξαργυρώσετε, θα πρέπει να συμπληρώσετε τα απαραίτητα πεδία στο προφίλ σας.",
-		"try_again": "Η συναλλαγή δεν μπορούσε να ξεκινήσει λόγω προβλημάτων σύνδεσης. Εάν το πρόβλημα επιμένει, επικοινωνήστε με την υποστήριξη μας.",
-		"select_currency": "Select Balance Currency",
-		"select_currency_hint": {
-			"deposit": "I would like to top up my balance in",
-			"cashout": "I would like to cash out"
+		"confirm_address": "Επιβεβαιώστε τη διεύθυνση",
+		"bonus_code_show": "Έχω μπόνους κωδικό.",
+		"bonus_code_hide": "Απόκρυψη Μπόνους Κώδικα",
+		"address_confirmation_email_body": "Ζητήσατε  την εξαργύρωσης σε {{address}}. Δεν έχετε χρησιμοποιήσει αυτή τη διεύθυνση πριν. Για την προστασία του λογαριασμού σας σας ζητάμε να επιβεβαιώσετε αυτή τη διεύθυνση. Για να επιβεβαιώσετε τη διεύθυνση κάντε κλικ στο σύνδεσμο -",
+		"address_confirmation_email_warning": "Εάν αυτή η διεύθυνση δεν ανήκει σε σας επικοινωνείστε με τη υποστήριξη και  αλλάξτε τον κωδικό σας:",
+		"invalid_profile_message": {
+			"deposit": "Πρέπει να συμπληρώσετε τα απαραίτητα πεδία πρωτού να κάνετε μια κατάθεση. Παρακαλούμε, να εισάγετε έγκυρα στοιχεία επικοινωνίας στην παρακάτω φόρμα. Βεβαιωθείτε ότι είναι ακριβείς πριν από την αποθήκευση.",
+			"cashout": "Για να μπορείτε να εξαργθρώσετε, πρέπει να  συμπληρώσετε τα απαραίτητα πεδία στο προφίλ σας."
 		},
-		"select_payment_method": "Select Payment Method",
+		"try_again": "Η συναλλαγή δεν μπορούσε να ξεκινήσει λόγω προβλημάτων σύνδεσης. Εάν το πρόβλημα επιμένει, επικοινωνήστε με την υποστήριξη μας.",
+		"select_currency": "Επιλέξτε Νόμισμα στο Υπόλοιπο",
+		"select_currency_hint": {
+			"deposit": "Θα ήθελα να ανανεώσω το υπόλοιπο μου",
+			"cashout": "Θέλω να εξαργυρώσω"
+		},
+		"select_payment_method": "Επιλέξτε μέθοδο πληρωμής",
+		"saved_methods": "Αποθηκευμένες επιλογές πληρωμής",
 		"current_balance": {
 			"deposit": "Το τρέχον υπόλοιπο είναι {{money}}.",
-			"cashout": "Available to cash out: {{money}}. Please refer to {{balance_link}} page for detailed break down."
+			"cashout": "Διαθέσιμα για εκταμίευση: {{money}}. Παρακαλούμε ανατρέξτε στη σελίδα {{balance_link}} για λεπτομερής ανάλυση."
 		},
 		"payment_methods": {
-			"empty": "There are no available payment methods for this currency.",
-			"pay_with_cubits": "Pay with Cubits"
+			"empty": "Δεν υπάρχουν διαθέσιμες μέθοδοι πληρωμής για αυτό το νόμισμα.",
+			"pay_with_cubits": "Πληρώστε με Cubits"
 		},
 		"limits": {
 			"currency": "Πληρωμη {{currency}}",
 			"min": "Ελαχιστο {{min}}",
 			"max": "Μεγιστο {{max}}",
-			"fee": "fee {{fee}}"
+			"fee": "αμοιβή {{fee}}"
 		},
 		"processing_time": {
-			"instantly": "Instantly",
-			"range": "%{min}-%{max} banking days"
-		}
+			"instantly": "Αμέσως",
+			"range": "%{min}-%{max} τραπεζικές ημέρες"
+		},
+		"cubits_not_available": "Cubits δεν είναι διαθέσιμα τώρα. Προσπαθήστε ακόμη μια φορά αργότερα."
 	},
 	"security_check": {
 		"user_is_suspicious": "Υποπτος χρηστης",
@@ -1712,27 +1805,27 @@
 		"cashout_amount": "Το ποσό υπερβαινει το επιτρεπομενο μεγιστο",
 		"cashout_wins": "Το ποσό υπερβαινει το οριο του χρηστη",
 		"casino_cashout": "Το ποσό υπερβαινει το ημερισιο οριο του καζινο",
-		"crypto_address_confirmed": "Address was not used before",
+		"crypto_address_confirmed": "Διεύθυνση δεν είχε χρησιμοποιηθεί προηγουμένως",
 		"manual": {
-			"title": "User was manually marked as suspicious"
+			"title": "Ο χρήστης έχει επισημανθεί ως ύποπτος"
 		},
 		"chargeback": {
-			"title": "User made chargeback"
+			"title": "Χρήστης πήρε πίσω τα χρήματα"
 		},
 		"duplicate": {
-			"title": "User has duplicates",
-			"reason_html": "User duplicates {{user}}"
+			"title": "Διπλοτυπα του χρηστη",
+			"reason_html": "Χρήστης αντιγράφει τον {{user}}"
 		},
 		"balance_sum": {
-			"title": "Balance amount doesn't match the amount calculated based on transations and games statistic",
+			"title": "Το ποσό υπολοίπου δεν ταιριάζει το ποσό που υπολογίζεται με βάση τις συναλλαγές και τη στατιστική παιχνιδιού.",
 			"text": "Το υπόλοιπο του παίκτη δεν ταιριάζει με το αναμενόμενο υπόλοιπο "
 		},
 		"balance_transaction": {
-			"title": "The winning amount is too big for the last 24 hours",
-			"reason_html": "Suspicious wins in {{table}} during {{period}} by {{player}}"
+			"title": "Το ποσό του κέρδους είναι πάρα πολύ μεγάλο για τις τελευταίες 24 ώρες.",
+			"reason_html": "Ύποπτες νίκες στο {{table}} κατα τη διαρκέια {{period}} από {{player}}."
 		},
 		"wager_done": {
-			"title": "User done wager bonus requirement"
+			"title": "Χρήστης έκανε απαίτηση για wager bonus"
 		},
 		"cubits_payment_difference": {
 			"title": "Cumulative cubits exchange rate losses are too big"
@@ -1756,12 +1849,12 @@
 			"week_mail_title": "Εβδομαδιαια {{νομισμα}} στατιστικη για {{περιοδος}}",
 			"fields": {
 				"net_revenue": "ΚΚΠ (καθαρο κερδος παιχνιδιων)",
-				"gross_win": "Gross Win",
+				"gross_win": "Μικτό Κέρδος",
 				"bets": "Συνολικο στοιχημα",
 				"wins": "Συνολικο κερδος",
 				"payout": "Εκταμιευση (σε%)",
 				"game_rounds": "Γυροι παιχνιδιου",
-				"new_registrations": "New Registrations With Deposit",
+				"new_registrations": "Νέες εγγραφές με την κατάθεση",
 				"players_made_deposits": "Οι παικτες εκαναν καταθεσεις",
 				"total_users": "Συνολικοι χρηστες",
 				"deposits_sum": "Συνολο καταθεσεων",
@@ -1797,13 +1890,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "Η αιτηση εξαργυρωσης σας εγκριθηκε"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "Ανεπαρκη υπολοιπο στον λογαριασμο για εξαργυρωση",
-			"body": "Η εξαργυρωση σας απενεργοποιηθηκε λογω ανεπαρκη υπολοιπο στον λογαριασμο σας για να επεξεργαστει η αιτουμενη εξαργυρωση. Παρακαλω υποβαλετε ενα αιτηση εξεργυρωσης συμφωνα με το τρεχων υπολοιπο. "
-		},
-		"address_confirmation_required": {
-			"subject": "Cashout address confirmation required"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Απαιτείται επιβεβαίωση της διεύθυνσης εξαργύρωσης",
+			"deposit_made": "Ληφθηκε η καταθεση σας",
+			"cashout_approved": "Η αιτηση εξαργυρωσης σας εγκριθηκε",
+			"freespin_bonus_issued": "Δωρεάν περιστροφές έχουν απονεμηθεί",
+			"welcome": "Καλως ηλθατε",
+			"no_deposit": "Δεν εχετε κανει καταθεση",
+			"nth_deposit": "Περιμενουμε τη καταθεση σας",
+			"welcome_promo": "Επισκευθειτε μας παλι",
+			"confirmation_instructions": "Ξαναστειλτε οδηγιες επιβεβαιωσης",
+			"reset_password_instructions": "Οδηγίες για την επαναφορά κωδικού πρόσβασης ",
+			"unlock_instructions": "Ξεκλειδώστε οδηγίες"
 		}
 	},
 	"activemodel": {
@@ -1812,39 +1913,39 @@
 				"affiliate_forms/assign_commission": {
 					"attributes": {
 						"from_date": {
-							"must_be_in_future": "must be in future"
+							"must_be_in_future": "Πρεπει να γινει στο μελλον"
 						},
 						"to_date": {
-							"must_be_in_future": "must be in future",
-							"must_be_less_then_from": "must be less then From"
+							"must_be_in_future": "Πρεπει να γινει στο μελλον",
+							"must_be_less_then_from": "πρέπει να είναι μικρότερος Από"
 						}
 					}
 				},
 				"payment_system/cashout_form/wirecard": {
 					"attributes": {
 						"credit_card_number": {
-							"invalid": "is not a valid credit card number"
+							"invalid": "Δεν είναι ένα έγκυρο αριθμό πιστωτικής κάρτας"
 						}
 					}
 				},
 				"casino_cash_balance/balance_options": {
 					"attributes": {
 						"base": {
-							"rules_error": "You have errors in rules"
+							"rules_error": "Εχετε λαθη στους κανονες"
 						}
 					}
 				},
 				"commissions/registration_settings": {
 					"attributes": {
 						"base": {
-							"rules_error": "You have errors in rules"
+							"rules_error": "Εχετε λαθη στους κανονες"
 						}
 					}
 				},
 				"commissions/registration_settings_rule": {
 					"attributes": {
 						"base": {
-							"uniq": "should be unique"
+							"uniq": "πρέπει να είναι μοναδικό"
 						}
 					}
 				}
@@ -1852,39 +1953,33 @@
 		},
 		"attributes": {
 			"payment_system/bank_transfer/access_data": {
-				"deposit_snippet_name": "Deposit Snippet Name",
-				"cashout_snippet_name": "Cashout Snippet Name"
+				"deposit_snippet_name": "Όνομα του Αποσπάσματος της Κατάθεσης",
+				"cashout_snippet_name": "Όνομα του Αποσπάσματος της Εξαργύρωσης "
 			},
 			"affiliate_forms/assign_commission": {
-				"from_date": "From",
-				"to_date": "To"
+				"from_date": "Απο",
+				"to_date": "Ως"
 			},
 			"newsletters_filter": {
-				"tag": "User tag",
-				"locale": "Locale",
+				"tag": "Tag του Χρήστη",
+				"locale": "Γλώσσα",
 				"type": "Τυπος",
 				"deposits_number_equals": "Καταθεση",
 				"last_deposit_at": "Τελευταια καταθεση",
 				"registered_at": "Κατεχωρημενος",
-				"payments_currency": "Payments currency"
+				"payments_currency": "Πληρωμη νόμισμα"
 			}
 		}
-	},
-	"retention_mailer": {
-		"welcome": "Καλοσηλθατε",
-		"no_deposit": "Δεν εχετε κανει καταθεση",
-		"nth_deposit": "Περιμενουμε τη καταθεση σας",
-		"welcome_promo": "Επισκευθειτε μας παλι"
 	},
 	"jackpot": {
 		"jackpots": "Jackpots"
 	},
 	"game_categories": {
-		"favorite": "My favorites",
-		"add_to_favorites": "Add To Favorites",
-		"remove_from_favorites": "Remove From Favorites",
+		"favorite": "Τα αγαπημένα μου",
+		"add_to_favorites": "Προσθέσετε στα Αγαπημένα",
+		"remove_from_favorites": "Κατάργηση από τα Αγαπημένα",
 		"favorites": {
-			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+			"no_games": "Δεν υπάρχουν παιχνίδια στη λίστα αγαπημένων σας. Χρησιμοποιήστε Star εικόνα για να προσθέσετε τους εδώ"
 		}
 	},
 	"betsoftgaming_api": {
@@ -1911,18 +2006,18 @@
 			"not_enough_available_addresses_left": "Μόνο 1 διαθέσιμη διεύθυνση δυφιονόμισματος εμεινε. Μπορείτε να προσθέσετε περισσότερες διευθύνσεις % {συνδεσμος}.",
 			"here": "Εδω",
 			"current_wallet_balance": "Τρεχων υπολοιπο στο πορτοφολι:",
-			"total_balance": "Total: {{amount}}",
-			"available_balance": "Spendable: {{amount}}",
+			"total_balance": "Σύνολο: {{amount}}",
+			"available_balance": "Δαπανήσιμο: {{amount}}",
 			"transfer_to": "Αυξηση",
 			"increase_system_balance": "Για να αυξανετε το υποιλοιπο του πορτοφολι του συστηματος παρακαλουμε στειλτε δυφιονομισματα στη ακολουθη διευθυνση:"
 		}
 	},
 	"bitcoin_wallets": {
 		"address_sources": {
-			"imported": "From pool",
-			"generated": "Generated",
-			"cubits_invoice": "Cubits Invoice",
-			"cubits_channel": "Cubits Channel"
+			"imported": "Από τo pool",
+			"generated": "Παρήχθη",
+			"cubits_invoice": "Cubits Τιμολόγιο",
+			"cubits_channel": "Cubits Κανάλι"
 		}
 	},
 	"sidebar": {
@@ -1931,12 +2026,19 @@
 	},
 	"casinotechnology_api": {
 		"casinotechnology": "CasinoTechnology",
-		"timeout_message": "Game provider's server has not responded. Please retry later."
+		"timeout_message": "Ο διακομιστής δεν ανταποκρίνεται. Παρακαλούμε, προσπαθήστε ακόμη μια φορά αργότερα."
+	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
 	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
 	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "Για να παίξετε αυτό το παιχνίδι πρέπει να εισάγετε τουλάχιστον το Όνομα, Επώνυμο, Ημερομηνία Γέννησης και Χώρα"
+	},
 	"quickfire_api": {
-		"quickfire": "QuickFire"
+		"quickfire": "Quickfire"
 	}
 }

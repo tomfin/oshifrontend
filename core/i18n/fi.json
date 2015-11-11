@@ -1,8 +1,8 @@
 {
 	"errors": {
 		"messages": {
-			"taken_in_past": "was already taken in the past!",
-			"equal_to_current_password": "must be different to the current password!",
+			"taken_in_past": "oli käytetty aikaisemmin",
+			"equal_to_current_password": "oltava eri kuin nykyinen salasana",
 			"already_confirmed": "on jo vahvistettu, yritä kirjautua sisään uudelleen",
 			"confirmation_period_expired": "pitää vahvistaa %{period} kuluessa, ole hyvä ja pyydä uusi",
 			"expired": "on vanhentunut, pyydä uutta.",
@@ -15,18 +15,18 @@
 		}
 	},
 	"devise": {
-		"invalid_captcha": "The captcha input is not valid!",
+		"invalid_captcha": "Syötetty väärin salasanai",
 		"password_expired": {
-			"submit": "Change password",
-			"updated": "Your new password is saved.",
-			"change_required": "Your password is expired. Please renew your password!",
-			"forgot_password_message": "If you forgot you password click 'Logout' then reset your password."
+			"submit": "Vaihda salasanaa",
+			"updated": "Uusi salasana on tallennettu",
+			"change_required": "Salasanan käyttöaika on vanhentunut. Aseta uusi salasana",
+			"forgot_password_message": "Jos olet unohtanut salasanasi, klikkaa \"Kirjaudu ulos\" sitten syötä uusi salasana."
 		},
 		"failure": {
-			"session_limited": "Your login credentials were used in another browser. Please sign in again to continue in this browser.",
-			"expired": "Your account has expired due to inactivity. Please contact the site administrator.",
-			"disabled": "Your account is disabled.",
-			"not_allowed_ip": "Your IP is not allowed for this user.",
+			"session_limited": "Rekisteröintitietosi oli käytössä toisella selaimella. Jatkamiseen työtä tällä selaimella, ole hyvä ja rekisteröidy.",
+			"expired": "Tilisi oli poistettu, aktivoinnin puutteiden vuoksi. Ota yhteyttä sivuston ylläpitäjään.",
+			"disabled": "Tili on poistettu käytöstä",
+			"not_allowed_ip": "Sinun IP ei ole luvattu semmoiselle käyttäjälle",
 			"already_authenticated": "Olet jo kirjautunut sisään.",
 			"inactive": "Tunnustasi ei ole vielä aktivoitu.",
 			"invalid": "Epäkelpo sähköpostiosoite tai salasana.",
@@ -90,494 +90,514 @@
 				"application": {
 					"attributes": {
 						"redirect_uri": {
-							"fragment_present": "cannot contain a fragment.",
-							"has_query_parameter": "cannot contain a query parameter.",
-							"invalid_uri": "must be a valid URI.",
-							"relative_uri": "must be an absolute URI."
+							"fragment_present": "ei voi sisältää tämä osa",
+							"has_query_parameter": "ei voi sisältää kyselyparametri",
+							"invalid_uri": "on oltava voimassa oleva osoite",
+							"relative_uri": "on oltava täydellinen osoite"
+						}
+					}
+				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Luotiin liikaa aikaa sitten",
+							"has_affiliate_profiles": "On kumppanien profiili"
 						}
 					}
 				},
 				"user": {
 					"attributes": {
 						"password": {
-							"wrong_password": "invalid email address or password"
+							"wrong_password": "virheellinen sähköpostiosoite tai salasana"
 						}
 					}
 				},
 				"profile": {
 					"attributes": {
 						"age": {
-							"greater_than_or_equal_to": "verification {{count}}+"
+							"greater_than_or_equal_to": "todentaminen {{count}}+"
 						}
 					}
 				},
 				"payment": {
-					"not_enough_money": "Not enough money",
-					"not_enough_unlocked_money": "Some or all of your funds are locked due to an active bonus. Please meet your bonus wagering requirement to be able to cash out.",
-					"unresolved_cashout_request_presents": "Your previous cashout request has not yet been processed. We will do it as fast as we can. Before requesting another cashout, please wait for your previous request to be processed.",
-					"pending_deposit_presents": "We are still waiting for confirmation of your last deposit",
-					"commission_is_greater_that_amount": "Commission is greater than amount",
-					"cashout_only_to_main_address": "You have set {{address}} as main bitcoin address and you can cashout only to that address.",
-					"not_used_account": "Account you are going to cashout was not used before.",
-					"debt_to_another_payment_system": "You have an unpaid debt in {{system_name}}. Please, pay that debt before.",
-					"debt_to_another_payment_system_account": "Your have an unpaid debt to different account ({{account}})",
-					"more_debts_exist": "There are debts to another payment systems and accounts. You should pay all debts before cashing out winnings. Debt to current payment system is {{debt_amount}}."
+					"not_enough_money": "Ei ole rahaa enää",
+					"not_enough_unlocked_money": "Jotkin tai kaikki rahat on lukittu, aktiivisen bonuksen syystä. Ole hyvä ja täytä bonus kierrätysvaatimukset kotiutumisen mahdollisuuden varten.",
+					"unresolved_cashout_request_presents": "Edellisen maksupyynnön ei ole vielä lähetetty. Järjestämme sen mahdollisimman nopeasti. Ennen tilaamista seuraavien maksujen suorittamiseen, odota kunnes nykyinen maksu suoritetaan.",
+					"pending_deposit_presents": "Odotamme edelleen viimeisen talletuksen vahvistusta",
+					"commission_is_greater_that_amount": "Provisio on suurempi kuin summa",
+					"cashout_only_to_main_address": "Olet asettanut {{address}} pääasiallisena Bitcoin osoite ja voit kotiuttaa vain kyseiseen osoitteeseen.",
+					"not_used_account": "Tili  sinä aiot käyttämään  kotiutukseen ei ole käytössä ennen.",
+					"debt_to_another_payment_system": "Sinulla on maksamaton velka {{system_name}}. Ole hyvä  ja , suorita tämä velka ennen.",
+					"debt_to_another_payment_system_account": "Sinulla on eri tilijen maksattomat velat ({{account}})",
+					"more_debts_exist": "Sinulla on velat toisiin maksujärjestelmiin ja tilejä. Sinun pitäisi kuolettaa kaikki velat ennen voiton Kotiutumista . Velka nykyinen maksujärjestelmiin on {{debt_amount}}."
 				},
 				"commission_connection": {
-					"not_overlap": "Must not overlap with other connections with same commission level",
-					"future_from_time": "must be in future",
-					"greater_than_from_time": "must be greater than from time",
-					"strategies_equivalence": "must have same payment scheme as affiliate profile",
-					"greater_than_now": "must greater than now"
+					"not_overlap": "Ei saa mennä päällekkäin muiden yhteyksiä saman provision tasolla",
+					"future_from_time": "on oltava tulevaisuudessa",
+					"greater_than_from_time": "on oltava nykyistä suurempi ",
+					"strategies_equivalence": "oltava kumppanin profiilin sama tulotukijärjestelmä ",
+					"greater_than_now": "oltava nykyistä suurempi"
 				},
 				"commission": {
-					"wrong_strategy_settings": "You have errors in payment scheme settings"
+					"wrong_strategy_settings": "Sinulla on virheitä tulotukijärjestelmään asetuksissa"
 				},
 				"bonus_issue": {
-					"not_enough_to_lock": "is greater than user balance"
+					"not_enough_to_lock": " käyttäjän tasapainosta suurempi "
 				},
 				"external_bet": {
-					"rollback_expired": "Rollback can not be accepted if 24 hours passed after result enrollment"
+					"rollback_expired": "Palautus ei voida hyväksyä, jos on kulunut 24 tuntia tuloksen ilmoittautumista jälkeen"
 				},
 				"notification/subscription": {
-					"invalid_types": "You can subscribe only to a notification"
+					"invalid_types": "Voit tilata vain ilmoitus"
 				}
 			}
 		},
 		"models": {
-			"account": "Account",
-			"admin_user": "Admin User",
-			"affiliate_profile": "Affiliate Profile",
-			"bet": "Bet",
+			"account": "Tilit",
+			"admin_user": "admin-käyttäjäadmin",
+			"affiliate_profile": "Kumppanin profiili",
+			"bet": "Panos",
 			"bonus": "Bonus",
-			"bonus_issue": "Bonus Issue",
-			"document": "Document",
-			"event": "Event",
-			"external_bet": "External Bet",
-			"game": "Game",
-			"game_category": "Game Category",
-			"game_step": "Step",
-			"game_table": "Game Table",
-			"payment": "Payment",
-			"payment_system": "Payment System",
-			"profile": "Profile",
-			"reports/base_collection/result_record": "Result",
-			"suspicion": "Suspicion",
-			"user": "User",
-			"player": "Player",
-			"retention_email": "Retention email"
+			"bonus_issue": "Myönetty bonus",
+			"document": "Asiakirja",
+			"event": "Tapahtuma",
+			"external_bet": "Ulkoinen panos",
+			"game": "Peli",
+			"game_category": "Pelin luokka",
+			"game_step": "Askel",
+			"game_table": "Pelipöytä",
+			"payment": "Maksu",
+			"payment_system": "Maksujärjestelmä",
+			"profile": "Profiili",
+			"reports/base_collection/result_record": "Tulos",
+			"suspicion": "Epäilys",
+			"user": "Käyttäjä",
+			"player": "Pelaaja",
+			"retention_email": "Säilyttämisen kirje"
 		},
 		"attributes": {
+			"casino_cash_balance_history": {
+				"id": "Tunniste",
+				"casino_cash_balance_name": "Kasinon Käteis Saldon Nimi",
+				"casino_cash_balance_id": "Kasino Käteis Saldon Tunniste",
+				"action": "Toiminto",
+				"change_amount": "Vaihtorahan määrä ",
+				"amount_after_change": "Määrä muutoksen jälkeen",
+				"subject": "Aihe",
+				"processed_at": "Käsitelty",
+				"comment": "Kommentti",
+				"currency": "Rahayksikkö"
+			},
 			"balance_correction": {
-				"action": "Action",
-				"amount": "Amount",
-				"account": "Account",
-				"comment": "Comment"
+				"action": "Toiminto",
+				"amount": "Summa",
+				"account": "Tili",
+				"comment": "Kommentti"
 			},
 			"game_category": {
-				"name": "Name",
-				"disabled": "Disabled",
-				"created_at": "Created at",
-				"games": "Games",
-				"position": "Position"
+				"name": "Nimi",
+				"disabled": "Pois käytöstä",
+				"created_at": "Rekisteröity",
+				"games": "Pelejä",
+				"position": "Asettelu"
 			},
 			"notification": {
-				"type": "Type",
-				"user": "User",
-				"admin_user": "Admin",
-				"target": "Target",
-				"target_type": "Target type"
+				"type": "Tyyppi",
+				"user": "Käyttäjä",
+				"admin_user": "Ylläpitäjä",
+				"target": "Kohde",
+				"target_type": "Kohteen tyyppi"
 			},
 			"affiliate_link": {
-				"name": "Name",
-				"code": "Code"
+				"name": "Nimi",
+				"code": "Koodi"
 			},
 			"affiliate_profile": {
-				"name": "Title",
-				"strategy": "Payment Scheme",
-				"no_debt": "No Neg. Carryover",
-				"links": "Links",
-				"active": "Active"
+				"name": "Titteli",
+				"strategy": "Maksujärjestelmä",
+				"no_debt": "Menetyksen Siirto (ei sovelleta)",
+				"links": "Linkit",
+				"active": "Käytössä"
 			},
 			"account": {
-				"currency": "Currency",
-				"amount": "Amount",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"currency": "Rahayksikkö",
+				"amount": "Summa",
+				"created_at": "Luotu",
+				"updated_at": "Päivitetty"
 			},
 			"active_admin/comment": {
-				"author": "Author",
-				"body": "Body",
-				"resource": "Resource"
+				"author": "Kirjailija",
+				"body": "Runko",
+				"resource": "Resurssi"
 			},
 			"admin_user": {
-				"email": "Email",
-				"encrypted_password": "Encrypted password",
-				"password": "Password",
-				"password_confirmation": "Confirm password",
-				"current_password": "Current password",
-				"remember_me": "Remember me",
-				"reset_password_token": "Reset password token",
-				"reset_password_sent_at": "Reset password sent at",
-				"remember_created_at": "Remember created at",
-				"sign_in_count": "Sign in count",
-				"current_sign_in_at": "Current sign in at",
-				"last_sign_in_at": "Last sign in at",
-				"current_sign_in_ip": "Current sign in ip",
-				"last_sign_in_ip": "Last sign in ip",
-				"failed_attempts": "Failed attempts",
-				"unlock_token": "Unlock token",
-				"locked_at": "Locked at",
-				"password_changed_at": "Password changed at",
-				"created_at": "Created at",
-				"updated_at": "Updated at",
-				"disabled": "Disabled",
-				"allowed_ips_string": "Allowed IPs",
-				"roles_names": "Roles"
+				"email": "Sähköposti",
+				"encrypted_password": "Salattu salasana",
+				"password": "Salasana",
+				"password_confirmation": "Vahvista salasana",
+				"current_password": "Nykyinen salasana",
+				"remember_me": "Muista minut",
+				"reset_password_token": "Nollaa salasanan merkki",
+				"reset_password_sent_at": "Nollattu salasana lähetetään",
+				"remember_created_at": "Muistutus on  luottu",
+				"sign_in_count": "Sisään kirjaudu määrä",
+				"current_sign_in_at": "Nykyinen Kirjaudu sisään ",
+				"last_sign_in_at": "Viimeisin Kirjaudu sisään osoitteessa",
+				"current_sign_in_ip": "Nykyinen kirjaudu sisään osoiteessa",
+				"last_sign_in_ip": "Viimeinen kirjaudu ip",
+				"failed_attempts": "Epäonnistuneet yritykset",
+				"unlock_token": "Avaa merkki",
+				"locked_at": "Lukittu",
+				"password_changed_at": "Salasana on vaihdettu.",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty",
+				"disabled": "Pois käytöstä",
+				"allowed_ips_string": "Luvatut IP",
+				"roles_names": "Roolit"
 			},
 			"balance_transaction": {
-				"reference": "Reference",
-				"amount": "Amount",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"reference": "Viite",
+				"amount": "Summa",
+				"created_at": "Registeröity",
+				"updated_at": "Päivitetty"
 			},
 			"bet": {
-				"bet_type": "Bet type",
-				"bet_amount": "Bet amount",
-				"win_amount": "Win amount",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"bet_type": "Vedon tyyppi",
+				"bet_amount": "Vedon summa",
+				"win_amount": "Voiton määrä",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"bonus": {
-				"strategy": "Type",
-				"title": "Title",
-				"description": "Description",
-				"percentage": "Percentage",
-				"currency": "Currency",
-				"amount": "Amount",
-				"percent": "Percent",
-				"max_amount": "Max amount",
-				"code": "Code",
-				"extra_info": "Extra info",
-				"wager_multiplier": "Wager multiplier",
+				"strategy": "Tyyppi",
+				"title": "Titteli",
+				"description": "Kuvaus",
+				"percentage": "Prosentteina",
+				"currency": "Rahayksikkö",
+				"amount": "Summa",
+				"percent": "Prosentti",
+				"max_amount": "Maksimi lukumäärä",
+				"code": "Koodi",
+				"extra_info": "Lisätietoja:",
+				"wager_multiplier": "Wager kertoja",
 				"wagering_epsilon": "Wagering epsilon",
-				"cashable": "Cashable",
-				"sticky": "Sticky",
-				"enabled": "Enabled",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"cashable": "Nostettava",
+				"sticky": "Pysyvä",
+				"enabled": "Käytössä",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"bonus_issue": {
-				"strategy": "Strategy",
-				"stage": "Stage",
-				"amount": "Amount",
-				"amount_wager_requirement": "Amount wager requirement",
-				"amount_wager": "Amount wager",
-				"wagered_percent": "Wagered percent",
-				"amount_locked": "Amount locked",
-				"valid_until": "Expiry date",
-				"extra_info": "Extra info",
-				"cashable": "Cashable",
-				"sticky": "Sticky",
+				"strategy": "Strategia",
+				"stage": "Vaihe",
+				"amount": "Summa",
+				"amount_wager_requirement": "Panoksen summan vaatimus",
+				"amount_wager": "Panoksen summa",
+				"wagered_percent": "Panoksen korko",
+				"amount_locked": "Summa on lukittu",
+				"valid_until": "Erääntymisaika",
+				"extra_info": "Lisätietoja:",
+				"cashable": "Kotiututtava",
+				"sticky": "Pysyvä",
 				"wager": "Wager",
-				"created_at": "Date received",
-				"issued_at": "Issued at",
-				"updated_at": "Updated at"
+				"created_at": "Vastaanottopäivä",
+				"issued_at": "Myönnetty .... ajaksi",
+				"updated_at": "Päivitetty"
 			},
 			"freespin_issue": {
-				"stage": "Stage",
-				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
-				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
-				"valid_until": "Expiry date",
-				"extra": "Extra info",
-				"external_id": "External ID",
-				"created_at": "Date received",
-				"issued_at": "Issued at",
-				"updated_at": "Updated at"
+				"stage": "Vaihe",
+				"amount": "Summa",
+				"freespins_total": "Ilmaiskierrosta palkittiin",
+				"activatable_until": "Erääntymisaika",
+				"win_amount_cents": "Voit jo",
+				"valid_until": "Erääntymisaika",
+				"extra": "Lisätietoja:",
+				"external_id": "Ulkoinen tunniste",
+				"created_at": "Vastaanottopäivä",
+				"issued_at": "Myönnetty",
+				"updated_at": "Päivitetty"
 			},
 			"bonus_strategy/feature/payment_system": {
-				"ids_list": "Payment Systems"
+				"ids_list": "Maksu järjestelmät"
 			},
 			"contact": {
-				"email": "Email",
-				"content": "Content"
+				"email": "Sähköposti",
+				"content": "Sisältö"
 			},
 			"document": {
-				"approved": "Approved",
-				"description": "Description",
-				"removed": "Removed",
-				"created_at": "Created at",
-				"updated_at": "Updated at",
-				"attachment": "Attachment",
-				"attachment_file_name": "Attachment file name",
-				"attachment_content_type": "Attachment content type",
-				"attachment_file_size": "Attachment file size",
-				"attachment_updated_at": "Added at"
+				"approved": "Hyväksytty",
+				"description": "Kuvaus",
+				"removed": "Poistettu",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty",
+				"attachment": "Liite",
+				"attachment_file_name": "Liitetiedoston nimet",
+				"attachment_content_type": "Liitetiedoston tyyppi",
+				"attachment_file_size": "Liitetiedostojen koko",
+				"attachment_updated_at": "Lisätty"
 			},
 			"event": {
-				"subject": "Subject",
-				"event_type": "Event type",
+				"subject": "Teema",
+				"event_type": "Tapahtuman tyyppi",
 				"ip": "IP",
-				"country": "Country",
-				"coordinates": "Coordinates",
-				"latitude": "Latitude",
-				"longitude": "Longitude",
-				"address": "Address",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"country": "Maa",
+				"coordinates": "Koordinaatit",
+				"latitude": "Leveysaste",
+				"longitude": "Pituusaste",
+				"address": "Osoite",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"external_bet": {
-				"id": "Local Id",
-				"account_id": "Account Id",
-				"account": "Account",
-				"external_id": "External Id",
-				"bet_amount": "Bet",
-				"win_amount": "Win",
-				"oauth_application": "OAuth Application",
-				"oauth_application_id": "OAuth Application Id"
+				"id": "paikallinen tunnus",
+				"account_id": "Tilin tunniste",
+				"account": "Tili",
+				"external_id": "Ulkoinen tunniste",
+				"bet_amount": "Panos",
+				"win_amount": "Voitto",
+				"oauth_application": "Tietoja sovelluksesta",
+				"oauth_application_id": "Tietoja sovelluksesta Tunniste"
 			},
 			"game": {
-				"data": "Data",
-				"finished_at": "Finished at",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"data": "Tiedot",
+				"finished_at": "Lopetettu",
+				"created_at": "rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"game_step": {
-				"state": "State",
-				"action": "Action",
-				"data": "Data",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"state": "Tila",
+				"action": "Toiminto",
+				"data": "Tiedot",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"game_table": {
-				"base_type": "Base type",
-				"variation": "Variation",
-				"identifier": "Identifier",
-				"title": "Title",
-				"client": "Client",
-				"provider": "Game provider",
-				"description": "Description",
-				"active": "Active",
-				"currency": "Currency",
-				"secondary_currency": "Secondary currency",
-				"amount_win": "Total bet",
-				"amount_loss": "Total win",
-				"chips": "Chips",
-				"default_chip": "Default chip",
-				"min_bet": "Min bet",
-				"max_bet": "Max bet",
-				"paytable": "Paytable",
-				"options": "Options",
-				"bet_playthrough_percent": "Bet playthrough percent",
-				"line_bets": "Line bets",
-				"archived_at": "Archived at",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"base_type": "Perustyyppi",
+				"variation": "_Variaatio:",
+				"identifier": "Tunniste",
+				"title": "Titteli",
+				"client": "Asiakas",
+				"provider": "Pelejan tarjoaja",
+				"description": "Kuvaus",
+				"active": "Käytössä",
+				"currency": "Rahayksikkö",
+				"secondary_currency": "Toissijainen valuutta",
+				"amount_win": "Panosten yhteensä",
+				"amount_loss": "Voitot yhteensä",
+				"chips": "Sirut",
+				"default_chip": "Oletus siru",
+				"min_bet": "Mini panos",
+				"max_bet": "Maksi panos",
+				"paytable": "Maksutaulu",
+				"options": "Asetukset",
+				"bet_playthrough_percent": "Panosta käytetty rahan korko",
+				"line_bets": "Panoksen viiva",
+				"archived_at": "Arkistoitu",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"modification": {
-				"subject": "Subject",
-				"entity": "Entity",
-				"data": "Data",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"subject": "Teema",
+				"entity": "Käsite",
+				"data": "Tiedot",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"paritcipation": {
-				"active": "Active",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"active": "Käytössä",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"payment": {
-				"amount": "Amount",
-				"commission_amount": "Commission",
-				"amount_after_commission": "Amount (commission subtracted)",
-				"currency": "Currency",
-				"action": "Action",
-				"source": "Source",
-				"extra": "Extra",
-				"success": "Success",
-				"finished_at": "Finished at",
-				"created_at": "Created at",
-				"updated_at": "Updated at",
-				"recipient_address": "Address",
-				"manual_confirmation_code": "Confirmation Code",
-				"source_id": "Payment Code"
+				"amount": "Määrä",
+				"commission_amount": "Palkkio",
+				"amount_after_commission": "Summa ( palkkion vähennetämällä)",
+				"currency": "Rahayksikkö",
+				"action": "Toiminto",
+				"source": "Lähde",
+				"extra": "Lisäosat",
+				"success": "Onnistui",
+				"finished_at": "Päättynyt",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty",
+				"recipient_address": "Osoite",
+				"manual_confirmation_code": "Vahvistus koodi",
+				"source_id": "Maksu koodi"
 			},
 			"payment_system": {
-				"system_name": "System name",
-				"disabled": "Disabled",
-				"currency_options": "Currency options",
-				"test_mode": "Test mode",
-				"data": "Data",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"system_name": "Järjestelmänimi",
+				"disabled": "Pois käytöstä",
+				"currency_options": "Valuutta-asetukset",
+				"test_mode": "Kokeilu muoto",
+				"data": "Tiedot",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"payment_system_debt": {
-				"system_name": "System name",
-				"system_account": "Account in system",
-				"amount_cents": "Debt",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"system_name": "Järjestelmän nimi",
+				"system_account": "Tili järjestelmissä",
+				"amount_cents": "Velka",
+				"created_at": "Rekisröity",
+				"updated_at": "Päivitetty"
 			},
 			"profile_setting": {
-				"name": "Name",
-				"enabled": "Enabled",
-				"required": "Required",
-				"show_at_registration": "Show at Registration",
-				"show_at_edition": "Show in Edit Mode",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"name": "Nimi",
+				"enabled": "Käytössä",
+				"required": "Vaaditaan",
+				"show_at_registration": "Näytä Rekisteröinnissä",
+				"show_at_edition": "Näytä muokkaustilassa",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			},
 			"suspicion": {
-				"suspect": "Suspect",
-				"discarded": "Discarded",
-				"created_at": "Created at",
-				"updated_at": "Updated at",
-				"related_suspect": "Related suspect",
-				"data": "Data",
-				"failed_check": "Failed check"
+				"suspect": "Epäily",
+				"discarded": "Hylätty",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty",
+				"related_suspect": "Liittyy epäillyn...",
+				"data": "Tiedot",
+				"failed_check": "Epäonnistunut tarkistus"
 			},
 			"user": {
-				"email": "Email",
-				"encrypted_password": "Encrypted password",
-				"password": "Password",
-				"password_confirmation": "Password confirmation",
-				"current_password": "Current password",
-				"remember_me": "Remember me",
-				"reset_password_token": "Reset password token",
-				"reset_password_sent_at": "Reset password sent at",
-				"remember_created_at": "Remember created at",
-				"sign_in_count": "Sign in count",
-				"current_sign_in_at": "Current sign in at",
-				"last_sign_in_at": "Last sign in at",
-				"current_sign_in_ip": "Current sign in ip",
-				"last_sign_in_ip": "Last sign in ip",
-				"confirmation_token": "Confirmation token",
-				"confirmed_at": "Confirmed at",
-				"confirmation_sent_at": "Confirmation sent at",
-				"unconfirmed_email": "Unconfirmed email",
-				"failed_attempts": "Failed attempts",
-				"unlock_token": "Unlock token",
-				"locked_at": "Locked at",
-				"authentication_token": "Authentication token",
-				"created_at": "Created at",
-				"updated_at": "Updated at",
-				"disabled": "Disabled",
-				"allowed_ips_string": "Allowed IPs",
-				"guest": "Guest",
-				"main_bitcoin_address": "Main bitcoin address",
-				"bonus_code": "Bonus Code"
+				"email": "Sähköposti",
+				"encrypted_password": "Salattu salasana",
+				"password": "Salasana",
+				"password_confirmation": "Salasanan vahvistus",
+				"current_password": "Nykyinen salasana",
+				"remember_me": "Muista minut",
+				"reset_password_token": "Nollaa salasanan merkki",
+				"reset_password_sent_at": "Salasanan nollasta pyynnös lähetetään",
+				"remember_created_at": "Huomatus on luotu",
+				"sign_in_count": "Kirjautujen määrä",
+				"current_sign_in_at": "Nykyinen kirjaudu",
+				"last_sign_in_at": "Viimeinen kirjaudu ",
+				"current_sign_in_ip": "Nykyinen kirjaudu",
+				"last_sign_in_ip": "Viimeinen kirjaudu",
+				"confirmation_token": "Vahvistus merkki",
+				"confirmed_at": "Vahvistettu",
+				"confirmation_sent_at": "vahvistus lähetetiin",
+				"unconfirmed_email": "Vahvistamaton sähköposti",
+				"failed_attempts": "Epäonnistuneet yritykset",
+				"unlock_token": "Avaa merkki",
+				"locked_at": "Lukittu",
+				"authentication_token": "Todennustunnus",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty",
+				"disabled": "Pois käytöstä",
+				"allowed_ips_string": "Luvatut IP",
+				"guest": "Vieras",
+				"main_bitcoin_address": "Bitcoin pääosoite",
+				"bonus_code": "Bonuskoodi"
 			},
 			"profile": {
-				"full_name": "Full name",
-				"first_name": "First name",
-				"last_name": "Last name",
-				"title": "Title",
-				"nickname": "Nickname",
-				"date_of_birth": "Date of Birth",
-				"personal_id_number": "Personal ID number",
-				"gender": "Gender",
-				"country": "Country",
-				"city": "City",
-				"place_of_birth": "Place of Birth",
-				"address": "Address",
-				"address2": "Additional Address",
-				"postal_code": "Postal code",
-				"time_zone": "Time Zone",
-				"mobile_phone": "Mobile Phone",
-				"phone": "Phone",
+				"full_name": "Koko nimi",
+				"first_name": "Etunimi",
+				"last_name": "Sukunimi",
+				"title": "Titteli",
+				"nickname": "Lempinimi",
+				"date_of_birth": "Syntymäpäivä",
+				"personal_id_number": "Henkilökohtainen Tunnus numero",
+				"gender": "Sukupuoli",
+				"country": "Maa",
+				"city": "Kaupunki",
+				"place_of_birth": "Syntymäpäivä",
+				"address": "Osoite",
+				"address2": "Lisäosoite",
+				"postal_code": "Posti koodi",
+				"time_zone": "Aikavyöhyke",
+				"mobile_phone": "Matkapuhelin",
+				"phone": "Puhelin",
 				"skype": "Skype",
-				"send_payment_confirmation": "Send Payment Confirmation",
-				"receive_newsletters": "Receive Newsletters",
-				"receive_promos": "Receive Promos",
-				"never_call": "Never Call",
-				"currency": "Currency",
-				"language": "Language",
-				"security_question": "Security Question",
-				"security_answer": "Security Answer",
-				"age_acceptance": "Age Confirmed",
-				"terms_acceptance": "Agreed to Terms and Conditions",
-				"bonus_issuance_policy": "Bonus Issuance Policy",
-				"allowed_ips_string": "Allowed IPs"
+				"send_payment_confirmation": "Lähetä maksu vahvistukset",
+				"receive_newsletters": "Saada uutiskirjeet",
+				"receive_promos": "Saada mainoskirjeet",
+				"never_call": "Älä soita koskaan",
+				"currency": "Rahayksikkö",
+				"language": "Kieli",
+				"security_question": "Salainen Kysymys",
+				"security_answer": "Turvallinen Vastaus",
+				"age_acceptance": "Ikä on vahhvistettu",
+				"terms_acceptance": "Suostui käyttö- ja toimitusehdot",
+				"bonus_issuance_policy": "Bonus Liikkeeseenlasku politiikka",
+				"allowed_ips_string": "Luvatut IP"
 			},
 			"profile/admin": {
-				"full_name": "Full name",
-				"first_name": "First name",
-				"last_name": "Last name",
-				"title": "Title",
-				"nickname": "Nickname",
-				"date_of_birth": "Date of Birth",
-				"personal_id_number": "Personal ID number",
-				"gender": "Gender",
-				"country": "Country",
-				"city": "City",
-				"place_of_birth": "Place of Birth",
-				"address": "Address",
-				"address2": "Additional Address",
-				"postal_code": "Postal code",
-				"time_zone": "Time Zone",
-				"mobile_phone": "Mobile Phone",
-				"phone": "Phone",
+				"full_name": "Koko nimi",
+				"first_name": "Etunimi",
+				"last_name": "Sukunimi",
+				"title": "Titteli",
+				"nickname": "Lempinimi",
+				"date_of_birth": "Syntymäpäivä",
+				"personal_id_number": "Henkilökohtainen Tunnus numero",
+				"gender": "Sukupuoli",
+				"country": "Maa",
+				"city": "Kaupunki",
+				"place_of_birth": "Synnyinpaikka",
+				"address": "Osoite",
+				"address2": "Lisäosoite",
+				"postal_code": "Posti koodi",
+				"time_zone": "Aikavyöhyke",
+				"mobile_phone": "Matkapuhelin",
+				"phone": "Puhelin",
 				"skype": "Skype",
-				"send_payment_confirmation": "Send Payment Confirmation",
-				"receive_newsletters": "Receive Newsletters",
-				"receive_promos": "Receive Promos",
-				"never_call": "Never Call",
-				"currency": "Currency",
-				"language": "Language",
-				"security_question": "Security Question",
-				"security_answer": "Security Answer",
-				"age_acceptance": "Confirm that at least {{age}}",
-				"terms_acceptance": "Agree to Terms and Conditions",
-				"bonus_issuance_policy": "Bonus Issuance Policy",
-				"allowed_ips_string": "Allowed IPs"
+				"send_payment_confirmation": "Lähetä maksusta vahvistus ",
+				"receive_newsletters": "vastaanottaa uutiskirjeet",
+				"receive_promos": "Saada Mainoskirjeet",
+				"never_call": "Älä soita koskaan",
+				"currency": "Rahayksikkö",
+				"language": "Kieli",
+				"security_question": "Turvakysymys",
+				"security_answer": "Turvavastaus",
+				"age_acceptance": "Varmista, että vähintään {{age}}",
+				"terms_acceptance": "Hyväksyn ehdot ja sääntöjä",
+				"bonus_issuance_policy": "Bonus Liikkeeseenlasku politiikka",
+				"allowed_ips_string": "Luvatut IP"
 			},
 			"profile/user": {
-				"full_name": "Full name",
-				"first_name": "First name",
-				"last_name": "Last name",
-				"title": "Title",
-				"nickname": "Nickname",
-				"date_of_birth": "Date of Birth",
-				"personal_id_number": "Personal ID number",
-				"gender": "Gender",
-				"country": "Country",
-				"city": "City",
-				"place_of_birth": "Place of Birth",
-				"address": "Address",
-				"address2": "Additional Address",
-				"postal_code": "Postal code",
-				"time_zone": "Time Zone",
-				"mobile_phone": "Mobile Phone",
-				"phone": "Phone",
+				"full_name": "Koko nimi",
+				"first_name": "Etunimi",
+				"last_name": "Sukunimi",
+				"title": "Titteli",
+				"nickname": "Lempinimi",
+				"date_of_birth": "Syntymäpäivä",
+				"personal_id_number": "Henkilökohtainen Tunnus numero",
+				"gender": "Sukupuoli",
+				"country": "Maa",
+				"city": "Kaupunki",
+				"place_of_birth": "Synnyinpaikka",
+				"address": "Osoite",
+				"address2": "Lisäosoite",
+				"postal_code": "Posti koodi",
+				"time_zone": "Aikavyöhyke",
+				"mobile_phone": "Matkapuhelin",
+				"phone": "Puhelin",
 				"skype": "Skype",
-				"send_payment_confirmation": "Send Payment Confirmation",
-				"receive_newsletters": "Receive Newsletters",
-				"receive_promos": "Receive Promos",
-				"never_call": "Never Call",
-				"currency": "Currency",
-				"language": "Language",
-				"security_question": "Security Question",
-				"security_answer": "Security Answer",
-				"age_acceptance": "I confirm that I am over {{age}} years old",
-				"terms_acceptance": "I agree to {{text}}",
-				"bonus_issuance_policy": "Bonus Issuance Policy",
-				"allowed_ips_string": "Allowed IPs"
+				"send_payment_confirmation": "Lähetä maksu vahvistukset",
+				"receive_newsletters": "Saada uutiskirjeet",
+				"receive_promos": "Saada Mainoskirjeet",
+				"never_call": "Älä soita koskaan",
+				"currency": "Rahayksikkö",
+				"language": "Kieli",
+				"security_question": "Turvakysymys",
+				"security_answer": "Turvavastaus",
+				"age_acceptance": "Vakuutan, että olen yli {{age}} vuotias",
+				"terms_acceptance": "Minä suostuu {{text}}",
+				"bonus_issuance_policy": "Bonuksen Myöntämis Politiikka",
+				"allowed_ips_string": "Luvatut IP"
 			},
 			"provable_fair_data": {
-				"secret": "Secret",
-				"client_seed": "Client seed",
-				"result": "Result",
+				"secret": "Salaisuus",
+				"client_seed": "Asiakkaiden seed",
+				"result": "Tulos",
 				"hash": "Hash"
 			},
 			"retention_email": {
-				"strategy": "Type",
-				"template_name": "Template name",
-				"days_interval": "Days interval",
-				"enabled": "Enabled",
-				"created_at": "Created at",
-				"updated_at": "Updated at"
+				"strategy": "Tyyppi",
+				"template_name": "Mallin nimi",
+				"days_interval": "Päiväyksien väli",
+				"enabled": "Otettu käyttöön",
+				"created_at": "Rekisteröity",
+				"updated_at": "Päivitetty"
 			}
 		}
 	},
@@ -587,10 +607,10 @@
 				"application": {
 					"attributes": {
 						"redirect_uri": {
-							"fragment_present": "cannot contain a fragment.",
-							"has_query_parameter": "cannot contain a query parameter.",
-							"invalid_uri": "must be a valid URI.",
-							"relative_uri": "must be an absolute URI."
+							"fragment_present": "ei voi sisältää fragmentti",
+							"has_query_parameter": "ei voi sisältää kyselyparametri",
+							"invalid_uri": "on oltava voimassa oleva osoite",
+							"relative_uri": "on oltava täydellinen URL"
 						}
 					}
 				}
@@ -603,10 +623,10 @@
 				"application": {
 					"attributes": {
 						"redirect_uri": {
-							"fragment_present": "cannot contain a fragment.",
-							"has_query_parameter": "cannot contain a query parameter.",
-							"invalid_uri": "must be a valid URI.",
-							"relative_uri": "must be an absolute URI."
+							"fragment_present": "ei voi sisältää fragmentti",
+							"has_query_parameter": "ei voi sisältää kyselyparametri",
+							"invalid_uri": "URL on oltava voimassa olevana",
+							"relative_uri": "on oltava ehdoton URL"
 						}
 					}
 				}
@@ -616,269 +636,286 @@
 	"doorkeeper": {
 		"errors": {
 			"messages": {
-				"invalid_request": "The request is missing a required parameter, includes an unsupported parameter value, or is otherwise malformed.",
-				"invalid_redirect_uri": "The redirect uri included is not valid.",
-				"unauthorized_client": "The client is not authorized to perform this request using this method.",
-				"access_denied": "The resource owner or authorization server denied the request.",
-				"invalid_scope": "The requested scope is invalid, unknown, or malformed.",
-				"server_error": "The authorization server encountered an unexpected condition which prevented it from fulfilling the request.",
-				"temporarily_unavailable": "The authorization server is currently unable to handle the request due to a temporary overloading or maintenance of the server.",
-				"credential_flow_not_configured": "Resource Owner Password Credentials flow failed due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.",
-				"resource_owner_authenticator_not_configured": "Resource Owner find failed due to Doorkeeper.configure.resource_owner_authenticator being unconfiged.",
-				"unsupported_response_type": "The authorization server does not support this response type.",
-				"invalid_client": "Client authentication failed due to unknown client, no client authentication included, or unsupported authentication method.",
-				"invalid_grant": "The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.",
-				"unsupported_grant_type": "The authorization grant type is not supported by the authorization server.",
-				"invalid_resource_owner": "The provided resource owner credentials are not valid, or resource owner cannot be found",
+				"invalid_request": "Kysely ei löydy vaativat parametrit, sisältää parametrin arvo ilman tukea, tai väärenetty",
+				"invalid_redirect_uri": "Uudelleenohjaus osoite ei ole voimassa",
+				"unauthorized_client": " Ei ole riittäviä oikeuksia kyselyn suorittamiseksi tällä menetelmällä.",
+				"access_denied": " Resurssin omistaja tai autorisointipalvelija hylätti pyyntö",
+				"invalid_scope": "Pyydetty laajuus on väärin, ei ole tiedossa tai virheellisesti muotoiltu.",
+				"server_error": "Autorisointipalvelija ei voi suorittaa kysely odottamaton virheen takia",
+				"temporarily_unavailable": "Autorisointipalvelija ei voi suorittaa kysely, koska tällä hetkellä sillä suoritetaan konepaja",
+				"credential_flow_not_configured": "Valtakirjojen resurssien omistajan syöttö yritys epäonnistui, virhellisen asetuksen takia. Doorkeeper.configure.resource_owner_from_credentials",
+				"resource_owner_authenticator_not_configured": "Valtakirjojen omistajan resurssi ei löydy väärän asetuksen takia. Doorkeeper.configure.resource_owner_authenticator.",
+				"unsupported_response_type": "Valtuutus palvelin ei tue tätä vastauksen tyyppi.",
+				"invalid_client": "Asiakkaiden todennus ei ole mahdollista, koska  asiakas ei ole tuttu, asiakkaiden todennus tietoja ei sisälly tai tunnistustapaa ei tue.",
+				"invalid_grant": "Valtuutus tietoja ei kelpaa, päättynyt, on peruutettu, tai ei ole identtinen valtuutus pyynnössä  käytettävän osoiteen kanssa, tai on luovutettu toiselle asiakkaalle.",
+				"unsupported_grant_type": "Valtuutus palvelin ei tue tämän tyypijen tietojen valtuutuksen varten",
+				"invalid_resource_owner": "Pääsyparametrit, jotka antoi resurssin omistaja ei ole voimassa enää tai resurssin omistaja  ei löydy.",
 				"invalid_token": {
-					"revoked": "The access token was revoked",
-					"expired": "The access token expired",
-					"unknown": "The access token is invalid"
+					"revoked": "Pääsykoodi on peruutettu",
+					"expired": "Pääsy koodi on vanhentunut",
+					"unknown": "Pääsy koodi ei ole voimassa"
 				}
 			}
 		},
 		"flash": {
 			"applications": {
 				"create": {
-					"notice": "Application created."
+					"notice": "Sovellus on luottu"
 				},
 				"destroy": {
-					"notice": "Application deleted."
+					"notice": "Sovellus on poistettu"
 				},
 				"update": {
-					"notice": "Application updated."
+					"notice": "Sovellus on uudistettu"
 				}
 			},
 			"authorized_applications": {
 				"destroy": {
-					"notice": "Application revoked."
+					"notice": "Sovellus on peruutettu"
 				}
 			}
 		},
-		"authorize_title": "OAuth authorize required",
-		"authorize_required": "Authorize required",
-		"authorize": "Authorize",
-		"authorization_code": "Authorization code",
-		"deny": "Deny",
-		"rights_title": "This application will be able to:",
-		"allow_authorization": "Authorize {{app}} to use your account?",
-		"authorize_as_regular_user": "Please sign out from guest account and sign in as a regular user.",
+		"authorize_title": "Vaadittavaa valtuutus",
+		"authorize_required": "Vaadittavaa valtuutus",
+		"authorize": "Valtuutta",
+		"authorization_code": "Valtuutus koodi",
+		"deny": "Hylätä",
+		"rights_title": "Tämä sovellus mahdollistaa",
+		"allow_authorization": "Anna {{app}} käyttää profiiliisi?",
+		"authorize_as_regular_user": "Kirjaudu vieraiden profiilista ulos  ja kirjaudu sisään rekisteröityneenä käyttäjänä.",
 		"scopes": {
-			"profile": "Access your profile data",
-			"bets": "Access your balance data and make bets on your behalf"
+			"profile": "Pääsy profiiliisin tietojeen",
+			"bets": "Vastaanotta pääsy profiilin tietojen  ja tehdä panokset puolestasi."
 		}
 	},
 	"amatic": {
 		"verification": {
 			"error_popup": {
-				"title": "Error",
-				"description": "Amatic server does not respond"
+				"title": "Virhe",
+				"description": "Palvelin Amatic ei vastaa"
 			},
 			"popup": {
-				"copy": "Copy",
-				"title": "Successfull verification",
-				"description": "Awesome! The text is now signed by Amatic Industries private signature. You can verify it by any 3d party service.",
-				"message": "Your Text",
-				"signature": "Amatic Signature",
-				"address": "Bitcoin Address"
+				"copy": "Kopioida",
+				"title": "Todennus onnellisesti suoritettu",
+				"description": "Hieno! Nyt tekstisi sähköisesti allekirjoitettu Amatic Industries. Voit tarkistaa sen millä tahansa kolmannen osapuolen palvelimen avulla.",
+				"message": "Tekstisi",
+				"signature": "Amatic allekirjoitus",
+				"address": "Bitcoin osoite"
 			},
-			"title": "Amatic verification",
-			"description1": "We provide automated Bitcoin based signature verification software for Amatic games. It protects against fraud.",
-			"description2": "Simply type in some text below. Amatic Industries will sign it and return back.",
+			"title": "Amatic pelijen todennus",
+			"description1": "Tarjoamme pelejän Amatic automaattinen tarkistus  käyttäen Bitcoinallekirjoituspohjaiset . Tämä auttaa estä väärinkäytöksiä.",
+			"description2": "Syötä tahansa teksti alla olevaan lomakkeeseen. Amatic Industries palaa sen allekirjoityksen yhdessä ",
 			"form": {
-				"your_text": "Your Text",
-				"verify": "Verify"
+				"your_text": "Tekstisi",
+				"verify": "Tarkista"
 			}
 		},
 		"amatic": "Amatic"
 	},
 	"http": {
 		"not_found": {
-			"title": "Page Not Found",
-			"oops": "Oops,",
-			"cannot_be_found": "The page you are looking for cannot be found.",
-			"description": "It may have been removed, had its name changed, or is temporarily unavailable. Casino Team is really sorry we couldn't provide you with what you were searching for, but we promise to try our best to help you.",
-			"link_to_root": "Here is a link to our start page:"
+			"title": "Sivu ei löydy",
+			"oops": "Oi",
+			"cannot_be_found": "Etsitty sivu ei löydy",
+			"description": "Ehkä se on poistettu, nimetty uudelleen tai on tilapäisesti poissa käytöstä. Pahoittelemme, että et löydä mitä etsit, mutta yritämme tehdä parhaamme auttaaksemme sinua.",
+			"link_to_root": "Linkki aloitussivulle"
+		}
+	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Asiakirja onnellisesti ladattu"
+			},
+			"destroy": {
+				"notice": "Asiakirja onnellisesti poistettu"
+			}
 		}
 	},
 	"common": {
-		"in_out": "IN/OUT",
-		"players": "Players",
-		"email": "Email",
-		"content": "Content",
-		"loading": "Loading...",
-		"yes": "Yes",
-		"no": "No",
-		"all": "All",
-		"default": "Default",
-		"date": "Date",
-		"result": "Result",
-		"total_bet": "Total Bet",
-		"total_win": "Total Win",
-		"gross_win": "Gross Revenue",
-		"cashouts_sum": "Sum of cashouts",
-		"deposits_sum": "Sum of deposits",
-		"net_revenue": "Net Revenue",
-		"client": "Client",
-		"amount": "Amount",
-		"help": "Help",
-		"currency": "Currency",
-		"total": "Total",
-		"limit": "Limit",
-		"live_casino": "Live Casino",
-		"address": "Address",
-		"good_news": "Good news, {{nickname}}.",
-		"save": "Save",
-		"edit": "Edit",
-		"remove": "Remove",
-		"destroy": "Destroy",
-		"cancel": "Cancel",
-		"close": "Close",
-		"create": "Create",
-		"add": "Add",
-		"update": "Update",
-		"reset": "Reset",
-		"refresh": "Refresh",
-		"proceed": "Proceed",
-		"filter": "Filter",
-		"are_you_sure": "Are you sure?",
-		"set": "Set",
-		"enabled": "Enabled",
-		"disabled": "Disabled",
-		"active": "Active",
-		"preview": "Preview",
-		"select": "Select",
-		"summary": "Summary",
-		"status": "Status",
-		"options": "Options",
+		"required": "Vaaditaan",
+		"in_out": "Sisään/Ulos",
+		"players": "Pelaajat",
+		"email": "Sähköposti",
+		"content": "Viesti",
+		"loading": "Ladatus",
+		"yes": "Kylla",
+		"no": "Ei",
+		"all": "Kaikki",
+		"default": "Oletuksena",
+		"date": "Päivä",
+		"result": "Tulos",
+		"total_bet": "Painoksia yhteensä",
+		"total_win": "Kokonaan voidettu",
+		"gross_win": "Yhteis voitto",
+		"cashouts_sum": "Maksujen summa",
+		"deposits_sum": "Talletusten määrä",
+		"net_revenue": "Puhdas voitto",
+		"client": "Asiakas",
+		"amount": "Summa",
+		"help": "Opastus",
+		"currency": "Valuutta",
+		"total": "Yhteensä",
+		"limit": "Raja",
+		"live_casino": "Elävä Kasino",
+		"address": "Osoite",
+		"good_news": "Hyvät uutiset ,{{nickname}}",
+		"save": "Talenna",
+		"edit": "Korjaus",
+		"remove": "Poista",
+		"destroy": "Poista",
+		"cancel": "Peruutus",
+		"close": "Sulkea",
+		"create": "Luoda",
+		"add": "Lisätä",
+		"update": "Virkistä",
+		"reset": "Vaihda",
+		"refresh": "Päivitä",
+		"proceed": "Jatkaa",
+		"filter": "Suodatin",
+		"are_you_sure": "Oletko varma?",
+		"set": "Luoda",
+		"recall": "Muistuttaa",
+		"enabled": "Sisällytetty",
+		"disabled": "Kytketty",
+		"active": "Aktiviinen",
+		"success": "Onnellisesti",
+		"error": "Virhe",
+		"preview": "Esikatselu",
+		"select": "Valita",
+		"summary": "Tilastotieto",
+		"status": "Statuusi",
+		"options": "Asetukset",
+		"download": "Ladata",
+		"csv": "CSV",
 		"genders": {
-			"m": "Male",
-			"f": "Female"
+			"m": "Miesten",
+			"f": "Naisten"
 		},
-		"player": "Player",
-		"guest": "Guest",
-		"subject": "Subject",
-		"actions": "Actions",
-		"balance": "Balance",
-		"profit": "Profit",
-		"payout": "Payout",
-		"bets_sum": "Bets sum",
-		"wins_sum": "Wins sum",
-		"bets": "Bets:",
-		"total_payouts": "Total payouts:",
-		"terms_and_conditions": "Terms and Conditions",
-		"net_total": "Net total",
-		"blog": "Blog",
-		"comments": "Comments",
-		"comment": "Comment",
-		"empty_search_results": "There are no items according to the filtering parameters",
-		"add_more_coins": "Add more Coins",
-		"show_more_games": "Show more games",
-		"warning": "Warning",
-		"new_as_novelty": "New",
-		"already_member": "Already a member?",
-		"have_account": "Have an account?"
+		"player": "Pelaaja",
+		"guest": "Vieras",
+		"subject": "Teema",
+		"actions": "Toiminnot",
+		"balance": "Tasapaino",
+		"profit": "Voitto",
+		"payout": "Maksut",
+		"bets_sum": "Panoksen summa",
+		"wins_sum": "Voiton summa",
+		"bets": "Panokset",
+		"total_payouts": "Maksujen summa",
+		"terms_and_conditions": "Ehdot ja edellytykset",
+		"net_total": "Puhdas voitto",
+		"blog": "Bloggi",
+		"comments": "Kommentit",
+		"comment": "Kommentti",
+		"empty_search_results": "Ei löytynyt tietoja, jotka vastaavat suodattimen parametreille",
+		"add_more_coins": "Lisätä kolikkoja",
+		"show_more_games": "Näytä enemmän peleja",
+		"warning": "Huom!",
+		"new_as_novelty": "Uudet",
+		"already_member": "onko registeröidy?",
+		"have_account": "Onko sinulla tili?"
 	},
 	"locales": {
 		"af": "Afrikaans",
 		"bg": "Bulgarian",
-		"de": "German",
-		"el": "Greek",
-		"en": "English",
-		"es": "Spanish",
-		"fi": "Finnish",
-		"fr": "French",
+		"de": "Saksan",
+		"el": "Kreikan",
+		"en": "Englannin",
+		"es": "Espanjan",
+		"fi": "Suomen",
+		"fr": "Ranskan",
 		"it": "Italian",
-		"ja": "Japanese",
+		"ja": "Japanin",
 		"ko": "Korean",
-		"nl": "Dutch",
-		"pl": "Polish",
-		"pt": "Portuguese",
-		"ru": "Russian",
-		"sv": "Swedish",
-		"tr": "Turkish",
-		"vi": "Vietnamese",
-		"zh": "Chinese"
+		"nl": "Hollannin",
+		"pl": "Puolan",
+		"pt": "Portugaalin",
+		"ru": "Venäjän",
+		"sv": "Ruotsin",
+		"tr": "Turkkin",
+		"vi": "Vietnamisen",
+		"zh": "Kiinan"
 	},
 	"date": {
-		"day": "Day",
-		"week": "Week",
-		"month": "Month",
-		"year": "Year"
+		"day": "Päivä",
+		"week": "Viikko",
+		"month": "Kuukausi",
+		"year": "Vuosi"
 	},
 	"casino": {
-		"casino": "Casino",
-		"not_enough_money": "Not enough money",
+		"casino": "Kasino",
+		"not_enough_money": "Ei riitä rahaa",
 		"events": {
 			"modified": {
-				"user": "User Profile Modified",
-				"admin_user": "Admin Modified",
-				"game_table": "Game Modified",
-				"bonus_issue": "Bonus Issue",
-				"bonus": "Bonus Modified",
-				"payment_system": "Payment System",
-				"retention_email": "Retention email Modified",
-				"casino_cash_balance": "Casino Cash Balance Modified",
-				"commission_connection": "Commission Connection Modified",
-				"payment": "Payment Modified",
-				"affiliate_profile": "Affiliate Profile Modified"
+				"user": "Käyttäjn profiili on vaihdettu",
+				"admin_user": "Yläpitäjä muutui",
+				"game_table": "Peli on muutettu",
+				"bonus_issue": "Bonuksen liikeeseen",
+				"bonus": "Bonus on muutettu",
+				"payment_system": "Maksujärjestelmä",
+				"retention_email": "Sähköposti muutettu",
+				"casino_cash_balance": "Kasinon saldo oli muutettu",
+				"commission_connection": "Komission määräpaikan muutos",
+				"payment": "Maksu on muutettu",
+				"affiliate_profile": "Affilliaatin profiilin muutos"
 			},
 			"game": {
-				"step": "Game Step Made"
+				"step": "Edistyminen pelissä on tehty"
 			},
 			"user": {
-				"sign_out": "User signed out",
-				"sign_in": "User signed in",
-				"failed_sign_in": "User failed to sign in"
+				"sign_out": "Käyttäjä tuli ulos",
+				"sign_in": "Käyttäjä tuli sisään",
+				"failed_sign_in": "Käyttäjän sisäänpääsy on epäonnellinen"
 			},
 			"admin_user": {
-				"sign_out": "Admin signed out",
-				"sign_in": "Admin signed in",
-				"failed_sign_in": "Admin failed to sign in"
+				"sign_out": "Hallintomies on poistunut",
+				"sign_in": "Hallintomies tuli sisään",
+				"failed_sign_in": "Hallintomiesten sisääntulo ei onnistu"
 			},
 			"notifications": {
-				"balance_correction_created": "Balance correction created",
-				"cashout_requested": "Cashout requested",
-				"deposit_made": "Deposit made",
-				"cashout_made": "Cashout made",
-				"auto_cashout_made": "Auto-cashout made",
-				"cashout_rejected": "Cashout request rejected",
-				"deposit_rejected": "Deposit rejected",
-				"user_upload_document": "User Uploaded Document",
-				"payment_created_by_admin": "Admin Created Payment",
-				"user_disabled": "User Disabled",
-				"contact": "User Requested Support",
-				"admin_comment_created": "Admin Left Comment"
+				"balance_correction_created": "Tasapainon korjaus on luodettu",
+				"cashout_requested": "Maksun pyyntö",
+				"deposit_made": "Tallennus on tehty",
+				"cashout_made": "Maksut on suoritettu",
+				"auto_cashout_made": "Auto-kotiutus tehty",
+				"cashout_rejected": "Kotiutuspyyntö  hylätty",
+				"deposit_rejected": "Talletus on hylätty",
+				"user_upload_document": "Pelaaja on ladattanut asiakirja",
+				"payment_created_by_admin": "Hallintomies suoritti maksu",
+				"user_disabled": "Pelaaja on poistettu käytöstä",
+				"contact": "Käyttäjän pyyntö tuesta",
+				"admin_comment_created": "Hallinto jai huomatus"
 			},
 			"affiliate": {
-				"redirect": "New affiliate's user visit"
+				"redirect": "Affiliaatin uusi käyttäjä"
 			},
-			"bitcoin_addresses_uploaded": "Bitcoin addresses uploaded"
+			"bitcoin_addresses_uploaded": "Bitkoin osoiteet on ladattu"
 		},
 		"bonuses": {
 			"names": {
-				"no_deposit": "No Deposit",
-				"first_deposit": "First Deposit",
-				"nth_deposit": "Nth Deposit",
-				"deposit_system": "Payment System Bonus",
-				"coupon": "Coupon"
+				"no_deposit": "Tallematon",
+				"first_deposit": "Ensimmäinen talletus",
+				"nth_deposit": "N talletus",
+				"deposit_system": "Maksujärjestelmän bonus",
+				"coupon": "Kuponki"
 			},
 			"issuance_policy": {
-				"can-issue": "Auto issuing bonuses",
-				"can-refuse": "Player can cancel bonus before playing",
-				"can-cancel": "Player can cancel bonus"
+				"can-issue": "Bonuksen automaattinen liikkeeseen",
+				"can-refuse": "Pelääjä voi hylätä bonus ennen peliä",
+				"can-cancel": "Pelääjä voi peruuttaa bonus"
 			}
 		},
 		"retention_emails": {
 			"names": {
-				"welcome": "Welcome",
-				"welcome_promo": "Welcome promos",
-				"no_deposit": "No deposits",
-				"nth_deposit": "No Nth deposit"
+				"welcome": "Tervetuloa",
+				"welcome_promo": "Tervetuloa mainokset",
+				"no_deposit": "Talletumaton",
+				"nth_deposit": "Ilman  N talletusta"
 			}
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -888,53 +925,69 @@
 				"card_pay": "CardPay",
 				"b_cash": "B-Cash",
 				"wirecard": "Wirecard",
-				"coupon": "Coupon",
-				"cashbox": "Cashbox",
-				"cep_bank": "Cep Bank",
-				"bank_transfer": "Bank Transfer",
+				"coupon": "Kuponki",
+				"cashbox": "Kassa",
+				"cep_bank": "Ser Pankki",
+				"bank_transfer": "Pankkisiirto",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "Sovellus OAuth",
 				"bitcoin_payment": "Bitcoin",
 				"ripple_payment": "Ripple"
 			},
 			"payer": {
-				"cashout_email_subject": "Casino Cashout",
-				"cashout_email_note": "Cashout performed"
+				"cashout_email_subject": "Kasinon maksut",
+				"cashout_email_note": "Maksut on suoritettu"
 			},
-			"system_name": "%{child} via %{parent}",
-			"all_locked": "For your safety we only allow cashout through payment systems you previously used for deposit. If you have questions, please contact support.",
+			"system_name": "%{child} kautta %{parent}",
+			"all_locked": "Turvallisuussyistä, rahojen peruutus on tehty vain järjestelmien kautta käytetty aiemmin talletuksiin. Jos sinulla on kysyttävää, ota yhteyttä tukeen.",
 			"child_systems": {
-				"visa": "Visa",
-				"mastercard": "MasterCard",
-				"online_bank_transfer": "Online Bank Transfer",
+				"mbankomat": "Mpankkiautomaatti",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Lähettiläs",
+				"bank": "Pankki",
+				"banklocal": "Kotimaisen Pankin peruuttaminen",
+				"bankiban": "IBAN kotimaisen Pankin peruuttaminen",
+				"bankintiban": "Kansainvälinen IBAN pankki peruuttaminen",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
+				"visa": "Viisumi",
+				"mastercard": "Master-Card",
+				"online_bank_transfer": "Netti pankkisiirto",
 				"ideal": "iDEAL",
 				"nordea_solo": "Nordea Solo",
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
-				"cards": "Credit Cards",
-				"ccard": "Credit Card",
+				"cards": "Luottokortti",
+				"ccard": "Luottokortti",
+				"creditcard": "Luottokortti",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
-				"eps": "EPS e-payment",
+				"eps": "EPS e-maksu",
 				"giropay": "giropay",
-				"installment": "Installment by payolution",
-				"invoice": "Invoice by payolution",
+				"installment": "Maksu payolution kautta",
+				"invoice": "Payopution lasku",
 				"moneta": "moneta.ru",
 				"mpass": "mpass",
 				"przelewy": "Przelewy24",
 				"paypal": "PayPal",
 				"paybox": "Paybox",
-				"poli": "POLi payments",
+				"poli": "POLi maksut",
 				"paysafecard": "Paysafecard",
 				"quick": "Quick",
-				"sepa": "SEPA Direct Debit",
-				"skrill_direct": "Skrill Direct",
-				"skrill_wallet": "Skrill Digital Wallet",
-				"sofort": "SOFORT Banking",
+				"sepa": "SEPA-suoraveloitus",
+				"skrill": "Skrill",
+				"skrill_direct": "Skrill Suora",
+				"skrill_wallet": "Skrill Digitaalinen Lompakko",
+				"sofort": "SOFORT Pankkitoiminta",
 				"tatrapay": "TatraPay",
-				"trustly": "Trustly",
-				"bank_transfer": "Bank Transfer",
-				"lavapay_balance": "LavaPay Balance",
-				"cheque": "Cheque",
+				"trustly": "Luottaminen",
+				"bank_transfer": "Pankkisiirto",
+				"lavapay_balance": "Balanssi LavaPay",
+				"cheque": "Shekki",
 				"perfect": "Perfect Money",
 				"liqpay": "LiqPay",
 				"webmoney": "WebMoney",
@@ -966,419 +1019,453 @@
 				"alfaclick": "AlfaClick",
 				"fortumo": "Fortumo",
 				"cashu": "CashU",
-				"privat_terminal": "Privat Terminal",
-				"kazakhstan_terminal": "Kazakhstan Terminal",
-				"tjs_terminal": "Tjs Terminal",
-				"moldova_terminal": "Moldova Terminal",
-				"georgia_terminal": "Georgia Terminal",
+				"privat_terminal": "Privat Terminaali",
+				"kazakhstan_terminal": "Kazakstan Terminaali",
+				"tjs_terminal": "Tjs Terminaali",
+				"moldova_terminal": "Moldova Terminaali",
+				"georgia_terminal": "Georgia Terminaali",
 				"euroset": "Euroset",
 				"kievstar": "KievStar",
 				"promsvyazbank": "PromSvyazBank",
 				"easypay": "EasyPay",
 				"bpay": "BPay",
-				"pravex": "Pravex Bank",
-				"ukrsib": "UkrSib Bank",
-				"liberty": "Liberty Bank",
+				"pravex": "Pravex Pankki",
+				"ukrsib": "UkrSib Pankki",
+				"liberty": "Liberty Pankki",
 				"faktura": "Faktura.ru",
 				"privatbank_cashin": "Privatbank Cash-in",
 				"sberbank_cashin": "Sberbank Cash-in",
 				"qiwi_visa": "Visa Qiwi",
 				"qiwi_mastercard": "Mastercard Qiwi",
 				"qiwi_maestro": "Maestro Qiwi",
-				"cis_cards": "Bank Cards",
+				"cis_cards": "Pankki Cards",
 				"yandex_personal": "Yandex Personal",
-				"local_bank_transfer": "Local Bank Transfer",
+				"local_bank_transfer": "Paikallinen Pankkisiirto",
 				"w1": "W1",
-				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"wallet_one": "Lompakko One",
+				"russian_standard": "Venäjän Standardi Pankki",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
 			"strategies": {
-				"registration": "CPA",
-				"percent": "Rev share"
+				"registration": "Uuden pelaajasta maksu",
+				"percent": "Osuus liikevaihdosta"
 			}
 		},
 		"games": {
-			"unknown_action": "Unknown action",
-			"unavailable_action": "Unavailable action",
+			"unknown_action": "Tuntematon toiminto",
+			"unavailable_action": "Soviton toiminto",
 			"roulette": {
 				"notice": {
-					"bet_is_not_valid": "Bet is not valid",
-					"bet_type_not_found": "Bet type not found",
-					"unknown_bet": "Unknown bet",
-					"unknown_value": "Unknown value selected",
-					"unknown_column": "Unknown column selected",
-					"unknown_dozen": "Unknown dozen selected"
+					"bet_is_not_valid": "panos ei ole voimassa",
+					"bet_type_not_found": "panoksen tyyppi ei löydy",
+					"unknown_bet": "Tuntematon panos",
+					"unknown_value": "valittu tuntematon arvo",
+					"unknown_column": "Valittu tuntematon sarake",
+					"unknown_dozen": "Valittu tuntematon tuusina"
 				}
 			}
 		},
 		"provable_fair": {
-			"provable_fair": "Provable fair",
-			"provability": "Provability",
-			"not_available": "Provability widget available at game page",
-			"verify": "Verify",
-			"loading": "Randomizing ...",
-			"is_unavailable": "Provable fair is not available for this game.",
-			"next_game": "Next game",
-			"last_game": "Last game",
-			"reel_number": "Reel {{index}}",
+			"provable_fair": "Provably fair",
+			"provability": "Todistettavuus",
+			"not_available": "Widget \"todistettavasti oikeudenmukainen\" saatavilla pelejän sivulla.",
+			"verify": "Todenna",
+			"loading": "Satunnaissijoittelu",
+			"is_unavailable": "Oikeudenmukaisuuden todistettaminen ei ole saatavilla tämän pelin varten.",
+			"next_game": "Seuraava peli",
+			"last_game": "Viimeinen peli",
+			"reel_number": "Rengas {{index}}",
 			"fields": {
-				"hash": "Hash (Result + Secret)",
-				"client_seed": "Client seed",
-				"secret": "Result + Secret",
-				"result": "Final result"
+				"hash": "Hash (Tulos + Salaisuus)",
+				"client_seed": "Asiakkaiden sid",
+				"secret": "Tulos + Salaisuus",
+				"result": "Loppullinen koodi"
 			},
 			"hint": {
-				"common": "Enter client Seed (0-{{max_seed}})",
-				"roulette": "Push the ball further:",
-				"card": "Cut the deck:",
-				"poker": "Cut the deck:",
-				"slots": "Spin the reels a bit more:"
+				"common": "Syödä seed (0-{{max_seed}})",
+				"roulette": "Suorita pallo:",
+				"card": "Poista korttakan:",
+				"poker": "Poista korttipakan:",
+				"slots": "Käynnistä rumpu:"
 			},
 			"verification": {
 				"success": {
-					"title": "Successful verification",
-					"body": "Awesome, the hash we sent you at the beginning of the game exactly matches the hash of the game result. Your player's seed had an expected impact on the final result."
+					"title": "Onnellinen vahvistus",
+					"body": "Hieno, lähettettu sinulle hash  pelin alussa , ja hash saatu.... pelin lopussa ovat samat. Sinun seed vaikuttanut odotettua pelin lopputulokseen."
 				},
 				"failure": {
-					"title": "Verification failed",
-					"body": "Please contact our support."
+					"title": "Virhe vahvistamis vaiheessa",
+					"body": "Ole hyvä ja ota yhteyttä tukiin"
 				}
 			}
 		},
 		"bitcoin": {
-			"update_balance": "Refresh balance data",
-			"current_balance": "Current balance {{balance}}.",
-			"send_text": "Send any amount of {{currency}} (plus miner fee) to",
-			"cant_attach_address": "Sorry, we have some problems with bitcoins. Admin has already been notified. Try again soon.",
-			"private_address_note": "This is your private depositing address. Any transaction you make to this address will show up immediately in your balance.",
+			"update_balance": "Päivitä saldon tietoja",
+			"current_balance": "Nykyinen taso {{balance}}.",
+			"send_text": "Lähettää tahansa määrä {{currency}} (plus miner maksua)",
+			"cant_attach_address": "Anteeksi, meillä on joitakin Bitcoin songelmia . Ylläpitäjä on jo ilmoitettu. Yritä uudelleen pian.",
+			"private_address_note": "Tämä on sinut yksityinen talletuksen osoite. Kaikki toimet, jotka teet tähän osoitteeseen näkyy välittömästi saldostasi.",
 			"xrp": {
-				"send_text": "Send any amount of {{currency}} to",
-				"private_address_note": "This is your private depositing address and destination tag. Any transaction you make to this address with this destination tag will show up immediately in your balance."
+				"send_text": "Lähettää tahansa määrä {{currency}} kohteeseen",
+				"private_address_note": "Tämä on sinun yksityinen talletuksen osoite ja tunniste kohde. Kaikki toimet, jotka teet tähän osoitteeseen tällä määränpää tag näkyy välittömästi saldosta."
 			}
 		}
 	},
 	"frontend": {
 		"placeholders": {
-			"email": "Enter your email",
-			"password": "Enter your password",
-			"password_confirmation": "Confirm your password",
-			"current_password": "Enter your current password"
+			"email": "Syötä sähkö-osoiteesi",
+			"password": "Syötä koodi",
+			"password_confirmation": "Varmista salasana",
+			"current_password": "Syötä voimassa oleva salasana"
 		},
-		"age_acceptance": "Please confirm that you are over {{age}} years old",
-		"choose_game": "Choose a game",
-		"games_played": "Games Played",
-		"or": "or",
-		"please_or": "Please {{first}} or {{second}}",
-		"mbtc_total_winnings": "mBTC Total Winnings",
-		"hi_guest": "Hi, Guest.",
-		"hi_user": "Hi, {{nickname}}",
-		"password_difficulty": "Password difficulty",
+		"age_acceptance": "Vahvista, että Sinä {{age}} vanhempi",
+		"choose_game": "Valita peli",
+		"games_played": "Pelejän pelattu",
+		"or": "tai",
+		"please_or": "Ole hyvä {{first}} or {{second}}",
+		"mbtc_total_winnings": "mBTC voidettu",
+		"hi_guest": "Terve, Vieras",
+		"hi_user": "Terve,  {{nickname}}",
+		"password_difficulty": "Salasanan monimutkaisuus",
 		"password_difficulties": {
-			"very_weak": "Very Weak",
-			"weak": "Weak",
-			"so_so": "So-so",
-			"strong": "Strong",
-			"great": "Great"
+			"very_weak": "Erittäin heikko",
+			"weak": "Heikko",
+			"so_so": "Niin ja näin",
+			"strong": "Vahva",
+			"great": "Hieno"
 		},
 		"playing": {
-			"playing_fun": "Playing for {{currency}}",
-			"playing_real": "Playing with {{currency}}",
-			"play_fun": "Play for {{currency}}",
-			"play_real": "Play with {{currency}}"
+			"playing_fun": "Maksu {{currency}}",
+			"playing_real": "Maksu {{currency}}",
+			"play_fun": "Pelaa {{currency}}",
+			"play_real": "Pelaa {{currency}}"
 		},
 		"links": {
-			"support": "Support",
-			"help": "Help",
-			"how_to_start": "How to Start",
-			"casino_promotions": "Casino Promotions",
-			"bonuses": "Bonuses",
-			"affiliate_program": "Affiliate program",
-			"terms_and_conditions": "Terms and Conditions",
-			"back": "Back",
-			"create_ticket": "Create ticket",
-			"send_form": "Send form",
-			"online_chat": "Online chat",
-			"home": "Home",
-			"frontpage": "Frontpage",
-			"casino_games": "Casino Games",
-			"about_casino": "About Casino",
-			"all_games": "All Games",
-			"load_more_games": "Load More Games",
-			"rules": "Games Rules",
-			"autoregister": "Autoregister",
-			"quick_register": "Quick Register",
-			"play_for_fun": "Play for Fun",
-			"demo": "Demo",
-			"play_for_real": "Play for Real",
-			"play_for_bitcoin": "Play for Bitcoin",
-			"free_play": "Free Play",
-			"real_play": "Real Play",
-			"play_now": "Play now",
-			"join_now": "Join now",
-			"profile": "Profile",
-			"dice": "Dice",
-			"deposit": "Deposit",
-			"withdraw": "Withdraw",
-			"cashout": "Cashout",
-			"cashbox": "Cashbox",
-			"sign_out": "Sign Out",
-			"sign_in": "Sign In",
-			"sign_up": "Sign Up",
-			"register": "Register",
-			"login": "Login",
-			"logout": "Logout",
-			"start_playing": "Start Playing",
-			"forgot_password": "Forgot Your Password?",
-			"didnt_receive_confirmation": "Didn't receive confirmation instructions?",
-			"didnt_receive_unlock": "Didn't receive unlock instructions?",
-			"affiliate_profiles": "Affliate Profiles",
-			"settings": "Settings"
+			"support": "Tuki",
+			"help": "Ohje",
+			"how_to_start": "Miten aloittaa",
+			"casino_promotions": "Kazinon Promootioita",
+			"bonuses": "Bonukset",
+			"affiliate_program": "Kumppanuusohjelma",
+			"terms_and_conditions": "Asetukset ja ehdot",
+			"back": "Takaisin",
+			"create_ticket": "Luoda  lippu",
+			"send_form": "Täytä lomake",
+			"online_chat": "Elävä keskustelu",
+			"home": "Etusivu",
+			"frontpage": "Etusivu",
+			"casino_games": "Kazino pelejä",
+			"about_casino": "Kazinosta",
+			"all_games": "Kaikki pelejä",
+			"load_more_games": "Ladata enemmän pelejä",
+			"rules": "Pelejän säännöt",
+			"autoregister": "Automaattinen rekisteröinti",
+			"quick_register": "Nopea rekisteröinti",
+			"play_for_fun": "Maksuton peli",
+			"demo": "Esittely",
+			"play_for_real": "Rahapeli",
+			"play_for_bitcoin": "Bitcoin peli",
+			"free_play": "Huvipeli",
+			"real_play": "Rahapeli",
+			"play_now": "Pelaa",
+			"join_now": "Liittää",
+			"profile": "Profiili",
+			"dice": "Nopat",
+			"deposit": "Talletus",
+			"withdraw": "Maksu",
+			"cashout": "Maksut",
+			"cashbox": "Kassa",
+			"sign_out": "Kirjaudu ulos",
+			"sign_in": "Kirjaudu sisään",
+			"sign_up": "Registeröidä",
+			"register": "Rekisteröidä",
+			"login": "Kirjaudu",
+			"logout": "Kirjaudu ulos",
+			"start_playing": "Aloita peli",
+			"forgot_password": "Unohtuiko salasanasi?",
+			"didnt_receive_confirmation": "Et saanut  ohjeita vahvistukseen?",
+			"didnt_receive_unlock": "Et saanut lukituksen ohjeita?",
+			"affiliate_profiles": "Kumppanin profiileja",
+			"settings": "Asetukset"
 		},
 		"captions": {
-			"affiliates": "Affiliates",
-			"help": "Help",
-			"games": "Games",
-			"quick_links": "Quick links",
-			"languages": "Languages",
-			"info": "Info",
-			"information": "Information",
-			"promotion": "Promotion",
-			"follow_us": "Follow us"
+			"affiliates": "Työkumppanit",
+			"help": "Ohjeet",
+			"games": "Pelit",
+			"quick_links": "Pikalinkit",
+			"languages": "Kielet",
+			"info": "Tietoja",
+			"information": "Tietoja",
+			"promotion": "Bonukset",
+			"follow_us": "Seuraa meitä",
+			"privacy": "Yksityisyys",
+			"corporate": "Yhtiö"
 		},
 		"actions": {
-			"go_bang": "Go!",
-			"deposit_now": "Deposit Now",
-			"sign_up_now": "Sign Up Now"
+			"go_bang": "Siirry",
+			"deposit_now": "Tallettaa rahaa",
+			"sign_up_now": "Rekisteröidä"
 		},
-		"games_bet_playthrough_percent": "Games bet playthrough percent",
+		"games_bet_playthrough_percent": "Pelin panosten voitosta korot",
 		"contact": {
-			"title": "Contact Form",
-			"hint": "Please, fill the information below. All fields are required.",
+			"title": "Yhteyden muoto",
+			"hint": "Anna tiedot alhaalla. Kaikki kentät ovat pakollisia",
 			"labels": {
-				"email": "Email",
-				"content": "Message",
-				"send": "Send"
+				"email": "Sähköposti",
+				"content": "Viesti",
+				"send": "Lähetä"
 			}
 		},
 		"no_flash": {
-			"flash_isnt_available": "Adobe Flash Player isn't available",
-			"flash_usage": "Dear users, in order to ensure the best high definition gaming experience, our casino runs on Adobe Flash.",
-			"desktop_section": "Desktop support",
-			"desktop_section_link": "Please install Adobe Flash player for Desktop",
-			"mobile_section": "Mobile devices support",
-			"mobile_section_text": "Adobe Flash is not fully compatible with native browsers on mobile devices. However, you can download 3rd party apps that provide great user experience. We can suggest %s and %s."
+			"flash_isnt_available": "Adobe Flash Player ei ole käytettävissä",
+			"flash_usage": "Hyvät käyttäjät! jotta varmistetaan paras teräväpiirto pelikokemuksen, meidän kasino toimii Adobe Flash Player kanssa",
+			"desktop_section": "Näytön tuki",
+			"desktop_section_link": "Ole hyvä ja aseta Adobe Flash Player",
+			"mobile_section": "Mobiililaitteiden tuki",
+			"mobile_section_text": "Adobe Flash Player ei ole täysin yhteensopiva mobiiliselaimille. Voit kuitenkin ladata kolmannen osapuolten sovelluksia, jotka tarjoavat käyttäjätuen. Voimme tarjota sinulle ja %s and %s."
 		},
 		"devise": {
-			"resend_confirmation": "Resend Confirmation Instructions",
-			"send_reset_instructions": "Reset Password",
-			"send_unlock_instructions": "Resend Unlock Instructions",
-			"change_your_password": "Change your password",
-			"change_my_password": "Change my password",
-			"new_password": "New password",
-			"confirm_new_password": "Confirm new password",
-			"password_hint": "(leave blank if you don't want to change it)",
-			"current_password_hint": "(we need your current password to confirm your changes)",
-			"unlock_hint": "If your account has been locked, fill in your e-mail address and we will send you unlock instructions via e-mail.",
-			"resend_hint": "Fill in your e-mail address and we will send you instructions on how to reset your password via e-mail.",
-			"contact_us_hint_html": "Contact us via {{page}} if you need further help.",
+			"resend_confirmation": "lähetä ohjeet vahvistukseen",
+			"send_reset_instructions": "Palauta salasana",
+			"send_unlock_instructions": "Lähetä uudelleen Ohjeet avaamiseen",
+			"change_your_password": "Vaihda salasanasi",
+			"change_my_password": "Vaihda salasanasi",
+			"new_password": "Uusi salasana",
+			"confirm_new_password": "Toista uusi salasana",
+			"password_hint": "(jätä tyhjäksi, jos et halua muuttaa)",
+			"current_password_hint": "(tarvitsemme nykyinen salasana muutoksiesi säilyttämiseen)",
+			"unlock_hint": "Jos tilisi on lukittu, jätä sähköpostiosoite ja me lähetämme sille ohjeet vapautettaisiin",
+			"resend_hint": "Anna sähköpostiosoitteesi ja sinulle lähetetään ohjeet salasanan vaihtamiseen .",
+			"contact_us_hint_html": "Lisäkysyttämiseksi voit ottaa yhteyttä meihin sivu {{page}}.",
 			"custom": {
-				"not_valid_email": "Not a valid email",
-				"too_short": "Too short",
-				"not_match": "Not match",
-				"min_characters": "Minimum 1 character"
+				"not_valid_email": "Sähköpostin osoite ei ole käyttävissä",
+				"too_short": "Lliian lyhyt",
+				"not_match": "Yhteensattuma ei löydy",
+				"min_characters": "Vähintään 1 merkki"
 			}
 		},
 		"payment_system_redirect": {
-			"notification": "You will be redirected to {{system}} side shortly to finish your transaction",
-			"text": "To continue payment click button below.",
-			"button": "Continue payment"
+			"notification": "Sinut ohjataan sivulle {{system}}, siirron suorittamiseen",
+			"text": "Voidakseen jatkaa maksu, napsautta alla olevaa painiketta.",
+			"button": "Jatka maksua"
 		},
 		"social": {
-			"follow_us": "Follow us"
+			"follow_us": "Seuraa meitä"
 		},
 		"filters": {
-			"find_your_game": "Find your game"
+			"find_your_game": "Etsi pelisi"
 		},
-		"rules_priority_warning": "The Game Rules as published on this website are in English. Translations into other languages are provided as a service in good faith. In the event of ambiguity between an English version and a translation, the English version always retains priority."
+		"rules_priority_warning": "Pelin sääntöjen alkuperäinen versioksi  katsotaan brittiläinen versio. Käännökset muille kielille on tehty vapaaehtoisten maksuttomien palvelunksi ja  eikä  se on velvollisuus. Jos välillä on ristiriitaa Englanti versio ja käännösten, Englanti versio säännöllä ovat ehdoton prioriteetti."
 	},
 	"winners": {
-		"winners": "Winners",
-		"latest_winners": "Latest Winners",
-		"top_winners": "Top Winners",
-		"amount_in_game": "%{amount} in %{game}",
+		"winners": "Voittajat",
+		"latest_winners": "Viimeiset voittajat",
+		"top_winners": "Top-voittajat",
+		"amount_in_game": "%{amount} %{game}",
 		"parts": {
-			"just_won": "just won",
-			"in": "in"
+			"just_won": "voitti",
+			"in": "...ssa"
 		}
 	},
 	"restriction": {
-		"default": "This page is appears to be restricted in your country",
-		"game_restricted_in_country": "This game is appears to be restricted in your country",
-		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
+		"default": "Tämän sivun selailu maassasi on rajoitettu",
+		"game_restricted_in_country": "Pääsy tämän peliin on rajoitettu maassasi",
+		"registration_restricted_in_country": "Rekisteröinti on rajoitettu maassasi"
 	},
 	"documents": {
-		"removed_successfully": "Document was successfully removed",
 		"document": {
-			"edit_description": "Edit Description",
-			"approved": "Approved",
-			"not_approved": "Not Approved"
+			"edit_description": "Vaihta kuvaus",
+			"approved": "Hyväksytty",
+			"not_approved": "Ei hyväksytty"
 		},
 		"index": {
-			"upload_document": "Upload a Document"
+			"upload_document": "Lataa asiakirja"
 		}
 	},
 	"sportsbook": {
-		"sports": "Sports",
-		"live_betting": "Live Betting",
-		"sports_bets": "Sports Bets"
+		"sports": "Urheilu tyyppit",
+		"live_betting": "live-panokset",
+		"sports_bets": "Urheilu panokset"
 	},
 	"formtastic": {
 		"labels": {
-			"card_holder": "Card holder",
-			"credit_card_number": "Credit card number",
-			"cvc": "Card security code",
-			"expiration_date": "Expiration date",
-			"amount": "Amount",
-			"recipient": "Recipient",
+			"clearingNumber": "Selvitys- numero tai pankin koodi",
+			"accountNumber": "Tilinumero",
+			"beneficiaryName": "Saajan nimi",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Edunsaaja osoite",
+			"bankName": "Pankin nimi",
+			"branchAddress": "Haaran osoite",
+			"secureId": "Turvatunnuksesi",
+			"amount": "Summa",
+			"account": "Käyttäjätunnus",
+			"service": "Palvelu",
+			"card_holder": "kortin haltija",
+			"cardHolder": "Kortin haltija",
+			"credit_card_number": "Luottokortin numero",
+			"encCreditcardNumber": "Kortin numero",
+			"countryCode": "Maa",
+			"internalBonusCode": "Bonus koodi",
+			"cvc": "Luottokortin koodi",
+			"cvv": "cvv",
+			"expiration_date": "Vanhentumispäivä",
+			"expiryDate": "Erääntymisaika",
+			"voucherNumber": "Voucherin numero",
+			"voucherValue": "Voucherin arvo",
+			"email": "Sähköpostiosoite",
+			"recipient": "Vastaanottaja",
+			"phoneNumber": "Puhelinnumero",
+			"mobileOperator": "Matkapuhelinoperaattori",
+			"username": "Käyttäjänimi",
+			"password": "Salasana",
+			"country": "Maa",
 			"document": {
-				"attachment": "Attachment",
-				"description": "Description"
+				"attachment": "Liite",
+				"description": "Kuvaus"
 			},
-			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"btc_amount": "Määrä BTC-ssa",
+			"wallet_address": "Lompakon osoite",
+			"deposit_form": {
+				"net_account": "Postiosoite/ Tili ID",
+				"secure_id": "Turva ID"
+			}
 		},
 		"actions": {
 			"game": {
-				"create": "Create game",
-				"update": "Update game"
+				"create": "Luo peli",
+				"update": "Päivitä peli"
 			},
 			"player": {
-				"create": "Create player",
-				"update": "Update player"
+				"create": "Luota pelaaja",
+				"update": "Uusita pelaaja"
 			},
 			"bonus": {
-				"create": "Create bonus",
-				"update": "Update bonus"
+				"create": "Luoda bonus",
+				"update": "Päivitä bonus"
 			},
 			"bonus_issue": {
-				"create": "Create bonus issue",
-				"update": "Update bonus issue"
+				"create": "Luoda bonuksen myöntämis teko ",
+				"update": "Päivitä bonuksen myöntämis teko"
 			},
 			"admin_user": {
-				"create": "Create admin user",
-				"update": "Update admin user"
+				"create": "Luoda yläpitäjää",
+				"update": "Päivitä yläpitäjää"
 			},
 			"payment_system": {
-				"create": "Create payment system",
-				"update": "Update payment system"
+				"create": "Luoda maksujärjestelmä",
+				"update": "Päivitä maksujärjestelmä"
 			},
 			"document": {
-				"submit": "Submit document"
+				"submit": "Muokkaa asiakirjaa"
 			},
-			"create": "Create"
+			"create": "Luoda"
 		},
 		"hints": {
 			"payment_system": {
-				"deposit_snippet_name": "In snippet use {{cms:helper:payment_total_amount}} and {{cms:helper:payment_uniq_code}} to add payment amount and payment uniq code respectively"
+				"deposit_snippet_name": "Koodinpätkä käyttää {{CMS: auttaja: payment_total_amount}} ja {{cm: auttaja: payment_uniq_code}} maksun summa ja maksun uniq koodi lisäämiseen  vastaavasti"
 			},
 			"profile": {
-				"currency": "You can change currency at any stage after registration is completed."
+				"currency": "Suoritettuaan rekisteröintiä, voit muuttaa valittua valuuttaa toiseen."
 			},
-			"btc_amount": "Amount may differ due to exchange rate changes"
+			"btc_amount": "Määrä voi vaihdella valuuttakurssimuutoksista johtuen "
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} Issue",
 		"stages": {
-			"wait": "Wait",
-			"handle_bets": "Active",
-			"canceled": "Canceled",
-			"expired": "Expired",
-			"wager_done": "Wager Done",
-			"lost": "Lost",
-			"pending": "Pending"
+			"wait": "Odottaa",
+			"handle_bets": "Käytössä",
+			"canceled": "Peruttu",
+			"expired": "Vanhentunut",
+			"wager_done": "Wager on Tehty",
+			"lost": "Hävitty",
+			"pending": "Odottaa"
 		}
 	},
 	"freespin_issues": {
-		"title": "%{bonus} Issue",
-		"games": "Games",
-		"activate": "Activate",
+		"title": "%{bonus} Myöntö",
+		"games": "Pelit",
+		"activate": "Ota käyttöön",
 		"stages": {
-			"issued": "Issued",
-			"activated": "Activated",
-			"canceled": "Canceled",
-			"expired": "Expired",
-			"finished": "Played",
-			"pending": "Pending"
+			"issued": "Myönnetty",
+			"activated": "Käytössä",
+			"canceled": "Peruttu",
+			"expired": "Vanhentunut",
+			"finished": "Pelattu",
+			"pending": "Odottaa"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "Sait {{freespins_count}} bonus ilmaskierokset {{games}}.",
+			"activation_prompt_html": "Ilmaiskierrosten aktivoinniin mennä {{link}}."
 		}
 	},
 	"games": {
-		"title": "Casino Games",
+		"title": "Kasinon pelejä",
 		"categories": {
-			"all": "All Games",
-			"card": "Card Games",
-			"poker": "Poker Games",
-			"table": "Table Games",
-			"roulette": "Roulette",
-			"slots": "Slots",
-			"video_poker": "Video Poker",
+			"all": "Kaikki pelejä",
+			"card": "Korttipelit",
+			"poker": "Pokeri",
+			"table": "Taulupelit",
+			"roulette": "Ruletti",
+			"slots": "Hedelmäpelit",
+			"video_poker": "Videopokeri",
 			"blackjack": "Blackjack",
 			"bingo": "Bingo",
 			"live": "Live",
-			"fruit": "Fruit Slots",
-			"theme": "Theme Slots",
-			"casual": "Casual",
-			"lottery": "Lottery",
+			"fruit": "Hedelmäpelit",
+			"theme": "Teema hedelmäpelit",
+			"casual": "Erilaiset",
+			"lottery": "Arpajaiset",
 			"keno": "Keno",
-			"progressive": "Progressive",
+			"progressive": "Progressiivinen",
+			"jackpot": "Games with Jackpot",
 			"stat": {
-				"most_popular": "Most Popular",
-				"new": "New",
-				"manual": "Featured",
-				"last_played": "Last Played"
+				"most_popular": "Suositut",
+				"new": "Uudet",
+				"manual": "Suositellut",
+				"last_played": "Viimeinen peli"
 			},
 			"device": {
-				"desktop": "Desktop",
-				"mobile": "Mobile"
+				"desktop": "Perinteinen",
+				"mobile": "Mobiili"
 			}
 		},
 		"providers": {
-			"all": "All Providers",
+			"all": "Kaikki tarjoajat",
 			"softswiss": "SoftSwiss",
 			"amatic": "Amatic",
-			"betsoftgaming": "BetSoft Gaming",
-			"casinotechnology": "Casino Technology",
+			"betsoftgaming": "BetSoft pelaaminen",
+			"casinotechnology": "Kasino Teknologia",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
-				"calc_by_max_bet": "Calculate by Max Bet",
-				"inside_bets": "Inside Bets",
-				"outside_bets": "Outside Bets",
-				"straight_up": "Straight Up",
-				"split": "Split",
-				"street": "Street",
-				"trio": "Trio",
-				"basket": "Basket",
-				"corner": "Corner",
-				"first_four": "First Four",
-				"first_five": "First Five",
-				"line": "Line",
-				"column": "Column",
-				"dozen": "Dozen",
-				"red": "Red",
-				"black": "Black",
-				"odd": "Odd",
-				"even": "Even",
-				"low": "Low",
-				"high": "High"
+				"calc_by_max_bet": "Laske Max Bet kautta",
+				"inside_bets": "Sisäiset panokset",
+				"outside_bets": "Ulkopuolet panokset",
+				"straight_up": "Veto tietty numeroon",
+				"split": "Jaottelu",
+				"street": "Katu",
+				"trio": "Kolmikko",
+				"basket": "Kori",
+				"corner": "Kulma",
+				"first_four": "Ensimmäiset nelja",
+				"first_five": "Ensimmäiset viisi",
+				"line": "Rivi",
+				"column": "Sarake",
+				"dozen": "Tuusina",
+				"red": "Punainen",
+				"black": "Musta",
+				"odd": "Pariton",
+				"even": "Parillinen",
+				"low": "Matalat numerot",
+				"high": "korkea numerot"
 			}
 		},
 		"titles": {
@@ -1386,10 +1473,10 @@
 				"classic": "Baccarat"
 			},
 			"blackjack": {
-				"double_exposure": "Double Exposure",
-				"european": "European Blackjack",
-				"multihand": "Multihand Blackjack",
-				"multihand_pro": "Multihand Blackjack Pro",
+				"double_exposure": "Kaksinkertainen julkistaminen",
+				"european": "Euroopan Blackjack",
+				"multihand": "Monikäteinen Blackjack",
+				"multihand_pro": "Monikäteinen Blackjack Pro",
 				"pontoon": "Pontoon",
 				"surrender": "Blackjack Surrender"
 			},
@@ -1397,35 +1484,35 @@
 				"switch": "Hi-Lo Switch"
 			},
 			"casual": {
-				"horse_racing": "Horse Racing",
-				"minesweeper": "Minesweeper",
-				"heads_tails": "Heads and Tails",
-				"scratch_dice": "Scratch Dice"
+				"horse_racing": "Kilparatsastus",
+				"minesweeper": "Miinanraivaaja",
+				"heads_tails": "Klaava ja kruuna",
+				"scratch_dice": "Naarmu Noppaa"
 			},
 			"poker": {
-				"caribbean": "Caribbean Poker",
+				"caribbean": "Karibialainen pokeri",
 				"casino_holdem": "Casino Hold`em",
 				"let_it_ride": "Let it Ride",
 				"oasis": "Oasis Poker",
-				"texas_holdem": "Texas Hold`em",
+				"texas_holdem": "Texas Hold'em",
 				"trey_poker": "Trey Poker"
 			},
 			"roulette": {
-				"american": "American Roulette",
-				"european": "European Roulette",
-				"french": "French Roulette"
+				"american": "Amerikkalainen Ruletti",
+				"european": "Euroopan Ruletti",
+				"french": "Ranskalainen Ruletti"
 			},
 			"slots": {
 				"aztec_magic": "Aztec Magic",
 				"book_of_pyramids": "Book of Pyramids",
 				"scroll_of_adventure": "Scroll of Adventure",
-				"brave_viking": "Brave Viking",
+				"brave_viking": "Rohkea Viking",
 				"cherry_fiesta": "Cherry Fiesta",
 				"crazy_starter": "Crazy Starter",
 				"desert_treasure": "Desert Treasure",
 				"hawaii_cocktails": "Hawaii Cocktails",
 				"horse_slot": "Horse Slot",
-				"lucky_blue": "Lucky Blue",
+				"lucky_blue": "Taivaansininen",
 				"lucky_lady_clover": "Lucky Lady's Clover",
 				"lucky_sweets": "Lucky Sweets",
 				"platinum_lightning": "Platinum Lightning",
@@ -1436,374 +1523,388 @@
 				"west_town": "West Town"
 			},
 			"video_poker": {
-				"jacks_or_better": "Jacks or Better",
-				"wild_texas": "Wild Texas",
-				"video_poker": "Japan Poker"
+				"jacks_or_better": "Jacks tai Better",
+				"wild_texas": "Villi Texas",
+				"video_poker": "Japanlainen Pokeri"
 			}
 		}
 	},
 	"users": {
 		"statuses": {
-			"enabled": "Enabled",
-			"disabled": "Disabled",
-			"not_confirmed": "Not confirmed",
-			"locked": "Locked",
-			"normal": "Active",
-			"manually_suspected": "Manually marked as suspicious"
+			"enabled": "Käytössä",
+			"disabled": "Pois käytöstä",
+			"not_confirmed": "Ei vahvistettu",
+			"locked": "Lukittu",
+			"normal": "Käytössä",
+			"manually_suspected": "Manuaalisesti merkitty epäilyttäväksi"
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "Billed From",
-		"billed_to": "Billed To",
-		"paid": "Paid",
-		"submit": "Submit"
+		"billed_from": "alkaen",
+		"billed_to": "Kauden loppu",
+		"paid": "Maksettu",
+		"submit": "Näyttää",
+		"billed": "Laskutettu",
+		"not_billed": "Ei laskutettu"
 	},
 	"affiliate_links": {
-		"add": "Add Link",
+		"add": "Lisää linkki",
 		"name": {
-			"hint": "Identification for your private use only"
+			"hint": "Profiilin nimi oman käyttöön"
 		},
 		"code": {
-			"hint": "Unique code for affiliate link"
+			"hint": "Ainutlaatuinen koodi kumppani linkkin varten"
 		}
 	},
 	"affiliate_profiles": {
-		"tip": "Revenue for each profile is calculated independantly. Use profile links for players tracking.",
-		"commission": "Commission",
+		"tip": "Tulot kunkin profiilin lasketaan itsennäisesti. Käytä profiili linkkejä pelaajan seuramiseen.",
+		"commission": "Palkkio",
 		"registration_settings": {
-			"reward": "CPA Reward",
-			"conditions": "Conditions",
-			"rule": "if invited user wager > {{amount}} {{currency}}"
+			"reward": "Rekisteröinti maksu",
+			"conditions": "Ehdot",
+			"rule": "jos käyttäjä pyytänyt vedon >  {{amount}} {{currency}}"
 		},
 		"percent_settings": {
 			"one": "%{percent}%",
-			"default": "%{percent}% if generated greater than %{limit} %{currency}",
-			"rule": "%{percent}% if generated less than %{limit} %{currency}",
-			"intermediate_rule": "%{percent}% if generated between %{limits} %{currency}"
+			"default": "%{percent}% jos kutsutut käyttäjät  jäivät kasinossa yli %{limit} %{currency}",
+			"rule": "%{percent}% jos kutsutut käyttäjät jäivät kasinossa ale %{limit} %{currency}",
+			"intermediate_rule": "%{percent}% jos kutsutut käyttäjät jäivät kasinossa sisällä %{limits} %{currency}"
 		},
-		"no_default_commissions": "You don't have any assigned commissions. Please contact support.",
-		"active": "Active",
-		"not_active": "Not Active",
-		"affiliate_profiles": "Affiliate Profiles",
+		"no_default_commissions": "Sinulla ei ole nimitetty komissio. Ota yhteyttä tukeen.",
+		"active": "Käytössä",
+		"not_active": "Ei aktiivinen",
+		"affiliate_profiles": "Kumppanin profiilit",
 		"statistics": {
-			"statistics": "Statistics",
-			"year": "Year",
-			"month": "Month",
-			"week": "Week",
-			"day": "Day",
-			"since": "Since",
-			"to": "To",
-			"submit": "Submit",
-			"grouped_by": "Grouped by",
-			"deposits_count": "Deposits",
-			"redirects_count": "Visits",
-			"registered_users_count": "Registered Users(With deposits)",
-			"date": "Date",
-			"invited_users_income": "NGR (net gaming revenue)",
-			"ggr": "GGR (gross gaming revenue)",
-			"total": "Period Total",
-			"link_name": "Link Name"
+			"statistics": "Tilastotiedot",
+			"year": "Vuosi",
+			"month": "Kuukausi",
+			"week": "Viikko",
+			"day": "Päivä",
+			"since": "Kauden alku",
+			"to": "Kauden loppu",
+			"submit": "Näytä",
+			"grouped_by": "Ryhmittää ...",
+			"deposits_count": "Talletukset",
+			"redirects_count": "Vierailut",
+			"registered_users_count": "Rekisteröidyt käyttäjät (talletukset)",
+			"date": "Päivämäärä",
+			"invited_users_income": "NGR (netto tulos)",
+			"ggr": "GGR (brutto pelaamista tulot)",
+			"total": "Kausi Yhteensä",
+			"link_name": "Linkin nimi"
 		},
 		"affiliate_profile": {
-			"code": "Code",
-			"url": "Url",
-			"strategy": "Payment Scheme"
+			"code": "Koodi",
+			"url": "URL",
+			"strategy": "Tulotukijärjestelmä"
 		},
 		"banners": {
-			"banners": "Banners",
-			"sizes": "Sizes",
-			"types_title": "Types",
+			"banners": "Bannerit",
+			"sizes": "Koot",
+			"types_title": "Tyypit",
 			"types": {
-				"image": "Image",
+				"image": "Kuva",
 				"html": "HTML",
 				"swf": "Flash"
 			}
 		},
 		"form": {
-			"name_hint": "Identification for your private use only"
+			"name_hint": "Tunnistaminen yksityiskäyttöön vain"
 		},
-		"add": "Create affiliate profile",
-		"add_link": "Create affiliate profile link",
-		"strategy": "Payment Scheme",
+		"add": "Luo kumppanin profiili",
+		"add_link": "Luo kumppanin profiili linkki",
+		"strategy": "Maksu järjestelmä",
 		"bills": {
-			"bills": "Bills",
-			"billed_at": "Billed At",
-			"amount": "Amount",
-			"paid": "Paid",
-			"not_billed_for_date": "Not Billed For Date"
+			"bills": "Laskut",
+			"billed_at": "Laskutuksen päivä",
+			"amount": "Summa",
+			"paid": "Maksettu",
+			"not_billed_for_date": "Ei laskutettu eräpäivänä"
 		}
 	},
 	"games_history": {
-		"title": "Games",
-		"from": "From",
-		"result": "Result",
-		"win": "Win",
-		"lose": "Lose",
-		"game_name": "Game",
-		"bet": "Bet"
+		"title": "Pelit",
+		"from": "Alkaen",
+		"result": "Tulos",
+		"win": "Voitto",
+		"lose": "Tappio",
+		"game_name": "Peli",
+		"bet": "Panos"
 	},
 	"bonuses": {
 		"history": {
-			"title": "Bonuses",
-			"wager": "Wager",
-			"valid_until": "Valid Until",
-			"status": "Status",
-			"from": "From"
+			"title": "Bonukset",
+			"wager": "Panos",
+			"valid_until": "Voimassa.....asti",
+			"status": "Statuusi",
+			"from": "Alkaen"
 		},
 		"promo_form": {
-			"title": "Add Promo Code",
-			"sub_title": "and receive a bonus"
+			"title": "Lisää Tarjouskoodi",
+			"sub_title": "ja saada bonus"
 		},
-		"bonus_settings": "Bonus Settings",
-		"refuse": "I don't want to receive any Bonuses"
+		"bonus_settings": "Bonuksen asettaminen",
+		"refuse": "En halua vastaanottaa mikään bonusta"
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Ilmaiskierrokset"
 		},
-		"gift": "Gift"
+		"gift": "Lahja"
 	},
 	"profiles": {
 		"menu": {
-			"balance": "Balance",
-			"history": "History",
-			"bonuses": "Bonuses",
-			"affiliate": "Affiliate",
-			"profile": "Profile Info",
-			"documents": "Documents"
+			"balance": "Saldo",
+			"history": "Historia",
+			"bonuses": "Bonukset",
+			"affiliate": "Kumppanit",
+			"profile": "Profiilin tunniste",
+			"documents": "Asiakirjat"
 		},
 		"info": {
-			"personal": "Personal"
+			"personal": "Henkilökohtainen"
 		},
 		"index": {
-			"my_account": "My Account",
-			"my_bets": "My Bets",
-			"transaction": "Transaction",
-			"welcome": "Welcome",
-			"balance": "Your Balance",
-			"account_balance": "Account Balance"
+			"my_account": "Oma tili",
+			"my_bets": "Panokseni",
+			"transaction": "Liiketoimi",
+			"welcome": "Tervetuloa",
+			"balance": "Saldosi",
+			"account_balance": "Tilin saldo"
 		},
 		"show": {
-			"edit_profile": "Edit your profile",
-			"edit_settings": "Edit Settings",
-			"attach_documents": "Attach documents",
-			"change_credentials": "Change password",
-			"set_email_and_password": "Set email and password",
-			"create_cashout_request": "Cashout",
-			"confirm_address": "Due to security reasons the address never used befor needs to be confirmed by email. Confirmation link was sent to your email, please check mailbox.",
-			"address_confirmation_failed": "Address was not confirmed and cashout was not processed.",
-			"cashout_request_created": "Cashout request has been received and requires approval by our staff. We will process your request as fast as we can.",
-			"cashout_successfully": "Cashout has been made successfully",
-			"cashout_technically_impossible": "We're sorry, but some errors occurred. We're working to fix them in an emergency mode. Please contact support if you have any questions.",
+			"edit_profile": "Muokkaa profiiliasi",
+			"edit_settings": "Muokkaa asetuksia",
+			"attach_documents": "Liittää asiakirjat",
+			"change_credentials": "Muuta salasana",
+			"set_email_and_password": "Aseta käyttäjän nimi ja salasana",
+			"create_cashout_request": "Maksut",
+			"confirm_address": "Turvallisuussyistä koskaan käyttänyt ennen osoite tulee varmistaa sähköpostitse. Vahvistus linkki lähetettiin sähköpostiisi, tarkista postilaatikko.",
+			"address_confirmation_failed": "Osoite ei ole vahvistettu ja kotiutus ei käsitelty.",
+			"cashout_request_created": "Kotiutuspyyntösi on vastaanotettu ja tulee hyväksymiseen henkilökuntamme. Käsittelemme pyyntösi niin nopeasti kuin voimme.",
+			"cashout_successfully": "Kotiutus on tehty onnistuneesti",
+			"cashout_technically_impossible": "Pahoittelemme, mutta tapahtui jotkut virhe. Pyrimme korjaamaan niitä hätätilanteessa muodossa. Ota yhteyttä, jos sinulla on kysyttävää.",
 			"profile_info": {
-				"title": "Profile Info"
+				"title": "Profiilin tietoja"
 			},
 			"autoregister_info": {
-				"title": "Currently, you can log in to your account by visiting your personal login url"
+				"title": "Tällä hetkellä, voit kirjautua tilillesi käymällä henkilökohtaisia kirjautuminen url"
 			},
 			"accounts": {
-				"title": "Accounts",
-				"available_to_cashout": "Available to cash out",
-				"add_currency": "Add currency"
+				"title": "Tilit",
+				"available_to_cashout": "Kotiutuminen on mahdollinen",
+				"add_currency": "lisää valuutta"
 			},
 			"bonuses": {
-				"title": "Bonuses",
-				"no_bonuses": "You currently do not have any bonus.",
-				"cancel_bonus": "Forfeit Bonus",
-				"cancel_bonus_confirmation": "Please note that forfeiting the bonus will also result in forfeiting your winnings.",
-				"bonus_canceled": "Bonus canceled",
-				"bonus_not_canceled": "This bonus can't be canceled"
+				"title": "Bonukset",
+				"no_bonuses": "Sinulla ei ole mitään bonusta.",
+				"cancel_bonus": "Menettää bonus ",
+				"cancel_bonus_confirmation": "Huomaa, että bonuksen menettäminen  johtaa myös voiton menettämiseen.",
+				"bonus_canceled": "Bonus on menetetty",
+				"bonus_not_canceled": "Tämä bonus ei tulee menettää"
 			},
 			"coupons": {
-				"activated": "Coupon \"{{code}}\" successfully activated.",
-				"not_activated": "Unable to activate coupon \"{{code}}\". Please try again or contact support.",
-				"already_activated": "Coupon \"{{code}}\" already activated."
+				"activated": "Kuponki \"{{code}}\" aktivoitu onnellisesti",
+				"not_activated": "Kupongin aktivointi ei onnistui \"{{code}}\". Yritä uudelleen tai ota yhteyttä tukeen.",
+				"already_activated": "Kupunki \"{{code}}\" on jo aktivoitu"
 			},
 			"payments": {
-				"title": "Payments"
+				"title": "Maksut"
 			},
 			"not_finished_games": {
-				"title": "Unfinished Games",
-				"hint": "You can either continue playing, or cancel these games. Canceling will result in loss of bet.",
-				"game_canceled": "Game has been canceled"
+				"title": "Keskeneräiset pelit",
+				"hint": "Voit joko jatkaa pelaamista tai peruuttaa näitä pelejä. Peruuttaminen johtaa vedon menetykseen .",
+				"game_canceled": "Peli on peruttu"
 			},
 			"bets": {
-				"title": "Bets",
-				"all_bets": "All Bets"
+				"title": "Panokset",
+				"all_bets": "Kaikki panokset"
 			},
-			"cashbox": "Cashbox",
-			"payments_history": "Transactions History",
-			"bets_history": "Bets History",
-			"bonuses_history": "Bonus History",
-			"freespin_bonuses_history": "Freespins History",
-			"deposit_to_address_hint": "Deposit to this address to fund your account.",
+			"cashbox": "Kassaliipasto",
+			"payments_history": "Liiketoimeiden Historia",
+			"bets_history": "Panosten historia",
+			"bonuses_history": "Bonuksen Historia",
+			"freespin_bonuses_history": "Ilmaiskierosten Historia",
+			"deposit_to_address_hint": "Tallettaa tähän osoitteeseen tilin täyttämiseen.",
 			"freespin_bonuses": {
-				"bonus_canceled": "Bonus canceled",
-				"bonus_not_canceled": "Failed to cancel bonus",
-				"bonus_activated": "Bonus was activated",
-				"bonus_not_activated": "Bonus was not activated"
+				"bonus_canceled": "Bonus peruttu",
+				"bonus_not_canceled": "Bonuksen peruutus epäonnistui",
+				"bonus_activated": "Bonus aktivoitiin",
+				"bonus_not_activated": "Bonus ei aktivoitu"
 			}
 		},
 		"edit": {
-			"title": "Edit Profile",
-			"info_updated": "Info has been updated",
-			"not_saved": "Changes was not saved",
-			"settings_section_updated": "Section successfully updated",
-			"valid_data_warning": "Please enter valid contact details in the form below. Make sure it is accurate before saving."
+			"title": "Muokkaa profiilia",
+			"info_updated": "Tieto on päivitetty",
+			"not_saved": "Muutoksia ei tallennettu!",
+			"settings_section_updated": "Jakso päivitetty onnistuneesti",
+			"valid_data_warning": "Syötä kelvolliset yhteystiedot alla olevan lomakkeen. Varmista, että se on tarkka ennen tallentamista."
 		}
 	},
 	"payments": {
 		"actions": {
-			"deposit": "Deposit",
-			"cashout": "Cashout",
-			"gift": "Gift",
-			"chargeback": "Chargeback",
-			"affiliate_payment": "Affiliate Reward"
+			"deposit": "Talletus",
+			"cashout": "Kotiutus",
+			"gift": "Lahja",
+			"chargeback": "Takaisinperintä",
+			"affiliate_payment": "Kumppanin palkkio"
 		},
 		"statuses": {
-			"success": "Accepted",
-			"failure": "Discarded",
-			"pending": "Pending"
+			"success": "Hyväksytty",
+			"failure": "Hylätty",
+			"pending": "Odottaa"
 		},
-		"canceled_by_user": "You have canceled your transaction",
-		"wait_for_confirmation": "Your payment will be confirmed shortly",
-		"not_performed": "Payment was not performed",
-		"confirmed": "Payment confirmed",
-		"canceled": "Payment not confirmed",
-		"make_deposit": "Make Deposit",
-		"make_cashout": "Request Cashout",
-		"confirm_address": "Confirm address",
-		"bonus_code_show": "I have a Bonus Code",
-		"bonus_code_hide": "Hide Bonus Code",
-		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
-		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
-		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
-		"invalid_profile_message": "To be able to cash out, you must fill in the required fields in your Profile.",
-		"try_again": "Transaction could not be initiated due to connection problems. If the problem persists, please contact our support.",
-		"select_currency": "Select Balance Currency",
+		"canceled_by_user": "Olet peruuttanut lippuostoksesi",
+		"wait_for_confirmation": "Maksusi vahvistetaan pian",
+		"not_performed": "Maksu ei suoritettu",
+		"confirmed": "Maksu vahvistettu",
+		"canceled": "Maksu ei ole vahvistettu",
+		"make_deposit": "Tee talletus",
+		"make_cashout": "Kotiutuksen pyyntö",
+		"confirm_address": "Vahvista osoite",
+		"bonus_code_show": "Minulla on Bonuskoodi",
+		"bonus_code_hide": "Piilotujen Bonuskoodi",
+		"address_confirmation_email_body": "Pyysit kotiutuksesi {{address}}. Et ole käyttänyt tätä osoitteeseen ennen. Suojaamaan tilisi pyydämme sinua vahvistamaan tämän osoite. Vahvista osoite klikkaamalla linkkiä:",
+		"address_confirmation_email_warning": "Jos tämä osoite ei kuulu sinulle ota yhteyttä tukea ja vaihtaa salasanasi:",
+		"invalid_profile_message": {
+			"deposit": "Sinun tulee täyttää vaadittavat kentät ensin tallenttamista. Kirjoita kelvolliset yhteystiedot alla olevan lomakkeen. Ennen tallentamista varmista, että se on tarkka .",
+			"cashout": "Voidakseen kotiuttaa, sinun tulee täyttää vaaditut profiilisin kentät ."
+		},
+		"try_again": "Liiketoimi ei laukea yhteysongelmian takia. Jos ongelma jatkuu, ota yhteyttä asiakaspalveluumme.",
+		"select_currency": "valitse saldon valuutta",
 		"select_currency_hint": {
-			"deposit": "I would like to top up my balance in",
-			"cashout": "I would like to cash out"
+			"deposit": "Haluaisin lisätä tasapainoni",
+			"cashout": "Haluan kotiuttaa"
 		},
-		"select_payment_method": "Select Payment Method",
+		"select_payment_method": "Valitse maksun ehto",
+		"saved_methods": "Olet talettanut maksuehdot",
 		"current_balance": {
-			"deposit": "Your current balance: {{money}}.",
-			"cashout": "Available to cash out: {{money}}. Please refer to {{balance_link}} page for detailed break down."
+			"deposit": "Nykyinen saldo on: {{money}}.",
+			"cashout": "Käytettävissä kotiuttaa: {{money}}. Katso {{balance_link}} sivustolle murtuneita yksityiskohtaista ."
 		},
 		"payment_methods": {
-			"empty": "There are no available payment methods for this currency.",
-			"pay_with_cubits": "Pay with Cubits"
+			"empty": "Ei ole saatavilla maksutavat tässä valuutassa.",
+			"pay_with_cubits": "Maksu Cubits kanssa"
 		},
 		"limits": {
-			"currency": "Payment {{currency}}",
+			"currency": "Maksu {{currency}}",
 			"min": "min {{min}}",
 			"max": "max {{max}}",
-			"fee": "fee {{fee}}"
+			"fee": "palkkio {{fee}}"
 		},
 		"processing_time": {
-			"instantly": "Instantly",
-			"range": "%{min}-%{max} banking days"
-		}
+			"instantly": "Välittömästi",
+			"range": "%{min}-%{max} pankin päivät"
+		},
+		"cubits_not_available": "Cubits ei ole käytettävissä nyt. Yritä myöhemmin uudelleen."
 	},
 	"security_check": {
-		"user_is_suspicious": "User is suspicious",
-		"user_not_suspicious": "User is suspicious",
-		"user_has_suspicious_games": "User has suspicious games",
-		"cashout_amount": "Amount exceeds allowed maximum",
-		"cashout_wins": "Amount exceeds user limit",
-		"casino_cashout": "Amount exceeds casino daily limit",
-		"crypto_address_confirmed": "Address was not used before",
+		"user_is_suspicious": "Käyttäjä on epäilty",
+		"user_not_suspicious": "Käyttäjä on epäilty",
+		"user_has_suspicious_games": "Käyttäjällä on epäileviä pelejä",
+		"cashout_amount": "Määrä ylittää sallittu enimmäismäärä",
+		"cashout_wins": "Määrä ylittää sallittu enimmäismäärä",
+		"casino_cashout": "Määrä ylittää kasinon päivittäinen raja",
+		"crypto_address_confirmed": "Osoite ei ole käyttävissä aikaisemmin",
 		"manual": {
-			"title": "User was manually marked as suspicious"
+			"title": "Käyttäjän oli manuaalisesti merkitty epäilyttäväksi"
 		},
 		"chargeback": {
-			"title": "User made chargeback"
+			"title": "Käyttäjä on tehnyt takaisinperintä"
 		},
 		"duplicate": {
-			"title": "User has duplicates",
-			"reason_html": "User duplicates {{user}}"
+			"title": "Käyttäjällä on kopiot",
+			"reason_html": "Käyttäjän kopiot {{user}}"
 		},
 		"balance_sum": {
-			"title": "Balance amount doesn't match the amount calculated based on transations and games statistic",
-			"text": "Player's balance doesn't match with expected balance"
+			"title": "Balance määrä ei vastaa määrälle, joka on   laskettu siirron ja pelejän tilastotieton perusteella",
+			"text": "Pelaajan saldo ei vastaa odotettua tasapainoa"
 		},
 		"balance_transaction": {
-			"title": "The winning amount is too big for the last 24 hours",
-			"reason_html": "Suspicious wins in {{table}} during {{period}} by {{player}}"
+			"title": "Voittosumma on liian iso viimeisen 24 tunnin aikana",
+			"reason_html": "Epäilyttävät voittot {{table}} aikana {{period}} pelaajan {{player}}"
 		},
 		"wager_done": {
-			"title": "User done wager bonus requirement"
+			"title": "Käyttäjä on tehnyt vedon bonus vaatimus"
 		},
 		"cubits_payment_difference": {
-			"title": "Cumulative cubits exchange rate losses are too big"
+			"title": "Kumulatiivinen cubits kurssitappiot ovat liian suuria"
 		}
 	},
 	"notification": {
 		"contact_form": {
-			"sender_notice": "Your message was sent successfully.",
-			"mail_subject": "Received message via contact form at your casino site"
+			"sender_notice": "Viesti lähetetty onnellisesti",
+			"mail_subject": "Vastaanotettu viesti yhteydenottolomakkeen kautta teidän Kasino sivustolla"
 		},
 		"payment_confirmation": {
-			"mail_subject": "Payment confirmation code"
+			"mail_subject": "Maksun vahvistus koodi"
 		},
 		"daily_stats": {
-			"mail_subject": "Daily {{currency}} statistics for {{date}}"
+			"mail_subject": "Päivittäin {{currency}} tilastotietoa {{date}}"
 		},
 		"report": {
-			"day_mail_subject": "Daily statistics",
-			"week_mail_subject": "Weekly statistics",
-			"day_mail_title": "Daily {{currency}} statistics for {{period}}",
-			"week_mail_title": "Weekly {{currency}} statistics for {{period}}",
+			"day_mail_subject": "Päiviittäin tilastotiedot",
+			"week_mail_subject": "Viikon tilastot",
+			"day_mail_title": "Päivittäin {{currency}} tilastot {{period}}",
+			"week_mail_title": "Viikoittain {{currency}} tilastot {{period}}",
 			"fields": {
-				"net_revenue": "Net Gaming Revenue (NGR)",
-				"gross_win": "Gross Win",
-				"bets": "Total Bet",
-				"wins": "Total Win",
-				"payout": "Payout (in %)",
-				"game_rounds": "Game Rounds",
-				"new_registrations": "New Registrations With Deposit",
-				"players_made_deposits": "Players Made Deposits",
-				"total_users": "Total Users",
-				"deposits_sum": "Deposits Sum",
-				"deposits_avg": "Deposits Average",
-				"cashouts_sum": "Cashouts Sum",
-				"cashouts_avg": "Cashouts Average"
+				"net_revenue": "Net Peli Tulot (NGR)",
+				"gross_win": "Tulot yhteensä",
+				"bets": "Panokset yhteensä",
+				"wins": "Voit yhteensä",
+				"payout": "Kotiutukset (korkona %)",
+				"game_rounds": "Pelikierroksia",
+				"new_registrations": "Uusia rekisteröinnit Talletuksen kanssa",
+				"players_made_deposits": "Pelaajat ovat tehneet Talletukset",
+				"total_users": "Pelaajat yhteensä",
+				"deposits_sum": "Talletusten määrä",
+				"deposits_avg": "Talletusten keskimääräinen summa",
+				"cashouts_sum": "Kotiutumisen summa",
+				"cashouts_avg": "Keskimääräinen kotiutukset "
 			},
-			"previous": "Previous {{type}}"
+			"previous": "Edellinen {{type}}"
 		}
 	},
 	"user_mailer": {
 		"auth": {
-			"welcome": "Welcome {{name}}!",
-			"hello": "Hello {{name}}!",
+			"welcome": "Tervetuloa {{name}}!",
+			"hello": "Hi {{name}}!",
 			"confirmation": {
-				"you_can_confirm_email_by_pressing_next_link": "You can confirm your account email through the link below:",
-				"confirm_my_account": "Confirm my account"
+				"you_can_confirm_email_by_pressing_next_link": "Voit vahvistaa tilisi sähköpostitse klikaamalla  alla oleva linki:",
+				"confirm_my_account": "Vahvista tilini"
 			},
 			"reset_password": {
-				"change_my_password": "Change my password",
-				"link_to_change_password_are_requested": "Someone has requested a link to change your password, and you can do this through the link below.",
-				"you_can_ignore_this_mail": "If you didn't request this, please ignore this email.",
-				"your_password_didnt_changed_yet": "Your password won't change until you access the link above and create a new one."
+				"change_my_password": "Vaihda salasana",
+				"link_to_change_password_are_requested": "Joku on pyytänyt linkin salasanan vaihtamiseen , ja voit tehdä tämän alla olevan linkin kautta.",
+				"you_can_ignore_this_mail": "Jos et pyytänyt tätä, jätä tämä sähköposti huomiotta.",
+				"your_password_didnt_changed_yet": "Salasanasi ei muutu kunnes asiakas kirjautuu yllä olevaa linkkiä ja luo uuden."
 			},
 			"unlock": {
-				"unlock_my_account": "Unlock my account",
-				"your_account_has_been_locked": "Your account has been locked due to an excessive amount of unsuccessful sign in attempts.",
-				"click_to_unlock": "Click the link below to unlock your account:"
+				"unlock_my_account": "Avaa tilini",
+				"your_account_has_been_locked": "Tilisi on estetty, koska liikaa hävinnyt kirjaudun yrityksiä.",
+				"click_to_unlock": "Klikkaa alla olevaa linkkiä tilin avamiseen:"
 			}
 		},
 		"deposit": {
-			"deposit_made": "Your deposit received"
+			"deposit_made": "Talletus vastaanotettu"
 		},
 		"cashout": {
-			"cashout_approved": "Your cashout request was approved"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "Insufficient account balance for cashout",
-			"body": "Your cash out was disabled because account balance became insufficient to process the submitted cash out. Please submit the new cash out request according to current balance."
-		},
-		"address_confirmation_required": {
-			"subject": "Cashout address confirmation required"
+			"cashout_approved": "Sinun nostopyyntösi on hyväksytty"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Vaaditaan Kotiutus osoiteen vahvistus ",
+			"deposit_made": "Talletukseni on vastaanotettu",
+			"cashout_approved": "Sinun nostopyyntösi on hyväksytty",
+			"freespin_bonus_issued": "ilmaispyöräytyksiä palkittiin",
+			"welcome": "Tervetuloa",
+			"no_deposit": "Et ole tehnyt talletus",
+			"nth_deposit": "Odotamme talletus",
+			"welcome_promo": "Vieraile uudelleen",
+			"confirmation_instructions": "Vahvistus ohjeet",
+			"reset_password_instructions": "Nollaa salasana ohjeet",
+			"unlock_instructions": "Avaa ohjeet"
 		}
 	},
 	"activemodel": {
@@ -1812,39 +1913,39 @@
 				"affiliate_forms/assign_commission": {
 					"attributes": {
 						"from_date": {
-							"must_be_in_future": "must be in future"
+							"must_be_in_future": "on oltava tulevaisuudessa"
 						},
 						"to_date": {
-							"must_be_in_future": "must be in future",
-							"must_be_less_then_from": "must be less then From"
+							"must_be_in_future": "on oltava tulevaisuudessa",
+							"must_be_less_then_from": "on oltava alle Alkaen"
 						}
 					}
 				},
 				"payment_system/cashout_form/wirecard": {
 					"attributes": {
 						"credit_card_number": {
-							"invalid": "is not a valid credit card number"
+							"invalid": "kortin numero ei ole kelvollinen"
 						}
 					}
 				},
 				"casino_cash_balance/balance_options": {
 					"attributes": {
 						"base": {
-							"rules_error": "You have errors in rules"
+							"rules_error": "Sinulla on virheet säännöissä"
 						}
 					}
 				},
 				"commissions/registration_settings": {
 					"attributes": {
 						"base": {
-							"rules_error": "You have errors in rules"
+							"rules_error": "Sinulla on virheet säännöissä"
 						}
 					}
 				},
 				"commissions/registration_settings_rule": {
 					"attributes": {
 						"base": {
-							"uniq": "should be unique"
+							"uniq": "oltava yksilöllinen"
 						}
 					}
 				}
@@ -1852,39 +1953,33 @@
 		},
 		"attributes": {
 			"payment_system/bank_transfer/access_data": {
-				"deposit_snippet_name": "Deposit Snippet Name",
-				"cashout_snippet_name": "Cashout Snippet Name"
+				"deposit_snippet_name": "Talletus Katkelman Nimi",
+				"cashout_snippet_name": "Kotiutus Katkelma Nimi"
 			},
 			"affiliate_forms/assign_commission": {
-				"from_date": "From",
-				"to_date": "To"
+				"from_date": "Alkaen",
+				"to_date": "Vaiheen päätös"
 			},
 			"newsletters_filter": {
-				"tag": "User tag",
-				"locale": "Locale",
-				"type": "Type",
-				"deposits_number_equals": "Deposit",
-				"last_deposit_at": "Last deposit",
-				"registered_at": "Registered",
-				"payments_currency": "Payments currency"
+				"tag": "Käyttäjän tunnuste",
+				"locale": "Kieliversio",
+				"type": "Tyyppi",
+				"deposits_number_equals": "Talletus",
+				"last_deposit_at": "Viimeinen talletus",
+				"registered_at": "Rekisteröity",
+				"payments_currency": "Maksujen valuutta"
 			}
 		}
 	},
-	"retention_mailer": {
-		"welcome": "Welcome",
-		"no_deposit": "You haven't made a deposit",
-		"nth_deposit": "We are waiting for your deposit",
-		"welcome_promo": "Visit us again"
-	},
 	"jackpot": {
-		"jackpots": "Jackpots"
+		"jackpots": "Jackpotit"
 	},
 	"game_categories": {
-		"favorite": "My favorites",
-		"add_to_favorites": "Add To Favorites",
-		"remove_from_favorites": "Remove From Favorites",
+		"favorite": "Suosikkini",
+		"add_to_favorites": "Lisää suosikkeihin",
+		"remove_from_favorites": "Poista suosikeista",
 		"favorites": {
-			"no_games": "No Games in your Favorite list. Use Star icon to add them here."
+			"no_games": "Ei ole pelejä suosikkilistalla. Käyttäkää ikonia niiden lisämiseen"
 		}
 	},
 	"betsoftgaming_api": {
@@ -1892,49 +1987,56 @@
 	},
 	"backend": {
 		"menu": {
-			"bitcoin_addresses": "Bitcoin Addresses"
+			"bitcoin_addresses": "Bitkoin Osoiteet"
 		},
 		"bitcoin_wallets": {
 			"filters": {
-				"all": "All",
-				"available": "Available",
-				"occupied": "Occupied"
+				"all": "Kaikki",
+				"available": "Saatavilla",
+				"occupied": "Varattu"
 			}
 		},
 		"bitcoin": {
-			"add_new_addresses": "Upload file or paste new addresses",
-			"upload_new_addresses": "Add addresses",
-			"cashout": "Cashout",
-			"deposit_to_wallet": "Deposit to Wallet",
-			"deposit_currency_to_wallet": "Deposit {{currency}} to Wallet",
-			"enough_available_addresses_left": "Left {{count}} available addresses",
-			"not_enough_available_addresses_left": "Only 1 available bitcoin address left. You can add more addresses {{link}}.",
-			"here": "here",
-			"current_wallet_balance": "Current wallet balance:",
-			"total_balance": "Total: {{amount}}",
-			"available_balance": "Spendable: {{amount}}",
-			"transfer_to": "Increase",
-			"increase_system_balance": "To increase balance of system wallet please send bitcoins to next address:"
+			"add_new_addresses": "Lataa tiedosto tai liitä uusia osoitteita",
+			"upload_new_addresses": "Lisää osoiteitta",
+			"cashout": "Kotiutus",
+			"deposit_to_wallet": "Tallettää Lompakoon",
+			"deposit_currency_to_wallet": "Talettaa {{currency}} Lompakoon",
+			"enough_available_addresses_left": "Jäi {{count}} saatavilla osoitteita",
+			"not_enough_available_addresses_left": "Jäi vain 1 käytettävissä bitcoin osoite . Voit lisätä enemmän osoitteita {{link}}.",
+			"here": "Täällä",
+			"current_wallet_balance": "Nykyinen lompakon saldo",
+			"total_balance": "Yhteensä: {{amount}}",
+			"available_balance": "Saatavilla: {{amount}}",
+			"transfer_to": "Lisää",
+			"increase_system_balance": "Järjestelmän lompakon tasapainon  lisäämiseen  lähetä Bitcoins seuraavaan osoitteeseen:"
 		}
 	},
 	"bitcoin_wallets": {
 		"address_sources": {
-			"imported": "From pool",
-			"generated": "Generated",
-			"cubits_invoice": "Cubits Invoice",
-			"cubits_channel": "Cubits Channel"
+			"imported": "Pottin alkaen",
+			"generated": "Generoitu",
+			"cubits_invoice": "Cubits Lasku",
+			"cubits_channel": "Cubit Kanava"
 		}
 	},
 	"sidebar": {
-		"available_addresses": "Available addresses",
-		"wallet_balance": "Wallet balance"
+		"available_addresses": "Saatavilla osoiteet",
+		"wallet_balance": "Lompakon saldo"
 	},
 	"casinotechnology_api": {
-		"casinotechnology": "CasinoTechnology",
-		"timeout_message": "Game provider's server has not responded. Please retry later."
+		"casinotechnology": "Kasino Teknologia",
+		"timeout_message": "Peli palveluntarjoaja ei ole vastannut. Yritä uudelleen myöhemmin."
+	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
 	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
+	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "Haluamassa pelata tätä peliä sinun täytyy täyttää ainakin Etunimi, Sukunimi, Syntymäaika ja Maa"
 	},
 	"quickfire_api": {
 		"quickfire": "QuickFire"

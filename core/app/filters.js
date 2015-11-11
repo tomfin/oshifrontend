@@ -16,12 +16,30 @@ CasinoFilters
         };
     })
 
-    .filter('casino_currency', ['$filter', function($filter) {
+    .filter('casino_currency', ['$filter', 'GamesData', function($filter, GamesData) {
         return function(amount, symbol, fractionSize) {
-            if (symbol.toLowerCase().indexOf('btc') == -1) {
+            GamesData
+            if (symbol && symbol.toLowerCase().indexOf('btc') == -1) {
                 return $filter('currency')(amount, symbol, fractionSize);
             } else {
                 return amount + ' ' + symbol;
+            }
+        };
+    }])
+
+    .filter('humanized_currency', ['$filter', 'GamesData', function($filter, GamesData) {
+        return function(amount_cents, currency) {
+            var current_currency = GamesData.data.currencies[currency],
+                amount = amount_cents / current_currency.subunits_to_unit;
+
+            if (currency && currency.toLowerCase().indexOf('btc') == -1) {
+                return $filter('currency')(amount, current_currency.symbol);
+            } else {
+                if (amount < 1 && amount != 0) {
+                    currency = 'mBTC';
+                    amount = amount_cents / 100000;
+                }
+                return amount + ' ' + currency;
             }
         };
     }])

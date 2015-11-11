@@ -12,7 +12,7 @@ CasinoServices
                     windowHeight = jQuery(window).height(),
                     fullView = false;
 
-                if (windowWidth < 1000 || windowHeight < 600 || !FlashDetect.installed) {
+                if (windowWidth < 1000 || windowHeight <= 800 || !FlashDetect.installed) {
                     fullView = true;
                 }
 
@@ -73,7 +73,7 @@ CasinoServices
                 else if ($document.webkitCancelFullScreen) {
                     $document.webkitCancelFullScreen();
                 }
-            }
+            };
 
 
         return {

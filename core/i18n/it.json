@@ -97,6 +97,14 @@
 						}
 					}
 				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Was created too much time ago",
+							"has_affiliate_profiles": "Has affiliate profiles"
+						}
+					}
+				},
 				"user": {
 					"attributes": {
 						"password": {
@@ -168,6 +176,18 @@
 			"retention_email": "Retention email"
 		},
 		"attributes": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Casino Cash Balance Name",
+				"casino_cash_balance_id": "Casino Cash Balance ID",
+				"action": "Action",
+				"change_amount": "Change amount",
+				"amount_after_change": "Amount after change",
+				"subject": "Subject",
+				"processed_at": "Processed at",
+				"comment": "Comment",
+				"currency": "Currency"
+			},
 			"balance_correction": {
 				"action": "Action",
 				"amount": "Amount",
@@ -287,9 +307,9 @@
 			"freespin_issue": {
 				"stage": "Stage",
 				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
+				"freespins_total": "Free spins awarded",
 				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
+				"win_amount_cents": "Already won",
 				"valid_until": "Expiry date",
 				"extra": "Extra info",
 				"external_id": "External ID",
@@ -701,7 +721,18 @@
 			"link_to_root": "Here is a link to our start page:"
 		}
 	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Document was successfully uploaded"
+			},
+			"destroy": {
+				"notice": "Document was successfully removed"
+			}
+		}
+	},
 	"common": {
+		"required": "Required",
 		"in_out": "IN/OUT",
 		"players": "Giocatori",
 		"email": "Email",
@@ -743,14 +774,19 @@
 		"filter": "Filtra",
 		"are_you_sure": "Sei sicuro?",
 		"set": "Set",
+		"recall": "Recall",
 		"enabled": "Abilitato",
 		"disabled": "Disabilitato",
 		"active": "Attivo",
+		"success": "Success",
+		"error": "Error",
 		"preview": "Anteprima",
 		"select": "Select",
 		"summary": "Sommario",
 		"status": "Stato",
 		"options": "Opzioni",
+		"download": "Download",
+		"csv": "CSV",
 		"genders": {
 			"m": "Maschio",
 			"f": "Femmina"
@@ -879,6 +915,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -894,6 +931,7 @@
 				"bank_transfer": "Bank Transfer",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "OAuth Application",
 				"bitcoin_payment": "Bitcoin",
 				"ripple_payment": "Ripple"
 			},
@@ -904,6 +942,19 @@
 			"system_name": "%{child} attraverso %{parent}",
 			"all_locked": "For your safety we only allow cashout through payment systems you previously used for deposit. If you have questions, please contact support.",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Bank",
+				"banklocal": "Bank domestic withdrawal",
+				"bankiban": "Bank domestic IBAN withdrawal",
+				"bankintiban": "Bank international IBAN withdrawal",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "Visa",
 				"mastercard": "MasterCard",
 				"online_bank_transfer": "Bonifico bancario",
@@ -912,6 +963,7 @@
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
 				"cards": "Credit Cards",
 				"ccard": "Credit Card",
+				"creditcard": "Credit Card",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
 				"eps": "EPS e-payment",
@@ -927,6 +979,7 @@
 				"paysafecard": "paysafecard",
 				"quick": "Quick",
 				"sepa": "SEPA Direct Debit",
+				"skrill": "Skrill",
 				"skrill_direct": "Skrill Direct",
 				"skrill_wallet": "Skrill Digital Wallet",
 				"sofort": "SOFORT Banking",
@@ -990,7 +1043,8 @@
 				"local_bank_transfer": "Local Bank Transfer",
 				"w1": "W1",
 				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"russian_standard": "Russian Standard Bank",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1145,7 +1199,9 @@
 			"info": "Info",
 			"information": "Information",
 			"promotion": "Promotion",
-			"follow_us": "Follow us"
+			"follow_us": "Follow us",
+			"privacy": "Privacy",
+			"corporate": "Corporate"
 		},
 		"actions": {
 			"go_bang": "Go!",
@@ -1219,7 +1275,6 @@
 		"registration_restricted_in_country": "The registration is appears to be restricted in your country"
 	},
 	"documents": {
-		"removed_successfully": "Document was successfully removed",
 		"document": {
 			"edit_description": "Pubblica descrizione",
 			"approved": "Approvato",
@@ -1236,18 +1291,47 @@
 	},
 	"formtastic": {
 		"labels": {
-			"card_holder": "Card holder",
-			"credit_card_number": "Credit card number",
-			"cvc": "Card security code",
-			"expiration_date": "Expiration date",
+			"clearingNumber": "Clearing number or bank code",
+			"accountNumber": "Account number",
+			"beneficiaryName": "Beneficiary name",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Beneficiary address",
+			"bankName": "Bank name",
+			"branchAddress": "Branch address",
+			"secureId": "Secure ID",
 			"amount": "Importo",
+			"account": "Account",
+			"service": "Service",
+			"card_holder": "Card holder",
+			"cardHolder": "Card holder",
+			"credit_card_number": "Credit card number",
+			"encCreditcardNumber": "Card number",
+			"countryCode": "Country",
+			"internalBonusCode": "Bonus code",
+			"cvc": "Card security code",
+			"cvv": "cvv",
+			"expiration_date": "Expiration date",
+			"expiryDate": "Expiry date",
+			"voucherNumber": "Voucher number",
+			"voucherValue": "Voucher value",
+			"email": "Email",
 			"recipient": "Recipient",
+			"phoneNumber": "Phone number",
+			"mobileOperator": "Mobile operator",
+			"username": "Username",
+			"password": "Password",
+			"country": "Country",
 			"document": {
 				"attachment": "Allegato",
 				"description": "Descrizione"
 			},
 			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"wallet_address": "Wallet Address",
+			"deposit_form": {
+				"net_account": "Email/Account ID",
+				"secure_id": "Secure ID"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1290,7 +1374,6 @@
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} Issue",
 		"stages": {
 			"wait": "Aspetta",
 			"handle_bets": "Attivo",
@@ -1314,8 +1397,8 @@
 			"pending": "Pending"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "You received {{freespins_count}} bonus free spins in {{games}}.",
+			"activation_prompt_html": "To activate free spins go to {{link}}."
 		}
 	},
 	"games": {
@@ -1337,6 +1420,7 @@
 			"lottery": "Lottery",
 			"keno": "Keno",
 			"progressive": "Progressive",
+			"jackpot": "Games with Jackpot",
 			"stat": {
 				"most_popular": "Più popolari",
 				"new": "Nuovo",
@@ -1355,7 +1439,10 @@
 			"betsoftgaming": "BetSoft Gaming",
 			"casinotechnology": "Casino Technology",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1453,10 +1540,12 @@
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "Conto da",
-		"billed_to": "Conto a ",
+		"billed_from": "From",
+		"billed_to": "To",
 		"paid": "Pagato",
-		"submit": "Proponi"
+		"submit": "Proponi",
+		"billed": "Billed:",
+		"not_billed": "Not Billed:"
 	},
 	"affiliate_links": {
 		"add": "Add Link",
@@ -1559,7 +1648,7 @@
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Free spins"
 		},
 		"gift": "Gift"
 	},
@@ -1635,7 +1724,7 @@
 			"payments_history": "Cronologia transizioni",
 			"bets_history": "Cronologia Bonus",
 			"bonuses_history": "Cronologia Bonus",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Free spins History",
 			"deposit_to_address_hint": "Deposito a questo indirizzo per finanziare il vostro conto.",
 			"freespin_bonuses": {
 				"bonus_canceled": "Bonus canceled",
@@ -1677,8 +1766,10 @@
 		"bonus_code_hide": "Hide Bonus Code",
 		"address_confirmation_email_body": "You requested cashout to {{address}}. You haven't used this address before. To protect your account we ask you to confirm this address. To confirm address please click the link:",
 		"address_confirmation_email_warning": "If this address doesn't belong to you contact to support and change your password:",
-		"invalid_profile_before_deposit_message": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
-		"invalid_profile_message": "To be able to cash out, you must fill in the required fields in your Profile.",
+		"invalid_profile_message": {
+			"deposit": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+			"cashout": "To be able to cash out, you must fill in the required fields in your Profile."
+		},
 		"try_again": "Transaction could not be initiated due to connection problems. If the problem persists, please contact our support.",
 		"select_currency": "Select Balance Currency",
 		"select_currency_hint": {
@@ -1686,6 +1777,7 @@
 			"cashout": "I would like to cash out"
 		},
 		"select_payment_method": "Select Payment Method",
+		"saved_methods": "Your Saved Payment Options",
 		"current_balance": {
 			"deposit": "Your current balance: {{money}}.",
 			"cashout": "Available to cash out: {{money}}. Please refer to {{balance_link}} page for detailed break down."
@@ -1703,7 +1795,8 @@
 		"processing_time": {
 			"instantly": "Instantly",
 			"range": "%{min}-%{max} banking days"
-		}
+		},
+		"cubits_not_available": "Cubits is not available now. Try again later."
 	},
 	"security_check": {
 		"user_is_suspicious": "L'utente è sospetto",
@@ -1797,13 +1890,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "La tua richiesta di prelievo è stata approvata"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "Il saldo del tuo account è insufficiente per un prelievo",
-			"body": "L'opzione prelievo è stata rifiutata a causa del saldo insuffieciente sul tuo conto per l'elaborazione di un prelievo. Si prega di inviare la nuova richiesta di prelievo in base al saldo corrente."
-		},
-		"address_confirmation_required": {
-			"subject": "Cashout address confirmation required"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Cashout address confirmation required",
+			"deposit_made": "Your deposit received",
+			"cashout_approved": "Your cashout request was approved",
+			"freespin_bonus_issued": "Freespins awarded",
+			"welcome": "Welcome",
+			"no_deposit": "You have not made a deposit",
+			"nth_deposit": "We are waiting for your deposit",
+			"welcome_promo": "Visit us again",
+			"confirmation_instructions": "Confirmation instructions",
+			"reset_password_instructions": "Reset password instructions",
+			"unlock_instructions": "Unlock instructions"
 		}
 	},
 	"activemodel": {
@@ -1870,12 +1971,6 @@
 			}
 		}
 	},
-	"retention_mailer": {
-		"welcome": "Benvenuto",
-		"no_deposit": "You haven't made a deposit",
-		"nth_deposit": "We are waiting for your deposit",
-		"welcome_promo": "Visit us again"
-	},
 	"jackpot": {
 		"jackpots": "Jackpots"
 	},
@@ -1933,8 +2028,15 @@
 		"casinotechnology": "CasinoTechnology",
 		"timeout_message": "Game provider's server has not responded. Please retry later."
 	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
+	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
+	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "To play this game you need to fill in at least First Name, Last Name, Date of Birth and Country"
 	},
 	"quickfire_api": {
 		"quickfire": "QuickFire"

@@ -9,8 +9,8 @@
 			"not_found": "n’a pas été trouvé(e)",
 			"not_locked": "n’était pas verrouillé(e)",
 			"not_saved": {
-				"one": "une erreur a empêché ce (ou cette) %{resource} d’être enregistré(e) :",
-				"other": "%{count} erreurs ont empêché ce (ou cette) %{resource} d’être enregistré(e) :"
+				"one": "une erreur a empêché ce (cet ou cette) %{resource} d’être enregistré(e) :",
+				"other": "%{count} erreurs ont empêché ce (cet ou cette) %{resource} d’être enregistré(e) :"
 			}
 		}
 	},
@@ -97,6 +97,14 @@
 						}
 					}
 				},
+				"affiliate_connection": {
+					"attributes": {
+						"user_id": {
+							"too_old": "Was created too much time ago",
+							"has_affiliate_profiles": "Has affiliate profiles"
+						}
+					}
+				},
 				"user": {
 					"attributes": {
 						"password": {
@@ -168,6 +176,18 @@
 			"retention_email": "Courriel de rétention"
 		},
 		"attributes": {
+			"casino_cash_balance_history": {
+				"id": "ID",
+				"casino_cash_balance_name": "Casino Cash Balance Name",
+				"casino_cash_balance_id": "Casino Cash Balance ID",
+				"action": "Action",
+				"change_amount": "Change amount",
+				"amount_after_change": "Amount after change",
+				"subject": "Subject",
+				"processed_at": "Processed at",
+				"comment": "Comment",
+				"currency": "Currency"
+			},
 			"balance_correction": {
 				"action": "Action",
 				"amount": "Amount",
@@ -287,9 +307,9 @@
 			"freespin_issue": {
 				"stage": "Stage",
 				"amount": "Amount",
-				"freespins_total": "Freespins Awarded",
+				"freespins_total": "Free spins awarded",
 				"activatable_until": "Expiry date",
-				"win_amount_cents": "Alredy won",
+				"win_amount_cents": "Already won",
 				"valid_until": "Expiry date",
 				"extra": "Extra info",
 				"external_id": "External ID",
@@ -701,7 +721,18 @@
 			"link_to_root": "Voici le lien pour notre page d'accueil:"
 		}
 	},
+	"flash": {
+		"documents": {
+			"create": {
+				"notice": "Document was successfully uploaded"
+			},
+			"destroy": {
+				"notice": "Document was successfully removed"
+			}
+		}
+	},
 	"common": {
+		"required": "Required",
 		"in_out": "IN/OUT",
 		"players": "joueurs",
 		"email": "Adresse électronique",
@@ -743,14 +774,19 @@
 		"filter": "Filtrer",
 		"are_you_sure": "Êtes-vous sûr ?",
 		"set": "Définir",
+		"recall": "Recall",
 		"enabled": "Activé",
 		"disabled": "Désactivé",
 		"active": "Activer",
+		"success": "Success",
+		"error": "Error",
 		"preview": "Aperçu",
 		"select": "Sélectionner",
 		"summary": "Résumé",
 		"status": "Statut",
 		"options": "Options",
+		"download": "Download",
+		"csv": "CSV",
 		"genders": {
 			"m": "Homme",
 			"f": "Femme"
@@ -879,6 +915,7 @@
 		},
 		"payment_systems": {
 			"names": {
+				"devcode": "Devcode",
 				"qiwi": "Qiwi",
 				"skrill": "Skrill",
 				"interkassa": "Interkassa",
@@ -894,6 +931,7 @@
 				"bank_transfer": "Transfert Bancaire",
 				"cubits": "Cubits",
 				"lavapay": "Lavapay",
+				"oauth_app": "OAuth Application",
 				"bitcoin_payment": "Bitcoin",
 				"ripple_payment": "Ripple"
 			},
@@ -904,6 +942,19 @@
 			"system_name": "%{child} via %{parent}",
 			"all_locked": "Pour votre sécurité, nous autorisons seulement des encaissements vers des systèmes de paiements déjà utilisés pour vos dépôts. Si vous avez des questions, merci de contacter le support. ",
 			"child_systems": {
+				"mbankomat": "Mbankomat",
+				"pugglepay": "PugglePay",
+				"clickandbuy": "ClickAndBuy",
+				"envoy": "Envoy",
+				"bank": "Bank",
+				"banklocal": "Bank domestic withdrawal",
+				"bankiban": "Bank domestic IBAN withdrawal",
+				"bankintiban": "Bank international IBAN withdrawal",
+				"ukash": "Ukash",
+				"siru": "Siru",
+				"accentpay": "AccentPay",
+				"paylevo": "PayLevo",
+				"ibanq": "i-BANQ",
 				"visa": "Visa",
 				"mastercard": "Mastercard",
 				"online_bank_transfer": "Transfert Bancaire en ligne",
@@ -912,6 +963,7 @@
 				"bancontact_mister_cash": "Bancontact/Mister Cash",
 				"cards": "Credit Cards",
 				"ccard": "Carte de crédit",
+				"creditcard": "Credit Card",
 				"click_to_pay": "CLICK2PAY",
 				"ekonto": "eKonto",
 				"eps": "paiement électronique EPS",
@@ -927,6 +979,7 @@
 				"paysafecard": "Paysafecard",
 				"quick": "Rapide",
 				"sepa": "Débit direct SEPA",
+				"skrill": "Skrill",
 				"skrill_direct": "Direct Skrill",
 				"skrill_wallet": "Porte feuille électronique Skrill",
 				"sofort": "Opération bancaire SOFORT",
@@ -990,7 +1043,8 @@
 				"local_bank_transfer": "Local Bank Transfer",
 				"w1": "W1",
 				"wallet_one": "Wallet One",
-				"russian_standard": "Russian Standard Bank"
+				"russian_standard": "Russian Standard Bank",
+				"neteller": "Neteller"
 			}
 		},
 		"commissions": {
@@ -1145,7 +1199,9 @@
 			"info": "Info",
 			"information": "Information",
 			"promotion": "Promotion",
-			"follow_us": "Suivez nous"
+			"follow_us": "Suivez nous",
+			"privacy": "Privacy",
+			"corporate": "Corporate"
 		},
 		"actions": {
 			"go_bang": "Allez !",
@@ -1219,7 +1275,6 @@
 		"registration_restricted_in_country": "L’inscription est restreinte dans votre pays"
 	},
 	"documents": {
-		"removed_successfully": "Le document a été effacé avec succès",
 		"document": {
 			"edit_description": "Modifier une description",
 			"approved": "Approuvé",
@@ -1236,18 +1291,47 @@
 	},
 	"formtastic": {
 		"labels": {
-			"card_holder": "Détenteur de la carte",
-			"credit_card_number": "Numéro de carte de crédit",
-			"cvc": "Code de sécurité de la carte",
-			"expiration_date": "Date d'expiration",
+			"clearingNumber": "Clearing number or bank code",
+			"accountNumber": "Account number",
+			"beneficiaryName": "Beneficiary name",
+			"bic": "BIC/SWIFT",
+			"iban": "IBAN",
+			"beneficiaryAddress": "Beneficiary address",
+			"bankName": "Bank name",
+			"branchAddress": "Branch address",
+			"secureId": "Secure ID",
 			"amount": "Montant",
+			"account": "Account",
+			"service": "Service",
+			"card_holder": "Détenteur de la carte",
+			"cardHolder": "Card holder",
+			"credit_card_number": "Numéro de carte de crédit",
+			"encCreditcardNumber": "Card number",
+			"countryCode": "Country",
+			"internalBonusCode": "Bonus code",
+			"cvc": "Code de sécurité de la carte",
+			"cvv": "cvv",
+			"expiration_date": "Date d'expiration",
+			"expiryDate": "Expiry date",
+			"voucherNumber": "Voucher number",
+			"voucherValue": "Voucher value",
+			"email": "Email",
 			"recipient": "Destinataire",
+			"phoneNumber": "Phone number",
+			"mobileOperator": "Mobile operator",
+			"username": "Username",
+			"password": "Password",
+			"country": "Country",
 			"document": {
 				"attachment": "Pièce jointe",
 				"description": "Description"
 			},
 			"btc_amount": "Amount in BTC",
-			"wallet_address": "Wallet Address"
+			"wallet_address": "Wallet Address",
+			"deposit_form": {
+				"net_account": "Email/Account ID",
+				"secure_id": "Secure ID"
+			}
 		},
 		"actions": {
 			"game": {
@@ -1290,7 +1374,6 @@
 		}
 	},
 	"bonus_issues": {
-		"title": "%{bonus} numéro",
 		"stages": {
 			"wait": "Attendre",
 			"handle_bets": "Activer",
@@ -1314,8 +1397,8 @@
 			"pending": "Pending"
 		},
 		"mailer": {
-			"you_received_bonus": "You received {{freespins_count}} bonus freespins in {{games}}.",
-			"activation_prompt_html": "To activate freespins go to {{link}}."
+			"you_received_bonus": "You received {{freespins_count}} bonus free spins in {{games}}.",
+			"activation_prompt_html": "To activate free spins go to {{link}}."
 		}
 	},
 	"games": {
@@ -1355,7 +1438,10 @@
 			"betsoftgaming": "BetSoft Gaming",
 			"casinotechnology": "Technologie Casino",
 			"quickfire": "Quickfire",
-			"ezugi": "Ezugi"
+			"ezugi": "Ezugi",
+			"netent": "Netent",
+			"ikki": "iKKi",
+			"endorphina": "Endorphina"
 		},
 		"roulette": {
 			"bets": {
@@ -1453,10 +1539,12 @@
 		}
 	},
 	"affiliate_bills": {
-		"billed_from": "Facturé par",
-		"billed_to": "Facturé à",
+		"billed_from": "From",
+		"billed_to": "To",
 		"paid": "Payé",
-		"submit": "Envoyer"
+		"submit": "Envoyer",
+		"billed": "Billed:",
+		"not_billed": "Not Billed:"
 	},
 	"affiliate_links": {
 		"add": "Ajouter un lien",
@@ -1559,7 +1647,7 @@
 	},
 	"freespin_bonuses": {
 		"history": {
-			"title": "Freespins"
+			"title": "Free spins"
 		},
 		"gift": "Gift"
 	},
@@ -1635,7 +1723,7 @@
 			"payments_history": "Historique des opérations",
 			"bets_history": "Historique des événements",
 			"bonuses_history": "Historique des bonus",
-			"freespin_bonuses_history": "Freespins History",
+			"freespin_bonuses_history": "Free spins History",
 			"deposit_to_address_hint": "Effectuer un dépôt à cette adresse pour approvisionner votre compte.",
 			"freespin_bonuses": {
 				"bonus_canceled": "Bonus canceled",
@@ -1677,8 +1765,10 @@
 		"bonus_code_hide": "Hide Bonus Code",
 		"address_confirmation_email_body": "Vous avez demandé un encaissement vers {{address}}. Vous n’avez jamais utilisé cette adresse auparavant. Afin de protéger votre compte nous vous demandons de confirmer cette adresse. Pour confirmer cette adresse, veuillez cliquer sur le lien :",
 		"address_confirmation_email_warning": "Si cette adresse ne vous appartient pas, contactez l’assistance et changez votre mot de passe :",
-		"invalid_profile_before_deposit_message": "Vous devez d’abord remplir les champs pour effectuer un dépôt. Veuillez entrer des informations de contact valides dans le formulaire ci-dessous. Assurez-vous de leur exactitude avant de sauvegarder.",
-		"invalid_profile_message": "Pour procéder à l’encaissement, vous devez remplir les champs obligatoires dans votre profil.",
+		"invalid_profile_message": {
+			"deposit": "You should fill in required fields first to make a deposit. Please enter valid contact details in the form below. Make sure it is accurate before saving.",
+			"cashout": "To be able to cash out, you must fill in the required fields in your Profile."
+		},
 		"try_again": "La transaction n’a pas pu être effectuée en raison de problèmes de connexion. Si le problème persiste, veuillez contacter notre assistance.",
 		"select_currency": "Sélectionner la devise de votre solde",
 		"select_currency_hint": {
@@ -1686,6 +1776,7 @@
 			"cashout": "Je voudrais effectuer un encaissement"
 		},
 		"select_payment_method": "Sélectionner la méthode de paiement",
+		"saved_methods": "Your Saved Payment Options",
 		"current_balance": {
 			"deposit": "Votre solde actuel : {{money}}.",
 			"cashout": "Disponible pour encaissement : {{money}}. Veuillez vous référer à la page {{balance_link}} pour une présentation détaillée."
@@ -1703,7 +1794,8 @@
 		"processing_time": {
 			"instantly": "Instantanément",
 			"range": "%{min}-%{max} jours ouvrables"
-		}
+		},
+		"cubits_not_available": "Cubits is not available now. Try again later."
 	},
 	"security_check": {
 		"user_is_suspicious": "Utilisateur suspect",
@@ -1797,13 +1889,21 @@
 		},
 		"cashout": {
 			"cashout_approved": "Votre demande d’encaissement a été approuvée"
-		},
-		"not_enough_money_for_cashout": {
-			"subject": "Fonds de compte insuffisants pour un encaissement",
-			"body": "Votre encaissement a été rejeté car le solde de votre compte est devenu trop bas pour procéder à l’encaissement demandé. Veuillez réitérer la demande d’encaissement en fonction de votre solde actuel."
-		},
-		"address_confirmation_required": {
-			"subject": "Confirmation de l’adresse d’encaissement requise"
+		}
+	},
+	"mailer": {
+		"subject": {
+			"address_confirmation_required": "Cashout address confirmation required",
+			"deposit_made": "Your deposit received",
+			"cashout_approved": "Your cashout request was approved",
+			"freespin_bonus_issued": "Freespins awarded",
+			"welcome": "Welcome",
+			"no_deposit": "You have not made a deposit",
+			"nth_deposit": "We are waiting for your deposit",
+			"welcome_promo": "Visit us again",
+			"confirmation_instructions": "Confirmation instructions",
+			"reset_password_instructions": "Reset password instructions",
+			"unlock_instructions": "Unlock instructions"
 		}
 	},
 	"activemodel": {
@@ -1870,12 +1970,6 @@
 			}
 		}
 	},
-	"retention_mailer": {
-		"welcome": "Bienvenue",
-		"no_deposit": "Vous n’avez pas effectué de dépôt",
-		"nth_deposit": "Nous attendons toujours votre dépôt",
-		"welcome_promo": "Revenez nous voir"
-	},
 	"jackpot": {
 		"jackpots": "Jackpots"
 	},
@@ -1933,8 +2027,15 @@
 		"casinotechnology": "CasinoTechnology",
 		"timeout_message": "Le serveur qui fournit le jeu n’a pas répondu. Veuillez réessayer ultérieurement."
 	},
+	"endorphina_api": {
+		"endorphina": "Endorphina"
+	},
 	"ezugi_api": {
 		"ezugi": "Ezugi"
+	},
+	"fengaming_api": {
+		"fengaming": "Fengaming",
+		"incomplete_profile": "To play this game you need to fill in at least First Name, Last Name, Date of Birth and Country"
 	},
 	"quickfire_api": {
 		"quickfire": "QuickFire"

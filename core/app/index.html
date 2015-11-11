@@ -6,6 +6,10 @@
         <meta name="description" content="{{page.description}}">
         <meta name="keywords" content="{{page.keywords}}">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <link rel="icon" href="/resources/images/favicon.png" type="image/png">
+        <link rel="shortcut icon" href="/resources/images/favicon.png" type="image/png">
+
         <!-- inject:lib:js --><!-- endinject -->
         <!-- inject:app:js --><!-- endinject -->
         <!-- inject:templates:js --><!-- endinject -->
@@ -15,11 +19,46 @@
     <body class="page-{{state.current.name}} device-{{data.device}}">
         <casino-preloader></casino-preloader>
         <casino-game></casino-game>
+
         <div class="main">
             <casino-header></casino-header>
 
             <div class="inner clearfix">
                 <casino-notification></casino-notification>
+
+                <div class="main_promo_area" ng-if="['games', 'games_category', 'home'].indexOf(state.current.page_name) >= 0">
+                    <div class="promo_box_main clearfix">
+                        <casino-slider category="slider-index-top"></casino-slider>
+                        <casino-auth-top></casino-auth-top>
+                    </div>
+
+                    <div class="winners_area clearfix">
+                        <div class="winners col-xs-6" data-example-id="togglable-tabs" role="tabpanel">
+                            <tabset>
+                                <tab>
+                                    <tab-heading translate="winners.latest_winners"></tab-heading>
+                                    <casino-games-block name="latest_winners" template="latest_winners" limit="6"></casino-games-block>
+                                </tab>
+                                <tab>
+                                    <tab-heading translate="winners.top_winners"></tab-heading>
+                                    <casino-games-block name="top_winners" template="top_winners" limit="6"></casino-games-block>
+                                </tab>
+                            </tabset>
+                        </div>
+
+                        <div class="jackpots_area col-xs-6">
+                            <div class="jckpts_crsl">
+                                <div class="title" translate="jackpot.jackpots"></div>
+                                <casino-games-block name="jackpots" isolated="true" filters="{collection: 'jackpot'}"  template="jackpots" limit="15"></casino-games-block>
+                            </div>
+                            <div class="jckpts_clltoactn">
+                                <div class="title">Win wild jackpots with featured games!</div>
+                                <div class="text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</div>
+                                <!--<button class="btn btn-lg btn-danger">Play now!</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div ui-view autoscroll="false"></div>
             </div>

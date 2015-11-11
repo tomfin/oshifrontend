@@ -3,13 +3,14 @@
 
 var gulp = require('gulp');
 var debug = require('gulp-debug');
-require('require-dir')('./core/gulp');
+var gulpDir = require('require-dir')('./core/gulp');
 
 var plugins = {
     rimraf: require('gulp-rimraf')
 };
 
 gulp.task('default', ['clean'], function () {
+    console.log('D> Preparing core...', gulpDir);
     return gulp.start('prepareCore', 'prepare', 'build');
 });
 
@@ -20,7 +21,7 @@ gulp.task('dev', ['clean'], function () {
 gulp.task('watch', [], function () {
     gulp.watch('app/**', function (file) {
         gulp.start('buildDev');
-	console.log('D> Change on: ', file.path);
+        console.log('D> Change on: ', file.path);
     });
 });
 

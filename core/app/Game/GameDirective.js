@@ -54,7 +54,7 @@ CasinoDirectives
 
             $rootScope.close_game = $scope.close = function (noRedirectHome) {
                 if ($scope.game_url) {
-                    $location.hash('');
+                    $location.hash('!');
                     $scope.game_url = false;
                 } else if (!noRedirectHome){
                     var redirect_state = SYSTEM.AFTER_LOGIN_REDIRECT || "home";
@@ -67,7 +67,7 @@ CasinoDirectives
 
             $scope.$on('$locationChangeSuccess', function(event) {
                 var hash = $window.location.hash.replace(/%2F/g, '/');
-                if (hash == '' || hash == '#%20') {
+                if (hash == '' || hash == '#%20' || hash == '#!') {
                     $('body').removeClass('page-game');
                     $rootScope.page.game_title = false;
                 }
@@ -76,7 +76,7 @@ CasinoDirectives
             });
             $rootScope.$watch(function () {return $location.hash()}, function (newLocation, oldLocation) {
                 var hash = $window.location.hash.replace(/%2F/g, '/');
-                if (hash == '' || hash == '#%20') {
+                if (hash == '' || hash == '#%20' || hash == '#!') {
                     $('body').removeClass('page-game');
                     $rootScope.page.game_title = false;
                     $scope.game_url = false;

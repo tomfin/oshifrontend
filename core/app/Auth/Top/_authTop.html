@@ -25,8 +25,8 @@
                 <div class="label" translate="activerecord.attributes.user.password"></div>
                 <div class="input">
                     <input type="password"
-                           class="text_input",
-                           ng-class="{'error':login.errors.password}",
+                           class="text_input"
+                           ng-class="{'error':login.errors.password}"
                            ng-model="login.data.user.password" tabindex="2" name="user[password]"
                            id="sign_in_panel_user_password">
                 </div>
@@ -36,7 +36,7 @@
                 <div class="label">&nbsp;</div>
                 <div class="input">
                     <button type="submit" class="btn btn_sm btn-success" translate="frontend.links.login"></button>
-                    <a class="pass_link" href="" ui-sref="users_password_new" translate="frontend.links.forgot_password"></a>
+                    <a class="pass_link" href="" ui-sref="app.users_password_new" translate="frontend.links.forgot_password"></a>
                 </div>
             </div>
 
@@ -50,5 +50,4 @@
     </div>
 </div>
 
-<!--<a access-level="accessLevels.user" class="logout btn btn-success btn-flat" href="" ng-click="widgetAuthTop.logout()">{{'frontend.links.sign_out' | translate}}</a>-->
 </div>

@@ -1,5 +1,12 @@
-<select id="{{name}}"
-		ng-options="key as value for (key, value) in data.inclusion.in"
-		class="form-control"
-		ng-model="value">
-</select>
+<label class="control-label">
+	<span translate="{{label}}"></span>
+	<sup  ng-show="data.required" title="required">*</sup>
+</label>
+<div class="mf__item">
+
+	<div class="mf__radio" ng-repeat="(key, ch_value) in data.inclusion.in">
+		<input id="{{key}}" name="{{name}}" type="radio" ng-click="$parent.value = key">
+		<label for="{{key}}">{{ch_value}}</label>
+	</div>
+
+</div>

@@ -10,9 +10,14 @@ CasinoConstants
                 position: 'right'
             }
         },
+        INVISIBLE_COLLECTIONS: ['home', 'top', 'new', 'hd'],
         CDN_SERVER: 'https://cdn.softswiss.net/',
         CDN_ASSETS_PREFIX: '',
         CDN_ASSETS_SIZE: '',
         GOOGLE_TAG_MANAGER_ID: 'GTM-5KW2XX',
+        ZOPIM: false,
+        GAME_DEPOSIT_MODAL: false,
+        AFTER_LOGIN_REDIRECT: 'home',
+        INCOME_ACCESS_AFF_SERVER: ''
     }
 );

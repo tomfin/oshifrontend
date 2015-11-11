@@ -16,6 +16,7 @@ CasinoDirectives
             $scope.data = $rootScope.data;
             $scope.widgetAuthTop = widgetAuthTop;
             $scope.balance = balance;
+            $scope.currentLocale = $rootScope.currentLocale;
 
             widgetAuthTop.logout = function () {
                 Auth.logout();
@@ -56,6 +57,12 @@ CasinoDirectives
 
             $rootScope.$watch('Info.currencies', function () {
                 setUserBalance();
+            });
+
+            $rootScope.$watch('currentLocale', function (newValue, oldValue) {
+                if ($rootScope.currentLocale && newValue != oldValue) {
+                    $scope.currentLocale = $rootScope.currentLocale;
+                }
             });
         }]
     };

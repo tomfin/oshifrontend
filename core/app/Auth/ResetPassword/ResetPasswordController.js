@@ -1,5 +1,5 @@
 CasinoControllers
-    .controller('ResetPasswordController', ['$scope', 'User', '$state', '$location', 'Notification', function ($scope, User, $state, $location, Notification) {
+    .controller('ResetPasswordController', ['$scope', '$rootScope', 'User', '$state', '$location', 'Notification', function ($scope, $rootScope, User, $state, $location, Notification) {
         var reset_password = {};
         $scope.reset_password = reset_password;
 
@@ -8,7 +8,7 @@ CasinoControllers
         reset_password.submit = function () {
                 User.reset_password(reset_password.data, function(answer) {
                     Notification.show('devise.passwords.updated_not_active', {classes: 'alert-success'});
-                    $state.go('home');
+                    $state.go('home', {lang: $rootScope.currentLocale});
                 }, function(error) {
                     reset_password.data.errors = error.data.errors;
                 });
