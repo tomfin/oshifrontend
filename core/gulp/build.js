@@ -167,7 +167,11 @@ function images(callback) {
 
     gulp.src(['_project/app/images/theme/oshi/**'])
     	.pipe(gulp.dest(publicDir + '/images/theme/oshi'))
-        .on('end', callback || function() {})
+        .on('error', plugins.util.log);
+    
+    gulp.src(['_project/app/images/*.png', '_project/app/images/*.jpg'])
+    	.pipe(gulp.dest(publicDir + '/images'))
+    	.on('end', callback || function() {})
         .on('error', plugins.util.log);
 }
 
