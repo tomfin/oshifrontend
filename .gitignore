@@ -1,7 +1,9 @@
+.DS_Store
 /bower_components
 /node_modules
 /core/client
 /core/build
+/core/npm-debug.log
 /build
 /logs
 /.tmp
