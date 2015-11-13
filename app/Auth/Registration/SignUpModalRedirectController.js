@@ -1,5 +1,6 @@
 CasinoControllers
     .controller('SignUpRedirectController', ['$scope', '$state', '$rootScope', 'AuthModalService', function ($scope, $state, $rootScope, AuthModalService) {
+        $state.params.lang = $rootScope.currentLocale;
         $state.transitionTo('home-rego', $state.params).finally(function () {
             AuthModalService.showRegistration();
         });
