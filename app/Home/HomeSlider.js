@@ -10,10 +10,12 @@ CasinoDirectives.directive('mainSlider', function() {
 			}
 		}
 	};
-}).controller(
+});
+
+CasinoControllers.controller(
 		'Home',
-		[ '$scope', '$location', '$window', '$stateParams', '$timeout', 'AuthModalService',
-				function($scope, $location, $window, $stateParams, $timeout, AuthModalService) {
+		[ '$scope', '$location', '$window', '$stateParams', '$timeout', '$rootScope', 'AuthModalService',
+				function($scope, $location, $window, $stateParams, $timeout, $rootScope, AuthModalService) {
 					$scope.displayBanner = function() {
 						if ($window.location.pathname === '/' || $window.location.pathname.startsWith('/games') || $window.location.pathname.startsWith('/rego')) {
 							return true;
@@ -22,15 +24,17 @@ CasinoDirectives.directive('mainSlider', function() {
 						}
 					};
 
-					$scope.auth_modal = {
-							showLogin: AuthModalService.showLogin,
-							showRegistration: AuthModalService.showRegistration
-					};
-
 					$scope.init = function() {
 						if ($location.$$path.startsWith('/rego')) {
+							var user = {};
 							$timeout(function() {
-								$scope.auth_modal.showRegistration();
+								if ($rootScope.data.user.email) {
+									$window.location.href = "https://www.oshi.io/accounts/BTC/deposit";
+								} else {
+									$timeout(function() {
+										AuthModalService.showRegistration();
+									}, 500);
+								}
 							}, 500);
 						} else {
 							// Do nothing
