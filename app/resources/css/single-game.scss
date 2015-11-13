@@ -1,3 +1,41 @@
+.page-game.game-full {
+	
+	.game-modal {
+	    background-color: #414141;
+		
+		.footer { 
+			display: none; 
+		}
+		
+		.sga-container { 
+			.game__box {
+				.game__tabs {
+					display: none;
+				}
+			}
+		}
+		
+		header, .footer,.game__tabs,.gameright,.game_option { 
+			display: none; 
+		}
+		
+		.sga-container, .game_box { 
+			width: 100%; 
+			height: 100%; 
+			padding-right: 0; 
+			bottom: 0; 
+			top: 0; 
+			left: 0; 
+			right: 0; 
+		}
+		
+		.game__content iframe { 
+			position: fixed; 
+		}
+	}
+}
+
+
 .page-game {
   overflow: hidden;
 
@@ -655,4 +693,7 @@
       }
     }
   }
+  
+  
 }
+	
