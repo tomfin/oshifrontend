@@ -2182,7 +2182,7 @@ html, body {
     line-height: 1em;
 }
 .profile-section a {
-    color: #FFFFFF;
+    color: #141414;
     text-decoration: none;
 }
 .profile-section a:hover {
@@ -2250,11 +2250,10 @@ html, body {
     position: relative;
 }
 .profile-section .profile-layout {
-    /*background: #fff url(/assets/profile_side-052dd5b65c114688ad16afc1697da67e.png) repeat-y;*/
-	
+    background: #141414;
     position: relative;
     min-width: 840px;
-	background-color: #141414;
+    background-color: #141414;
 }
 .profile-section .profile-layout:after {
     content: '';
@@ -2264,7 +2263,7 @@ html, body {
     left: 275px;
     top: 0;
     bottom: 0;
-   /* background: url(/assets/profile_shadow-764dab8d200bbbeaba21573b5cf17525.png) repeat-y; */
+    background: #141414;
 }
 .profile-section .profile-side {
     float: left;
@@ -2278,7 +2277,7 @@ html, body {
     margin-left: 300px;
     min-height: 500px;
     z-index: 4010;
-	background-color:#FFFFFF;
+    background-color:#FFFFFF;
 }
 .profile-section.profile-affiliate_profiles-bills-index .profile-side-custom-top-block, .profile-section.profile-affiliate_profiles-statistics-show .profile-side-custom-top-block {
     visibility: hidden;
@@ -2440,7 +2439,7 @@ html, body {
     background-color: #F1A800;
     background-image: linear-gradient(#FFDF98 0,#F1A800 100%);
     box-shadow: 0 1px 0px #F1A800;
-	-webkit-transition: all .25s;
+-webkit-transition: all .25s;
     transition: all .25s;
 }
 .profile-section .button-main:hover, .profile-section .payment-system-form-container input[type=submit]:hover {
@@ -3093,7 +3092,6 @@ html, body {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
-	
 }
 .profile-section .side-navigation .side-navigation-item i.fa {
     padding-left: 18px;
@@ -3119,9 +3117,7 @@ html, body {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
-	cursor:pointer;
-	
-	
+cursor:pointer;
 }
 
 .profile-section .side-navigation .side-navigation-item:hover, .profile-section .side-navigation .active .side-navigation-item {
@@ -3132,9 +3128,9 @@ html, body {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
-	cursor:pointer;
-	
-	
+cursor:pointer;
+
+
 }
 
 

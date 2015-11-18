@@ -9,7 +9,7 @@ body {
     background-color: #141414;
     color: #FFFFFF;
     font-size:18px;
-	font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 .a, a {
     color: #FFFFFF;
@@ -20,7 +20,7 @@ body {
     transition: color .5s;
 }
 .a:hover, a:hover{
- 	color: #FFE2A0;
+ color: #FFE2A0;
     -webkit-transition: color .5s;
     transition: color .5s;
     text-decoration: underline;
@@ -33,11 +33,11 @@ a img {
 }
 form, h1, h2, h3, h4, input, li, p, table, td, th, tr, ul {
     margin-top: 12px;
-	margin-bottom: 3px;
+margin-bottom: 3px;
     padding: 0;
     font-weight: 400;
-	
-	
+
+
 }
 article, aside, figure, footer, header, nav, section {
     display: block;
@@ -367,7 +367,7 @@ ul {
     user-select: none;
 }
 .btn-join-now:hover{
-	text-decoration: underline!important;
+text-decoration: underline!important;
 }
 
 .btn_action {
@@ -485,7 +485,7 @@ li {
 .main>.inner {
    /* box-shadow: 0 0 10px rgba(2, 2, 3, .1); 
     background: #141414;*/
-	
+
 }
 header {
     position: absolute;
@@ -814,89 +814,88 @@ color: #FFF;
 }
     
 .page-container {
-    /* padding: 20px 0; */
     overflow: hidden;
     color: #000000;
-    padding: 20px;
+    padding: 50px;
     margin-top:20px;
     font-family: 'Roboto', sans-serif;
     line-height:160%;
-	border: 1px solid #FFFFFF;
+    border: 1px solid #FFFFFF;
     border-radius: 6px;
     background-color: #FFFFFF; 
     background: rgba(255,249,186,1);
-	background: -moz-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,249,186,1)), color-stop(100%, rgba(255,248,237,1)));
-	background: -webkit-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
-	background: -o-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
-	background: -ms-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff9ba', endColorstr='#fff8ed', GradientType=0 );
+    background: -moz-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,249,186,1)), color-stop(100%, rgba(255,248,237,1)));
+    background: -webkit-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,249,186,1) 0%, rgba(255,248,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff9ba', endColorstr='#fff8ed', GradientType=0 );
 }
 .page-container h1, h2, h3 {
-	font-family: 'Oswald', sans-serif;
+font-family: 'Oswald', sans-serif;
 }
 .page-container h1 {
-	font-size:30px;
-	padding-bottom:10px;
+font-size:30px;
+padding-bottom:10px;
 }
 .page-container h2 {
-	font-size:26px;
-		padding-bottom:8px;
+font-size:26px;
+padding-bottom:8px;
 }
 .page-container h3 {
-	font-size:18px;
-		padding-bottom:6px;
+font-size:18px;
+padding-bottom:6px;
 }
 
 
 .page-container a {
-	color: #000;
-	text-decoration:underline;
+color: #000;
+text-decoration:underline;
 }
 .page-container a:hover {
-	color: #444444;
-	text-decoration:none;
+color: #444444;
+text-decoration:none;
 }
 p.page-container {
-	margin-bottom: 15px;
+margin-bottom: 15px;
 }
 .page-container ul li{
-	list-style-type: disc;
-	padding-left:10px;
-	line-height: 130%;
-	margin-left:40px;	
+list-style-type: disc;
+padding-left:10px;
+line-height: 130%;
+margin-left:40px;
 }
 .page-container ul li li{
-	list-style-type: circle;
-	padding-left:10px;
+list-style-type: circle;
+padding-left:10px;
 }
 .auth-links{
-	 font-family: 'Roboto', sans-serif;
-	 font-size:18px;
+ font-family: 'Roboto', sans-serif;
+ font-size:18px;
 }
 .wysiwyg {
-	margin-top:20px;
+margin-top:20px;
 }
 .wysiwyg h2{
-	color:#FFF;
-	}
-	
+color:#FFF;
+}
+
 .alert {
-	 font-family: 'Roboto', sans-serif;
-	 font-size:18px
+ font-family: 'Roboto', sans-serif;
+ font-size:18px
 }
 .user_email_input{
-font-family: 'Roboto', sans-serif;	
+font-family: 'Roboto', sans-serif;
 }
 .alert a {
-	color: #000;
-	text-decoration:underline;
+color: #000;
+text-decoration:underline;
 }
 
 .alert a:hover {
-	color: #444444;
-	text-decoration:none;
+color: #444444;
+text-decoration:none;
 }
 
 
@@ -983,7 +982,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .row{
-	width:700px;
+width:700px;
     margin-right: -35px;
     margin-left: -35px;
 } 
@@ -1209,7 +1208,7 @@ font-family: 'Roboto', sans-serif;
     float:left; clear: both
 }
 .alert {
-	font-family: 'Roboto', sans-serif;	
+font-family: 'Roboto', sans-serif;
 }
 .content_area:before {
     content: '';
@@ -1605,7 +1604,7 @@ text-decoration: underline;
     text-transform: uppercase;
 }
 .games_filter_item:hover {
-	text-decoration: underline!important;
+text-decoration: underline!important;
 }
 .games_filter_item.current {
     border-bottom-color: #E50914;
@@ -1943,7 +1942,7 @@ footer>.inner {
 }
 
 .modal-content h1 h2 h3 {
-	line-height: 105%;
+line-height: 105%;
 }
 
 .modal-content .h1, h1 {
@@ -1988,22 +1987,22 @@ footer>.inner {
     
 }
 /*.10pxspacer {
-	height:10px;	
-	
+height:10px;
+
 }*/
 h1.modal-heading {
-	font-weight:700;
-	font-size: 42px;
+font-weight:700;
+font-size: 42px;
 }
 
 h2.modal-heading {
-	font-weight:700;
-	font-size: 24px;
+font-weight:700;
+font-size: 24px;
 }
 
 h3.modal-heading {
-	font-weight:400;
-	font-size: 18px;
+font-weight:400;
+font-size: 18px;
 }
 
 
@@ -2430,10 +2429,10 @@ div.navbar .navbar-collapse {float:left}
 }
 } @media only screen and (max-width:1222px) {
 .slider_primary {
-	background: url(/images/banner-1200x600.jpg) no-repeat;
+background: url(/images/banner-1200x600.jpg) no-repeat;
 }
 .slider_secondary {
-	display: none;
+display: none;
 }
 .catalog_list {
     margin: 0 0 -25px;
@@ -2537,7 +2536,7 @@ footer {
     min-width: 640px;
 }
 .slider_primary {
-	background: url(/images/banner-768x500.jpg) no-repeat;
+background: url(/images/banner-768x500.jpg) no-repeat;
 }
 .inner {
     width: 640px;
