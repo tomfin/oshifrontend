@@ -2439,7 +2439,7 @@ html, body {
     background-color: #F1A800;
     background-image: linear-gradient(#FFDF98 0,#F1A800 100%);
     box-shadow: 0 1px 0px #F1A800;
-	-webkit-transition: all .25s;
+-webkit-transition: all .25s;
     transition: all .25s;
 }
 .profile-section .button-main:hover, .profile-section .payment-system-form-container input[type=submit]:hover {
@@ -3092,7 +3092,6 @@ html, body {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
-	
 }
 .profile-section .side-navigation .side-navigation-item i.fa {
     padding-left: 18px;
@@ -3118,9 +3117,7 @@ html, body {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
-	cursor:pointer;
-	
-	
+cursor:pointer;
 }
 
 .profile-section .side-navigation .side-navigation-item:hover, .profile-section .side-navigation .active .side-navigation-item {
@@ -3131,9 +3128,9 @@ html, body {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
-	cursor:pointer;
-	
-	
+cursor:pointer;
+
+
 }
 
 
