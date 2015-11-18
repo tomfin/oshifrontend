@@ -2290,9 +2290,19 @@ div.navbar .navbar-collapse {float:left}
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-}@media only screen and (max-width:1200px) {
+}@media only screen and (max-width:1222px) {
     .inner {
-    width: 990px;
+    width: 1080px;
+}
+.slider_primary {
+	background: url(/images/banner1-GIF-1080x360.gif) no-repeat;
+}
+.slider_secondary {
+	display: none;
+}
+.catalog_list {
+    margin: 0 0 -25px;
+    text-align: center;
 }
 .promo_box_main {
     height: auto;
@@ -2389,7 +2399,7 @@ div.navbar .navbar-collapse {float:left}
 .rules {
     letter-spacing: 56px;
 }
-}@media only screen and (min-width:992px) {
+}@media only screen and (min-width:1080px) {
     .a:hover {
     color: #016a46;
     text-decoration: underline;
@@ -2428,19 +2438,7 @@ div.navbar .navbar-collapse {float:left}
     color: #fff;
     text-decoration: underline;
 }
-} @media only screen and (max-width:1222px) {
-.slider_primary {
-	background: url(/images/banner-1200x600.jpg) no-repeat;
-}
-.slider_secondary {
-	display: none;
-}
-.catalog_list {
-    margin: 0 0 -25px;
-    text-align: center;
-}
-
-}@media only screen and (max-width:992px) {
+}@media only screen and (max-width:1080px) {
     .main {
     padding: 0;
 }
@@ -2462,6 +2460,9 @@ footer, header {
 }
 .main_promo_area {
     padding-bottom: 20px;
+}
+.slider_primary {
+	background: url(/images/banner1-GIF-640x320.gif) no-repeat;
 }
 .main_banner {
     height: auto;
@@ -2535,9 +2536,6 @@ footer {
 }@media only screen and (max-width:768px) {
     .main {
     min-width: 640px;
-}
-.slider_primary {
-	background: url(/images/banner-768x500.jpg) no-repeat;
 }
 .inner {
     width: 640px;
