@@ -4,6 +4,7 @@
 /core/client
 /core/build
 /core/npm-debug.log
+/core/_project
 /build
 /logs
 /.tmp
