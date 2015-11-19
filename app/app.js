@@ -16,7 +16,8 @@ angular.module(
         'myscrollfix',
         'cgNotify',
         'LocalStorageModule',
-        'infinite-scroll'
+        'infinite-scroll',
+        'angular-carousel'
     ]
 )
     .config(['$httpProvider', function ($httpProvider) {

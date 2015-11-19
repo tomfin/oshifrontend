@@ -23,7 +23,8 @@
     "angular-notify": "2.5.0",
     "angular-local-storage": "~0.2.2",
     "ngInfiniteScroll": "1.2.1",
-    "bxSlider": "4.2.5"
+    "bxSlider": "4.2.5",
+    "angular-carousel": "~1.0.1"
   },
   "overrides": {
     "angular": {
@@ -65,6 +66,12 @@
       "main": [
         "build/loading-bar.min.js",
         "build/loading-bar.min.css"
+      ]
+    },
+    "angular-carousel": {
+      "main": [
+        "dist/angular-carousel.min.js",
+        "dist/angular-carousel.min.css"
       ]
     },
     "jquery": {
