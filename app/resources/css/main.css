@@ -706,7 +706,6 @@ color: #FFF;
 }
 .header-user-block .main_menu_item.current {
     border-bottom: 5px solid #E50914;
-    color: #FFE2A0;
 }
 .caret {
     position: absolute;
