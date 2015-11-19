@@ -816,7 +816,7 @@ color: #FFF;
 .page-container {
     overflow: hidden;
     color: #000000;
-    padding: 50px;
+    padding: 30px 60px 30px 60px;
     margin-top:20px;
     font-family: 'Roboto', sans-serif;
     line-height:160%;
