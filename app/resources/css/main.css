@@ -585,8 +585,14 @@ color: #FFF;
     -webkit-transition: color .5s;
     transition: color .5s;
      color: #FFE2A0;
-     
 }
+.navbar-default .navbar-nav>li>a.main_menu_item.current {
+    border-left: 5px solid #E50914;
+    color: #f6e794;
+    padding-left: 5px;
+    border-bottom: 0;
+}
+
 .header-user-block {
     text-align: right;
     line-height: 100px;
